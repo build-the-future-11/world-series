@@ -101,6 +101,16 @@
       "protocol": "docs/closure/WPINN_PROTOCOL.md",
       "results": "docs/closure/WPINN_RESULTS.json",
       "source_commit": "de5df5e"
+    },
+    {
+      "protocol_id": "WS-CWLNN-CONDITIONAL-20260924-v1-dev",
+      "project": "cwlnn",
+      "status": "DRAFT_NOT_AUTHORIZED",
+      "primary_metric": "held_graph_mse_at_3ms_ceiling_fixed_half_routing",
+      "notes": "128 models; all23040 predictions/permutations audited. Genuine conditional refinement, but learned half-routing slower and less accurate than full hierarchy. Finite CPU scope.",
+      "protocol": "docs/closure/CWLNN_PROTOCOL.md",
+      "results": "docs/closure/CWLNN_RESULTS.json",
+      "source_commit": "6d81c14"
     }
   ]
 }

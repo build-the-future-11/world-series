@@ -111,3 +111,31 @@ code masks already-computed coarse features and cannot claim compute savings.
 All WPINN numerical jobs and audits are finished. Do not overwrite earlier
 campaigns or delivery. Follow with collection-wide claim reconciliation, complete
 portable packaging, substantive original-paper novelty work and manuscript work.
+
+## CWLNN conditional stage completed
+
+Numerical candidate 6d81c14 implements pre-refinement top-k selection, trained
+local/coarse/refinement networks and a learned router with an explicitly declared
+selected-node surrogate. Study: 128 models, 23,040 held predictions, all four
+budget curves, 115,200 timing repeats, 1,792 disjoint graph IDs. All predictions,
+256 checkpoint scores and 23,040 consistent permutations were audited; maximum
+permutation discrepancy 4.45e-16. One full 160-update training replay is exact.
+All 95 tests pass. Largest operator output in the 100,000-node allocation probe
+is N×48; 1% routing executes exactly 1% expensive refinement rows.
+
+Learned half-routing is slower and less accurate than full hierarchy on both
+tasks: multiscale MSE 0.011939 vs 0.011412, diffusion 0.032721 vs 0.029831.
+Full hierarchy benefits the deliberately aligned task; flat5 wins on diffusion.
+The learned-routing advantage is NOT_SUPPORTED within this finite CPU study.
+CW01/CW03-CW07 complete within this scope; CW02's arbitrary-tree receptive-field
+matching remains open. Checklist: 29 complete, 116 open. Broader novelty,
+independent replication and publication requirements are still separate.
+
+All numerical processes are finished. Next reconcile the entire remaining
+116-item checklist against original proposals and new evidence, with a concrete
+requirement-to-artifact map and executable remaining queue. Do not treat the
+scoped studies as full proposal completion: WPINN held-law/joint-physics scope,
+WFIM's broader coordinate-aware proposal, comparator qualification and CWLNN
+tree matching still need explicit decisions or work. Complete original-paper
+novelty review, reproducibility/manuscript artifacts and clean portable delivery
+after identifying those gaps. Preserve the earlier verified delivery unchanged.

@@ -542,52 +542,52 @@
     },
     {
       "id": "CW01",
-      "status": "OPEN",
+      "status": "COMPLETE",
       "requirement": "Implement/train the parameters or routing policy required by the original learned-model claim; distinguish fixed features from trained readouts/backbones.",
-      "evidence": null,
-      "scope": "Original checklist requirement; no implied completion of adjacent items"
+      "evidence": "docs/closure/CWLNN_RESULTS.json; CWLNN_DECISION.md; CWLNN_ALLOCATION.json",
+      "scope": "Declared finite CPU graph study: 128 trained models, 23040 audited predictions, complete four-budget curves. Learned-routing advantage NOT_SUPPORTED; no broad backbone, arbitrary hierarchy or novelty claim."
     },
     {
       "id": "CW02",
       "status": "OPEN",
       "requirement": "Compare receptive-field-, depth-, width- and information-matched flat/unrouted/attention controls with the same training and selection policy.",
-      "evidence": null,
-      "scope": "Original checklist requirement; no implied completion of adjacent items"
+      "evidence": "docs/closure/CWLNN_PROTOCOL.md; CWLNN_DECISION.md",
+      "scope": "Open: matched parameter ranges/information and path receptive fields; arbitrary held tree receptive fields are not fully matched."
     },
     {
       "id": "CW03",
-      "status": "OPEN",
+      "status": "COMPLETE",
       "requirement": "Sweep a frozen set of routing budgets and report the entire error/time/storage tradeoff.",
-      "evidence": null,
-      "scope": "Original checklist requirement; no implied completion of adjacent items"
+      "evidence": "docs/closure/CWLNN_RESULTS.json; CWLNN_DECISION.md; CWLNN_ALLOCATION.json",
+      "scope": "Declared finite CPU graph study: 128 trained models, 23040 audited predictions, complete four-budget curves. Learned-routing advantage NOT_SUPPORTED; no broad backbone, arbitrary hierarchy or novelty claim."
     },
     {
       "id": "CW04",
-      "status": "OPEN",
+      "status": "COMPLETE",
       "requirement": "Include hierarchy construction, routing, preprocessing and decoding in costs; validate warmup/timing and large-graph allocation behavior.",
-      "evidence": null,
-      "scope": "Original checklist requirement; no implied completion of adjacent items"
+      "evidence": "docs/closure/CWLNN_RESULTS.json; CWLNN_DECISION.md; CWLNN_ALLOCATION.json",
+      "scope": "Declared finite CPU graph study: 128 trained models, 23040 audited predictions, complete four-budget curves. Learned-routing advantage NOT_SUPPORTED; no broad backbone, arbitrary hierarchy or novelty claim."
     },
     {
       "id": "CW05",
-      "status": "OPEN",
+      "status": "COMPLETE",
       "requirement": "Evaluate held graph sizes and topology families, nonhierarchical tasks, node permutations and graph-boundary integrity.",
-      "evidence": null,
-      "scope": "Original checklist requirement; no implied completion of adjacent items"
+      "evidence": "docs/closure/CWLNN_RESULTS.json; CWLNN_DECISION.md; CWLNN_ALLOCATION.json",
+      "scope": "Declared finite CPU graph study: 128 trained models, 23040 audited predictions, complete four-budget curves. Learned-routing advantage NOT_SUPPORTED; no broad backbone, arbitrary hierarchy or novelty claim."
     },
     {
       "id": "CW06",
-      "status": "OPEN",
+      "status": "COMPLETE",
       "requirement": "Ablate hierarchy and routing separately; determine whether existing hierarchy gains survive receptive-field matching.",
-      "evidence": null,
-      "scope": "Original checklist requirement; no implied completion of adjacent items"
+      "evidence": "docs/closure/CWLNN_RESULTS.json; CWLNN_DECISION.md; CWLNN_ALLOCATION.json",
+      "scope": "Declared finite CPU graph study: 128 trained models, 23040 audited predictions, complete four-budget curves. Learned-routing advantage NOT_SUPPORTED; no broad backbone, arbitrary hierarchy or novelty claim."
     },
     {
       "id": "CW07",
-      "status": "OPEN",
+      "status": "COMPLETE",
       "requirement": "Establish a meaningful cost-adjusted advantage or a bounded routing limitation. Keep the existing severe budget-4 accuracy loss visible.",
-      "evidence": null,
-      "scope": "Original checklist requirement; no implied completion of adjacent items"
+      "evidence": "docs/closure/CWLNN_RESULTS.json; CWLNN_DECISION.md; CWLNN_ALLOCATION.json",
+      "scope": "Declared finite CPU graph study: 128 trained models, 23040 audited predictions, complete four-budget curves. Learned-routing advantage NOT_SUPPORTED; no broad backbone, arbitrary hierarchy or novelty claim."
     },
     {
       "id": "UL01",
@@ -1017,6 +1017,6 @@
       "scope": "Original checklist requirement; no implied completion of adjacent items"
     }
   ],
-  "complete": 23,
-  "open": 122
+  "complete": 29,
+  "open": 116
 }

@@ -32,7 +32,7 @@ Three laws and three noise levels; independent held initial conditions. All poly
 
 ## cwlnn
 **BENCHMARKED / INCONCLUSIVE**
-Matched-size trained readouts on fixed sparse representations; graph sizes 24/48/96. Aggressive routing hurts the declared residual-propagation task. No universal-backbone evidence. Matched flat4 control achieves about 1.77e-8 MSE at n96 versus hierarchy 1.20174. The constructed target uses four flat propagation steps. Current routing computes all coarse features before masking; no conditional-compute saving is demonstrated.
+Matched-size trained readouts on fixed sparse representations; graph sizes 24/48/96. Aggressive routing hurts the declared residual-propagation task. No universal-backbone evidence. Matched flat4 control achieves about 1.77e-8 MSE at n96 versus hierarchy 1.20174. The constructed target uses four flat propagation steps. Current routing computes all coarse features before masking; no conditional-compute saving is demonstrated. A later genuinely conditional study trains 128 models and audits 23,040 predictions/permutations and 256 checkpoint scores. At half routing, learned hierarchy is slower and less accurate than full hierarchy on both declared tasks despite halving refinement rows. Full hierarchy benefits the aligned task; flat5 is better on nonhierarchical diffusion. All primary configurations meet the local 3ms ceiling. Allocation probing reaches 100,000 sparse nodes. This is a bounded negative routing result, not a universal backbone or independent replication. See docs/closure/CWLNN_DECISION.md.
 
 ## ultron
 **BENCHMARKED / INCONCLUSIVE**
