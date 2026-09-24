@@ -1,0 +1,9 @@
+{
+  "prior_task": "01a0d302-9130-7370-a2cb-93895bf6879e",
+  "task_status": "interrupted",
+  "unreceipted_run": "20260924T165604_80af68aa",
+  "interpretation": "INTERRUPTED; original RUNNING manifest retained unchanged",
+  "lock_available_before_resume": true,
+  "resumed_campaign": "closure-factorial-narrow12",
+  "completed_replacement": "20260924T173932_629fcd9f"
+}
