@@ -68,6 +68,25 @@ def main(plan_path, output):
     rates = plan['cells'][0]['params']['rates']
     transforms = {rate: optimizer(theta, rate) for rate in rates}
     updates = {rate: jax.jit(tx.update) for rate, tx in transforms.items()}
+    # Test the official transformation/bridge before using any benchmark outcome.
+    test_parameters = {'weight': jnp.asarray([[.2, -.4], [.1, .3]], dtype=jnp.float64),
+                       'bias': jnp.asarray([.1, -.2], dtype=jnp.float64)}
+    test_gradients = jax.tree.map(lambda x: jnp.ones_like(x)*.1, test_parameters)
+    tx = transforms[rates[0]]; update = updates[rates[0]]
+    initial = tx.init(test_parameters)
+    first, next_state = update(test_gradients, initial, test_parameters)
+    repeated, repeated_state = update(test_gradients, initial, test_parameters)
+    assert all(np.array_equal(np.asarray(a), np.asarray(b)) for a, b in
+               zip(jax.tree.leaves((first,next_state)), jax.tree.leaves((repeated,repeated_state))))
+    assert all(np.isfinite(np.asarray(v)).all() for v in jax.tree.leaves(first))
+    # Isolated bias branch must agree with the explicit AdamW first-step formula.
+    bias = np.asarray(test_parameters['bias']); gradient = np.asarray(test_gradients['bias'])
+    expected_bias_update = -rates[0]*(gradient/(np.abs(gradient)+1e-8)+.01*bias)
+    assert np.allclose(np.asarray(first['bias']), expected_bias_update, rtol=1e-10, atol=1e-12)
+    (output/'compatibility.json').write_text(json.dumps({
+        'official_transform_replay_exact': True, 'bias_branch_matches_adamw_formula': True,
+        'finite_matrix_and_bias_updates': True, 'dtype': 'float64 optimizee; upstream mixed-precision accumulators',
+        'scope': 'Transformation and parameter bridge checks; not a full paper reproduction'}, indent=2)+'\n')
     rows, trials = [], []
     for cfg in plan['cells']:
         p = cfg['params']; seed = cfg['seed']

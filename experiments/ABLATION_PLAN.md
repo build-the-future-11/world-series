@@ -1,5 +1,19 @@
 # Ablation plan (development only)
 
+## September 24 execution update
+
+The CPU development rows below now have executed, versioned evidence in
+`docs/execution/development-v2/analysis.json` and its run index. A-QL1/2 use the
+natural-digit no-budget and 2x/4x-horizon cells; A-QA1/2 use the new causal-memory
+intervention and one-expert control (the legacy memory was write-only);
+A-QW1 uses matched capped brute/quotient/ranking search; A-WC1 uses the shared
+finite pool without uncharged semantic scoring; A-WP1/2 use full-polynomial
+rollouts and all noise levels; A-WF1 now has an actual coefficient counterexample;
+A-FT1 uses matching Laplacian targets; A-CW1 uses trained equal-size readouts;
+A-UL1 uses restricted DSL routing with disjoint semantic task families.
+A-QW2 and A-UL2 remain explicit regression/falsification checks. This does not
+mean the later GPU-scale or full-architecture studies were executed.
+
 All protocols: DRAFT_NOT_AUTHORIZED. Expected interpretations are **not facts**.
 
 | ID | Project | Hypothesis | Independent var | Controls | Metric | Failure interpretation | Class |

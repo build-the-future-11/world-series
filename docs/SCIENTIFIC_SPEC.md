@@ -1,5 +1,12 @@
 # Scientific specification — World Series v0.1
 
+Historical v0.1 scope below. The executed September 24 extensions and repaired
+evaluation contracts are specified in `execution/development-v2/PROTOCOL.md`.
+Natural binary-digit adaptation and bounded graph/stream/search studies are now
+executed; the earlier wording describing all neural transfer as unimplemented
+is superseded for those explicit scopes. Full architecture and independent
+confirmation claims remain open.
+
 Status tags: **DEFINED** / **IMPLEMENTED** / **TESTED** / **VALIDATED** / **SPECULATIVE**
 
 ## Shared contracts (DEFINED, IMPLEMENTED, TESTED)

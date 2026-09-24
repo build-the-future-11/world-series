@@ -1,0 +1,349 @@
+{
+  "version": "natural-digits-sensitivity-v1",
+  "cells": [
+    {
+      "project": "qlearn",
+      "experiment": "natural-digits-sensitivity-v1",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 101,
+      "budget": {
+        "max_steps": 20000,
+        "max_candidate_evals": 100,
+        "max_wall_seconds": 900,
+        "max_artifact_bytes": 100000000
+      },
+      "params": {
+        "study": "natural_digits_v1",
+        "data_root": "data/optdigits",
+        "width": 24,
+        "hidden": 12,
+        "examples": 48,
+        "rates": [
+          0.001,
+          0.01,
+          0.03,
+          0.1,
+          0.3,
+          0.6
+        ],
+        "outer_rates": [
+          0.0001,
+          0.0003,
+          0.001,
+          0.003,
+          0.01,
+          0.03
+        ],
+        "train_steps": 8,
+        "meta_steps": 12,
+        "horizons": [
+          8,
+          16,
+          32
+        ]
+      }
+    },
+    {
+      "project": "qlearn",
+      "experiment": "natural-digits-sensitivity-v1",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 211,
+      "budget": {
+        "max_steps": 20000,
+        "max_candidate_evals": 100,
+        "max_wall_seconds": 900,
+        "max_artifact_bytes": 100000000
+      },
+      "params": {
+        "study": "natural_digits_v1",
+        "data_root": "data/optdigits",
+        "width": 24,
+        "hidden": 12,
+        "examples": 48,
+        "rates": [
+          0.001,
+          0.01,
+          0.03,
+          0.1,
+          0.3,
+          0.6
+        ],
+        "outer_rates": [
+          0.0001,
+          0.0003,
+          0.001,
+          0.003,
+          0.01,
+          0.03
+        ],
+        "train_steps": 8,
+        "meta_steps": 12,
+        "horizons": [
+          8,
+          16,
+          32
+        ]
+      }
+    },
+    {
+      "project": "qlearn",
+      "experiment": "natural-digits-sensitivity-v1",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 307,
+      "budget": {
+        "max_steps": 20000,
+        "max_candidate_evals": 100,
+        "max_wall_seconds": 900,
+        "max_artifact_bytes": 100000000
+      },
+      "params": {
+        "study": "natural_digits_v1",
+        "data_root": "data/optdigits",
+        "width": 24,
+        "hidden": 12,
+        "examples": 48,
+        "rates": [
+          0.001,
+          0.01,
+          0.03,
+          0.1,
+          0.3,
+          0.6
+        ],
+        "outer_rates": [
+          0.0001,
+          0.0003,
+          0.001,
+          0.003,
+          0.01,
+          0.03
+        ],
+        "train_steps": 8,
+        "meta_steps": 12,
+        "horizons": [
+          8,
+          16,
+          32
+        ]
+      }
+    },
+    {
+      "project": "qlearn",
+      "experiment": "natural-digits-sensitivity-v1",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 401,
+      "budget": {
+        "max_steps": 20000,
+        "max_candidate_evals": 100,
+        "max_wall_seconds": 900,
+        "max_artifact_bytes": 100000000
+      },
+      "params": {
+        "study": "natural_digits_v1",
+        "data_root": "data/optdigits",
+        "width": 24,
+        "hidden": 12,
+        "examples": 48,
+        "rates": [
+          0.001,
+          0.01,
+          0.03,
+          0.1,
+          0.3,
+          0.6
+        ],
+        "outer_rates": [
+          0.0001,
+          0.0003,
+          0.001,
+          0.003,
+          0.01,
+          0.03
+        ],
+        "train_steps": 8,
+        "meta_steps": 12,
+        "horizons": [
+          8,
+          16,
+          32
+        ]
+      }
+    },
+    {
+      "project": "qlearn",
+      "experiment": "natural-digits-sensitivity-v1",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 503,
+      "budget": {
+        "max_steps": 20000,
+        "max_candidate_evals": 100,
+        "max_wall_seconds": 900,
+        "max_artifact_bytes": 100000000
+      },
+      "params": {
+        "study": "natural_digits_v1",
+        "data_root": "data/optdigits",
+        "width": 24,
+        "hidden": 12,
+        "examples": 48,
+        "rates": [
+          0.001,
+          0.01,
+          0.03,
+          0.1,
+          0.3,
+          0.6
+        ],
+        "outer_rates": [
+          0.0001,
+          0.0003,
+          0.001,
+          0.003,
+          0.01,
+          0.03
+        ],
+        "train_steps": 8,
+        "meta_steps": 12,
+        "horizons": [
+          8,
+          16,
+          32
+        ]
+      }
+    },
+    {
+      "project": "qlearn",
+      "experiment": "natural-digits-sensitivity-v1",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 601,
+      "budget": {
+        "max_steps": 20000,
+        "max_candidate_evals": 100,
+        "max_wall_seconds": 900,
+        "max_artifact_bytes": 100000000
+      },
+      "params": {
+        "study": "natural_digits_v1",
+        "data_root": "data/optdigits",
+        "width": 24,
+        "hidden": 12,
+        "examples": 48,
+        "rates": [
+          0.001,
+          0.01,
+          0.03,
+          0.1,
+          0.3,
+          0.6
+        ],
+        "outer_rates": [
+          0.0001,
+          0.0003,
+          0.001,
+          0.003,
+          0.01,
+          0.03
+        ],
+        "train_steps": 8,
+        "meta_steps": 12,
+        "horizons": [
+          8,
+          16,
+          32
+        ]
+      }
+    },
+    {
+      "project": "qlearn",
+      "experiment": "natural-digits-sensitivity-v1",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 701,
+      "budget": {
+        "max_steps": 20000,
+        "max_candidate_evals": 100,
+        "max_wall_seconds": 900,
+        "max_artifact_bytes": 100000000
+      },
+      "params": {
+        "study": "natural_digits_v1",
+        "data_root": "data/optdigits",
+        "width": 24,
+        "hidden": 12,
+        "examples": 48,
+        "rates": [
+          0.001,
+          0.01,
+          0.03,
+          0.1,
+          0.3,
+          0.6
+        ],
+        "outer_rates": [
+          0.0001,
+          0.0003,
+          0.001,
+          0.003,
+          0.01,
+          0.03
+        ],
+        "train_steps": 8,
+        "meta_steps": 12,
+        "horizons": [
+          8,
+          16,
+          32
+        ]
+      }
+    },
+    {
+      "project": "qlearn",
+      "experiment": "natural-digits-sensitivity-v1",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 809,
+      "budget": {
+        "max_steps": 20000,
+        "max_candidate_evals": 100,
+        "max_wall_seconds": 900,
+        "max_artifact_bytes": 100000000
+      },
+      "params": {
+        "study": "natural_digits_v1",
+        "data_root": "data/optdigits",
+        "width": 24,
+        "hidden": 12,
+        "examples": 48,
+        "rates": [
+          0.001,
+          0.01,
+          0.03,
+          0.1,
+          0.3,
+          0.6
+        ],
+        "outer_rates": [
+          0.0001,
+          0.0003,
+          0.001,
+          0.003,
+          0.01,
+          0.03
+        ],
+        "train_steps": 8,
+        "meta_steps": 12,
+        "horizons": [
+          8,
+          16,
+          32
+        ]
+      }
+    }
+  ]
+}

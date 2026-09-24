@@ -65,7 +65,7 @@ are distinct from an operating-system enforced memory cap.
   support baseline is oracle-assisted. This is oscillator identification, not
   general PDE discovery.
 - CWLNN: 12 training path graphs at size 24, eight independent evaluation graphs
-  at sizes 24/48/96. Target is four-hop diffusion plus a graph mean, independent
+  at sizes 24/48/96. Target is four residual neighbor-mean steps plus a graph mean, independent
   of the candidate hierarchy. Flat, hierarchy, routed, and limited-attention
   features each receive equal-sized ridge readouts. Report graph-level error
   and feature time. These are fixed features, not trained universal backbones.
@@ -92,3 +92,42 @@ External pretrained comparator evaluation, discrete MALIS actions, original
 full-meta-training replay, independent verification and confirmatory protocol
 review have separate receipts and scope. No local artifact may assert that an
 external evaluator has been sealed or that independent replication occurred.
+
+## Discrete action study
+
+The separate discrete-malis-v1 plan uses the same eight seed IDs, constructed
+linear/sine training tasks and tanh evaluation tasks, width-eight optimizees and
+32 attempted actions per evaluation episode. Five update actions (SGD, momentum,
+AdamW, half-support replay and Huber loss) train a four-phase support-progress
+ranking. Static optimizers, random selection, learned phase selection and learned
+selection with support-triggered rollback are evaluated. Checkpoint/restore
+retains all optimizer states, parameters, replay IDs, controller state and random
+states; spent action/gradient counters are never rolled back. The engine does
+not use held query outcomes for decisions. This is a narrow learned scheduling
+prototype and action contract, not implementation of every proposed MALIS feature.
+
+## External comparator qualification
+
+Official Celo2 source and weights are pinned in CELO2_PROVENANCE.json. Source
+hash equality between the installed package and checkout is audited. Matrix and
+bias updates are checked for finite values and deterministic replay; the bias
+branch is checked against its first-step AdamW formula. Four rates are selected
+on the same local selection task. Its pretraining compute is unmatched, and
+possible overlap with NIST-derived pretraining sources has not been excluded.
+No pristine out-of-distribution or equal-wall-time claim is made for Celo2.
+
+## Selection-boundary sensitivity, separately declared before execution
+
+Inspection of the completed primary selection receipts found that every learned
+policy selected the largest outer rate in the four-rate grid; SGD and momentum
+also selected their largest rate. Therefore a separate development sensitivity
+plan expands all internal methods to six trials and increases meta-training
+from four to twelve outer steps. Baseline rates become
+0.001/0.01/0.03/0.1/0.3/0.6, and outer rates become
+0.0001/0.0003/0.001/0.003/0.01/0.03. The same eight seeds, tasks, examples and
+horizons are retained. These already-exposed tasks remain development data.
+The original primary result is not replaced; this follow-up tests selection-grid
+and training-budget sensitivity. Celo2's original four-rate result is not a
+matched-six-trial comparison and is excluded from the follow-up's matched table.
+
+For CWLNN the target propagation is explicitly (I + P)^4 X plus half the graph mean of the first feature, where P is the neighbor-mean operator. It is not normalized stochastic diffusion.

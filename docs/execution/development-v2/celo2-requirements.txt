@@ -1,6 +1,6 @@
 absl-py==2.5.0
 aiofiles==25.1.0
-celo2-optax @ file:///Volumes/PRO-BLADE/World-Series/world-series/external/celo2
+celo2-optax @ git+https://github.com/amoudgl/celo2.git@bb7fd561872f427ce47f97bc97992de009d5b313
 certifi==2026.7.22
 dm-haiku==0.0.17
 etils==1.14.0

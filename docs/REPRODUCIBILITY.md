@@ -10,6 +10,17 @@ pip install -e ".[dev]"
 ```
 
 ## Canonical commands
+
+Current matrices, hash-verified cell resume, analysis and audit commands are in
+the root README and `execution/development-v2/PROTOCOL.md`. Use the numerical
+candidate commit recorded by each campaign, not an assumed current checkout.
+Data and external model hashes are separately recorded; external model
+dependencies use an isolated environment. Same-host replay is not independent
+replication.
+
+Historical commands below are retained for context. The old `falsify` command
+writes the historical results filename; do not use it to overwrite preserved
+evidence. Current validation writes a separately identified receipt.
 ```bash
 ./scripts/smoke.sh                 # doctor + pytest + smoke-all
 ./scripts/falsify.sh 0             # cheap falsification suite

@@ -1,105 +1,69 @@
-# Claims ledger
+# Current claims ledger
 
-Every reported smoke metric links to a raw run. None are confirmation claims.
+Every claim is bounded by PROTOCOL.md and the raw run index. Confirmation remains DRAFT_NOT_AUTHORIZED.
 
 ## qlearn
+Status: BENCHMARKED / INCONCLUSIVE
+Eight-seed natural-digit study: 288 tuning trials, 432 trajectories; official pretrained Celo2 adds 48 trajectories. Full mean AUC 13.2809 vs SGD 11.9562, AdamW 6.4145, Celo2 7.7454 at 32 steps. No general optimizer advantage established. Discrete action prototype evaluated separately.
 
-- Claim scope: smoke plumbing / reference behavior only
-
-- Scientific outcome: `NOT_RUN`
-
-- Evidence: `runs/20260922T193235_d0581ac8/manifest.json`, `runs/20260922T193235_d0581ac8/metrics.json`
-
-- Protocol: `DRAFT_NOT_AUTHORIZED`
+Executed evidence: `runs/20260924T101150_3293b6ce/metrics.json`, `runs/20260924T101337_3dcca138/metrics.json`, `runs/20260924T101408_c64e5cf8/metrics.json`, `runs/20260924T101424_7c1bb9dc/metrics.json`, `runs/20260924T101438_973894fc/metrics.json`, `runs/20260924T101451_a3afb019/metrics.json`, `runs/20260924T101502_a111c875/metrics.json`, `runs/20260924T101513_5c3f6c57/metrics.json`, `runs/20260924T101553_ac358792/metrics.json`, `runs/20260924T101558_f80e0fd7/metrics.json`, `runs/20260924T101601_7a194abc/metrics.json`, `runs/20260924T101604_c919a6e4/metrics.json`, `runs/20260924T101607_715f1f5c/metrics.json`, `runs/20260924T101610_e30b51a5/metrics.json`, `runs/20260924T101612_9f607bbf/metrics.json`, `runs/20260924T101615_67b9ff70/metrics.json`
+Full denominators and method/condition tables: `docs/execution/development-v2/analysis.json`.
 
 ## qapen
+Status: BENCHMARKED / INCONCLUSIVE
+New causal context-memory intervention with all/rare/ordinary/return metrics and matched prediction calls. Tradeoffs remain: single-expert memory improves overall mean; fixed ensemble improves rare-regime mean. Legacy candidate memory is write-only.
 
-- Claim scope: smoke plumbing / reference behavior only
-
-- Scientific outcome: `NOT_RUN`
-
-- Evidence: `runs/20260922T193237_0b6ee47e/manifest.json`, `runs/20260922T193237_0b6ee47e/metrics.json`
-
-- Protocol: `DRAFT_NOT_AUTHORIZED`
+Executed evidence: `runs/20260924T100958_fbdd5589/metrics.json`, `runs/20260924T101000_c43111d0/metrics.json`, `runs/20260924T101002_266faeea/metrics.json`, `runs/20260924T101002_a2a2fce6/metrics.json`, `runs/20260924T101003_b15fff76/metrics.json`, `runs/20260924T101004_b7fb230d/metrics.json`, `runs/20260924T101005_23d6fd5d/metrics.json`, `runs/20260924T101006_99d78cd4/metrics.json`
+Full denominators and method/condition tables: `docs/execution/development-v2/analysis.json`.
 
 ## qwipii
+Status: BENCHMARKED / INCONCLUSIVE
+Canonical keys retain concrete replayable paths. Exhaustive 3/4-token regression tests pass. No quotient savings on tested distinct fixed-goal puzzles; ranking-only control performs better under the limited cap.
 
-- Claim scope: smoke plumbing / reference behavior only
-
-- Scientific outcome: `NOT_RUN`
-
-- Evidence: `runs/20260922T193237_50a3c40e/manifest.json`, `runs/20260922T193237_50a3c40e/metrics.json`
-
-- Protocol: `DRAFT_NOT_AUTHORIZED`
+Executed evidence: `runs/20260924T101006_fe0803e7/metrics.json`, `runs/20260924T101008_9fb915d2/metrics.json`, `runs/20260924T101009_e9b7640a/metrics.json`, `runs/20260924T101010_fb71d64f/metrics.json`, `runs/20260924T101011_f164f7e2/metrics.json`, `runs/20260924T101013_5b560050/metrics.json`, `runs/20260924T101014_77e06898/metrics.json`, `runs/20260924T101015_848b57a0/metrics.json`
+Full denominators and method/condition tables: `docs/execution/development-v2/analysis.json`.
 
 ## wcode
+Status: BENCHMARKED / INCONCLUSIVE
+Eight-seed finite-DSL matrix with honest candidate accounting. Hierarchical, flat and token heuristics tie at the 24-candidate cap. Encoders are untrained structural heuristics.
 
-- Claim scope: smoke plumbing / reference behavior only
-
-- Scientific outcome: `NOT_RUN`
-
-- Evidence: `runs/20260922T193237_451be829/manifest.json`, `runs/20260922T193237_451be829/metrics.json`
-
-- Protocol: `DRAFT_NOT_AUTHORIZED`
+Executed evidence: `runs/20260924T101017_8bfd1d89/metrics.json`, `runs/20260924T101017_67d8da7c/metrics.json`, `runs/20260924T101018_fae6dd67/metrics.json`, `runs/20260924T101018_bb709535/metrics.json`, `runs/20260924T101019_91f19f67/metrics.json`, `runs/20260924T101019_91b5840d/metrics.json`, `runs/20260924T101020_86183074/metrics.json`, `runs/20260924T101021_fb02dd59/metrics.json`
+Full denominators and method/condition tables: `docs/execution/development-v2/analysis.json`.
 
 ## wfim
+Status: BENCHMARKED / INCONCLUSIVE
+Finite support/degree/cost matrix and an actual top-k associativity counterexample. Truncation/transport identities do not establish learned downstream benefit or new algebra.
 
-- Claim scope: smoke plumbing / reference behavior only
-
-- Scientific outcome: `NOT_RUN`
-
-- Evidence: `runs/20260922T193237_b21be5a6/manifest.json`, `runs/20260922T193237_b21be5a6/metrics.json`
-
-- Protocol: `DRAFT_NOT_AUTHORIZED`
+Executed evidence: `runs/20260924T101021_eeafc090/metrics.json`, `runs/20260924T101022_de1b36be/metrics.json`, `runs/20260924T101022_e644734a/metrics.json`, `runs/20260924T101022_d00724c2/metrics.json`, `runs/20260924T101022_95423da5/metrics.json`, `runs/20260924T101023_04afa7a3/metrics.json`, `runs/20260924T101023_fe23e07d/metrics.json`, `runs/20260924T101024_53e0cd8e/metrics.json`
+Full denominators and method/condition tables: `docs/execution/development-v2/analysis.json`.
 
 ## wft
+Status: BENCHMARKED / INCONCLUSIVE
+Weighted-path noise/sample/size matrix uses matched Laplacian targets. Unit-weight and true-graph oracle baselines are distinguished. Refit at each size is not transfer.
 
-- Claim scope: smoke plumbing / reference behavior only
-
-- Scientific outcome: `NOT_RUN`
-
-- Evidence: `runs/20260922T193237_2fa30d6d/manifest.json`, `runs/20260922T193237_2fa30d6d/metrics.json`
-
-- Protocol: `DRAFT_NOT_AUTHORIZED`
+Executed evidence: `runs/20260924T101024_663f5d4e/metrics.json`, `runs/20260924T101024_367b304a/metrics.json`, `runs/20260924T101025_f0b04e16/metrics.json`, `runs/20260924T101025_4d3306d0/metrics.json`, `runs/20260924T101025_936a73a1/metrics.json`, `runs/20260924T101026_ac7d359e/metrics.json`, `runs/20260924T101026_f4ad9fed/metrics.json`, `runs/20260924T101026_58169e7e/metrics.json`
+Full denominators and method/condition tables: `docs/execution/development-v2/analysis.json`.
 
 ## wpinn
+Status: BENCHMARKED / INCONCLUSIVE
+Three laws and three noise levels; independent held initial conditions. All polynomial terms evaluated with bounded integration. Seventeen failed rollouts remain in denominators; affected means are absent.
 
-- Claim scope: smoke plumbing / reference behavior only
-
-- Scientific outcome: `NOT_RUN`
-
-- Evidence: `runs/20260922T193237_b1aa345a/manifest.json`, `runs/20260922T193237_b1aa345a/metrics.json`
-
-- Protocol: `DRAFT_NOT_AUTHORIZED`
+Executed evidence: `runs/20260924T101027_1846bd37/metrics.json`, `runs/20260924T101028_9a1baa31/metrics.json`, `runs/20260924T101029_b9086c9a/metrics.json`, `runs/20260924T101030_0bf9211f/metrics.json`, `runs/20260924T101033_ee8a9248/metrics.json`, `runs/20260924T101039_d2868364/metrics.json`, `runs/20260924T101041_eaf6492c/metrics.json`, `runs/20260924T101042_90d9b14a/metrics.json`
+Full denominators and method/condition tables: `docs/execution/development-v2/analysis.json`.
 
 ## cwlnn
+Status: BENCHMARKED / INCONCLUSIVE
+Matched-size trained readouts on fixed sparse representations; graph sizes 24/48/96. Aggressive routing hurts the declared diffusion task. No universal-backbone evidence.
 
-- Claim scope: smoke plumbing / reference behavior only
-
-- Scientific outcome: `NOT_RUN`
-
-- Evidence: `runs/20260922T193237_bd01a42f/manifest.json`, `runs/20260922T193237_bd01a42f/metrics.json`
-
-- Protocol: `DRAFT_NOT_AUTHORIZED`
+Executed evidence: `runs/20260924T101046_497744e7/metrics.json`, `runs/20260924T101047_ae3add90/metrics.json`, `runs/20260924T101048_32d0cd9d/metrics.json`, `runs/20260924T101049_0971ecfa/metrics.json`, `runs/20260924T101050_8392a88e/metrics.json`, `runs/20260924T101050_d959f8e2/metrics.json`, `runs/20260924T101051_0af6f6f1/metrics.json`, `runs/20260924T101052_3fa5d3c3/metrics.json`
+Full denominators and method/condition tables: `docs/execution/development-v2/analysis.json`.
 
 ## ultron
+Status: BENCHMARKED / INCONCLUSIVE
+Discriminating finite-DSL routing with identical tools/caps and disjoint semantic training/evaluation families. At cap 24: learned 81.94%, cheapest 66.67%, random 58.33%, static 44.44%. Not a general agent or sealed external evaluation.
 
-- Claim scope: smoke plumbing / reference behavior only
+Executed evidence: `runs/20260924T101052_9e5e6c01/metrics.json`, `runs/20260924T101054_a4980064/metrics.json`, `runs/20260924T101055_61127588/metrics.json`, `runs/20260924T101056_8fcc4055/metrics.json`, `runs/20260924T101057_ab03fbed/metrics.json`, `runs/20260924T101057_f5a877a3/metrics.json`, `runs/20260924T101058_22da8727/metrics.json`, `runs/20260924T101059_0f3f73ea/metrics.json`
+Full denominators and method/condition tables: `docs/execution/development-v2/analysis.json`.
 
-- Scientific outcome: `NOT_RUN`
-
-- Evidence: `runs/20260922T193238_99ff95c8/manifest.json`, `runs/20260922T193238_99ff95c8/metrics.json`
-
-- Protocol: `DRAFT_NOT_AUTHORIZED`
-
-
-# Deep-pass claim links
-- `qlearn` dev/smoke metrics → `runs/20260922T194719_909729af/metrics.json` (outcome INCONCLUSIVE / NOT confirmation)
-- `qapen` dev/smoke metrics → `runs/20260922T194720_911cfd32/metrics.json` (outcome INCONCLUSIVE / NOT confirmation)
-- `qwipii` dev/smoke metrics → `runs/20260922T194720_8a91978e/metrics.json` (outcome INCONCLUSIVE / NOT confirmation)
-- `wcode` dev/smoke metrics → `runs/20260922T194720_5fb7cfa4/metrics.json` (outcome INCONCLUSIVE / NOT confirmation)
-- `wfim` dev/smoke metrics → `runs/20260922T194720_030e6d83/metrics.json` (outcome INCONCLUSIVE / NOT confirmation)
-- `wft` dev/smoke metrics → `runs/20260922T194721_9c21a2c1/metrics.json` (outcome INCONCLUSIVE / NOT confirmation)
-- `wpinn` dev/smoke metrics → `runs/20260922T194721_c4236828/metrics.json` (outcome INCONCLUSIVE / NOT confirmation)
-- `cwlnn` dev/smoke metrics → `runs/20260922T194721_b1003106/metrics.json` (outcome INCONCLUSIVE / NOT confirmation)
-- `ultron` dev/smoke metrics → `runs/20260922T194721_654e7ffd/metrics.json` (outcome INCONCLUSIVE / NOT confirmation)
+Historical negative evidence remains in `experiments/falsification_results.json` and original runs. Later bounded interventions do not retroactively turn those negatives into wins.
+No universal-intelligence, novelty, full-architecture, sealed-evaluator or publication-readiness claim is supported.
