@@ -1,0 +1,33 @@
+{
+  "run_id": "20260922T194626_ba782657",
+  "status": "SUCCEEDED",
+  "metrics": {
+    "status": "SUCCEEDED",
+    "distributivity_ok": true,
+    "truncated_associativity_ok": true,
+    "degree_projection_consistency": true,
+    "topk_need_not_preserve_associativity": true,
+    "topk_counterexample_triggered": true,
+    "fixed_product_coeffs": {
+      "(1, 1, 2)": 1.0,
+      "(2, 1, 2)": 1.0
+    },
+    "transported_product_coeffs": {
+      "(1, 1, 2)": 1.0,
+      "(2, 1, 2)": 1.0000000000000002
+    },
+    "bytes_fixed": 48,
+    "bytes_transport_params": 16,
+    "norm_a": 1.0,
+    "cost": {
+      "steps_used": 0.0,
+      "simulator_calls": 0.0,
+      "candidate_evals": 0.0,
+      "artifact_bytes": 0.0,
+      "wall_seconds": 0.00010945900430670008,
+      "remaining_wall_seconds": 119.99988912499975
+    },
+    "research_outcome": "INCONCLUSIVE",
+    "note": "Invertible transported multiplication is isomorphic to the reference algebra; compare efficiency not novelty of numbers."
+  }
+}

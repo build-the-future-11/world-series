@@ -1,0 +1,329 @@
+{
+  "run_id": "20260922T193235_d0581ac8",
+  "status": "SUCCEEDED",
+  "metrics": {
+    "status": "SUCCEEDED",
+    "primary_metric": "final_query_loss_mean",
+    "candidate_final_loss_mean": 1.439450176022373,
+    "sgd_final_loss_mean": 0.1973349926967673,
+    "momentum_final_loss_mean": 1.3746774637743466,
+    "meta_train_losses": [
+      2763.2799377054685,
+      112.94460486248111,
+      6.878330237044771
+    ],
+    "n_tasks": 2,
+    "steps": 8,
+    "cost": {
+      "steps_used": 4.0,
+      "simulator_calls": 0.0,
+      "candidate_evals": 0.0,
+      "artifact_bytes": 0.0,
+      "wall_seconds": 1.4630648329984979,
+      "remaining_wall_seconds": 58.53692987500108
+    },
+    "research_outcome": "NOT_RUN",
+    "note": "Development smoke/compare only; confirmation DRAFT_NOT_AUTHORIZED."
+  }
+}
+{
+  "run_id": "20260922T193237_0b6ee47e",
+  "status": "SUCCEEDED",
+  "metrics": {
+    "status": "SUCCEEDED",
+    "mean_nll": 1.4310106083234226,
+    "n_experts": 7,
+    "mixture_check_mean": 1.4,
+    "mixture_check_var": 1.49,
+    "cost": {
+      "steps_used": 0.0,
+      "simulator_calls": 120.0,
+      "candidate_evals": 0.0,
+      "artifact_bytes": 0.0,
+      "wall_seconds": 0.003445916998316534,
+      "remaining_wall_seconds": 59.996548333001556
+    },
+    "research_outcome": "NOT_RUN",
+    "lineage_note": "Finite expandable experts; not infinite computation or Bayesian posterior."
+  }
+}
+{
+  "run_id": "20260922T193237_50a3c40e",
+  "status": "SUCCEEDED",
+  "metrics": {
+    "status": "SUCCEEDED",
+    "brute_status": "solved",
+    "quotient_status": "solved",
+    "brute_expansions": 4,
+    "quotient_expansions": 4,
+    "lifted_ok": true,
+    "cross_ratio_preserved": true,
+    "false_automorphism_rejected": true,
+    "cost": {
+      "steps_used": 0.0,
+      "simulator_calls": 0.0,
+      "candidate_evals": 8.0,
+      "artifact_bytes": 0.0,
+      "wall_seconds": 0.002510999998776242,
+      "remaining_wall_seconds": 59.99748216699663
+    },
+    "research_outcome": "NOT_RUN"
+  }
+}
+{
+  "run_id": "20260922T193237_451be829",
+  "status": "SUCCEEDED",
+  "metrics": {
+    "status": "SUCCEEDED",
+    "solved": true,
+    "verifier": {
+      "ok": true,
+      "scope": "EXHAUSTIVE_FINITE_DOMAIN",
+      "domain_size": 11
+    },
+    "graph_nodes": 3,
+    "ast_hash": "bee1aa1c9e0a4e89b9b001bd42858c79458650d816ff68d9a682705447a99dbd",
+    "target_hash": "4037c122e08c40e8f93d7876bdee20d74e36d06e6b8b4d592a479435a3450885",
+    "cost": {
+      "steps_used": 0.0,
+      "simulator_calls": 0.0,
+      "candidate_evals": 26.0,
+      "artifact_bytes": 0.0,
+      "wall_seconds": 0.0003439579959376715,
+      "remaining_wall_seconds": 59.99965258400334
+    },
+    "research_outcome": "NOT_RUN"
+  }
+}
+{
+  "run_id": "20260922T193237_b21be5a6",
+  "status": "SUCCEEDED",
+  "metrics": {
+    "status": "SUCCEEDED",
+    "distributivity_ok": true,
+    "truncated_associativity_ok": true,
+    "degree_projection_consistency": true,
+    "topk_need_not_preserve_associativity": true,
+    "topk_counterexample_triggered": true,
+    "transported_product_coeffs": {
+      "(1, 2)": 1.0
+    },
+    "norm_a": 1.0,
+    "cost": {
+      "steps_used": 0.0,
+      "simulator_calls": 0.0,
+      "candidate_evals": 0.0,
+      "artifact_bytes": 0.0,
+      "wall_seconds": 0.00023708399385213852,
+      "remaining_wall_seconds": 59.999759208003525
+    },
+    "research_outcome": "NOT_RUN",
+    "note": "Invertible transported multiplication is isomorphic to the reference algebra."
+  }
+}
+{
+  "run_id": "20260922T193237_2fa30d6d",
+  "status": "SUCCEEDED",
+  "metrics": {
+    "status": "SUCCEEDED",
+    "psd": true,
+    "reconstruction_mse": 2.1281525885478956e-31,
+    "energy_preserve": 8.881784197001252e-16,
+    "perm_psd": true,
+    "fixed_nnz": 14,
+    "unconstrained_fro": 0.015488262767988792,
+    "constrained_fro": 0.011930238773825097,
+    "cost": {
+      "steps_used": 0.0,
+      "simulator_calls": 0.0,
+      "candidate_evals": 0.0,
+      "artifact_bytes": 0.0,
+      "wall_seconds": 0.001635542001167778,
+      "remaining_wall_seconds": 59.99836137500097
+    },
+    "research_outcome": "NOT_RUN",
+    "note": "Dense eigendecomposition is not FFT-speed computation."
+  }
+}
+{
+  "run_id": "20260922T193237_b1aa345a",
+  "status": "SUCCEEDED",
+  "metrics": {
+    "status": "SUCCEEDED",
+    "primary_metric": "rollout_mse",
+    "weak_coef": {
+      "q": -1.9945039803149913,
+      "v": -0.28920495966141435,
+      "q2": 0.0,
+      "qv": 0.03988291958318261,
+      "v2": 0.02969314244930119
+    },
+    "weak_residual_norm": 0.012548964106398861,
+    "baseline_data_only": {
+      "q": -1.9945039803149913,
+      "v": -0.28920495966141435,
+      "q2": 0.0,
+      "qv": 0.03988291958318261,
+      "v2": 0.02969314244930119
+    },
+    "baseline_known_support": {
+      "q": -1.989350073973495,
+      "v": -0.28894025473354695,
+      "q2": 0.0,
+      "qv": 0.0,
+      "v2": 0.0
+    },
+    "rollout_mse_weak": 0.00010187237034899361,
+    "conservation_undamped_ok": true,
+    "wrong_conservation_on_damped_ok": false,
+    "dissipation_damped": {
+      "ok": false,
+      "frac_nonincreasing": 0.7
+    },
+    "cost": {
+      "steps_used": 1.0,
+      "simulator_calls": 0.0,
+      "candidate_evals": 0.0,
+      "artifact_bytes": 0.0,
+      "wall_seconds": 0.005902917000639718,
+      "remaining_wall_seconds": 59.99409437500435
+    },
+    "research_outcome": "NOT_RUN"
+  }
+}
+{
+  "run_id": "20260922T193237_bd01a42f",
+  "status": "SUCCEEDED",
+  "metrics": {
+    "status": "SUCCEEDED",
+    "sparse_dense_max_abs_diff": 0.0,
+    "out_shape": [
+      16,
+      4
+    ],
+    "routing": {
+      "actual": 4,
+      "dropped": 4
+    },
+    "cost": {
+      "steps_used": 0.0,
+      "simulator_calls": 0.0,
+      "candidate_evals": 0.0,
+      "artifact_bytes": 0.0,
+      "wall_seconds": 0.002373666000494268,
+      "remaining_wall_seconds": 59.997620458998426
+    },
+    "research_outcome": "NOT_RUN"
+  }
+}
+{
+  "run_id": "20260922T193238_99ff95c8",
+  "status": "SUCCEEDED",
+  "metrics": {
+    "status": "SUCCEEDED",
+    "policy_choices": {
+      "static": "solve_invariant_problem",
+      "cheapest": "solve_invariant_problem",
+      "random": "solve_invariant_problem"
+    },
+    "selected_op": "solve_invariant_problem",
+    "available": [
+      "adapt_learner",
+      "predict_world",
+      "solve_invariant_problem",
+      "verify_certificate",
+      "synthesize_dsl_program",
+      "algebra_multiply",
+      "spectral_transform",
+      "identify_dynamical_law",
+      "encode_multiscale_world",
+      "orchestrate_episode"
+    ],
+    "receipt": {
+      "status": "SUCCEEDED",
+      "diagnostics": {
+        "path": [
+          "swap2"
+        ],
+        "expansions": 6,
+        "status": "solved",
+        "lifted_ok": true
+      },
+      "cost": {
+        "steps_used": 0.0,
+        "simulator_calls": 0.0,
+        "candidate_evals": 0.0,
+        "artifact_bytes": 0.0,
+        "wall_seconds": 0.0009491660021012649,
+        "remaining_wall_seconds": 59.999050124999485
+      }
+    },
+    "verifier": {
+      "ok": true,
+      "tag": "PLUMBING_ONLY"
+    },
+    "evidence_nodes": [
+      "ev_0"
+    ],
+    "research_outcome": "NOT_RUN",
+    "note": "Local development verifier is PLUMBING_ONLY; not sealed external evaluation."
+  }
+}
+{
+  "smoke_all": [
+    {
+      "project": "qlearn",
+      "status": "SUCCEEDED",
+      "run_id": "20260922T193235_d0581ac8",
+      "exit_code": 0
+    },
+    {
+      "project": "qapen",
+      "status": "SUCCEEDED",
+      "run_id": "20260922T193237_0b6ee47e",
+      "exit_code": 0
+    },
+    {
+      "project": "qwipii",
+      "status": "SUCCEEDED",
+      "run_id": "20260922T193237_50a3c40e",
+      "exit_code": 0
+    },
+    {
+      "project": "wcode",
+      "status": "SUCCEEDED",
+      "run_id": "20260922T193237_451be829",
+      "exit_code": 0
+    },
+    {
+      "project": "wfim",
+      "status": "SUCCEEDED",
+      "run_id": "20260922T193237_b21be5a6",
+      "exit_code": 0
+    },
+    {
+      "project": "wft",
+      "status": "SUCCEEDED",
+      "run_id": "20260922T193237_2fa30d6d",
+      "exit_code": 0
+    },
+    {
+      "project": "wpinn",
+      "status": "SUCCEEDED",
+      "run_id": "20260922T193237_b1aa345a",
+      "exit_code": 0
+    },
+    {
+      "project": "cwlnn",
+      "status": "SUCCEEDED",
+      "run_id": "20260922T193237_bd01a42f",
+      "exit_code": 0
+    },
+    {
+      "project": "ultron",
+      "status": "SUCCEEDED",
+      "run_id": "20260922T193238_99ff95c8",
+      "exit_code": 0
+    }
+  ]
+}

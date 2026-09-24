@@ -1,0 +1,60 @@
+{
+  "run_id": "20260922T220223_c80378c6",
+  "status": "SUCCEEDED",
+  "metrics": {
+    "status": "SUCCEEDED",
+    "primary_metric": "auc_normalized_loss_vs_step_held",
+    "primary_value": 1.7430044120747248,
+    "best_baseline_final": -0.38677358738270184,
+    "candidate_vs_best_baseline_final_delta": 0.06627671375074168,
+    "held_short": {
+      "candidate": -0.4530503011334435,
+      "sgd": -0.38677358738270184,
+      "momentum": 0.7943777249371705,
+      "adamw": 1.1633815500363258,
+      "auc_candidate": 1.7430044120747248,
+      "auc_adamw": 3.056872441495814
+    },
+    "held_long": {
+      "candidate": -0.5803647813130551,
+      "sgd": -0.5642192524119135,
+      "momentum": 0.30552070096696227,
+      "adamw": -0.3845349132769542,
+      "auc_candidate": 0.9103355080442147,
+      "auc_adamw": 3.5183792563060288
+    },
+    "tuned_etas": {
+      "sgd": 0.1,
+      "momentum": 0.2,
+      "adamw": 0.2
+    },
+    "tuning_evals_per_method": 4,
+    "meta_train_losses": [
+      3.3046642484056115,
+      -0.3189850648668872,
+      -1.497843333178207,
+      -1.906228783240423,
+      -1.9568641899876908,
+      -2.004190782204155,
+      -2.0495268720734585,
+      -2.1088277224777108
+    ],
+    "n_train": 3,
+    "n_held": 3,
+    "steps": 12,
+    "long_steps": 24,
+    "auc_delta_vs_best_fixed_finalproxy": -2.129777999457427,
+    "cost": {
+      "steps_used": 15.0,
+      "simulator_calls": 0.0,
+      "candidate_evals": 0.0,
+      "artifact_bytes": 0.0,
+      "wall_seconds": 1.080970957991667,
+      "remaining_wall_seconds": 118.9190282500058
+    },
+    "meta_training_separated": true,
+    "research_outcome": "INCONCLUSIVE",
+    "research_outcome_note": "Development paired comparison only; protocol DRAFT_NOT_AUTHORIZED; sample too small for confirmation.",
+    "query_labels_in_controller_features": false
+  }
+}

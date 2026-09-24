@@ -1,0 +1,17 @@
+project: qwipii
+experiment: smoke
+seed: 0
+device: cpu
+split: smoke
+budget:
+  max_steps: 32
+  max_wall_seconds: 60
+  max_simulator_calls: 10000
+  max_candidate_evals: 10000
+  max_artifact_bytes: 50000000
+  max_planned_memory_bytes: 512000000
+  max_graph_nodes: 128
+  max_algebra_degree: 6
+  max_dsl_depth: 6
+  max_experts: 8
+params: {}

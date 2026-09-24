@@ -1,0 +1,28 @@
+{
+  "run_id": "20260922T194628_c98c5e9e",
+  "status": "SUCCEEDED",
+  "metrics": {
+    "status": "SUCCEEDED",
+    "primary_metric": "held_vector_mse",
+    "psd": true,
+    "reconstruction_mse": 2.464548352167533e-31,
+    "energy_preserve": 1.7763568394002505e-15,
+    "operator_errors": {
+      "fixed": 8.245450068509223,
+      "unconstrained": 5.479138016530808e-06,
+      "constrained": 8.240944812121555
+    },
+    "projector_sign_invariance_ok": true,
+    "held_size_psd": true,
+    "cost": {
+      "steps_used": 0.0,
+      "simulator_calls": 0.0,
+      "candidate_evals": 0.0,
+      "artifact_bytes": 0.0,
+      "wall_seconds": 0.025476333001279272,
+      "remaining_wall_seconds": 119.97452116700151
+    },
+    "research_outcome": "INCONCLUSIVE",
+    "note": "Dense eigendecomposition is not FFT-speed computation."
+  }
+}

@@ -1,0 +1,17 @@
+project: wpinn
+experiment: dev_multiseed
+seed: 1
+device: cpu
+split: dev
+budget:
+  max_steps: 64
+  max_wall_seconds: 120
+  max_simulator_calls: 10000
+  max_candidate_evals: 10000
+  max_artifact_bytes: 50000000
+  max_planned_memory_bytes: 512000000
+  max_graph_nodes: 128
+  max_algebra_degree: 6
+  max_dsl_depth: 6
+  max_experts: 8
+params: {}

@@ -1,0 +1,68 @@
+{
+  "schema_version": "0.1.0",
+  "comparisons": [
+    {
+      "protocol_id": "WS-QLEARN-20260922-v0.1-dev",
+      "project": "qlearn",
+      "status": "DRAFT_NOT_AUTHORIZED",
+      "primary_metric": "dev_primary",
+      "notes": "Not frozen for confirmation."
+    },
+    {
+      "protocol_id": "WS-QAPEN-20260922-v0.1-dev",
+      "project": "qapen",
+      "status": "DRAFT_NOT_AUTHORIZED",
+      "primary_metric": "dev_primary",
+      "notes": "Not frozen for confirmation."
+    },
+    {
+      "protocol_id": "WS-QWIPII-20260922-v0.1-dev",
+      "project": "qwipii",
+      "status": "DRAFT_NOT_AUTHORIZED",
+      "primary_metric": "dev_primary",
+      "notes": "Not frozen for confirmation."
+    },
+    {
+      "protocol_id": "WS-WCODE-20260922-v0.1-dev",
+      "project": "wcode",
+      "status": "DRAFT_NOT_AUTHORIZED",
+      "primary_metric": "dev_primary",
+      "notes": "Not frozen for confirmation."
+    },
+    {
+      "protocol_id": "WS-WFIM-20260922-v0.1-dev",
+      "project": "wfim",
+      "status": "DRAFT_NOT_AUTHORIZED",
+      "primary_metric": "dev_primary",
+      "notes": "Not frozen for confirmation."
+    },
+    {
+      "protocol_id": "WS-WFT-20260922-v0.1-dev",
+      "project": "wft",
+      "status": "DRAFT_NOT_AUTHORIZED",
+      "primary_metric": "dev_primary",
+      "notes": "Not frozen for confirmation."
+    },
+    {
+      "protocol_id": "WS-WPINN-20260922-v0.1-dev",
+      "project": "wpinn",
+      "status": "DRAFT_NOT_AUTHORIZED",
+      "primary_metric": "dev_primary",
+      "notes": "Not frozen for confirmation."
+    },
+    {
+      "protocol_id": "WS-CWLNN-20260922-v0.1-dev",
+      "project": "cwlnn",
+      "status": "DRAFT_NOT_AUTHORIZED",
+      "primary_metric": "dev_primary",
+      "notes": "Not frozen for confirmation."
+    },
+    {
+      "protocol_id": "WS-ULTRON-20260922-v0.1-dev",
+      "project": "ultron",
+      "status": "DRAFT_NOT_AUTHORIZED",
+      "primary_metric": "dev_primary",
+      "notes": "Not frozen for confirmation."
+    }
+  ]
+}

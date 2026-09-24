@@ -1,0 +1,1 @@
+["adapt_learner", "predict_world", "solve_invariant_problem", "verify_certificate", "synthesize_dsl_program", "algebra_multiply", "spectral_transform", "identify_dynamical_law", "encode_multiscale_world", "orchestrate_episode"]

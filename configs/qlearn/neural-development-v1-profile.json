@@ -1,0 +1,52 @@
+{
+  "project": "qlearn",
+  "experiment": "neural-development-v1-resource-profile",
+  "seed": 101,
+  "device": "cpu",
+  "split": "smoke",
+  "budget": {
+    "max_steps": 10000,
+    "max_wall_seconds": 600,
+    "max_candidate_evals": 700,
+    "max_artifact_bytes": 768000000,
+    "max_planned_memory_bytes": 2147483648
+  },
+  "params": {
+    "optimizee": "neural_regression_v1",
+    "training_seeds": [
+      101
+    ],
+    "baseline_learning_rates": [
+      0.01
+    ],
+    "outer_learning_rates": [
+      0.0003
+    ],
+    "evaluation_horizons": [
+      16,
+      32,
+      64
+    ],
+    "variants": [
+      "full",
+      "no_budget",
+      "no_recurrence",
+      "no_gates"
+    ],
+    "adaptation_steps": 16,
+    "meta_steps": 1,
+    "controller_hidden": 64,
+    "controller_layers": 2,
+    "train_width": 64,
+    "evaluation_widths": [
+      64,
+      128
+    ],
+    "train_tasks": 4,
+    "selection_tasks": 4,
+    "evaluation_tasks": 1,
+    "input_dim": 4,
+    "support_size": 64,
+    "query_size": 64
+  }
+}

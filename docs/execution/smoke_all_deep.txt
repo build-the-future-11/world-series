@@ -1,0 +1,829 @@
+{
+  "run_id": "20260922T194719_909729af",
+  "status": "SUCCEEDED",
+  "metrics": {
+    "status": "SUCCEEDED",
+    "primary_metric": "auc_normalized_loss_vs_step_held",
+    "primary_value": 2.111611944547786,
+    "best_baseline_final": 0.30714551057671835,
+    "candidate_vs_best_baseline_final_delta": 0.458062199144004,
+    "held_short": {
+      "candidate": -0.15091668856728563,
+      "sgd": 0.30714551057671835,
+      "momentum": 1.134463758832744,
+      "adamw": 2.1018249247930605,
+      "auc_candidate": 2.111611944547786,
+      "auc_adamw": 4.584357864328008
+    },
+    "held_long": {
+      "candidate": -0.3891959517094954,
+      "sgd": -0.21835735848254567,
+      "momentum": 0.18597035759634406,
+      "adamw": 0.3473051624734821,
+      "auc_candidate": 1.2580329472086715,
+      "auc_adamw": 6.512510659491861
+    },
+    "tuned_etas": {
+      "sgd": 0.1,
+      "momentum": 0.2,
+      "adamw": 0.1
+    },
+    "tuning_evals_per_method": 4,
+    "meta_train_losses": [
+      5519.25331105108,
+      166.8875394165937,
+      5.547082062100129
+    ],
+    "n_train": 1,
+    "n_held": 1,
+    "steps": 8,
+    "long_steps": 16,
+    "auc_delta_vs_best_fixed_finalproxy": -1.8044664339710677,
+    "cost": {
+      "steps_used": 6.0,
+      "simulator_calls": 0.0,
+      "candidate_evals": 0.0,
+      "artifact_bytes": 0.0,
+      "wall_seconds": 1.3609562499987078,
+      "remaining_wall_seconds": 58.639042667004105
+    },
+    "meta_training_separated": true,
+    "research_outcome": "INCONCLUSIVE",
+    "research_outcome_note": "Development paired comparison only; protocol DRAFT_NOT_AUTHORIZED; sample too small for confirmation.",
+    "query_labels_in_controller_features": false
+  }
+}
+{
+  "run_id": "20260922T194720_911cfd32",
+  "status": "SUCCEEDED",
+  "metrics": {
+    "status": "SUCCEEDED",
+    "primary_metric": "mean_nll",
+    "mean_nll": {
+      "qapen": 1.4575196395436727,
+      "fixed": 1.5855837736429763,
+      "adapt_no_mem": 1.660962509767677,
+      "recent": 1.3744450345058534
+    },
+    "rare_regime_nll": {
+      "qapen": 1.818988971628918,
+      "fixed": 1.6018270625704658
+    },
+    "ordinary_regime_tradeoff_note": "Report both ordinary and rare; do not hide ordinary-error tradeoff.",
+    "n_experts": 7,
+    "mixture_check_mean": 1.4,
+    "mixture_check_var": 1.49,
+    "cost": {
+      "steps_used": 0.0,
+      "simulator_calls": 160.0,
+      "candidate_evals": 0.0,
+      "artifact_bytes": 0.0,
+      "wall_seconds": 0.007351540996751282,
+      "remaining_wall_seconds": 59.99264329200378
+    },
+    "research_outcome": "INCONCLUSIVE",
+    "lineage_note": "Finite expandable experts; not infinite computation or Bayesian posterior. APEN/PEN historical identity preserved as separate."
+  }
+}
+{
+  "run_id": "20260922T194720_8a91978e",
+  "status": "SUCCEEDED",
+  "metrics": {
+    "status": "SUCCEEDED",
+    "n_problems": 4,
+    "mean_expansions": {
+      "brute": 6.75,
+      "quotient": 5.75,
+      "ranking_only": 2.25
+    },
+    "verification_overhead_note": "discovery+verify counted separately in discovery list",
+    "discovery": [
+      {
+        "name": "rot0",
+        "kind": "dihedral",
+        "score": 1.0,
+        "verified": true,
+        "label": "EXACTLY_VERIFIED_WITHIN_DOMAIN",
+        "ver": {
+          "ok": true,
+          "checked_states": 3
+        }
+      },
+      {
+        "name": "rot1",
+        "kind": "dihedral",
+        "score": 1.0,
+        "verified": true,
+        "label": "EXACTLY_VERIFIED_WITHIN_DOMAIN",
+        "ver": {
+          "ok": true,
+          "checked_states": 3
+        }
+      },
+      {
+        "name": "rot2",
+        "kind": "dihedral",
+        "score": 1.0,
+        "verified": true,
+        "label": "EXACTLY_VERIFIED_WITHIN_DOMAIN",
+        "ver": {
+          "ok": true,
+          "checked_states": 3
+        }
+      },
+      {
+        "name": "ref0",
+        "kind": "dihedral",
+        "score": 1.0,
+        "verified": true,
+        "label": "EXACTLY_VERIFIED_WITHIN_DOMAIN",
+        "ver": {
+          "ok": true,
+          "checked_states": 3
+        }
+      },
+      {
+        "name": "ref1",
+        "kind": "dihedral",
+        "score": 1.0,
+        "verified": true,
+        "label": "EXACTLY_VERIFIED_WITHIN_DOMAIN",
+        "ver": {
+          "ok": true,
+          "checked_states": 3
+        }
+      },
+      {
+        "name": "ref2",
+        "kind": "dihedral",
+        "score": 1.0,
+        "verified": true,
+        "label": "EXACTLY_VERIFIED_WITHIN_DOMAIN",
+        "ver": {
+          "ok": true,
+          "checked_states": 3
+        }
+      },
+      {
+        "name": "sort_suffix",
+        "kind": "adversarial",
+        "score": 0.6666666666666666,
+        "verified": false,
+        "label": "REJECTED",
+        "ver": {
+          "ok": false,
+          "reason": "transition_not_preserved",
+          "state": "1,0,2|0,1,2",
+          "move": "swap1"
+        }
+      },
+      {
+        "name": "identity",
+        "kind": "trivial",
+        "score": 1.0,
+        "verified": true,
+        "label": "EXACTLY_VERIFIED_WITHIN_DOMAIN",
+        "ver": {
+          "ok": true,
+          "checked_states": 3
+        }
+      }
+    ],
+    "adversarial_rejected": true,
+    "n_verified_transforms": 7,
+    "cross_ratio_preserved": true,
+    "rows": [
+      {
+        "start": "1,0,2|0,1,2",
+        "brute": {
+          "status": "solved",
+          "expansions": 4
+        },
+        "quotient": {
+          "status": "solved",
+          "expansions": 4,
+          "lifted_ok": true
+        },
+        "ranking_only": {
+          "status": "solved",
+          "expansions": 2
+        }
+      },
+      {
+        "start": "2,0,1|0,1,2",
+        "brute": {
+          "status": "solved",
+          "expansions": 2
+        },
+        "quotient": {
+          "status": "solved",
+          "expansions": 2,
+          "lifted_ok": true
+        },
+        "ranking_only": {
+          "status": "solved",
+          "expansions": 2
+        }
+      },
+      {
+        "start": "0,2,1|0,1,2",
+        "brute": {
+          "status": "solved",
+          "expansions": 5
+        },
+        "quotient": {
+          "status": "solved",
+          "expansions": 5,
+          "lifted_ok": true
+        },
+        "ranking_only": {
+          "status": "solved",
+          "expansions": 2
+        }
+      },
+      {
+        "start": "1,2,0,3|0,1,2,3",
+        "brute": {
+          "status": "solved",
+          "expansions": 16
+        },
+        "quotient": {
+          "status": "solved",
+          "expansions": 12,
+          "lifted_ok": false
+        },
+        "ranking_only": {
+          "status": "solved",
+          "expansions": 3
+        }
+      }
+    ],
+    "cost": {
+      "steps_used": 0.0,
+      "simulator_calls": 0.0,
+      "candidate_evals": 59.0,
+      "artifact_bytes": 0.0,
+      "wall_seconds": 0.007000290999712888,
+      "remaining_wall_seconds": 59.992995124994195
+    },
+    "primary_metric": "verified_solved_fraction",
+    "verified_solved_fraction": 0.75,
+    "research_outcome": "INCONCLUSIVE",
+    "note": "Small finite puzzles only; not Olympiad reasoning."
+  }
+}
+{
+  "run_id": "20260922T194720_5fb7cfa4",
+  "status": "SUCCEEDED",
+  "metrics": {
+    "status": "SUCCEEDED",
+    "primary_metric": "verified_solve_rate_at_fixed_candidate_budget",
+    "hierarchical_solved": true,
+    "hierarchical_candidates_used": 1,
+    "verifier": {
+      "ok": true,
+      "scope": "EXHAUSTIVE_FINITE_DOMAIN",
+      "domain_size": 11
+    },
+    "per_task_ranker_compare": [
+      {
+        "family": "plus_const",
+        "comparisons": {
+          "uniform": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          },
+          "length": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          },
+          "token": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          },
+          "flat": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          },
+          "hierarchical": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          }
+        }
+      },
+      {
+        "family": "times_const",
+        "comparisons": {
+          "uniform": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          },
+          "length": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          },
+          "token": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          },
+          "flat": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          },
+          "hierarchical": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          }
+        }
+      },
+      {
+        "family": "minus_const",
+        "comparisons": {
+          "uniform": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          },
+          "length": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          },
+          "token": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          },
+          "flat": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          },
+          "hierarchical": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          }
+        }
+      },
+      {
+        "family": "sum_list",
+        "comparisons": {
+          "uniform": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          },
+          "length": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          },
+          "token": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          },
+          "flat": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          },
+          "hierarchical": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          }
+        }
+      }
+    ],
+    "ast_hash": "bee1aa1c9e0a4e89b9b001bd42858c79458650d816ff68d9a682705447a99dbd",
+    "graph_nodes": 3,
+    "cost": {
+      "steps_used": 0.0,
+      "simulator_calls": 0.0,
+      "candidate_evals": 1.0,
+      "artifact_bytes": 0.0,
+      "wall_seconds": 0.0009385419980389997,
+      "remaining_wall_seconds": 59.99905625000247
+    },
+    "research_outcome": "INCONCLUSIVE",
+    "note": "Equal enumerator/verifier budget across encoders; not a P vs NP claim."
+  }
+}
+{
+  "run_id": "20260922T194720_030e6d83",
+  "status": "SUCCEEDED",
+  "metrics": {
+    "status": "SUCCEEDED",
+    "distributivity_ok": true,
+    "truncated_associativity_ok": true,
+    "degree_projection_consistency": true,
+    "topk_need_not_preserve_associativity": true,
+    "topk_counterexample_triggered": true,
+    "fixed_product_coeffs": {
+      "(1, 1, 2)": 1.0,
+      "(2, 1, 2)": 1.0
+    },
+    "transported_product_coeffs": {
+      "(1, 1, 2)": 1.0,
+      "(2, 1, 2)": 1.0000000000000002
+    },
+    "bytes_fixed": 48,
+    "bytes_transport_params": 16,
+    "norm_a": 1.0,
+    "cost": {
+      "steps_used": 0.0,
+      "simulator_calls": 0.0,
+      "candidate_evals": 0.0,
+      "artifact_bytes": 0.0,
+      "wall_seconds": 0.0001944169998751022,
+      "remaining_wall_seconds": 59.99980225000036
+    },
+    "research_outcome": "INCONCLUSIVE",
+    "note": "Invertible transported multiplication is isomorphic to the reference algebra; compare efficiency not novelty of numbers."
+  }
+}
+{
+  "run_id": "20260922T194721_9c21a2c1",
+  "status": "SUCCEEDED",
+  "metrics": {
+    "status": "SUCCEEDED",
+    "primary_metric": "held_vector_mse",
+    "psd": true,
+    "reconstruction_mse": 2.1281525885478956e-31,
+    "energy_preserve": 8.881784197001252e-16,
+    "operator_errors": {
+      "fixed": 10.871096156296261,
+      "unconstrained": 7.337578684089001e-06,
+      "constrained": 10.865935408331657
+    },
+    "projector_sign_invariance_ok": true,
+    "held_size_psd": true,
+    "cost": {
+      "steps_used": 0.0,
+      "simulator_calls": 0.0,
+      "candidate_evals": 0.0,
+      "artifact_bytes": 0.0,
+      "wall_seconds": 0.0019385839987080544,
+      "remaining_wall_seconds": 59.998057290998986
+    },
+    "research_outcome": "INCONCLUSIVE",
+    "note": "Dense eigendecomposition is not FFT-speed computation."
+  }
+}
+{
+  "run_id": "20260922T194721_c4236828",
+  "status": "SUCCEEDED",
+  "metrics": {
+    "status": "SUCCEEDED",
+    "primary_metric": "heldout_rollout_mse",
+    "primary_value": Infinity,
+    "weak_only_coef": {
+      "q": 2.0107121964709567,
+      "v": 0.32284198029123334,
+      "q2": 0.0,
+      "qv": 0.059711198663777845,
+      "v2": 0.03493489979552784
+    },
+    "weak_residual_norm": 3.0289428287591353,
+    "support": [
+      "q",
+      "qv",
+      "v",
+      "v2"
+    ],
+    "support_recall_qv": 1.0,
+    "baseline_data_only": {
+      "q": -1.978699305615825,
+      "v": -0.27642766996490065,
+      "q2": -0.042407406788261735,
+      "qv": 0.08266399954498187,
+      "v2": 0.06883775054529018
+    },
+    "baseline_known_support": {
+      "q": -1.9764151728712678,
+      "v": -0.2770732419537639,
+      "q2": 0.0,
+      "qv": 0.0,
+      "v2": 0.0
+    },
+    "rollout_mse_weak_held": Infinity,
+    "rollout_mse_data_only_held": 0.00822586653205645,
+    "rollout_mse_wrong_conservation_held": Infinity,
+    "wrong_conservation_ablation": {
+      "coef": {
+        "q": 2.0107121964709567,
+        "v": 0.0,
+        "q2": 0.0,
+        "qv": 0.059711198663777845,
+        "v2": 0.03493489979552784
+      },
+      "residual": 3.0289428287591353,
+      "label": "FAILED_ABLATION_EXPECTED_FOR_DAMPED",
+      "worse_than_weak": false
+    },
+    "conservation_undamped_ok": true,
+    "wrong_conservation_on_damped_claimed_ok": false,
+    "dissipation_damped": {
+      "ok": false,
+      "frac_nonincreasing": 0.6125
+    },
+    "no_clean_fd_in_weak_candidate": true,
+    "cost": {
+      "steps_used": 1.0,
+      "simulator_calls": 0.0,
+      "candidate_evals": 0.0,
+      "artifact_bytes": 0.0,
+      "wall_seconds": 0.006484542005637195,
+      "remaining_wall_seconds": 59.993514290996245
+    },
+    "research_outcome": "INCONCLUSIVE",
+    "note": "Primary declared as held-out rollout MSE before comparing; confirmation not authorized."
+  }
+}
+{
+  "run_id": "20260922T194721_b1003106",
+  "status": "SUCCEEDED",
+  "metrics": {
+    "status": "SUCCEEDED",
+    "sparse_dense_max_abs_diff": 0.0,
+    "flat_norm": 16.635171117476094,
+    "hier_norm": 21.22162130555016,
+    "routed_norm": 19.929554788001727,
+    "routing": {
+      "actual": 6,
+      "dropped": 2
+    },
+    "attention_control": {
+      "selected": 8,
+      "pairs_budget": 32
+    },
+    "size_transfer_out_shape": [
+      32,
+      4
+    ],
+    "cost": {
+      "steps_used": 0.0,
+      "simulator_calls": 0.0,
+      "candidate_evals": 0.0,
+      "artifact_bytes": 0.0,
+      "wall_seconds": 0.002754416003881488,
+      "remaining_wall_seconds": 59.997242334000475
+    },
+    "research_outcome": "INCONCLUSIVE",
+    "note": "No hidden dense all-pairs in claimed sparse path; attention control is explicitly budgeted."
+  }
+}
+{
+  "run_id": "20260922T194721_654e7ffd",
+  "status": "SUCCEEDED",
+  "metrics": {
+    "status": "SUCCEEDED",
+    "primary_metric": "verified_completion_rate_at_fixed_budget",
+    "completion_rates": {
+      "static": 1.0,
+      "cheapest": 1.0,
+      "random": 1.0,
+      "learned": 1.0
+    },
+    "policy_results": {
+      "static": [
+        {
+          "task_type": "invariant_puzzle",
+          "op": "solve_invariant_problem",
+          "ok": true,
+          "cost": 0.0007097920024534687,
+          "verifier_tag": "PLUMBING_ONLY"
+        },
+        {
+          "task_type": "dsl_synthesis",
+          "op": "synthesize_dsl_program",
+          "ok": true,
+          "cost": 0.0003069589947699569,
+          "verifier_tag": "PLUMBING_ONLY"
+        },
+        {
+          "task_type": "law_id",
+          "op": "identify_dynamical_law",
+          "ok": true,
+          "cost": 0.0024748750001890585,
+          "verifier_tag": "PLUMBING_ONLY"
+        }
+      ],
+      "cheapest": [
+        {
+          "task_type": "invariant_puzzle",
+          "op": "solve_invariant_problem",
+          "ok": true,
+          "cost": 0.0005961670030956157,
+          "verifier_tag": "PLUMBING_ONLY"
+        },
+        {
+          "task_type": "dsl_synthesis",
+          "op": "synthesize_dsl_program",
+          "ok": true,
+          "cost": 0.0002481659976183437,
+          "verifier_tag": "PLUMBING_ONLY"
+        },
+        {
+          "task_type": "law_id",
+          "op": "identify_dynamical_law",
+          "ok": true,
+          "cost": 0.0018150830001104623,
+          "verifier_tag": "PLUMBING_ONLY"
+        }
+      ],
+      "random": [
+        {
+          "task_type": "invariant_puzzle",
+          "op": "solve_invariant_problem",
+          "ok": true,
+          "cost": 0.0005860410019522533,
+          "verifier_tag": "PLUMBING_ONLY"
+        },
+        {
+          "task_type": "dsl_synthesis",
+          "op": "synthesize_dsl_program",
+          "ok": true,
+          "cost": 0.00023904200497781858,
+          "verifier_tag": "PLUMBING_ONLY"
+        },
+        {
+          "task_type": "law_id",
+          "op": "identify_dynamical_law",
+          "ok": true,
+          "cost": 0.0017513330021756701,
+          "verifier_tag": "PLUMBING_ONLY"
+        }
+      ],
+      "learned": [
+        {
+          "task_type": "invariant_puzzle",
+          "op": "solve_invariant_problem",
+          "ok": true,
+          "cost": 0.0005791669973405078,
+          "verifier_tag": "PLUMBING_ONLY"
+        },
+        {
+          "task_type": "dsl_synthesis",
+          "op": "synthesize_dsl_program",
+          "ok": true,
+          "cost": 0.0002349579954170622,
+          "verifier_tag": "PLUMBING_ONLY"
+        },
+        {
+          "task_type": "law_id",
+          "op": "identify_dynamical_law",
+          "ok": true,
+          "cost": 0.0017504159986856394,
+          "verifier_tag": "PLUMBING_ONLY"
+        }
+      ]
+    },
+    "available": [
+      "adapt_learner",
+      "predict_world",
+      "solve_invariant_problem",
+      "verify_certificate",
+      "synthesize_dsl_program",
+      "algebra_multiply",
+      "spectral_transform",
+      "identify_dynamical_law",
+      "encode_multiscale_world",
+      "orchestrate_episode"
+    ],
+    "unsupported_task_rejected": true,
+    "identical_tools_across_policies": true,
+    "research_outcome": "INCONCLUSIVE",
+    "note": "Local development verifier is PLUMBING_ONLY; not sealed external evaluation. Learned router fit on oracle traces \u2014 development only."
+  }
+}
+{
+  "smoke_all": [
+    {
+      "project": "qlearn",
+      "status": "SUCCEEDED",
+      "run_id": "20260922T194719_909729af",
+      "exit_code": 0
+    },
+    {
+      "project": "qapen",
+      "status": "SUCCEEDED",
+      "run_id": "20260922T194720_911cfd32",
+      "exit_code": 0
+    },
+    {
+      "project": "qwipii",
+      "status": "SUCCEEDED",
+      "run_id": "20260922T194720_8a91978e",
+      "exit_code": 0
+    },
+    {
+      "project": "wcode",
+      "status": "SUCCEEDED",
+      "run_id": "20260922T194720_5fb7cfa4",
+      "exit_code": 0
+    },
+    {
+      "project": "wfim",
+      "status": "SUCCEEDED",
+      "run_id": "20260922T194720_030e6d83",
+      "exit_code": 0
+    },
+    {
+      "project": "wft",
+      "status": "SUCCEEDED",
+      "run_id": "20260922T194721_9c21a2c1",
+      "exit_code": 0
+    },
+    {
+      "project": "wpinn",
+      "status": "SUCCEEDED",
+      "run_id": "20260922T194721_c4236828",
+      "exit_code": 0
+    },
+    {
+      "project": "cwlnn",
+      "status": "SUCCEEDED",
+      "run_id": "20260922T194721_b1003106",
+      "exit_code": 0
+    },
+    {
+      "project": "ultron",
+      "status": "SUCCEEDED",
+      "run_id": "20260922T194721_654e7ffd",
+      "exit_code": 0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "run_id": "20260922T193215_1fbc903b",
+  "status": "SUCCEEDED",
+  "metrics": {
+    "status": "SUCCEEDED",
+    "policy_choices": {
+      "static": "solve_invariant_problem",
+      "cheapest": "solve_invariant_problem",
+      "random": "solve_invariant_problem"
+    },
+    "selected_op": "solve_invariant_problem",
+    "available": [
+      "adapt_learner",
+      "predict_world",
+      "solve_invariant_problem",
+      "verify_certificate",
+      "synthesize_dsl_program",
+      "algebra_multiply",
+      "spectral_transform",
+      "identify_dynamical_law",
+      "encode_multiscale_world",
+      "orchestrate_episode"
+    ],
+    "receipt": {
+      "status": "SUCCEEDED",
+      "diagnostics": {
+        "path": [
+          "swap2"
+        ],
+        "expansions": 6,
+        "status": "solved",
+        "lifted_ok": true
+      },
+      "cost": {
+        "steps_used": 0.0,
+        "simulator_calls": 0.0,
+        "candidate_evals": 0.0,
+        "artifact_bytes": 0.0,
+        "wall_seconds": 0.0006183340010466054,
+        "remaining_wall_seconds": 59.999380624998594
+      }
+    },
+    "verifier": {
+      "ok": true,
+      "tag": "PLUMBING_ONLY"
+    },
+    "evidence_nodes": [
+      "ev_0"
+    ],
+    "research_outcome": "NOT_RUN",
+    "note": "Local development verifier is PLUMBING_ONLY; not sealed external evaluation."
+  }
+}

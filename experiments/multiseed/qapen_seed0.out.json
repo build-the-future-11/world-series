@@ -1,0 +1,32 @@
+{
+  "run_id": "20260922T220226_6044f91c",
+  "status": "SUCCEEDED",
+  "metrics": {
+    "status": "SUCCEEDED",
+    "primary_metric": "mean_nll",
+    "mean_nll": {
+      "qapen": 1.4575196395436727,
+      "fixed": 1.5855837736429763,
+      "adapt_no_mem": 1.660962509767677,
+      "recent": 1.3744450345058534
+    },
+    "rare_regime_nll": {
+      "qapen": 1.818988971628918,
+      "fixed": 1.6018270625704658
+    },
+    "ordinary_regime_tradeoff_note": "Report both ordinary and rare; do not hide ordinary-error tradeoff.",
+    "n_experts": 7,
+    "mixture_check_mean": 1.4,
+    "mixture_check_var": 1.49,
+    "cost": {
+      "steps_used": 0.0,
+      "simulator_calls": 160.0,
+      "candidate_evals": 0.0,
+      "artifact_bytes": 0.0,
+      "wall_seconds": 0.03330883299349807,
+      "remaining_wall_seconds": 119.96668716700515
+    },
+    "research_outcome": "INCONCLUSIVE",
+    "lineage_note": "Finite expandable experts; not infinite computation or Bayesian posterior. APEN/PEN historical identity preserved as separate."
+  }
+}

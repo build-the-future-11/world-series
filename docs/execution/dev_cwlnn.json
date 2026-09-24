@@ -1,0 +1,33 @@
+{
+  "run_id": "20260922T194630_0e7e80ca",
+  "status": "SUCCEEDED",
+  "metrics": {
+    "status": "SUCCEEDED",
+    "sparse_dense_max_abs_diff": 0.0,
+    "flat_norm": 22.130907183787908,
+    "hier_norm": 28.145265235721354,
+    "routed_norm": 24.739355445550682,
+    "routing": {
+      "actual": 6,
+      "dropped": 6
+    },
+    "attention_control": {
+      "selected": 8,
+      "pairs_budget": 32
+    },
+    "size_transfer_out_shape": [
+      48,
+      4
+    ],
+    "cost": {
+      "steps_used": 0.0,
+      "simulator_calls": 0.0,
+      "candidate_evals": 0.0,
+      "artifact_bytes": 0.0,
+      "wall_seconds": 0.032385333004640415,
+      "remaining_wall_seconds": 119.96761162499752
+    },
+    "research_outcome": "INCONCLUSIVE",
+    "note": "No hidden dense all-pairs in claimed sparse path; attention control is explicitly budgeted."
+  }
+}

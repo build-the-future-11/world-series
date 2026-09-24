@@ -1,0 +1,19 @@
+world_series 0.1.0
+repo_root: /Volumes/PRO-BLADE/World-Series/world-series
+python: 3.12.14
+devices:
+  - cpu: available=True dtype=float64 fallback=cpu (reference path)
+  - mps: available=True dtype=float32 fallback=cpu (optional; probe ops before using higher-order grads)
+  - cuda: available=False dtype=float32 fallback=cpu (optional)
+capabilities:
+  - adapt_learner: UNAVAILABLE [qlearn] registers after QL adapter
+  - algebra_multiply: UNAVAILABLE [wfim] registers after WF adapter
+  - encode_multiscale_world: UNAVAILABLE [cwlnn] registers after CW adapter
+  - identify_dynamical_law: UNAVAILABLE [wpinn] registers after WP adapter
+  - orchestrate_episode: UNAVAILABLE [ultron] registers after UL adapter
+  - predict_world: UNAVAILABLE [qapen] registers after QA adapter
+  - solve_invariant_problem: UNAVAILABLE [qwipii] registers after QW adapter
+  - spectral_transform: UNAVAILABLE [wft] registers after FT adapter
+  - synthesize_dsl_program: UNAVAILABLE [wcode] registers after WC adapter
+  - verify_certificate: UNAVAILABLE [qwipii] registers after QW adapter
+namespaces: qlearn, qapen, qwipii, wcode, wfim, wft, wpinn, cwlnn, ultron

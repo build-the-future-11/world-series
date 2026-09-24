@@ -1,0 +1,124 @@
+{
+  "run_id": "20260922T194715_65a99a67",
+  "status": "SUCCEEDED",
+  "metrics": {
+    "status": "SUCCEEDED",
+    "primary_metric": "verified_completion_rate_at_fixed_budget",
+    "completion_rates": {
+      "static": 1.0,
+      "cheapest": 1.0,
+      "random": 1.0,
+      "learned": 1.0
+    },
+    "policy_results": {
+      "static": [
+        {
+          "task_type": "invariant_puzzle",
+          "op": "solve_invariant_problem",
+          "ok": true,
+          "cost": 0.0006879159991513006,
+          "verifier_tag": "PLUMBING_ONLY"
+        },
+        {
+          "task_type": "dsl_synthesis",
+          "op": "synthesize_dsl_program",
+          "ok": true,
+          "cost": 0.00031445799686480314,
+          "verifier_tag": "PLUMBING_ONLY"
+        },
+        {
+          "task_type": "law_id",
+          "op": "identify_dynamical_law",
+          "ok": true,
+          "cost": 0.053922333994705696,
+          "verifier_tag": "PLUMBING_ONLY"
+        }
+      ],
+      "cheapest": [
+        {
+          "task_type": "invariant_puzzle",
+          "op": "solve_invariant_problem",
+          "ok": true,
+          "cost": 0.0006546250006067567,
+          "verifier_tag": "PLUMBING_ONLY"
+        },
+        {
+          "task_type": "dsl_synthesis",
+          "op": "synthesize_dsl_program",
+          "ok": true,
+          "cost": 0.00028345800092210993,
+          "verifier_tag": "PLUMBING_ONLY"
+        },
+        {
+          "task_type": "law_id",
+          "op": "identify_dynamical_law",
+          "ok": true,
+          "cost": 0.0018980419990839437,
+          "verifier_tag": "PLUMBING_ONLY"
+        }
+      ],
+      "random": [
+        {
+          "task_type": "invariant_puzzle",
+          "op": "solve_invariant_problem",
+          "ok": true,
+          "cost": 0.0006061670064809732,
+          "verifier_tag": "PLUMBING_ONLY"
+        },
+        {
+          "task_type": "dsl_synthesis",
+          "op": "synthesize_dsl_program",
+          "ok": true,
+          "cost": 0.0002513330036890693,
+          "verifier_tag": "PLUMBING_ONLY"
+        },
+        {
+          "task_type": "law_id",
+          "op": "identify_dynamical_law",
+          "ok": true,
+          "cost": 0.0018170000039390288,
+          "verifier_tag": "PLUMBING_ONLY"
+        }
+      ],
+      "learned": [
+        {
+          "task_type": "invariant_puzzle",
+          "op": "solve_invariant_problem",
+          "ok": true,
+          "cost": 0.0005941670024185441,
+          "verifier_tag": "PLUMBING_ONLY"
+        },
+        {
+          "task_type": "dsl_synthesis",
+          "op": "synthesize_dsl_program",
+          "ok": true,
+          "cost": 0.00024791599571472034,
+          "verifier_tag": "PLUMBING_ONLY"
+        },
+        {
+          "task_type": "law_id",
+          "op": "identify_dynamical_law",
+          "ok": true,
+          "cost": 0.001783208004781045,
+          "verifier_tag": "PLUMBING_ONLY"
+        }
+      ]
+    },
+    "available": [
+      "adapt_learner",
+      "predict_world",
+      "solve_invariant_problem",
+      "verify_certificate",
+      "synthesize_dsl_program",
+      "algebra_multiply",
+      "spectral_transform",
+      "identify_dynamical_law",
+      "encode_multiscale_world",
+      "orchestrate_episode"
+    ],
+    "unsupported_task_rejected": true,
+    "identical_tools_across_policies": true,
+    "research_outcome": "INCONCLUSIVE",
+    "note": "Local development verifier is PLUMBING_ONLY; not sealed external evaluation. Learned router fit on oracle traces \u2014 development only."
+  }
+}

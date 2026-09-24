@@ -1,0 +1,209 @@
+{
+  "run_id": "20260922T194618_1b82e7d1",
+  "status": "SUCCEEDED",
+  "metrics": {
+    "status": "SUCCEEDED",
+    "primary_metric": "verified_solve_rate_at_fixed_candidate_budget",
+    "hierarchical_solved": true,
+    "hierarchical_candidates_used": 1,
+    "verifier": {
+      "ok": true,
+      "scope": "EXHAUSTIVE_FINITE_DOMAIN",
+      "domain_size": 11
+    },
+    "per_task_ranker_compare": [
+      {
+        "family": "plus_const",
+        "comparisons": {
+          "uniform": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          },
+          "length": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          },
+          "token": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          },
+          "flat": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          },
+          "hierarchical": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          }
+        }
+      },
+      {
+        "family": "times_const",
+        "comparisons": {
+          "uniform": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          },
+          "length": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          },
+          "token": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          },
+          "flat": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          },
+          "hierarchical": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          }
+        }
+      },
+      {
+        "family": "minus_const",
+        "comparisons": {
+          "uniform": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          },
+          "length": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          },
+          "token": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          },
+          "flat": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          },
+          "hierarchical": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          }
+        }
+      },
+      {
+        "family": "sum_list",
+        "comparisons": {
+          "uniform": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          },
+          "length": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          },
+          "token": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          },
+          "flat": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          },
+          "hierarchical": {
+            "found": true,
+            "candidates_used": 1,
+            "verifier": {
+              "ok": true,
+              "scope": "HELDOUT_TESTS"
+            }
+          }
+        }
+      }
+    ],
+    "ast_hash": "bee1aa1c9e0a4e89b9b001bd42858c79458650d816ff68d9a682705447a99dbd",
+    "graph_nodes": 3,
+    "cost": {
+      "steps_used": 0.0,
+      "simulator_calls": 0.0,
+      "candidate_evals": 1.0,
+      "artifact_bytes": 0.0,
+      "wall_seconds": 0.0008535420056432486,
+      "remaining_wall_seconds": 119.99914158299362
+    },
+    "research_outcome": "INCONCLUSIVE",
+    "note": "Equal enumerator/verifier budget across encoders; not a P vs NP claim."
+  }
+}

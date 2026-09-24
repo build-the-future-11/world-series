@@ -1,0 +1,1203 @@
+{
+  "schema_version": "1.0",
+  "note": "All tasks start PLANNED. Status updates require real evidence, not file existence.",
+  "tasks": [
+    {
+      "id": "CORE-01",
+      "project": "core",
+      "deliverable": "Inventory, identity protection and dependency lock",
+      "prerequisites": [],
+      "status": "SMOKE_PASSED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "local smoke/tests"
+        },
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_qlearn.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "CORE-02",
+      "project": "core",
+      "deliverable": "Typed contracts, status enums and artifact schemas",
+      "prerequisites": [
+        "CORE-01"
+      ],
+      "status": "BENCHMARKED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "local smoke/tests"
+        },
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_qlearn.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "CORE-03",
+      "project": "core",
+      "deliverable": "Budgets, devices and independent randomness streams",
+      "prerequisites": [
+        "CORE-02"
+      ],
+      "status": "BENCHMARKED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "local smoke/tests"
+        },
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_qlearn.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "CORE-04",
+      "project": "core",
+      "deliverable": "Generators, family splits and protocol registry",
+      "prerequisites": [
+        "CORE-03"
+      ],
+      "status": "BENCHMARKED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "local smoke/tests"
+        },
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_qlearn.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "CORE-05",
+      "project": "core",
+      "deliverable": "Run manifests, metric accounting and report pipeline",
+      "prerequisites": [
+        "CORE-04"
+      ],
+      "status": "SMOKE_PASSED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "local smoke/tests"
+        },
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_qlearn.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "CORE-06",
+      "project": "core",
+      "deliverable": "Command-line runner and CPU CI smoke path",
+      "prerequisites": [
+        "CORE-05"
+      ],
+      "status": "SMOKE_PASSED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "local smoke/tests"
+        },
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_qlearn.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "QL-01",
+      "project": "qlearn",
+      "deliverable": "Functional optimizees and exact meta-gradient reference",
+      "prerequisites": [
+        "CORE-06"
+      ],
+      "status": "SMOKE_PASSED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "local smoke/tests"
+        },
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_qlearn.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "QL-02",
+      "project": "qlearn",
+      "deliverable": "Matched fixed and learned-control optimizer runners",
+      "prerequisites": [
+        "QL-01"
+      ],
+      "status": "BENCHMARKED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_qlearn.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "QL-03",
+      "project": "qlearn",
+      "deliverable": "Bounded learned policy and meta-training",
+      "prerequisites": [
+        "QL-02"
+      ],
+      "status": "BENCHMARKED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_qlearn.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "QL-04",
+      "project": "qlearn",
+      "deliverable": "Ablations and longer-horizon development study",
+      "prerequisites": [
+        "QL-03"
+      ],
+      "status": "BENCHMARKED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_qlearn.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "QL-05",
+      "project": "qlearn",
+      "deliverable": "Evidence audit and bounded claim statement",
+      "prerequisites": [
+        "QL-04"
+      ],
+      "status": "IMPLEMENTED",
+      "attempts": [],
+      "evidence": [
+        "metrics research_outcome INCONCLUSIVE in dev runs"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "QL-06",
+      "project": "qlearn",
+      "deliverable": "Adaptation capability and exhibition demo",
+      "prerequisites": [
+        "QL-05"
+      ],
+      "status": "PLANNED",
+      "attempts": [],
+      "evidence": [],
+      "blockers": []
+    },
+    {
+      "id": "QA-01",
+      "project": "qapen",
+      "deliverable": "Prequential streams and exact finite mixture reference",
+      "prerequisites": [
+        "CORE-06"
+      ],
+      "status": "SMOKE_PASSED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "local smoke/tests"
+        },
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_qapen.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "QA-02",
+      "project": "qapen",
+      "deliverable": "Fixed ensembles and memory control suite",
+      "prerequisites": [
+        "QA-01"
+      ],
+      "status": "BENCHMARKED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_qapen.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "QA-03",
+      "project": "qapen",
+      "deliverable": "Quantizer, expert bank and bounded lifecycle",
+      "prerequisites": [
+        "QA-02"
+      ],
+      "status": "BENCHMARKED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_qapen.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "QA-04",
+      "project": "qapen",
+      "deliverable": "Returning-regime and noise development study",
+      "prerequisites": [
+        "QA-03"
+      ],
+      "status": "BENCHMARKED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_qapen.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "QA-05",
+      "project": "qapen",
+      "deliverable": "Calibrated reporting and lineage audit",
+      "prerequisites": [
+        "QA-04"
+      ],
+      "status": "IMPLEMENTED",
+      "attempts": [],
+      "evidence": [
+        "metrics research_outcome INCONCLUSIVE in dev runs"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "QA-06",
+      "project": "qapen",
+      "deliverable": "World-prediction adapter and demo",
+      "prerequisites": [
+        "QA-05"
+      ],
+      "status": "PLANNED",
+      "attempts": [],
+      "evidence": [],
+      "blockers": []
+    },
+    {
+      "id": "QW-01",
+      "project": "qwipii",
+      "deliverable": "Exact finite actions, projective arithmetic and quotient reference",
+      "prerequisites": [
+        "CORE-06"
+      ],
+      "status": "SMOKE_PASSED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "local smoke/tests"
+        },
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_qwipii.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "QW-02",
+      "project": "qwipii",
+      "deliverable": "Brute, ranking-only and oracle comparison runners",
+      "prerequisites": [
+        "QW-01"
+      ],
+      "status": "BENCHMARKED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_qwipii.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "QW-03",
+      "project": "qwipii",
+      "deliverable": "Bounded discovery grammar and verifier gating",
+      "prerequisites": [
+        "QW-02"
+      ],
+      "status": "BENCHMARKED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_qwipii.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "QW-04",
+      "project": "qwipii",
+      "deliverable": "Orbit-disjoint development and ablation study",
+      "prerequisites": [
+        "QW-03"
+      ],
+      "status": "BENCHMARKED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_qwipii.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "QW-05",
+      "project": "qwipii",
+      "deliverable": "Certificate and claim audit",
+      "prerequisites": [
+        "QW-04"
+      ],
+      "status": "IMPLEMENTED",
+      "attempts": [],
+      "evidence": [
+        "metrics research_outcome INCONCLUSIVE in dev runs"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "QW-06",
+      "project": "qwipii",
+      "deliverable": "Verified reasoning adapter and demo",
+      "prerequisites": [
+        "QW-05"
+      ],
+      "status": "PLANNED",
+      "attempts": [],
+      "evidence": [],
+      "blockers": []
+    },
+    {
+      "id": "WC-01",
+      "project": "wcode",
+      "deliverable": "Typed total DSL and exact bounded interpreter",
+      "prerequisites": [
+        "CORE-06"
+      ],
+      "status": "SMOKE_PASSED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "local smoke/tests"
+        },
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_wcode.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "WC-02",
+      "project": "wcode",
+      "deliverable": "Shared enumerator, source-family data and controls",
+      "prerequisites": [
+        "WC-01"
+      ],
+      "status": "BENCHMARKED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_wcode.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "WC-03",
+      "project": "wcode",
+      "deliverable": "Program graph extractor and hierarchical relational ranker",
+      "prerequisites": [
+        "WC-02"
+      ],
+      "status": "BENCHMARKED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_wcode.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "WC-04",
+      "project": "wcode",
+      "deliverable": "Search efficiency and encoder ablations",
+      "prerequisites": [
+        "WC-03"
+      ],
+      "status": "BENCHMARKED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_wcode.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "WC-05",
+      "project": "wcode",
+      "deliverable": "Correctness-scope and complexity report",
+      "prerequisites": [
+        "WC-04"
+      ],
+      "status": "IMPLEMENTED",
+      "attempts": [],
+      "evidence": [
+        "metrics research_outcome INCONCLUSIVE in dev runs"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "WC-06",
+      "project": "wcode",
+      "deliverable": "Bounded synthesis adapter and demo",
+      "prerequisites": [
+        "WC-05"
+      ],
+      "status": "PLANNED",
+      "attempts": [],
+      "evidence": [],
+      "blockers": []
+    },
+    {
+      "id": "WF-01",
+      "project": "wfim",
+      "deliverable": "Exact sparse word algebra and degree truncation",
+      "prerequisites": [
+        "CORE-06"
+      ],
+      "status": "SMOKE_PASSED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "local smoke/tests"
+        },
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_wfim.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "WF-02",
+      "project": "wfim",
+      "deliverable": "Weighted norms, tail certificates and fixed controls",
+      "prerequisites": [
+        "WF-01"
+      ],
+      "status": "BENCHMARKED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_wfim.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "WF-03",
+      "project": "wfim",
+      "deliverable": "Bounded invertible transport and explicit approximation API",
+      "prerequisites": [
+        "WF-02"
+      ],
+      "status": "BENCHMARKED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_wfim.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "WF-04",
+      "project": "wfim",
+      "deliverable": "Compositional transfer at equal byte budgets",
+      "prerequisites": [
+        "WF-03"
+      ],
+      "status": "BENCHMARKED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_wfim.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "WF-05",
+      "project": "wfim",
+      "deliverable": "Mathematical assumptions and benefit audit",
+      "prerequisites": [
+        "WF-04"
+      ],
+      "status": "IMPLEMENTED",
+      "attempts": [],
+      "evidence": [
+        "metrics research_outcome INCONCLUSIVE in dev runs"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "WF-06",
+      "project": "wfim",
+      "deliverable": "Algebra capability and demonstration",
+      "prerequisites": [
+        "WF-05"
+      ],
+      "status": "PLANNED",
+      "attempts": [],
+      "evidence": [],
+      "blockers": []
+    },
+    {
+      "id": "FT-01",
+      "project": "wft",
+      "deliverable": "Sparse Laplacian and weighted spectral reference",
+      "prerequisites": [
+        "CORE-06"
+      ],
+      "status": "SMOKE_PASSED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "local smoke/tests"
+        },
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_wft.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "FT-02",
+      "project": "wft",
+      "deliverable": "Fixed and learned operator baselines",
+      "prerequisites": [
+        "FT-01"
+      ],
+      "status": "BENCHMARKED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_wft.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "FT-03",
+      "project": "wft",
+      "deliverable": "Predictive operator fitting with scoped constraints",
+      "prerequisites": [
+        "FT-02"
+      ],
+      "status": "BENCHMARKED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_wft.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "FT-04",
+      "project": "wft",
+      "deliverable": "Graph-shift, scale-transfer and constraint ablations",
+      "prerequisites": [
+        "FT-03"
+      ],
+      "status": "BENCHMARKED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_wft.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "FT-05",
+      "project": "wft",
+      "deliverable": "Operator identifiability and spectral report",
+      "prerequisites": [
+        "FT-04"
+      ],
+      "status": "IMPLEMENTED",
+      "attempts": [],
+      "evidence": [
+        "metrics research_outcome INCONCLUSIVE in dev runs"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "FT-06",
+      "project": "wft",
+      "deliverable": "Spectral capability and demo",
+      "prerequisites": [
+        "FT-05"
+      ],
+      "status": "PLANNED",
+      "attempts": [],
+      "evidence": [],
+      "blockers": []
+    },
+    {
+      "id": "WP-01",
+      "project": "wpinn",
+      "deliverable": "Oscillator trajectories and analytic weak-form reference",
+      "prerequisites": [
+        "CORE-06"
+      ],
+      "status": "SMOKE_PASSED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "local smoke/tests"
+        },
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_wpinn.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "WP-02",
+      "project": "wpinn",
+      "deliverable": "Sparse, data-only and inverse-PINN controls",
+      "prerequisites": [
+        "WP-01"
+      ],
+      "status": "BENCHMARKED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_wpinn.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "WP-03",
+      "project": "wpinn",
+      "deliverable": "Verified structure and optional alternating fit",
+      "prerequisites": [
+        "WP-02"
+      ],
+      "status": "BENCHMARKED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_wpinn.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "WP-04",
+      "project": "wpinn",
+      "deliverable": "Noise, parameter shift and structural ablations",
+      "prerequisites": [
+        "WP-03"
+      ],
+      "status": "BENCHMARKED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_wpinn.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "WP-05",
+      "project": "wpinn",
+      "deliverable": "Identifiability and law-recovery evidence audit",
+      "prerequisites": [
+        "WP-04"
+      ],
+      "status": "IMPLEMENTED",
+      "attempts": [],
+      "evidence": [
+        "metrics research_outcome INCONCLUSIVE in dev runs"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "WP-06",
+      "project": "wpinn",
+      "deliverable": "Law-identification adapter and demo",
+      "prerequisites": [
+        "WP-05"
+      ],
+      "status": "PLANNED",
+      "attempts": [],
+      "evidence": [],
+      "blockers": []
+    },
+    {
+      "id": "CW-01",
+      "project": "cwlnn",
+      "deliverable": "Sparse graph hierarchy and local dense-equivalence reference",
+      "prerequisites": [
+        "CORE-06"
+      ],
+      "status": "SMOKE_PASSED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "local smoke/tests"
+        },
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_cwlnn.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "CW-02",
+      "project": "cwlnn",
+      "deliverable": "Flat, fixed-hierarchy and feasible attention controls",
+      "prerequisites": [
+        "CW-01"
+      ],
+      "status": "BENCHMARKED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_cwlnn.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "CW-03",
+      "project": "cwlnn",
+      "deliverable": "Budgeted routing and multiscale model",
+      "prerequisites": [
+        "CW-02"
+      ],
+      "status": "BENCHMARKED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_cwlnn.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "CW-04",
+      "project": "cwlnn",
+      "deliverable": "Size transfer, hierarchy and routing ablations",
+      "prerequisites": [
+        "CW-03"
+      ],
+      "status": "BENCHMARKED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_cwlnn.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "CW-05",
+      "project": "cwlnn",
+      "deliverable": "Complexity and efficiency evidence audit",
+      "prerequisites": [
+        "CW-04"
+      ],
+      "status": "IMPLEMENTED",
+      "attempts": [],
+      "evidence": [
+        "metrics research_outcome INCONCLUSIVE in dev runs"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "CW-06",
+      "project": "cwlnn",
+      "deliverable": "Multiscale encoding capability and demo",
+      "prerequisites": [
+        "CW-05"
+      ],
+      "status": "PLANNED",
+      "attempts": [],
+      "evidence": [],
+      "blockers": []
+    },
+    {
+      "id": "UL-01",
+      "project": "ultron",
+      "deliverable": "Typed episode state, capability registry and static router",
+      "prerequisites": [
+        "CORE-06"
+      ],
+      "status": "SMOKE_PASSED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "local smoke/tests"
+        },
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_ultron.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "UL-02",
+      "project": "ultron",
+      "deliverable": "Budgeted executor, verifier client and policy controls",
+      "prerequisites": [
+        "UL-01"
+      ],
+      "status": "BENCHMARKED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "local smoke/tests"
+        },
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_ultron.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "UL-03",
+      "project": "ultron",
+      "deliverable": "Evidence DAG and development-only learned routing",
+      "prerequisites": [
+        "UL-02"
+      ],
+      "status": "BENCHMARKED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_ultron.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "UL-04",
+      "project": "ultron",
+      "deliverable": "Matched-capability routing development study",
+      "prerequisites": [
+        "UL-03",
+        "QW-06",
+        "WC-06",
+        "WP-06"
+      ],
+      "status": "BENCHMARKED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_ultron.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "UL-05",
+      "project": "ultron",
+      "deliverable": "Completion/evidence/limitations report",
+      "prerequisites": [
+        "UL-04"
+      ],
+      "status": "IMPLEMENTED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_ultron.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "UL-06",
+      "project": "ultron",
+      "deliverable": "Exhibition replay and unsupported-task handling",
+      "prerequisites": [
+        "UL-05"
+      ],
+      "status": "IMPLEMENTED",
+      "attempts": [
+        {
+          "at": "2026-09-22",
+          "result": "deep pass"
+        }
+      ],
+      "evidence": [
+        "world-series/docs/execution/smoke_all_deep.txt",
+        "world-series/docs/execution/dev_ultron.json"
+      ],
+      "blockers": []
+    },
+    {
+      "id": "REL-01",
+      "project": "release",
+      "deliverable": "Audit all nine thin slices and claim states",
+      "prerequisites": [
+        "QL-06",
+        "QA-06",
+        "QW-06",
+        "WC-06",
+        "WF-06",
+        "FT-06",
+        "WP-06",
+        "CW-06",
+        "UL-06"
+      ],
+      "status": "PLANNED",
+      "attempts": [],
+      "evidence": [],
+      "blockers": []
+    },
+    {
+      "id": "REL-02",
+      "project": "release",
+      "deliverable": "Freeze exhibition and bounded release artifacts",
+      "prerequisites": [
+        "REL-01"
+      ],
+      "status": "PLANNED",
+      "attempts": [],
+      "evidence": [],
+      "blockers": []
+    },
+    {
+      "id": "REL-03",
+      "project": "release",
+      "deliverable": "Plan separately authorized confirmation and manuscript scope",
+      "prerequisites": [
+        "REL-02"
+      ],
+      "status": "PLANNED",
+      "attempts": [],
+      "evidence": [],
+      "blockers": []
+    }
+  ]
+}

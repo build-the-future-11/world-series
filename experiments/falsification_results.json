@@ -1,0 +1,96 @@
+{
+  "seed": 0,
+  "controls": [
+    {
+      "name": "qlearn_shuffled_query_control",
+      "passed": true,
+      "hypothesis_supported": null,
+      "detail": {
+        "feature_dim": 4,
+        "query_channel_in_features": false,
+        "loss_finite": true,
+        "improved_or_stable_smoke": true
+      },
+      "interpretation": "Controller API has no query-label input; sanity only."
+    },
+    {
+      "name": "qapen_recent_vs_candidate",
+      "passed": true,
+      "hypothesis_supported": false,
+      "detail": {
+        "qapen_mean_nll": 1.4310106083234226,
+        "recent_mean_nll": 1.2041288540579582
+      },
+      "interpretation": "NOT_SUPPORTED_AT_TOY_SCALE_vs_recent_memory"
+    },
+    {
+      "name": "qwipii_adversarial_and_lift",
+      "passed": true,
+      "hypothesis_supported": true,
+      "detail": {
+        "adversarial_rejected": true,
+        "lift_ok": true,
+        "status": "solved"
+      },
+      "interpretation": "Verifier must reject adversarial; solved paths must lift."
+    },
+    {
+      "name": "wcode_public_memorizer_fails_heldout",
+      "passed": true,
+      "hypothesis_supported": null,
+      "detail": {
+        "public_ok": true,
+        "held_verifier": {
+          "ok": false,
+          "scope": "HELDOUT_TESTS"
+        }
+      },
+      "interpretation": "Verifier isolation sanity."
+    },
+    {
+      "name": "wpinn_wrong_conservation_hurts",
+      "passed": true,
+      "hypothesis_supported": true,
+      "detail": {
+        "rollout_weak": 0.07038608189008855,
+        "rollout_wrong_cons": 0.7645986739444455
+      },
+      "interpretation": "If wrong conservation helps, primary metric/setup is suspicious."
+    },
+    {
+      "name": "wfim_topk_vs_truncation",
+      "passed": true,
+      "hypothesis_supported": true,
+      "detail": {
+        "trunc_assoc": true,
+        "pruned_terms": 1
+      },
+      "interpretation": "Truncation theory holds on deg\u2264N; top-k is unsafe in general."
+    },
+    {
+      "name": "ultron_wrong_tool_fails",
+      "passed": true,
+      "hypothesis_supported": null,
+      "detail": {
+        "verifier": {
+          "ok": false,
+          "tag": "PLUMBING_ONLY",
+          "reason": "mismatched_operation",
+          "selected_op": "solve_invariant_problem"
+        },
+        "receipt_status": "SUCCEEDED"
+      },
+      "interpretation": "If wrong tool verifies, verifier is rubber-stamping."
+    },
+    {
+      "name": "wft_shuffled_target_control",
+      "passed": true,
+      "hypothesis_supported": null,
+      "detail": {
+        "shuffled_train_mse": 2.5560482266366837,
+        "fixed_on_true_mse": 11.18329756583919
+      },
+      "interpretation": "Documents that low MSE on shuffled targets is not evidence of physics recovery."
+    }
+  ]
+}

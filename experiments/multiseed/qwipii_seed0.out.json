@@ -1,0 +1,187 @@
+{
+  "run_id": "20260922T220231_61f019e7",
+  "status": "SUCCEEDED",
+  "metrics": {
+    "status": "SUCCEEDED",
+    "n_problems": 4,
+    "mean_expansions": {
+      "brute": 6.75,
+      "quotient": 5.75,
+      "ranking_only": 2.25
+    },
+    "verification_overhead_note": "discovery+verify counted separately in discovery list",
+    "discovery": [
+      {
+        "name": "rot0",
+        "kind": "dihedral",
+        "score": 1.0,
+        "verified": true,
+        "label": "EXACTLY_VERIFIED_WITHIN_DOMAIN",
+        "ver": {
+          "ok": true,
+          "checked_states": 3
+        }
+      },
+      {
+        "name": "rot1",
+        "kind": "dihedral",
+        "score": 1.0,
+        "verified": true,
+        "label": "EXACTLY_VERIFIED_WITHIN_DOMAIN",
+        "ver": {
+          "ok": true,
+          "checked_states": 3
+        }
+      },
+      {
+        "name": "rot2",
+        "kind": "dihedral",
+        "score": 1.0,
+        "verified": true,
+        "label": "EXACTLY_VERIFIED_WITHIN_DOMAIN",
+        "ver": {
+          "ok": true,
+          "checked_states": 3
+        }
+      },
+      {
+        "name": "ref0",
+        "kind": "dihedral",
+        "score": 1.0,
+        "verified": true,
+        "label": "EXACTLY_VERIFIED_WITHIN_DOMAIN",
+        "ver": {
+          "ok": true,
+          "checked_states": 3
+        }
+      },
+      {
+        "name": "ref1",
+        "kind": "dihedral",
+        "score": 1.0,
+        "verified": true,
+        "label": "EXACTLY_VERIFIED_WITHIN_DOMAIN",
+        "ver": {
+          "ok": true,
+          "checked_states": 3
+        }
+      },
+      {
+        "name": "ref2",
+        "kind": "dihedral",
+        "score": 1.0,
+        "verified": true,
+        "label": "EXACTLY_VERIFIED_WITHIN_DOMAIN",
+        "ver": {
+          "ok": true,
+          "checked_states": 3
+        }
+      },
+      {
+        "name": "sort_suffix",
+        "kind": "adversarial",
+        "score": 0.6666666666666666,
+        "verified": false,
+        "label": "REJECTED",
+        "ver": {
+          "ok": false,
+          "reason": "transition_not_preserved",
+          "state": "1,0,2|0,1,2",
+          "move": "swap1"
+        }
+      },
+      {
+        "name": "identity",
+        "kind": "trivial",
+        "score": 1.0,
+        "verified": true,
+        "label": "EXACTLY_VERIFIED_WITHIN_DOMAIN",
+        "ver": {
+          "ok": true,
+          "checked_states": 3
+        }
+      }
+    ],
+    "adversarial_rejected": true,
+    "n_verified_transforms": 7,
+    "cross_ratio_preserved": true,
+    "rows": [
+      {
+        "start": "1,0,2|0,1,2",
+        "brute": {
+          "status": "solved",
+          "expansions": 4
+        },
+        "quotient": {
+          "status": "solved",
+          "expansions": 4,
+          "lifted_ok": true
+        },
+        "ranking_only": {
+          "status": "solved",
+          "expansions": 2
+        }
+      },
+      {
+        "start": "2,0,1|0,1,2",
+        "brute": {
+          "status": "solved",
+          "expansions": 2
+        },
+        "quotient": {
+          "status": "solved",
+          "expansions": 2,
+          "lifted_ok": true
+        },
+        "ranking_only": {
+          "status": "solved",
+          "expansions": 2
+        }
+      },
+      {
+        "start": "0,2,1|0,1,2",
+        "brute": {
+          "status": "solved",
+          "expansions": 5
+        },
+        "quotient": {
+          "status": "solved",
+          "expansions": 5,
+          "lifted_ok": true
+        },
+        "ranking_only": {
+          "status": "solved",
+          "expansions": 2
+        }
+      },
+      {
+        "start": "1,2,0,3|0,1,2,3",
+        "brute": {
+          "status": "solved",
+          "expansions": 16
+        },
+        "quotient": {
+          "status": "solved",
+          "expansions": 12,
+          "lifted_ok": false
+        },
+        "ranking_only": {
+          "status": "solved",
+          "expansions": 3
+        }
+      }
+    ],
+    "cost": {
+      "steps_used": 0.0,
+      "simulator_calls": 0.0,
+      "candidate_evals": 59.0,
+      "artifact_bytes": 0.0,
+      "wall_seconds": 0.006488792001619004,
+      "remaining_wall_seconds": 119.99350899999263
+    },
+    "primary_metric": "verified_solved_fraction",
+    "verified_solved_fraction": 0.75,
+    "research_outcome": "INCONCLUSIVE",
+    "note": "Small finite puzzles only; not Olympiad reasoning."
+  }
+}
