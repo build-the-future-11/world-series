@@ -139,3 +139,27 @@ WFIM's broader coordinate-aware proposal, comparator qualification and CWLNN
 tree matching still need explicit decisions or work. Complete original-paper
 novelty review, reproducibility/manuscript artifacts and clean portable delivery
 after identifying those gaps. Preserve the earlier verified delivery unchanged.
+
+## Checklist and packaging reconciliation
+
+All 145 requirements are retained in results/requirement_map.json. Original
+proposals are preserved under provenance/original-proposals/. The complete
+mechanism map identifies actual implementations, discriminating evidence and
+remaining original-scope gaps. README and PAPER_AUDIT are reconciled; old versions
+are preserved. G01/G02 resolved. WP03 is resolved by the executed sequential
+neural-field/physical-structure pipeline: the original proposal makes alternation
+optional. WP07 is an explicit N/A because that original first study defers PDEs.
+Do not keep calling joint training a required first-study blocker. Held physical
+parameter regimes and inverse-PINN/data-only baselines remain real WPINN gaps.
+
+Current checklist: 33 resolved (including one N/A), 112 open: 95 local executable,
+six external-required, eleven mixed. This is not a readiness pass. The next
+scientific priority is QWIPII verifier domain completeness/trained discovery,
+followed by the original WFIM coordinate experiment, heterogeneous Ultron,
+QLearn full-family/full-cost work, and remaining project-specific gaps.
+
+The portable builder now includes all campaigns/runs, preserving failures, and
+uses locally preserved/hash-checked provenance instead of external .portfolio
+inputs. Standalone verification and safe extraction have three regression tests;
+the full suite passes 98 tests. A fresh complete review archive and extracted
+environment verification are being produced; their actual receipts follow.

@@ -1,0 +1,6 @@
+{
+  "cases": 200,
+  "maximum_absolute_difference": 3.552713678800501e-15,
+  "proof": "s(uv)=s(u)s(v), so S^-1(Sx * Sy)=x*y for every nonzero per-letter scale.",
+  "scope": "Rules out product-level expressivity from the current transport, not every possible learned coordinate model."
+}

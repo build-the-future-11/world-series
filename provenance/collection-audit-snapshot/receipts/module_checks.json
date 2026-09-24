@@ -1,0 +1,450 @@
+[
+  {
+    "project": "qapen",
+    "seed": 101,
+    "run_id": "20260924T100958_fbdd5589",
+    "raw_rows": 28,
+    "failed_rows": 0
+  },
+  {
+    "project": "qapen",
+    "seed": 211,
+    "run_id": "20260924T101000_c43111d0",
+    "raw_rows": 28,
+    "failed_rows": 0
+  },
+  {
+    "project": "qapen",
+    "seed": 307,
+    "run_id": "20260924T101002_266faeea",
+    "raw_rows": 28,
+    "failed_rows": 0
+  },
+  {
+    "project": "qapen",
+    "seed": 401,
+    "run_id": "20260924T101002_a2a2fce6",
+    "raw_rows": 28,
+    "failed_rows": 0
+  },
+  {
+    "project": "qapen",
+    "seed": 503,
+    "run_id": "20260924T101003_b15fff76",
+    "raw_rows": 28,
+    "failed_rows": 0
+  },
+  {
+    "project": "qapen",
+    "seed": 601,
+    "run_id": "20260924T101004_b7fb230d",
+    "raw_rows": 28,
+    "failed_rows": 0
+  },
+  {
+    "project": "qapen",
+    "seed": 701,
+    "run_id": "20260924T101005_23d6fd5d",
+    "raw_rows": 28,
+    "failed_rows": 0
+  },
+  {
+    "project": "qapen",
+    "seed": 809,
+    "run_id": "20260924T101006_99d78cd4",
+    "raw_rows": 28,
+    "failed_rows": 0
+  },
+  {
+    "project": "qwipii",
+    "seed": 101,
+    "run_id": "20260924T101006_fe0803e7",
+    "raw_rows": 108,
+    "failed_rows": 0
+  },
+  {
+    "project": "qwipii",
+    "seed": 211,
+    "run_id": "20260924T101008_9fb915d2",
+    "raw_rows": 108,
+    "failed_rows": 0
+  },
+  {
+    "project": "qwipii",
+    "seed": 307,
+    "run_id": "20260924T101009_e9b7640a",
+    "raw_rows": 108,
+    "failed_rows": 0
+  },
+  {
+    "project": "qwipii",
+    "seed": 401,
+    "run_id": "20260924T101010_fb71d64f",
+    "raw_rows": 108,
+    "failed_rows": 0
+  },
+  {
+    "project": "qwipii",
+    "seed": 503,
+    "run_id": "20260924T101011_f164f7e2",
+    "raw_rows": 108,
+    "failed_rows": 0
+  },
+  {
+    "project": "qwipii",
+    "seed": 601,
+    "run_id": "20260924T101013_5b560050",
+    "raw_rows": 108,
+    "failed_rows": 0
+  },
+  {
+    "project": "qwipii",
+    "seed": 701,
+    "run_id": "20260924T101014_77e06898",
+    "raw_rows": 108,
+    "failed_rows": 0
+  },
+  {
+    "project": "qwipii",
+    "seed": 809,
+    "run_id": "20260924T101015_848b57a0",
+    "raw_rows": 108,
+    "failed_rows": 0
+  },
+  {
+    "project": "wcode",
+    "seed": 101,
+    "run_id": "20260924T101017_8bfd1d89",
+    "raw_rows": 270,
+    "failed_rows": 0
+  },
+  {
+    "project": "wcode",
+    "seed": 211,
+    "run_id": "20260924T101017_67d8da7c",
+    "raw_rows": 270,
+    "failed_rows": 0
+  },
+  {
+    "project": "wcode",
+    "seed": 307,
+    "run_id": "20260924T101018_fae6dd67",
+    "raw_rows": 270,
+    "failed_rows": 0
+  },
+  {
+    "project": "wcode",
+    "seed": 401,
+    "run_id": "20260924T101018_bb709535",
+    "raw_rows": 270,
+    "failed_rows": 0
+  },
+  {
+    "project": "wcode",
+    "seed": 503,
+    "run_id": "20260924T101019_91f19f67",
+    "raw_rows": 270,
+    "failed_rows": 0
+  },
+  {
+    "project": "wcode",
+    "seed": 601,
+    "run_id": "20260924T101019_91b5840d",
+    "raw_rows": 270,
+    "failed_rows": 0
+  },
+  {
+    "project": "wcode",
+    "seed": 701,
+    "run_id": "20260924T101020_86183074",
+    "raw_rows": 270,
+    "failed_rows": 0
+  },
+  {
+    "project": "wcode",
+    "seed": 809,
+    "run_id": "20260924T101021_fb02dd59",
+    "raw_rows": 270,
+    "failed_rows": 0
+  },
+  {
+    "project": "wfim",
+    "seed": 101,
+    "run_id": "20260924T101021_eeafc090",
+    "raw_rows": 108,
+    "failed_rows": 0
+  },
+  {
+    "project": "wfim",
+    "seed": 211,
+    "run_id": "20260924T101022_de1b36be",
+    "raw_rows": 108,
+    "failed_rows": 0
+  },
+  {
+    "project": "wfim",
+    "seed": 307,
+    "run_id": "20260924T101022_e644734a",
+    "raw_rows": 108,
+    "failed_rows": 0
+  },
+  {
+    "project": "wfim",
+    "seed": 401,
+    "run_id": "20260924T101022_d00724c2",
+    "raw_rows": 108,
+    "failed_rows": 0
+  },
+  {
+    "project": "wfim",
+    "seed": 503,
+    "run_id": "20260924T101022_95423da5",
+    "raw_rows": 108,
+    "failed_rows": 0
+  },
+  {
+    "project": "wfim",
+    "seed": 601,
+    "run_id": "20260924T101023_04afa7a3",
+    "raw_rows": 108,
+    "failed_rows": 0
+  },
+  {
+    "project": "wfim",
+    "seed": 701,
+    "run_id": "20260924T101023_fe23e07d",
+    "raw_rows": 108,
+    "failed_rows": 0
+  },
+  {
+    "project": "wfim",
+    "seed": 809,
+    "run_id": "20260924T101024_53e0cd8e",
+    "raw_rows": 108,
+    "failed_rows": 0
+  },
+  {
+    "project": "wft",
+    "seed": 101,
+    "run_id": "20260924T101024_663f5d4e",
+    "raw_rows": 48,
+    "failed_rows": 0
+  },
+  {
+    "project": "wft",
+    "seed": 211,
+    "run_id": "20260924T101024_367b304a",
+    "raw_rows": 48,
+    "failed_rows": 0
+  },
+  {
+    "project": "wft",
+    "seed": 307,
+    "run_id": "20260924T101025_f0b04e16",
+    "raw_rows": 48,
+    "failed_rows": 0
+  },
+  {
+    "project": "wft",
+    "seed": 401,
+    "run_id": "20260924T101025_4d3306d0",
+    "raw_rows": 48,
+    "failed_rows": 0
+  },
+  {
+    "project": "wft",
+    "seed": 503,
+    "run_id": "20260924T101025_936a73a1",
+    "raw_rows": 48,
+    "failed_rows": 0
+  },
+  {
+    "project": "wft",
+    "seed": 601,
+    "run_id": "20260924T101026_ac7d359e",
+    "raw_rows": 48,
+    "failed_rows": 0
+  },
+  {
+    "project": "wft",
+    "seed": 701,
+    "run_id": "20260924T101026_f4ad9fed",
+    "raw_rows": 48,
+    "failed_rows": 0
+  },
+  {
+    "project": "wft",
+    "seed": 809,
+    "run_id": "20260924T101026_58169e7e",
+    "raw_rows": 48,
+    "failed_rows": 0
+  },
+  {
+    "project": "wpinn",
+    "seed": 101,
+    "run_id": "20260924T101027_1846bd37",
+    "raw_rows": 36,
+    "failed_rows": 11
+  },
+  {
+    "project": "wpinn",
+    "seed": 211,
+    "run_id": "20260924T101028_9a1baa31",
+    "raw_rows": 36,
+    "failed_rows": 0
+  },
+  {
+    "project": "wpinn",
+    "seed": 307,
+    "run_id": "20260924T101029_b9086c9a",
+    "raw_rows": 36,
+    "failed_rows": 0
+  },
+  {
+    "project": "wpinn",
+    "seed": 401,
+    "run_id": "20260924T101030_0bf9211f",
+    "raw_rows": 36,
+    "failed_rows": 4
+  },
+  {
+    "project": "wpinn",
+    "seed": 503,
+    "run_id": "20260924T101033_ee8a9248",
+    "raw_rows": 36,
+    "failed_rows": 0
+  },
+  {
+    "project": "wpinn",
+    "seed": 601,
+    "run_id": "20260924T101039_d2868364",
+    "raw_rows": 36,
+    "failed_rows": 2
+  },
+  {
+    "project": "wpinn",
+    "seed": 701,
+    "run_id": "20260924T101041_eaf6492c",
+    "raw_rows": 36,
+    "failed_rows": 0
+  },
+  {
+    "project": "wpinn",
+    "seed": 809,
+    "run_id": "20260924T101042_90d9b14a",
+    "raw_rows": 36,
+    "failed_rows": 0
+  },
+  {
+    "project": "cwlnn",
+    "seed": 101,
+    "run_id": "20260924T101046_497744e7",
+    "raw_rows": 96,
+    "failed_rows": 0
+  },
+  {
+    "project": "cwlnn",
+    "seed": 211,
+    "run_id": "20260924T101047_ae3add90",
+    "raw_rows": 96,
+    "failed_rows": 0
+  },
+  {
+    "project": "cwlnn",
+    "seed": 307,
+    "run_id": "20260924T101048_32d0cd9d",
+    "raw_rows": 96,
+    "failed_rows": 0
+  },
+  {
+    "project": "cwlnn",
+    "seed": 401,
+    "run_id": "20260924T101049_0971ecfa",
+    "raw_rows": 96,
+    "failed_rows": 0
+  },
+  {
+    "project": "cwlnn",
+    "seed": 503,
+    "run_id": "20260924T101050_8392a88e",
+    "raw_rows": 96,
+    "failed_rows": 0
+  },
+  {
+    "project": "cwlnn",
+    "seed": 601,
+    "run_id": "20260924T101050_d959f8e2",
+    "raw_rows": 96,
+    "failed_rows": 0
+  },
+  {
+    "project": "cwlnn",
+    "seed": 701,
+    "run_id": "20260924T101051_0af6f6f1",
+    "raw_rows": 96,
+    "failed_rows": 0
+  },
+  {
+    "project": "cwlnn",
+    "seed": 809,
+    "run_id": "20260924T101052_3fa5d3c3",
+    "raw_rows": 96,
+    "failed_rows": 0
+  },
+  {
+    "project": "ultron",
+    "seed": 101,
+    "run_id": "20260924T101052_9e5e6c01",
+    "raw_rows": 108,
+    "failed_rows": 0
+  },
+  {
+    "project": "ultron",
+    "seed": 211,
+    "run_id": "20260924T101054_a4980064",
+    "raw_rows": 108,
+    "failed_rows": 0
+  },
+  {
+    "project": "ultron",
+    "seed": 307,
+    "run_id": "20260924T101055_61127588",
+    "raw_rows": 108,
+    "failed_rows": 0
+  },
+  {
+    "project": "ultron",
+    "seed": 401,
+    "run_id": "20260924T101056_8fcc4055",
+    "raw_rows": 108,
+    "failed_rows": 0
+  },
+  {
+    "project": "ultron",
+    "seed": 503,
+    "run_id": "20260924T101057_ab03fbed",
+    "raw_rows": 108,
+    "failed_rows": 0
+  },
+  {
+    "project": "ultron",
+    "seed": 601,
+    "run_id": "20260924T101057_f5a877a3",
+    "raw_rows": 108,
+    "failed_rows": 0
+  },
+  {
+    "project": "ultron",
+    "seed": 701,
+    "run_id": "20260924T101058_22da8727",
+    "raw_rows": 108,
+    "failed_rows": 0
+  },
+  {
+    "project": "ultron",
+    "seed": 809,
+    "run_id": "20260924T101059_0f3f73ea",
+    "raw_rows": 108,
+    "failed_rows": 0
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "campaign": "natural-digits-v1",
+    "seed": 101,
+    "run_id": "20260924T101150_3293b6ce",
+    "passed": true
+  },
+  {
+    "campaign": "natural-digits-v1",
+    "seed": 211,
+    "run_id": "20260924T101337_3dcca138",
+    "passed": true
+  },
+  {
+    "campaign": "natural-digits-v1",
+    "seed": 307,
+    "run_id": "20260924T101408_c64e5cf8",
+    "passed": true
+  },
+  {
+    "campaign": "natural-digits-v1",
+    "seed": 401,
+    "run_id": "20260924T101424_7c1bb9dc",
+    "passed": true
+  },
+  {
+    "campaign": "natural-digits-v1",
+    "seed": 503,
+    "run_id": "20260924T101438_973894fc",
+    "passed": true
+  },
+  {
+    "campaign": "natural-digits-v1",
+    "seed": 601,
+    "run_id": "20260924T101451_a3afb019",
+    "passed": true
+  },
+  {
+    "campaign": "natural-digits-v1",
+    "seed": 701,
+    "run_id": "20260924T101502_a111c875",
+    "passed": true
+  },
+  {
+    "campaign": "natural-digits-v1",
+    "seed": 809,
+    "run_id": "20260924T101513_5c3f6c57",
+    "passed": true
+  },
+  {
+    "campaign": "natural-digits-sensitivity-v1",
+    "seed": 101,
+    "run_id": "20260924T103954_9039d6e2",
+    "passed": true
+  },
+  {
+    "campaign": "natural-digits-sensitivity-v1",
+    "seed": 211,
+    "run_id": "20260924T104011_dd8fc7e3",
+    "passed": true
+  },
+  {
+    "campaign": "natural-digits-sensitivity-v1",
+    "seed": 307,
+    "run_id": "20260924T104030_9445bc99",
+    "passed": true
+  },
+  {
+    "campaign": "natural-digits-sensitivity-v1",
+    "seed": 401,
+    "run_id": "20260924T104048_808c0128",
+    "passed": true
+  },
+  {
+    "campaign": "natural-digits-sensitivity-v1",
+    "seed": 503,
+    "run_id": "20260924T104103_ace59231",
+    "passed": true
+  },
+  {
+    "campaign": "natural-digits-sensitivity-v1",
+    "seed": 601,
+    "run_id": "20260924T104119_3d67f86a",
+    "passed": true
+  },
+  {
+    "campaign": "natural-digits-sensitivity-v1",
+    "seed": 701,
+    "run_id": "20260924T104134_931bd910",
+    "passed": true
+  },
+  {
+    "campaign": "natural-digits-sensitivity-v1",
+    "seed": 809,
+    "run_id": "20260924T104150_303bbf53",
+    "passed": true
+  }
+]

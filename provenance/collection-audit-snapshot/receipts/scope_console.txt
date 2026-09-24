@@ -1,0 +1,8 @@
+{
+  "historical_snapshot_files": 145,
+  "historical_source_hash": "6a0fa8d2eff817671edba7a1fc806928f46fadb2a2c10a72e7ffc39f1659b924",
+  "digit_arrays_verified_against_original_source_rows": 320,
+  "original_files_rechecked": 4138,
+  "original_files_changed": [],
+  "scope": "Runtime trees excluded except separately inventoried historical research source. No notebook files found in project or historical-source inventories."
+}

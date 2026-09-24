@@ -1,0 +1,1866 @@
+[
+  {
+    "text": "Engineering: 57 tests passed for the development candidate; 80 main run receipts passed the artifact audit. All 64 non-QLearn cells, eight natural-digit cells and eight discrete-action cells completed.",
+    "paths": [
+      "AUDIT_FINAL_REPORT.md",
+      "RESEARCH_STATUS.md",
+      "world-series/docs/execution/development-v2/CURRENT_STATUS.md",
+      "world-series/docs/exposition/STATUS_TABLE.md"
+    ]
+  },
+  {
+    "text": "Separate eight-seed wider-grid/longer-training follow-up: 432 tuning trials and 432 evaluation trajectories audited. 32-step mean AUC: full INCOMPLETE (failed required trajectories), AdamW 6.4145, momentum 7.9893. Failed tuning trials: 16; diverged/incomplete evaluation trajectories: 4. See SENSITIVITY.md for every method, failed trials and grid boundaries. Original primary results remain unchanged; reused tasks provide development evidence only.",
+    "paths": [
+      "AUDIT_FINAL_REPORT.md",
+      "RESEARCH_STATUS.md",
+      "world-series/docs/execution/development-v2/CURRENT_STATUS.md",
+      "world-series/docs/exposition/STATUS_TABLE.md"
+    ]
+  },
+  {
+    "text": "| Module | Status | Evidence and limit | |---|---|---| | qlearn | BENCHMARKED / INCONCLUSIVE | Eight-seed natural-digit study: 288 tuning trials, 432 trajectories; official pretrained Celo2 adds 48 trajectories. Full mean AUC 13.2809 vs SGD 11.9562, AdamW 6.4145, Celo2 7.7454 at 32 steps. No general optimizer advantage established. Discrete action prototype evaluated separately. Separate eight-seed wider-grid/longer-training follow-up: 432 tuning trials and 432 evaluation trajectories audited. 32-step mean AUC: full INCOMPLETE (failed required trajectories), AdamW 6.4145, momentum 7.9893. Failed tuning trials: 16; diverged/incomplete evaluation trajectories: 4. See SENSITIVITY.md for every method, failed trials and grid boundaries. Original primary results remain unchanged; reused tasks provide development evidence only. | | qapen | BENCHMARKED / INCONCLUSIVE | New causal context-memory intervention with all/rare/ordinary/return metrics and matched prediction calls. Tradeoffs remain: single-expert memory improves overall mean; fixed ensemble improves rare-regime mean. Legacy candidate memory is write-only. | | qwipii | BENCHMARKED / INCONCLUSIVE | Canonical keys retain concrete replayable paths. Exhaustive 3/4-token regression tests pass. No quotient savings on tested distinct fixed-goal puzzles; ranking-only control performs better under the limited cap. | | wcode | BENCHMARKED / INCONCLUSIVE | Eight-seed finite-DSL matrix with honest candidate accounting. Hierarchical, flat and token heuristics tie at the 24-candidate cap. Encoders are untrained structural heuristics. | | wfim | BENCHMARKED / INCONCLUSIVE | Finite support/degree/cost matrix and an actual top-k associativity counterexample. Truncation/transport identities do not establish learned downstream benefit or new algebra. | | wft | BENCHMARKED / INCONCLUSIVE | Weighted-path noise/sample/size matrix uses matched Laplacian targets. Unit-weight and true-graph oracle baselines are distinguished. Refit at each size is not transfer. | | wpinn | BENCHMARKED / INCONCLUSIVE | Three laws and three noise levels; independent held initial conditions. All polynomial terms evaluated with bounded integration. Seventeen failed rollouts remain in denominators; affected means are absent. | | cwlnn | BENCHMARKED / INCONCLUSIVE | Matched-size trained readouts on fixed sparse representations; graph sizes 24/48/96. Aggressive routing hurts the declared residual-propagation task. No universal-backbone evidence. | | ultron | BENCHMARKED / INCONCLUSIVE | Discriminating finite-DSL routing with identical tools/caps and disjoint semantic training/evaluation families. At cap 24: learned 81.94%, cheapest 66.67%, random 58.33%, static 44.44%. Not a general agent or sealed external evaluation. |",
+    "paths": [
+      "AUDIT_FINAL_REPORT.md",
+      "RESEARCH_STATUS.md",
+      "world-series/docs/execution/development-v2/CURRENT_STATUS.md",
+      "world-series/docs/exposition/STATUS_TABLE.md"
+    ]
+  },
+  {
+    "text": "- Current protocol, complete tables, CSVs, figures and draft: world-series/docs/execution/development-v2/. - Raw immutable runs: world-series/runs/; canonical campaign receipts: world-series/campaigns/. - Initial baseline commit: ae046d1. Numerical development candidate: 429c788. Later analysis/documentation commits are separate. - UCI source files, attribution and hashes: world-series/data/optdigits/. - Official Celo2 revision, weights hash and isolated dependency lock: CELO2_PROVENANCE.json and celo2-requirements.txt.",
+    "paths": [
+      "AUDIT_FINAL_REPORT.md",
+      "RESEARCH_STATUS.md",
+      "world-series/docs/execution/development-v2/CURRENT_STATUS.md",
+      "world-series/docs/exposition/STATUS_TABLE.md"
+    ]
+  },
+  {
+    "text": "Independent confirmation is BLOCKED on an external evaluator and privately frozen protocol. The concrete handoff is INDEPENDENT_EVALUATION_HANDOFF.md. Every existing confirmation registry entry remains DRAFT_NOT_AUTHORIZED.",
+    "paths": [
+      "AUDIT_FINAL_REPORT.md",
+      "RESEARCH_STATUS.md",
+      "world-series/docs/execution/development-v2/CURRENT_STATUS.md",
+      "world-series/docs/exposition/STATUS_TABLE.md"
+    ]
+  },
+  {
+    "text": "Broader model development remains open: full proposed MALIS/Q-APEN architectures, trained relational synthesis encoders, general PDE/graph/sequence workloads, and stronger cross-dataset validation. These are not completed by the bounded studies. A working manuscript exists; submission and public release have not occurred.",
+    "paths": [
+      "AUDIT_FINAL_REPORT.md",
+      "RESEARCH_STATUS.md",
+      "world-series/docs/execution/development-v2/CURRENT_STATUS.md",
+      "world-series/docs/exposition/STATUS_TABLE.md"
+    ]
+  },
+  {
+    "text": "Checked September 22, 2026. Years use the displayed first preprint year where applicable, not necessarily the journal publication year. Reading depth is explicit: an abstract-screened entry is not a claim of a cover-to-cover review. Laboratory explanations and documentation are not counted as research papers. This is a targeted related-work review, not proof that no similar method exists.",
+    "paths": [
+      "REFERENCES.md",
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/sources/REFERENCES.md"
+    ]
+  },
+  {
+    "text": "Implementation relevance: Celo already combines optimizer design and scheduling ideas. The proposed contribution must test transfer and budget allocation, not merely combine a scheduler with a learned update.",
+    "paths": [
+      "REFERENCES.md",
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/sources/REFERENCES.md"
+    ]
+  },
+  {
+    "text": "Implementation relevance: Normalized update rules and augmentation are relevant strong comparators. Preserve its distinction between a learned update rule and tunable step size; a tiny custom port is not a faithful reproduction.",
+    "paths": [
+      "REFERENCES.md",
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/sources/REFERENCES.md"
+    ]
+  },
+  {
+    "text": "Implementation relevance: ELO studies long-horizon failures and expert supervision. Test longer unrolls than meta-training, log divergence, and do not assess generalization on short training horizons only.",
+    "paths": [
+      "REFERENCES.md",
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/sources/REFERENCES.md"
+    ]
+  },
+  {
+    "text": "Implementation relevance: Iterated integrals and graded representations provide nearby context. The proposed completed word algebra is a deliberately classical mathematical foundation, not a claim of inventing infinite dimensions.",
+    "paths": [
+      "REFERENCES.md",
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/sources/REFERENCES.md"
+    ]
+  },
+  {
+    "text": "Implementation relevance: Learning a graph Laplacian and its spectral representation already exists. Compare to this family before claiming learned-world spectra as novel; year refers to first preprint.",
+    "paths": [
+      "REFERENCES.md",
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/sources/REFERENCES.md"
+    ]
+  },
+  {
+    "text": "Implementation relevance: SINDy provides sparse-library law identification. Normalize library columns, distinguish support recovery from forecasting, and avoid differentiation of inaccessible clean targets.",
+    "paths": [
+      "REFERENCES.md",
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/sources/REFERENCES.md"
+    ]
+  },
+  {
+    "text": "A planning and research package for all nine projects, prepared September 22, 2026. It contains no trained model and no claimed benchmark win. Intended source paths and commands describe what Cursor should implement. Existing repositories have not been inspected or changed by this package.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/START_HERE.md"
+    ]
+  },
+  {
+    "text": "Open WORLD_SERIES_MASTER_PLAN.md for scope/order; AGENTS.md for immutable guardrails; docs/ARCHITECTURE.md for contracts; docs/EXPERIMENT_PROTOCOL.md for evaluation; then the single assigned docs/projects/ specification. The source registry records paper titles, URLs, reading depth and implementation relevance. Mathematical derivations and their assumptions are in docs/MATH_FOUNDATIONS.md.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/START_HERE.md"
+    ]
+  },
+  {
+    "text": "These are the only execution checks shipped by the plan. They validate file/task/schema consistency and tiny mathematical reference examples. They do not train or validate any of the nine proposed models and do not establish new theorems by testing examples.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/START_HERE.md"
+    ]
+  },
+  {
+    "text": "Open this folder as a new workbench, or copy it into a separately reviewed new project directory without overwriting existing work. Paste prompts/00_integrator.md first. Bootstrap CORE-01 through CORE-06. Then use one module prompt from prompts/01_qlearn.md through prompts/09_ultron.md and its next unblocked task.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/START_HERE.md"
+    ]
+  },
+  {
+    "text": "The included .cursor/rules/*.mdc files and AGENTS.md provide persistent project instructions, following Cursor's documented formats [D01]. They are not security isolation or a substitute for testing. Keep the final evaluator/answers outside the development-agent workspace.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/START_HERE.md"
+    ]
+  },
+  {
+    "text": "Do not paste the entire source registry and all nine specifications into every session. Each task records minimal relevant files and papers. Preserve context between sessions using templates/HANDOFF.md. One integrator owns shared contracts; module workers should not independently redesign them.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/START_HERE.md"
+    ]
+  },
+  {
+    "text": "All implementation tasks start PLANNED. Every claim starts NOT_RUN. Development configuration JSON files are templates, not authorized confirmation protocols. Missing practical thresholds/sample sizes are intentional unresolved experimental-design choices to settle using development evidence before freezing a confirmation protocol\u2014not permission to choose them after looking at final results.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/START_HERE.md"
+    ]
+  },
+  {
+    "text": "Proposed application commands such as `python -m world_series run ...` become available only after Cursor implements the corresponding package tasks. The pack validator passing does not imply that command already exists.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/START_HERE.md"
+    ]
+  },
+  {
+    "text": "Sunday, September 27 is the demonstration target. October 4 is the follow-on v0.1 target. Prioritize real thin slices and clear limitations rather than nine untested large architectures. Successful verification with a negative empirical result is still a useful completed research artifact.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/START_HERE.md"
+    ]
+  },
+  {
+    "text": "This pack contains a reviewed research foundation, proposed mathematics, nine engineering specifications, a dependency-ordered execution queue and Cursor instruction files. It does not contain nine implemented/trained models, benchmark results or a verified novelty guarantee. No existing repositories were modified or audited as part of constructing this pack. Dates are scope targets, not promises that all hypotheses will succeed.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/WORLD_SERIES_MASTER_PLAN.md"
+    ]
+  },
+  {
+    "text": "Investigate whether explicit adaptation of learning rules, simulation capacity, symmetry reasoning, program representations, algebraic representations, spectral operators, physical constraints, multiscale computation and tool selection can improve separately measurable tasks under explicit budgets.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/WORLD_SERIES_MASTER_PLAN.md"
+    ]
+  },
+  {
+    "text": "The project tuple is an organizing language, not a theorem of universal intelligence. One workbench makes experiments consistent; it does not justify training all nine mechanisms jointly before their individual effects are understood.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/WORLD_SERIES_MASTER_PLAN.md"
+    ]
+  },
+  {
+    "text": "| Project / namespace | First executable scientific slice | Later ambition | |---|---|---| | Quantum Learning / qlearn | Bounded learned update policy on held-out small optimizees | Joint curriculum, memory and compute adaptation | | Q-APEN / qapen | Finite adaptive experts and engrams on returning regimes | Larger simulation graphs and more principled capacity inference | | QWIPII / qwipii | Verified symmetry quotient search plus exact projective identity | Broader learned mathematical reasoning | | World-CNN Code / wcode | Typed-DSL graph-guided synthesis with a real verifier | Safe repository-level algorithm improvement | | World-FIM\u221e / wfim | Exact sparse algebra, degree truncation and learned coordinate test | Better extensible operator/representation families | | World Fourier / wft | Learned sparse graph operator and weighted transform | Domain/discretization transfer with justified spectral assumptions | | World-PINN / wpinn | Weak-form oscillator law identification with valid structure | More difficult PDE and symmetry-discovery tasks | | CWLNN / cwlnn | Sparse hierarchical graph model with measured routing cost | Reusable multimodal/world-model backbone | | Ultron / ultron | Evidence-aware routing over several real capabilities | Carefully evaluated sequential research orchestration |",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/WORLD_SERIES_MASTER_PLAN.md"
+    ]
+  },
+  {
+    "text": "Learning an optimizer, discovering symmetry, representing programs as graphs, learning Laplacians, identifying unknown equations with PINNs, sparse routing and research-agent orchestration all have substantial prior art. The source registry maps that work to exact comparison obligations. The initial goal is not to announce nine revolutions; it is to isolate nine mechanisms well enough that positive or negative findings mean something.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/WORLD_SERIES_MASTER_PLAN.md"
+    ]
+  },
+  {
+    "text": "Infinite-dimensional algebra needs a finite approximation contract. Approximate invariance does not permit exact search pruning. Eigenspaces can be nonunique. Known physics constraints can be wrong for another system. A large collection of tools does not establish general intelligence. These are implementation requirements, not cosmetic wording caveats.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/WORLD_SERIES_MASTER_PLAN.md"
+    ]
+  },
+  {
+    "text": "Use one new monorepo with independent module namespaces. Existing APEN/PEN and FIM work remains protected; use reviewed, provenance-pinned adapters rather than changing archived experiments. Keep all modules independently runnable. Do not make one universal tensor forward method or require every experiment to depend on Ultron.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/WORLD_SERIES_MASTER_PLAN.md"
+    ]
+  },
+  {
+    "text": "One integrator builds core contracts and locks the environment. Then assign isolated modules to coding agents. Start with at most two or three simultaneous editing workers if the environment supports them, and one numerical experiment worker. The nine briefs are logical ownership units, not an instruction to launch nine memory-intensive agents or training jobs. This is a suggested concurrency policy, not a measured device limit.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/WORLD_SERIES_MASTER_PLAN.md"
+    ]
+  },
+  {
+    "text": "A task is small enough when it implements one verifiable unit with its tests and a handoff. Use six stages per module: reference, controls, candidate, development comparisons, evidence audit, adapter/demo. Do not substitute a 5,000-line one-shot generation for this progression.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/WORLD_SERIES_MASTER_PLAN.md"
+    ]
+  },
+  {
+    "text": "**September 22:** finalize identities, source inventory, comparison questions and exact reference assumptions. Establish core schemas and dependency policy. Exit: nine unambiguous specifications, protected legacy boundaries and no unknown claimed results.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/WORLD_SERIES_MASTER_PLAN.md"
+    ]
+  },
+  {
+    "text": "**September 23:** finish core runner/receipts and reference implementations. Prioritize algebra arithmetic, quotient search, typed DSL, oscillator weak residual, graph Laplacian and simple optimizees. Exit: executable references with actual tests; no learned-model claim required.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/WORLD_SERIES_MASTER_PLAN.md"
+    ]
+  },
+  {
+    "text": "**September 24:** implement nearest simple baselines and small candidates. Keep the same data/contracts across controls. Exit: at least one end-to-end development run per unblocked module or a precise blocker receipt.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/WORLD_SERIES_MASTER_PLAN.md"
+    ]
+  },
+  {
+    "text": "**September 25:** test mechanism ablations and adversarial cases. Fit small policies only after data and evaluation are trustworthy. Integrate a few real adapters into Ultron; do not wait for every optional feature. Exit: truthful preliminary comparisons, including failed mechanisms.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/WORLD_SERIES_MASTER_PLAN.md"
+    ]
+  },
+  {
+    "text": "**September 26:** freeze the demonstration code/configuration. Rerun selected demos, verify artifact hashes and prepare offline recorded outputs as labeled fallbacks. Exit: reproducible evidence-backed demonstrations, not a promise of statistical significance.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/WORLD_SERIES_MASTER_PLAN.md"
+    ]
+  },
+  {
+    "text": "**Sunday, September 27:** show the research program, several live or clearly labeled replay demos, all nine status cards, the closest prior work and the actual limitations. A module with only reference arithmetic is shown as such; missing learned components are not hidden.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/WORLD_SERIES_MASTER_PLAN.md"
+    ]
+  },
+  {
+    "text": "**September 28\u2013October 4:** strengthen comparators and task families; use development variance to design feasible confirmation runs; freeze protocols before approved final evaluation; analyze results and decide manuscript scope. Nine technical notes may be useful, but nine separate publishable discoveries must not be assumed.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/WORLD_SERIES_MASTER_PLAN.md"
+    ]
+  },
+  {
+    "text": "If the schedule slips, reduce experiment breadth\u2014not verification or scientific honesty. Keep one strong family and one failure control per module before adding a new domain. The exposition can present negative and incomplete findings accurately without representing them as completed successes.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/WORLD_SERIES_MASTER_PLAN.md"
+    ]
+  },
+  {
+    "text": "Show one overview, then a few high-information demonstrations: MALIS adaptation, verified invariant search, algebra/spectral structure, and Ultron executing a real checked task. Display a compact nine-project status table. Each card contains the hypothesis, closest baseline, implemented scope, actual metric with evidence reference or NOT_RUN, and limitation. Avoid a live giant training session as the critical demonstration path.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/WORLD_SERIES_MASTER_PLAN.md"
+    ]
+  },
+  {
+    "text": "Every plot comes from raw run artifacts. Label mock fixtures, replays and synthetic data. A paper citation establishes prior art, not evidence that this implementation works. A proof-backed reference operator establishes its stated mathematics, not learned downstream benefit.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/WORLD_SERIES_MASTER_PLAN.md"
+    ]
+  },
+  {
+    "text": "Software: reference and behavioral tests; reproducible command; bounded resources; typed failures; provenance; no hidden placeholder. Research: comparable baselines; leakage checks; actual raw results; uncertainty where appropriate; ablations; defensible scope and negative outcomes preserved. Integration: only real registered capabilities, immutable evidence and a verifier outside the agent's control. Publication: further novelty/reproduction review, clear assumptions, permissions/licenses and appropriate claim wording.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/WORLD_SERIES_MASTER_PLAN.md"
+    ]
+  },
+  {
+    "text": "This review separates established ingredients from proposed combinations and the experiments needed to distinguish them. Source keys resolve to sources/REFERENCES.md. It does not certify novelty or promise publication acceptance.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/RESEARCH_MAP.md"
+    ]
+  },
+  {
+    "text": "| Project | Closest prior families | Proposed first discriminating question | Important non-claim | |---|---|---|---| | Quantum Learning / MALIS | Learned optimizers, MAML, Celo, Celo2, ELO [R01\u2013R05] | Does a bounded task-aware update policy improve loss-versus-compute on held-out task families and longer horizons? | Learning an optimizer, a scheduler or adaptation itself is not new. | | Q-APEN | VQ representation, probabilistic ensembles, world-model planning [R06\u2013R08] plus immutable PEN lineage | Does expert/memory lifecycle allocation improve recurrent-shift prediction at matched total cost? | Finite spawning heuristics are neither infinite execution nor Bayesian nonparametric inference. | | QWIPII | Equivariance, symmetry discovery, RG, neural-symbolic geometry [R09\u2013R13] | Does verified transformation discovery reduce search while preserving proofs under held-out transforms? | Invariance itself and discovering it are established; approximate invariance cannot certify pruning. | | World-CNN Code | Program graphs, DreamCoder, evaluator-based program search [R14\u2013R16] | Does relational program encoding improve the same bounded synthesis search at equal verification budget? | Program graphs and automated program search are not new, and runtime plots do not resolve P versus NP. | | World-FIM\u221e | Hypercomplex layers, HDC, graded/signature representations, algebras [R17\u2013R20] | Can a learned algebra-preserving coordinate system improve compositional tasks at equal stored bytes? | Infinite-dimensional spaces and isomorphic coordinate changes are not newly invented numbers. | | World-FT | Graph spectra, learned Laplacians, neural operators [R21\u2013R25] | Do verified symmetry/coarse-consistency constraints improve a learned spectral operator on held-out graphs? | Learning the operator or its basis alone is existing work. | | World-PINN | Forward/inverse PINNs, SINDy, symbolic regression, HNN [R26\u2013R31] | Does verified, task-appropriate structure improve weak-form sparse law recovery under shift and noise? | Original PINNs already address discovery; low residual does not guarantee correct laws. | | CWLNN | Latent bottlenecks, sparse experts, graph pooling, state spaces [R32\u2013R35] | Does a truly sparse hierarchy achieve better accuracy/cost tradeoffs with size transfer? | Hierarchies, local graph convolution and sparse routing are existing ingredients. | | Ultron | AI Scientist, ADAS, Darwin G\u00f6del Machine, Co-Scientist [R36\u2013R39] | Does evidence-aware budgeted routing beat static routing with identical capabilities? | Multi-agent orchestration or self-editing does not establish ASI. |",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/RESEARCH_MAP.md"
+    ]
+  },
+  {
+    "text": "The implementer should read the exact methods of the nearest comparator before writing its baseline, not just its abstract. Priority method reads: Celo/Celo2/ELO; PETS; LieGAN and G-CNN; program graphs and DreamCoder; PHM and the signature primer; learned Laplacians and FNO; inverse PINNs and SINDy; DiffPool; Darwin G\u00f6del Machine. Selected method sections were consulted for this plan, while the registry identifies abstract-screened context entries.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/RESEARCH_MAP.md"
+    ]
+  },
+  {
+    "text": "For every reproduced baseline write a `reproduction_note.md`: original task, official implementation revision when used, license, deviations, hyperparameters, omitted components, and one reference behavior check. Label a simplified implementation `inspired_by`, not `faithful_reproduction`. Do not claim to outperform a named paper from a differently scaled toy adaptation.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/RESEARCH_MAP.md"
+    ]
+  },
+  {
+    "text": "First establish a clean negative-or-positive mechanism experiment. Then establish transfer to a second nontrivial family. Then test stronger faithful comparators with matched budgets. Only after those stages assess whether the theoretical or algorithmic distinction warrants a separate paper. Nine namespaces do not force nine publishable contributions. Some may become supporting infrastructure, ablations or one combined paper.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/RESEARCH_MAP.md"
+    ]
+  },
+  {
+    "text": "For each proposed claim, list the closest papers; the exact algorithmic difference; whether the difference changes information access or compute; what a fair ablation removes; and what outcome would refute the claim. Search using both your project name and standard technical terms. A project acronym will usually miss its relevant literature. Additional targeted novelty search is required before a submission; this pack does not claim exhaustive coverage of every 2026 release.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/RESEARCH_MAP.md"
+    ]
+  },
+  {
+    "text": "These are derivations for this design. They are not claims of new mathematics. The modeling combinations are research proposals; their empirical benefit and novelty remain to be established against the cited literature.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/MATH_FOUNDATIONS.md"
+    ]
+  },
+  {
+    "text": "Use a typed tuple `W=(X, \u03bc, A, G, L, D, J)` to record state space, measure, representation algebra, admissible transformations, dynamics/operator, evidence and objective. Different tasks instantiate different subsets. It is bookkeeping that aligns modules, not proof that a single universal representation exists. In particular a stochastic transition kernel, an elliptic differential operator and a program semantics function are distinct types.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/MATH_FOUNDATIONS.md"
+    ]
+  },
+  {
+    "text": "MALIS adapts an update policy; Q-APEN allocates model/memory capacity; QWIPII proposes and verifies transformations; WCode searches bounded programs; WFIM defines a structured algebra; WFT estimates a spectral operator; WPINN identifies laws; CWLNN computes sparse multiscale features; Ultron selects valid operations under budgets. Missing components are permitted.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/MATH_FOUNDATIONS.md"
+    ]
+  },
+  {
+    "text": "Thus a descent step is guaranteed for a nonzero gradient if `0<\u03b7<2a/(Lb\u00b2)`. This is a local update guarantee under the stated global smoothness bound, not a convergence guarantee for arbitrary meta-learned networks, stochastic gradients or unknown L. On tiny quadratics L is known; on general neural tasks the controller is bounded for stability but this numerical threshold must not be advertised as certified. Gradient clipping, momentum and stochasticity require separate reasoning.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/MATH_FOUNDATIONS.md"
+    ]
+  },
+  {
+    "text": "This is the law of total covariance. Calling the terms aleatoric and epistemic is a modeling interpretation: an ensemble does not automatically supply a calibrated Bayesian posterior. Test the decomposition with exact two-component examples and separately evaluate calibration. A dynamic finite ensemble is not equivalent to posterior inference in an infinite mixture model.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/MATH_FOUNDATIONS.md"
+    ]
+  },
+  {
+    "text": "Let a finite group G act by automorphisms on a directed transition graph, preserving transition costs and the goal set. Orbits define quotient states. Every original path projects to an orbit path with the same edge costs. Conversely, after selecting a representative of the initial orbit, an edge from one orbit to another can be lifted from the current representative using the automorphism that relates it to an edge witness. Induction lifts a complete quotient path. Goal invariance ensures its endpoint remains a goal.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/MATH_FOUNDATIONS.md"
+    ]
+  },
+  {
+    "text": "Therefore shortest-path search on the correctly constructed quotient preserves reachable goals and optimal costs under these assumptions. Store witness transforms to reconstruct a concrete path. If only state features\u2014not transitions, constraints and goal predicates\u2014are invariant, the result does not follow. An approximate learned embedding is insufficient for exact orbit merging. Use it for ranking only.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/MATH_FOUNDATIONS.md"
+    ]
+  },
+  {
+    "text": "Associativity follows from word concatenation and absolute convergence. The unit is `e_\u03b5`; for `d\u22652` the algebra is generally noncommutative. This is a standard completed free/tensor-algebra-type construction, not a new family of numbers merely because the coordinates are infinite.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/MATH_FOUNDATIONS.md"
+    ]
+  },
+  {
+    "text": "The truncated product `x\u22c6_Ny=P_N(x\u22c6y)` is associative on degree\u2264N elements: omitted high-degree terms can never contribute back to lower degrees. This property does not extend to arbitrary top-k pruning.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/MATH_FOUNDATIONS.md"
+    ]
+  },
+  {
+    "text": "It remains associative and unital. A bounded positive diagonal scaling per word is a simple implementation. Because this is an algebra isomorphism, it does not establish a fundamentally new algebra; its research value would be measured representational efficiency, optimization or conditioning. Arbitrary learned structure constants would need separate constraints and proofs.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/MATH_FOUNDATIONS.md"
+    ]
+  },
+  {
+    "text": "Take an incidence matrix B, nonnegative edge weights w, graph Laplacian `L=B\u1d40diag(w)B`, and positive diagonal mass M. Define the real symmetric matrix `S=M^{-1/2}LM^{-1/2}`. Its eigenvectors Q can be chosen orthonormal; with `\u03a6=M^{-1/2}Q`,",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/MATH_FOUNDATIONS.md"
+    ]
+  },
+  {
+    "text": "Hence `f\u1d40Mf=c\u1d40c`. With the first k modes, the reconstruction is the M-orthogonal projection. The transform depends on a self-adjoint finite operator; do not extend this result to arbitrary non-normal Koopman operators without additional hypotheses. In infinite dimensions a countable complete eigenbasis requires stronger spectral assumptions.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/MATH_FOUNDATIONS.md"
+    ]
+  },
+  {
+    "text": "Eigenvectors are nonunique inside repeated eigenspaces. Compare invariant spectral projectors or subspaces, not arbitrary eigenvector columns; train polynomial filters where possible to avoid eigenvector-gradient singularities [D03]. An eigen-residual from an exact eigensolver is a diagnostic, not evidence that the learned operator captures the true physics.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/MATH_FOUNDATIONS.md"
+    ]
+  },
+  {
+    "text": "This motivates a weak residual that does not require directly differentiating noisy observed samples. Quadrature and smoothing still introduce errors and must be tested. Sparsity recovery depends on excitation, library specification and noise; low residual alone does not prove uniqueness.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/MATH_FOUNDATIONS.md"
+    ]
+  },
+  {
+    "text": "For `q\u0307=v`, `v\u0307=\u2212kq\u2212cv`, define `E=(v\u00b2+kq\u00b2)/2`. Then `E\u0307=\u2212cv\u00b2`. Conservation is appropriate when `c=0`; monotone dissipation is the correct structure for `c>0`. This simple counterexample should be a mandatory test against blindly imposing conservation.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/MATH_FOUNDATIONS.md"
+    ]
+  },
+  {
+    "text": "This excludes hierarchy construction, sorting, routing and task-dependent depth; report them separately. Dense pooling matrices or all-pairs attention violate the assumed bound. Complexity in N does not imply actual lower wall-clock at small N or memory advantage at arbitrary h.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/MATH_FOUNDATIONS.md"
+    ]
+  },
+  {
+    "text": "The verifier is external to the modifying agent. Learning a contextual bandit for one-step module selection is not equivalent to solving the sequential MDP. Repeatedly tuning on final held-out outcomes destroys their role as independent confirmation. Keep a development evaluator for selection and a separately controlled final evaluation for claims.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/MATH_FOUNDATIONS.md"
+    ]
+  },
+  {
+    "text": "This is a proposed layout, not an inspection of the user's current Git repositories. Bootstrap must inventory existing work before creating or copying files. Use one new monorepo `world-series` with one installable Python package `world_series`; retain pre-existing repositories as read-only provenance sources until reviewed. Do not merge their outcome records or automatically relocate files. Nine isolated namespaces share contracts, generators and reporting, not mutable global state.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world-series/docs/ARCHITECTURE.md",
+      "world_series_cursor_pack/docs/ARCHITECTURE.md"
+    ]
+  },
+  {
+    "text": "```text world-series/ AGENTS.md .cursor/rules/ pyproject.toml dependency-lock-file src/world_series/ __init__.py __main__.py cli.py core/ contracts.py budgets.py devices.py seeds.py artifacts.py registry.py protocols.py data/ families.py generators.py splits.py provenance.py evaluation/ runner.py metrics.py uncertainty.py cost.py reports.py qlearn/ qapen/ qwipii/ wcode/ wfim/ wft/ wpinn/ cwlnn/ ultron/ configs/{project}/{smoke,dev,ablation}.yaml tests/{core,qlearn,qapen,qwipii,wcode,wfim,wft,wpinn,cwlnn,ultron}/ docs/projects/ tasks/tasks.json sources/references.json experiments/registry.json runs/{run_id}/{manifest.json,events.jsonl,metrics.json,artifacts/} demos/ tools/ ```",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world-series/docs/ARCHITECTURE.md",
+      "world_series_cursor_pack/docs/ARCHITECTURE.md"
+    ]
+  },
+  {
+    "text": "The final holdout and its evaluation runner live outside the development-agent workspace. The repository may contain a public evaluation API and toy fixtures, not sealed answers. A path exclusion alone does not seal data.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world-series/docs/ARCHITECTURE.md",
+      "world_series_cursor_pack/docs/ARCHITECTURE.md"
+    ]
+  },
+  {
+    "text": "Use Python 3.11 or 3.12 after checking the available environment; select one and lock it. Use NumPy, SciPy and PyTorch for numerical work, pytest and Hypothesis for tests, Ruff and a type checker for development, and a YAML parser for static configuration. SymPy is optional for exact symbolic checks, not a prerequisite for every module. Start with explicit dataclasses and argparse; do not spend the sprint building a generic workflow framework. Use standard-library graph adjacency structures first; large graph frameworks, Ray, Kubernetes and cloud schedulers are unnecessary for the reference workbench.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world-series/docs/ARCHITECTURE.md",
+      "world_series_cursor_pack/docs/ARCHITECTURE.md"
+    ]
+  },
+  {
+    "text": "Resolve actual compatible dependency versions in CORE-01 and save the lock. The documentation links to a current PyTorch documentation version; this is not a claim that that version is installed or supports every target device. Keep a pure CPU mathematical reference. Document any MPS/CUDA fallbacks rather than silently changing the evaluated system. See [D02\u2013D05].",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world-series/docs/ARCHITECTURE.md",
+      "world_series_cursor_pack/docs/ARCHITECTURE.md"
+    ]
+  },
+  {
+    "text": "`Budget`: maximum training steps, wall-clock allowance, simulator calls, candidate evaluations, artifact bytes and planned memory. Hard safety requires OS/container enforcement; Python estimates are advisory. Never assert a universal laptop-memory guarantee from a polling monitor.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world-series/docs/ARCHITECTURE.md",
+      "world_series_cursor_pack/docs/ARCHITECTURE.md"
+    ]
+  },
+  {
+    "text": "Use specialized protocols: `Learner.fit_task`, `WorldModel.predict`, `InvariantEngine.propose/verify`, `ProgramSearch.solve`, `Algebra.multiply`, `SpectralTransform.encode/decode`, `LawIdentifier.fit`, `Backbone.forward`, `Orchestrator.run`. Each adapter converts a shared ModuleRequest into a project-specific request. Require round-trip serialization and explicit version checks. A PINN and a program synthesizer should not pretend to accept the same tensor just to make an architecture diagram uniform.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world-series/docs/ARCHITECTURE.md",
+      "world_series_cursor_pack/docs/ARCHITECTURE.md"
+    ]
+  },
+  {
+    "text": "```text wfim -> wft: structured coefficient experiment, later and optional qwipii -> wpinn: verified applicable invariance constraints wft -> wpinn: optional spectral features/operator estimates cwlnn -> wcode or qapen: optional encoder swap, after standalone controls qlearn -> selected model trainers: optional controller swap all implemented adapters -> ultron: routing, not joint end-to-end training ```",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world-series/docs/ARCHITECTURE.md",
+      "world_series_cursor_pack/docs/ARCHITECTURE.md"
+    ]
+  },
+  {
+    "text": "```bash python -m world_series doctor python -m world_series validate-config configs/qlearn/smoke.yaml python -m world_series run --config configs/qlearn/smoke.yaml python -m world_series compare --protocol experiments/registry.json --split dev python -m world_series report --run-id REAL_RUN_ID python -m pytest tests/core tests/qlearn -q ```",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world-series/docs/ARCHITECTURE.md",
+      "world_series_cursor_pack/docs/ARCHITECTURE.md"
+    ]
+  },
+  {
+    "text": "`run` creates an immutable run directory after validation, stores environment/config/input hashes, and writes crash or interruption receipts. `compare` never selects the best test seed. `report` reads artifacts, never asks a language model to invent missing numbers. A manifest's `git_head` is nullable; a content hash is not a Git commit.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world-series/docs/ARCHITECTURE.md",
+      "world_series_cursor_pack/docs/ARCHITECTURE.md"
+    ]
+  },
+  {
+    "text": "One integrator owns `core`, schemas, config conventions, dependency locks and shared CI. Module implementers own only their namespace, tests and configs. A module interface change needs a small contract change request with migration tests, not simultaneous edits by every agent. Worktrees may separate concurrent editing, but all numerical runs share one resource queue by default. Shared file ownership is more important than maximizing agent count.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world-series/docs/ARCHITECTURE.md",
+      "world_series_cursor_pack/docs/ARCHITECTURE.md"
+    ]
+  },
+  {
+    "text": "CI stages: syntax/lint/type checks; core property tests; nine tiny CPU smoke suites; schema/evidence integrity; selected integration smoke. Longer training runs are explicit development jobs, never an accidental pull-request default. A study can be software-correct and scientifically negative.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world-series/docs/ARCHITECTURE.md",
+      "world_series_cursor_pack/docs/ARCHITECTURE.md"
+    ]
+  },
+  {
+    "text": "A passing test addresses the first question. A benchmark addresses a specified part of the second. Neither automatically answers the third. No statement of universal learning, quantum advantage, infinite execution, P=NP or ASI is an admissible v0.1 result.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world-series/docs/EXPERIMENT_PROTOCOL.md",
+      "world_series_cursor_pack/docs/EXPERIMENT_PROTOCOL.md"
+    ]
+  },
+  {
+    "text": "The archived `PEN_SOURCE_IDENTITY_RECONCILIATION_2026-09-18.md` defines APEN as the family and PEN as a fixed precursor. It preserves mixed/negative memory evidence and prohibits rescue tuning under the historical identity. Keep that identity immutable. World Series uses `WS-{PROJECT}-20260922-v0.1-dev` for development proposals and a separately frozen confirmation protocol. Do not reuse visible historical outcome packets as blind confirmation. The new World-FIM algebra study is distinct from Fabric-Induced Memory.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world-series/docs/EXPERIMENT_PROTOCOL.md",
+      "world_series_cursor_pack/docs/EXPERIMENT_PROTOCOL.md"
+    ]
+  },
+  {
+    "text": "Split by generative task family or source object, not by adjacent rows. MALIS: separate whole optimizee/task distributions. Q-APEN: separate complete streams, regime schedules and parameter draws. QWIPII: split canonical problem orbits so equivalent transforms cannot straddle train and test. WCode: split source program families after normalization, not examples from one program. WFIM: split compositional templates and lengths. WFT/CWLNN: split graph instances, generator parameters and selected graph sizes. WPINN: split initial conditions, trajectories and physical parameters. Ultron: split full research tasks and templates.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world-series/docs/EXPERIMENT_PROTOCOL.md",
+      "world_series_cursor_pack/docs/EXPERIMENT_PROTOCOL.md"
+    ]
+  },
+  {
+    "text": "Training data fits parameters. Development data chooses architecture and hyperparameters. A protected confirmation set is generated/committed by an evaluator outside the development agent after the protocol is frozen; its seed/answers are not in agent prompts. Record its manifest hash. Evaluate a frozen candidate and baselines once per declared protocol. Any post-confirmation revision is a new study version, not a silent retry. Do not promise secrecy if the same agent can read the evaluator's filesystem.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world-series/docs/EXPERIMENT_PROTOCOL.md",
+      "world_series_cursor_pack/docs/EXPERIMENT_PROTOCOL.md"
+    ]
+  },
+  {
+    "text": "Record the exact code/config/environment hashes, task generator, inclusion/exclusion criteria, primary metric, effect direction, practical effect threshold, seeds, sample size, failure handling, compute accounting, baseline tuning budget, stopping rule, uncertainty procedure and claim wording. Do not select a practical threshold after viewing confirmation effects. Until these are specified the registry status is `DRAFT_NOT_AUTHORIZED`, not preregistered.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world-series/docs/EXPERIMENT_PROTOCOL.md",
+      "world_series_cursor_pack/docs/EXPERIMENT_PROTOCOL.md"
+    ]
+  },
+  {
+    "text": "Initial development plan: three paired seeds for debugging, then five or more paired runs over multiple independent task instances if resources permit. These are planning defaults, not a promise that five seeds yields adequate power. Use development variance to design a feasible confirmation sample size. Report noisy or underpowered outcomes as inconclusive. Family diversity often matters more than many seeds of one task.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world-series/docs/EXPERIMENT_PROTOCOL.md",
+      "world_series_cursor_pack/docs/EXPERIMENT_PROTOCOL.md"
+    ]
+  },
+  {
+    "text": "Use one matched simple baseline, one nearest mechanism baseline and one ablation as the minimum. Share input information, data splits, stopping budgets and tuning opportunities. Include all candidate overhead: graph construction, search, gating, simulator birth/warmup, verification and preprocessing. Separate one-time meta-training/pretraining from per-task inference or adaptation. Report amortization assumptions and break-even task count rather than pretending pretraining was free.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world-series/docs/EXPERIMENT_PROTOCOL.md",
+      "world_series_cursor_pack/docs/EXPERIMENT_PROTOCOL.md"
+    ]
+  },
+  {
+    "text": "Resource equality can mean different things. Predefine the primary comparison: wall-clock on identical hardware, simulator calls, candidate evaluations, or training FLOPs estimated by a stated method. Report secondary comparisons rather than choosing whichever budget makes the candidate look best. Equal parameters alone is not equal compute. Timeout/divergence counts must remain in the denominator.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world-series/docs/EXPERIMENT_PROTOCOL.md",
+      "world_series_cursor_pack/docs/EXPERIMENT_PROTOCOL.md"
+    ]
+  },
+  {
+    "text": "Use paired differences on the same tasks/seeds. For heterogeneous families report family-level effects and an aggregate with a documented weighting. Bootstrap at the independent task/trajectory level, nesting seed resampling only where justified; do not treat 1,000 correlated timesteps as 1,000 independent trials. Report intervals, all raw trial summaries, medians and failures. For suites, robust aggregate summaries can supplement\u2014not replace\u2014per-family outcomes [R40]. Avoid a single best-seed chart.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world-series/docs/EXPERIMENT_PROTOCOL.md",
+      "world_series_cursor_pack/docs/EXPERIMENT_PROTOCOL.md"
+    ]
+  },
+  {
+    "text": "A proposed development promotion rule is: no correctness regression; practical improvement over the strongest eligible matched baseline; and an uncertainty interval consistent with the declared effect. This is a policy to freeze before confirmation, not a universal significance recipe. Nine projects and many endpoints create multiplicity: identify nine primaries in advance, distinguish exploratory results, and use an explicitly chosen correction or avoid joint significance claims.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world-series/docs/EXPERIMENT_PROTOCOL.md",
+      "world_series_cursor_pack/docs/EXPERIMENT_PROTOCOL.md"
+    ]
+  },
+  {
+    "text": "Remove only the claimed mechanism while keeping information access and reasonable model capacity comparable. Replace learned memory writes with random/recent writes; replace adaptive worlds with fixed ensembles; replace verified quotienting with ranking-only; compare learned algebra transport to the identical fixed algebra; remove spectral constraints individually; compare learned routing with fixed routing. Do not compare the full model against an intentionally crippled straw man.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world-series/docs/EXPERIMENT_PROTOCOL.md",
+      "world_series_cursor_pack/docs/EXPERIMENT_PROTOCOL.md"
+    ]
+  },
+  {
+    "text": "`SPECIFIED`: design and tests written, no implementation implied. `IMPLEMENTED`: code path exists and has been reviewed. `SMOKE_PASSED`: tiny correctness/plumbing checks actually executed. `BENCHMARKED`: matched declared comparisons actually executed. `SUPPORTED`, `NOT_SUPPORTED`, `INCONCLUSIVE`: bounded interpretation of a frozen primary result. `BLOCKED`, `NOT_RUN`, `INVALIDATED`: explicit absence/failure/protocol violation.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world-series/docs/EXPERIMENT_PROTOCOL.md",
+      "world_series_cursor_pack/docs/EXPERIMENT_PROTOCOL.md"
+    ]
+  },
+  {
+    "text": "Each claim links to immutable raw evidence and a specific scope. A software build may pass with `NOT_SUPPORTED`. Never make CI demand a positive research finding. Publication readiness also needs independent review, literature coverage, reproducibility, licenses and truthful reporting; a Sunday demo does not establish all of these.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world-series/docs/EXPERIMENT_PROTOCOL.md",
+      "world_series_cursor_pack/docs/EXPERIMENT_PROTOCOL.md"
+    ]
+  },
+  {
+    "text": "All numerical sizes in this pack are proposed starting configurations, not measured performance estimates. Default to one numerical training worker, tiny CPU smoke tests, no paid APIs and no dependency on a cluster. Confirm actual RAM, disk, device and available libraries in CORE-01. Do not infer installed hardware from project aspirations.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/RESOURCE_AND_SECURITY.md"
+    ]
+  },
+  {
+    "text": "Suggested smoke ceilings: 64\u2013256 samples, 16\u201332 inner learning steps, graphs with 32\u2013128 nodes, eight active world experts, 128 memory entries, DSL depth six, algebra degree six. Larger configurations require an explicit budget record. Refuse allocations beyond maximum node/term/candidate count before constructing dense tensors. Resource checks must include adapters and evaluation, not just model forward passes.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/RESOURCE_AND_SECURITY.md"
+    ]
+  },
+  {
+    "text": "Record measured elapsed time, peak process memory where supported, backend/dtype, candidate calls and failure reason. Cooperative Python budgets cannot forcibly contain all native-library allocations; use process/container limits for owned jobs where available. Do not kill other applications, lower system safety limits, or set unsafe accelerator memory variables.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/RESOURCE_AND_SECURITY.md"
+    ]
+  },
+  {
+    "text": "Use a typed total DSL interpreter for synthesis. Validate the AST, operator whitelist, types, lengths and fuel before execution. A safe interpreter contains no file/network/subprocess capability. Do not use Python eval/exec as its implementation. General code execution, if added later, needs a hardened disposable container or equivalent, read-only inputs, no secrets, no host mounts, no network, limited process count and memory/time limits. Host subprocess timeouts are not sufficient isolation.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/RESOURCE_AND_SECURITY.md"
+    ]
+  },
+  {
+    "text": "Keep the final evaluator outside the development workspace, with read-only candidate access and separately controlled input visibility. Do not let Ultron edit evaluator code, scoring functions or the claim ledger's approved thresholds. Agent rules improve behavior but do not enforce access control [D01]. Store secrets outside the repository and do not give research agents production credentials.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/RESOURCE_AND_SECURITY.md"
+    ]
+  },
+  {
+    "text": "Ultron v0.1 executes pre-approved registered operations. Self-modification, external deployment, outreach and live trading are out of scope. Proposed edits in a later phase are reviewed as patches; they are never merged because the agent says its own test passed. Repeated validation selection is development, not fresh blind confirmation.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/RESOURCE_AND_SECURITY.md"
+    ]
+  },
+  {
+    "text": "On exhaustion or dependency failure, emit a failure artifact and stop that task. A missing module returns UNSUPPORTED_CAPABILITY, not a mock success. Continue independent tasks only when their own prerequisites and budgets are satisfied.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/RESOURCE_AND_SECURITY.md"
+    ]
+  },
+  {
+    "text": "The project studies classical learning algorithms. \u201cQuantum Learning\u201d is a brand, not a claim about qubits, quantum speedup, subjective awareness or metacognition. The eventual ambition is a controller that adapts optimization, curriculum, memory and computation. The first experiment isolates optimization; adding all those mechanisms at once would obscure attribution.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/01_qlearn.md"
+    ]
+  },
+  {
+    "text": "Learned optimizers [R01], meta-learned initializations [R02], Celo [R03], Celo2 [R04] and ELO [R05] cover substantial parts of the original idea. In particular transfer and long-horizon stability are already active research targets. Our candidate question is narrower: can a bounded controller conditioned on task progress and remaining budget improve a predeclared compute-normalized objective across held-out optimizee families? This is a hypothesis, not an established novel result. Celo2 and ELO deserve stronger-comparator evaluation beyond the demonstration phase.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/01_qlearn.md"
+    ]
+  },
+  {
+    "text": "For task \u03c4, support data S\u03c4 fits the optimizee and query data Q\u03c4 scores adaptation. Let \u03b8_t be functional optimizee parameters, g_t a support gradient and m_t a momentum feature. A shared controller maps per-parameter and per-layer normalized features into positive diagonal gates and a bounded step size:",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/01_qlearn.md"
+    ]
+  },
+  {
+    "text": "Enforce `\u03b7_min\u2264\u03b7_t\u2264\u03b7_max` and `a\u2264diag(D_t)\u2264b` with smooth parameterizations. Initialize near a stable fixed rule. Controller features never contain query labels or future losses. The outer loss may use query losses because it is the meta-training objective, but that is not information available to the controller at inference.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/01_qlearn.md"
+    ]
+  },
+  {
+    "text": "Normalize by a fixed task scale or initial loss plus \u03b5, not by the candidate's best outcome. Discrete failure penalties are diagnostics/selection signals unless an explicitly documented gradient estimator handles them. Do not pretend a Boolean divergence penalty supplies useful differentiable gradients.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/01_qlearn.md"
+    ]
+  },
+  {
+    "text": "The conditional descent inequality in MATH_FOUNDATIONS.md applies to known L-smooth objectives with a bounded positive preconditioner. Use it as a theorem-backed quadratic sanity check. It is not a safety proof for arbitrary neural training, momentum, stochastic gradients or unknown curvature.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/01_qlearn.md"
+    ]
+  },
+  {
+    "text": "Generate positive-definite quadratics with controlled condition numbers and task-specific minimizers. Then add small linear regression and two-layer MLP regression tasks. Split entire distributions: hold out condition-number ranges, function families and model widths. Begin with batch four tasks, controller hidden width 32, 16 unrolled steps and optimizee width 64. These are resource caps, not tuned results. Evaluate horizon 32 or 64 only after the 16-step loop is sound.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/01_qlearn.md"
+    ]
+  },
+  {
+    "text": "A task object returns support/query batches independently and a task_id. It exposes analytic curvature only to the oracle baseline and reference tests, never covertly to the learned controller. Use separate result labels for oracle-information controls.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/01_qlearn.md"
+    ]
+  },
+  {
+    "text": "`OptimizeeSpec.build(seed) -> parameter_dict, buffer_dict`. `FunctionalOptimizee.loss(params, buffers, batch) -> scalar`. `FeatureBuilder.build(params, grads, state, budget) -> features[P,F]`. `UpdatePolicy.forward(features[P,F], state[P,H]) -> gates[P], step_sizes[layer], new_state`. `InnerLoop.unroll(task, policy, steps) -> Trajectory`. `MetaTrainer.step(tasks) -> MetaMetrics`.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/01_qlearn.md"
+    ]
+  },
+  {
+    "text": "P is flattened parameter count. A metadata table maps slices back to named shapes; assert exact round trips. No shared controller state across independent tasks. All learned-policy parameters must receive finite gradients in a tiny diagnostic problem. Use `torch.func.functional_call` to evaluate parameter dictionaries [D02].",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/01_qlearn.md"
+    ]
+  },
+  {
+    "text": "| File under src/world_series/qlearn | Responsibility | |---|---| | tasks.py | Quadratic/regression task generation, family splits and oracle flags | | functional.py | Parameter flatten/unflatten and functional loss evaluation | | features.py | Stable gradient/momentum/budget features with explicit detach policy | | policy.py | Bounded positive gates, controller state and reset | | unroll.py | Exact short differentiable inner loop; separate named truncated mode | | meta_train.py | Outer objective, finite-gradient checks and checkpointing | | baselines.py | Tuned SGD, momentum, AdamW, fixed schedule and small learned control | | evaluate.py | Loss-versus-compute, divergence and longer-horizon evaluation | | adapter.py | Capability `adapt_learner` returning checkpoint and evidence |",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/01_qlearn.md"
+    ]
+  },
+  {
+    "text": "Implement the exact tiny loop first. Use `autograd.grad(create_graph=True)` for the reference meta-gradient. Do not mutate `.data`, call an ordinary in-place optimizer inside the differentiable loop, or detach the update graph accidentally. Full-gradient finite-difference checks require matching analytic dependencies; a deliberately first-order/stop-gradient mode must have its own name and tests. Truncated backpropagation introduces bias and must not be represented as an exact full-horizon meta-gradient.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/01_qlearn.md"
+    ]
+  },
+  {
+    "text": "```text for task in independent_meta_batch: params, buffers = initialize_optimizee(task.seed) policy_state = zeros_for_this_task() for step in range(unroll_steps): support_loss = functional_loss(params, buffers, task.support(step)) grads = differentiable_gradient(support_loss, params) features = build_features(grads, history, remaining_budget) params, policy_state = bounded_update(params, grads, features, policy_state) outer_terms.append(query_loss(params, task.query(step))) record instability without discarding the task backpropagate declared outer objective into controller parameters ```",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/01_qlearn.md"
+    ]
+  },
+  {
+    "text": "Minimum controls: tuned fixed-step SGD, momentum SGD, AdamW with a matched tuning budget, and a small learned update policy without task/budget features. An initialization-only meta-learning control is meaningful on the same adaptation task, but do not force it into incomparable optimizer-only settings. Ablate budget features, gate learning, recurrence and task augmentation separately. Later evaluate a faithful Celo2/ELO implementation through a separate runner with its dependency/license records; a simplified substitute must not inherit their names.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/01_qlearn.md"
+    ]
+  },
+  {
+    "text": "Primary development endpoint: area under normalized validation-loss-versus-measured-compute curve, lower is better. Also report final loss, divergence fraction, adaptation time, peak memory and amortized meta-training cost. Select an interpretable practical effect threshold before final confirmation; it is intentionally not fabricated here.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/01_qlearn.md"
+    ]
+  },
+  {
+    "text": "Reference tests: analytic quadratic gradient; flatten/unflatten identity; conditional descent when assumptions hold; finite-difference check of one outer parameter in CPU float64. Candidate tests: bounds always respected; task states reset; query labels inaccessible to policy; nonzero finite outer gradients; checkpoint reload matches the same next update; budget exhaustion stops deterministically. Include a deliberately unstable large-step control so the divergence detector is genuinely exercised.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/01_qlearn.md"
+    ]
+  },
+  {
+    "text": "The smoke suite may use two tasks and four steps. Passing means the implementation works, not that MALIS beats AdamW. Mechanism benchmarking requires the same tasks, tuning policy and compute counters for all comparators. An unsuccessful controller remains a valid `NOT_SUPPORTED` result.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/01_qlearn.md"
+    ]
+  },
+  {
+    "text": "Demonstrate learning-policy adaptation on tiny tasks with a baseline trace and actual run manifest. Present a held-out example only from the authorized demonstration split. Defer curriculum selection, dynamic architecture surgery, optimizer mutation, memory policies, arbitrary LLM training and meta-meta control. These become separately versioned hypotheses after the bounded update-policy study is interpretable.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/01_qlearn.md"
+    ]
+  },
+  {
+    "text": "Use Q-APEN as the World Series successor label, with WAPEN as an optional alias only if the project owner confirms they are the same study. Do not invent a new expansion for APEN that overrides its existing family specification. Preserve PEN as a fixed historical precursor. This project has finite execution and resource caps even when its conceptual model family is extensible.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/02_qapen.md"
+    ]
+  },
+  {
+    "text": "VQ representations [R06], probabilistic ensembles/planning [R07] and world-model imagination [R08] are established. The private PEN reconciliation requires preserving mixed/negative memory outcomes and testing adaptive mechanisms against appropriate fixed controls. The research proposal is a jointly measured lifecycle for model capacity and explicit memories under returning regimes, not merely a larger ensemble or a new codebook.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/02_qapen.md"
+    ]
+  },
+  {
+    "text": "New protocol IDs and fresh synthetic streams are mandatory. Do not tune the historical PEN experiment, change its frozen seeds, or import its outcome numbers into these results. A legacy adapter is optional and blocked until its source identity and read-only use are verified.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/02_qapen.md"
+    ]
+  },
+  {
+    "text": "Encode observations `h_t=E(o_\u2264t)` and quantize through a learned codebook `z_t=argmin_j ||h_t\u2212c_j||\u00b2`. Keep a continuous residual feature to avoid forcing all dynamics through a lossy discrete index. Pretrain/freeze the codebook for the first lifecycle experiment; joint online codebook drift can otherwise make memory keys incomparable across time.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/02_qapen.md"
+    ]
+  },
+  {
+    "text": "Use normalized routing weights and positive variance floors. Decompose predictive variance with the total-covariance formula from MATH_FOUNDATIONS.md. Disagreement is a useful feature, not automatically calibrated epistemic uncertainty.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/02_qapen.md"
+    ]
+  },
+  {
+    "text": "Engrams store a key, compressed value, originating regime/expert ID, write time, access statistics and a delayed-utility estimate. Utility is estimated from subsequent development-stream prediction changes, not only immediate salience or training reconstruction. Each intervention uses a defined ablation/replay protocol so \u201cmemory helps\u201d is supported by outcomes, not activation counts.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/02_qapen.md"
+    ]
+  },
+  {
+    "text": "Use a finite state machine: NEW \u2192 WARMUP \u2192 ACTIVE \u2192 SLEEPING \u2192 REVIVED, with separate PRUNED archives. Stable UUIDs identify experts. Spawning requires sustained pre-update surprise and a cooldown, not one noisy point. Warm a candidate using a bounded replay window and assess it on subsequent stream blocks. A newly fitted expert cannot claim success on the same label that triggered its creation.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/02_qapen.md"
+    ]
+  },
+  {
+    "text": "Crucial evaluation order: predict, log predictive distribution and memory state, observe target, score, then update gates/experts/memory. Future observations and true regime labels are unavailable to the learner. Truth labels may be used only in the evaluator to diagnose shift lag and regime recurrence.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/02_qapen.md"
+    ]
+  },
+  {
+    "text": "Proposed caps: at most eight active experts, 32 archived identities, 128 engrams, codebook 64, latent width 16, rollout horizon 16 and 64 rollout calls. These are starting limits. Every warmup, routing decision, retrieval, merge check and simulation counts toward cost.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/02_qapen.md"
+    ]
+  },
+  {
+    "text": "`WorldExpert.predict(features[B,D], action[B,A]) -> mean[B,O], logvar[B,O]`. `WorldBank.route(features) -> expert_ids[K], weights[B,K]`. `LifecyclePolicy.observe(scored_event) -> LifecycleDecision`. `EngramStore.write/retrieve/consolidate -> typed records`. `StreamEvaluator.step(observation, optional_action) -> prequential receipt`.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/02_qapen.md"
+    ]
+  },
+  {
+    "text": "Use `nn.ModuleDict` keyed by stable IDs; maintain optimizer groups/state when experts appear or sleep. Do not index mutable experts only by list position. Serialize dormant weights and memory references together. A bounded graph of expert similarities may support transfer later, but is disabled in the first lifecycle comparison to avoid collapsing ensemble diversity.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/02_qapen.md"
+    ]
+  },
+  {
+    "text": "| File | Main responsibility | |---|---| | streams.py | Switching linear systems, delayed cues and recurrent regime schedules | | quantizer.py | Codebook fitting, commitment loss, distortion and code usage | | expert.py | Small probabilistic predictors with variance floors | | mixture.py | Routing, predictive moments and scoring | | engrams.py | Fixed-capacity trace storage, retrieval, forgetting and utility receipts | | lifecycle.py | Birth/sleep/revive policy with cooldowns and explicit cost | | bank.py | UUID registry, optimizers and checkpoint round trips | | baselines.py | Fixed ensembles and memory-write controls | | evaluate.py | Prequential metrics, calibration and regime diagnostics | | adapter.py | `predict_worlds` capability, not arbitrary external actions |",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/02_qapen.md"
+    ]
+  },
+  {
+    "text": "Generate streams from several stable linear state-space systems with noisy observations. Insert delayed cues that help identify a later regime and repeat earlier regimes after long gaps. Vary observation noise independently of regime shifts so spawning on noise is penalized. Keep an easier no-shift negative control: adaptive growth should not be necessary there.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/02_qapen.md"
+    ]
+  },
+  {
+    "text": "Compare against one probabilistic model, a fixed ensemble, a rolling/replay-only ensemble, dynamic experts without memory, fixed experts with memory, random-write engrams and an attention/recent-history replacement. Match either total measured time or total training/prediction calls as the declared primary resource. Report parameter-matched and active-compute-matched comparisons separately; they answer different questions.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/02_qapen.md"
+    ]
+  },
+  {
+    "text": "Primary proposal: prequential negative log likelihood at fixed total cost. Secondary: rollout error, calibration, shift recovery delay, expert count, false spawns, memory retrieval precision and measured delayed utility. Finance is not needed for this mechanism test. Any later financial benchmark needs a separate chronological/leakage/cost protocol, not a profitable-trading claim from these synthetic streams.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/02_qapen.md"
+    ]
+  },
+  {
+    "text": "Exact mixture moments for two known Gaussians; weights sum to one; variances positive; no target accessed before prediction; no missing/duplicated optimizer state after spawn; revive preserves archived identity; codebook freeze preserves old keys; memory cap enforced before writes; cooldown prevents repeated spawning; deterministic stream replay; ablations truly disable the named feature.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/02_qapen.md"
+    ]
+  },
+  {
+    "text": "Behavioral test: a controlled returning regime should produce an observable lifecycle event, even if it does not improve the primary metric. Separate this mechanism activation check from the benchmark claim. Mock lifecycle scripts belong only in unit tests, never in claimed learned results.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/02_qapen.md"
+    ]
+  },
+  {
+    "text": "A countably infinite mixture or stick-breaking prior may be a later mathematical model, but threshold spawning is not posterior inference under that prior. Do not include an infinite sum in the paper and label a capped heuristic implementation as an exact realization. Sunday needs a truthful finite demonstration: the active expert population changes under a measured budget and its effect is compared to fixed controls. Merge policies, graph knowledge transfer and nonparametric inference are later hypotheses.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/02_qapen.md"
+    ]
+  },
+  {
+    "text": "The first implementation is a verified invariant-guided reasoner. The name is an ambition map, not evidence that quantization, renormalization, projective geometry and Olympiad-level induction have all been solved. Keep exact symbolic objects separate from optional learned representations.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/03_qwipii.md"
+    ]
+  },
+  {
+    "text": "G-CNNs formalize equivariance [R09]; LieGAN and later symmetry-discovery methods already learn transformations [R10\u2013R11]; information-based RG work studies coarse-graining [R12]; AlphaGeometry demonstrates neural-symbolic geometry reasoning [R13]. The proposed distinction is a verification gate between discovered transformations and correctness-critical search reductions. Whether the particular implementation is novel requires further comparison, not an acronym.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/03_qwipii.md"
+    ]
+  },
+  {
+    "text": "A discovery model proposes candidate invariants or transformations from a bounded grammar. A verifier determines the permitted use. Labels are `PROPOSED`, `EMPIRICALLY_SUPPORTED`, `EXACTLY_VERIFIED_WITHIN_DOMAIN`, or `REJECTED`. Only exact verified automorphisms may merge search states. Approximate invariants may rank candidates or suggest lemmas; they cannot erase possibilities.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/03_qwipii.md"
+    ]
+  },
+  {
+    "text": "For a group action `g\u00b7x`, invariance means `I(g\u00b7x)=I(x)`; equivariance means `E(g\u00b7x)=\u03c1(g)E(x)`. Encode both domain and codomain actions. A constant embedding is invariant but useless, so training also needs non-collapse and task-usefulness checks. Invariant loss alone is not a sufficient objective.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/03_qwipii.md"
+    ]
+  },
+  {
+    "text": "Begin with a finite puzzle domain such as token transformations on a ring. Define full problem states including constraints and goal predicates. Use a finite candidate group (e.g. dihedral permutations) only when it preserves legal transitions, costs and the goal set. If a specific target breaks symmetry, use its stabilizer or transform the entire problem consistently; do not quotient only the board while keeping an incompatible goal fixed.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/03_qwipii.md"
+    ]
+  },
+  {
+    "text": "Store the minimizing witness g. A quotient edge stores a concrete legal transition and witness transformations so the returned solution can be lifted back to the original state. MATH_FOUNDATIONS.md states the assumptions needed to preserve reachability and shortest-path costs. Exhaustively test them on all small instances before introducing a learned ranker.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/03_qwipii.md"
+    ]
+  },
+  {
+    "text": "The same argument names should not be confused with the matrix entries in code; use distinct identifiers. Verify invariance using symbolic/rational arithmetic and explicit pole checks. Either implement the projective point at infinity correctly or reject it; never divide through a zero denominator and report a generic numerical failure. This is a compact proof-backed demo, not a general projective geometry theorem prover.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/03_qwipii.md"
+    ]
+  },
+  {
+    "text": "Optional `R_l` maps fine symbolic features to a coarser representation. Test consistency `R_l\u03c1_l(g)\u2248\u03c1_{l+1}(g)R_l`. This is an equivariant coarse-graining constraint. Call it that, not a fully established renormalization flow with fixed points/exponents unless those objects are defined and analyzed. Quantization may be added to learned representations but must not alter exact proof certificates silently.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/03_qwipii.md"
+    ]
+  },
+  {
+    "text": "| File | Responsibility | |---|---| | domains.py | Finite transition systems, legal moves, goals and costs | | group_actions.py | Exact finite actions, composition, inverses and domain checks | | invariant_grammar.py | Parity, modular residues, bounded polynomial/permutation candidates | | discovery.py | Candidate scoring/training on development problems | | verifier.py | Exhaustive finite-domain checks and rational projective identities | | canonicalize.py | Orbit representative and witness transforms | | search.py | Brute BFS, quotient BFS and ranking-only variants | | certificates.py | Replayable proof/path certificates | | projective.py | Rational M\u00f6bius transforms and cross-ratios | | adapter.py | `solve_invariant_problem` and `verify_certificate` capabilities |",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/03_qwipii.md"
+    ]
+  },
+  {
+    "text": "`Transformation.apply(problem_state) -> state`; `verify_automorphism(domain, transformation) -> certificate`; `Search.solve(problem,budget) -> path_certificate`. A certificate includes domain version, assumptions, checked property, witness and verification method. \u201cVerified\u201d must name the finite domain or theorem actually covered.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/03_qwipii.md"
+    ]
+  },
+  {
+    "text": "Generate training problems from several known families and ask a small ranker to choose candidate invariants or group generators. Discovery is selection within a declared grammar, not arbitrary invention of all mathematical concepts. Split by canonical problem orbit and generator family to avoid transformed duplicates crossing the boundary. Compare brute search; exact hand-specified quotient search; learned ranking with no pruning; learned proposal plus verification; and oracle symmetry selection. The oracle is an upper-bound diagnostic with additional information, not a standard fair baseline.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/03_qwipii.md"
+    ]
+  },
+  {
+    "text": "Primary: verified solved fraction under a fixed expansion/time budget. Secondary: expansions including discovery/verification overhead, certificate length, rejected invariant count and performance under held-out admissible transformations. Also run fixed-success comparisons of cost conditional on a common solved subset, clearly labeled to avoid selection bias.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/03_qwipii.md"
+    ]
+  },
+  {
+    "text": "Test group identity/composition/inverses; canonicalization idempotence; exact orbit equivalence; all legal transitions remain legal; goal/cost preservation; path lifting and replay; agreement with exhaustive BFS on every small state; invalid proposed symmetry rejected; constant invariant cannot trigger pruning; rational cross-ratio preservation; singular transform and pole errors; budget abort preserves partial evidence.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/03_qwipii.md"
+    ]
+  },
+  {
+    "text": "A deliberate false transformation that matches a few samples but fails one state is mandatory. The test should show it may remain a heuristic suggestion but cannot enter the quotient verifier's trusted registry. Avoid assigning a theorem-proved label to a neural score.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/03_qwipii.md"
+    ]
+  },
+  {
+    "text": "Show one proof-preserving search reduction and one projective-invariance identity with actual certificates. Neural discovery can be a development add-on after exact infrastructure passes. Broad Olympiad benchmarks, theorem-library mining, Lie-group discovery outside the grammar and formal Lean integration are later versions. A synthetic puzzle result must not be advertised as general Olympiad ability.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/03_qwipii.md"
+    ]
+  },
+  {
+    "text": "The first deliverable is a coding research experiment, not a production coding agent and not a P-versus-NP result. A complete bounded language lets us measure correctness and search cost before trusting generated host code.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/04_wcode.md"
+    ]
+  },
+  {
+    "text": "Program graphs already encode structural and semantic relations [R14]. DreamCoder learns programs and reusable abstractions [R15]. FunSearch's laboratory explanation illustrates evaluator-driven program search [R16]. Our candidate hypothesis is that a particular hierarchical relational encoder ranks localized candidates more efficiently than nonrelational encoders under the same enumerator and verifier. A speedup could be distribution-specific and does not imply a worst-case polynomial-time algorithm.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/04_wcode.md"
+    ]
+  },
+  {
+    "text": "Start with scalar integers, booleans and bounded lists of integers. Whitelist arithmetic, comparisons, conditionals and a few total list operators such as sum, reverse, take, map with a bounded body and filter with a bounded predicate. Define overflow or arbitrary-precision behavior explicitly. No file operations, imports, network, shell, recursion or unbounded loops. Every interpretation receives fuel, maximum list length and a typed AST depth/node cap.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/04_wcode.md"
+    ]
+  },
+  {
+    "text": "The interpreter must dispatch on typed AST constructors. Do not implement it using Python eval/exec. A timeout around arbitrary Python is not equivalent to a safe interpreter. Invalid types, division by zero, excessive integer size, exhausted fuel and malformed trees produce typed failures. General Python patching requires a later sandboxed runner and is not necessary for this study.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/04_wcode.md"
+    ]
+  },
+  {
+    "text": "For program P, build a directed relational graph with AST child/parent, sibling order and permitted scope/use relations. Only claim data/control-flow edges actually defined by the DSL; do not label a simple AST as a full compiler representation. Node features include operator type, value category, scope/depth and type information. Relations have separate learned weights:",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/04_wcode.md"
+    ]
+  },
+  {
+    "text": "Pool expressions to blocks/root using sparse parent mappings. A scorer conditions on the task's public examples and returns candidate priority. It may guide beam order but cannot declare correctness. For an exhaustive bounded reference mode, ranking must not remove candidates needed for completeness. For beam search, explicitly acknowledge search incompleteness.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/04_wcode.md"
+    ]
+  },
+  {
+    "text": "Use a common candidate generator across all encoder comparisons. Otherwise gains may come from proposing better programs, not from the claimed graph representation. Cache immutable AST/graph features by a canonical hash; invalidate any cache when a subtree changes.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/04_wcode.md"
+    ]
+  },
+  {
+    "text": "Use lexicographic selection: first satisfy the declared verification contract, then optimize cost/length. Public examples guide search. A separate verifier evaluates withheld inputs, or exhaustive finite inputs when the domain is small enough. Passing examples does not prove universal correctness. Record the exact scope: `EXHAUSTIVE_FINITE_DOMAIN`, `HELDOUT_TESTS`, or a later formal equivalence certificate.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/04_wcode.md"
+    ]
+  },
+  {
+    "text": "Runtime objectives should use deterministic interpreter operations/fuel initially; very short wall-clock timing is noisy. Count parsing, graph construction, ranking, interpretation and verification. Do not reward a candidate for skipping cases or changing its own test harness. A cost penalty must never outweigh a correctness failure and make an incorrect program look better.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/04_wcode.md"
+    ]
+  },
+  {
+    "text": "| File | Responsibility | |---|---| | dsl.py | Frozen typed AST grammar and total semantics | | interpreter.py | Whitelist evaluation with fuel/size limits | | dataset.py | Target programs, public examples and source-family splits | | graph.py | Node/edge extraction and canonical AST hashing | | encoder.py | Relational convolution and sparse hierarchical pooling | | search.py | Enumerative, beam and evolutionary-style bounded search | | verifier.py | Separate finite-domain/test evaluator | | baselines.py | Uniform/heuristic priority, token encoder and MLP encoders | | evaluate.py | Correctness, searched candidates and total measured cost | | adapter.py | `synthesize_dsl_program` capability |",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/04_wcode.md"
+    ]
+  },
+  {
+    "text": "`ProgramGraph` has node features `[V,F]`, edge index `[2,E]`, relation IDs `[E]`, parent indices `[V]` and masks. `SynthesisTask` includes input/output types and public examples, never verifier answers. `SearchResult` stores the AST, evidence ID, completeness mode and resource receipt.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/04_wcode.md"
+    ]
+  },
+  {
+    "text": "Generate target programs with depth at most six and initially at most 64 AST nodes. Normalize commutative forms, variable names and exact syntactic identities before source-family splitting. Train and test cannot share the same target program merely with different input/output examples. Hold out operator compositions or depth ranges for transfer tests, but distinguish an unsupported grammar from failure inside the supported grammar.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/04_wcode.md"
+    ]
+  },
+  {
+    "text": "Train the scorer on bounded search traces collected on development tasks. Label candidates by actual verifier progress/correctness within the development partition; do not train on final evaluation answers. Preserve unsuccessful traces so the learner sees realistic negative candidates instead of an artificially easy success-only distribution.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/04_wcode.md"
+    ]
+  },
+  {
+    "text": "Use uniform enumeration, hand-coded length/type ordering, token-sequence encoding, graph encoding without semantic relations, and the proposed multiscale graph encoding. Keep candidate generation, examples, verifier and budget fixed. A later library-learning baseline inspired by DreamCoder may change the language/search space and must be evaluated as a distinct experiment. An external LLM baseline is optional and requires a fixed model/version, token budget, prompt and cost accounting; do not make it necessary for the core study.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/04_wcode.md"
+    ]
+  },
+  {
+    "text": "Primary: verified solve rate at a fixed candidate-evaluation budget. Secondary: correct-program search cost, interpreter cost, generalization to held-out compositions, memory and failure categories. Report all tasks, including exhausted searches. Empirical `C(n)` plots describe tested distributions, not P=NP.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/04_wcode.md"
+    ]
+  },
+  {
+    "text": "Test every DSL operator and type error, fuel accounting, AST hash stability, graph edge semantics, batching consistency, exhaustive search completeness on tiny grammar, verifier isolation, adversarial attempts to exceed list/integer bounds and a candidate that memorizes public examples but fails withheld cases. Compare learned and nonlearned searches on identical generated candidate pools.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/04_wcode.md"
+    ]
+  },
+  {
+    "text": "Sunday demonstration: one small synthesis problem with a replayable search trace, verified output and matched baseline. Defer unrestricted repository editing, full Python semantics, compiler optimization, general NP-hard claims and self-modifying verifier code. The architecture can later become a coding-agent component once the bounded experiment establishes a useful mechanism.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/04_wcode.md"
+    ]
+  },
+  {
+    "text": "This study is separate from the existing Fabric-Induced Memory project. The infinity symbol denotes an underlying extensible mathematical space, not infinitely many stored values. The first useful deliverable is an exact algebra library, an error-aware finite representation and a controlled learning experiment. Do not call a high-dimensional tensor a newly discovered number system without defining operations and proving the claimed properties.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/05_wfim.md"
+    ]
+  },
+  {
+    "text": "Hypercomplex parameterizations [R17], hyperdimensional computing [R18], graded/signature representations [R19] and noncommutative algebra [R20] make high-dimensional representation a crowded and mathematically mature area. The proposed numerical construction deliberately uses existing algebraic foundations. Its possible contribution is a useful learning/approximation method with explicit guarantees, not the invention of infinite dimension or an isomorphic algebra.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/05_wfim.md"
+    ]
+  },
+  {
+    "text": "Set `e_u\u22c6e_v=e_{uv}`. This is associative concatenation and, for at least two alphabet symbols, generally noncommutative. The product obeys `||x\u22c6y||_r\u2264||x||_r||y||_r`. MATH_FOUNDATIONS.md provides a short proof and assumptions.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/05_wfim.md"
+    ]
+  },
+  {
+    "text": "Do not begin with a dense learned `C_ij^k` tensor. It has problematic storage growth and provides no automatic associativity, identity or norm control. A user-defined alternative product can be a later research branch, but must state exactly which axioms it satisfies.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/05_wfim.md"
+    ]
+  },
+  {
+    "text": "Return a tail certificate only when the caller supplies an actually justified stronger-norm bound. A finite observed prefix does not identify the unknown infinite tail. Distinguish exact finite polynomial inputs, certified series inputs and uncertified sampled representations.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/05_wfim.md"
+    ]
+  },
+  {
+    "text": "Top-k coefficient pruning is different from degree truncation and may break associativity. Keep it in a separate approximate API that reports discarded mass and propagates an error bound when enough information exists. Never silently apply it in the exact reference product. Set a maximum output-term budget and estimate it before multiplication; on exhaustion return a typed error rather than silently dropping terms.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/05_wfim.md"
+    ]
+  },
+  {
+    "text": "Associativity and the unit are preserved by transport. Enforce nonzero scale bounds to control conditioning. The resulting algebra is isomorphic to the original; this is not a claim of a mathematically new algebra. The empirical question is whether the learned coordinates help a downstream compositional task under finite budgets. Compare to the same algebra with S=I; otherwise any benefit might come entirely from the fixed concatenation representation.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/05_wfim.md"
+    ]
+  },
+  {
+    "text": "A more expressive block-per-degree S\u03b8 is deferred because inverse conditioning and dense block storage can erase the efficiency objective. Avoid pretending an arbitrary neural encoder is an invertible linear algebra isomorphism.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/05_wfim.md"
+    ]
+  },
+  {
+    "text": "`multiply_exact(x,y,max_degree,max_terms) -> SparseElement`. `truncate_degree(x,N) -> SparseElement`. `multiply_approx(x,y,policy) -> ApproximationResult`. `transport_product(x,y,scales) -> SparseElement`. `certify_tail(x,y,r_prime,N) -> TailBound | Unavailable`.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/05_wfim.md"
+    ]
+  },
+  {
+    "text": "Exact reference coefficients use rational arithmetic on tiny examples. Differentiable finite experiments use tensors aligned with a frozen vocabulary/index map. Never mutate sparse index order between forward and backward. An input's alphabet and algebra version must match before multiplication.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/05_wfim.md"
+    ]
+  },
+  {
+    "text": "| File | Responsibility | |---|---| | words.py | Canonical word keys, degree and alphabet checks | | elements.py | Typed sparse elements and sorted serialization | | reference.py | Rational associative multiplication and degree truncation | | norms.py | Weighted norms and justified error certificates | | transport.py | Bounded invertible coordinate maps and differentiable product | | approximate.py | Explicit optional pruning with measured discarded mass | | tasks.py | Order-sensitive compositional sequence/operator benchmarks | | baselines.py | Fixed same-algebra, vector binding and bilinear controls | | evaluate.py | Accuracy, stored bytes, error bounds and algebraic diagnostics | | adapter.py | `compose_algebraic_objects` capability |",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/05_wfim.md"
+    ]
+  },
+  {
+    "text": "First exhaustively verify algebraic operations for tiny alphabets and degrees. Then train a small classifier/regressor on ordered compositions where order matters. Hold out composition templates and lengths. Keep an identity-insensitive task as a control: a complicated noncommutative representation should not be presumed useful everywhere.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/05_wfim.md"
+    ]
+  },
+  {
+    "text": "Suggested starting caps: alphabet two to four, degree at most six, at most 4,096 stored terms, reference rational degree at most three. Dense dimension grows exponentially with degree; sparse representation postpones rather than eliminates worst-case growth. Record actual occupied terms and serialized bytes, including indices and metadata\u2014not only coefficient count.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/05_wfim.md"
+    ]
+  },
+  {
+    "text": "Minimum baselines: the identical fixed concatenation algebra; an ordinary fixed-size vector encoder; a simple bilinear composition model; and an appropriate binding/HDC-inspired control. A PHM-inspired layer can be an additional comparator after a reproduction note. Match downstream decoder capacity and available sequence information. Do not compare a memory-rich representation with a tiny vector and attribute all gains to algebra.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/05_wfim.md"
+    ]
+  },
+  {
+    "text": "Primary development endpoint: task accuracy/error at a fixed representation-byte cap. Secondary: multiplication time, approximation error, norm growth, generalization to longer compositions and exact algebraic property violations. Mathematical correctness does not require beating a neural baseline.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/05_wfim.md"
+    ]
+  },
+  {
+    "text": "Unit and associativity tests on exact polynomials; degree-truncation compatibility; zero and identity; alphabet mismatch; noncommutativity witness; coefficient serialization; norm submultiplicativity; valid tail bound on a known finite series; unavailable certificate for an unknown tail; transport/inverse round trip; transported associativity; gradients for finite transport parameters; deliberate top-k associativity counterexample; preallocation budget rejection.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/05_wfim.md"
+    ]
+  },
+  {
+    "text": "The approximate product must never return `EXACT` merely because its numerical error is small on one sample. Test error propagation across repeated products and record when a bound becomes too loose to be useful.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/05_wfim.md"
+    ]
+  },
+  {
+    "text": "Demonstrate exact composition, degree expansion and a certificate on a known example, then a measured small task comparison if available. The strongest honest mathematics result is the implemented classical guarantee plus a new computational study. Later work may investigate different completions, task-dependent bases, stable operators or genuinely new products\u2014but each needs its own axioms, proofs and independent usefulness test.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/05_wfim.md"
+    ]
+  },
+  {
+    "text": "A Fourier-like transform requires an operator, inner product, basis and inverse. \u201cDecompose anything\u201d is not a complete mathematical specification. The first domain is finite weighted graphs with a self-adjoint operator; arbitrary manifolds, non-normal dynamics and universal transforms are deferred.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/06_wft.md"
+    ]
+  },
+  {
+    "text": "Graph Fourier analysis [R21] and learning Laplacians from signal data [R22] already cover learning an operator and its spectrum. FNO [R23], neural operators [R24] and DeepONet [R25] address mappings between function spaces, which is related but not identical to learning a transform. The candidate question is whether specific verified symmetry and cross-resolution constraints help an operator learned from limited/noisy signals. The constraints must demonstrate an advantage over an otherwise identical learned-Laplacian baseline.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/06_wft.md"
+    ]
+  },
+  {
+    "text": "For positive diagonal mass M, define `S\u03b8=M^(-1/2)L\u03b8M^(-1/2)`. This is symmetric positive semidefinite. Normalize or constrain a scale statistic such as trace/total edge weight according to the declared generative model; without a scale convention, a trivial near-zero operator can minimize some smoothness losses. Do not introduce a normalization that rules out the physical operator you are trying to estimate.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/06_wft.md"
+    ]
+  },
+  {
+    "text": "Let `S\u03b8Q=Q\u039b`, `\u03a6=M^(-1/2)Q`. Encode `c=\u03a6\u1d40Mf`; decode `f_hat=\u03a6_k c_k`. With all modes, Parseval holds in the M inner product. With k modes, reconstruction is a projection. In the full-rank case, perfect reconstruction is automatic for any valid basis and therefore cannot establish that the learned operator is meaningful.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/06_wft.md"
+    ]
+  },
+  {
+    "text": "Use observed development signal transitions or missing/noisy signal reconstruction. For diffusion-like data, a model may predict `f(t+\u0394t)\u2248exp(\u2212\u0394t S\u03b8)f(t)` in appropriately mass-normalized coordinates. Use a small matrix exponential reference or a polynomial filter `\u03a3_j \u03b1_j S\u03b8^j` for training. Evaluate which approximation is used and its error.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/06_wft.md"
+    ]
+  },
+  {
+    "text": "Transform maps T_g and coarsening R must be applicable to the problem and available under the same information contract as controls. They are not arbitrary augmentation operators. In weighted spaces, define compatible mass-weighted actions rather than assuming Euclidean commutation covers every discretization. Add each constraint as a separate ablation before combining them.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/06_wft.md"
+    ]
+  },
+  {
+    "text": "An eigensolver's residual is a numerical diagnostic, not a learning signal for physical correctness. Likewise a reconstruction loss with all N modes cannot choose among complete orthogonal bases. Use a real prediction/compression/missing-data task with held-out signals and graphs.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/06_wft.md"
+    ]
+  },
+  {
+    "text": "Eigenvectors have sign ambiguity and repeated-eigenspace nonuniqueness; derivatives through them become problematic near repeated eigenvalues [D03]. Train polynomial/operator actions first and compute eigenspectra after freezing the candidate. For tests compare projectors or principal angles, not arbitrary eigenvector columns. If a truncation boundary cuts a repeated cluster, report the ambiguity or retain the complete cluster.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/06_wft.md"
+    ]
+  },
+  {
+    "text": "Dense `eigh` is acceptable for small reference graphs, not a scalable FFT replacement. Cap dense diagnostics at a declared small N. The implementation must not market an O(N\u00b3) eigendecomposition as an O(N log N) transform without counting setup and repeated-use assumptions.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/06_wft.md"
+    ]
+  },
+  {
+    "text": "`GraphDomain`: node count, edge index, mass vector, coordinates if public, admissible transformations and provenance. `OperatorModel.apply(f[N,C]) -> [N,C]`. `SpectralBasis`: eigenvalues[k], basis[N,k], mass[N], operator hash and degeneracy metadata. `Transform.encode/decode`: shape-checked weighted coefficients and reconstruction.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/06_wft.md"
+    ]
+  },
+  {
+    "text": "| File | Responsibility | |---|---| | domains.py | Graph instances, public edge candidates and signal splits | | laplacian.py | Sparse PSD construction and scale constraints | | mass.py | Weighted inner products and coordinate conversion | | filters.py | Polynomial action and small exponential reference | | train.py | Prediction loss and individually toggled constraints | | spectra.py | Frozen eigendecomposition and subspace diagnostics | | transform.py | Encode/decode with mode-selection policy | | baselines.py | Fixed geometry Laplacian, learned Laplacian, PCA and valid grid DFT | | evaluate.py | Predictive/compression error, cost and discretization transfer | | adapter.py | `fit_spectral_operator` and `transform_signal` |",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/06_wft.md"
+    ]
+  },
+  {
+    "text": "Generate signals on small graphs with hidden edge weights and public candidate connectivity. Do not pass the exact true operator into the candidate as \u201cgeometry.\u201d Create train/dev graph instances with different weight distributions and hold out additional graph sizes or discretizations. Start at 32\u2013128 nodes, two to eight signal channels and a small polynomial degree. Reserve a regular grid as a sanity case where a conventional basis should be strong, not an artificially weak baseline.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/06_wft.md"
+    ]
+  },
+  {
+    "text": "Minimum comparisons: fixed geometry-based Laplacian; learned-Laplacian model with identical parameterization but no new constraints; PCA fit only on training signals; random orthogonal basis; DFT only on a domain where ordering/periodicity makes it legitimate. Include the true generator operator only as an explicitly privileged oracle. Compare FNO/DeepONet only for a common prediction task, not as nonsensical transforms of one graph snapshot.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/06_wft.md"
+    ]
+  },
+  {
+    "text": "Primary proposal: held-out transition prediction or missing-signal reconstruction at a fixed total computational budget\u2014choose one before confirmation. Secondary: k-mode compression, weighted reconstruction error, operator recovery when identifiable, cost including setup, and transfer across declared graph sizes. Reusing a frozen learned operator over many signals may amortize cost; state the reuse count.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/06_wft.md"
+    ]
+  },
+  {
+    "text": "PSD and symmetry; row sums zero in the unweighted Laplacian; constant null mode; positive masses; mass-weighted Parseval; encode/decode on a complete basis; permutation covariance including mass and edges; repeated-eigenspace projector consistency; degree-zero filter; analytic gradients for a small simple-spectrum case; polynomial gradients independent of eigenvector choice; no dense allocation beyond the cap; wrong supplied symmetry rejected or shown harmful in a labeled ablation.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/06_wft.md"
+    ]
+  },
+  {
+    "text": "Sunday demonstration: a learned sparse operator, its spectrum and a genuine held-out reconstruction/prediction comparison. Defer universal spectral theory, arbitrary Koopman diagonalization, learned graph topology plus learned masses plus learned basis simultaneously, and coupling to every other module before this single-domain study is interpretable.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/06_wft.md"
+    ]
+  },
+  {
+    "text": "The project combines observation fitting, sparse law identification and validated structure. Inverse PINNs already address discovery [R27], so \u201cthe equations are unknown\u201d is not its novelty claim. The proposal must show exactly which verified structural information improves identification and when it fails.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/07_wpinn.md"
+    ]
+  },
+  {
+    "text": "Forward PINNs [R26], inverse discovery [R27], SINDy [R28], structured symbolic regression [R29] and Hamiltonian networks [R30] are necessary context. Known PINN failure modes motivate tests beyond training residuals [R31]. Distinguish three tasks: unknown coefficients in known equations; unknown sparse support within a fixed library; and unknown functional forms outside the library. The first version tackles the first two only. It cannot claim arbitrary physical-law discovery.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/07_wpinn.md"
+    ]
+  },
+  {
+    "text": "Generate multiple initial conditions, k and c values, sampling rates and noise realizations. Use c=0 as a conservative subset and c>0 as a dissipative subset. The observation interface exposes noisy trajectories; generator truth is available only to evaluation/oracle controls. If the signal does not excite relevant modes, coefficients may not be identifiable\u2014record this, rather than assuming every trajectory uniquely determines the equation.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/07_wpinn.md"
+    ]
+  },
+  {
+    "text": "A small neural field `x\u03b8(t,context)` fits observations, or use a simpler smoother as a baseline. Construct a declared candidate library \u0398 from normalized polynomial terms in q,v and any authorized derivatives. Normalize columns during sparse regression and restore original units afterward. A poorly scaled library can change apparent sparsity without changing the physics.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/07_wpinn.md"
+    ]
+  },
+  {
+    "text": "Minimize weak residuals plus data fitting and declared structure. This avoids direct finite-difference differentiation of noisy measurements, but smoothing and quadrature errors remain. Test quadrature on known analytic trajectories and vary sampling resolution. Do not secretly calculate derivatives from clean generator trajectories while claiming robustness to noisy-only observations.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/07_wpinn.md"
+    ]
+  },
+  {
+    "text": "For a PINN variant include initial/boundary conditions explicitly. Use sequential thresholded least squares or another documented sparse method to select support, then refit coefficients without a shrinkage bias where appropriate. L1 shrinkage alone does not necessarily produce the exact symbolic support you want to report.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/07_wpinn.md"
+    ]
+  },
+  {
+    "text": "For `E=(v\u00b2+kq\u00b2)/2`, `dE/dt=\u2212cv\u00b2`. Conserve E only for c=0; use dissipation when c>0. A candidate symmetry or invariant supplied by QWIPII must be accompanied by a domain/assumption certificate. Its verification cannot use the same held-out outcome you later cite as evidence of successful generalization. Wrong constraints should be rejected when analytically decidable or retained as labeled failure-control experiments.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/07_wpinn.md"
+    ]
+  },
+  {
+    "text": "The first study does not need an autonomous symbolic theorem generator. It can compare verified known-applicable constraints with no constraints, then add learned candidate selection as a separately measured extension. Otherwise success may depend on hidden privileged knowledge of the true law.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/07_wpinn.md"
+    ]
+  },
+  {
+    "text": "```text split full trajectories and physical parameter draws fit observation smoother on training trajectories only build a normalized declared candidate library assemble weak-form integrals with endpoint-zero test functions fit sparse support using development-selected hyperparameters refit coefficients on the selected support optionally alternate field fitting and law fitting with logged objectives validate rollouts and structure on development trajectories freeze code, library, selection thresholds and budget before confirmation ```",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/07_wpinn.md"
+    ]
+  },
+  {
+    "text": "| File | Responsibility | |---|---| | systems.py | Oscillator generators, truth separation and complete-trajectory splits | | field.py | Small neural field and simpler smoothing interface | | library.py | Typed candidate terms, units and normalization | | weak_form.py | Test functions, quadrature and residual assembly | | sparse_fit.py | Support selection, refitting and coefficient serialization | | constraints.py | Conservation/dissipation and verified symmetry contracts | | train.py | Sequential and optional alternating fitting | | baselines.py | Least squares, SINDy-style, inverse PINN and data-only models | | evaluate.py | Law recovery, rollout and uncertainty summaries | | adapter.py | `identify_dynamical_law` |",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/07_wpinn.md"
+    ]
+  },
+  {
+    "text": "`Trajectory` has times[T], observations[T,D], masks[T,D], trajectory_id and public context. `LibraryMatrix` carries named terms and scaling. `LawResult` contains symbolic terms, coefficients with units/scales, validity domain, support-selection settings, uncertainty method and measured evidence. A printed equation without those fields is not a reproducible result.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/07_wpinn.md"
+    ]
+  },
+  {
+    "text": "Minimum: ordinary linear/sparse regression with the same library; a SINDy-style derivative baseline with its noise assumptions documented; a known-support inverse PINN; a data-only predictor; and the proposed weak/structure method. Known-support methods have extra information and should be labeled accordingly. Match observation access and tuning budget, not just epochs.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/07_wpinn.md"
+    ]
+  },
+  {
+    "text": "Choose one primary: support recovery on identifiable synthetic tasks, or held-out rollout error. The other remains important but cannot rescue a failed preregistered primary. Report coefficient error only after aligning term scaling and support. Include noise, missing samples, sampling rate and out-of-training parameter regimes. A correct fit on a single trajectory is not a general law-identification claim.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/07_wpinn.md"
+    ]
+  },
+  {
+    "text": "Ablate weak form, structural constraints, sparse selection, smoothing and alternating training separately. Include deliberately wrong conservation on damped trajectories as a failure demonstration, not as part of a production method that falsely assumes it is valid.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/07_wpinn.md"
+    ]
+  },
+  {
+    "text": "Analytic residual for a known oscillator; integration-by-parts identity under exact/accurate quadrature; polynomial autodiff including second derivatives where needed; library units/scales; support threshold behavior; coefficient round trip; no clean-target derivative leakage; trajectory-level split integrity; conservative and damped energy tests; held-out rollout integrator accuracy; finite loss and explicit convergence failure.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/07_wpinn.md"
+    ]
+  },
+  {
+    "text": "Sunday should demonstrate oscillator-law identification with transparent assumptions and real residual/rollout evidence. Burgers, KdV, reaction-diffusion, general Lie symmetry discovery and simultaneous unknown boundaries are later modules. Expanding from one ODE to several PDEs before validating identifiability would produce impressive names but uninterpretable evidence.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/07_wpinn.md"
+    ]
+  },
+  {
+    "text": "Retain the user's CWLNN brand (\u201cConvoluted World Large Neural Network\u201d) without treating \u201clarge\u201d as proof of capability. The first model is deliberately small. Its research purpose is a measurable hierarchy and routing mechanism, not another giant language-model pretraining project.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/08_cwlnn.md"
+    ]
+  },
+  {
+    "text": "Perceiver IO [R32], Switch Transformers [R33], DiffPool [R34], Mamba [R35] and equivariant graph processing [R09] cover bottlenecks, sparse routing, hierarchy and efficient computation. The proposed experiment asks whether a genuinely sparse multiscale relational architecture yields better accuracy-versus-cost and size transfer on a chosen task than matched flat/local controls. Adding all known efficient mechanisms is not by itself a novel contribution.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/08_cwlnn.md"
+    ]
+  },
+  {
+    "text": "Represent a sample with sparse levels `G_0,\u2026,G_L` and parent maps `p_l:[N_l]\u2192[N_{l+1}]`. Begin with a supplied/public deterministic structural hierarchy; do not use target labels to build it. Each level performs local relation-aware aggregation:",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/08_cwlnn.md"
+    ]
+  },
+  {
+    "text": "Pool children by normalized sums/means using parent indices, then broadcast coarse updates back through the same mapping with a residual connection. Keep level widths and aggregation normalization explicit. A parent with many children should not gain an unintended magnitude advantage unless the task intentionally encodes count.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/08_cwlnn.md"
+    ]
+  },
+  {
+    "text": "Use sparse index/scatter operations; no dense N\u00d7N soft assignment or adjacency in the claimed sparse path. A dense DiffPool-like baseline may be useful for accuracy, but its cost must be measured rather than hidden inside a \u201clinear\u201d complexity label.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/08_cwlnn.md"
+    ]
+  },
+  {
+    "text": "The reference always processes a fixed hierarchy. The next candidate may learn which nodes require expensive fine-scale updates, using local uncertainty/disagreement/budget features. Define a budget ledger and count routing itself. Begin with a fixed threshold control and a learned score with an explicit top-k budget. Training through hard selection may use a surrogate/straight-through estimator, but document that it is not an exact gradient of the discrete routing objective.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/08_cwlnn.md"
+    ]
+  },
+  {
+    "text": "Expert mixtures and variable-depth computation are deferred until the hierarchy-alone ablation is interpretable. Avoid simultaneously changing hierarchy, width, routing and loss and then attributing gains to one named mechanism.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/08_cwlnn.md"
+    ]
+  },
+  {
+    "text": "If `N_l\u2264N/2^l`, bounded degree k, fixed width h and constant updates per level, aggregation/feature work is `O(\u03a3_l(N_lkh+N_lh\u00b2))=O(Nkh+Nh\u00b2)`. Building the hierarchy, sorting, dynamic routing and output decoding add work. Include those costs. An all-pairs attention step anywhere in the path can reintroduce quadratic interactions. Linear asymptotic scaling does not guarantee a faster small-N implementation.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/08_cwlnn.md"
+    ]
+  },
+  {
+    "text": "Permutation behavior requires care. A hierarchy built by arbitrary input node order may break equivariance. Test a node permutation with edges, parent maps and public structural labels transformed consistently. Do not claim equivariance when only features are permuted and the hierarchy remains attached to old indices. Learned hierarchy construction later needs its own equivariance analysis.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/08_cwlnn.md"
+    ]
+  },
+  {
+    "text": "| File | Responsibility | |---|---| | graphs.py | Sparse graph batches and public hierarchy metadata | | hierarchy.py | Deterministic coarsening, parent maps and sparse edges | | local.py | Bounded-degree relational updates | | pool.py | Count-aware pooling and consistent broadcast | | routing.py | Fixed and learned budgeted selection with cost counters | | model.py | Local/coarse/residual composition and readout | | tasks.py | Multiscale graph signals and held-out graph sizes | | baselines.py | Flat GNN/local CNN, small dense attention and relevant bottlenecks | | evaluate.py | Accuracy, latency, memory and size-transfer curves | | adapter.py | `encode_multiscale_world` |",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/08_cwlnn.md"
+    ]
+  },
+  {
+    "text": "`GraphLevel` contains features[N_l,H_l], edge_index[2,E_l], edge features[E_l,R], batch indices and parent_index[N_l]. A hierarchy validates every parent bound and batch boundary. `RoutingReceipt` stores selected nodes, requested/actual budget and dropped operations. Budget exhaustion cannot silently truncate a graph while reporting a normal result.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/08_cwlnn.md"
+    ]
+  },
+  {
+    "text": "Start with graph-signal prediction requiring both local and global information, such as multiscale diffusion or a compositional aggregation target on a public hierarchy. Train on small graphs and hold out larger graph instances and generator parameters. A task generated from exactly the candidate's architecture can favor it artificially, so include at least one task without an aligned hierarchy and report this limitation.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/08_cwlnn.md"
+    ]
+  },
+  {
+    "text": "Compare a flat message-passing model, an equally wide local model, fixed hierarchical processing, the proposed routed hierarchy and a small dense-attention baseline at feasible sizes. Perceiver/Mamba-inspired alternatives are optional on genuinely common inputs/tasks; do not reshape graphs arbitrarily merely to claim a named-model comparison. Match parameter ranges and separately report total measured compute. Give controls access to the same public coordinates/hierarchy information where relevant.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/08_cwlnn.md"
+    ]
+  },
+  {
+    "text": "Primary: error/accuracy at a declared measured inference-time budget on held-out graph sizes. Secondary: training cost, memory, preprocessing cost, robustness to node relabeling, performance on nonhierarchical controls and routing utilization. Save raw timings with warmup policy and synchronization; do not compare unsynchronized accelerator timing against synchronous CPU wall-clock.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/08_cwlnn.md"
+    ]
+  },
+  {
+    "text": "Sparse aggregation equals a tiny dense reference; pooling and broadcast shape/value checks; no cross-graph edges in batches; parent bounds; count normalization; node-permutation consistency with transformed hierarchy; deterministic routing under tied priorities; hard selected-node cap; empty/single-node graph behavior; disabled routing recovers reference hierarchy; no hidden dense adjacency at large-N test; gradient flow through supported surrogate; explicit reporting of unsupported device operations.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/08_cwlnn.md"
+    ]
+  },
+  {
+    "text": "Use complexity counters and allocation checks as structural tests, plus measured timing as an empirical result. A test asserting that \u201cour model is always faster\u201d would be brittle and scientifically unjustified.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/08_cwlnn.md"
+    ]
+  },
+  {
+    "text": "Demonstrate a small multiscale forward/training pass, its routing receipt and a matched baseline comparison if completed. Defer billion-parameter scale, multimodal pretraining, arbitrary conceptual neighborhoods, universal language-model claims and making every World Series module depend on this backbone. Only after the standalone result passes should WCode or Q-APEN receive a controlled encoder-swap experiment.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/08_cwlnn.md"
+    ]
+  },
+  {
+    "text": "ASI is a long-term motivation, not a v0.1 capability claim. Ultron initially coordinates a few real, tested modules under transparent budgets. It need not invoke all eight for every task, and an absent module must not be replaced with a fake successful adapter.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/09_ultron.md"
+    ]
+  },
+  {
+    "text": "The AI Scientist [R36], ADAS [R37], Darwin G\u00f6del Machine [R38] and Co-Scientist [R39] already study research automation, agent design, agent modification and scientific hypothesis generation. The proposed question is whether a particular evidence-aware routing policy improves verified task completion over simpler policies with identical capabilities and resource budgets. \u201cMultiple agents\u201d or \u201cself-improvement\u201d alone is insufficient novelty.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/09_ultron.md"
+    ]
+  },
+  {
+    "text": "Represent a state as `(goal, task_type, evidence_DAG, capabilities, remaining_budget, failure_history)`. An action is a registered operation with typed inputs, expected artifact types, maximum cost and a verifier. The registry enumerates allowed actions; the model cannot invent a tool name and pretend it executed.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/09_ultron.md"
+    ]
+  },
+  {
+    "text": "Examples: identify an oscillator law; solve a verified invariant puzzle; synthesize a bounded DSL program; fit a graph operator. Different tasks select different modules. A capability can be `AVAILABLE`, `UNAVAILABLE`, or `BLOCKED_BY_CONTRACT`; only available operations may run.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/09_ultron.md"
+    ]
+  },
+  {
+    "text": "A full sequential research controller can be modeled as a finite-horizon constrained decision process. Start with a static router and a transparent state machine. The first learned extension is a contextual bandit or supervised ranker for choosing an applicable operation from development task features. Do not call this one-step selection a solved general meta-MDP. A sequential policy can follow after there is enough trustworthy trajectory data.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/09_ultron.md"
+    ]
+  },
+  {
+    "text": "The completion score is computed by the task's verifier, not by the agent's prose, confidence or a self-written report. Separate partial engineering progress from final scientific correctness. A plot, paper draft or confident explanation does not count as successful law recovery unless the declared verifier checks it.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/09_ultron.md"
+    ]
+  },
+  {
+    "text": "Evidence artifacts form a DAG: each result refers to input artifact hashes, producer version, config, cost receipt and verifier decision. Paths must resolve within the artifact root and hashes must match. Missing evidence is a hard failure for the corresponding claim, not an invitation to infer what probably happened.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/09_ultron.md"
+    ]
+  },
+  {
+    "text": "Errors release only the unused reserved budget, record the actual spent portion, and create an immutable failure receipt. Retries are bounded and counted. A module cannot change the task specification, success threshold or verifier while working on the task. Token/LLM costs are included if an optional language-model planner is added.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/09_ultron.md"
+    ]
+  },
+  {
+    "text": "| File | Responsibility | |---|---| | tasks.py | Research mini-task contracts and development task features | | capabilities.py | Explicit operation registry and adapter availability | | state.py | Immutable episode state and evidence references | | router.py | Static, cheapest-valid, random-valid and learned policies | | executor.py | Budget reservations and bounded capability execution | | evidence.py | Hash-checked artifact DAG and claim provenance | | verifier_client.py | Restricted interface to an independently controlled verifier | | train_router.py | Development-only routing traces and policy fitting | | evaluate.py | Matched-capability completion/cost comparisons | | report.py | Structured evidence summary, never invented metrics |",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/09_ultron.md"
+    ]
+  },
+  {
+    "text": "The actual final verifier runs outside the development workspace. A client interface does not make a mutable in-process function independent. For tests, a toy verifier may live in fixtures, but fixture success is tagged `PLUMBING_ONLY` and cannot populate a research result table.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/09_ultron.md"
+    ]
+  },
+  {
+    "text": "Start with QWIPII, WCode and World-PINN because they have clear verifiable outputs. Each adapter must pass standalone contract tests before registration. Remaining modules can register later when their real capability is useful: MALIS for adaptation, Q-APEN for prediction, WFIM for composition, WFT for transforms, CWLNN for encoding. No dependency requires all eight to be implemented before Ultron's state machine can be tested.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/09_ultron.md"
+    ]
+  },
+  {
+    "text": "Avoid a forced linear pipeline through every module; it creates artificial dependencies and obscures attribution. If an exhibition includes a scripted all-module walkthrough, label it an architectural demonstration rather than evidence that the combined system outperforms simpler alternatives.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/09_ultron.md"
+    ]
+  },
+  {
+    "text": "Collect development task outcomes for valid candidate modules under common budgets. Features must be available before the routing decision. Train a contextual bandit/ranker or imitate a development oracle that enumerates bounded choices. Counterfactual labels derived from running all modules cost real compute and belong in the training-cost ledger. Do not infer an untried route's outcome from the selected route's result.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/09_ultron.md"
+    ]
+  },
+  {
+    "text": "Compare fixed task-type routing, cheapest valid routing, random valid routing, the learned policy and optionally a small monolithic planner with the same underlying tools/model access. Hold all capabilities and their checkpoints fixed during the routing comparison. Otherwise improvement could come from a stronger tool rather than better orchestration.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/09_ultron.md"
+    ]
+  },
+  {
+    "text": "Primary: verified completion rate at a fixed per-task cost budget. Secondary: mean total cost, invalid action fraction, evidence completeness, latency, repeated-work overhead and ability to reject unsupported tasks. Report outcomes by task family and not only a pooled average dominated by the easiest task.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/09_ultron.md"
+    ]
+  },
+  {
+    "text": "No automatic self-modification in v0.1. A later proposal system may generate patches in isolated worktrees, but changes to evaluators, protected tests, resource policy or approved claim thresholds are forbidden. Candidate changes are selected on development validation, reviewed and frozen before a separate confirmation evaluation. Reusing final holdout scores repeatedly to choose modifications would invalidate the \u201cheld-out\u201d claim. An agent's own success declaration cannot approve its patch.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/09_ultron.md"
+    ]
+  },
+  {
+    "text": "Darwin G\u00f6del Machine uses an archive that can preserve useful stepping stones [R38]; do not mischaracterize that prior work as only monotonic hill climbing. Our safer scoped first experiment is routing, not an attempted replication of the entire self-improving-agent literature.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/09_ultron.md"
+    ]
+  },
+  {
+    "text": "Unavailable capability rejection; typed input/output validation; path traversal rejection; artifact hash tampering; cycle detection in evidence DAG; verifier refusal; budget reservation/release; bounded retries; deterministic static routing; checkpoints fixed during evaluation; mock receipts excluded from scientific summaries; unsupported tasks reported truthfully; attempted evaluator modification blocked by actual environment controls.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/09_ultron.md"
+    ]
+  },
+  {
+    "text": "Sunday demonstration: one task routed through one or more real modules with visible evidence and cost, plus a simpler-routing comparison where run. This can be useful research without pretending to be autonomous general science or ASI. Defer open-ended internet actions, external deployment, unrestricted code execution and recursive model rewrites.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/docs/projects/09_ultron.md"
+    ]
+  },
+  {
+    "text": "| Task | Project | Deliverable | Prerequisites | |---|---|---|---| | CORE-01 | core | Inventory, identity protection and dependency lock | None | | CORE-02 | core | Typed contracts, status enums and artifact schemas | CORE-01 | | CORE-03 | core | Budgets, devices and independent randomness streams | CORE-02 | | CORE-04 | core | Generators, family splits and protocol registry | CORE-03 | | CORE-05 | core | Run manifests, metric accounting and report pipeline | CORE-04 | | CORE-06 | core | Command-line runner and CPU CI smoke path | CORE-05 | | QL-01 | qlearn | Functional optimizees and exact meta-gradient reference | CORE-06 | | QL-02 | qlearn | Matched fixed and learned-control optimizer runners | QL-01 | | QL-03 | qlearn | Bounded learned policy and meta-training | QL-02 | | QL-04 | qlearn | Ablations and longer-horizon development study | QL-03 | | QL-05 | qlearn | Evidence audit and bounded claim statement | QL-04 | | QL-06 | qlearn | Adaptation capability and exhibition demo | QL-05 | | QA-01 | qapen | Prequential streams and exact finite mixture reference | CORE-06 | | QA-02 | qapen | Fixed ensembles and memory control suite | QA-01 | | QA-03 | qapen | Quantizer, expert bank and bounded lifecycle | QA-02 | | QA-04 | qapen | Returning-regime and noise development study | QA-03 | | QA-05 | qapen | Calibrated reporting and lineage audit | QA-04 | | QA-06 | qapen | World-prediction adapter and demo | QA-05 | | QW-01 | qwipii | Exact finite actions, projective arithmetic and quotient reference | CORE-06 | | QW-02 | qwipii | Brute, ranking-only and oracle comparison runners | QW-01 | | QW-03 | qwipii | Bounded discovery grammar and verifier gating | QW-02 | | QW-04 | qwipii | Orbit-disjoint development and ablation study | QW-03 | | QW-05 | qwipii | Certificate and claim audit | QW-04 | | QW-06 | qwipii | Verified reasoning adapter and demo | QW-05 | | WC-01 | wcode | Typed total DSL and exact bounded interpreter | CORE-06 | | WC-02 | wcode | Shared enumerator, source-family data and controls | WC-01 | | WC-03 | wcode | Program graph extractor and hierarchical relational ranker | WC-02 | | WC-04 | wcode | Search efficiency and encoder ablations | WC-03 | | WC-05 | wcode | Correctness-scope and complexity report | WC-04 | | WC-06 | wcode | Bounded synthesis adapter and demo | WC-05 | | WF-01 | wfim | Exact sparse word algebra and degree truncation | CORE-06 | | WF-02 | wfim | Weighted norms, tail certificates and fixed controls | WF-01 | | WF-03 | wfim | Bounded invertible transport and explicit approximation API | WF-02 | | WF-04 | wfim | Compositional transfer at equal byte budgets | WF-03 | | WF-05 | wfim | Mathematical assumptions and benefit audit | WF-04 | | WF-06 | wfim | Algebra capability and demonstration | WF-05 | | FT-01 | wft | Sparse Laplacian and weighted spectral reference | CORE-06 | | FT-02 | wft | Fixed and learned operator baselines | FT-01 | | FT-03 | wft | Predictive operator fitting with scoped constraints | FT-02 | | FT-04 | wft | Graph-shift, scale-transfer and constraint ablations | FT-03 | | FT-05 | wft | Operator identifiability and spectral report | FT-04 | | FT-06 | wft | Spectral capability and demo | FT-05 | | WP-01 | wpinn | Oscillator trajectories and analytic weak-form reference | CORE-06 | | WP-02 | wpinn | Sparse, data-only and inverse-PINN controls | WP-01 | | WP-03 | wpinn | Verified structure and optional alternating fit | WP-02 | | WP-04 | wpinn | Noise, parameter shift and structural ablations | WP-03 | | WP-05 | wpinn | Identifiability and law-recovery evidence audit | WP-04 | | WP-06 | wpinn | Law-identification adapter and demo | WP-05 | | CW-01 | cwlnn | Sparse graph hierarchy and local dense-equivalence reference | CORE-06 | | CW-02 | cwlnn | Flat, fixed-hierarchy and feasible attention controls | CW-01 | | CW-03 | cwlnn | Budgeted routing and multiscale model | CW-02 | | CW-04 | cwlnn | Size transfer, hierarchy and routing ablations | CW-03 | | CW-05 | cwlnn | Complexity and efficiency evidence audit | CW-04 | | CW-06 | cwlnn | Multiscale encoding capability and demo | CW-05 | | UL-01 | ultron | Typed episode state, capability registry and static router | CORE-06 | | UL-02 | ultron | Budgeted executor, verifier client and policy controls | UL-01 | | UL-03 | ultron | Evidence DAG and development-only learned routing | UL-02 | | UL-04 | ultron | Matched-capability routing development study | UL-03, QW-06, WC-06, WP-06 | | UL-05 | ultron | Completion/evidence/limitations report | UL-04 | | UL-06 | ultron | Exhibition replay and unsupported-task handling | UL-05 | | REL-01 | release | Audit all nine thin slices and claim states | QL-06, QA-06, QW-06, WC-06, WF-06, FT-06, WP-06, CW-06, UL-06 | | REL-02 | release | Freeze exhibition and bounded release artifacts | REL-01 | | REL-03 | release | Plan separately authorized confirmation and manuscript scope | REL-02 |",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/tasks/TASK_MAP.md"
+    ]
+  },
+  {
+    "text": "Read START_HERE.md, AGENTS.md, WORLD_SERIES_MASTER_PLAN.md, docs/ARCHITECTURE.md, docs/EXPERIMENT_PROTOCOL.md and tasks/tasks.json. This is a research-and-code planning pack, not an already implemented model repository.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/prompts/00_integrator.md"
+    ]
+  },
+  {
+    "text": "First inspect the current workspace, Git state, existing tests, project identities, available hardware and Python environment. Preserve all user work and frozen study outcomes. Do not delete, reset, clean, overwrite or migrate existing repositories. Record useful reusable code with its true revision/hash and license. If this is an empty new workbench, create the proposed package structure; if not, make an explicit compatibility plan before edits.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/prompts/00_integrator.md"
+    ]
+  },
+  {
+    "text": "Execute CORE-01 through CORE-06 in dependency order with atomic verifiable changes. Choose a compatible locked environment and implement shared contracts, bounded resource accounting, split controls, immutable run manifests, a small CLI and CPU tests. Do not scaffold fake models to make an all-project command pass. Unimplemented capabilities must remain unavailable.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/prompts/00_integrator.md"
+    ]
+  },
+  {
+    "text": "After core is sound, allocate per-module tasks using prompts/01_qlearn.md through prompts/09_ultron.md. One integrator owns shared contracts and lockfiles. Parallelize isolated editing only; allow one numerical worker by default. Never start nine heavy training jobs because nine prompts exist.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/prompts/00_integrator.md"
+    ]
+  },
+  {
+    "text": "Finish each task with actual test results and a handoff. Build the smallest complete reference \u2192 baseline \u2192 candidate \u2192 evidence path. Protect final evaluation outside the development workspace. Do not create positive metrics, launch paid services, deploy anything, access sealed data or execute unrestricted generated code. A correct negative result is a successful research artifact.",
+    "paths": [
+      "WORLD_SERIES_COMPLETE_BLUEPRINT.md",
+      "world_series_cursor_pack/prompts/00_integrator.md"
+    ]
+  },
+  {
+    "text": "## Identity and honesty - The planning pack is not an implemented model repository. - Do not fabricate metrics, citations, charts, or \u201cpassing\u201d scientific outcomes. - Keep software readiness separate from research outcome (`NOT_SUPPORTED` / `INCONCLUSIVE` are valid). - Do not mark a task complete because intended files exist; require tests and real evidence. - Confirmation remains `DRAFT_NOT_AUTHORIZED` until a frozen protocol exists outside the development agent.",
+    "paths": [
+      "world-series/AGENTS.md",
+      "world_series_cursor_pack/AGENTS.md"
+    ]
+  },
+  {
+    "text": "## Provenance and safety - Treat existing APEN/PEN, Fabric-Induced Memory, and other research repositories as protected. - Reuse only reviewed code with recorded revision/hash, license, and compatibility test. - Do not delete duplicates, run destructive cleanup, reset user changes, migrate repos, or overwrite lockfiles without reconciliation. - Keep planning provenance separate from execution evidence. - Do not push remotely, deploy, publish, purchase compute, send outreach, or launch live trading.",
+    "paths": [
+      "world-series/AGENTS.md",
+      "world_series_cursor_pack/AGENTS.md"
+    ]
+  },
+  {
+    "text": "## Execution policy - Default to one numerical worker; nine projects \u2260 nine simultaneous training jobs. - CPU reference paths first; accelerator paths must declare device, dtype, and fallback. - Set explicit conservative limits before allocation; memory monitors are advisory. - No Python `eval`/`exec` for the synthesis DSL; no shell/filesystem/network in the DSL. - Unimplemented capabilities return explicit unsupported/not-run states \u2014 never mock successes as research evidence. - Preserve interrupted/failed runs; do not overwrite failure receipts with a later success under the same run ID.",
+    "paths": [
+      "world-series/AGENTS.md",
+      "world_series_cursor_pack/AGENTS.md"
+    ]
+  }
+]

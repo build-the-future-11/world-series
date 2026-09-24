@@ -1,0 +1,401 @@
+{
+  "scope": "Read-only preservation of original local evidence and proposals. Absolute original_path fields are provenance only; runtime uses package-relative path.",
+  "files": [
+    {
+      "path": "provenance/legacy-candidate/manifest.json",
+      "original_path": "/Volumes/PRO-BLADE/.portfolio/verification/WS-neural-candidate-20260923-v2/manifest.json",
+      "sha256": "2ed6b66e4db84158962eb7374a02a3127f4d9b2fa48890050baf4a5797d8d510",
+      "bytes": 16778
+    },
+    {
+      "path": "provenance/legacy-candidate/source.tar.gz",
+      "original_path": "/Volumes/PRO-BLADE/.portfolio/verification/WS-neural-candidate-20260923-v2/source.tar.gz",
+      "sha256": "63645fd78eb8d274ea88de0aef22f2b827e127265052fcfaac6c6fa274c9828a",
+      "bytes": 69524
+    },
+    {
+      "path": "provenance/legacy-analysis/all_cells.csv",
+      "original_path": "/Volumes/PRO-BLADE/.portfolio/verification/WS-neural-analysis-20260923/all_cells.csv",
+      "sha256": "55077d1ec12e5832a007b72f2040b073abd3237bf7a617c0a4eb1ee946b9b174",
+      "bytes": 3460
+    },
+    {
+      "path": "provenance/legacy-analysis/analysis.json",
+      "original_path": "/Volumes/PRO-BLADE/.portfolio/verification/WS-neural-analysis-20260923/analysis.json",
+      "sha256": "e33d88c151881be65daa618e6e46c6f4b739a990f032c5c0fa2bc4b01db207e8",
+      "bytes": 3446455
+    },
+    {
+      "path": "provenance/legacy-analysis/comparisons.csv",
+      "original_path": "/Volumes/PRO-BLADE/.portfolio/verification/WS-neural-analysis-20260923/comparisons.csv",
+      "sha256": "51f66ed4ec68a85dfcba8245714329377dda163b641fe77fb7b5282fe7bde012",
+      "bytes": 1716
+    },
+    {
+      "path": "provenance/legacy-analysis/figures/development-comparison.pdf",
+      "original_path": "/Volumes/PRO-BLADE/.portfolio/verification/WS-neural-analysis-20260923/figures/development-comparison.pdf",
+      "sha256": "b19f89a954fd4d36ca8776ebed2cb8590128c707751af8829f79bff3ce688e1e",
+      "bytes": 26499
+    },
+    {
+      "path": "provenance/legacy-analysis/figures/development-comparison.png",
+      "original_path": "/Volumes/PRO-BLADE/.portfolio/verification/WS-neural-analysis-20260923/figures/development-comparison.png",
+      "sha256": "049554cadadc955308d140d2ebb95c56f042a157d5dbb6c87c6c1efdde0a57b1",
+      "bytes": 129918
+    },
+    {
+      "path": "provenance/legacy-analysis/figures/development-comparison.svg",
+      "original_path": "/Volumes/PRO-BLADE/.portfolio/verification/WS-neural-analysis-20260923/figures/development-comparison.svg",
+      "sha256": "0c833bc52c88bdda6fb5cc0187a0f223a48e891faa3f48c057fb10c716aae79d",
+      "bytes": 86640
+    },
+    {
+      "path": "provenance/legacy-analysis/figures/figure-manifest.json",
+      "original_path": "/Volumes/PRO-BLADE/.portfolio/verification/WS-neural-analysis-20260923/figures/figure-manifest.json",
+      "sha256": "312a9ef4caa6e410d3883591167c4c42101de8f09c9b7b8dfe7f14af6b872ab5",
+      "bytes": 653
+    },
+    {
+      "path": "provenance/legacy-analysis/replay/final_predictions.npz",
+      "original_path": "/Volumes/PRO-BLADE/.portfolio/verification/WS-neural-analysis-20260923/replay/final_predictions.npz",
+      "sha256": "82510e8dc2c10442d5eef03495ccc8a026f650daecf70d9c2f4082440a3192f9",
+      "bytes": 617464
+    },
+    {
+      "path": "provenance/legacy-analysis/replay/prediction_index.json",
+      "original_path": "/Volumes/PRO-BLADE/.portfolio/verification/WS-neural-analysis-20260923/replay/prediction_index.json",
+      "sha256": "0472d534d70f1b143558b76b9e26a6e1872445822db9e60c41016c24381354d3",
+      "bytes": 227763
+    },
+    {
+      "path": "provenance/legacy-analysis/replay/progress.json",
+      "original_path": "/Volumes/PRO-BLADE/.portfolio/verification/WS-neural-analysis-20260923/replay/progress.json",
+      "sha256": "990b54cd4e66210a2432b3c38b9379c4654bc2cb67c934f19f063f9223062a9c",
+      "bytes": 80
+    },
+    {
+      "path": "provenance/legacy-analysis/replay/receipt.json",
+      "original_path": "/Volumes/PRO-BLADE/.portfolio/verification/WS-neural-analysis-20260923/replay/receipt.json",
+      "sha256": "caae4b9a96b96dcdd2d67e78ebfc924c84af6dcc69eef23e001038adab2baf7f",
+      "bytes": 710
+    },
+    {
+      "path": "provenance/original-proposals/01_qlearn.md",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/world_series_cursor_pack/docs/projects/01_qlearn.md",
+      "sha256": "7f0cc9d8f37dc4b4f44b255538d1d1eac99d3fb664c47659ec69cba3c0d7e4c3",
+      "bytes": 8365
+    },
+    {
+      "path": "provenance/original-proposals/02_qapen.md",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/world_series_cursor_pack/docs/projects/02_qapen.md",
+      "sha256": "23c75cfef2767d48ddde7c497340000056bfc7c80e778767209d1227b26a595c",
+      "bytes": 7402
+    },
+    {
+      "path": "provenance/original-proposals/03_qwipii.md",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/world_series_cursor_pack/docs/projects/03_qwipii.md",
+      "sha256": "6d4f53967d07fc084d500fda101acf065b18c76ee53e6c0853947bf96ed2e9c3",
+      "bytes": 6976
+    },
+    {
+      "path": "provenance/original-proposals/04_wcode.md",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/world_series_cursor_pack/docs/projects/04_wcode.md",
+      "sha256": "6fd14492ae095c9f88e11c6bb6bd62734a459dc0c0b9d38df6c648c04fe88d1b",
+      "bytes": 7233
+    },
+    {
+      "path": "provenance/original-proposals/05_wfim.md",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/world_series_cursor_pack/docs/projects/05_wfim.md",
+      "sha256": "1ea39054d4e2c480be129c812095d62bb32f011c4a4721fad5e283cb8c491154",
+      "bytes": 8087
+    },
+    {
+      "path": "provenance/original-proposals/06_wft.md",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/world_series_cursor_pack/docs/projects/06_wft.md",
+      "sha256": "1b3b2f910921d42232234e11f139638b28f5ab4526afcec49214e65fc2beb6d3",
+      "bytes": 7352
+    },
+    {
+      "path": "provenance/original-proposals/07_wpinn.md",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/world_series_cursor_pack/docs/projects/07_wpinn.md",
+      "sha256": "9ef11f6d8484efabfd6e9af3a43cd439fe8680b7776a7c32da290002a6791ebc",
+      "bytes": 7403
+    },
+    {
+      "path": "provenance/original-proposals/08_cwlnn.md",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/world_series_cursor_pack/docs/projects/08_cwlnn.md",
+      "sha256": "1ecc43def3df57f7531917e57a0af84920caed04237a78ca3b02127f8636669e",
+      "bytes": 7002
+    },
+    {
+      "path": "provenance/original-proposals/09_ultron.md",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/world_series_cursor_pack/docs/projects/09_ultron.md",
+      "sha256": "ea96b4b7ae6a83f3d43116ecf3ffd70d0b4dfbc63995e53f186ce5c5e85aa83d",
+      "bytes": 7850
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/CLOSURE_PROGRAM.md",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/CLOSURE_PROGRAM.md",
+      "sha256": "8ae405f4a298d1bcfeafc5e620a17ecce4fd50aa445043fb0eeb08ad0973a529",
+      "bytes": 21875
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/COLLECTION_AUDIT.md",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/COLLECTION_AUDIT.md",
+      "sha256": "972bbf668643b80511f352c308fa219124ae7ccb8cc0a807ed894595818722f6",
+      "bytes": 28626
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/LITERATURE_COMPARISON.md",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/LITERATURE_COMPARISON.md",
+      "sha256": "377730d2a56a82dd42bfdf431d7e6e51226b835e81ad65271960edb01dd3ae21",
+      "bytes": 4025
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/PROJECT_AUDITS.md",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/PROJECT_AUDITS.md",
+      "sha256": "b0f5b6de6fc3667453dec4a94ceb51c6b076b2ef8b64c77d88e65dfee326b267",
+      "bytes": 31605
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/PROJECT_REGISTRY.json",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/PROJECT_REGISTRY.json",
+      "sha256": "cff6ef3ffb016adb1a0807dc0fd3fef147a09a2edb32feb1b3f2fcf37b073594",
+      "bytes": 43209
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/PROJECT_REGISTRY.md",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/PROJECT_REGISTRY.md",
+      "sha256": "cae5870b5b712a61732541f5563c97bcfe88e809c7798e5d1e5346b3009ab18f",
+      "bytes": 2336
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/PUBLICATION_MASTER_CHECKLIST.md",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/PUBLICATION_MASTER_CHECKLIST.md",
+      "sha256": "f3f8c2cf7fb6744585ed325d304449bd63970fe86b285fc07adfe87b15ff5190",
+      "bytes": 32095
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/PUBLICATION_PACKAGES.md",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/PUBLICATION_PACKAGES.md",
+      "sha256": "f9cca4c8b2585a10ce1e19abecac8ce565b17c8d722db76595bcdb2ecf4043a4",
+      "bytes": 6011
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/REPRODUCE_AUDIT.md",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/REPRODUCE_AUDIT.md",
+      "sha256": "a1822ee63d0e838d64a1155716b07062de4232eec3ba4ff9d4a2549311b94f58",
+      "bytes": 2903
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/build_registry.py",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/build_registry.py",
+      "sha256": "0837d12b5b35fd3cefa5388c733f62f0c6d445edb4eded5f65dbf456f466df57",
+      "bytes": 34348
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/duplicates.json",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/duplicates.json",
+      "sha256": "3154efa5ef9ed9ec91c0de10f2b3bc5c189a7a7d0571e203055cbe80f5d571c8",
+      "bytes": 21923
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/frozen_source_inventory.json",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/frozen_source_inventory.json",
+      "sha256": "4cf05d2fc9185773264cb477c26e4e10ec6d45acd52809e8a05356cc02ea9de5",
+      "bytes": 29345
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/inventory.json",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/inventory.json",
+      "sha256": "415422bd3e9d3a4aa3e089240e01d10367921ca9fb7943e3e75185c9fa51cce8",
+      "bytes": 902418
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/paragraph_duplicates.json",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/paragraph_duplicates.json",
+      "sha256": "05683f6ac28c6d11e4ae5501307d4d9efd27d8f2b732d67758a635b89e11710d",
+      "bytes": 150384
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/receipts/analysis_comparison.json",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/receipts/analysis_comparison.json",
+      "sha256": "6de1f2fae44637c16e9091de4113e8b88589bea2e458800b7c765f2e11ad56a1",
+      "bytes": 686
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/receipts/archive_console.txt",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/receipts/archive_console.txt",
+      "sha256": "df8d02ff8928989f40f3b89df48445509295f482d51d12db71513eceb98ba074",
+      "bytes": 1124
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/receipts/archive_verification.json",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/receipts/archive_verification.json",
+      "sha256": "df8d02ff8928989f40f3b89df48445509295f482d51d12db71513eceb98ba074",
+      "bytes": 1124
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/receipts/locks.json",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/receipts/locks.json",
+      "sha256": "ae7d91d719ae887ff2252505d45c33e6d6a6ffa0dff5584c17907a2307f86187",
+      "bytes": 557
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/receipts/module_checks.json",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/receipts/module_checks.json",
+      "sha256": "51bd19ab67886364aedc15c6fa83b4b32c11e3c093f4b9274ed6feeef4ff110c",
+      "bytes": 8540
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/receipts/pytest.txt",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/receipts/pytest.txt",
+      "sha256": "45262d9567279f5beb355a705df33a1c4f1a450b0367e0cc7ac66725a1b22012",
+      "bytes": 677
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/receipts/replay_inventory.json",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/receipts/replay_inventory.json",
+      "sha256": "a954439df0799ba0831bc0d6011bada3ddc03f410f9afd7c955308441e31a34f",
+      "bytes": 25403
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/receipts/report_validation.json",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/receipts/report_validation.json",
+      "sha256": "52955d9a1493851f31017d459b1ad2fa824433b1018ef211e9b1cb4b93a6c343",
+      "bytes": 185
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/receipts/scope_console.txt",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/receipts/scope_console.txt",
+      "sha256": "247d2bf5ad897f02de96dfcb71684576a54b73bd31e473208d052ce4c779e97a",
+      "bytes": 428
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/receipts/scope_verification.json",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/receipts/scope_verification.json",
+      "sha256": "247d2bf5ad897f02de96dfcb71684576a54b73bd31e473208d052ce4c779e97a",
+      "bytes": 428
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/receipts/scoped_contrasts.json",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/receipts/scoped_contrasts.json",
+      "sha256": "9efc9189bc059ec84429b774f87d4a8f9540fe370b8442ca4bc063bff5a50712",
+      "bytes": 3397
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/receipts/shared_tasks.json",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/receipts/shared_tasks.json",
+      "sha256": "5ca215aeeb743d625c67c3be1099b36b2f49d55272fd92d1524a27b2178773aa",
+      "bytes": 22155
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/receipts/splits.json",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/receipts/splits.json",
+      "sha256": "36be9b8326cd1648e42e469ab5239232c7b6d3f6606ae79fbbbf5835321f9136",
+      "bytes": 2083
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/receipts/verification.json",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/receipts/verification.json",
+      "sha256": "f763e52c21cada0bb19e603de9126a00d20c75cf633f3932edcfd7f18aaab918",
+      "bytes": 1679
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/receipts/verification_console.txt",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/receipts/verification_console.txt",
+      "sha256": "e21132431553135e394b231cac95853d023770cefb52edd9de94b5bb396a71dc",
+      "bytes": 4023
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/receipts/wfim_transport.json",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/receipts/wfim_transport.json",
+      "sha256": "09a70de835fbf1642ae2f5d3ab44c443ef64806b6d5d8645bb7462302aeb8052",
+      "bytes": 286
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/recomputed/RESULTS.md",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/recomputed/RESULTS.md",
+      "sha256": "b7b3159db75f2414a12220f8ae71aa57a2afd94938e040cd624ebb9e39fbe1a6",
+      "bytes": 11971
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/recomputed/SENSITIVITY.md",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/recomputed/SENSITIVITY.md",
+      "sha256": "8c9fd695313f6011ac3cabc8baf6abdace7e298fe52c1a7867ea63c134b70d9e",
+      "bytes": 1724
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/recomputed/all_module_cells.csv",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/recomputed/all_module_cells.csv",
+      "sha256": "ec0f4ff8b51a040431674a169bc925aa030e4d4210f3dbb9e1a4b8c5c45341ff",
+      "bytes": 11517
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/recomputed/analysis.json",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/recomputed/analysis.json",
+      "sha256": "c1e27d23cb175ceffd26ea3521758d7d8c732a23edc9ce27b3484bfbd171f6f1",
+      "bytes": 83951
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/recomputed/digits_cells.csv",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/recomputed/digits_cells.csv",
+      "sha256": "756d6c0f266492a634559d8956c0b55f3356c879916d44b9c1149634b264e77f",
+      "bytes": 2807
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/recomputed/digits_comparisons.csv",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/recomputed/digits_comparisons.csv",
+      "sha256": "e91fe56c45506fd3a860bb93467a7584480bf8647407100a0d0d4900fe0f2cad",
+      "bytes": 2023
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/recomputed/digits_per_seed.csv",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/recomputed/digits_per_seed.csv",
+      "sha256": "a41a320a8fd3fd4873cf68513a6d9c07676df9476747adc2e6171827f5274e46",
+      "bytes": 23108
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/recomputed/malis_per_seed.csv",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/recomputed/malis_per_seed.csv",
+      "sha256": "1358ae93842967366b29634376b29f838ec11c1cf6c16d0f0a1632a0a8530278",
+      "bytes": 2221
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/recomputed/sensitivity.csv",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/recomputed/sensitivity.csv",
+      "sha256": "a315554a9ffc1965adbb518951c1784054eb721d587c86510db40b66b36927d7",
+      "bytes": 795
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/recomputed/sensitivity.json",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/recomputed/sensitivity.json",
+      "sha256": "7e55be4dcaf50907ccaac17a572902007118d7ac9ebe1efd690f9acaccebe0fa",
+      "bytes": 19576
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/run_index.json",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/run_index.json",
+      "sha256": "5ae6f1238346368025d1c0f74493dce73f4d7de27f23feffd30781a0da54d44b",
+      "bytes": 66911
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/verify_archive.py",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/verify_archive.py",
+      "sha256": "d25034b345f28ab8f0517ea70f227d82b3ba0bea5ad3151568f15302a52f2d38",
+      "bytes": 2079
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/verify_collection.py",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/verify_collection.py",
+      "sha256": "28d76143cbb53d50ccf9179f6431acff18a4d04572f126602fd39992bd116035",
+      "bytes": 10284
+    },
+    {
+      "path": "provenance/collection-audit-snapshot/verify_scope.py",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/verify_scope.py",
+      "sha256": "d8ba17db0896d6e343d652a86541352dd9c5d61236b57707e9e33afcb1302513",
+      "bytes": 2570
+    }
+  ]
+}

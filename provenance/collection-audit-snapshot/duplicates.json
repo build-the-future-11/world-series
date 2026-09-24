@@ -1,0 +1,404 @@
+{
+  "038cd68a2515386c0f6a2779f0086a1b46951b6ca1f60504da1e472fefcf9024": [
+    "RESEARCH_STATUS.md",
+    "world-series/docs/exposition/STATUS_TABLE.md",
+    "world-series/docs/execution/development-v2/CURRENT_STATUS.md"
+  ],
+  "b07aa314a2e3644d31e67c813c41b85af4e83ee12d8ed4453c69967ffeaecd7e": [
+    "REFERENCES.md",
+    "world_series_cursor_pack/sources/REFERENCES.md"
+  ],
+  "05e867e5c2d193652460b5efe3e49690b549d3e40b66bd795bdaef3a16ab62c3": [
+    "world_series_cursor_pack/AGENTS.md",
+    "world-series/AGENTS.md"
+  ],
+  "ca0075d4139b82025abca42048f5727739851516c27fb67b89588d7a179114ab": [
+    "world_series_cursor_pack/tasks/tasks.json",
+    "world-series/tasks/tasks.json"
+  ],
+  "bc43eba7215363d062a052155ca0bbd057e83a320c71921b0e8c843cc4b8e470": [
+    "world_series_cursor_pack/docs/ARCHITECTURE.md",
+    "world-series/docs/ARCHITECTURE.md"
+  ],
+  "223fd37ed79114804fa6042aaf30a3e13bf810c9dae027fee7f6e8a428ae7e78": [
+    "world_series_cursor_pack/docs/EXPERIMENT_PROTOCOL.md",
+    "world-series/docs/EXPERIMENT_PROTOCOL.md"
+  ],
+  "8b5fb7014af346152eca713ec3199622ad83851d0f206070ad39f115eff911ba": [
+    "world-series/docs/execution/pytest_final.txt",
+    "world-series/docs/execution/pytest_core_modules.txt"
+  ],
+  "ec29c11921475dff6e6c59049cb3a59bfb8ef7ece5d9a2a081fe81e5b29d9f26": [
+    "world-series/docs/execution/pytest_audit.txt",
+    "world-series/docs/execution/pytest_audit_final.txt"
+  ],
+  "29f8fba94b2b03660d529db202e05d9d69135b27493394c7b18aa9c1a13dc7d8": [
+    "world-series/docs/execution/development-v2/META_TRAINING_REPLAY.json",
+    "world-series/campaigns/meta-training-replay-v1/summary.json"
+  ],
+  "011d52f47e6f9afb604d8f0a0146511ff7c9176685ab927af9c022076aef6a06": [
+    "world-series/external/celo2/celo2_optax.py",
+    "world-series/external/celo2/build/lib/celo2_optax.py"
+  ],
+  "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b": [
+    "world-series/external/celo2/celo2_optax.egg-info/dependency_links.txt",
+    "world-series/src/world_series.egg-info/dependency_links.txt"
+  ],
+  "2c036ddb6e70da048969e065639b908d168225eed419a5a32af38c8fc0ef6f08": [
+    "world-series/runs/20260924T101424_7c1bb9dc/artifacts/digits/splits.json",
+    "world-series/runs/20260924T104048_808c0128/artifacts/digits/splits.json"
+  ],
+  "c4b5ef52fe2d1cb7b90ed95a065f2c330f16014f53054cbaaf2f0a47bc0a8063": [
+    "world-series/runs/20260924T101424_7c1bb9dc/artifacts/digits/data.npz",
+    "world-series/runs/20260924T104048_808c0128/artifacts/digits/data.npz"
+  ],
+  "cbebf310051e4d0e1cc930bddfb9904ed6a56af479bdbee18cd759a44df7521c": [
+    "world-series/runs/20260922T194610_9ab30900/metrics.json",
+    "world-series/runs/20260922T194610_9ab30900/artifacts/wcode_result.json"
+  ],
+  "f1171426a652161e45e2b7d713bad3faecc31b37ff7a36da18f5078c8a2f4501": [
+    "world-series/runs/20260922T220243_3506d0ca/metrics.json",
+    "world-series/runs/20260922T220243_3506d0ca/artifacts/ultron_result.json"
+  ],
+  "6297959157a33a958383510e4b3b3fe92896f694ed9a21458157b55664210e55": [
+    "world-series/runs/20260924T100511_68ee7ad3/artifacts/executed_config.json",
+    "world-series/runs/20260924T101006_fe0803e7/artifacts/executed_config.json"
+  ],
+  "4c6d52e1e0b6b6415857fa620758d2872af377279fa5aff3380b9b617f1666a6": [
+    "world-series/runs/20260922T220231_61f019e7/artifacts/certificate.json",
+    "world-series/runs/20260922T194610_ccb2a335/artifacts/certificate.json",
+    "world-series/runs/20260922T194720_8a91978e/artifacts/certificate.json",
+    "world-series/runs/20260922T220234_6769c529/artifacts/certificate.json",
+    "world-series/runs/20260922T194616_70fd5e81/artifacts/certificate.json",
+    "world-series/runs/20260922T220233_5b6e56fb/artifacts/certificate.json"
+  ],
+  "a3c560a09b192149b8e3207ce5ab23fbdb5c76cdf76448ddd19454abaf18c3cc": [
+    "world-series/runs/20260922T220223_c80378c6/metrics.json",
+    "world-series/runs/20260922T220223_c80378c6/artifacts/qlearn_metrics.json"
+  ],
+  "2476b20fdffc560c8dc53236ed35f94daf4710f8183efe5d079886ff61be22e8": [
+    "world-series/runs/20260924T101150_3293b6ce/artifacts/digits/splits.json",
+    "world-series/runs/20260924T103954_9039d6e2/artifacts/digits/splits.json"
+  ],
+  "6178a078c94b7041490576ee91d8c95f765f12f85d7aa1d4452c51647b35fbf6": [
+    "world-series/runs/20260924T101150_3293b6ce/artifacts/digits/data.npz",
+    "world-series/runs/20260924T103954_9039d6e2/artifacts/digits/data.npz"
+  ],
+  "b223cc55edc988fbc60bd7b2f1416fa1330b43232d29702cce25ebfa3407b526": [
+    "world-series/runs/20260922T193157_935fac00/metrics.json",
+    "world-series/runs/20260922T193157_935fac00/artifacts/wpinn_result.json"
+  ],
+  "b52cae8989e49100585dc004b7162c7dab8bab0081b0e6f9380cd64999258f23": [
+    "world-series/runs/20260924T101553_ac358792/metrics.json",
+    "world-series/runs/20260924T101553_ac358792/artifacts/discrete-malis.json"
+  ],
+  "c2c9743e403a52fdc9e42e718b8dc17f5a84d6154d8046f7c83b60ef7f3b4c3b": [
+    "world-series/runs/20260924T104011_dd8fc7e3/artifacts/digits/splits.json",
+    "world-series/runs/20260924T101337_3dcca138/artifacts/digits/splits.json"
+  ],
+  "ec7dc5e7e70f6ba0ad2410fa96ea2225ad184f502937903d9a3eb9949c0acca1": [
+    "world-series/runs/20260924T104011_dd8fc7e3/artifacts/digits/data.npz",
+    "world-series/runs/20260924T101337_3dcca138/artifacts/digits/data.npz"
+  ],
+  "3e3d6f75ff0e128ee242d77f62f50f507c110672d723521f0d5ef63ada8dcb06": [
+    "world-series/runs/20260924T104103_ace59231/artifacts/digits/splits.json",
+    "world-series/runs/20260924T101438_973894fc/artifacts/digits/splits.json"
+  ],
+  "09d4800ef77c7a0fbfa52660f6dff7dd7b276ba7956d763674ebb1c2da835934": [
+    "world-series/runs/20260924T104103_ace59231/artifacts/digits/data.npz",
+    "world-series/runs/20260924T101438_973894fc/artifacts/digits/data.npz"
+  ],
+  "8b147843a9ab8b845b9c75bb59f1ad0cbd9ad4943f01b63933f46ccb61d11d55": [
+    "world-series/runs/20260922T194624_535ed7e6/metrics.json",
+    "world-series/runs/20260922T194624_535ed7e6/artifacts/qapen_result.json"
+  ],
+  "61c6ec241abb2f70705eb2d2ec0f1d72337542764578d4b73e86411ceaab4796": [
+    "world-series/runs/20260922T220216_a554949f/metrics.json",
+    "world-series/runs/20260922T220216_a554949f/artifacts/qlearn_metrics.json"
+  ],
+  "9731778f696443d026ca7f8191bc63b9350005bfeda34d765a329c4ce14c71af": [
+    "world-series/runs/20260922T194610_cfa39971/metrics.json",
+    "world-series/runs/20260922T194610_cfa39971/artifacts/qapen_result.json"
+  ],
+  "94b32f884f38565c83eb775b73ac20ede984b738ac7a9aa862179179aa5fc84e": [
+    "world-series/runs/20260924T104150_303bbf53/artifacts/digits/splits.json",
+    "world-series/runs/20260924T101513_5c3f6c57/artifacts/digits/splits.json"
+  ],
+  "89223a68df099ab2c84104a236e77ca49e15383a5a34699d57698ac8cd303a31": [
+    "world-series/runs/20260924T104150_303bbf53/artifacts/digits/data.npz",
+    "world-series/runs/20260924T101513_5c3f6c57/artifacts/digits/data.npz"
+  ],
+  "4a333d9ac4fdc0c2cd21bac18c5eb8c4b1174a4b3e3e7b9ee09711f0a939a5c0": [
+    "world-series/runs/20260922T193154_4c1d465e/metrics.json",
+    "world-series/runs/20260922T193154_4c1d465e/artifacts/qlearn_metrics.json"
+  ],
+  "a2a95181ea249d212b5fff2bbf65a00f5cdaf9a2d4743c664a5e39dfe02f7e8a": [
+    "world-series/runs/20260924T100513_5300a63f/artifacts/executed_config.json",
+    "world-series/runs/20260924T101017_8bfd1d89/artifacts/executed_config.json"
+  ],
+  "a92154234a9abece964cf388df113e86a12e5fa251a6d7c5e2024f40a6d4ef37": [
+    "world-series/runs/20260924T100506_a5a94f02/artifacts/executed_config.json",
+    "world-series/runs/20260924T100958_fbdd5589/artifacts/executed_config.json"
+  ],
+  "105e985e29a53f6df4221707d62a7e9a198a0adac83790805cb93e50e4ee5cf9": [
+    "world-series/runs/20260922T220229_34d8ed9d/metrics.json",
+    "world-series/runs/20260922T220229_34d8ed9d/artifacts/qapen_result.json"
+  ],
+  "d4d49dcb90f7afb23cea2226ae96362b7acc9ee741c36de32a2748dfc9fe2f22": [
+    "world-series/runs/20260922T193237_b1aa345a/metrics.json",
+    "world-series/runs/20260922T193237_b1aa345a/artifacts/wpinn_result.json"
+  ],
+  "42b045d30b7554aa4ff6cebc0ec663d42031102730d188dcaee7c8922fefb06a": [
+    "world-series/runs/20260922T194719_909729af/metrics.json",
+    "world-series/runs/20260922T194719_909729af/artifacts/qlearn_metrics.json"
+  ],
+  "2f52583fee25e2c91819da20a3c1aa5ac1fc1d5d6f14bb922c9503d11693469c": [
+    "world-series/runs/20260924T100514_7a78b110/artifacts/executed_config.json",
+    "world-series/runs/20260924T101021_eeafc090/artifacts/executed_config.json"
+  ],
+  "6448336d5b5bb75ba55cfedff066c35426c4f73e81c52fb4f8338718ce2dcc93": [
+    "world-series/runs/20260924T100515_b0c876b5/artifacts/executed_config.json",
+    "world-series/runs/20260924T101027_1846bd37/artifacts/executed_config.json"
+  ],
+  "a31a70d386fa1becf3b8696b05e015272c187daee8e0c6eeacdb294a0065291f": [
+    "world-series/runs/20260922T193237_50a3c40e/artifacts/certificate.json",
+    "world-series/runs/20260922T193157_b8a3ba3b/artifacts/certificate.json",
+    "world-series/runs/20260922T193347_6792a999/artifacts/certificate.json"
+  ],
+  "7460b8a58217a5325c35cee7065b63fe20174ab0f26a720e5e37c232ffc42b93": [
+    "world-series/runs/20260922T194825_504ad9bc/metrics.json",
+    "world-series/runs/20260922T194825_504ad9bc/artifacts/wpinn_result.json"
+  ],
+  "fb4d107ed8a8d2c3daeffb9d06cd1acc1c3cc17581258f200b1f8dc8145de60f": [
+    "world-series/runs/20260922T194610_b5637244/metrics.json",
+    "world-series/runs/20260922T194610_b5637244/artifacts/wfim_result.json"
+  ],
+  "ed7a379001ec4c55b78cb790fe7cea0cc04d0ef8b09324b11501314ff417c87a": [
+    "world-series/runs/20260922T220239_e701df07/metrics.json",
+    "world-series/runs/20260922T220239_e701df07/artifacts/wpinn_result.json"
+  ],
+  "0c5452494dcac054ca5a4ddb8e3d1ddbee9f5bce539ba4e352182b88fe53cece": [
+    "world-series/runs/20260922T194721_c4236828/metrics.json",
+    "world-series/runs/20260922T194721_c4236828/artifacts/wpinn_result.json"
+  ],
+  "b73704f1e59a6c96f48b4ad779c5d08fce9dd157be4ea2d0949dbc2d2637ebdd": [
+    "world-series/runs/20260922T194612_3595b5a2/metrics.json",
+    "world-series/runs/20260922T194612_3595b5a2/artifacts/qlearn_metrics.json"
+  ],
+  "118a31b1bbb1460e1c1ae7ec6041157dec365ee0ecebedef11736ed911e93e58": [
+    "world-series/runs/20260922T194720_030e6d83/metrics.json",
+    "world-series/runs/20260922T194720_030e6d83/artifacts/wfim_result.json"
+  ],
+  "de4b5b744e9be386e0bd2c5b15b545a8cacc83996ba0196033f6768de953308d": [
+    "world-series/runs/20260922T193237_b21be5a6/metrics.json",
+    "world-series/runs/20260922T193237_b21be5a6/artifacts/wfim_result.json"
+  ],
+  "125c87ce029b716adf1e746e3107c39d935b4da2e046d27252061a597e599e92": [
+    "world-series/runs/20260922T220241_2fef4d22/metrics.json",
+    "world-series/runs/20260922T220241_2fef4d22/artifacts/ultron_result.json"
+  ],
+  "5164c0fb6d0ddb373981a549e2a6d757d206f197980239ff934aa2e3b94e7eff": [
+    "world-series/runs/20260924T100515_b081a945/artifacts/executed_config.json",
+    "world-series/runs/20260924T101024_663f5d4e/artifacts/executed_config.json"
+  ],
+  "950503dd7f1f02742d041d1f3dc26f67202d3c7956a25a30c23d87464245c866": [
+    "world-series/runs/20260922T193238_99ff95c8/metrics.json",
+    "world-series/runs/20260922T193238_99ff95c8/artifacts/ultron_result.json"
+  ],
+  "40fda020cc8907365c65eb77f47fc0d960b0cbf25cba562696cd7859f7da83f3": [
+    "world-series/runs/20260924T101615_67b9ff70/metrics.json",
+    "world-series/runs/20260924T101615_67b9ff70/artifacts/discrete-malis.json"
+  ],
+  "55f77295a92a332e007dfab143a0884f43b8c6bfeb47dda59a2a8f5986283061": [
+    "world-series/runs/20260922T220220_9b72c7cd/metrics.json",
+    "world-series/runs/20260922T220220_9b72c7cd/artifacts/qlearn_metrics.json"
+  ],
+  "eddf68d94421b97b5a9c15b10f56a48b25cc7b784b07528c495c29818334b3e9": [
+    "world-series/runs/20260924T104030_9445bc99/artifacts/digits/splits.json",
+    "world-series/runs/20260924T101408_c64e5cf8/artifacts/digits/splits.json"
+  ],
+  "6ef65097d0eb3ad83160f723aac2636fb291e9b5c16a36eec0ac1002f58f19ef": [
+    "world-series/runs/20260924T104030_9445bc99/artifacts/digits/data.npz",
+    "world-series/runs/20260924T101408_c64e5cf8/artifacts/digits/data.npz"
+  ],
+  "aa2c57f0cfe2371d0493d0bf15b48fddbab139b386fb9e8a45fbd70d3fb9724b": [
+    "world-series/runs/20260924T101558_f80e0fd7/metrics.json",
+    "world-series/runs/20260924T101558_f80e0fd7/artifacts/discrete-malis.json"
+  ],
+  "aa3f07a198873ff4edf20446a5a49aa4dde5372e4b20f6735db608208c6f6fcb": [
+    "world-series/runs/20260922T194628_c98c5e9e/metrics.json",
+    "world-series/runs/20260922T194628_c98c5e9e/artifacts/wft_result.json"
+  ],
+  "e5bc652eaa3da9dae465f401ca47af550c70cbdc610effe84c632bd9e676750f": [
+    "world-series/runs/20260922T194720_5fb7cfa4/metrics.json",
+    "world-series/runs/20260922T194720_5fb7cfa4/artifacts/wcode_result.json"
+  ],
+  "5e655a68cd155ad91916dc89731e30e929fb4873a6073197ca50816ab0ca813e": [
+    "world-series/runs/20260924T101502_a111c875/artifacts/digits/splits.json",
+    "world-series/runs/20260924T104134_931bd910/artifacts/digits/splits.json"
+  ],
+  "872976ea5fcaaee43dfd5ee31b16cd9eb62c22b88c8a373ee55fa4fcfd08f65c": [
+    "world-series/runs/20260924T101502_a111c875/artifacts/digits/data.npz",
+    "world-series/runs/20260924T104134_931bd910/artifacts/digits/data.npz"
+  ],
+  "51882a99684be1314b6b73311270fc64de26334bb6b06ba07794766504a39b65": [
+    "world-series/runs/20260922T194611_66ca500e/metrics.json",
+    "world-series/runs/20260922T194611_66ca500e/artifacts/cwlnn_result.json"
+  ],
+  "3e39f68365ce3e4ce9f008146070dbd265f667bc0037f46e5ec579820be7778a": [
+    "world-series/runs/20260922T194630_0e7e80ca/metrics.json",
+    "world-series/runs/20260922T194630_0e7e80ca/artifacts/cwlnn_result.json"
+  ],
+  "cd318e7d82018cb69061ddea39e3b9410b831a28045c5d6cc87b4051756f260c": [
+    "world-series/runs/20260922T220244_60244691/metrics.json",
+    "world-series/runs/20260922T220244_60244691/artifacts/ultron_result.json"
+  ],
+  "9862d608686930d16a07aeb99c079223daf3f036669c1f625f1dcd05acf71072": [
+    "world-series/runs/20260922T193157_5859a298/metrics.json",
+    "world-series/runs/20260922T193157_5859a298/artifacts/wfim_result.json"
+  ],
+  "9e99c4944c70c41357271b66f7b7ae5f0c884001eee632fba1365fc21456c4d1": [
+    "world-series/runs/20260924T101607_715f1f5c/metrics.json",
+    "world-series/runs/20260924T101607_715f1f5c/artifacts/discrete-malis.json"
+  ],
+  "565fbc942e97b053ba7236ee618b773f6dd600560ce407fb684ca392607a7842": [
+    "world-series/runs/20260924T104119_3d67f86a/artifacts/digits/splits.json",
+    "world-series/runs/20260924T101451_a3afb019/artifacts/digits/splits.json"
+  ],
+  "5314e3c969e9994d95c3db2aac49f05f8a1128c53554e1f3f5a1aa5ab409b126": [
+    "world-series/runs/20260924T104119_3d67f86a/artifacts/digits/data.npz",
+    "world-series/runs/20260924T101451_a3afb019/artifacts/digits/data.npz"
+  ],
+  "8882d817c26580987794c2728005f660bb0384479c9b3be8218ed55b0e4cbfa9": [
+    "world-series/runs/20260922T194720_911cfd32/metrics.json",
+    "world-series/runs/20260922T194720_911cfd32/artifacts/qapen_result.json"
+  ],
+  "315974e796a152e440a38a1cb82e0e6e785ddb8b0e7b62b877121292748a2464": [
+    "world-series/runs/20260922T193237_0b6ee47e/metrics.json",
+    "world-series/runs/20260922T193237_0b6ee47e/artifacts/qapen_result.json"
+  ],
+  "36588061b8fc5958cbfba4a1e7e87725a3b901bf8d0032cedf8f6d9f378228b5": [
+    "world-series/runs/20260922T193157_57caa21b/metrics.json",
+    "world-series/runs/20260922T193157_57caa21b/artifacts/ultron_result.json"
+  ],
+  "aeb0bf60675471ae54d6551c5732a9ab5fb0038a5df87f9d016e50427c8eafdc": [
+    "world-series/runs/20260922T193237_2fa30d6d/metrics.json",
+    "world-series/runs/20260922T193237_2fa30d6d/artifacts/wft_result.json"
+  ],
+  "392cfb41ca296bbff225ae0cd375c69008ce880384194e7b4f8505acb7c9d5f8": [
+    "world-series/runs/20260922T220330_cb354089/metrics.json",
+    "world-series/runs/20260922T220330_cb354089/artifacts/qapen_result.json"
+  ],
+  "8d6d14d7a1287d23ea8a50fe5aba773a826c5e6577cdd7a5ee6697f7d65c6a6d": [
+    "world-series/runs/20260922T194721_654e7ffd/metrics.json",
+    "world-series/runs/20260922T194721_654e7ffd/artifacts/ultron_result.json"
+  ],
+  "a34c0e4c063bf2853764e5de4115c25a0dc0d5436ad627bdee7b182bda86343d": [
+    "world-series/runs/20260922T220236_40092f09/metrics.json",
+    "world-series/runs/20260922T220236_40092f09/artifacts/wpinn_result.json"
+  ],
+  "ff5e3e282c32a7ba509f4ac644cb979d7dfaab096a93c400ffc9807023bc4d19": [
+    "world-series/runs/20260922T193237_451be829/metrics.json",
+    "world-series/runs/20260922T193237_451be829/artifacts/wcode_result.json"
+  ],
+  "dccbee23bc208ba450b415a71abf94394e417fe71a1ea1f3af8f706fc2d4d0ea": [
+    "world-series/runs/20260924T101612_9f607bbf/metrics.json",
+    "world-series/runs/20260924T101612_9f607bbf/artifacts/discrete-malis.json"
+  ],
+  "97741981b391f9ba0b845e52efe5e590a6f679c9c804744b19a3e857661957cf": [
+    "world-series/runs/20260922T193237_bd01a42f/metrics.json",
+    "world-series/runs/20260922T193237_bd01a42f/artifacts/cwlnn_result.json"
+  ],
+  "275f21b961917fb6a56edee5448a5ebd82f065718d9beb641c0675f8af0981f7": [
+    "world-series/runs/20260922T194610_7e51c093/metrics.json",
+    "world-series/runs/20260922T194610_7e51c093/artifacts/wft_result.json"
+  ],
+  "cd86e1cffd050dfeec06a2caecebf80b13310209ebeaaafdb64eb0e69032a145": [
+    "world-series/runs/20260922T194721_9c21a2c1/metrics.json",
+    "world-series/runs/20260922T194721_9c21a2c1/artifacts/wft_result.json"
+  ],
+  "7bf86e2d3080f59e737b616230a44be84c4bf2c0289dcc102594cc11f329ae17": [
+    "world-series/runs/20260922T194626_ba782657/metrics.json",
+    "world-series/runs/20260922T194626_ba782657/artifacts/wfim_result.json"
+  ],
+  "2e375f179d79a8a43369112ce6f4284cdca0b7c79cd8b82afebb4d2ad7d7b7f3": [
+    "world-series/runs/20260922T194618_1b82e7d1/metrics.json",
+    "world-series/runs/20260922T194618_1b82e7d1/artifacts/wcode_result.json"
+  ],
+  "fac0d2a10c90351716014f91820f1f2f2d1cda5c291756f8814bdaddb6bfdd7f": [
+    "world-series/runs/20260922T193157_0dfc31c9/metrics.json",
+    "world-series/runs/20260922T193157_0dfc31c9/artifacts/cwlnn_result.json"
+  ],
+  "ab79e6b123874a4d0b5f8c9dbc785bbb6448c27041c03a92fe91bc939a01856c": [
+    "world-series/runs/20260922T194609_47c36a15/metrics.json",
+    "world-series/runs/20260922T194609_47c36a15/artifacts/qlearn_metrics.json"
+  ],
+  "f84d9186d4523f5b1be283fe4368ffe65e2f0dda2a4bf8e2d79e629548ed287a": [
+    "world-series/runs/20260922T194620_85b4b157/metrics.json",
+    "world-series/runs/20260922T194620_85b4b157/artifacts/wpinn_result.json"
+  ],
+  "565508da22808062a393889b2b9f7f2fa7e74031d3022e749fed016cb95623b9": [
+    "world-series/runs/20260922T194610_119e6066/metrics.json",
+    "world-series/runs/20260922T194610_119e6066/artifacts/wpinn_result.json"
+  ],
+  "782fd2a3942e5d3d79e6febac663c5abd7a71e9c91f9754e5ef094267480c303": [
+    "world-series/runs/20260922T220226_6044f91c/metrics.json",
+    "world-series/runs/20260922T220226_6044f91c/artifacts/qapen_result.json"
+  ],
+  "8884776dba82103fe97594f8245500e6d12a92afe147d2c41c47af8b0880963e": [
+    "world-series/runs/20260922T220228_88d22774/metrics.json",
+    "world-series/runs/20260922T220228_88d22774/artifacts/qapen_result.json"
+  ],
+  "305ff3b26eda70541a311181f7d758f615bcc19e18fdfd845486fdd72b8249f0": [
+    "world-series/runs/20260924T101604_c919a6e4/metrics.json",
+    "world-series/runs/20260924T101604_c919a6e4/artifacts/discrete-malis.json"
+  ],
+  "ca848f8336e56584e7ab26fa9198175fae2e9952084b882f4805dc792bf88005": [
+    "world-series/runs/20260924T101610_e30b51a5/metrics.json",
+    "world-series/runs/20260924T101610_e30b51a5/artifacts/discrete-malis.json"
+  ],
+  "35d49bd83822af2f51f43afeb061cddded2730f26cf8b6c2e5c8be35f988c994": [
+    "world-series/runs/20260922T193215_1fbc903b/metrics.json",
+    "world-series/runs/20260922T193215_1fbc903b/artifacts/ultron_result.json"
+  ],
+  "f00e36cc1c5194921ff390c51c3a8888735db69f862fba1ae55bbe80e45008ed": [
+    "world-series/runs/20260922T193157_0d535b75/metrics.json",
+    "world-series/runs/20260922T193157_0d535b75/artifacts/qapen_result.json"
+  ],
+  "1ae68000bb16baaa47f59196731af8736100d8a8e449de6cf4de4260016e46ca": [
+    "world-series/runs/20260922T220238_f045b8a1/metrics.json",
+    "world-series/runs/20260922T220238_f045b8a1/artifacts/wpinn_result.json"
+  ],
+  "99c971f2059b8414f0a47dbc6e58436439da06adf7c3d04183c11e7b5105afff": [
+    "world-series/runs/20260922T194721_b1003106/metrics.json",
+    "world-series/runs/20260922T194721_b1003106/artifacts/cwlnn_result.json"
+  ],
+  "d09bb06dfeea2b68b0687226bdaaaef9321886ba227dda27e19853adb1ef3cb3": [
+    "world-series/runs/20260924T101601_7a194abc/metrics.json",
+    "world-series/runs/20260924T101601_7a194abc/artifacts/discrete-malis.json"
+  ],
+  "f3f7a581e88daf814acc0b751bffdb3a286e3b42042f27eba81bfd55613f86a5": [
+    "world-series/runs/20260923T224419_dd13a0eb/metrics.json",
+    "world-series/runs/20260923T224419_dd13a0eb/artifacts/qlearn_metrics.json"
+  ],
+  "b832e27f5618db206e3bfcc535c76bf1fb6c14280ecaed3716de3a68550dddef": [
+    "world-series/runs/20260922T194715_65a99a67/metrics.json",
+    "world-series/runs/20260922T194715_65a99a67/artifacts/ultron_result.json"
+  ],
+  "e13771c0e585702dfbb2773e634fc45cc5699f2f6edb82332cff3d0708bc3c4d": [
+    "world-series/runs/20260922T194717_e1cac1a6/metrics.json",
+    "world-series/runs/20260922T194717_e1cac1a6/artifacts/ultron_result.json"
+  ],
+  "5c13c481cea9c0af2020d42a69d0bd015aee83453827b9daf881b28581e54363": [
+    "world-series/runs/20260922T193157_616d9389/metrics.json",
+    "world-series/runs/20260922T193157_616d9389/artifacts/wft_result.json"
+  ],
+  "c3862721a61d8bf9fdbdebd7d2a1ce3b2b9b5f63496d080e038604e3288a718c": [
+    "world-series/runs/20260922T193157_10774095/metrics.json",
+    "world-series/runs/20260922T193157_10774095/artifacts/wcode_result.json"
+  ],
+  "f44157a1fb58ff682b0360f62419eeb93ff503dc6bfa25c74625a7dbcefa7718": [
+    "world-series/runs/20260922T193235_d0581ac8/metrics.json",
+    "world-series/runs/20260922T193235_d0581ac8/artifacts/qlearn_metrics.json"
+  ]
+}

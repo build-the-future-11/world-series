@@ -1,0 +1,736 @@
+{
+  "role": "Historical source snapshot of the same nine projects, used by original QLearn replay; not a new project.",
+  "source": {
+    "git_head": "83b838a47234517733da673113bf59073d24ac27",
+    "git_dirty": false,
+    "content_hash": "6a0fa8d2eff817671edba7a1fc806928f46fadb2a2c10a72e7ffc39f1659b924",
+    "note": "A content hash is not a Git commit."
+  },
+  "files": [
+    {
+      "path": "world-series/.work-tmp/frozen-v1/configs/qlearn/neural-development-v1.json",
+      "bytes": 2139,
+      "sha256": "dec9f5e188e22121d741db7dd635c7d0abe6034c9f421c329e9527767eb843fb"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/pyproject.toml",
+      "bytes": 790,
+      "sha256": "5728ec1342303f3fa282b1e92179b933d2df04908f64bb433e1d6c37c26dd66c"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/__init__.py",
+      "bytes": 291,
+      "sha256": "8725ee826af8754ab27f0a096cea1fbef7586c204bc4dd275f17cb44b75f948a"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/__main__.py",
+      "bytes": 157,
+      "sha256": "9e8f949487d0700800468ba5eb2b1cd77b0d7091d88275e9538c8f5574ee3f51"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/cli.py",
+      "bytes": 8725,
+      "sha256": "eddb04b7041f95a803c3c31bda0506bdf867e76bf033afd97aed1af2e4b51dd8"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/core/__init__.py",
+      "bytes": 464,
+      "sha256": "254063f2f542e58d0749edfbdf2e26b2798f1f74ded74b8d93edfee7e42cac7a"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/core/artifacts.py",
+      "bytes": 2829,
+      "sha256": "4df88b7cf24784c34fd07691af7d0b339124db0523a001423dd987d8e2a849c3"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/core/budgets.py",
+      "bytes": 3626,
+      "sha256": "1c843c5c2c22e46f00c6befb70a941a9d12e68ed928ff52ebf79856bfebf0328"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/core/config.py",
+      "bytes": 2625,
+      "sha256": "db2382528e56c1b06cfdc39a8e15130bef9a26c09e82844eb092a7c764c8ff17"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/core/contracts.py",
+      "bytes": 4761,
+      "sha256": "c21a6ee9162083160e197a5283fa96c5b7fee0f684fbf288a710067a18816e72"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/core/devices.py",
+      "bytes": 1999,
+      "sha256": "252e87189f85fd0b5e5600e46c11d54a18281b0d08488210f46adb022fd08492"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/core/identity.py",
+      "bytes": 1945,
+      "sha256": "92699b8cd0cda03837fb34b030dc196ed15556c884a6c5915b8bcbd5353e1f6d"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/core/protocols.py",
+      "bytes": 2574,
+      "sha256": "604a36090b497e38d4020a4752e6f12a5076a651ff3de3fe668cde645cd98a9a"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/core/registry.py",
+      "bytes": 3070,
+      "sha256": "c84867d0f7de8736dda9c02335c2a13c50da2676d3a407dbb152deaadb67e9f3"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/core/seeds.py",
+      "bytes": 2077,
+      "sha256": "be69789c3c73f4d69b306760c78ec90ac2cccb87c047eb0274d33562629e768e"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/cwlnn/__init__.py",
+      "bytes": 51,
+      "sha256": "0b51044f9ba9ba6b2ca8b5486cebc4287f26ba2eb49c8e59ca9cfab4f88098d4"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/cwlnn/adapter.py",
+      "bytes": 856,
+      "sha256": "cdf39eb920d79cf63f83b4511c4b839dd65cfe5385c8a73d3cc9d8a1eddf6c0d"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/cwlnn/baselines.py",
+      "bytes": 954,
+      "sha256": "34cafa0e2cd5ceda0d23ac4abfa21743c93ebd960e0c56af2675226b17f63ebb"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/cwlnn/evaluate.py",
+      "bytes": 2383,
+      "sha256": "c6695e6c01b0e138042b9c1c1bc9c41985c63de3066d63736ae8c98dafa37a8f"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/cwlnn/graphs.py",
+      "bytes": 887,
+      "sha256": "d86623c76d9bc70491395f9a23d698a9f2445b298c9ac519605f337d425535d1"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/cwlnn/hierarchy.py",
+      "bytes": 672,
+      "sha256": "e6cad48e3f150353f85b85158f31f2a7620b0e7990d86b5ee1921ad27f7c0184"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/cwlnn/local.py",
+      "bytes": 756,
+      "sha256": "4b6d8d0cf74551ec2508d063c20207d123a7eb941e4f66420d7b457b58f282e2"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/cwlnn/model.py",
+      "bytes": 912,
+      "sha256": "8b23f985c95198e3abeb81d0d008ad12373ba6e378c7a41fe637367a390d20b2"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/cwlnn/pool.py",
+      "bytes": 495,
+      "sha256": "67e6d8f5b635f024fa1dbfacd3487f75b6df78bb12a1f2d0e8da5ed249c9d391"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/cwlnn/routing.py",
+      "bytes": 646,
+      "sha256": "316233abe082cfc956cc0b2732728acf6132850be58163f745aed3dff36c7be9"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/data/__init__.py",
+      "bytes": 20,
+      "sha256": "f5eb5db2b9e0bfeba71312f2f34676f62c3f23283a4ffb89750ad90ff232f3e2"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/data/families.py",
+      "bytes": 137,
+      "sha256": "366a488e57e591e7aa4a5d1ab307b7b73dc7ecdd77bbf5bd9ebcb2cb581c7492"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/data/generators.py",
+      "bytes": 1525,
+      "sha256": "2b9f8800bfde551d6850800e692e22200fd900365666ae82953eddae114e0b92"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/data/provenance.py",
+      "bytes": 143,
+      "sha256": "a8fd202416e1c72f98205376b166c33126dd0d5bd52d2d9bdee992f6dcb9a164"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/data/splits.py",
+      "bytes": 2108,
+      "sha256": "2665148203c2d9bcc13d914934f1e0a321490ae1b3e5920699b9aea05930a6be"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/evaluation/__init__.py",
+      "bytes": 26,
+      "sha256": "8db2853c63cd82aed1d2cefa58c0e3d7d535b6a2396bd851fdf9fe425d8b7d50"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/evaluation/cost.py",
+      "bytes": 830,
+      "sha256": "95d48d1730d83a66876bb0396f54d4259cec81737d10149a8eea603182ad2b45"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/evaluation/falsify.py",
+      "bytes": 10649,
+      "sha256": "f98156926ecbf34d61595221dda011d5300b680c3f44294f00099b7ee9c30700"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/evaluation/metrics.py",
+      "bytes": 698,
+      "sha256": "b07d7391f5e434b05430495ac843a660b4ecdcac44f3eee7966a0f4b0a2043cd"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/evaluation/reports.py",
+      "bytes": 1965,
+      "sha256": "ede3616aa6fb25ddc5ee9a245a9553281fb7d1025715427304f019017d5ee73f"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/evaluation/runner.py",
+      "bytes": 4783,
+      "sha256": "999b8b12b08b964cd1fd18cecbca5157224e78b6d9da4860b4b1cdc8b8ba4def"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/evaluation/uncertainty.py",
+      "bytes": 833,
+      "sha256": "95a20db4bafed4162d5538c6ba91264f9275526067a020cc99f3e64825264593"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/projects.py",
+      "bytes": 3097,
+      "sha256": "7f5091ebb5dbf15eecf0248bfd93e2a216d405f81a5c62e968b43b632c18d63b"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/qapen/__init__.py",
+      "bytes": 66,
+      "sha256": "4199fc6cd6b3cb6adac48904bab7d336299a3fdb9c54d830b828bbf4a4092957"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/qapen/adapter.py",
+      "bytes": 538,
+      "sha256": "608a2f8638a2d0722d8282269603180d4dfe46f15452e28565c802ba15c49391"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/qapen/baselines.py",
+      "bytes": 1579,
+      "sha256": "55a24b178c1729576d67b1bbe32c0fdd640855550391a6dbc14bae682ef2def9"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/qapen/evaluate.py",
+      "bytes": 3562,
+      "sha256": "6405739746232d39a9a1f9e28bebcddd505f1d7e0c9ae5dfb912589102f35a72"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/qapen/experts.py",
+      "bytes": 1579,
+      "sha256": "de0ce6df3444f795ba7d27b80f971b4a369f5e76270f37b9739f86393e0d069f"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/qapen/lifecycle.py",
+      "bytes": 2514,
+      "sha256": "cff028cd19d0384fdf1cd9b21668e03d664a1659a16be705e18f182c83078685"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/qapen/memory.py",
+      "bytes": 609,
+      "sha256": "990eeaec795704d8f0337b39f5c9eee906c0c93c12676e3ee422a611affbd5af"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/qapen/mixture.py",
+      "bytes": 293,
+      "sha256": "2a8555524b83722a7300aae71381c53296c025f9f37f467b1405d037551a31bf"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/qapen/streams.py",
+      "bytes": 541,
+      "sha256": "80510eada2ea5a97784d803d1d3311a694cb253bad3eee135d26ec692c7991d0"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/qlearn/__init__.py",
+      "bytes": 65,
+      "sha256": "d035cfde7e9519002d6cb22763d1dda4b76107c05b6c9b2f0c0689e098ffdba8"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/qlearn/adapter.py",
+      "bytes": 697,
+      "sha256": "ac239b7525d96210d8761f59a1766c0b8032d059c9ef3fc1f16fd9cc00dd86f3"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/qlearn/baselines.py",
+      "bytes": 2853,
+      "sha256": "c3112adf842b15cf08e7af4c9620267458c7850293a4e1f0c3b1e48b63023a0a"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/qlearn/evaluate.py",
+      "bytes": 6366,
+      "sha256": "d8e79653159fef36a8e569b354c0c2566f647f7534ca90d05e0932de89b3debf"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/qlearn/features.py",
+      "bytes": 511,
+      "sha256": "c966f3dc7c6ac617ff58916852baa2df50cd45636c75d737817eda0ffa753a62"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/qlearn/functional.py",
+      "bytes": 1074,
+      "sha256": "763277c4491cc99729c93dac6d876d8efdb1c0f0ac45f12417b1ba8620d0c21e"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/qlearn/meta_train.py",
+      "bytes": 1674,
+      "sha256": "5edf75c3132fa1a3164be19db0d5f5f428cea4cf7ae98713561069b3221f68aa"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/qlearn/policy.py",
+      "bytes": 1633,
+      "sha256": "7e593935f0e87a079ec7b48ae69db492c78f20b30b14d086178c7616ffd6c5e3"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/qlearn/regression.py",
+      "bytes": 16142,
+      "sha256": "7abd7b59519a07b7029f51c1ee41f57fd175e5280db72f2bae940c87673be203"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/qlearn/regression_study.py",
+      "bytes": 13254,
+      "sha256": "2d000d11a80356f9d3ef1e8fe1013b16504b583000b0841aa81037edf2986e3b"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/qlearn/tasks.py",
+      "bytes": 1331,
+      "sha256": "1f27bcddd4753deb48126eb0c6c6c97d03d61c6b536375344b83a6af1465356c"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/qlearn/unroll.py",
+      "bytes": 1033,
+      "sha256": "47220c099a562358449afa78492dc30cac1d700f5202a76a6271d7855d2a740f"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/qwipii/__init__.py",
+      "bytes": 51,
+      "sha256": "4d24580fffec88bd0924473e377370b41eb18d89b6079b750fc13ab72d483f82"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/qwipii/adapter.py",
+      "bytes": 1480,
+      "sha256": "60edb773537f144763cbe196a187c9f52dde49772602707ff9bed2fa304f45da"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/qwipii/canonicalize.py",
+      "bytes": 574,
+      "sha256": "003cdb060e6f4223954cae75573b06242613de43932ca787da3727f7cdf0f8df"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/qwipii/certificates.py",
+      "bytes": 327,
+      "sha256": "cfe3f492399e1ad0f08b0571a8148a1ed17154f30a72a46d6000137c59bf28fb"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/qwipii/discovery.py",
+      "bytes": 1634,
+      "sha256": "622b6c199bcf91420fb3a381fc91797e2e5afe89173662e257d2de4e833eb21a"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/qwipii/domains.py",
+      "bytes": 1098,
+      "sha256": "4688e8f961141ba8cf71e15d421d77fbd00e2b3fe911d5605e4b3871aeff399d"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/qwipii/evaluate.py",
+      "bytes": 3645,
+      "sha256": "d9029f3be857e5ec86b4f1e22696623b4c07e5d1930eee5899c4c1566f2a69a8"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/qwipii/group_actions.py",
+      "bytes": 748,
+      "sha256": "62e193ed102c9ed093206a537ddb7bbb688f646aa1161078644e5218d31f2c65"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/qwipii/projective.py",
+      "bytes": 906,
+      "sha256": "415c6ac144bfc5a7a5c9595886ad5772a064f3cd75782e31849b2ea500d23252"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/qwipii/search.py",
+      "bytes": 2859,
+      "sha256": "b1c1777a95673d6ed160407b40e0d7737292b2b37288e9ab47635f78573cdb73"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/qwipii/verifier.py",
+      "bytes": 1239,
+      "sha256": "2d7b1503523070f88eb88181e4c4415f9bedf3b6f2e78ce5ae3961fea78b8a7f"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/ultron/__init__.py",
+      "bytes": 50,
+      "sha256": "16d13e272416a25e9f4250f864fea04776ed8afe0f5ca34c631959f4a5e84ec3"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/ultron/adapter.py",
+      "bytes": 657,
+      "sha256": "a9756602d18b62305abda416b70414ee7c385a9b257911d62d63f65dd36eae30"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/ultron/capabilities.py",
+      "bytes": 790,
+      "sha256": "e411b972f55fe19c4aaf2b4d224434afbf6c97ca003cd7991cd59aa239aa5881"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/ultron/evaluate.py",
+      "bytes": 3418,
+      "sha256": "069b0f5a4ea0c6d1c7252febf943bdc4da64a3f2d2f5359fc83e3d8da8a5ee10"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/ultron/evidence.py",
+      "bytes": 1098,
+      "sha256": "8ccd392138a88c4ee9559caf04bfd9221ac94e733fca70a0c460d2a2aa41062e"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/ultron/executor.py",
+      "bytes": 1795,
+      "sha256": "1151cb309b7c588f9f26c978fb8384a38f59736651c8fc03e26d26b47796447a"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/ultron/router.py",
+      "bytes": 1110,
+      "sha256": "6ba2cf6eb6bcf7cc741f98e8d218076b484eb5c05b29f942806d001ee98fec60"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/ultron/state.py",
+      "bytes": 319,
+      "sha256": "2d3c6feef434539b1e53d03b3686f708fa2eb31e41e94e69418ecc8d143f71f1"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/ultron/train_router.py",
+      "bytes": 1377,
+      "sha256": "8415ef1bee1c9365fc336409b52f52d65734ff80e66b58d9b07ff252e652e8a8"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/ultron/verifier_client.py",
+      "bytes": 1358,
+      "sha256": "4fa0e53dd1e92db02d84f496732b7adcdf4475e74b778d155c2ad8ab5b6881e7"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/wcode/__init__.py",
+      "bytes": 54,
+      "sha256": "4c6bd80eaa30af6ea443e3659e67df9cbf3aaf4f97b6f8f7d5459cc7f2d509d6"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/wcode/adapter.py",
+      "bytes": 930,
+      "sha256": "1ac3b93c24c6f8cdcdfacb514f4ab8c72f8dd60dea6aa445b243d846f4f04bb2"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/wcode/baselines.py",
+      "bytes": 205,
+      "sha256": "8472457f5c54b7c171be70df6c3775b5fde129553faa7cd17938fdc9e45b72eb"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/wcode/dataset.py",
+      "bytes": 1889,
+      "sha256": "927ee611c7f892f6917495d82d420975396eeef853c41a2690cc7d4fb84c5fd6"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/wcode/dsl.py",
+      "bytes": 1782,
+      "sha256": "f2171be6a63e677f55c25d4d5b3ce51a4637805aa147abdacf20549940748b36"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/wcode/encoder.py",
+      "bytes": 2054,
+      "sha256": "20f14e969e971c7d28a42a9115be8a8532f70edc0ea619522b63c7967276dd1f"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/wcode/evaluate.py",
+      "bytes": 2008,
+      "sha256": "7e43b6696d61e68cf9bb6e39bd6ec8a9d4b1b899618d6a91b2d6bd4710f82413"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/wcode/graph.py",
+      "bytes": 2211,
+      "sha256": "09b602b2f0eb96ddb2bc85273949dd3621a77161dfc4f63d6d32fe05a25b6a16"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/wcode/interpreter.py",
+      "bytes": 4934,
+      "sha256": "1d1ccb580835702494e81c44745b20ece237bf1e760b82ea8b0c4ca9a127bf8e"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/wcode/search.py",
+      "bytes": 2092,
+      "sha256": "4afcbd5f1f0baa7d1c63179cfa413578da20c23f1cab959a84972277f9999ef3"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/wcode/verifier.py",
+      "bytes": 776,
+      "sha256": "b774addcff9bf300e167915640e557c12919664e005025b20f5c9ae02faa8db7"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/wfim/__init__.py",
+      "bytes": 50,
+      "sha256": "5077c94b4d2c3b572ad5327f007b92e127d17bdd123e5ab9e8e2b80da174b511"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/wfim/adapter.py",
+      "bytes": 646,
+      "sha256": "a938ffe330daf1bfe2ae6338c5135e6880704c9cb2dda54e16b2c942089225e7"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/wfim/algebra.py",
+      "bytes": 2606,
+      "sha256": "4628c9d0845d111c39d7b56046d00c57a9b1f353379cde20afb7be61ac87cca6"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/wfim/evaluate.py",
+      "bytes": 2637,
+      "sha256": "773721fc214ba9ea1fac3cd74da6bc838e172b7c930a39a5993a327d7745f25e"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/wfim/transport.py",
+      "bytes": 834,
+      "sha256": "8478d0cc42f00e0f2a95e0e3e3125942c089c0aae9e93055038b264d6554b35c"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/wft/__init__.py",
+      "bytes": 69,
+      "sha256": "609b9de83c984b51ee9425bf7aa9b29935fded84c5f7516f5185b3f6a957aa61"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/wft/adapter.py",
+      "bytes": 878,
+      "sha256": "9e1018d296c56f8ce24de20404926abe93028c1b627093c5945dae0d085da06b"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/wft/evaluate.py",
+      "bytes": 2648,
+      "sha256": "8608ae1ecacba110d75d0eb0802e52913b2e260f6865fd18e65d2e80f46d1274"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/wft/laplacian.py",
+      "bytes": 1359,
+      "sha256": "0bd724d4dcaa09dee6442c0cd29d803240e7f920e186b2816d9131d26dff0055"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/wft/operators.py",
+      "bytes": 719,
+      "sha256": "bd00329ebc4fe00400fb30cd5cfb801655cbdbfc9111b84a6f09e585e65164fa"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/wpinn/__init__.py",
+      "bytes": 62,
+      "sha256": "dbc8e4da24e0496a4893fce6285f63fa94c4d88ce11a1f0ca59b537f019890c5"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/wpinn/adapter.py",
+      "bytes": 949,
+      "sha256": "83f8f0e422c7dff79658f187030c0dd779dfe7eb878249122b41a622e131d18a"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/wpinn/baselines.py",
+      "bytes": 857,
+      "sha256": "11ccfe9f138dd6b5af0cf4b4eedb1ad82b6c3bee616c1051dcf48c08fef60301"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/wpinn/constraints.py",
+      "bytes": 784,
+      "sha256": "40e1ed96d87635f5f42ae67594156846c691fef9aee6a93f08e7366403e33e01"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/wpinn/evaluate.py",
+      "bytes": 3244,
+      "sha256": "876e9db54f456140ed1e67c6daed145e4d209110883481d8a47e47735ca573c3"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/wpinn/library.py",
+      "bytes": 372,
+      "sha256": "56853b63bbc72e0fccd11e9d8212e831b478d1337b4995cd6f4d21e31dc537b3"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/wpinn/sparse_fit.py",
+      "bytes": 485,
+      "sha256": "2b3f1a974890690013dc6ea1f5bf58bc63e44afde2cbe905c3195d54f62bfb20"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/wpinn/systems.py",
+      "bytes": 1686,
+      "sha256": "82575d05fe1985382ada4a04a2eb8e780dc9ba2bed7828007ad722ce870065fa"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/wpinn/train.py",
+      "bytes": 1176,
+      "sha256": "61c8d94cc9432451bff14fc461849eee436057da7140968ca51f1a377afbae74"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/src/world_series/wpinn/weak_form.py",
+      "bytes": 1281,
+      "sha256": "fd952de5b40c5efa1602a6c065d0b19ae4ad5c0cb03a9981f62990e3325b71c6"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/tests/core/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/tests/core/test_contracts.py",
+      "bytes": 1158,
+      "sha256": "087d5ad93fcdf5eab0caa0194682ea87f19a3ea73b7191f98a5cc09ae9c35187"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/tests/core/test_falsify.py",
+      "bytes": 487,
+      "sha256": "3fdeedd626c63df78d3fffab881561899c1b2d584e3a188e79377efb67ec4088"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/tests/core/test_json_config.py",
+      "bytes": 468,
+      "sha256": "aa6e88d0820ef87311f7205555d8012eeb5f648dbd559d515febf7e22258f79b"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/tests/core/test_runner.py",
+      "bytes": 530,
+      "sha256": "6ddc26889a77b2fd49e9678d512f68c5400c13a89fa0aa903c1e1f284ab81cf7"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/tests/core/test_seeds_devices.py",
+      "bytes": 448,
+      "sha256": "a847be206c8743a780c3c4a620bb1087a5016499daae3a51138a42e9982cb3c3"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/tests/cwlnn/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/tests/cwlnn/test_cwlnn.py",
+      "bytes": 425,
+      "sha256": "999e2e7278a55023941b9b1d5c41c44fd4dd51134a513949d7d1a2d9959d4d00"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/tests/cwlnn/test_cwlnn_attention.py",
+      "bytes": 246,
+      "sha256": "f0ea17aab494f8c08a25bce7bf338c7cce1328e50af6e95b7467370974348702"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/tests/qapen/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/tests/qapen/test_qapen.py",
+      "bytes": 468,
+      "sha256": "efb25be7114857b92fdbb795a304a9a09203b6d91ab215caf9246d615448fb03"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/tests/qapen/test_qapen_baselines.py",
+      "bytes": 158,
+      "sha256": "8fe1a922d467dcc5d6c622b0af51aa24552178cfc22c4af69dd2a9b9c9d3997a"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/tests/qlearn/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/tests/qlearn/test_evaluation_integrity.py",
+      "bytes": 3281,
+      "sha256": "cb19d207ac5fae10f4de2488085ca076a36cf1d62327006e0c710140009748f1"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/tests/qlearn/test_qlearn.py",
+      "bytes": 934,
+      "sha256": "98a6b812fa2ac3d23bad1c7cb8ea4245a855b44cab09a909675f9d35134da73f"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/tests/qlearn/test_qlearn_baselines.py",
+      "bytes": 395,
+      "sha256": "2bd8b7c8771184f8b9693b8c8c791152a069954af830f09aaaec00786763d0b9"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/tests/qlearn/test_regression.py",
+      "bytes": 6222,
+      "sha256": "edd55515eb61ae4d44dbabec8754e1a223fd340202daea1aba8bd0d9bd80374c"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/tests/qlearn/test_regression_study.py",
+      "bytes": 2772,
+      "sha256": "b5d123f2313103b20a23f30b29e022cb9346ca773413870dec7a94e123b17382"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/tests/qwipii/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/tests/qwipii/test_qwipii.py",
+      "bytes": 879,
+      "sha256": "e301692f9057155a10d607562c2727696c3bccfe4c5066e7b6b3049ab7018b55"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/tests/qwipii/test_qwipii_discovery.py",
+      "bytes": 403,
+      "sha256": "5561c0a7297a5f48a1a4904cb590ba185b057bb1cb4279c4a2ac4f1d99482966"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/tests/ultron/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/tests/ultron/test_ultron.py",
+      "bytes": 346,
+      "sha256": "0d77fd6d67a0fd68a772a87b640964da868f6288db2b05a96a6b203bf5e18eb0"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/tests/ultron/test_ultron_routing.py",
+      "bytes": 843,
+      "sha256": "74bea58e9d80316bbea43024be31e75077674637617b8934a1bbcc588a6dab93"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/tests/wcode/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/tests/wcode/test_wcode.py",
+      "bytes": 544,
+      "sha256": "7a9f378fdda25988e03e71609c8ba2d754397b85f6b027f07e134ff9c802b95a"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/tests/wcode/test_wcode_rankers.py",
+      "bytes": 360,
+      "sha256": "177b8794e2567686187ddb62b6f55256ebef2356e0d283cc15b667be9607432d"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/tests/wfim/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/tests/wfim/test_wfim.py",
+      "bytes": 267,
+      "sha256": "3f360c188feae66941ab4ddb90645589bb0a806c7e9036f9e1ab62b004ca7a16"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/tests/wft/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/tests/wft/test_wft.py",
+      "bytes": 382,
+      "sha256": "a0f92727b5d86c21699fdcc3beea7764916f4ca4240d839e63f5eddd70dfa18f"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/tests/wpinn/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/tests/wpinn/test_wpinn.py",
+      "bytes": 360,
+      "sha256": "5a1260b4ffbbfde62abb6deba1c1182dae96b75b30952b0b3296ff49b180e5f2"
+    },
+    {
+      "path": "world-series/.work-tmp/frozen-v1/tests/wpinn/test_wpinn_weak_only.py",
+      "bytes": 410,
+      "sha256": "e2b073956970ba5ba85083f6ba396d18aa15393074aac6f51fa7d8bc0a779962"
+    }
+  ]
+}

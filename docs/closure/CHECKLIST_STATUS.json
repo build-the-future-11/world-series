@@ -66,17 +66,17 @@
     },
     {
       "id": "G01",
-      "status": "OPEN",
+      "status": "COMPLETE",
       "requirement": "Reconcile stale `PAPER_AUDIT.md`, claim ledgers, status cards, README and registry against the audited results; preserve historical versions.",
-      "evidence": null,
-      "scope": "Original checklist requirement; no implied completion of adjacent items"
+      "evidence": "docs/PAPER_AUDIT.md; README.md; docs/exposition/CLAIMS_LEDGER.md; experiments/registry.json",
+      "scope": "Current nine-project claims reconciled; historical README and paper audit preserved. This does not resolve scientific gaps."
     },
     {
       "id": "G02",
-      "status": "OPEN",
+      "status": "COMPLETE",
       "requirement": "Produce a proposal-to-implementation map: every claimed mechanism points to its implementation and discriminating experiment; list unimplemented mechanisms explicitly.",
-      "evidence": null,
-      "scope": "Original checklist requirement; no implied completion of adjacent items"
+      "evidence": "docs/closure/PROPOSAL_IMPLEMENTATION_MAP.md; provenance/original-proposals/",
+      "scope": "Original mechanisms mapped to implementations, discriminating evidence and explicit gaps for all nine projects."
     },
     {
       "id": "G03",
@@ -493,10 +493,10 @@
     },
     {
       "id": "WP03",
-      "status": "OPEN",
+      "status": "COMPLETE",
       "requirement": "Implement the proposed valid physical-structure intervention, including dissipation/conservation only where its assumptions hold; implement any neural field required by the retained claim.",
-      "evidence": "docs/closure/WPINN_RESULTS.md; WPINN_DIAGNOSTIC_RESULTS.md",
-      "scope": "Progress only. Original broad requirement remains open; diagnostics do not establish exclusive conditioning/support causes, held-law validity, PDE discovery or strong-comparator superiority."
+      "evidence": "src/world_series/wpinn/structured.py; tests/wpinn/test_structured.py; docs/closure/WPINN_RESULTS.json; provenance/original-proposals/07_wpinn.md",
+      "scope": "Valid passive/odd structure and observed-only neural field implemented and evaluated. Original staged algorithm allows sequential fitting and makes alternation optional."
     },
     {
       "id": "WP04",
@@ -521,10 +521,11 @@
     },
     {
       "id": "WP07",
-      "status": "OPEN",
+      "status": "COMPLETE",
       "requirement": "Run the full proposed PDE evaluations if a PDE-discovery claim is retained; oscillator tests do not satisfy that requirement.",
-      "evidence": "docs/closure/WPINN_RESULTS.md; WPINN_DIAGNOSTIC_RESULTS.md",
-      "scope": "Progress only. Original broad requirement remains open; diagnostics do not establish exclusive conditioning/support causes, held-law validity, PDE discovery or strong-comparator superiority."
+      "evidence": "provenance/original-proposals/07_wpinn.md; docs/closure/WPINN_PROTOCOL.md",
+      "scope": "Conditional PDE requirement not applicable to retained first ODE study: original proposal explicitly defers PDEs; no PDE discovery claim is retained.",
+      "resolution": "NOT_APPLICABLE_ORIGINAL_DEFERRED_SCOPE"
     },
     {
       "id": "WP08",
@@ -1017,6 +1018,6 @@
       "scope": "Original checklist requirement; no implied completion of adjacent items"
     }
   ],
-  "complete": 29,
-  "open": 116
+  "complete": 33,
+  "open": 112
 }

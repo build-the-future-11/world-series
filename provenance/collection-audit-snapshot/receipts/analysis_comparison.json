@@ -1,0 +1,42 @@
+[
+  {
+    "file": "RESULTS.md",
+    "byte_identical": true
+  },
+  {
+    "file": "SENSITIVITY.md",
+    "byte_identical": true
+  },
+  {
+    "file": "all_module_cells.csv",
+    "byte_identical": true
+  },
+  {
+    "file": "analysis.json",
+    "byte_identical": true
+  },
+  {
+    "file": "digits_cells.csv",
+    "byte_identical": true
+  },
+  {
+    "file": "digits_comparisons.csv",
+    "byte_identical": true
+  },
+  {
+    "file": "digits_per_seed.csv",
+    "byte_identical": true
+  },
+  {
+    "file": "malis_per_seed.csv",
+    "byte_identical": true
+  },
+  {
+    "file": "sensitivity.csv",
+    "byte_identical": true
+  },
+  {
+    "file": "sensitivity.json",
+    "byte_identical": true
+  }
+]

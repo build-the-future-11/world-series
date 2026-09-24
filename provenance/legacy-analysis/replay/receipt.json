@@ -1,0 +1,18 @@
+{
+  "execution": "COMPLETE",
+  "scope": "Same-host exact evaluation replay; not independent replication",
+  "run_id": "20260923T231444_deaee7ec",
+  "source": {
+    "git_head": null,
+    "git_dirty": null,
+    "content_hash": "6a0fa8d2eff817671edba7a1fc806928f46fadb2a2c10a72e7ffc39f1659b924",
+    "note": "A content hash is not a Git commit."
+  },
+  "matched_trajectories": 840,
+  "replayed_support_gradient_steps": 31360,
+  "elapsed_seconds": 95.94108237500768,
+  "prediction_sha256": "82510e8dc2c10442d5eef03495ccc8a026f650daecf70d9c2f4082440a3192f9",
+  "script_sha256": "4579af832cf80f017cc0b292cced47eb94022657fee56ce9a30bdb4c9130f7b5",
+  "replays_meta_training": false,
+  "full_project_complete": false
+}

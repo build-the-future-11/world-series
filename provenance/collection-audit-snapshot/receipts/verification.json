@@ -1,0 +1,72 @@
+{
+  "workspace": "/Volumes/PRO-BLADE/World-Series",
+  "files_in_inventory": 4138,
+  "directories": 440,
+  "campaigns": [
+    {
+      "campaign": "development-v2",
+      "complete": true,
+      "cells": 64,
+      "statuses": {
+        "SUCCEEDED": 64
+      },
+      "hashes_checked": 320
+    },
+    {
+      "campaign": "discrete-malis-v1",
+      "complete": true,
+      "cells": 8,
+      "statuses": {
+        "SUCCEEDED": 8
+      },
+      "hashes_checked": 40
+    },
+    {
+      "campaign": "meta-training-replay-v1",
+      "complete": null,
+      "cells": 0,
+      "statuses": {},
+      "hashes_checked": 0
+    },
+    {
+      "campaign": "natural-digits-sensitivity-v1",
+      "complete": true,
+      "cells": 8,
+      "statuses": {
+        "SUCCEEDED": 8
+      },
+      "hashes_checked": 784
+    },
+    {
+      "campaign": "natural-digits-v1",
+      "complete": true,
+      "cells": 8,
+      "statuses": {
+        "SUCCEEDED": 8
+      },
+      "hashes_checked": 544
+    }
+  ],
+  "all_run_manifests": 164,
+  "run_statuses": {
+    "SUCCEEDED": 159,
+    "UNSUPPORTED": 1,
+    "FAILED": 3,
+    "INTERRUPTED": 1
+  },
+  "verified_campaign_file_hashes": 1688,
+  "hash_errors": [],
+  "module_raw_rows": 6416,
+  "module_failed_rows": 17,
+  "analysis_outputs_identical": true,
+  "analysis_files_compared": 10,
+  "semantic_dsl_tasks": 18,
+  "git": {
+    "rev-parse HEAD": "83b838a47234517733da673113bf59073d24ac27",
+    "status --porcelain": "",
+    "branch -a": "* main",
+    "worktree list": "/Volumes/PRO-BLADE/World-Series/world-series 83b838a [main]",
+    "remote -v": ""
+  },
+  "scope": "Local audit and analysis replay; no new full training campaign or independent replication."
+}

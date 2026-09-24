@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "archive_files": 3749,
+  "archive_sha256": "fe9728a7bbdd67681d566cd0cc3ffc8930ded1e7f5e7795ae3cefa9c0d564f04",
+  "archive_source": {
+    "git_head": "83b838a47234517733da673113bf59073d24ac27",
+    "git_dirty": false,
+    "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+    "note": "A content hash is not a Git commit."
+  },
+  "current_source": {
+    "git_head": "83b838a47234517733da673113bf59073d24ac27",
+    "git_dirty": false,
+    "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+    "note": "A content hash is not a Git commit."
+  },
+  "bundle": "The bundle contains these 2 refs:\n83b838a47234517733da673113bf59073d24ac27 refs/heads/main\n83b838a47234517733da673113bf59073d24ac27 HEAD\nThe bundle records a complete history.\nThe bundle uses this hash algorithm: sha1\n/Volumes/PRO-BLADE/World-Series/world-series/deliveries/20260924-development/source.bundle is okay\n",
+  "historical_replay_receipts_exact": 400,
+  "scope": "Archive integrity and stored replay claims checked; full meta-training not rerun in this audit."
+}

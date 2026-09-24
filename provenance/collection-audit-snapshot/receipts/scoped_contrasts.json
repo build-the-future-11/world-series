@@ -1,0 +1,116 @@
+[
+  {
+    "project": "qapen",
+    "candidate": "context_memory",
+    "baseline": "no_memory",
+    "condition": "all",
+    "candidate_minus_baseline": -0.20806848465057026,
+    "seed_differences": [
+      -0.2048435934789079,
+      -0.23471321112342314,
+      -0.1946151516851784,
+      -0.19108452981872248,
+      -0.18482855436191392,
+      -0.21883950841639388,
+      -0.2243262677245339,
+      -0.21129706059548847
+    ],
+    "p_exact_exploratory_unadjusted": 0.0078125,
+    "scope": "Post hoc diagnostic; shared finite task distributions; no confirmatory inference."
+  },
+  {
+    "project": "qapen",
+    "candidate": "context_memory",
+    "baseline": "single_expert_memory",
+    "condition": "all",
+    "candidate_minus_baseline": 0.040935439121456946,
+    "seed_differences": [
+      0.021788895220282933,
+      0.04048443004642244,
+      0.07090906836240052,
+      0.004262535991388372,
+      0.0446204848125602,
+      0.048668033046585624,
+      0.05495493071102353,
+      0.04179513478099195
+    ],
+    "p_exact_exploratory_unadjusted": 0.0078125,
+    "scope": "Post hoc diagnostic; shared finite task distributions; no confirmatory inference."
+  },
+  {
+    "project": "qapen",
+    "candidate": "context_memory",
+    "baseline": "fixed",
+    "condition": "rare",
+    "candidate_minus_baseline": 0.05198156013232891,
+    "seed_differences": [
+      0.12814607821620783,
+      0.09328680746405271,
+      -0.03804112997853437,
+      0.12185725649628765,
+      0.023500549679730476,
+      0.05991861487701833,
+      -0.037440060635975714,
+      0.06462436493984436
+    ],
+    "p_exact_exploratory_unadjusted": 0.0703125,
+    "scope": "Post hoc diagnostic; shared finite task distributions; no confirmatory inference."
+  },
+  {
+    "project": "ultron",
+    "candidate": "learned",
+    "baseline": "cheapest",
+    "condition": "budget24",
+    "candidate_minus_baseline": 0.1527777777777778,
+    "seed_differences": [
+      0.2222222222222222,
+      0.2222222222222222,
+      0.11111111111111116,
+      0.11111111111111116,
+      0.11111111111111116,
+      0.11111111111111116,
+      0.2222222222222222,
+      0.11111111111111116
+    ],
+    "p_exact_exploratory_unadjusted": 0.0078125,
+    "scope": "Post hoc diagnostic; shared finite task distributions; no confirmatory inference."
+  },
+  {
+    "project": "cwlnn",
+    "candidate": "hierarchy",
+    "baseline": "flat",
+    "condition": "n96",
+    "candidate_minus_baseline": -0.9065154381274405,
+    "seed_differences": [
+      -1.0013233092313276,
+      -1.0075897891054744,
+      -0.9186956773591479,
+      -1.0097087286718862,
+      -1.028647170731951,
+      -0.7031456574208559,
+      -0.8075116697785882,
+      -0.7755015027202925
+    ],
+    "p_exact_exploratory_unadjusted": 0.0078125,
+    "scope": "Post hoc diagnostic; shared finite task distributions; no confirmatory inference."
+  },
+  {
+    "project": "cwlnn",
+    "candidate": "routed",
+    "baseline": "hierarchy",
+    "condition": "n96",
+    "candidate_minus_baseline": 12.489550295068694,
+    "seed_differences": [
+      13.043768449144252,
+      12.669689817202991,
+      12.163483078573208,
+      12.047810332308755,
+      13.17301231999138,
+      13.370015502732603,
+      11.524622302223413,
+      11.924000558372954
+    ],
+    "p_exact_exploratory_unadjusted": 0.0078125,
+    "scope": "Post hoc diagnostic; shared finite task distributions; no confirmatory inference."
+  }
+]

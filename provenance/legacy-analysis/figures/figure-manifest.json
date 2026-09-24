@@ -1,0 +1,13 @@
+{
+  "analysis_sha256": "e33d88c151881be65daa618e6e46c6f4b739a990f032c5c0fa2bc4b01db207e8",
+  "script_sha256": "b9278caa40371dff45b300094bd41e6462c525d5f41c11101795b41b1b6f8fc4",
+  "run_id": "20260923T231444_deaee7ec",
+  "plot_scope": "width128-horizon64",
+  "excluded_curves": [],
+  "reason": "No finite-only curve aggregation",
+  "files": {
+    "development-comparison.png": "049554cadadc955308d140d2ebb95c56f042a157d5dbb6c87c6c1efdde0a57b1",
+    "development-comparison.pdf": "b19f89a954fd4d36ca8776ebed2cb8590128c707751af8829f79bff3ce688e1e",
+    "development-comparison.svg": "0c833bc52c88bdda6fb5cc0187a0f223a48e891faa3f48c057fb10c716aae79d"
+  }
+}

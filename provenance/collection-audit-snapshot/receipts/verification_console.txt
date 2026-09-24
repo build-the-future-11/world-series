@@ -1,0 +1,74 @@
+{"runs": 80, "module_cells": 178, "digit_cells": 30, "tuning_failures": 0, "module_failure_cells": 17}
+{"rows": [{"method": "adamw", "seeds": 8, "primary_auc": 6.414486150844294, "sensitivity_auc": 6.414486150844294, "sensitivity_final_loss": 0.08130132887051003, "sensitivity_accuracy": 0.9752604166666667, "selected_upper_boundary": 0, "selected_lower_boundary": 0}, {"method": "feedforward", "seeds": 8, "primary_auc": 13.123861841337943, "sensitivity_auc": 16.399609326791307, "sensitivity_final_loss": 0.21797539495140195, "sensitivity_accuracy": 0.9270833333333333, "selected_upper_boundary": 7, "selected_lower_boundary": 0}, {"method": "full", "seeds": 8, "primary_auc": 13.280946872115056, "sensitivity_auc": null, "sensitivity_final_loss": null, "sensitivity_accuracy": null, "selected_upper_boundary": 5, "selected_lower_boundary": 0}, {"method": "initialization_only", "seeds": 8, "primary_auc": 17.26017799578648, "sensitivity_auc": 13.85077006859699, "sensitivity_final_loss": 0.24510279012211783, "sensitivity_accuracy": 0.9348958333333334, "selected_upper_boundary": 1, "selected_lower_boundary": 0}, {"method": "momentum", "seeds": 8, "primary_auc": 7.989325295824565, "sensitivity_auc": 7.989325295824565, "sensitivity_final_loss": 0.0733278307193872, "sensitivity_accuracy": 0.9856770833333333, "selected_upper_boundary": 0, "selected_lower_boundary": 0}, {"method": "no_budget", "seeds": 8, "primary_auc": 13.261560835932713, "sensitivity_auc": null, "sensitivity_final_loss": null, "sensitivity_accuracy": null, "selected_upper_boundary": 5, "selected_lower_boundary": 0}, {"method": "no_gates", "seeds": 8, "primary_auc": 14.01598799361889, "sensitivity_auc": 12.015569439270772, "sensitivity_final_loss": 0.30433264207477934, "sensitivity_accuracy": 0.9388020833333333, "selected_upper_boundary": 8, "selected_lower_boundary": 0}, {"method": "reset_state", "seeds": 8, "primary_auc": 13.592760717067891, "sensitivity_auc": null, "sensitivity_final_loss": null, "sensitivity_accuracy": null, "selected_upper_boundary": 6, "selected_lower_boundary": 0}, {"method": "sgd", "seeds": 8, "primary_auc": 11.956158316504986, "sensitivity_auc": 11.956158316504986, "sensitivity_final_loss": 0.3255215192920712, "sensitivity_accuracy": 0.94140625, "selected_upper_boundary": 0, "selected_lower_boundary": 0}], "failed_trials": 16}
+{
+  "workspace": "/Volumes/PRO-BLADE/World-Series",
+  "files_in_inventory": 4138,
+  "directories": 440,
+  "campaigns": [
+    {
+      "campaign": "development-v2",
+      "complete": true,
+      "cells": 64,
+      "statuses": {
+        "SUCCEEDED": 64
+      },
+      "hashes_checked": 320
+    },
+    {
+      "campaign": "discrete-malis-v1",
+      "complete": true,
+      "cells": 8,
+      "statuses": {
+        "SUCCEEDED": 8
+      },
+      "hashes_checked": 40
+    },
+    {
+      "campaign": "meta-training-replay-v1",
+      "complete": null,
+      "cells": 0,
+      "statuses": {},
+      "hashes_checked": 0
+    },
+    {
+      "campaign": "natural-digits-sensitivity-v1",
+      "complete": true,
+      "cells": 8,
+      "statuses": {
+        "SUCCEEDED": 8
+      },
+      "hashes_checked": 784
+    },
+    {
+      "campaign": "natural-digits-v1",
+      "complete": true,
+      "cells": 8,
+      "statuses": {
+        "SUCCEEDED": 8
+      },
+      "hashes_checked": 544
+    }
+  ],
+  "all_run_manifests": 164,
+  "run_statuses": {
+    "SUCCEEDED": 159,
+    "UNSUPPORTED": 1,
+    "FAILED": 3,
+    "INTERRUPTED": 1
+  },
+  "verified_campaign_file_hashes": 1688,
+  "hash_errors": [],
+  "module_raw_rows": 6416,
+  "module_failed_rows": 17,
+  "analysis_outputs_identical": true,
+  "analysis_files_compared": 10,
+  "semantic_dsl_tasks": 18,
+  "git": {
+    "rev-parse HEAD": "83b838a47234517733da673113bf59073d24ac27",
+    "status --porcelain": "",
+    "branch -a": "* main",
+    "worktree list": "/Volumes/PRO-BLADE/World-Series/world-series 83b838a [main]",
+    "remote -v": ""
+  },
+  "scope": "Local audit and analysis replay; no new full training campaign or independent replication."
+}

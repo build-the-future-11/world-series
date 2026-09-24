@@ -1,0 +1,3310 @@
+{
+  "protocol": "DRAFT_NOT_AUTHORIZED",
+  "run_index": [
+    {
+      "project": "qapen",
+      "seed": 101,
+      "run_id": "20260924T100958_fbdd5589",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "qapen",
+      "seed": 211,
+      "run_id": "20260924T101000_c43111d0",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "qapen",
+      "seed": 307,
+      "run_id": "20260924T101002_266faeea",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "qapen",
+      "seed": 401,
+      "run_id": "20260924T101002_a2a2fce6",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "qapen",
+      "seed": 503,
+      "run_id": "20260924T101003_b15fff76",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "qapen",
+      "seed": 601,
+      "run_id": "20260924T101004_b7fb230d",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "qapen",
+      "seed": 701,
+      "run_id": "20260924T101005_23d6fd5d",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "qapen",
+      "seed": 809,
+      "run_id": "20260924T101006_99d78cd4",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "qwipii",
+      "seed": 101,
+      "run_id": "20260924T101006_fe0803e7",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "qwipii",
+      "seed": 211,
+      "run_id": "20260924T101008_9fb915d2",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "qwipii",
+      "seed": 307,
+      "run_id": "20260924T101009_e9b7640a",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "qwipii",
+      "seed": 401,
+      "run_id": "20260924T101010_fb71d64f",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "qwipii",
+      "seed": 503,
+      "run_id": "20260924T101011_f164f7e2",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "qwipii",
+      "seed": 601,
+      "run_id": "20260924T101013_5b560050",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "qwipii",
+      "seed": 701,
+      "run_id": "20260924T101014_77e06898",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "qwipii",
+      "seed": 809,
+      "run_id": "20260924T101015_848b57a0",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "wcode",
+      "seed": 101,
+      "run_id": "20260924T101017_8bfd1d89",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "wcode",
+      "seed": 211,
+      "run_id": "20260924T101017_67d8da7c",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "wcode",
+      "seed": 307,
+      "run_id": "20260924T101018_fae6dd67",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "wcode",
+      "seed": 401,
+      "run_id": "20260924T101018_bb709535",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "wcode",
+      "seed": 503,
+      "run_id": "20260924T101019_91f19f67",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "wcode",
+      "seed": 601,
+      "run_id": "20260924T101019_91b5840d",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "wcode",
+      "seed": 701,
+      "run_id": "20260924T101020_86183074",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "wcode",
+      "seed": 809,
+      "run_id": "20260924T101021_fb02dd59",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "wfim",
+      "seed": 101,
+      "run_id": "20260924T101021_eeafc090",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "wfim",
+      "seed": 211,
+      "run_id": "20260924T101022_de1b36be",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "wfim",
+      "seed": 307,
+      "run_id": "20260924T101022_e644734a",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "wfim",
+      "seed": 401,
+      "run_id": "20260924T101022_d00724c2",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "wfim",
+      "seed": 503,
+      "run_id": "20260924T101022_95423da5",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "wfim",
+      "seed": 601,
+      "run_id": "20260924T101023_04afa7a3",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "wfim",
+      "seed": 701,
+      "run_id": "20260924T101023_fe23e07d",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "wfim",
+      "seed": 809,
+      "run_id": "20260924T101024_53e0cd8e",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "wft",
+      "seed": 101,
+      "run_id": "20260924T101024_663f5d4e",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "wft",
+      "seed": 211,
+      "run_id": "20260924T101024_367b304a",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "wft",
+      "seed": 307,
+      "run_id": "20260924T101025_f0b04e16",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "wft",
+      "seed": 401,
+      "run_id": "20260924T101025_4d3306d0",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "wft",
+      "seed": 503,
+      "run_id": "20260924T101025_936a73a1",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "wft",
+      "seed": 601,
+      "run_id": "20260924T101026_ac7d359e",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "wft",
+      "seed": 701,
+      "run_id": "20260924T101026_f4ad9fed",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "wft",
+      "seed": 809,
+      "run_id": "20260924T101026_58169e7e",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "wpinn",
+      "seed": 101,
+      "run_id": "20260924T101027_1846bd37",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "wpinn",
+      "seed": 211,
+      "run_id": "20260924T101028_9a1baa31",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "wpinn",
+      "seed": 307,
+      "run_id": "20260924T101029_b9086c9a",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "wpinn",
+      "seed": 401,
+      "run_id": "20260924T101030_0bf9211f",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "wpinn",
+      "seed": 503,
+      "run_id": "20260924T101033_ee8a9248",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "wpinn",
+      "seed": 601,
+      "run_id": "20260924T101039_d2868364",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "wpinn",
+      "seed": 701,
+      "run_id": "20260924T101041_eaf6492c",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "wpinn",
+      "seed": 809,
+      "run_id": "20260924T101042_90d9b14a",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "cwlnn",
+      "seed": 101,
+      "run_id": "20260924T101046_497744e7",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "cwlnn",
+      "seed": 211,
+      "run_id": "20260924T101047_ae3add90",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "cwlnn",
+      "seed": 307,
+      "run_id": "20260924T101048_32d0cd9d",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "cwlnn",
+      "seed": 401,
+      "run_id": "20260924T101049_0971ecfa",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "cwlnn",
+      "seed": 503,
+      "run_id": "20260924T101050_8392a88e",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "cwlnn",
+      "seed": 601,
+      "run_id": "20260924T101050_d959f8e2",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "cwlnn",
+      "seed": 701,
+      "run_id": "20260924T101051_0af6f6f1",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "cwlnn",
+      "seed": 809,
+      "run_id": "20260924T101052_3fa5d3c3",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "ultron",
+      "seed": 101,
+      "run_id": "20260924T101052_9e5e6c01",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "ultron",
+      "seed": 211,
+      "run_id": "20260924T101054_a4980064",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "ultron",
+      "seed": 307,
+      "run_id": "20260924T101055_61127588",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "ultron",
+      "seed": 401,
+      "run_id": "20260924T101056_8fcc4055",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "ultron",
+      "seed": 503,
+      "run_id": "20260924T101057_ab03fbed",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "ultron",
+      "seed": 601,
+      "run_id": "20260924T101057_f5a877a3",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "ultron",
+      "seed": 701,
+      "run_id": "20260924T101058_22da8727",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "ultron",
+      "seed": 809,
+      "run_id": "20260924T101059_0f3f73ea",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "qlearn-natural",
+      "seed": 101,
+      "run_id": "20260924T101150_3293b6ce",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "qlearn-natural",
+      "seed": 211,
+      "run_id": "20260924T101337_3dcca138",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "qlearn-natural",
+      "seed": 307,
+      "run_id": "20260924T101408_c64e5cf8",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "qlearn-natural",
+      "seed": 401,
+      "run_id": "20260924T101424_7c1bb9dc",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "qlearn-natural",
+      "seed": 503,
+      "run_id": "20260924T101438_973894fc",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "qlearn-natural",
+      "seed": 601,
+      "run_id": "20260924T101451_a3afb019",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "qlearn-natural",
+      "seed": 701,
+      "run_id": "20260924T101502_a111c875",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "qlearn-natural",
+      "seed": 809,
+      "run_id": "20260924T101513_5c3f6c57",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "qlearn-discrete",
+      "seed": 101,
+      "run_id": "20260924T101553_ac358792",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "qlearn-discrete",
+      "seed": 211,
+      "run_id": "20260924T101558_f80e0fd7",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "qlearn-discrete",
+      "seed": 307,
+      "run_id": "20260924T101601_7a194abc",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "qlearn-discrete",
+      "seed": 401,
+      "run_id": "20260924T101604_c919a6e4",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "qlearn-discrete",
+      "seed": 503,
+      "run_id": "20260924T101607_715f1f5c",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "qlearn-discrete",
+      "seed": 601,
+      "run_id": "20260924T101610_e30b51a5",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "qlearn-discrete",
+      "seed": 701,
+      "run_id": "20260924T101612_9f607bbf",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "project": "qlearn-discrete",
+      "seed": 809,
+      "run_id": "20260924T101615_67b9ff70",
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "429c7889bd155e0d467162f3070a0dee306140eb",
+        "note": "A content hash is not a Git commit."
+      }
+    }
+  ],
+  "module_cells": [
+    {
+      "project": "cwlnn",
+      "method": "budget_attention",
+      "condition": "n24",
+      "n": 8,
+      "mean": 37.661761689972984,
+      "std": 4.169239932454171
+    },
+    {
+      "project": "cwlnn",
+      "method": "budget_attention",
+      "condition": "n48",
+      "n": 8,
+      "mean": 33.21294727913404,
+      "std": 3.6211753171496217
+    },
+    {
+      "project": "cwlnn",
+      "method": "budget_attention",
+      "condition": "n96",
+      "n": 8,
+      "mean": 33.42723245008673,
+      "std": 1.0983489764040038
+    },
+    {
+      "project": "cwlnn",
+      "method": "flat",
+      "condition": "n24",
+      "n": 8,
+      "mean": 2.26611661171529,
+      "std": 0.23854749947632684
+    },
+    {
+      "project": "cwlnn",
+      "method": "flat",
+      "condition": "n48",
+      "n": 8,
+      "mean": 2.11406601804236,
+      "std": 0.18871590450873654
+    },
+    {
+      "project": "cwlnn",
+      "method": "flat",
+      "condition": "n96",
+      "n": 8,
+      "mean": 2.1108597728689507,
+      "std": 0.13915342957486446
+    },
+    {
+      "project": "cwlnn",
+      "method": "hierarchy",
+      "condition": "n24",
+      "n": 8,
+      "mean": 1.4068534432876971,
+      "std": 0.1659157219765443
+    },
+    {
+      "project": "cwlnn",
+      "method": "hierarchy",
+      "condition": "n48",
+      "n": 8,
+      "mean": 1.2127706015183701,
+      "std": 0.12789205753049368
+    },
+    {
+      "project": "cwlnn",
+      "method": "hierarchy",
+      "condition": "n96",
+      "n": 8,
+      "mean": 1.2043443347415101,
+      "std": 0.07433604630563985
+    },
+    {
+      "project": "cwlnn",
+      "method": "routed",
+      "condition": "n24",
+      "n": 8,
+      "mean": 11.095157461124446,
+      "std": 2.506402553456676
+    },
+    {
+      "project": "cwlnn",
+      "method": "routed",
+      "condition": "n48",
+      "n": 8,
+      "mean": 11.912339468649472,
+      "std": 0.879749245516432
+    },
+    {
+      "project": "cwlnn",
+      "method": "routed",
+      "condition": "n96",
+      "n": 8,
+      "mean": 13.693894629810206,
+      "std": 0.7174546119132504
+    },
+    {
+      "project": "qapen",
+      "method": "context_memory",
+      "condition": "all",
+      "n": 8,
+      "mean": 1.1412890552375596,
+      "std": 0.03007421079785744
+    },
+    {
+      "project": "qapen",
+      "method": "context_memory",
+      "condition": "ordinary",
+      "n": 8,
+      "mean": 1.0218354744345186,
+      "std": 0.04811278215375934
+    },
+    {
+      "project": "qapen",
+      "method": "context_memory",
+      "condition": "rare",
+      "n": 8,
+      "mean": 1.619103378449723,
+      "std": 0.06069235670571107
+    },
+    {
+      "project": "qapen",
+      "method": "context_memory",
+      "condition": "return_first5",
+      "n": 8,
+      "mean": 2.2852623771435328,
+      "std": 0.21368742079303066
+    },
+    {
+      "project": "qapen",
+      "method": "cumulative",
+      "condition": "all",
+      "n": 8,
+      "mean": 1.4031338511167708,
+      "std": 0.014886073726549005
+    },
+    {
+      "project": "qapen",
+      "method": "cumulative",
+      "condition": "ordinary",
+      "n": 8,
+      "mean": 0.9787199308823389,
+      "std": 0.02809211446022624
+    },
+    {
+      "project": "qapen",
+      "method": "cumulative",
+      "condition": "rare",
+      "n": 8,
+      "mean": 3.100789532054498,
+      "std": 0.0794997531024464
+    },
+    {
+      "project": "qapen",
+      "method": "cumulative",
+      "condition": "return_first5",
+      "n": 8,
+      "mean": 3.9350042008235713,
+      "std": 0.3101371485263613
+    },
+    {
+      "project": "qapen",
+      "method": "fixed",
+      "condition": "all",
+      "n": 8,
+      "mean": 1.5817250684196371,
+      "std": 0.005645588862956504
+    },
+    {
+      "project": "qapen",
+      "method": "fixed",
+      "condition": "ordinary",
+      "n": 8,
+      "mean": 1.5853758809451977,
+      "std": 0.00865425414976502
+    },
+    {
+      "project": "qapen",
+      "method": "fixed",
+      "condition": "rare",
+      "n": 8,
+      "mean": 1.5671218183173943,
+      "std": 0.0207835120910313
+    },
+    {
+      "project": "qapen",
+      "method": "fixed",
+      "condition": "return_first5",
+      "n": 8,
+      "mean": 1.5523945231769902,
+      "std": 0.045690040795843996
+    },
+    {
+      "project": "qapen",
+      "method": "no_memory",
+      "condition": "all",
+      "n": 8,
+      "mean": 1.3493575398881297,
+      "std": 0.024192846264088658
+    },
+    {
+      "project": "qapen",
+      "method": "no_memory",
+      "condition": "ordinary",
+      "n": 8,
+      "mean": 1.1921619413216136,
+      "std": 0.051715824247536755
+    },
+    {
+      "project": "qapen",
+      "method": "no_memory",
+      "condition": "rare",
+      "n": 8,
+      "mean": 1.9781399341541954,
+      "std": 0.12944180200194974
+    },
+    {
+      "project": "qapen",
+      "method": "no_memory",
+      "condition": "return_first5",
+      "n": 8,
+      "mean": 2.2635188441478453,
+      "std": 0.24630907791652937
+    },
+    {
+      "project": "qapen",
+      "method": "random_memory",
+      "condition": "all",
+      "n": 8,
+      "mean": 1.3624044945630964,
+      "std": 0.023167967476755726
+    },
+    {
+      "project": "qapen",
+      "method": "random_memory",
+      "condition": "ordinary",
+      "n": 8,
+      "mean": 1.113240211250018,
+      "std": 0.03381985869189025
+    },
+    {
+      "project": "qapen",
+      "method": "random_memory",
+      "condition": "rare",
+      "n": 8,
+      "mean": 2.359061627815409,
+      "std": 0.17161728767270282
+    },
+    {
+      "project": "qapen",
+      "method": "random_memory",
+      "condition": "return_first5",
+      "n": 8,
+      "mean": 2.8898980556420115,
+      "std": 0.3388748717444159
+    },
+    {
+      "project": "qapen",
+      "method": "recent",
+      "condition": "all",
+      "n": 8,
+      "mean": 1.5173693837281217,
+      "std": 0.1393256851017735
+    },
+    {
+      "project": "qapen",
+      "method": "recent",
+      "condition": "ordinary",
+      "n": 8,
+      "mean": 1.360181258424612,
+      "std": 0.09651984283699477
+    },
+    {
+      "project": "qapen",
+      "method": "recent",
+      "condition": "rare",
+      "n": 8,
+      "mean": 2.1461218849421604,
+      "std": 0.44615412394865556
+    },
+    {
+      "project": "qapen",
+      "method": "recent",
+      "condition": "return_first5",
+      "n": 8,
+      "mean": 4.808432578411848,
+      "std": 1.6589404916148116
+    },
+    {
+      "project": "qapen",
+      "method": "single_expert_memory",
+      "condition": "all",
+      "n": 8,
+      "mean": 1.1003536161161027,
+      "std": 0.025972567778604138
+    },
+    {
+      "project": "qapen",
+      "method": "single_expert_memory",
+      "condition": "ordinary",
+      "n": 8,
+      "mean": 0.8929718340090861,
+      "std": 0.03609451517545532
+    },
+    {
+      "project": "qapen",
+      "method": "single_expert_memory",
+      "condition": "rare",
+      "n": 8,
+      "mean": 1.9298807445441686,
+      "std": 0.10520641658647693
+    },
+    {
+      "project": "qapen",
+      "method": "single_expert_memory",
+      "condition": "return_first5",
+      "n": 8,
+      "mean": 3.1563587670731703,
+      "std": 0.33770382014592465
+    },
+    {
+      "project": "qwipii",
+      "method": "brute",
+      "condition": "n4/budget12",
+      "n": 8,
+      "mean": 0.625,
+      "std": 0.17251638983558856
+    },
+    {
+      "project": "qwipii",
+      "method": "brute",
+      "condition": "n4/budget120",
+      "n": 8,
+      "mean": 1.0,
+      "std": 0.0
+    },
+    {
+      "project": "qwipii",
+      "method": "brute",
+      "condition": "n5/budget12",
+      "n": 8,
+      "mean": 0.08333333333333333,
+      "std": 0.0890870806374748
+    },
+    {
+      "project": "qwipii",
+      "method": "brute",
+      "condition": "n5/budget120",
+      "n": 8,
+      "mean": 1.0,
+      "std": 0.0
+    },
+    {
+      "project": "qwipii",
+      "method": "brute",
+      "condition": "n6/budget12",
+      "n": 8,
+      "mean": 0.041666666666666664,
+      "std": 0.07715167498104596
+    },
+    {
+      "project": "qwipii",
+      "method": "brute",
+      "condition": "n6/budget120",
+      "n": 8,
+      "mean": 0.10416666666666666,
+      "std": 0.1767766952966369
+    },
+    {
+      "project": "qwipii",
+      "method": "quotient",
+      "condition": "n4/budget12",
+      "n": 8,
+      "mean": 0.625,
+      "std": 0.17251638983558856
+    },
+    {
+      "project": "qwipii",
+      "method": "quotient",
+      "condition": "n4/budget120",
+      "n": 8,
+      "mean": 1.0,
+      "std": 0.0
+    },
+    {
+      "project": "qwipii",
+      "method": "quotient",
+      "condition": "n5/budget12",
+      "n": 8,
+      "mean": 0.08333333333333333,
+      "std": 0.0890870806374748
+    },
+    {
+      "project": "qwipii",
+      "method": "quotient",
+      "condition": "n5/budget120",
+      "n": 8,
+      "mean": 1.0,
+      "std": 0.0
+    },
+    {
+      "project": "qwipii",
+      "method": "quotient",
+      "condition": "n6/budget12",
+      "n": 8,
+      "mean": 0.041666666666666664,
+      "std": 0.07715167498104596
+    },
+    {
+      "project": "qwipii",
+      "method": "quotient",
+      "condition": "n6/budget120",
+      "n": 8,
+      "mean": 0.10416666666666666,
+      "std": 0.1767766952966369
+    },
+    {
+      "project": "qwipii",
+      "method": "ranking_only",
+      "condition": "n4/budget12",
+      "n": 8,
+      "mean": 1.0,
+      "std": 0.0
+    },
+    {
+      "project": "qwipii",
+      "method": "ranking_only",
+      "condition": "n4/budget120",
+      "n": 8,
+      "mean": 1.0,
+      "std": 0.0
+    },
+    {
+      "project": "qwipii",
+      "method": "ranking_only",
+      "condition": "n5/budget12",
+      "n": 8,
+      "mean": 1.0,
+      "std": 0.0
+    },
+    {
+      "project": "qwipii",
+      "method": "ranking_only",
+      "condition": "n5/budget120",
+      "n": 8,
+      "mean": 1.0,
+      "std": 0.0
+    },
+    {
+      "project": "qwipii",
+      "method": "ranking_only",
+      "condition": "n6/budget12",
+      "n": 8,
+      "mean": 0.6041666666666666,
+      "std": 0.1767766952966369
+    },
+    {
+      "project": "qwipii",
+      "method": "ranking_only",
+      "condition": "n6/budget120",
+      "n": 8,
+      "mean": 1.0,
+      "std": 0.0
+    },
+    {
+      "project": "ultron",
+      "method": "cheapest",
+      "condition": "budget24",
+      "n": 8,
+      "mean": 0.6666666666666666,
+      "std": 0.0
+    },
+    {
+      "project": "ultron",
+      "method": "cheapest",
+      "condition": "budget53",
+      "n": 8,
+      "mean": 1.0,
+      "std": 0.0
+    },
+    {
+      "project": "ultron",
+      "method": "cheapest",
+      "condition": "budget8",
+      "n": 8,
+      "mean": 0.2222222222222222,
+      "std": 0.0
+    },
+    {
+      "project": "ultron",
+      "method": "learned",
+      "condition": "budget24",
+      "n": 8,
+      "mean": 0.8194444444444444,
+      "std": 0.057505463278529484
+    },
+    {
+      "project": "ultron",
+      "method": "learned",
+      "condition": "budget53",
+      "n": 8,
+      "mean": 1.0,
+      "std": 0.0
+    },
+    {
+      "project": "ultron",
+      "method": "learned",
+      "condition": "budget8",
+      "n": 8,
+      "mean": 0.2222222222222222,
+      "std": 0.0
+    },
+    {
+      "project": "ultron",
+      "method": "random",
+      "condition": "budget24",
+      "n": 8,
+      "mean": 0.5833333333333334,
+      "std": 0.16533862425396556
+    },
+    {
+      "project": "ultron",
+      "method": "random",
+      "condition": "budget53",
+      "n": 8,
+      "mean": 1.0,
+      "std": 0.0
+    },
+    {
+      "project": "ultron",
+      "method": "random",
+      "condition": "budget8",
+      "n": 8,
+      "mean": 0.2222222222222222,
+      "std": 0.0
+    },
+    {
+      "project": "ultron",
+      "method": "static",
+      "condition": "budget24",
+      "n": 8,
+      "mean": 0.4444444444444444,
+      "std": 0.0
+    },
+    {
+      "project": "ultron",
+      "method": "static",
+      "condition": "budget53",
+      "n": 8,
+      "mean": 1.0,
+      "std": 0.0
+    },
+    {
+      "project": "ultron",
+      "method": "static",
+      "condition": "budget8",
+      "n": 8,
+      "mean": 0.2222222222222222,
+      "std": 0.0
+    },
+    {
+      "project": "wcode",
+      "method": "flat",
+      "condition": "budget24",
+      "n": 8,
+      "mean": 0.6666666666666666,
+      "std": 0.0
+    },
+    {
+      "project": "wcode",
+      "method": "flat",
+      "condition": "budget53",
+      "n": 8,
+      "mean": 1.0,
+      "std": 0.0
+    },
+    {
+      "project": "wcode",
+      "method": "flat",
+      "condition": "budget8",
+      "n": 8,
+      "mean": 0.3333333333333333,
+      "std": 0.0
+    },
+    {
+      "project": "wcode",
+      "method": "hierarchical",
+      "condition": "budget24",
+      "n": 8,
+      "mean": 0.6666666666666666,
+      "std": 0.0
+    },
+    {
+      "project": "wcode",
+      "method": "hierarchical",
+      "condition": "budget53",
+      "n": 8,
+      "mean": 1.0,
+      "std": 0.0
+    },
+    {
+      "project": "wcode",
+      "method": "hierarchical",
+      "condition": "budget8",
+      "n": 8,
+      "mean": 0.3333333333333333,
+      "std": 0.0
+    },
+    {
+      "project": "wcode",
+      "method": "length",
+      "condition": "budget24",
+      "n": 8,
+      "mean": 0.4444444444444444,
+      "std": 0.0
+    },
+    {
+      "project": "wcode",
+      "method": "length",
+      "condition": "budget53",
+      "n": 8,
+      "mean": 1.0,
+      "std": 0.0
+    },
+    {
+      "project": "wcode",
+      "method": "length",
+      "condition": "budget8",
+      "n": 8,
+      "mean": 0.2222222222222222,
+      "std": 0.0
+    },
+    {
+      "project": "wcode",
+      "method": "token",
+      "condition": "budget24",
+      "n": 8,
+      "mean": 0.6666666666666666,
+      "std": 0.0
+    },
+    {
+      "project": "wcode",
+      "method": "token",
+      "condition": "budget53",
+      "n": 8,
+      "mean": 1.0,
+      "std": 0.0
+    },
+    {
+      "project": "wcode",
+      "method": "token",
+      "condition": "budget8",
+      "n": 8,
+      "mean": 0.3333333333333333,
+      "std": 0.0
+    },
+    {
+      "project": "wcode",
+      "method": "uniform",
+      "condition": "budget24",
+      "n": 8,
+      "mean": 0.4444444444444444,
+      "std": 0.0
+    },
+    {
+      "project": "wcode",
+      "method": "uniform",
+      "condition": "budget53",
+      "n": 8,
+      "mean": 1.0,
+      "std": 0.0
+    },
+    {
+      "project": "wcode",
+      "method": "uniform",
+      "condition": "budget8",
+      "n": 8,
+      "mean": 0.2222222222222222,
+      "std": 0.0
+    },
+    {
+      "project": "wfim",
+      "method": "topk",
+      "condition": "degree2",
+      "n": 8,
+      "mean": 24.093683312041378,
+      "std": 6.9052682636801705
+    },
+    {
+      "project": "wfim",
+      "method": "topk",
+      "condition": "degree3",
+      "n": 8,
+      "mean": 19.716718535063556,
+      "std": 8.8007361541321
+    },
+    {
+      "project": "wfim",
+      "method": "topk",
+      "condition": "degree4",
+      "n": 8,
+      "mean": 10.405934808237047,
+      "std": 3.097846188634104
+    },
+    {
+      "project": "wfim",
+      "method": "transported",
+      "condition": "degree2",
+      "n": 8,
+      "mean": 1.4041282384570953e-31,
+      "std": 5.001279445080351e-32
+    },
+    {
+      "project": "wfim",
+      "method": "transported",
+      "condition": "degree3",
+      "n": 8,
+      "mean": 4.2393460158925926e-31,
+      "std": 1.280836671988998e-31
+    },
+    {
+      "project": "wfim",
+      "method": "transported",
+      "condition": "degree4",
+      "n": 8,
+      "mean": 8.004000647006222e-31,
+      "std": 2.363455598074085e-31
+    },
+    {
+      "project": "wfim",
+      "method": "truncated",
+      "condition": "degree2",
+      "n": 8,
+      "mean": 0.0,
+      "std": 0.0
+    },
+    {
+      "project": "wfim",
+      "method": "truncated",
+      "condition": "degree3",
+      "n": 8,
+      "mean": 0.0,
+      "std": 0.0
+    },
+    {
+      "project": "wfim",
+      "method": "truncated",
+      "condition": "degree4",
+      "n": 8,
+      "mean": 0.0,
+      "std": 0.0
+    },
+    {
+      "project": "wft",
+      "method": "constrained_laplacian",
+      "condition": "n12/noise0.0/samples32",
+      "n": 8,
+      "mean": 9.79168299218136e-07,
+      "std": 3.931161094239401e-07
+    },
+    {
+      "project": "wft",
+      "method": "constrained_laplacian",
+      "condition": "n12/noise0.0/samples8",
+      "n": 8,
+      "mean": 1.0667151282221707,
+      "std": 0.16362274751366704
+    },
+    {
+      "project": "wft",
+      "method": "constrained_laplacian",
+      "condition": "n12/noise0.1/samples32",
+      "n": 8,
+      "mean": 0.006215514034855694,
+      "std": 0.003363378534458965
+    },
+    {
+      "project": "wft",
+      "method": "constrained_laplacian",
+      "condition": "n12/noise0.1/samples8",
+      "n": 8,
+      "mean": 0.936957067397248,
+      "std": 0.3570727046093046
+    },
+    {
+      "project": "wft",
+      "method": "constrained_laplacian",
+      "condition": "n12/noise0.5/samples32",
+      "n": 8,
+      "mean": 0.16493962342903395,
+      "std": 0.05305316882019175
+    },
+    {
+      "project": "wft",
+      "method": "constrained_laplacian",
+      "condition": "n12/noise0.5/samples8",
+      "n": 8,
+      "mean": 1.4094709561915142,
+      "std": 0.4244845341617674
+    },
+    {
+      "project": "wft",
+      "method": "constrained_laplacian",
+      "condition": "n24/noise0.0/samples32",
+      "n": 8,
+      "mean": 5.615752064922555e-05,
+      "std": 3.59864232104589e-05
+    },
+    {
+      "project": "wft",
+      "method": "constrained_laplacian",
+      "condition": "n24/noise0.0/samples8",
+      "n": 8,
+      "mean": 1.7538239169501766,
+      "std": 0.29835503970869587
+    },
+    {
+      "project": "wft",
+      "method": "constrained_laplacian",
+      "condition": "n24/noise0.1/samples32",
+      "n": 8,
+      "mean": 0.05643872463331597,
+      "std": 0.012482118564215995
+    },
+    {
+      "project": "wft",
+      "method": "constrained_laplacian",
+      "condition": "n24/noise0.1/samples8",
+      "n": 8,
+      "mean": 1.6480876315807635,
+      "std": 0.3289276251016224
+    },
+    {
+      "project": "wft",
+      "method": "constrained_laplacian",
+      "condition": "n24/noise0.5/samples32",
+      "n": 8,
+      "mean": 1.529725516922761,
+      "std": 0.41171124208195653
+    },
+    {
+      "project": "wft",
+      "method": "constrained_laplacian",
+      "condition": "n24/noise0.5/samples8",
+      "n": 8,
+      "mean": 1.8693162092986637,
+      "std": 0.28960195641311015
+    },
+    {
+      "project": "wft",
+      "method": "fixed_unit_weights",
+      "condition": "n12/noise0.0/samples32",
+      "n": 8,
+      "mean": 0.48153744896028977,
+      "std": 0.14606689052086727
+    },
+    {
+      "project": "wft",
+      "method": "fixed_unit_weights",
+      "condition": "n12/noise0.0/samples8",
+      "n": 8,
+      "mean": 0.4209104716416484,
+      "std": 0.13520665196640053
+    },
+    {
+      "project": "wft",
+      "method": "fixed_unit_weights",
+      "condition": "n12/noise0.1/samples32",
+      "n": 8,
+      "mean": 0.417015558452803,
+      "std": 0.14594522235679014
+    },
+    {
+      "project": "wft",
+      "method": "fixed_unit_weights",
+      "condition": "n12/noise0.1/samples8",
+      "n": 8,
+      "mean": 0.5347908599084839,
+      "std": 0.15893079960702305
+    },
+    {
+      "project": "wft",
+      "method": "fixed_unit_weights",
+      "condition": "n12/noise0.5/samples32",
+      "n": 8,
+      "mean": 0.594669564465404,
+      "std": 0.3545790371973286
+    },
+    {
+      "project": "wft",
+      "method": "fixed_unit_weights",
+      "condition": "n12/noise0.5/samples8",
+      "n": 8,
+      "mean": 0.4411198504813779,
+      "std": 0.20646918562026495
+    },
+    {
+      "project": "wft",
+      "method": "fixed_unit_weights",
+      "condition": "n24/noise0.0/samples32",
+      "n": 8,
+      "mean": 0.5179027560517495,
+      "std": 0.10796803611160258
+    },
+    {
+      "project": "wft",
+      "method": "fixed_unit_weights",
+      "condition": "n24/noise0.0/samples8",
+      "n": 8,
+      "mean": 0.544570415498451,
+      "std": 0.1437606354922126
+    },
+    {
+      "project": "wft",
+      "method": "fixed_unit_weights",
+      "condition": "n24/noise0.1/samples32",
+      "n": 8,
+      "mean": 0.512812384878798,
+      "std": 0.1258112154225558
+    },
+    {
+      "project": "wft",
+      "method": "fixed_unit_weights",
+      "condition": "n24/noise0.1/samples8",
+      "n": 8,
+      "mean": 0.5740675439682509,
+      "std": 0.13866140831943585
+    },
+    {
+      "project": "wft",
+      "method": "fixed_unit_weights",
+      "condition": "n24/noise0.5/samples32",
+      "n": 8,
+      "mean": 0.42746018673109293,
+      "std": 0.13449715055727912
+    },
+    {
+      "project": "wft",
+      "method": "fixed_unit_weights",
+      "condition": "n24/noise0.5/samples8",
+      "n": 8,
+      "mean": 0.47926373936061467,
+      "std": 0.17107683324462475
+    },
+    {
+      "project": "wft",
+      "method": "oracle_true_graph",
+      "condition": "n12/noise0.0/samples32",
+      "n": 8,
+      "mean": 0.0,
+      "std": 0.0
+    },
+    {
+      "project": "wft",
+      "method": "oracle_true_graph",
+      "condition": "n12/noise0.0/samples8",
+      "n": 8,
+      "mean": 0.0,
+      "std": 0.0
+    },
+    {
+      "project": "wft",
+      "method": "oracle_true_graph",
+      "condition": "n12/noise0.1/samples32",
+      "n": 8,
+      "mean": 0.0,
+      "std": 0.0
+    },
+    {
+      "project": "wft",
+      "method": "oracle_true_graph",
+      "condition": "n12/noise0.1/samples8",
+      "n": 8,
+      "mean": 0.0,
+      "std": 0.0
+    },
+    {
+      "project": "wft",
+      "method": "oracle_true_graph",
+      "condition": "n12/noise0.5/samples32",
+      "n": 8,
+      "mean": 0.0,
+      "std": 0.0
+    },
+    {
+      "project": "wft",
+      "method": "oracle_true_graph",
+      "condition": "n12/noise0.5/samples8",
+      "n": 8,
+      "mean": 0.0,
+      "std": 0.0
+    },
+    {
+      "project": "wft",
+      "method": "oracle_true_graph",
+      "condition": "n24/noise0.0/samples32",
+      "n": 8,
+      "mean": 0.0,
+      "std": 0.0
+    },
+    {
+      "project": "wft",
+      "method": "oracle_true_graph",
+      "condition": "n24/noise0.0/samples8",
+      "n": 8,
+      "mean": 0.0,
+      "std": 0.0
+    },
+    {
+      "project": "wft",
+      "method": "oracle_true_graph",
+      "condition": "n24/noise0.1/samples32",
+      "n": 8,
+      "mean": 0.0,
+      "std": 0.0
+    },
+    {
+      "project": "wft",
+      "method": "oracle_true_graph",
+      "condition": "n24/noise0.1/samples8",
+      "n": 8,
+      "mean": 0.0,
+      "std": 0.0
+    },
+    {
+      "project": "wft",
+      "method": "oracle_true_graph",
+      "condition": "n24/noise0.5/samples32",
+      "n": 8,
+      "mean": 0.0,
+      "std": 0.0
+    },
+    {
+      "project": "wft",
+      "method": "oracle_true_graph",
+      "condition": "n24/noise0.5/samples8",
+      "n": 8,
+      "mean": 0.0,
+      "std": 0.0
+    },
+    {
+      "project": "wft",
+      "method": "ridge",
+      "condition": "n12/noise0.0/samples32",
+      "n": 8,
+      "mean": 1.915019744513119e-06,
+      "std": 7.766456588466807e-07
+    },
+    {
+      "project": "wft",
+      "method": "ridge",
+      "condition": "n12/noise0.0/samples8",
+      "n": 8,
+      "mean": 1.8335625661788781,
+      "std": 0.3118206497659204
+    },
+    {
+      "project": "wft",
+      "method": "ridge",
+      "condition": "n12/noise0.1/samples32",
+      "n": 8,
+      "mean": 0.005537417960562315,
+      "std": 0.0011995998779240115
+    },
+    {
+      "project": "wft",
+      "method": "ridge",
+      "condition": "n12/noise0.1/samples8",
+      "n": 8,
+      "mean": 1.6406277899131743,
+      "std": 0.5513123994917596
+    },
+    {
+      "project": "wft",
+      "method": "ridge",
+      "condition": "n12/noise0.5/samples32",
+      "n": 8,
+      "mean": 0.14986100792515777,
+      "std": 0.044023243584221244
+    },
+    {
+      "project": "wft",
+      "method": "ridge",
+      "condition": "n12/noise0.5/samples8",
+      "n": 8,
+      "mean": 2.442103586881002,
+      "std": 0.6699972040999066
+    },
+    {
+      "project": "wft",
+      "method": "ridge",
+      "condition": "n24/noise0.0/samples32",
+      "n": 8,
+      "mean": 4.21877598506823e-05,
+      "std": 2.1109859479618844e-05
+    },
+    {
+      "project": "wft",
+      "method": "ridge",
+      "condition": "n24/noise0.0/samples8",
+      "n": 8,
+      "mean": 3.534515456650439,
+      "std": 0.6155274006139685
+    },
+    {
+      "project": "wft",
+      "method": "ridge",
+      "condition": "n24/noise0.1/samples32",
+      "n": 8,
+      "mean": 0.03169541666295465,
+      "std": 0.005454575270531027
+    },
+    {
+      "project": "wft",
+      "method": "ridge",
+      "condition": "n24/noise0.1/samples8",
+      "n": 8,
+      "mean": 3.3270384825362216,
+      "std": 0.623334066610312
+    },
+    {
+      "project": "wft",
+      "method": "ridge",
+      "condition": "n24/noise0.5/samples32",
+      "n": 8,
+      "mean": 0.9190626255033358,
+      "std": 0.23172916004378794
+    },
+    {
+      "project": "wft",
+      "method": "ridge",
+      "condition": "n24/noise0.5/samples8",
+      "n": 8,
+      "mean": 3.753500708474419,
+      "std": 0.7137330709158657
+    },
+    {
+      "project": "wpinn",
+      "method": "data_only",
+      "condition": "k1.0/c0.0/noise0.0",
+      "n": 8,
+      "mean": 2.3042722639660957e-07,
+      "std": 3.8478636894955035e-07
+    },
+    {
+      "project": "wpinn",
+      "method": "data_only",
+      "condition": "k1.0/c0.0/noise0.02",
+      "n": 8,
+      "mean": null,
+      "std": null
+    },
+    {
+      "project": "wpinn",
+      "method": "data_only",
+      "condition": "k1.0/c0.0/noise0.1",
+      "n": 8,
+      "mean": null,
+      "std": null
+    },
+    {
+      "project": "wpinn",
+      "method": "data_only",
+      "condition": "k2.0/c0.3/noise0.0",
+      "n": 8,
+      "mean": 1.8687767479457053e-06,
+      "std": 2.6834638956153104e-06
+    },
+    {
+      "project": "wpinn",
+      "method": "data_only",
+      "condition": "k2.0/c0.3/noise0.02",
+      "n": 8,
+      "mean": null,
+      "std": null
+    },
+    {
+      "project": "wpinn",
+      "method": "data_only",
+      "condition": "k2.0/c0.3/noise0.1",
+      "n": 8,
+      "mean": null,
+      "std": null
+    },
+    {
+      "project": "wpinn",
+      "method": "data_only",
+      "condition": "k4.0/c0.8/noise0.0",
+      "n": 8,
+      "mean": 4.93385543442273e-06,
+      "std": 6.609603184041848e-06
+    },
+    {
+      "project": "wpinn",
+      "method": "data_only",
+      "condition": "k4.0/c0.8/noise0.02",
+      "n": 8,
+      "mean": null,
+      "std": null
+    },
+    {
+      "project": "wpinn",
+      "method": "data_only",
+      "condition": "k4.0/c0.8/noise0.1",
+      "n": 8,
+      "mean": null,
+      "std": null
+    },
+    {
+      "project": "wpinn",
+      "method": "known_support",
+      "condition": "k1.0/c0.0/noise0.0",
+      "n": 8,
+      "mean": 7.281489562179172e-07,
+      "std": 1.042104685595968e-06
+    },
+    {
+      "project": "wpinn",
+      "method": "known_support",
+      "condition": "k1.0/c0.0/noise0.02",
+      "n": 8,
+      "mean": 0.02767263472417637,
+      "std": 0.07722471739396869
+    },
+    {
+      "project": "wpinn",
+      "method": "known_support",
+      "condition": "k1.0/c0.0/noise0.1",
+      "n": 8,
+      "mean": 32.19484058198355,
+      "std": 91.03478940810848
+    },
+    {
+      "project": "wpinn",
+      "method": "known_support",
+      "condition": "k2.0/c0.3/noise0.0",
+      "n": 8,
+      "mean": 1.8687767479457053e-06,
+      "std": 2.6834638956153104e-06
+    },
+    {
+      "project": "wpinn",
+      "method": "known_support",
+      "condition": "k2.0/c0.3/noise0.02",
+      "n": 8,
+      "mean": 0.03909832394029514,
+      "std": 0.10870279481448021
+    },
+    {
+      "project": "wpinn",
+      "method": "known_support",
+      "condition": "k2.0/c0.3/noise0.1",
+      "n": 8,
+      "mean": 70.16383980121269,
+      "std": 198.36215310712495
+    },
+    {
+      "project": "wpinn",
+      "method": "known_support",
+      "condition": "k4.0/c0.8/noise0.0",
+      "n": 8,
+      "mean": 4.93385543442273e-06,
+      "std": 6.609603184041848e-06
+    },
+    {
+      "project": "wpinn",
+      "method": "known_support",
+      "condition": "k4.0/c0.8/noise0.02",
+      "n": 8,
+      "mean": 0.07380581821514663,
+      "std": 0.20718745059172458
+    },
+    {
+      "project": "wpinn",
+      "method": "known_support",
+      "condition": "k4.0/c0.8/noise0.1",
+      "n": 8,
+      "mean": 100.35343016594285,
+      "std": 283.7130257110712
+    },
+    {
+      "project": "wpinn",
+      "method": "weak",
+      "condition": "k1.0/c0.0/noise0.0",
+      "n": 8,
+      "mean": 7.350953063182111e-07,
+      "std": 7.50928787942213e-07
+    },
+    {
+      "project": "wpinn",
+      "method": "weak",
+      "condition": "k1.0/c0.0/noise0.02",
+      "n": 8,
+      "mean": 0.09270503988995793,
+      "std": 0.20019092599121147
+    },
+    {
+      "project": "wpinn",
+      "method": "weak",
+      "condition": "k1.0/c0.0/noise0.1",
+      "n": 8,
+      "mean": null,
+      "std": null
+    },
+    {
+      "project": "wpinn",
+      "method": "weak",
+      "condition": "k2.0/c0.3/noise0.0",
+      "n": 8,
+      "mean": 1.9537122763808926e-06,
+      "std": 1.7328052474250748e-06
+    },
+    {
+      "project": "wpinn",
+      "method": "weak",
+      "condition": "k2.0/c0.3/noise0.02",
+      "n": 8,
+      "mean": null,
+      "std": null
+    },
+    {
+      "project": "wpinn",
+      "method": "weak",
+      "condition": "k2.0/c0.3/noise0.1",
+      "n": 8,
+      "mean": 1.0504881490330729,
+      "std": 2.899528120976058
+    },
+    {
+      "project": "wpinn",
+      "method": "weak",
+      "condition": "k4.0/c0.8/noise0.0",
+      "n": 8,
+      "mean": 3.723962420929443e-06,
+      "std": 2.67836789928745e-06
+    },
+    {
+      "project": "wpinn",
+      "method": "weak",
+      "condition": "k4.0/c0.8/noise0.02",
+      "n": 8,
+      "mean": 0.014276152970121015,
+      "std": 0.0362839238018111
+    },
+    {
+      "project": "wpinn",
+      "method": "weak",
+      "condition": "k4.0/c0.8/noise0.1",
+      "n": 8,
+      "mean": null,
+      "std": null
+    },
+    {
+      "project": "wpinn",
+      "method": "wrong_conservation",
+      "condition": "k1.0/c0.0/noise0.0",
+      "n": 8,
+      "mean": 7.350953063182111e-07,
+      "std": 7.50928787942213e-07
+    },
+    {
+      "project": "wpinn",
+      "method": "wrong_conservation",
+      "condition": "k1.0/c0.0/noise0.02",
+      "n": 8,
+      "mean": 0.08469178820474259,
+      "std": 0.20388114831806184
+    },
+    {
+      "project": "wpinn",
+      "method": "wrong_conservation",
+      "condition": "k1.0/c0.0/noise0.1",
+      "n": 8,
+      "mean": null,
+      "std": null
+    },
+    {
+      "project": "wpinn",
+      "method": "wrong_conservation",
+      "condition": "k2.0/c0.3/noise0.0",
+      "n": 8,
+      "mean": 0.10126112663702633,
+      "std": 0.07311145685277853
+    },
+    {
+      "project": "wpinn",
+      "method": "wrong_conservation",
+      "condition": "k2.0/c0.3/noise0.02",
+      "n": 8,
+      "mean": null,
+      "std": null
+    },
+    {
+      "project": "wpinn",
+      "method": "wrong_conservation",
+      "condition": "k2.0/c0.3/noise0.1",
+      "n": 8,
+      "mean": 0.23631328926612843,
+      "std": 0.26046310961702074
+    },
+    {
+      "project": "wpinn",
+      "method": "wrong_conservation",
+      "condition": "k4.0/c0.8/noise0.0",
+      "n": 8,
+      "mean": 0.3863022192356125,
+      "std": 0.2199819603499787
+    },
+    {
+      "project": "wpinn",
+      "method": "wrong_conservation",
+      "condition": "k4.0/c0.8/noise0.02",
+      "n": 8,
+      "mean": 0.39275125047461223,
+      "std": 0.2385223328989103
+    },
+    {
+      "project": "wpinn",
+      "method": "wrong_conservation",
+      "condition": "k4.0/c0.8/noise0.1",
+      "n": 8,
+      "mean": null,
+      "std": null
+    }
+  ],
+  "module_failures": [
+    {
+      "project": "wpinn",
+      "seed": 101,
+      "attempted": 1,
+      "condition": "k1.0/c0.0/noise0.02",
+      "failures": 1,
+      "mean": null,
+      "method": "data_only"
+    },
+    {
+      "project": "wpinn",
+      "seed": 101,
+      "attempted": 1,
+      "condition": "k1.0/c0.0/noise0.1",
+      "failures": 1,
+      "mean": null,
+      "method": "data_only"
+    },
+    {
+      "project": "wpinn",
+      "seed": 101,
+      "attempted": 1,
+      "condition": "k2.0/c0.3/noise0.02",
+      "failures": 1,
+      "mean": null,
+      "method": "data_only"
+    },
+    {
+      "project": "wpinn",
+      "seed": 101,
+      "attempted": 1,
+      "condition": "k2.0/c0.3/noise0.1",
+      "failures": 1,
+      "mean": null,
+      "method": "data_only"
+    },
+    {
+      "project": "wpinn",
+      "seed": 101,
+      "attempted": 1,
+      "condition": "k4.0/c0.8/noise0.02",
+      "failures": 1,
+      "mean": null,
+      "method": "data_only"
+    },
+    {
+      "project": "wpinn",
+      "seed": 101,
+      "attempted": 1,
+      "condition": "k4.0/c0.8/noise0.1",
+      "failures": 1,
+      "mean": null,
+      "method": "data_only"
+    },
+    {
+      "project": "wpinn",
+      "seed": 101,
+      "attempted": 1,
+      "condition": "k1.0/c0.0/noise0.1",
+      "failures": 1,
+      "mean": null,
+      "method": "weak"
+    },
+    {
+      "project": "wpinn",
+      "seed": 101,
+      "attempted": 1,
+      "condition": "k2.0/c0.3/noise0.02",
+      "failures": 1,
+      "mean": null,
+      "method": "weak"
+    },
+    {
+      "project": "wpinn",
+      "seed": 101,
+      "attempted": 1,
+      "condition": "k4.0/c0.8/noise0.1",
+      "failures": 1,
+      "mean": null,
+      "method": "weak"
+    },
+    {
+      "project": "wpinn",
+      "seed": 101,
+      "attempted": 1,
+      "condition": "k2.0/c0.3/noise0.02",
+      "failures": 1,
+      "mean": null,
+      "method": "wrong_conservation"
+    },
+    {
+      "project": "wpinn",
+      "seed": 101,
+      "attempted": 1,
+      "condition": "k4.0/c0.8/noise0.1",
+      "failures": 1,
+      "mean": null,
+      "method": "wrong_conservation"
+    },
+    {
+      "project": "wpinn",
+      "seed": 401,
+      "attempted": 1,
+      "condition": "k1.0/c0.0/noise0.1",
+      "failures": 1,
+      "mean": null,
+      "method": "data_only"
+    },
+    {
+      "project": "wpinn",
+      "seed": 401,
+      "attempted": 1,
+      "condition": "k1.0/c0.0/noise0.1",
+      "failures": 1,
+      "mean": null,
+      "method": "weak"
+    },
+    {
+      "project": "wpinn",
+      "seed": 401,
+      "attempted": 1,
+      "condition": "k1.0/c0.0/noise0.1",
+      "failures": 1,
+      "mean": null,
+      "method": "wrong_conservation"
+    },
+    {
+      "project": "wpinn",
+      "seed": 401,
+      "attempted": 1,
+      "condition": "k4.0/c0.8/noise0.1",
+      "failures": 1,
+      "mean": null,
+      "method": "wrong_conservation"
+    },
+    {
+      "project": "wpinn",
+      "seed": 601,
+      "attempted": 1,
+      "condition": "k1.0/c0.0/noise0.1",
+      "failures": 1,
+      "mean": null,
+      "method": "weak"
+    },
+    {
+      "project": "wpinn",
+      "seed": 601,
+      "attempted": 1,
+      "condition": "k1.0/c0.0/noise0.1",
+      "failures": 1,
+      "mean": null,
+      "method": "wrong_conservation"
+    }
+  ],
+  "natural_tuning_failures": [],
+  "digit_cells": [
+    {
+      "method": "adamw",
+      "horizon": 8,
+      "seeds": 8,
+      "auc": 3.7510395478801213,
+      "final_loss": 0.23326430119076463,
+      "accuracy": 0.9479166666666667,
+      "adapt_seconds": 0.03100836212252034,
+      "failed_tasks": 0
+    },
+    {
+      "method": "adamw",
+      "horizon": 16,
+      "seeds": 8,
+      "auc": 4.93213497852269,
+      "final_loss": 0.12574172631832897,
+      "accuracy": 0.9713541666666666,
+      "adapt_seconds": 0.052208143311872846,
+      "failed_tasks": 0
+    },
+    {
+      "method": "adamw",
+      "horizon": 32,
+      "seeds": 8,
+      "auc": 6.414486150844294,
+      "final_loss": 0.08130132887051003,
+      "accuracy": 0.9752604166666667,
+      "adapt_seconds": 0.16672759118955582,
+      "failed_tasks": 0
+    },
+    {
+      "method": "feedforward",
+      "horizon": 8,
+      "seeds": 8,
+      "auc": 6.5025168262631325,
+      "final_loss": 0.5893109455118523,
+      "accuracy": 0.88671875,
+      "adapt_seconds": 0.05748214318555256,
+      "failed_tasks": 0
+    },
+    {
+      "method": "feedforward",
+      "horizon": 16,
+      "seeds": 8,
+      "auc": 9.969381401038678,
+      "final_loss": 0.3092197040390952,
+      "accuracy": 0.9505208333333334,
+      "adapt_seconds": 0.07331751568744949,
+      "failed_tasks": 0
+    },
+    {
+      "method": "feedforward",
+      "horizon": 32,
+      "seeds": 8,
+      "auc": 13.123861841337943,
+      "final_loss": 0.1381939406017826,
+      "accuracy": 0.97265625,
+      "adapt_seconds": 0.20585877612575132,
+      "failed_tasks": 0
+    },
+    {
+      "method": "full",
+      "horizon": 8,
+      "seeds": 8,
+      "auc": 6.6792607912093205,
+      "final_loss": 0.6222278655857195,
+      "accuracy": 0.8763020833333333,
+      "adapt_seconds": 0.09321325256132695,
+      "failed_tasks": 0
+    },
+    {
+      "method": "full",
+      "horizon": 16,
+      "seeds": 8,
+      "auc": 10.264192924567997,
+      "final_loss": 0.3096792372608235,
+      "accuracy": 0.9609375,
+      "adapt_seconds": 0.1246971431937709,
+      "failed_tasks": 0
+    },
+    {
+      "method": "full",
+      "horizon": 32,
+      "seeds": 8,
+      "auc": 13.280946872115056,
+      "final_loss": 0.13704810115564886,
+      "accuracy": 0.9700520833333333,
+      "adapt_seconds": 0.20681401543697575,
+      "failed_tasks": 0
+    },
+    {
+      "method": "initialization_only",
+      "horizon": 8,
+      "seeds": 8,
+      "auc": 6.887023893740986,
+      "final_loss": 0.7295231479816123,
+      "accuracy": 0.8020833333333334,
+      "adapt_seconds": 0.01328416912110697,
+      "failed_tasks": 0
+    },
+    {
+      "method": "initialization_only",
+      "horizon": 16,
+      "seeds": 8,
+      "auc": 11.754889142981192,
+      "final_loss": 0.4968875635344937,
+      "accuracy": 0.9244791666666667,
+      "adapt_seconds": 0.0279015417509072,
+      "failed_tasks": 0
+    },
+    {
+      "method": "initialization_only",
+      "horizon": 32,
+      "seeds": 8,
+      "auc": 17.26017799578648,
+      "final_loss": 0.23587943643480752,
+      "accuracy": 0.9596354166666666,
+      "adapt_seconds": 0.056716900939136394,
+      "failed_tasks": 0
+    },
+    {
+      "method": "momentum",
+      "horizon": 8,
+      "seeds": 8,
+      "auc": 4.473842327984458,
+      "final_loss": 0.35749869901353404,
+      "accuracy": 0.96875,
+      "adapt_seconds": 0.02931654956228158,
+      "failed_tasks": 0
+    },
+    {
+      "method": "momentum",
+      "horizon": 16,
+      "seeds": 8,
+      "auc": 6.259935073352888,
+      "final_loss": 0.16739795549587555,
+      "accuracy": 0.9791666666666667,
+      "adapt_seconds": 0.035596200434156344,
+      "failed_tasks": 0
+    },
+    {
+      "method": "momentum",
+      "horizon": 32,
+      "seeds": 8,
+      "auc": 7.989325295824565,
+      "final_loss": 0.0733278307193872,
+      "accuracy": 0.9856770833333333,
+      "adapt_seconds": 0.1035246797491709,
+      "failed_tasks": 0
+    },
+    {
+      "method": "no_budget",
+      "horizon": 8,
+      "seeds": 8,
+      "auc": 6.66473480441862,
+      "final_loss": 0.6194100971405777,
+      "accuracy": 0.875,
+      "adapt_seconds": 0.041584729247915675,
+      "failed_tasks": 0
+    },
+    {
+      "method": "no_budget",
+      "horizon": 16,
+      "seeds": 8,
+      "auc": 10.23284202240831,
+      "final_loss": 0.3085190346399529,
+      "accuracy": 0.9609375,
+      "adapt_seconds": 0.1115060988759069,
+      "failed_tasks": 0
+    },
+    {
+      "method": "no_budget",
+      "horizon": 32,
+      "seeds": 8,
+      "auc": 13.261560835932713,
+      "final_loss": 0.13725408121897287,
+      "accuracy": 0.9700520833333333,
+      "adapt_seconds": 0.32231754418171477,
+      "failed_tasks": 0
+    },
+    {
+      "method": "no_gates",
+      "horizon": 8,
+      "seeds": 8,
+      "auc": 6.8386326893095415,
+      "final_loss": 0.664215439244848,
+      "accuracy": 0.8658854166666667,
+      "adapt_seconds": 0.029224898560642032,
+      "failed_tasks": 0
+    },
+    {
+      "method": "no_gates",
+      "horizon": 16,
+      "seeds": 8,
+      "auc": 10.73160092016292,
+      "final_loss": 0.34310933781132824,
+      "accuracy": 0.9622395833333334,
+      "adapt_seconds": 0.05265800531014975,
+      "failed_tasks": 0
+    },
+    {
+      "method": "no_gates",
+      "horizon": 32,
+      "seeds": 8,
+      "auc": 14.01598799361889,
+      "final_loss": 0.1429476747665205,
+      "accuracy": 0.9674479166666666,
+      "adapt_seconds": 0.12247264055986307,
+      "failed_tasks": 0
+    },
+    {
+      "method": "official_celo2",
+      "horizon": 8,
+      "seeds": 8,
+      "auc": 4.270856055229266,
+      "final_loss": 0.2678094605095096,
+      "accuracy": 0.96484375,
+      "adapt_seconds": 0.03159730730840238,
+      "failed_tasks": 0
+    },
+    {
+      "method": "official_celo2",
+      "horizon": 16,
+      "seeds": 8,
+      "auc": 5.9267998079798865,
+      "final_loss": 0.12145951277714276,
+      "accuracy": 0.9791666666666666,
+      "adapt_seconds": 0.060526466126248124,
+      "failed_tasks": 0
+    },
+    {
+      "method": "official_celo2",
+      "horizon": 32,
+      "seeds": 8,
+      "auc": 7.745352782606171,
+      "final_loss": 0.11604442139944632,
+      "accuracy": 0.98046875,
+      "adapt_seconds": 0.12852604962790792,
+      "failed_tasks": 0
+    },
+    {
+      "method": "reset_state",
+      "horizon": 8,
+      "seeds": 8,
+      "auc": 6.717554005794113,
+      "final_loss": 0.6359045529160219,
+      "accuracy": 0.8723958333333333,
+      "adapt_seconds": 0.04517633312752878,
+      "failed_tasks": 0
+    },
+    {
+      "method": "reset_state",
+      "horizon": 16,
+      "seeds": 8,
+      "auc": 10.42908014818563,
+      "final_loss": 0.324803541199302,
+      "accuracy": 0.9609375,
+      "adapt_seconds": 0.11224832568586862,
+      "failed_tasks": 0
+    },
+    {
+      "method": "reset_state",
+      "horizon": 32,
+      "seeds": 8,
+      "auc": 13.592760717067891,
+      "final_loss": 0.1400067437846152,
+      "accuracy": 0.96875,
+      "adapt_seconds": 0.1892300599392911,
+      "failed_tasks": 0
+    },
+    {
+      "method": "sgd",
+      "horizon": 8,
+      "seeds": 8,
+      "auc": 5.567542705324631,
+      "final_loss": 0.3806788238091864,
+      "accuracy": 0.9505208333333334,
+      "adapt_seconds": 0.012496489565819502,
+      "failed_tasks": 0
+    },
+    {
+      "method": "sgd",
+      "horizon": 16,
+      "seeds": 8,
+      "auc": 7.380347890912544,
+      "final_loss": 0.1479320197806255,
+      "accuracy": 0.9674479166666667,
+      "adapt_seconds": 0.0721923253749992,
+      "failed_tasks": 0
+    },
+    {
+      "method": "sgd",
+      "horizon": 32,
+      "seeds": 8,
+      "auc": 11.956158316504986,
+      "final_loss": 0.3255215192920712,
+      "accuracy": 0.94140625,
+      "adapt_seconds": 0.13410267712242785,
+      "failed_tasks": 0
+    }
+  ],
+  "digit_comparisons": [
+    {
+      "comparator": "adamw",
+      "n": 8,
+      "seed_differences": [
+        -4.451190196437883,
+        -4.824247007062926,
+        -7.199121410143032,
+        -8.815751236099413,
+        -12.225001136871043,
+        -3.727292642205862,
+        -9.791986183693094,
+        -3.8970959576528603
+      ],
+      "comparator_minus_full_auc": -6.866460721270764,
+      "p_exact": 0.0078125,
+      "p_holm": 0.0703125
+    },
+    {
+      "comparator": "feedforward",
+      "n": 8,
+      "seed_differences": [
+        -2.652288515610479,
+        -0.902076534076869,
+        2.6249265743727523,
+        -1.9055399703720113,
+        2.6147695809741265,
+        -1.314517806671116,
+        -0.2523532692836934,
+        0.5303996944503773
+      ],
+      "comparator_minus_full_auc": -0.1570850307771141,
+      "p_exact": 0.8203125,
+      "p_holm": 1.0
+    },
+    {
+      "comparator": "initialization_only",
+      "n": 8,
+      "seed_differences": [
+        0.8875131689791544,
+        7.433582824195419,
+        7.015211034075728,
+        2.722572120291211,
+        2.029057566561189,
+        1.704585514044659,
+        6.84195576597179,
+        3.199370995252247
+      ],
+      "comparator_minus_full_auc": 3.9792311236714246,
+      "p_exact": 0.0078125,
+      "p_holm": 0.0703125
+    },
+    {
+      "comparator": "momentum",
+      "n": 8,
+      "seed_differences": [
+        -4.077426494336617,
+        -2.115431578941566,
+        -5.561014134090049,
+        -6.876006884079404,
+        -8.264243131139153,
+        -4.542575780209324,
+        -7.699419380012396,
+        -3.196855227515428
+      ],
+      "comparator_minus_full_auc": -5.291621576290492,
+      "p_exact": 0.0078125,
+      "p_holm": 0.0703125
+    },
+    {
+      "comparator": "no_budget",
+      "n": 8,
+      "seed_differences": [
+        -0.028202763470858372,
+        -0.2678344640309067,
+        0.08013419097132335,
+        0.16681363119661974,
+        -0.2055390844432594,
+        -0.17261982244438023,
+        0.36552698308580744,
+        -0.09336696032309888
+      ],
+      "comparator_minus_full_auc": -0.019386036182344135,
+      "p_exact": 0.7890625,
+      "p_holm": 1.0
+    },
+    {
+      "comparator": "no_gates",
+      "n": 8,
+      "seed_differences": [
+        0.6166267868914126,
+        0.8926868033861872,
+        0.8758756563969197,
+        1.1126199003155222,
+        0.5025645637873808,
+        1.2599608013585026,
+        -0.07490029659500408,
+        0.694894756489731
+      ],
+      "comparator_minus_full_auc": 0.7350411215038315,
+      "p_exact": 0.015625,
+      "p_holm": 0.0703125
+    },
+    {
+      "comparator": "official_celo2",
+      "n": 8,
+      "seed_differences": [
+        -4.337594125098509,
+        -2.359740892121483,
+        -6.296663568536298,
+        -6.8054485407550604,
+        -10.114309504047307,
+        -4.331505847624019,
+        -7.511114961116463,
+        -2.5283752767719534
+      ],
+      "comparator_minus_full_auc": -5.535594089508887,
+      "p_exact": 0.0078125,
+      "p_holm": 0.0703125
+    },
+    {
+      "comparator": "reset_state",
+      "n": 8,
+      "seed_differences": [
+        0.13121053163501095,
+        0.410740790435268,
+        0.2224270351725064,
+        0.4994274994481991,
+        0.05106592494718143,
+        0.3108450998434691,
+        0.7962771383306109,
+        0.0725167398104265
+      ],
+      "comparator_minus_full_auc": 0.31181384495283404,
+      "p_exact": 0.0078125,
+      "p_holm": 0.0703125
+    },
+    {
+      "comparator": "sgd",
+      "n": 8,
+      "seed_differences": [
+        -0.2687193355056934,
+        -0.040322035775785636,
+        -0.5514844248512283,
+        -1.405167715190812,
+        -5.774584641031547,
+        0.34471896025348236,
+        -4.341098777333752,
+        1.4383495245547593
+      ],
+      "comparator_minus_full_auc": -1.324788555610072,
+      "p_exact": 0.203125,
+      "p_holm": 0.609375
+    }
+  ],
+  "malis": [
+    {
+      "seed": 101,
+      "method": "adamw",
+      "value": 0.012241577289929386,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 101,
+      "method": "learned_phase",
+      "value": 0.04367221157681687,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 101,
+      "method": "learned_with_rollback",
+      "value": 0.04367221157681687,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 101,
+      "method": "momentum",
+      "value": 0.06158323284993575,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 101,
+      "method": "random",
+      "value": 0.1418418906803725,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 101,
+      "method": "sgd",
+      "value": 0.5118670681634461,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 211,
+      "method": "adamw",
+      "value": 0.02767180225690571,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 211,
+      "method": "learned_phase",
+      "value": 0.04225123619678831,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 211,
+      "method": "learned_with_rollback",
+      "value": 0.04225123619678831,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 211,
+      "method": "momentum",
+      "value": 0.08880872571568585,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 211,
+      "method": "random",
+      "value": 0.0907544487426501,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 211,
+      "method": "sgd",
+      "value": 0.7151524762471769,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 307,
+      "method": "adamw",
+      "value": 0.03426294452956739,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 307,
+      "method": "learned_phase",
+      "value": 0.026439999850536036,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 307,
+      "method": "learned_with_rollback",
+      "value": 0.022090911874329888,
+      "actions": 128,
+      "gradients": 121,
+      "rollbacks": 7
+    },
+    {
+      "seed": 307,
+      "method": "momentum",
+      "value": 0.0834074649582022,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 307,
+      "method": "random",
+      "value": 0.12563022900000245,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 307,
+      "method": "sgd",
+      "value": 0.6898527075600072,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 401,
+      "method": "adamw",
+      "value": 0.023052981039386262,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 401,
+      "method": "learned_phase",
+      "value": 0.026735458756464395,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 401,
+      "method": "learned_with_rollback",
+      "value": 0.0466843505130809,
+      "actions": 128,
+      "gradients": 114,
+      "rollbacks": 14
+    },
+    {
+      "seed": 401,
+      "method": "momentum",
+      "value": 0.05074119583244979,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 401,
+      "method": "random",
+      "value": 0.10690529992730805,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 401,
+      "method": "sgd",
+      "value": 0.5419878325941568,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 503,
+      "method": "adamw",
+      "value": 0.01797585496981206,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 503,
+      "method": "learned_phase",
+      "value": 0.025083168342376626,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 503,
+      "method": "learned_with_rollback",
+      "value": 0.06202847329081967,
+      "actions": 128,
+      "gradients": 118,
+      "rollbacks": 10
+    },
+    {
+      "seed": 503,
+      "method": "momentum",
+      "value": 0.025562601797015867,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 503,
+      "method": "random",
+      "value": 0.08438325948781265,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 503,
+      "method": "sgd",
+      "value": 0.3986157177035654,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 601,
+      "method": "adamw",
+      "value": 0.02135627038947964,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 601,
+      "method": "learned_phase",
+      "value": 0.05151512386236457,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 601,
+      "method": "learned_with_rollback",
+      "value": 0.06428884153186813,
+      "actions": 128,
+      "gradients": 125,
+      "rollbacks": 3
+    },
+    {
+      "seed": 601,
+      "method": "momentum",
+      "value": 0.0409488536790981,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 601,
+      "method": "random",
+      "value": 0.06770378178093026,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 601,
+      "method": "sgd",
+      "value": 0.4568850244917509,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 701,
+      "method": "adamw",
+      "value": 0.026836978429315993,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 701,
+      "method": "learned_phase",
+      "value": 0.03210413842497944,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 701,
+      "method": "learned_with_rollback",
+      "value": 0.051192830088333495,
+      "actions": 128,
+      "gradients": 100,
+      "rollbacks": 28
+    },
+    {
+      "seed": 701,
+      "method": "momentum",
+      "value": 0.07819456095330928,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 701,
+      "method": "random",
+      "value": 0.0766999071294674,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 701,
+      "method": "sgd",
+      "value": 0.6041558075120753,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 809,
+      "method": "adamw",
+      "value": 0.01332088698559233,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 809,
+      "method": "learned_phase",
+      "value": 0.026421243145542048,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 809,
+      "method": "learned_with_rollback",
+      "value": 0.0479149789015964,
+      "actions": 128,
+      "gradients": 93,
+      "rollbacks": 35
+    },
+    {
+      "seed": 809,
+      "method": "momentum",
+      "value": 0.06254696023949088,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 809,
+      "method": "random",
+      "value": 0.07150992862171003,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    },
+    {
+      "seed": 809,
+      "method": "sgd",
+      "value": 0.3639293800431305,
+      "actions": 128,
+      "gradients": 128,
+      "rollbacks": 0
+    }
+  ]
+}

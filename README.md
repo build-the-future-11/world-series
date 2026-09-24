@@ -4,15 +4,19 @@ Installable research workbench for nine independently testable projects under sh
 
 ## Current status — 24 September 2026
 
-The bounded development execution now includes 80 main run receipts across all
-nine modules, natural binary-digit tasks, an official pretrained Celo2 comparison,
-and a discrete action prototype. The artifact audit passes; results remain
-developmental and include negative findings and 17 failed polynomial rollouts.
-See [current status](docs/execution/development-v2/CURRENT_STATUS.md),
-[complete results](docs/execution/development-v2/RESULTS.md),
-[protocol](docs/execution/development-v2/PROTOCOL.md), and
+The repository now includes the original 80-run development matrix plus
+causal Q-APEN lifecycle, trained WCODE, constrained WFT, structured WPINN and
+conditional CWLNN studies. These remain development evidence, with negative
+findings and all failed trials preserved. CWLNN's learned routing shows no net
+speed/accuracy benefit; WPINN's incomplete primary aggregates remain incomplete.
+
+See the [current paper audit](docs/PAPER_AUDIT.md),
+[proposal-to-implementation map](docs/closure/PROPOSAL_IMPLEMENTATION_MAP.md),
+[active checklist](docs/closure/CHECKLIST_STATUS.json), and
 [working manuscript](docs/execution/development-v2/RESEARCH_DRAFT.md).
-The original September 22 reports are historical, not the current evidence view.
+No submission-ready paper or independent confirmation is claimed.
+Historical numerical source commits are recorded in each campaign; use those
+versions for exact replay instead of running every old audit against latest code.
 
 Run the declared matrices serially from this directory, using a spacious local
 temporary directory and a fresh output path for changed source or configs:
@@ -32,7 +36,7 @@ see [provenance](docs/execution/development-v2/CELO2_PROVENANCE.json).
 Independent confirmation requires the prepared
 [external evaluation handoff](docs/execution/development-v2/INDEPENDENT_EVALUATION_HANDOFF.md).
 
-**This repository is an implementation workbench.** Planning provenance lives in `../world_series_cursor_pack/` (reconstructed from `WORLD_SERIES_COMPLETE_BLUEPRINT.md` because `WORLD_SERIES_CURSOR_PACK.zip` was not present). Planning validators are **not** scientific evidence.
+**This repository is an implementation workbench.** Original project proposals are preserved in `provenance/original-proposals/`; the wider planning pack lives in `../world_series_cursor_pack/` (reconstructed from `WORLD_SERIES_COMPLETE_BLUEPRINT.md` because `WORLD_SERIES_CURSOR_PACK.zip` was not present). Planning validators are **not** scientific evidence.
 
 ## Environment (locked)
 
@@ -81,3 +85,20 @@ python -m world_series validate-config configs/qlearn/invalid.yaml   # exits non
 ## Evidence policy
 
 Software readiness ≠ research outcome. Smoke success does **not** mean `SUPPORTED`. Confirmation stays `DRAFT_NOT_AUTHORIZED` until an external frozen protocol exists. See `docs/EXPERIMENT_PROTOCOL.md` in the planning pack.
+
+## Complete local review package
+
+The builder uses only repository-relative inputs, includes all campaigns/runs
+(including failed and interrupted receipts), and preserves original external
+source evidence under `provenance/`. It excludes environments and external
+Celo2 weights; use the pinned fetch provenance for those weights. License and
+submission approval remain unresolved, so this is a local review artifact.
+
+```bash
+python scripts/build_delivery.py --output deliveries/FRESH_DIRECTORY
+python scripts/verify_delivery.py deliveries/FRESH_DIRECTORY --extract FRESH_EXTRACT_DIRECTORY
+```
+
+Outputs must be fresh. Archive integrity and extraction do not replace clean
+experimental reproduction or scientific review. Historical absolute paths in
+immutable receipts are provenance fields, not input requirements of the builder.

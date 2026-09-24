@@ -1,0 +1,22 @@
+[
+  {
+    "path": "world-series/campaigns/development-v2/worker.lock",
+    "state": "unheld_at_check"
+  },
+  {
+    "path": "world-series/campaigns/development-v2-profile/worker.lock",
+    "state": "unheld_at_check"
+  },
+  {
+    "path": "world-series/campaigns/discrete-malis-v1/worker.lock",
+    "state": "unheld_at_check"
+  },
+  {
+    "path": "world-series/campaigns/natural-digits-sensitivity-v1/worker.lock",
+    "state": "unheld_at_check"
+  },
+  {
+    "path": "world-series/campaigns/natural-digits-v1/worker.lock",
+    "state": "unheld_at_check"
+  }
+]
