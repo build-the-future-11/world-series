@@ -28,7 +28,7 @@ Weighted-path noise/sample/size matrix uses matched Laplacian targets. Unit-weig
 
 ## wpinn
 **BENCHMARKED / INCONCLUSIVE**
-Three laws and three noise levels; independent held initial conditions. All polynomial terms evaluated with bounded integration. Seventeen failed rollouts remain in denominators; affected means are absent. All 288 saved fits were reconstructed and the 17 failures have conditioning/support diagnostics; causal failure attribution is still open.
+Three laws and three noise levels; independent held initial conditions. All polynomial terms evaluated with bounded integration. Seventeen failed rollouts remain in denominators; affected means are absent. All 288 saved fits were reconstructed and the 17 failures have conditioning/support diagnostics; causal failure attribution is still open. A later 120-cell, twelve-method study includes learned observation fields, analytic weak quadrature, physical constraints and official PySINDy controls. All 6,720 rollouts and 1,440 threshold selections replay exactly. Unconstrained neural weak fitting fails in 21 cells; passive fitting fails in three. Primary aggregates with failures remain incomplete. Implicit-solver diagnostics resolve the four passive work-cap failures without changing original values. No complete advantage, joint physics-training, held-law or PDE claim. See docs/closure/WPINN_RESULTS.md.
 
 ## cwlnn
 **BENCHMARKED / INCONCLUSIVE**

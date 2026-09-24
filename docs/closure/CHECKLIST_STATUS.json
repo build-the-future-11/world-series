@@ -481,64 +481,64 @@
       "id": "WP01",
       "status": "OPEN",
       "requirement": "Diagnose all 17 saved rollout failures and preserve their original receipts; separate conditioning, support-selection, quadrature, model and integration failures.",
-      "evidence": null,
-      "scope": "Original checklist requirement; no implied completion of adjacent items"
+      "evidence": "docs/closure/WPINN_RESULTS.md; WPINN_DIAGNOSTIC_RESULTS.md",
+      "scope": "Progress only. Original broad requirement remains open; diagnostics do not establish exclusive conditioning/support causes, held-law validity, PDE discovery or strong-comparator superiority."
     },
     {
       "id": "WP02",
       "status": "OPEN",
       "requirement": "Check identifiability/excitation, library scaling, quadrature accuracy and support recovery across sampling/noise conditions.",
-      "evidence": null,
-      "scope": "Original checklist requirement; no implied completion of adjacent items"
+      "evidence": "docs/closure/WPINN_RESULTS.md; WPINN_DIAGNOSTIC_RESULTS.md",
+      "scope": "Progress only. Original broad requirement remains open; diagnostics do not establish exclusive conditioning/support causes, held-law validity, PDE discovery or strong-comparator superiority."
     },
     {
       "id": "WP03",
       "status": "OPEN",
       "requirement": "Implement the proposed valid physical-structure intervention, including dissipation/conservation only where its assumptions hold; implement any neural field required by the retained claim.",
-      "evidence": null,
-      "scope": "Original checklist requirement; no implied completion of adjacent items"
+      "evidence": "docs/closure/WPINN_RESULTS.md; WPINN_DIAGNOSTIC_RESULTS.md",
+      "scope": "Progress only. Original broad requirement remains open; diagnostics do not establish exclusive conditioning/support causes, held-law validity, PDE discovery or strong-comparator superiority."
     },
     {
       "id": "WP04",
       "status": "OPEN",
       "requirement": "Qualify SINDy/WSINDy and other genuinely comparable baselines; match observations, libraries and tuning while labeling known-support privileges.",
-      "evidence": null,
-      "scope": "Original checklist requirement; no implied completion of adjacent items"
+      "evidence": "docs/closure/WPINN_RESULTS.md; WPINN_DIAGNOSTIC_RESULTS.md",
+      "scope": "Progress only. Original broad requirement remains open; diagnostics do not establish exclusive conditioning/support causes, held-law validity, PDE discovery or strong-comparator superiority."
     },
     {
       "id": "WP05",
-      "status": "OPEN",
+      "status": "COMPLETE",
       "requirement": "Complete weak-form, sparsity, smoothing and structure ablations with deliberately wrong-constraint controls.",
-      "evidence": null,
-      "scope": "Original checklist requirement; no implied completion of adjacent items"
+      "evidence": "docs/closure/WPINN_RESULTS.md; WPINN_RESULTS.json; WPINN_PROTOCOL.md",
+      "scope": "120-cell finite oscillator development study; 12 methods, 6720 replayed rollouts. No joint physics-trained neural field, held-law or PDE claim."
     },
     {
       "id": "WP06",
       "status": "OPEN",
       "requirement": "Evaluate independent complete trajectories, initial conditions, held physical parameters/laws and required sampling/noise/missingness regimes.",
-      "evidence": null,
-      "scope": "Original checklist requirement; no implied completion of adjacent items"
+      "evidence": "docs/closure/WPINN_RESULTS.md; WPINN_DIAGNOSTIC_RESULTS.md",
+      "scope": "Progress only. Original broad requirement remains open; diagnostics do not establish exclusive conditioning/support causes, held-law validity, PDE discovery or strong-comparator superiority."
     },
     {
       "id": "WP07",
       "status": "OPEN",
       "requirement": "Run the full proposed PDE evaluations if a PDE-discovery claim is retained; oscillator tests do not satisfy that requirement.",
-      "evidence": null,
-      "scope": "Original checklist requirement; no implied completion of adjacent items"
+      "evidence": "docs/closure/WPINN_RESULTS.md; WPINN_DIAGNOSTIC_RESULTS.md",
+      "scope": "Progress only. Original broad requirement remains open; diagnostics do not establish exclusive conditioning/support causes, held-law validity, PDE discovery or strong-comparator superiority."
     },
     {
       "id": "WP08",
-      "status": "OPEN",
+      "status": "COMPLETE",
       "requirement": "Integrate every fitted term, report support/coefficient and held-rollout errors, and retain all failures under a fixed failure-aware estimator.",
-      "evidence": null,
-      "scope": "Original checklist requirement; no implied completion of adjacent items"
+      "evidence": "docs/closure/WPINN_RESULTS.md; WPINN_RESULTS.json; WPINN_PROTOCOL.md",
+      "scope": "120-cell finite oscillator development study; 12 methods, 6720 replayed rollouts. No joint physics-trained neural field, held-law or PDE claim."
     },
     {
       "id": "WP09",
       "status": "OPEN",
       "requirement": "Establish valid-structure benefit beyond strong weak discovery, or a scientifically distinct negative/identifiability result.",
-      "evidence": null,
-      "scope": "Original checklist requirement; no implied completion of adjacent items"
+      "evidence": "docs/closure/WPINN_RESULTS.md; WPINN_DIAGNOSTIC_RESULTS.md",
+      "scope": "Progress only. Original broad requirement remains open; diagnostics do not establish exclusive conditioning/support causes, held-law validity, PDE discovery or strong-comparator superiority."
     },
     {
       "id": "CW01",
@@ -1017,6 +1017,6 @@
       "scope": "Original checklist requirement; no implied completion of adjacent items"
     }
   ],
-  "complete": 21,
-  "open": 124
+  "complete": 23,
+  "open": 122
 }

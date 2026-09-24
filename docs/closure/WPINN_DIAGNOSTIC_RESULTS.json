@@ -1,0 +1,17 @@
+{
+  "source_commit": "e6401b8",
+  "raw_path": "campaigns/wpinn-diagnostics-v1/results.json",
+  "raw_sha256": "f2abce679b109a6da3905669f4466a66004f294bdbf51b2c2713a1110c3bf8bd",
+  "historical_failures": 17,
+  "solver_successes": {
+    "RK45": 0,
+    "DOP853": 0,
+    "Radau": 0
+  },
+  "oracle_intervention_successes": {
+    "remove_quadratic": 16,
+    "replace_linear_with_truth": 3
+  },
+  "quadrature_factorial_cells": 40,
+  "quadrature_factorial_successes": 0
+}

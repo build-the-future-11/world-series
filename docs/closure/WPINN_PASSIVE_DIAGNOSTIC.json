@@ -1,0 +1,162 @@
+{
+  "rows": [
+    {
+      "cell": "2539_1_4",
+      "held_index": 3,
+      "original": {
+        "status": "failed",
+        "reason": "rhs_budget",
+        "calls": 6001,
+        "method": "RK45",
+        "value": null
+      },
+      "coefficients": [
+        0.0,
+        -0.8620316151023643,
+        -5.662695246731241e-15,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -143.97445372870806,
+        0.0,
+        -8.386861676396063e-13
+      ],
+      "retries": {
+        "Radau": {
+          "status": "ok",
+          "calls": 1740,
+          "method": "Radau",
+          "value": 4.9970290272688995,
+          "max_energy_increase": -0.00032258182158928506
+        },
+        "BDF": {
+          "status": "ok",
+          "calls": 499,
+          "method": "BDF",
+          "value": 4.997029011024714,
+          "max_energy_increase": -0.0003225815549523503
+        }
+      }
+    },
+    {
+      "cell": "2539_2_4",
+      "held_index": 3,
+      "original": {
+        "status": "failed",
+        "reason": "rhs_budget",
+        "calls": 6001,
+        "method": "RK45",
+        "value": null
+      },
+      "coefficients": [
+        0.0,
+        -3.1703778282515485,
+        -1.1445274469901156e-12,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -580.3782693269039,
+        0.0,
+        -6.4325940638414e-13
+      ],
+      "retries": {
+        "Radau": {
+          "status": "ok",
+          "calls": 1769,
+          "method": "Radau",
+          "value": 0.9422815175933497,
+          "max_energy_increase": -0.001082392427223855
+        },
+        "BDF": {
+          "status": "ok",
+          "calls": 519,
+          "method": "BDF",
+          "value": 0.9422815015461846,
+          "max_energy_increase": -0.0010823923161435989
+        }
+      }
+    },
+    {
+      "cell": "2549_2_4",
+      "held_index": 3,
+      "original": {
+        "status": "failed",
+        "reason": "rhs_budget",
+        "calls": 6001,
+        "method": "RK45",
+        "value": null
+      },
+      "coefficients": [
+        0.0,
+        -1.4922351620807852,
+        -6.4017458683170954e-12,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -266.84234289269125,
+        0.0,
+        -1.9381008617576553e-10
+      ],
+      "retries": {
+        "Radau": {
+          "status": "ok",
+          "calls": 1754,
+          "method": "Radau",
+          "value": 3.686567137905952,
+          "max_energy_increase": -0.0005215535939768756
+        },
+        "BDF": {
+          "status": "ok",
+          "calls": 507,
+          "method": "BDF",
+          "value": 3.686567024838542,
+          "max_energy_increase": -0.000521549719673331
+        }
+      }
+    },
+    {
+      "cell": "2549_2_4",
+      "held_index": 4,
+      "original": {
+        "status": "failed",
+        "reason": "rhs_budget",
+        "calls": 6001,
+        "method": "RK45",
+        "value": null
+      },
+      "coefficients": [
+        0.0,
+        -1.4922351620807852,
+        -6.4017458683170954e-12,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -266.84234289269125,
+        0.0,
+        -1.9381008617576553e-10
+      ],
+      "retries": {
+        "Radau": {
+          "status": "ok",
+          "calls": 900,
+          "method": "Radau",
+          "value": 1.816529749784019,
+          "max_energy_increase": -0.0005027602271929776
+        },
+        "BDF": {
+          "status": "ok",
+          "calls": 337,
+          "method": "BDF",
+          "value": 1.8165297268361498,
+          "max_energy_increase": -0.000502760227135246
+        }
+      }
+    }
+  ],
+  "scope": "Post-study Radau/BDF retries of all four failed held trajectories in three passive cells. Same 6000-call and state caps. Original primary failures remain unchanged.",
+  "raw_sha256": "0b45b2551e85dd12bb91656cc5f3035da3113645ba2afc09a0723653f49e795a"
+}

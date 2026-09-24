@@ -84,3 +84,30 @@ and must not be inferred from this stage. Use original-paper/official-source
 qualification for SINDy/WSINDy before describing a comparator as a reproduction.
 Also finish diagnosis of conditioning, support, quadrature and integration
 separately; a correlation table alone cannot establish causes of old failures.
+
+## WPINN development stage completed; next target is CWLNN
+
+Candidate de5df5e completes 120 cells, twelve methods, 240 learned observation
+fields, 600 disjoint trajectories and 1,440 selected model evaluations. The
+audit exactly replays 6,720 rollouts and every threshold choice, reloads all
+240 fields, verifies 720 files, and reproduces one full 400-step training trace.
+The original 17 failures persist across three integrators; removing fitted
+quadratic terms allows 16 to integrate, while quadrature/test-derivative changes
+rescue none of ten weak failures. These are bounded retrospective interventions,
+not exclusive conditioning/support causal attribution.
+
+Most new primary aggregates remain incomplete: unconstrained neural weak has
+21 failed cells; passive has three. All four passive held failures complete
+under Radau/BDF with decreasing energy but substantial prediction error; retain
+the original RK45 work-cap failures. No complete performance advantage is shown.
+WP05/WP08 complete within the finite oscillator scope. Checklist now 23 complete,
+122 open. WPINN's broader identification, joint-physics architecture decision,
+held-law, PDE and novelty requirements remain explicit/open.
+
+Next implement genuinely conditional learned CWLNN routing with matched trained
+controls, public structural hierarchy, full routing/setup costs, permutation and
+batch-boundary tests, held sizes/topologies and a nonhierarchical task. Current
+code masks already-computed coarse features and cannot claim compute savings.
+All WPINN numerical jobs and audits are finished. Do not overwrite earlier
+campaigns or delivery. Follow with collection-wide claim reconciliation, complete
+portable packaging, substantive original-paper novelty work and manuscript work.

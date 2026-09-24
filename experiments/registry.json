@@ -91,6 +91,16 @@
       "status": "DRAFT_NOT_AUTHORIZED",
       "primary_metric": "relative_mass_weighted_frozen_transfer_error",
       "notes": "Executed finite equitable-graph development only; docs/closure/WFT_PROTOCOL.md and WFT_RESULTS.md. No external confirmation."
+    },
+    {
+      "protocol_id": "WS-WPINN-STRUCTURED-20260924-v1-dev",
+      "project": "wpinn",
+      "status": "DRAFT_NOT_AUTHORIZED",
+      "primary_metric": "all_term_held_initial_condition_rollout_mse_with_failures",
+      "notes": "120 cells / 12 methods. Original failures retained; most primary means incomplete. Neural fields fit observations only; official PySINDy qualified. No held-law or PDE claim.",
+      "protocol": "docs/closure/WPINN_PROTOCOL.md",
+      "results": "docs/closure/WPINN_RESULTS.json",
+      "source_commit": "de5df5e"
     }
   ]
 }

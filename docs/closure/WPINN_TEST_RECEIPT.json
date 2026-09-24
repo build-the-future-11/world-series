@@ -1,0 +1,8 @@
+{
+  "command": "rtk proxy env TMPDIR=<repository>/.work-tmp OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 .venv/bin/python -m pytest -q",
+  "passed": 88,
+  "warnings": [
+    "Existing QLearn test converts a requires-grad tensor to float."
+  ],
+  "scope": "Full suite executed after structured.py and six new mechanism tests; later study/analysis scripts additionally validated by actual execution and replay."
+}
