@@ -1,3 +1,5 @@
+> Update, 24 September 2026: this historical report is superseded for current completion status by development-v2/CURRENT_STATUS.md. All 400 original learned-policy meta-training trials now replay exactly, including optimizer state, counters, histories and expected failures; see development-v2/META_TRAINING_REPLAY.json. Natural-digit studies, additional comparators, bounded discrete actions and hash-verified campaign resume are now executed. Independent confirmation remains outstanding. Historical findings below are preserved.
+
 # Neural development v1: results and evidence
 
 Run `20260923T231444_deaee7ec`; completed 23 September 2026. Scientific outcome: **INCONCLUSIVE**. This is a completed constructed-task development matrix, not confirmation or completion of Quantum Learning/MALIS or the World Series portfolio.

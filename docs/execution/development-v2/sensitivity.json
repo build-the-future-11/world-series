@@ -1,0 +1,802 @@
+{
+  "scope": "Wider-grid and 3x meta-step development sensitivity on reused tasks; not independent confirmation.",
+  "expected_trials": 432,
+  "expected_evaluation_trajectories": 432,
+  "failed_tuning_trials": [
+    {
+      "seed": 101,
+      "method": "sgd",
+      "trial": 5,
+      "failure": null
+    },
+    {
+      "seed": 101,
+      "method": "momentum",
+      "trial": 5,
+      "failure": null
+    },
+    {
+      "seed": 211,
+      "method": "sgd",
+      "trial": 5,
+      "failure": null
+    },
+    {
+      "seed": 211,
+      "method": "momentum",
+      "trial": 5,
+      "failure": null
+    },
+    {
+      "seed": 307,
+      "method": "sgd",
+      "trial": 5,
+      "failure": null
+    },
+    {
+      "seed": 307,
+      "method": "momentum",
+      "trial": 5,
+      "failure": null
+    },
+    {
+      "seed": 401,
+      "method": "sgd",
+      "trial": 5,
+      "failure": null
+    },
+    {
+      "seed": 401,
+      "method": "momentum",
+      "trial": 5,
+      "failure": null
+    },
+    {
+      "seed": 503,
+      "method": "sgd",
+      "trial": 5,
+      "failure": null
+    },
+    {
+      "seed": 503,
+      "method": "momentum",
+      "trial": 5,
+      "failure": null
+    },
+    {
+      "seed": 601,
+      "method": "sgd",
+      "trial": 5,
+      "failure": null
+    },
+    {
+      "seed": 601,
+      "method": "momentum",
+      "trial": 5,
+      "failure": null
+    },
+    {
+      "seed": 701,
+      "method": "sgd",
+      "trial": 5,
+      "failure": null
+    },
+    {
+      "seed": 701,
+      "method": "momentum",
+      "trial": 5,
+      "failure": null
+    },
+    {
+      "seed": 809,
+      "method": "sgd",
+      "trial": 5,
+      "failure": null
+    },
+    {
+      "seed": 809,
+      "method": "momentum",
+      "trial": 5,
+      "failure": null
+    }
+  ],
+  "verified_trials": 432,
+  "verified_trajectories": 432,
+  "failed_evaluation_trajectories": 4,
+  "failed_evaluation_rows": [
+    {
+      "seed": 211,
+      "method": "full",
+      "task_id": "evaluation/digits89/seed211",
+      "horizon": 32,
+      "complete": true,
+      "diverged": true
+    },
+    {
+      "seed": 211,
+      "method": "no_budget",
+      "task_id": "evaluation/digits89/seed211",
+      "horizon": 32,
+      "complete": true,
+      "diverged": true
+    },
+    {
+      "seed": 503,
+      "method": "full",
+      "task_id": "evaluation/digits89/seed503",
+      "horizon": 32,
+      "complete": true,
+      "diverged": true
+    },
+    {
+      "seed": 503,
+      "method": "reset_state",
+      "task_id": "evaluation/digits89/seed503",
+      "horizon": 32,
+      "complete": true,
+      "diverged": true
+    }
+  ],
+  "artifact_and_auc_audit_passed": true,
+  "run_index": [
+    {
+      "run_id": "20260924T103954_9039d6e2",
+      "seed": 101,
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": false,
+        "git_head": "fa56c4c35062a268f0a0204adb130c8f20b98b07",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "run_id": "20260924T104011_dd8fc7e3",
+      "seed": 211,
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": false,
+        "git_head": "fa56c4c35062a268f0a0204adb130c8f20b98b07",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "run_id": "20260924T104030_9445bc99",
+      "seed": 307,
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": false,
+        "git_head": "fa56c4c35062a268f0a0204adb130c8f20b98b07",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "run_id": "20260924T104048_808c0128",
+      "seed": 401,
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "fa56c4c35062a268f0a0204adb130c8f20b98b07",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "run_id": "20260924T104103_ace59231",
+      "seed": 503,
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "fa56c4c35062a268f0a0204adb130c8f20b98b07",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "run_id": "20260924T104119_3d67f86a",
+      "seed": 601,
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "fa56c4c35062a268f0a0204adb130c8f20b98b07",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "run_id": "20260924T104134_931bd910",
+      "seed": 701,
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "fa56c4c35062a268f0a0204adb130c8f20b98b07",
+        "note": "A content hash is not a Git commit."
+      }
+    },
+    {
+      "run_id": "20260924T104150_303bbf53",
+      "seed": 809,
+      "source": {
+        "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+        "git_dirty": true,
+        "git_head": "fa56c4c35062a268f0a0204adb130c8f20b98b07",
+        "note": "A content hash is not a Git commit."
+      }
+    }
+  ],
+  "per_seed": {
+    "adamw": [
+      {
+        "seed": 101,
+        "auc": 8.827425890893517,
+        "accuracy": 0.9583333333333333,
+        "final_loss": 0.1689644783341682
+      },
+      {
+        "seed": 211,
+        "auc": 5.795981786919253,
+        "accuracy": 0.9791666666666667,
+        "final_loss": 0.08219466422526238
+      },
+      {
+        "seed": 307,
+        "auc": 6.436558794584782,
+        "accuracy": 0.96875,
+        "final_loss": 0.0987998768209503
+      },
+      {
+        "seed": 401,
+        "auc": 4.9325435842882435,
+        "accuracy": 0.9791666666666667,
+        "final_loss": 0.04810345937060171
+      },
+      {
+        "seed": 503,
+        "auc": 5.015005975606507,
+        "accuracy": 0.9895833333333333,
+        "final_loss": 0.02725775318519554
+      },
+      {
+        "seed": 601,
+        "auc": 8.301075171139336,
+        "accuracy": 0.9583333333333333,
+        "final_loss": 0.10095205654597196
+      },
+      {
+        "seed": 701,
+        "auc": 5.293512882372666,
+        "accuracy": 0.9895833333333333,
+        "final_loss": 0.05238413473252117
+      },
+      {
+        "seed": 809,
+        "auc": 6.713785120950041,
+        "accuracy": 0.9791666666666667,
+        "final_loss": 0.07175420774940904
+      }
+    ],
+    "feedforward": [
+      {
+        "seed": 101,
+        "auc": 12.726092763278132,
+        "accuracy": 0.9479166666666667,
+        "final_loss": 0.15467008593023412
+      },
+      {
+        "seed": 211,
+        "auc": 17.93030241767896,
+        "accuracy": 0.9791666666666667,
+        "final_loss": 0.12056052841708975
+      },
+      {
+        "seed": 307,
+        "auc": 13.578980626134138,
+        "accuracy": 0.9583333333333333,
+        "final_loss": 0.13257317097147084
+      },
+      {
+        "seed": 401,
+        "auc": 14.569792862354848,
+        "accuracy": 0.9791666666666667,
+        "final_loss": 0.09052738538261632
+      },
+      {
+        "seed": 503,
+        "auc": 17.85587690879664,
+        "accuracy": 0.96875,
+        "final_loss": 0.1072174362166332
+      },
+      {
+        "seed": 601,
+        "auc": 21.05147173140956,
+        "accuracy": 0.75,
+        "final_loss": 0.5707012143084759
+      },
+      {
+        "seed": 701,
+        "auc": 19.521177113037275,
+        "accuracy": 0.96875,
+        "final_loss": 0.1683204395602065
+      },
+      {
+        "seed": 809,
+        "auc": 13.963180191640916,
+        "accuracy": 0.8645833333333333,
+        "final_loss": 0.39923289882448887
+      }
+    ],
+    "full": [
+      {
+        "seed": 101,
+        "auc": 16.282447387879422,
+        "accuracy": 0.9583333333333333,
+        "final_loss": 0.3332360596777362
+      },
+      {
+        "seed": 211,
+        "auc": null,
+        "accuracy": null,
+        "final_loss": null
+      },
+      {
+        "seed": 307,
+        "auc": 18.157338852058935,
+        "accuracy": 0.9479166666666667,
+        "final_loss": 0.3096744706759103
+      },
+      {
+        "seed": 401,
+        "auc": 16.030952205063596,
+        "accuracy": 0.9479166666666667,
+        "final_loss": 0.2901004299549469
+      },
+      {
+        "seed": 503,
+        "auc": null,
+        "accuracy": null,
+        "final_loss": null
+      },
+      {
+        "seed": 601,
+        "auc": 15.07489005686535,
+        "accuracy": 0.9583333333333333,
+        "final_loss": 0.13811776200723844
+      },
+      {
+        "seed": 701,
+        "auc": 15.006081292439859,
+        "accuracy": 0.9895833333333333,
+        "final_loss": 0.08356893561402698
+      },
+      {
+        "seed": 809,
+        "auc": 14.945584588912773,
+        "accuracy": 0.71875,
+        "final_loss": 0.491039097427215
+      }
+    ],
+    "initialization_only": [
+      {
+        "seed": 101,
+        "auc": 11.610064064728139,
+        "accuracy": 0.96875,
+        "final_loss": 0.2057624876897105
+      },
+      {
+        "seed": 211,
+        "auc": 14.113610083774107,
+        "accuracy": 0.9583333333333334,
+        "final_loss": 0.23677442051797853
+      },
+      {
+        "seed": 307,
+        "auc": 17.575559564269582,
+        "accuracy": 0.8958333333333333,
+        "final_loss": 0.33516948482915343
+      },
+      {
+        "seed": 401,
+        "auc": 12.498502222026309,
+        "accuracy": 0.9791666666666667,
+        "final_loss": 0.16474147044388576
+      },
+      {
+        "seed": 503,
+        "auc": 14.418652740282262,
+        "accuracy": 0.9270833333333334,
+        "final_loss": 0.2781571013169346
+      },
+      {
+        "seed": 601,
+        "auc": 14.710403331423501,
+        "accuracy": 0.8958333333333334,
+        "final_loss": 0.29491080648731016
+      },
+      {
+        "seed": 701,
+        "auc": 13.198542909880176,
+        "accuracy": 0.9479166666666667,
+        "final_loss": 0.20139035216396312
+      },
+      {
+        "seed": 809,
+        "auc": 12.680825632391834,
+        "accuracy": 0.90625,
+        "final_loss": 0.24391619752800653
+      }
+    ],
+    "momentum": [
+      {
+        "seed": 101,
+        "auc": 9.201189592994783,
+        "accuracy": 0.96875,
+        "final_loss": 0.13248004523877677
+      },
+      {
+        "seed": 211,
+        "auc": 8.504797215040613,
+        "accuracy": 0.9791666666666667,
+        "final_loss": 0.09869903784944124
+      },
+      {
+        "seed": 307,
+        "auc": 8.074666070637765,
+        "accuracy": 0.9583333333333333,
+        "final_loss": 0.07193964131176042
+      },
+      {
+        "seed": 401,
+        "auc": 6.872287936308252,
+        "accuracy": 1.0,
+        "final_loss": 0.03861138207441692
+      },
+      {
+        "seed": 503,
+        "auc": 8.975763981338396,
+        "accuracy": 0.9895833333333333,
+        "final_loss": 0.055902772267285857
+      },
+      {
+        "seed": 601,
+        "auc": 7.4857920331358745,
+        "accuracy": 1.0,
+        "final_loss": 0.07552106868996568
+      },
+      {
+        "seed": 701,
+        "auc": 7.386079686053366,
+        "accuracy": 0.9895833333333333,
+        "final_loss": 0.047397181885098116
+      },
+      {
+        "seed": 809,
+        "auc": 7.414025851087473,
+        "accuracy": 1.0,
+        "final_loss": 0.06607151643835264
+      }
+    ],
+    "no_budget": [
+      {
+        "seed": 101,
+        "auc": 15.61175488184216,
+        "accuracy": 0.7395833333333334,
+        "final_loss": 1.1800356198467146
+      },
+      {
+        "seed": 211,
+        "auc": null,
+        "accuracy": null,
+        "final_loss": null
+      },
+      {
+        "seed": 307,
+        "auc": 17.160698984198067,
+        "accuracy": 0.9479166666666667,
+        "final_loss": 0.15160842232539531
+      },
+      {
+        "seed": 401,
+        "auc": 18.216698551498414,
+        "accuracy": 0.9791666666666667,
+        "final_loss": 0.08346773047001849
+      },
+      {
+        "seed": 503,
+        "auc": 18.952984305861875,
+        "accuracy": 0.9791666666666667,
+        "final_loss": 0.22577834121679086
+      },
+      {
+        "seed": 601,
+        "auc": 15.805273143821218,
+        "accuracy": 0.96875,
+        "final_loss": 0.24892082593114803
+      },
+      {
+        "seed": 701,
+        "auc": 14.319459204695399,
+        "accuracy": 0.9895833333333333,
+        "final_loss": 0.09675683270485065
+      },
+      {
+        "seed": 809,
+        "auc": 21.108275320550817,
+        "accuracy": 0.96875,
+        "final_loss": 0.1531983370472977
+      }
+    ],
+    "no_gates": [
+      {
+        "seed": 101,
+        "auc": 13.112199254912678,
+        "accuracy": 0.9479166666666667,
+        "final_loss": 0.29165358000705016
+      },
+      {
+        "seed": 211,
+        "auc": 10.591987431532178,
+        "accuracy": 0.9791666666666667,
+        "final_loss": 0.18982840389515457
+      },
+      {
+        "seed": 307,
+        "auc": 12.992099379403939,
+        "accuracy": 0.9583333333333333,
+        "final_loss": 0.31603063211759136
+      },
+      {
+        "seed": 401,
+        "auc": 12.112241932595996,
+        "accuracy": 0.9791666666666667,
+        "final_loss": 0.18743141548398443
+      },
+      {
+        "seed": 503,
+        "auc": 11.528106476354411,
+        "accuracy": 0.9583333333333333,
+        "final_loss": 0.12605760961053095
+      },
+      {
+        "seed": 601,
+        "auc": 12.353798287046644,
+        "accuracy": 0.9583333333333333,
+        "final_loss": 0.23088429682087924
+      },
+      {
+        "seed": 701,
+        "auc": 11.216717333211559,
+        "accuracy": 0.75,
+        "final_loss": 0.9608235714934498
+      },
+      {
+        "seed": 809,
+        "auc": 12.217405419108776,
+        "accuracy": 0.9791666666666667,
+        "final_loss": 0.1319516271695942
+      }
+    ],
+    "reset_state": [
+      {
+        "seed": 101,
+        "auc": 12.731876125976484,
+        "accuracy": 0.9479166666666667,
+        "final_loss": 0.17517466622526487
+      },
+      {
+        "seed": 211,
+        "auc": 18.48115086484356,
+        "accuracy": 0.9791666666666667,
+        "final_loss": 0.20631803546364189
+      },
+      {
+        "seed": 307,
+        "auc": 13.443927813076927,
+        "accuracy": 0.9583333333333333,
+        "final_loss": 0.14460208648484252
+      },
+      {
+        "seed": 401,
+        "auc": 16.44089058928093,
+        "accuracy": 0.9791666666666667,
+        "final_loss": 0.2795889761834579
+      },
+      {
+        "seed": 503,
+        "auc": null,
+        "accuracy": null,
+        "final_loss": null
+      },
+      {
+        "seed": 601,
+        "auc": 15.689694495491853,
+        "accuracy": 0.8645833333333333,
+        "final_loss": 0.4140964207622735
+      },
+      {
+        "seed": 701,
+        "auc": 12.101036060953772,
+        "accuracy": 0.9791666666666667,
+        "final_loss": 0.12686308547858371
+      },
+      {
+        "seed": 809,
+        "auc": 11.766358344226106,
+        "accuracy": 0.9791666666666667,
+        "final_loss": 0.13218406718285264
+      }
+    ],
+    "sgd": [
+      {
+        "seed": 101,
+        "auc": 13.009896751825707,
+        "accuracy": 0.9479166666666667,
+        "final_loss": 0.2278851093425299
+      },
+      {
+        "seed": 211,
+        "auc": 10.579906758206393,
+        "accuracy": 0.9791666666666667,
+        "final_loss": 0.1505599580776566
+      },
+      {
+        "seed": 307,
+        "auc": 13.084195779876586,
+        "accuracy": 0.96875,
+        "final_loss": 0.2649526032647484
+      },
+      {
+        "seed": 401,
+        "auc": 12.343127105196844,
+        "accuracy": 0.9791666666666667,
+        "final_loss": 0.18512509721973944
+      },
+      {
+        "seed": 503,
+        "auc": 11.465422471446002,
+        "accuracy": 0.9583333333333333,
+        "final_loss": 0.12631943349039493
+      },
+      {
+        "seed": 601,
+        "auc": 12.373086773598681,
+        "accuracy": 0.96875,
+        "final_loss": 0.22903733138240626
+      },
+      {
+        "seed": 701,
+        "auc": 10.74440028873201,
+        "accuracy": 0.75,
+        "final_loss": 1.286618095020672
+      },
+      {
+        "seed": 809,
+        "auc": 12.04923060315766,
+        "accuracy": 0.9791666666666667,
+        "final_loss": 0.13367452653842235
+      }
+    ]
+  },
+  "table": [
+    {
+      "method": "adamw",
+      "seeds": 8,
+      "primary_auc": 6.414486150844294,
+      "sensitivity_auc": 6.414486150844294,
+      "sensitivity_final_loss": 0.08130132887051003,
+      "sensitivity_accuracy": 0.9752604166666667,
+      "selected_upper_boundary": 0,
+      "selected_lower_boundary": 0
+    },
+    {
+      "method": "feedforward",
+      "seeds": 8,
+      "primary_auc": 13.123861841337943,
+      "sensitivity_auc": 16.399609326791307,
+      "sensitivity_final_loss": 0.21797539495140195,
+      "sensitivity_accuracy": 0.9270833333333333,
+      "selected_upper_boundary": 7,
+      "selected_lower_boundary": 0
+    },
+    {
+      "method": "full",
+      "seeds": 8,
+      "primary_auc": 13.280946872115056,
+      "sensitivity_auc": null,
+      "sensitivity_final_loss": null,
+      "sensitivity_accuracy": null,
+      "selected_upper_boundary": 5,
+      "selected_lower_boundary": 0
+    },
+    {
+      "method": "initialization_only",
+      "seeds": 8,
+      "primary_auc": 17.26017799578648,
+      "sensitivity_auc": 13.85077006859699,
+      "sensitivity_final_loss": 0.24510279012211783,
+      "sensitivity_accuracy": 0.9348958333333334,
+      "selected_upper_boundary": 1,
+      "selected_lower_boundary": 0
+    },
+    {
+      "method": "momentum",
+      "seeds": 8,
+      "primary_auc": 7.989325295824565,
+      "sensitivity_auc": 7.989325295824565,
+      "sensitivity_final_loss": 0.0733278307193872,
+      "sensitivity_accuracy": 0.9856770833333333,
+      "selected_upper_boundary": 0,
+      "selected_lower_boundary": 0
+    },
+    {
+      "method": "no_budget",
+      "seeds": 8,
+      "primary_auc": 13.261560835932713,
+      "sensitivity_auc": null,
+      "sensitivity_final_loss": null,
+      "sensitivity_accuracy": null,
+      "selected_upper_boundary": 5,
+      "selected_lower_boundary": 0
+    },
+    {
+      "method": "no_gates",
+      "seeds": 8,
+      "primary_auc": 14.01598799361889,
+      "sensitivity_auc": 12.015569439270772,
+      "sensitivity_final_loss": 0.30433264207477934,
+      "sensitivity_accuracy": 0.9388020833333333,
+      "selected_upper_boundary": 8,
+      "selected_lower_boundary": 0
+    },
+    {
+      "method": "reset_state",
+      "seeds": 8,
+      "primary_auc": 13.592760717067891,
+      "sensitivity_auc": null,
+      "sensitivity_final_loss": null,
+      "sensitivity_accuracy": null,
+      "selected_upper_boundary": 6,
+      "selected_lower_boundary": 0
+    },
+    {
+      "method": "sgd",
+      "seeds": 8,
+      "primary_auc": 11.956158316504986,
+      "sensitivity_auc": 11.956158316504986,
+      "sensitivity_final_loss": 0.3255215192920712,
+      "sensitivity_accuracy": 0.94140625,
+      "selected_upper_boundary": 0,
+      "selected_lower_boundary": 0
+    }
+  ],
+  "selected_trial_counts": {
+    "adamw": {
+      "2": 8
+    },
+    "feedforward": {
+      "5": 7,
+      "4": 1
+    },
+    "full": {
+      "4": 3,
+      "5": 5
+    },
+    "initialization_only": {
+      "3": 4,
+      "5": 1,
+      "4": 3
+    },
+    "momentum": {
+      "3": 8
+    },
+    "no_budget": {
+      "4": 3,
+      "5": 5
+    },
+    "no_gates": {
+      "5": 8
+    },
+    "reset_state": {
+      "5": 6,
+      "4": 2
+    },
+    "sgd": {
+      "3": 8
+    }
+  }
+}

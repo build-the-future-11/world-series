@@ -82,6 +82,17 @@ on AUC in all eight seeds, but that isolated observation does not overturn the
 stronger-baseline result or establish a multiplicity-adjusted general benefit.
 Every horizon and comparator appears in the generated tables.
 
+A separately declared sensitivity study widens selection from four to six
+trials and increases meta-training from four to twelve outer steps on the same
+development tasks. All eight runs and 432 evaluation trajectories are recorded,
+including 16 failed tuning trials and four diverged evaluation trajectories.
+Two full-policy trajectories diverge, as do one no-budget and one reset-state
+trajectory. Their complete required-cell aggregates are therefore absent.
+AdamW and momentum retain their original selections and mean AUCs. This
+follow-up exposes selection/horizon instability; it supplies no optimizer win.
+SENSITIVITY.md preserves every method and remaining grid-edge selection. Since
+both search range and training duration changed, their effects are not isolated.
+
 The causal context-memory stream intervention lowers mean NLL relative to its
 otherwise similar no-memory control in the declared returning-regime stream.
 However, the one-expert memory control has a lower overall mean than the
@@ -120,6 +131,10 @@ raw trajectories, tuning failures, seed-level tables and replay receipts form
 the evidence trail. A successful run is not a supported hypothesis. Same-host
 training or evaluation replay is not independent replication. The independent
 evaluation handoff specifies what an outside reviewer must freeze and return.
+All 400 original learned-policy meta-training trials have now been replayed from
+the archived source and stored task arrays: policy and optimizer state, counters,
+histories and failure status match exactly. META_TRAINING_REPLAY.json records
+this same-host check, separately from the natural-data development studies.
 
 This study is limited by small public task distributions, eight seed units,
 unmatched external pretraining, unrandomized method timing, narrow neural

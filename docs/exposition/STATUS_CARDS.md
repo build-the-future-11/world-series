@@ -4,7 +4,7 @@ Generated from executed development-v2 evidence; see complete protocol and resul
 
 ## qlearn
 **BENCHMARKED / INCONCLUSIVE**
-Eight-seed natural-digit study: 288 tuning trials, 432 trajectories; official pretrained Celo2 adds 48 trajectories. Full mean AUC 13.2809 vs SGD 11.9562, AdamW 6.4145, Celo2 7.7454 at 32 steps. No general optimizer advantage established. Discrete action prototype evaluated separately.
+Eight-seed natural-digit study: 288 tuning trials, 432 trajectories; official pretrained Celo2 adds 48 trajectories. Full mean AUC 13.2809 vs SGD 11.9562, AdamW 6.4145, Celo2 7.7454 at 32 steps. No general optimizer advantage established. Discrete action prototype evaluated separately. Separate eight-seed wider-grid/longer-training follow-up: 432 tuning trials and 432 evaluation trajectories audited. 32-step mean AUC: full INCOMPLETE (failed required trajectories), AdamW 6.4145, momentum 7.9893. Failed tuning trials: 16; diverged/incomplete evaluation trajectories: 4. See SENSITIVITY.md for every method, failed trials and grid boundaries. Original primary results remain unchanged; reused tasks provide development evidence only.
 
 ## qapen
 **BENCHMARKED / INCONCLUSIVE**
@@ -32,7 +32,7 @@ Three laws and three noise levels; independent held initial conditions. All poly
 
 ## cwlnn
 **BENCHMARKED / INCONCLUSIVE**
-Matched-size trained readouts on fixed sparse representations; graph sizes 24/48/96. Aggressive routing hurts the declared diffusion task. No universal-backbone evidence.
+Matched-size trained readouts on fixed sparse representations; graph sizes 24/48/96. Aggressive routing hurts the declared residual-propagation task. No universal-backbone evidence.
 
 ## ultron
 **BENCHMARKED / INCONCLUSIVE**

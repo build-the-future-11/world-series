@@ -4,7 +4,7 @@ Every claim is bounded by PROTOCOL.md and the raw run index. Confirmation remain
 
 ## qlearn
 Status: BENCHMARKED / INCONCLUSIVE
-Eight-seed natural-digit study: 288 tuning trials, 432 trajectories; official pretrained Celo2 adds 48 trajectories. Full mean AUC 13.2809 vs SGD 11.9562, AdamW 6.4145, Celo2 7.7454 at 32 steps. No general optimizer advantage established. Discrete action prototype evaluated separately.
+Eight-seed natural-digit study: 288 tuning trials, 432 trajectories; official pretrained Celo2 adds 48 trajectories. Full mean AUC 13.2809 vs SGD 11.9562, AdamW 6.4145, Celo2 7.7454 at 32 steps. No general optimizer advantage established. Discrete action prototype evaluated separately. Separate eight-seed wider-grid/longer-training follow-up: 432 tuning trials and 432 evaluation trajectories audited. 32-step mean AUC: full INCOMPLETE (failed required trajectories), AdamW 6.4145, momentum 7.9893. Failed tuning trials: 16; diverged/incomplete evaluation trajectories: 4. See SENSITIVITY.md for every method, failed trials and grid boundaries. Original primary results remain unchanged; reused tasks provide development evidence only.
 
 Executed evidence: `runs/20260924T101150_3293b6ce/metrics.json`, `runs/20260924T101337_3dcca138/metrics.json`, `runs/20260924T101408_c64e5cf8/metrics.json`, `runs/20260924T101424_7c1bb9dc/metrics.json`, `runs/20260924T101438_973894fc/metrics.json`, `runs/20260924T101451_a3afb019/metrics.json`, `runs/20260924T101502_a111c875/metrics.json`, `runs/20260924T101513_5c3f6c57/metrics.json`, `runs/20260924T101553_ac358792/metrics.json`, `runs/20260924T101558_f80e0fd7/metrics.json`, `runs/20260924T101601_7a194abc/metrics.json`, `runs/20260924T101604_c919a6e4/metrics.json`, `runs/20260924T101607_715f1f5c/metrics.json`, `runs/20260924T101610_e30b51a5/metrics.json`, `runs/20260924T101612_9f607bbf/metrics.json`, `runs/20260924T101615_67b9ff70/metrics.json`
 Full denominators and method/condition tables: `docs/execution/development-v2/analysis.json`.
@@ -53,7 +53,7 @@ Full denominators and method/condition tables: `docs/execution/development-v2/an
 
 ## cwlnn
 Status: BENCHMARKED / INCONCLUSIVE
-Matched-size trained readouts on fixed sparse representations; graph sizes 24/48/96. Aggressive routing hurts the declared diffusion task. No universal-backbone evidence.
+Matched-size trained readouts on fixed sparse representations; graph sizes 24/48/96. Aggressive routing hurts the declared residual-propagation task. No universal-backbone evidence.
 
 Executed evidence: `runs/20260924T101046_497744e7/metrics.json`, `runs/20260924T101047_ae3add90/metrics.json`, `runs/20260924T101048_32d0cd9d/metrics.json`, `runs/20260924T101049_0971ecfa/metrics.json`, `runs/20260924T101050_8392a88e/metrics.json`, `runs/20260924T101050_d959f8e2/metrics.json`, `runs/20260924T101051_0af6f6f1/metrics.json`, `runs/20260924T101052_3fa5d3c3/metrics.json`
 Full denominators and method/condition tables: `docs/execution/development-v2/analysis.json`.

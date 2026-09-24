@@ -1,0 +1,24 @@
+{
+  "source": {
+    "git_head": "fa56c4c35062a268f0a0204adb130c8f20b98b07",
+    "git_dirty": true,
+    "content_hash": "037b1c7f5ed8781c6622c07c21606b1ae84e90113fd905eeed44eae465038f16",
+    "note": "A content hash is not a Git commit."
+  },
+  "tests": {
+    "command": "env TMPDIR=.work-tmp OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 .venv/bin/python -m pytest tests -q",
+    "exit_code": 0,
+    "passed": 57,
+    "warnings": 1,
+    "output_sha256": "45262d9567279f5beb355a705df33a1c4f1a450b0367e0cc7ac66725a1b22012"
+  },
+  "falsification": {
+    "command": "scripts/falsify_preserved.py --seed 0 --output campaigns/falsify-20260924",
+    "exit_code": 0,
+    "controls": 8,
+    "passed_sanity": true,
+    "historical_unchanged": true,
+    "receipt_sha256": "0bc7629f1edcab3df774595b210662e9fc3c210ca94676c1d7aac488b2b4d806"
+  },
+  "scope": "Local regression and sanity verification; no independent scientific verdict"
+}

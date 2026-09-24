@@ -16,7 +16,7 @@ def main(output):
     bundle=output/'source.bundle'
     subprocess.run(['git','bundle','create',str(bundle.resolve()),'--all'],cwd=ROOT,check=True)
     files['source.bundle']=bundle
-    for folder in ['src','tests','scripts','configs','docs','data']:
+    for folder in ['src','tests','scripts','configs','docs','data','experiments']:
         for path in (ROOT/folder).rglob('*'):
             if path.is_file() and '__pycache__' not in path.parts and path.suffix not in {'.pyc'}:
                 files['repository/'+str(path.relative_to(ROOT))]=path

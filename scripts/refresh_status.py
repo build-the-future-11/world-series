@@ -12,6 +12,18 @@ def main():
     audit=json.loads((REPORT/'AUDIT_RECEIPT.json').read_text())
     replay_path=ROOT/'campaigns/meta-training-replay-v1/summary.json'
     replay=json.loads(replay_path.read_text()) if replay_path.exists() else None
+    sensitivity_path=REPORT/'sensitivity.json'
+    sensitivity=json.loads(sensitivity_path.read_text()) if sensitivity_path.exists() else None
+    sensitivity_text='Sensitivity follow-up has not yet been analyzed.'
+    if sensitivity:
+        methods={r['method']:r for r in sensitivity['table']}
+        def auc(method):
+            value=methods[method]['sensitivity_auc']
+            return f'{value:.4f}' if value is not None else 'INCOMPLETE (failed required trajectories)'
+        sensitivity_text=(f"Separate eight-seed wider-grid/longer-training follow-up: {sensitivity['verified_trials']} tuning trials and {sensitivity['verified_trajectories']} evaluation trajectories audited. "
+          f"32-step mean AUC: full {auc('full')}, AdamW {auc('adamw')}, momentum {auc('momentum')}. "
+          f"Failed tuning trials: {len(sensitivity['failed_tuning_trials'])}; diverged/incomplete evaluation trajectories: {sensitivity['failed_evaluation_trajectories']}. "
+          'See SENSITIVITY.md for every method, failed trials and grid boundaries. Original primary results remain unchanged; reused tasks provide development evidence only.')
     replay_text=(f"{replay['replayed_trials']}/{replay['expected_trials']} trials; all exact={replay['all_exact']}"
                  if replay else 'IN PROGRESS; no completion claim')
     cards={
@@ -22,14 +34,16 @@ def main():
       'wfim':('BENCHMARKED / INCONCLUSIVE','Finite support/degree/cost matrix and an actual top-k associativity counterexample. Truncation/transport identities do not establish learned downstream benefit or new algebra.'),
       'wft':('BENCHMARKED / INCONCLUSIVE','Weighted-path noise/sample/size matrix uses matched Laplacian targets. Unit-weight and true-graph oracle baselines are distinguished. Refit at each size is not transfer.'),
       'wpinn':('BENCHMARKED / INCONCLUSIVE','Three laws and three noise levels; independent held initial conditions. All polynomial terms evaluated with bounded integration. Seventeen failed rollouts remain in denominators; affected means are absent.'),
-      'cwlnn':('BENCHMARKED / INCONCLUSIVE','Matched-size trained readouts on fixed sparse representations; graph sizes 24/48/96. Aggressive routing hurts the declared diffusion task. No universal-backbone evidence.'),
+      'cwlnn':('BENCHMARKED / INCONCLUSIVE','Matched-size trained readouts on fixed sparse representations; graph sizes 24/48/96. Aggressive routing hurts the declared residual-propagation task. No universal-backbone evidence.'),
       'ultron':('BENCHMARKED / INCONCLUSIVE','Discriminating finite-DSL routing with identical tools/caps and disjoint semantic training/evaluation families. At cap 24: learned 81.94%, cheapest 66.67%, random 58.33%, static 44.44%. Not a general agent or sealed external evaluation.'),
     }
+    cards['qlearn']=(cards['qlearn'][0],cards['qlearn'][1]+' '+sensitivity_text)
     lines=['# World Series current research status','',
       'Updated 24 September 2026 from named executed campaigns. This supersedes the September 22 root status snapshot; historical copies remain in docs/history/.',
       '', '**Verdict:** Runnable and benchmarked within bounded development scopes. No full-project, novelty, independent-replication or publication-readiness certification.',
       '',f"Engineering: 57 tests passed for the development candidate; {audit['verified_runs']} main run receipts passed the artifact audit. All 64 non-QLearn cells, eight natural-digit cells and eight discrete-action cells completed.",
       '',f'Original full meta-training replay: {replay_text}. Same-host replay is not independent replication.',
+      '',sensitivity_text,
       '', 'There is one implementation repository, world-series/, with nine namespaces. The nine sibling named directories remain empty placeholders; world_series_cursor_pack is planning material.',
       '', '| Module | Status | Evidence and limit |','|---|---|---|']
     for key,(status,detail) in cards.items():lines.append(f'| {key} | {status} | {detail} |')
@@ -89,6 +103,7 @@ System temporary storage filled during execution; this task uses .work-tmp on PR
 - [x] Prepare a concrete independent-evaluation handoff.
 '''
     checklist+=('- [x]' if replay and replay['all_exact'] else '- [ ]')+' Replay all 400 original learned-policy meta-training trials exactly.\n'
+    checklist+=('- [x]' if sensitivity and sensitivity['artifact_and_auc_audit_passed'] else '- [ ]')+' Execute and audit the separately declared eight-seed wider-grid sensitivity study.\n'
     checklist+='''- [ ] Independent external reproduction and privately frozen confirmation.
 - [ ] Full proposed architectures and broad out-of-domain validation.
 - [ ] Publication-ready claim review, submission and public release.
