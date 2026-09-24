@@ -38,6 +38,18 @@ def main():
       'ultron':('BENCHMARKED / INCONCLUSIVE','Discriminating finite-DSL routing with identical tools/caps and disjoint semantic training/evaluation families. At cap 24: learned 81.94%, cheapest 66.67%, random 58.33%, static 44.44%. Not a general agent or sealed external evaluation.'),
     }
     cards['qlearn']=(cards['qlearn'][0],cards['qlearn'][1]+' '+sensitivity_text)
+    closure=ROOT/'docs/closure'
+    if (closure/'GATE_RESULTS.json').exists():
+        updates={
+          'qlearn':'Later 2x2 study separates grid width and training duration: full narrow/12 AUC 11.3869, wide/4 14.9199; wide/12 remains incomplete. Strong fixed controls still have lower mean AUC. See docs/closure/GATE_RESULTS.md.',
+          'qwipii':'Repeated-label feasibility cases have nontrivial stabilizers and fewer expansions, but higher measured runtime on the tiny cases. Distinct-goal no-savings findings remain.',
+          'cwlnn':'Matched flat4 control achieves about 1.77e-8 MSE at n96 versus hierarchy 1.20174. The constructed target uses four flat propagation steps. Current routing computes all coarse features before masking; no conditional-compute saving is demonstrated.',
+          'ultron':'Against the training-selected best fixed tool, cap24 difference is 0.15278, with exploratory nine-family bootstrap interval [-0.11111,0.5]. Repeated example seeds are not independent new families.',
+          'wfim':'Per-letter transport cancels exactly by s(uv)=s(u)s(v); its product-expressivity claim is closed as NOT_SUPPORTED. Algebra code is preserved. See WFIM_BRANCH_DECISION.md.',
+          'wpinn':'All 288 saved fits were reconstructed and the 17 failures have conditioning/support diagnostics; causal failure attribution is still open.'}
+        for key,extra in updates.items():cards[key]=(cards[key][0],cards[key][1]+' '+extra)
+    if (closure/'QAPEN_RESULTS.json').exists():
+        cards['qapen']=(cards['qapen'][0],cards['qapen'][1]+' A new finite linear-Gaussian lifecycle implementation completes 512 stream-method cells with frozen quantization, prospective admission, sleep/revival, delayed utility and exact checkpoints. Mean NLL 0.61727 vs single-memory 0.61225 and rolling ridge 0.55893. No advantage over the strongest simple controls. See docs/closure/QAPEN_RESULTS.md.')
     lines=['# World Series current research status','',
       'Updated 24 September 2026 from named executed campaigns. This supersedes the September 22 root status snapshot; historical copies remain in docs/history/.',
       '', '**Verdict:** Runnable and benchmarked within bounded development scopes. No full-project, novelty, independent-replication or publication-readiness certification.',
