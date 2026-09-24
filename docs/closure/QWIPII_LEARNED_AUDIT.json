@@ -1,0 +1,21 @@
+{
+  "rows_replayed": 896,
+  "nonranking_shortest_lengths_match": true,
+  "ranking_only_nonshortest": 16,
+  "training_models_exactly_refit": 24,
+  "source_hashes_verified": true,
+  "scope": "same-host audit; no independent confirmation",
+  "files": {
+    "campaigns/qwipii-learned-development-v1/protocol.json": "93fcc19fc608e5e99c0a3b25171ea9709da82842b2687290a41b5e511b992ddd",
+    "campaigns/qwipii-learned-development-v1/rows.jsonl": "5bd3864a5509e3d30ade938c789a56fcdeeb90e1a240f173cc65733ce20d038f",
+    "campaigns/qwipii-learned-development-v1/summary.json": "7208ace47698e5dff43ca1c56fa47f4bea0d8f1618f6d2d9630a42c56113513e",
+    "campaigns/qwipii-learned-development-v1/training-2801.json": "41a884826d71ef82b96efc72264bd253ee37f51c4a993be861e9ad64dfe21b9f",
+    "campaigns/qwipii-learned-development-v1/training-2803.json": "9e38401b35799000354b49fe411fc457861b04904234c06a84a6caa8d9ff34ce",
+    "campaigns/qwipii-learned-development-v1/training-2819.json": "c23478bac7eca86b5dc17811f3b687ff8feea42603f2b4474d8f882642b64bf4",
+    "campaigns/qwipii-learned-development-v1/training-2833.json": "7a2d9921b74866f17105a947a2333fb48a65bc0f7917db7e46f026b412e9d74b",
+    "campaigns/qwipii-learned-development-v1/training-2837.json": "c95455f8c77033c1706294908546d893c28d1597fa014f7a1946b7ea217b7f7f",
+    "campaigns/qwipii-learned-development-v1/training-2843.json": "cf87d7308f21c6fe83c44e0e4a67816a3404aa91edb2ff7fa9790ed106961796",
+    "campaigns/qwipii-learned-development-v1/training-2851.json": "38bf11b95db71ac6ff3c2c424fb6ec6665e76099d3bd39cdae2997a5fe4d3a6d",
+    "campaigns/qwipii-learned-development-v1/training-2857.json": "d23f973c7b6b4815c64ffd41ff5440f0b4962bdaabc1b2596fbf7b21954d1985"
+  }
+}
