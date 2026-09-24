@@ -30,7 +30,14 @@ def run_experiment(cfg: dict[str, Any], run: RunDirectory) -> dict[str, Any]:
     trunc_ok = truncated_multiply(project_degree(x, 2), project_degree(y, 2), 2).coeffs == project_degree(multiply(x, y), 2).coeffs
     big = add(multiply(a, a), add(multiply(b, b), multiply(multiply(a, b), a)))
     pruned = topk_prune(big, k=1)
-    topk_breaks = not assert_associativity_truncated(pruned, b, a, n=6)
+    # Actual top-1 counterexample: intermediate pruning changes coefficients.
+    from world_series.wfim.algebra import SparseWordSeries
+    ca = SparseWordSeries({(): -2.0, (1,): -2.0})
+    cb = SparseWordSeries({(): -2.0, (1,): -2.0})
+    cc = SparseWordSeries({(): -2.0, (1,): -1.0})
+    left = topk_prune(multiply(topk_prune(multiply(ca, cb), 1), cc), 1)
+    right = topk_prune(multiply(ca, topk_prune(multiply(cb, cc), 1)), 1)
+    topk_breaks = left.coeffs != right.coeffs
     scales = {1: 1.2, 2: 0.8}
     # equal-byte compositional compare: fixed algebra vs transported
     expr_fixed = multiply(add(a, b), multiply(a, b))
@@ -41,7 +48,8 @@ def run_experiment(cfg: dict[str, Any], run: RunDirectory) -> dict[str, Any]:
         "truncated_associativity_ok": assoc_ok,
         "degree_projection_consistency": trunc_ok,
         "topk_need_not_preserve_associativity": True,
-        "topk_counterexample_triggered": topk_breaks or True,
+        "topk_counterexample_triggered": topk_breaks,
+        "topk_witness": {"left": str(left.coeffs), "right": str(right.coeffs)},
         "fixed_product_coeffs": {str(k): v for k, v in expr_fixed.coeffs.items()},
         "transported_product_coeffs": {str(k): v for k, v in expr_trans.coeffs.items()},
         "bytes_fixed": series_bytes(expr_fixed),

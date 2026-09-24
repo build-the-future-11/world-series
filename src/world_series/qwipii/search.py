@@ -9,11 +9,11 @@ def bfs(start: RingState, ledger: BudgetLedger, max_expansions: int = 500):
     seen = {start.serialize()}
     expansions = 0
     while q:
+        if expansions >= max_expansions:
+            return None, expansions, "budget"
         ledger.consume_candidates(1)
         state, path = q.popleft()
         expansions += 1
-        if expansions > max_expansions:
-            return None, expansions, "budget"
         if is_goal(state):
             return path, expansions, "solved"
         for move, nxt in neighbors(state):
@@ -24,16 +24,17 @@ def bfs(start: RingState, ledger: BudgetLedger, max_expansions: int = 500):
     return None, expansions, "exhausted"
 
 def quotient_bfs(start: RingState, ledger: BudgetLedger, max_expansions: int = 500):
+    # Canonical keys merge orbits; queued representatives retain replayable coordinates.
     start_can, _, _ = canonicalize(start)
-    q = deque([(start_can, [])])
+    q = deque([(start, [])])
     seen = {start_can.serialize()}
     expansions = 0
     while q:
+        if expansions >= max_expansions:
+            return None, expansions, "budget"
         ledger.consume_candidates(1)
         state, path = q.popleft()
         expansions += 1
-        if expansions > max_expansions:
-            return None, expansions, "budget"
         if is_goal(state):
             return path, expansions, "solved"
         for move, nxt in neighbors(state):
@@ -41,7 +42,7 @@ def quotient_bfs(start: RingState, ledger: BudgetLedger, max_expansions: int = 5
             key = nxt_can.serialize()
             if key not in seen:
                 seen.add(key)
-                q.append((nxt_can, path + [move]))
+                q.append((nxt, path + [move]))
     return None, expansions, "exhausted"
 
 def ranking_only_bfs(start: RingState, ledger: BudgetLedger, ranker, max_expansions: int = 500):
@@ -55,11 +56,11 @@ def ranking_only_bfs(start: RingState, ledger: BudgetLedger, ranker, max_expansi
     seen = {start.serialize()}
     expansions = 0
     while h:
+        if expansions >= max_expansions:
+            return None, expansions, "budget"
         ledger.consume_candidates(1)
         _, _, state, path = heapq.heappop(h)
         expansions += 1
-        if expansions > max_expansions:
-            return None, expansions, "budget"
         if is_goal(state):
             return path, expansions, "solved"
         for move, nxt in neighbors(state):

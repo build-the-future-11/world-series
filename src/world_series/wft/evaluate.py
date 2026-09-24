@@ -33,8 +33,8 @@ def run_experiment(cfg: dict[str, Any], run: RunDirectory) -> dict[str, Any]:
     X = rng.normal(size=(n, 24))
     Y = L @ X
     A_un = learn_operator_ridge(X, Y, lam=1e-2)
-    A_c = constrained_sym_nonneg(np.abs(A_un))
-    A_fixed = fixed_operator_from_W(W)
+    A_c = laplacian_from_weights(constrained_sym_nonneg(-A_un))
+    A_fixed = L.copy()  # Oracle graph Laplacian; same target as both learned fits.
     # predictive task: forecast L f on held vectors
     Fte = rng.normal(size=(n, 8))
     Yte = L @ Fte
@@ -61,7 +61,7 @@ def run_experiment(cfg: dict[str, Any], run: RunDirectory) -> dict[str, Any]:
         "held_size_psd": is_psd(L2),
         "cost": ledger.snapshot(),
         "research_outcome": "INCONCLUSIVE",
-        "note": "Dense eigendecomposition is not FFT-speed computation.",
+        "note": "Fixed is the oracle graph Laplacian; constrained learns nonnegative edge weights. Dense eigendecomposition is not FFT-speed computation.",
     }
     run.store.write_json("wft_result.json", metrics)
     return metrics

@@ -80,7 +80,7 @@ class RecurrentUpdatePolicy(nn.Module):
     def __init__(self, hidden: int = 64, layers: int = 2,
                  eta_bounds=(0.001, 0.1), gate_bounds=(0.1, 2.0),
                  use_budget: bool = True, use_recurrence: bool = True,
-                 learn_gates: bool = True):
+                 learn_gates: bool = True, reset_state: bool = False):
         super().__init__()
         if hidden <= 0 or layers <= 0:
             raise ValueError('hidden and layers must be positive')
@@ -89,6 +89,7 @@ class RecurrentUpdatePolicy(nn.Module):
         if not all(math.isfinite(v) for v in (*eta_bounds, *gate_bounds)):
             raise ValueError('Update bounds must be finite')
         self.hidden, self.layers = hidden, layers
+        self.reset_state = reset_state
         self.eta_bounds, self.gate_bounds = tuple(eta_bounds), tuple(gate_bounds)
         self.use_budget, self.use_recurrence, self.learn_gates = use_budget, use_recurrence, learn_gates
         if not learn_gates and not gate_bounds[0] <= 1 <= gate_bounds[1]:
@@ -100,7 +101,7 @@ class RecurrentUpdatePolicy(nn.Module):
 
     def configuration(self):
         return {k: getattr(self, k) for k in ['hidden', 'layers', 'eta_bounds', 'gate_bounds',
-                'use_budget', 'use_recurrence', 'learn_gates']}
+                'use_budget', 'use_recurrence', 'learn_gates', 'reset_state']}
 
     def forward(self, features, state=None):
         if features.ndim != 2 or features.shape[1] != 4:
@@ -109,7 +110,7 @@ class RecurrentUpdatePolicy(nn.Module):
             features = torch.cat([features[:, :3], torch.zeros_like(features[:, 3:])], dim=1)
         pooled = features.mean(dim=0).reshape(1, 1, 4)
         if self.use_recurrence:
-            output, state = self.recurrent(pooled, state)
+            output, state = self.recurrent(pooled, None if self.reset_state else state)
             context = output[0, 0]
         else:
             context = self.feedforward(pooled[0, 0])
@@ -232,7 +233,8 @@ def fixed_adapt(task: RegressionTask, method: str, steps: int, eta: float,
                 or any(not bool(torch.isfinite(p).all()) for p in module.parameters())):
             break
     return {'query_losses': curve, 'support_losses': support, 'elapsed_seconds': elapsed,
-            'gradient_evaluations': len(support), 'forward_evaluations': 1 + 2 * len(support)}
+            'gradient_evaluations': len(support), 'forward_evaluations': 1 + 2 * len(support),
+            'parameters': {name: p.detach().clone() for name, p in module.named_parameters()}}
 
 
 def trajectory_record(task: RegressionTask, method: str, trajectory, expected_steps: int) -> dict:
@@ -309,7 +311,9 @@ class MetaTrainer:
         state = torch.load(io.BytesIO(payload), map_location='cpu', weights_only=True)
         if state.get('schema') != 'qlearn-neural-meta-training-v1':
             raise ValueError('Unsupported checkpoint schema')
-        if state['policy_configuration'] != self.policy.configuration():
+        configuration = {**state['policy_configuration']}
+        configuration.setdefault('reset_state', False)
+        if configuration != self.policy.configuration():
             raise ValueError('Checkpoint policy configuration mismatch')
         self.policy.load_state_dict(state['policy'])
         self.optimizer.load_state_dict(state['optimizer'])

@@ -11,5 +11,5 @@ def verify_program(prog, tests: list[tuple[dict, int]], exhaustive_domain: list[
         for x in exhaustive_domain:
             # only meaningful if prog uses x; still record scope
             interpret(prog, {"x": x}, Fuel(64))
-        return {"ok": True, "scope": "EXHAUSTIVE_FINITE_DOMAIN", "domain_size": len(exhaustive_domain)}
+        return {"ok": True, "scope": "HELDOUT_TESTS_PLUS_DOMAIN_EXECUTION", "domain_size": len(exhaustive_domain)}
     return {"ok": True, "scope": "HELDOUT_TESTS"}

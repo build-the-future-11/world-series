@@ -18,7 +18,8 @@ def run_experiment(cfg: dict[str, Any], run: RunDirectory) -> dict[str, Any]:
     adapt = AdaptiveNoMemory()
     recent = RecentMemoryControl(k=5)
     scores = {"qapen": [], "fixed": [], "adapt_no_mem": [], "recent": []}
-    rare = {"qapen": [], "fixed": []}
+    rare = {k: [] for k in scores}
+    ordinary = {k: [] for k in scores}
     for t, y in enumerate(xs):
         ledger.consume_sim(1)
         y = float(y)
@@ -36,8 +37,11 @@ def run_experiment(cfg: dict[str, Any], run: RunDirectory) -> dict[str, Any]:
         scores["recent"].append(nll(y, rm, rv))
         recent.update(y)
         if schedule[t] == 1:
-            rare["qapen"].append(scores["qapen"][-1])
-            rare["fixed"].append(scores["fixed"][-1])
+            for k in scores:
+                rare[k].append(scores[k][-1])
+        else:
+            for k in scores:
+                ordinary[k].append(scores[k][-1])
     w, mean, var = mixture_moments(np.array([0.3, 0.7]), np.array([0.0, 2.0]), np.array([1.0, 0.5]))
     means = {k: float(np.mean(v)) for k, v in scores.items()}
     # Toy-scale interpretation vs strongest simple memory control (not confirmation).
@@ -56,7 +60,11 @@ def run_experiment(cfg: dict[str, Any], run: RunDirectory) -> dict[str, Any]:
         "status": RunStatus.SUCCEEDED.value,
         "primary_metric": "mean_nll",
         "mean_nll": means,
-        "rare_regime_nll": {k: float(np.mean(v)) if v else float("nan") for k, v in rare.items()},
+        "rare_regime_nll": {k: float(np.mean(v)) if v else None for k, v in rare.items()},
+        "ordinary_regime_nll": {k: float(np.mean(v)) if v else None for k, v in ordinary.items()},
+        "regime_counts": {"regime_1": int(sum(schedule == 1)), "regime_0": int(sum(schedule == 0))},
+        "memory_affects_predictions": False,
+        "regime_label_note": "Legacy schedule is balanced; regime 1 is not statistically rare.",
         "ordinary_regime_tradeoff_note": "Report both ordinary and rare; do not hide ordinary-error tradeoff.",
         "beat_recent_memory": vs_recent,
         "beat_fixed_ensemble": vs_fixed,

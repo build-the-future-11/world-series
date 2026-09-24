@@ -41,24 +41,19 @@ def hierarchical_encode(ast: AST) -> np.ndarray:
 
 
 def score_candidate(ast: AST, examples: list[tuple[dict, int]], mode: str = "hierarchical") -> float:
-    """Higher is better priority. Uses public examples only + structural prior."""
-    from world_series.wcode.interpreter import Fuel, interpret
+    """Structural ordering only: executing the entire pool here would evade budgets.
 
-    match = 0
-    for env, y in examples:
-        try:
-            out = interpret(ast, env, Fuel(32))
-            match += int(out == y)
-        except Exception:
-            match -= 1
+    These are untrained structural heuristics, not learned relational encoders.
+    Public examples are intentionally unused until charged candidate evaluation.
+    """
     if mode == "uniform":
-        struct = 0.0
-    elif mode == "length":
-        struct = -float(ast_nodes(ast))
-    elif mode == "token":
-        struct = -float(np.linalg.norm(token_encode(ast)))
-    elif mode == "flat":
-        struct = -0.01 * float(np.linalg.norm(flat_graph_encode(ast)))
-    else:
-        struct = -0.01 * float(np.linalg.norm(hierarchical_encode(ast))) + 0.1 * match
-    return float(match) * 10.0 + struct
+        return 0.0
+    if mode == "length":
+        return -float(ast_nodes(ast))
+    if mode == "token":
+        return -float(np.linalg.norm(token_encode(ast)))
+    if mode == "flat":
+        return -float(np.linalg.norm(flat_graph_encode(ast)))
+    if mode == "hierarchical":
+        return -float(np.linalg.norm(hierarchical_encode(ast)))
+    raise ValueError(f"Unknown ranker {mode}")

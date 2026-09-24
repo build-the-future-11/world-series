@@ -1,0 +1,11 @@
+{
+  "source_url": "https://github.com/amoudgl/celo2",
+  "commit": "bb7fd561872f427ce47f97bc97992de009d5b313",
+  "code_license": "MIT with retained Google Apache-2.0 attribution",
+  "weights_url": "https://huggingface.co/amoudgl/celo2",
+  "weights_revision": "cc0e7927ebe54bdaa4c538c9e7b28873721ddb87",
+  "weights_license_note": "No separate checkpoint license assertion; checkpoints remain local and are not published.",
+  "source_sha256": "011d52f47e6f9afb604d8f0a0146511ff7c9176685ab927af9c022076aef6a06",
+  "weights_sha256": "3cc2eb5faa73dc2636257cff206e5e146ffbfc69f1497cb069173c119fa49159",
+  "method": "Official matrix Celo2 with AdamW bias branch; orthogonalize=True, decay=.01, bias betas=(.9,.95), equal 4-rate selection. External pretrained compute is unmatched."
+}

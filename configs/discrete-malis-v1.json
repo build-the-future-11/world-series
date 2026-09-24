@@ -1,0 +1,116 @@
+{
+  "cells": [
+    {
+      "project": "qlearn",
+      "experiment": "discrete-malis-v1",
+      "seed": 101,
+      "device": "cpu",
+      "split": "dev",
+      "budget": {
+        "max_steps": 5000,
+        "max_wall_seconds": 120
+      },
+      "params": {
+        "study": "discrete_malis_v1"
+      }
+    },
+    {
+      "project": "qlearn",
+      "experiment": "discrete-malis-v1",
+      "seed": 211,
+      "device": "cpu",
+      "split": "dev",
+      "budget": {
+        "max_steps": 5000,
+        "max_wall_seconds": 120
+      },
+      "params": {
+        "study": "discrete_malis_v1"
+      }
+    },
+    {
+      "project": "qlearn",
+      "experiment": "discrete-malis-v1",
+      "seed": 307,
+      "device": "cpu",
+      "split": "dev",
+      "budget": {
+        "max_steps": 5000,
+        "max_wall_seconds": 120
+      },
+      "params": {
+        "study": "discrete_malis_v1"
+      }
+    },
+    {
+      "project": "qlearn",
+      "experiment": "discrete-malis-v1",
+      "seed": 401,
+      "device": "cpu",
+      "split": "dev",
+      "budget": {
+        "max_steps": 5000,
+        "max_wall_seconds": 120
+      },
+      "params": {
+        "study": "discrete_malis_v1"
+      }
+    },
+    {
+      "project": "qlearn",
+      "experiment": "discrete-malis-v1",
+      "seed": 503,
+      "device": "cpu",
+      "split": "dev",
+      "budget": {
+        "max_steps": 5000,
+        "max_wall_seconds": 120
+      },
+      "params": {
+        "study": "discrete_malis_v1"
+      }
+    },
+    {
+      "project": "qlearn",
+      "experiment": "discrete-malis-v1",
+      "seed": 601,
+      "device": "cpu",
+      "split": "dev",
+      "budget": {
+        "max_steps": 5000,
+        "max_wall_seconds": 120
+      },
+      "params": {
+        "study": "discrete_malis_v1"
+      }
+    },
+    {
+      "project": "qlearn",
+      "experiment": "discrete-malis-v1",
+      "seed": 701,
+      "device": "cpu",
+      "split": "dev",
+      "budget": {
+        "max_steps": 5000,
+        "max_wall_seconds": 120
+      },
+      "params": {
+        "study": "discrete_malis_v1"
+      }
+    },
+    {
+      "project": "qlearn",
+      "experiment": "discrete-malis-v1",
+      "seed": 809,
+      "device": "cpu",
+      "split": "dev",
+      "budget": {
+        "max_steps": 5000,
+        "max_wall_seconds": 120
+      },
+      "params": {
+        "study": "discrete_malis_v1"
+      }
+    }
+  ]
+}

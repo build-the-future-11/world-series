@@ -1,0 +1,1157 @@
+{
+  "version": "development-v2",
+  "cells": [
+    {
+      "project": "qapen",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 101,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "qapen",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 211,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "qapen",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 307,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "qapen",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 401,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "qapen",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 503,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "qapen",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 601,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "qapen",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 701,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "qapen",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 809,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "qwipii",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 101,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "qwipii",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 211,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "qwipii",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 307,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "qwipii",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 401,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "qwipii",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 503,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "qwipii",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 601,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "qwipii",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 701,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "qwipii",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 809,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "wcode",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 101,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "wcode",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 211,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "wcode",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 307,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "wcode",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 401,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "wcode",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 503,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "wcode",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 601,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "wcode",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 701,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "wcode",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 809,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "wfim",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 101,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "wfim",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 211,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "wfim",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 307,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "wfim",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 401,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "wfim",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 503,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "wfim",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 601,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "wfim",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 701,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "wfim",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 809,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "wft",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 101,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "wft",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 211,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "wft",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 307,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "wft",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 401,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "wft",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 503,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "wft",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 601,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "wft",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 701,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "wft",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 809,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "wpinn",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 101,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "wpinn",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 211,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "wpinn",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 307,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "wpinn",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 401,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "wpinn",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 503,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "wpinn",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 601,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "wpinn",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 701,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "wpinn",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 809,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "cwlnn",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 101,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "cwlnn",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 211,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "cwlnn",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 307,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "cwlnn",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 401,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "cwlnn",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 503,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "cwlnn",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 601,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "cwlnn",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 701,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "cwlnn",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 809,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "ultron",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 101,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "ultron",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 211,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "ultron",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 307,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "ultron",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 401,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "ultron",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 503,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "ultron",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 601,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "ultron",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 701,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    },
+    {
+      "project": "ultron",
+      "experiment": "development-v2",
+      "split": "dev",
+      "device": "cpu",
+      "seed": 809,
+      "budget": {
+        "max_steps": 10000,
+        "max_candidate_evals": 100000,
+        "max_simulator_calls": 10000,
+        "max_wall_seconds": 120,
+        "max_artifact_bytes": 50000000,
+        "max_graph_nodes": 128
+      },
+      "params": {
+        "study": "development_v2"
+      }
+    }
+  ]
+}

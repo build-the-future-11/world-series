@@ -9,3 +9,9 @@ runs/*
 *.egg-info/
 dist/
 build/
+
+.venv-celo2/
+external/
+data/*/source.zip
+campaigns/
+.work-tmp/

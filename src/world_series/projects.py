@@ -29,6 +29,15 @@ def dispatch_run(cfg: dict[str, Any], run: RunDirectory) -> dict[str, Any]:
     runner = runners.get(project, _unsupported(project))
     seed_receipt = set_global_determinism(int(cfg['seed']))
     run.append_event('seed_control', {'seed': int(cfg['seed']), **seed_receipt})
+    if cfg.get("params", {}).get("study") == "development_v2":
+        from world_series.evaluation.development import run_experiment
+        return run_experiment(cfg, run)
+    if cfg.get("params", {}).get("study") == "natural_digits_v1":
+        from world_series.qlearn.natural_study import run_experiment
+        return run_experiment(cfg, run)
+    if cfg.get("params", {}).get("study") == "discrete_malis_v1":
+        from world_series.qlearn.malis import run_experiment
+        return run_experiment(cfg, run)
     return runner(cfg, run)
 
 

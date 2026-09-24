@@ -24,7 +24,7 @@ def run_experiment(cfg: dict[str, Any], run: RunDirectory) -> dict[str, Any]:
     prog, found, used = synthesize(t0.public_examples, ledger, rank_mode="hierarchical")
     ver = verify_program(prog, t0.heldout, exhaustive_domain=list(range(-5, 6))) if found else {"ok": False}
     metrics = {
-        "status": RunStatus.SUCCEEDED.value if found else RunStatus.FAILED.value,
+        "status": RunStatus.SUCCEEDED.value,
         "primary_metric": "verified_solve_rate_at_fixed_candidate_budget",
         "hierarchical_solved": found,
         "hierarchical_candidates_used": used,
