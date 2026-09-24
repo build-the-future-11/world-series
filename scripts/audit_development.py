@@ -66,14 +66,19 @@ def audit():
         checks.append({'run_id':manifest['run_id'],'project':'qlearn-discrete','passed':True})
     external=ROOT/'campaigns/celo2'
     provenance=json.loads((ROOT/'docs/execution/development-v2/CELO2_PROVENANCE.json').read_text())
-    installed=ROOT/'.venv-celo2/lib/python3.12/site-packages/celo2_optax.py'
-    assert hashlib.sha256(installed.read_bytes()).hexdigest()==provenance['source_sha256']
+    # An artifact audit checks the qualified source bytes, not an installed runtime.
+    # Full comparator execution still requires its separately pinned environment/weights.
+    qualified_source=ROOT/'provenance/celo2-source/celo2_optax.py'
+    if not qualified_source.exists():
+        qualified_source=ROOT/'.venv-celo2/lib/python3.12/site-packages/celo2_optax.py'
+    assert hashlib.sha256(qualified_source.read_bytes()).hexdigest()==provenance['source_sha256']
     result=json.loads((external/'results.json').read_text())
     assert result['weights_sha256']==provenance['weights_sha256']
     assert len(result['rows'])==48 and len(result['trials'])==32
     receipt={'checks':checks,'passed':True,'verified_runs':len(checks),'row_counts':row_counts,
       'natural_trials':trial_count,'natural_trajectories':digit_rows,'celo2_trajectories':48,
       'wpinn_failed_rollouts_retained':failure_count,
+      'qualified_celo2_source':str(qualified_source.relative_to(ROOT)),
       'external_artifact_hashes':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in external.glob('*.json')},
       'scope':'Same-author same-host artifact contract audit, not independent replication'}
     output=ROOT/'docs/execution/development-v2/AUDIT_RECEIPT.json'

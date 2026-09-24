@@ -1,6 +1,6 @@
 from __future__ import annotations
 from world_series.qwipii.group_actions import dihedral_actions, apply_to_state, rotate_tokens, reflect_tokens
-from world_series.qwipii.verifier import verify_automorphism
+from world_series.qwipii.verifier import verify_automorphism, complete_domain
 from world_series.qwipii.domains import RingState
 
 def propose_grammar(n: int) -> list[tuple[str, object, str]]:
@@ -23,11 +23,17 @@ def score_proposal(act, states: list[RingState]) -> float:
     return ok / max(len(states), 1)
 
 def discover_and_verify(states: list[RingState]) -> list[dict]:
-    n = len(states[0].tokens)
+    if not states:
+        raise ValueError("discovery requires a nonempty problem sample")
+    goal = states[0].goal
+    if any(s.goal != goal or sorted(s.tokens) != sorted(goal) for s in states):
+        raise ValueError("discovery requires a single multiset problem domain")
+    domain = complete_domain(goal)
+    n = len(goal)
     out = []
     for name, act, kind in propose_grammar(n):
         score = score_proposal(act, states)
-        ver = verify_automorphism(states, act)
+        ver = verify_automorphism(domain, act)
         label = "EXACTLY_VERIFIED_WITHIN_DOMAIN" if ver["ok"] else ("PROPOSED" if score > 0.5 else "REJECTED")
         if kind == "adversarial" and not ver["ok"]:
             label = "REJECTED"

@@ -396,6 +396,30 @@
       "original_path": "/Volumes/PRO-BLADE/World-Series/publication_audit/20260924/verify_scope.py",
       "sha256": "d8ba17db0896d6e343d652a86541352dd9c5d61236b57707e9e33afcb1302513",
       "bytes": 2570
+    },
+    {
+      "path": "provenance/celo2-source/LICENSE",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/world-series/external/celo2/LICENSE",
+      "sha256": "95486f1d0250d9fc978371345f62092457deb9bf543f91df1360c8ea39ab52f3",
+      "bytes": 1072
+    },
+    {
+      "path": "provenance/celo2-source/README.md",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/world-series/external/celo2/README.md",
+      "sha256": "283874f8e92d409e23a12c0771ea3f05617f47eac664ce93ae85f14d31eacf47",
+      "bytes": 8016
+    },
+    {
+      "path": "provenance/celo2-source/pyproject.toml",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/world-series/external/celo2/pyproject.toml",
+      "sha256": "eefdd486f7238f74a9dfd25c77247260e8f80983f424648b37b1cd013085ba28",
+      "bytes": 493
+    },
+    {
+      "path": "provenance/celo2-source/celo2_optax.py",
+      "original_path": "/Volumes/PRO-BLADE/World-Series/world-series/external/celo2/celo2_optax.py",
+      "sha256": "011d52f47e6f9afb604d8f0a0146511ff7c9176685ab927af9c022076aef6a06",
+      "bytes": 22325
     }
   ]
 }

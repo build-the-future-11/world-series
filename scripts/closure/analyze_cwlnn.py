@@ -1,5 +1,6 @@
 """Replay all CWLNN predictions, selections and permutations; retain full curves."""
 import hashlib
+import argparse
 import importlib.util
 import json
 from pathlib import Path
@@ -18,7 +19,7 @@ def load_study():
     return study
 
 
-def main():
+def main(replay_output=Path('campaigns/cwlnn-training-replay-v1')):
     torch.set_num_threads(1)
     torch.use_deterministic_algorithms(True)
     study = load_study()
@@ -27,7 +28,11 @@ def main():
     assert complete['cells']==16
     identity = json.loads((root/'identity.json').read_text())
     for filename,digest in identity['files'].items():
-        assert hashlib.sha256(Path(filename).read_bytes()).hexdigest()==digest
+        path=Path(filename)
+        if path.is_absolute():
+            assert path.parts[-3:-1]==('scripts','closure')
+            path=Path('scripts/closure')/path.name
+        assert hashlib.sha256(path.read_bytes()).hexdigest()==digest
     ids,hashes,groups = set(),{},{}
     replayed=checkpoint_scores=0
     max_permutation_difference=0.
@@ -90,7 +95,7 @@ def main():
             hashes[str(path.relative_to(root))]=hashlib.sha256(path.read_bytes()).hexdigest()
         print(f'Audited {cell.name}',flush=True)
     # One full same-host training replay, not independent confirmation.
-    replay_dir=Path('campaigns/cwlnn-training-replay-v1')
+    replay_dir=Path(replay_output)
     replay_dir.mkdir(exist_ok=False)
     first=root/f'{study.SEEDS[0]}_0'
     original=json.loads((first/'hierarchy_learned_training.json').read_text())
@@ -147,4 +152,7 @@ def main():
 
 
 if __name__=='__main__':
-    main()
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--replay-output',type=Path,default=Path('campaigns/cwlnn-training-replay-v1'))
+    args=parser.parse_args()
+    main(args.replay_output)

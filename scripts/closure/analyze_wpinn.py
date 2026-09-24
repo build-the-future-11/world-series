@@ -20,7 +20,12 @@ def main():
     assert complete['cells'] == 120
     frozen = json.loads((root / 'identity.json').read_text())
     for filename, digest in frozen['files'].items():
-        assert hashlib.sha256(Path(filename).read_bytes()).hexdigest() == digest
+        path = Path(filename)
+        # Historical runner paths are provenance; resolve the same hashed runner locally.
+        if path.is_absolute():
+            assert path.parts[-3:-1] == ('scripts', 'closure')
+            path = Path('scripts/closure') / path.name
+        assert hashlib.sha256(path.read_bytes()).hexdigest() == digest
     qualification = json.loads(Path('docs/closure/WPINN_PYSINDY_QUALIFICATION.json').read_text())
     distribution = importlib.metadata.distribution('pysindy')
     assert distribution.version == qualification['pysindy_version']

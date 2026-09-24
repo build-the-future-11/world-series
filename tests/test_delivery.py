@@ -39,6 +39,9 @@ def test_complete_package_verifies_without_original_checkout_or_sidecar(tmp_path
     assert result['passed']
     assert (tmp_path/'extracted/repository/campaigns/new-study/failure.json').read_text()=='{"status":"failed"}'
     assert (tmp_path/'extracted/repository/runs/unfinished/manifest.json').is_file()
+    restored=module('restore_delivery').restore(tmp_path/'extracted',tmp_path/'restored')
+    assert restored['source_head']==result['source']['git_head']
+    assert (tmp_path/'restored/campaigns/new-study/failure.json').is_file()
     with pytest.raises(FileExistsError): verify.main(output,tmp_path/'extracted')
 
 
