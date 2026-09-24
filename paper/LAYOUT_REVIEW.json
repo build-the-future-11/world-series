@@ -1,0 +1,21 @@
+{
+  "pdf_sha256": "0219416272da987b68fdcc6c32c697941298c809afb5b615caffabc6775b00e1",
+  "pages": 8,
+  "visually_inspected_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "findings": [
+    "All eight pages inspected; no clipped or overlapping text observed.",
+    "Page 8 contains only one reference; rebalance pagination before release.",
+    "Section 4.3 wraps and hyphenates its heading; shorten during final editing."
+  ],
+  "status": "REVIEWED_WITH_OPEN_LAYOUT_ISSUES",
+  "remaining": "Rerender and inspect after figure insertion and pagination repair; scientific and authorship gates remain open."
+}
