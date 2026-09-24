@@ -84,6 +84,13 @@
       "status": "DRAFT_NOT_AUTHORIZED",
       "primary_metric": "verified_completion_cap24",
       "notes": "Executed development only; see docs/closure/WCODE_PROTOCOL.md. No external confirmation."
+    },
+    {
+      "protocol_id": "WS-WFT-20260924-constraints-dev",
+      "project": "wft",
+      "status": "DRAFT_NOT_AUTHORIZED",
+      "primary_metric": "relative_mass_weighted_frozen_transfer_error",
+      "notes": "Executed finite equitable-graph development only; docs/closure/WFT_PROTOCOL.md and WFT_RESULTS.md. No external confirmation."
     }
   ]
 }

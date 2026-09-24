@@ -39,7 +39,7 @@ Full denominators and method/condition tables: `docs/execution/development-v2/an
 
 ## wft
 Status: BENCHMARKED / INCONCLUSIVE
-Weighted-path noise/sample/size matrix uses matched Laplacian targets. Unit-weight and true-graph oracle baselines are distinguished. Refit at each size is not transfer.
+Weighted-path noise/sample/size matrix uses matched Laplacian targets. Unit-weight and true-graph oracle baselines are distinguished. Refit at each size is not transfer. A later equitable-graph study completes 160 learned fits and 64 fixed/oracle controls with frozen transfer to new sizes and path topology. Mean transfer error: both constraints 0.00030388 versus identical unconstrained 0.00092856. All 2,688 predictions were checked with NumPy/SciPy; gap-sensitive compression discrepancies are disclosed. This supports the bounded construction, not broad graph or novelty claims. Full graph/setup timing is recorded separately. See docs/closure/WFT_RESULTS.md.
 
 Executed evidence: `runs/20260924T101024_663f5d4e/metrics.json`, `runs/20260924T101024_367b304a/metrics.json`, `runs/20260924T101025_f0b04e16/metrics.json`, `runs/20260924T101025_4d3306d0/metrics.json`, `runs/20260924T101025_936a73a1/metrics.json`, `runs/20260924T101026_ac7d359e/metrics.json`, `runs/20260924T101026_f4ad9fed/metrics.json`, `runs/20260924T101026_58169e7e/metrics.json`
 Full denominators and method/condition tables: `docs/execution/development-v2/analysis.json`.

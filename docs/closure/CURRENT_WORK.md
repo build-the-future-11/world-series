@@ -43,8 +43,8 @@ and the overlap is explicitly retained/disclosed. One 80-step training replay
 matches loss history and all three checkpoints exactly. No extension is justified
 by final-checkpoint selection: all relational seeds select earlier steps.
 
-1. Complete WFT symmetry/cross-resolution constraint study, WPINN structured
-   weak-fit failure analysis, and learned/conditional CWLNN routing. Each needs
+1. Complete WPINN structured weak-fit failure analysis and learned/conditional
+   CWLNN routing. Each needs
    its own source-frozen protocol and matched controls; do not reuse a changed
    source under an old campaign identity.
 2. Reconcile stale PAPER_AUDIT/architecture/queue documents with the new evidence,
@@ -56,7 +56,31 @@ by final-checkpoint selection: all relational seeds select earlier steps.
    confirmation, authorship/licensing and venue decisions cannot be fabricated.
 
 One numerical worker. All current numerical jobs have finished. Preserve all
-old campaigns and source snapshots. Current numerical candidate is 58e19d1;
+old campaigns and source snapshots. Current numerical candidate is 3d54b11;
 later changes at this checkpoint are analyses/documentation only. Source hash
 in each campaign, rather than the latest Git head, identifies its implementation.
 The earlier verified delivery stays immutable; build a new delivery for new work.
+
+## WFT stage completed; next executable target is WPINN
+
+The WFT study above is now executed in 3d54b11: verified equitable two-node
+coarsening, reflection and invalid-shift controls, independent fine/coarse
+fields (11 parameters), 160 learned fits, 64 fixed/oracle controls and 2,688
+frozen-transfer rows. Both constraints yield mean error 0.00030388 versus
+unconstrained 0.00092856 within the declared finite generator. All primary
+predictions agree with NumPy/SciPy to 2.7e-15. Eight compression comparisons
+at nearly repeated boundaries need the documented gap-sensitive numerical
+verification tolerance; raw ranks and outcomes are unchanged. All 82 tests pass.
+Post-study randomized timing covers domain/incidence construction and all other
+kernel phases for every case with warmup and three retained repeats. No broad
+graph-distribution, equal-wall-time or novelty claim is made.
+
+Next implement WPINN's observed-only neural field/smoother, analytic compact
+weak-test quadrature, sparse and physical-structure fits, qualified derivative
+and weak baselines, and a frozen noisy/missing/low-excitation trajectory study.
+Preserve all 17 original failures and their exact fits. The original proposal's
+first retained claim concerns oscillators; PDE discovery is explicitly deferred
+and must not be inferred from this stage. Use original-paper/official-source
+qualification for SINDy/WSINDy before describing a comparator as a reproduction.
+Also finish diagnosis of conditioning, support, quadrature and integration
+separately; a correlation table alone cannot establish causes of old failures.

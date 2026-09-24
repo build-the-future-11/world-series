@@ -1,0 +1,10 @@
+{
+  "initial_audit": "FAILED strict 1e-10 compression cross-implementation comparison",
+  "unit": [2203, 4, 0.0, "wrong_symmetry", 64, "cycle", 0],
+  "independent_compression_error": 0.8737946689898548,
+  "stored_compression_error": 0.8737946688603162,
+  "boundary_eigengap": 6.669022277819292e-8,
+  "resolution": "Retain every discrepancy above 1e-10. Use 1e-8 verification tolerance only when the compression boundary eigengap is below 1e-6. All other compression and every primary prediction comparison retain 1e-10.",
+  "unchanged": ["raw artifacts", "training", "rank-selection threshold", "compression scores", "primary prediction endpoint"],
+  "scope": "Post-run numerical verification tolerance, not a revised research decision threshold. No compression-efficacy claim is based on the affected tiny differences."
+}

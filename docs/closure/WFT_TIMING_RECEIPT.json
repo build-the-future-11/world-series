@@ -1,0 +1,83 @@
+{
+  "complete": true,
+  "cases": 2688,
+  "repetitions_per_case": 3,
+  "table": [
+    {
+      "method": "both",
+      "timed_repetitions": 1152,
+      "graph_seconds": 0.0005218847290709366,
+      "laplacian_seconds": 2.94484982785232e-05,
+      "transition_seconds": 0.00019956573520276934,
+      "apply_16_seconds": 4.95821374594622e-06,
+      "spectral_seconds": 0.0004739255865236676
+    },
+    {
+      "method": "fixed_geometry",
+      "timed_repetitions": 1152,
+      "graph_seconds": 0.0005209970443805408,
+      "laplacian_seconds": 2.932241434589539e-05,
+      "transition_seconds": 0.00019288897326279967,
+      "apply_16_seconds": 4.788251216167636e-06,
+      "spectral_seconds": 0.0004066741151341881
+    },
+    {
+      "method": "oracle_true_operator",
+      "timed_repetitions": 1152,
+      "graph_seconds": 0.0005241598132670333,
+      "laplacian_seconds": 2.9543509198346226e-05,
+      "transition_seconds": 0.00020076063863901558,
+      "apply_16_seconds": 4.986999076411141e-06,
+      "spectral_seconds": 0.000447414677485843
+    },
+    {
+      "method": "resolution",
+      "timed_repetitions": 1152,
+      "graph_seconds": 0.0005246273450059865,
+      "laplacian_seconds": 2.9686643478675655e-05,
+      "transition_seconds": 0.0001999879485386676,
+      "apply_16_seconds": 4.99020901164234e-06,
+      "spectral_seconds": 0.0004761780628541601
+    },
+    {
+      "method": "symmetry",
+      "timed_repetitions": 1152,
+      "graph_seconds": 0.0005211697228130813,
+      "laplacian_seconds": 2.93370754762792e-05,
+      "transition_seconds": 0.00019913174252097734,
+      "apply_16_seconds": 4.971085824460412e-06,
+      "spectral_seconds": 0.0004729156059460769
+    },
+    {
+      "method": "unconstrained",
+      "timed_repetitions": 1152,
+      "graph_seconds": 0.0005223727367693856,
+      "laplacian_seconds": 2.9677485827050987e-05,
+      "transition_seconds": 0.00020016052475410915,
+      "apply_16_seconds": 4.9777754864205944e-06,
+      "spectral_seconds": 0.0005124569129546015
+    },
+    {
+      "method": "wrong_symmetry",
+      "timed_repetitions": 1152,
+      "graph_seconds": 0.0005229277297884335,
+      "laplacian_seconds": 2.9621630397337463e-05,
+      "transition_seconds": 0.0001942058792741995,
+      "apply_16_seconds": 4.867289160554517e-06,
+      "spectral_seconds": 0.00047162455684378476
+    }
+  ],
+  "loading_seconds": 0.4194604088261258,
+  "elapsed_seconds": 13.825203791988315,
+  "peak_process_rss_bytes": 226836480,
+  "source": {
+    "git_head": "3d54b11f2ac311d845358bb75f3c3fe8dc5a9e1c",
+    "git_dirty": true,
+    "content_hash": "31a78e708c3bc6c8d653d0454eebba139d98d232fd9ef091e72b8446901043a7",
+    "note": "A content hash is not a Git commit."
+  },
+  "script_sha256": "d21a1624ae1e8a4c5ec3b117aa197a022450f50fbf45453d5de64ca82b424a46",
+  "protocol_sha256": "438af51adb9e3f297fed7f5b61ea6e681c3e9e9c85edd7826245a74078be2a2d",
+  "scope": "Post-study same-host cost accounting. Cumulative RSS and retained bytes are not per-method peak allocation; no wall-time superiority claim.",
+  "raw_sha256": "446d674ea9bfc6fd01797a7086ddb612253fe169e9eb8e63d393abbff4763545"
+}

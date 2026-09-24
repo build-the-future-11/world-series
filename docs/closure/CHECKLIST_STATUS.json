@@ -430,45 +430,45 @@
     },
     {
       "id": "FT01",
-      "status": "OPEN",
+      "status": "COMPLETE",
       "requirement": "Specify an identifiable operator objective, mass/scale conventions, admissible graph information and the intended prediction/representation endpoint.",
-      "evidence": null,
-      "scope": "Original checklist requirement; no implied completion of adjacent items"
+      "evidence": "world-series/docs/closure/WFT_RESULTS.md",
+      "scope": "Declared finite equitable graphs and frozen transfer; numerical sensitivity and timing limits disclosed; broader paper claims remain open"
     },
     {
       "id": "FT02",
-      "status": "OPEN",
+      "status": "COMPLETE",
       "requirement": "Implement the proposed verified symmetry and cross-resolution constraints with justified transformation/coarsening maps.",
-      "evidence": null,
-      "scope": "Original checklist requirement; no implied completion of adjacent items"
+      "evidence": "world-series/docs/closure/WFT_RESULTS.md",
+      "scope": "Declared finite equitable graphs and frozen transfer; numerical sensitivity and timing limits disclosed; broader paper claims remain open"
     },
     {
       "id": "FT03",
-      "status": "OPEN",
+      "status": "COMPLETE",
       "requirement": "Compare an identical trainable Laplacian with each constraint disabled/enabled; include invalid-symmetry controls.",
-      "evidence": null,
-      "scope": "Original checklist requirement; no implied completion of adjacent items"
+      "evidence": "world-series/docs/closure/WFT_RESULTS.md",
+      "scope": "Declared finite equitable graphs and frozen transfer; numerical sensitivity and timing limits disclosed; broader paper claims remain open"
     },
     {
       "id": "FT04",
-      "status": "OPEN",
+      "status": "COMPLETE",
       "requirement": "Qualify learned-Laplacian, fixed geometry and appropriate PCA/transform controls; keep the true graph explicitly oracle-only.",
-      "evidence": null,
-      "scope": "Original checklist requirement; no implied completion of adjacent items"
+      "evidence": "world-series/docs/closure/WFT_RESULTS.md",
+      "scope": "Declared finite equitable graphs and frozen transfer; numerical sensitivity and timing limits disclosed; broader paper claims remain open"
     },
     {
       "id": "FT05",
-      "status": "OPEN",
+      "status": "COMPLETE",
       "requirement": "Evaluate held graph families, noise/sample regimes and genuinely frozen cross-resolution transfer; separate refit results.",
-      "evidence": null,
-      "scope": "Original checklist requirement; no implied completion of adjacent items"
+      "evidence": "world-series/docs/closure/WFT_RESULTS.md",
+      "scope": "Declared finite equitable graphs and frozen transfer; numerical sensitivity and timing limits disclosed; broader paper claims remain open"
     },
     {
       "id": "FT06",
-      "status": "OPEN",
+      "status": "COMPLETE",
       "requirement": "Validate PSD/mass-weighted identities, degeneracy handling and numerical approximation; charge setup/eigensolver costs and stated reuse amortization.",
-      "evidence": null,
-      "scope": "Original checklist requirement; no implied completion of adjacent items"
+      "evidence": "world-series/docs/closure/WFT_RESULTS.md",
+      "scope": "Declared finite equitable graphs and frozen transfer; numerical sensitivity and timing limits disclosed; broader paper claims remain open"
     },
     {
       "id": "FT07",
@@ -1017,6 +1017,6 @@
       "scope": "Original checklist requirement; no implied completion of adjacent items"
     }
   ],
-  "complete": 15,
-  "open": 130
+  "complete": 21,
+  "open": 124
 }

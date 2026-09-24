@@ -24,7 +24,7 @@ Finite support/degree/cost matrix and an actual top-k associativity counterexamp
 
 ## wft
 **BENCHMARKED / INCONCLUSIVE**
-Weighted-path noise/sample/size matrix uses matched Laplacian targets. Unit-weight and true-graph oracle baselines are distinguished. Refit at each size is not transfer.
+Weighted-path noise/sample/size matrix uses matched Laplacian targets. Unit-weight and true-graph oracle baselines are distinguished. Refit at each size is not transfer. A later equitable-graph study completes 160 learned fits and 64 fixed/oracle controls with frozen transfer to new sizes and path topology. Mean transfer error: both constraints 0.00030388 versus identical unconstrained 0.00092856. All 2,688 predictions were checked with NumPy/SciPy; gap-sensitive compression discrepancies are disclosed. This supports the bounded construction, not broad graph or novelty claims. Full graph/setup timing is recorded separately. See docs/closure/WFT_RESULTS.md.
 
 ## wpinn
 **BENCHMARKED / INCONCLUSIVE**
