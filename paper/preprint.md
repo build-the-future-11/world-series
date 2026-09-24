@@ -13,6 +13,14 @@ A working implementation and a favorable benchmark number answer different quest
 
 This report retains the full development record rather than selecting only successful modules. We do not pool incomparable endpoints or count random seeds as new datasets. Each module has its own model, domain, controls and limitations. The present contribution is a documented computational investigation; a claim of methodological novelty requires further comparison to the closest primary literature. This manuscript is a development report, not a statement that all proposed architectures or publication gates are complete.
 
+# Related work and positioning
+
+Learning an update rule is established prior work: Andrychowicz et al. (2016) train recurrent optimizers through optimization trajectories. QLearn's bounded controller is evaluated as a particular implementation, not as the invention of learned optimization. Celo2 (Moudgil et al., 2026) addresses learned-optimizer generalization and practical optimization; its released pretrained model supplies an external comparator here, with unmatched pretraining and unresolved data-overlap limitations.
+
+Sparse identification of dynamics likewise predates this work. Brunton, Proctor and Kutz (2016) formulate discovery through sparse regression over candidate nonlinear terms. Messenger and Bortz (2020) develop weak-form identification to avoid pointwise derivative estimates and reduce sensitivity to noisy observations. WPINN's sequential observation-field and structured sparse-fit experiment belongs in that established context. Its contribution must be assessed through the additional structure and discriminating controls, not by renaming weak regression.
+
+These citations establish background and attribution. They do not complete the closest-work review for all nine modules or establish novelty for this collection.
+
 # 2. Experimental organization
 
 All studies use bounded local CPU reference paths. Configurations, source identities, raw outputs and failures are retained in immutable campaign directories. Selection data choose hyperparameters or checkpoints; held observations are used for reporting. Tasks inspected during development are not subsequently described as secret holdouts. Most studies use eight seeds, but the independent population unit remains the dataset or generator family. Seed-level variability does not establish broad generalization.
@@ -96,3 +104,13 @@ Codex was used extensively for implementation, experiment design, synthetic-data
 # Evidence index
 
 The reproducibility supplement consists of the source-bound protocols and result reports under `docs/closure`, the optimizer development record under `docs/execution/development-v2`, and their referenced immutable campaign directories. These are local artifacts, not public archival citations. Closest-work review, a complete scholarly bibliography, authorship, figures and final formatting remain required before submission.
+
+# References
+
+Andrychowicz, M., Denil, M., Gomez, S., Hoffman, M. W., Pfau, D., Schaul, T., Shillingford, B., and de Freitas, N. (2016). Learning to learn by gradient descent by gradient descent. https://arxiv.org/abs/1606.04474.
+
+Brunton, S. L., Proctor, J. L., and Kutz, J. N. (2016). Discovering governing equations from data by sparse identification of nonlinear dynamical systems. Proceedings of the National Academy of Sciences. https://doi.org/10.1073/pnas.1517384113.
+
+Messenger, D. A., and Bortz, D. M. (2020). Weak SINDy: Galerkin-Based Data-Driven Model Selection. https://arxiv.org/abs/2005.04339.
+
+Moudgil, A., Knyazev, B., and Belilovsky, E. (2026). Celo2: Towards Learned Optimization Free Lunch. https://arxiv.org/abs/2602.19142.
