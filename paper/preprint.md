@@ -37,7 +37,7 @@ WCODE ranks a finite, typed program grammar using trained structural, token and 
 
 ## 3.3 Algebra, graph operators and physical discovery
 
-WFIM uses word concatenation with degree truncation. Positive diagonal coordinates transport multiplication by applying the coordinate map, multiplying, and applying its inverse. Multiplicative per-letter scales cancel exactly; independent bounded per-word scales need not. Both products remain isomorphic to concatenation. An unrestricted decoder may absorb fixed diagonal feature reweighting, so downstream benefit must be established under stated optimization, regularization and storage constraints. A new downstream experiment is in progress and has no result in this version.
+WFIM uses word concatenation with degree truncation. Positive diagonal coordinates transport multiplication by applying the coordinate map, multiplying, and applying its inverse. Multiplicative per-letter scales cancel exactly; independent bounded per-word scales need not. Both products remain isomorphic to concatenation. An unrestricted decoder may absorb fixed diagonal feature reweighting, so downstream benefit must be established under stated optimization, regularization and storage constraints. A downstream coordinate study compares this mechanism to the identical fixed algebra and to vector, bilinear and binding controls.
 
 WFT fits independent fine and coarse graph fields with equivariance and coarsening constraints. The experiment uses explicitly verified equitable coarsening and distinguishes valid reflection constraints from deliberately invalid shifts. WPINN fits an observation-only neural field or spline and then performs sparse weak-form identification, with physical-structure constraints and derivative/weak baselines. Sequential fitting is part of the original first scope; joint physics training is optional and PDE extensions are deferred.
 
@@ -67,6 +67,10 @@ WPINN contains 120 condition cells, twelve methods, 240 learned observation fiel
 
 CWLNN trains 128 models and reports 23,040 held predictions and 115,200 timing repeats. At half routing, learned routing has mean squared error 0.011939 versus 0.011412 for full hierarchy on the aligned task, and 0.032721 versus 0.029831 on diffusion. It is slower in both comparisons. Flat depth-five processing is strongest on the diffusion condition. Permutation audits agree to approximately 4.45e-16, supporting implementation consistency rather than routing benefit.
 
+## 4.4 Learned word-algebra coordinates
+
+The WFIM study trains 80 models across eight seeds, two fixed tasks and five encoders. All 40,640 saved predictions replay exactly after checkpoint reload. On ordered-pattern frequency, learned coordinates have held-template MSE 0.036352 versus 0.035816 for identity coordinates, and held-length MSE 0.009514 versus 0.006033. Mean training time is 9.75 versus 3.19 seconds. Thus the learned coordinates do not improve the primary task over the identical algebra. The order-insensitive count control is mixed. Encoders share a one-MiB payload cap and the same decoder/output dimensions, but use unequal bytes; this is not an exactly byte-matched capacity comparison.
+
 # 5. Discussion
 
 Three recurring distinctions explain the outcomes. First, algebraic validity does not imply useful parameterization: per-letter transport cancels, and per-word transport remains an isomorphism. Second, less nominal work does not imply less elapsed work: exact proposal verification can dominate saved search expansions, and conditional routing can cost more than full refinement. Third, a mechanism-specific improvement does not establish the full architecture: retrieval can help while expert lifecycle loses to a simpler control.
@@ -75,7 +79,7 @@ These observations motivate finite branch decisions. The implemented per-letter 
 
 # 6. Limitations
 
-The evidence includes small synthetic distributions, a single natural digit dataset, repeated seeds within fixed families, incomplete failure-affected aggregates and several unmatched total-cost components. Current finite rings do not cover whole new puzzle families. WFIM downstream results are pending. WPINN still needs held physical parameter regimes and inverse-PINN/data-only comparators. CWLNN arbitrary-tree receptive-field matching remains unresolved. Heterogeneous Ultron capability evaluation and independent external verification remain unfinished. These gaps prevent a submission-ready verdict for the full proposal collection.
+The evidence includes small synthetic distributions, a single natural digit dataset, repeated seeds within fixed families, incomplete failure-affected aggregates and several unmatched total-cost components. Current finite rings do not cover whole new puzzle families. WFIM requires stronger byte-matched controls and full selection replay. WPINN still needs held physical parameter regimes and inverse-PINN/data-only comparators. CWLNN arbitrary-tree receptive-field matching remains unresolved. Heterogeneous Ultron capability evaluation and independent external verification remain unfinished. These gaps prevent a submission-ready verdict for the full proposal collection.
 
 # 7. Reproducibility
 
