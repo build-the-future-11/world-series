@@ -11,6 +11,7 @@ dist/
 build/
 
 .venv-celo2/
+.venv-wpinn/
 external/
 data/*/source.zip
 campaigns/

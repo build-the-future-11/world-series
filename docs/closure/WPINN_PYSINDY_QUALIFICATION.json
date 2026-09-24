@@ -1,0 +1,110 @@
+{
+  "pysindy_version": "2.1.0",
+  "dependencies": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "derivative": "0.6.3"
+  },
+  "license": "MIT",
+  "source_files": {
+    "pysindy-2.1.0.dist-info/licenses/LICENSE": "abfa7f391ee1d5b6f51d473de5928e75ffae6e3cdbd21c19db78c98437efcbdd",
+    "pysindy/__init__.py": "e482f83807c12541824d82cd6c30d006f478e47147efa17b3b79e181bb401b4a",
+    "pysindy/_core.py": "3b45199938f028eef8caca900b4315cb5fd6509f33e3afe60467e384d8eeddaf",
+    "pysindy/_typing.py": "023f8848a0f474006e72a2a31cab1598550df5b23de11129a488dbd1c91837a7",
+    "pysindy/deeptime.py": "f89fa554c930ece8fd4494c304e12bddeeb0575ec12e87ad4ab5a3864ef1cd5c",
+    "pysindy/differentiation/__init__.py": "d3f6c3bc2797db8ea90b592c90832f14fd0a440e13fd7e778d26fd4d35cd4384",
+    "pysindy/differentiation/base.py": "3a9ac82dfac8a446684d148432cd3c9ae6cf9790a120062615d084d062d67875",
+    "pysindy/differentiation/finite_difference.py": "1d27d780d4bc45c4f9aadbeb254658bc1b8b4c53198a0de592bf5db3ee2a13c3",
+    "pysindy/differentiation/sindy_derivative.py": "cc2da09e73deda7d01df989d41d87a1a863b83cc9739b245f2a99f3ce01ffede",
+    "pysindy/differentiation/smoothed_finite_difference.py": "4be48b71736a0265a0f398b6c8eba4903fd91b1fb6daa4d5b4ca8fcd5259f875",
+    "pysindy/differentiation/spectral_derivative.py": "2b8dcaf459b3c75150d24140fdbec5921be9ea29e17c26f1d20e24817e9b33c9",
+    "pysindy/feature_library/__init__.py": "d01122fc67cc1a0ab0dbc79b7605011f1b0a417255cb01f8461e023a5006c5a4",
+    "pysindy/feature_library/base.py": "a27a20e24a206c7376229575ac4be369d3674e370bc59ce58204b5d9c0ac1193",
+    "pysindy/feature_library/custom_library.py": "b44a01d06c9f3fa7dc0cbab628a6771a117138bcf7863993a428612d8013636f",
+    "pysindy/feature_library/fourier_library.py": "844f2baf5dc12ba1ad79e986e63fa7ce0af77800e4d873674c975d83935226a4",
+    "pysindy/feature_library/generalized_library.py": "a5a64884177b45b2f82f513c0d79b4f6cbc931c172e2efbffc42573e8fe56e8d",
+    "pysindy/feature_library/parameterized_library.py": "c79fb2c01e005577506dbffad5d157e1be8b388d48e44402af3b7919393eab99",
+    "pysindy/feature_library/pde_library.py": "c87af5bea640509c412039c943c4d64d0296bd18e773b2919665ab5c71f516ac",
+    "pysindy/feature_library/polynomial_library.py": "80299ec45661f44ced2cc7ec81cd6edc0de2c00a5065c13ea343b4209011e248",
+    "pysindy/feature_library/sindy_pi_library.py": "c20bfa8bce7b41d271e0e5676b815934b02890a8ae78e2ad7905c1e0130680c8",
+    "pysindy/feature_library/weak_pde_library.py": "cf6d2629f0a38c239821004d16ff608e5f6665703b390a891fcdabe031d64dc9",
+    "pysindy/optimizers/__init__.py": "6fa6734f81c599dbb52c653afe03351bd383a56de8cc7514b70fb4147d5cc6d9",
+    "pysindy/optimizers/_constrained_sr3.py": "3fb1c6c64cbd377465c875522fd57c808b0e72593098e90da81af62681b00c6b",
+    "pysindy/optimizers/base.py": "e3de8ea6f33007baacf2f4bd583afd8063c6d4510c71c4868af6a99f8bd0f8a7",
+    "pysindy/optimizers/frols.py": "e35ae4cb996fbd2abffe129e83c0f7f673d40d5d0267cdae4ec12635375481b3",
+    "pysindy/optimizers/miosr.py": "a8bee152cbf549a95fc73e3192c07970c6e2612f25cda5cd1339bc682d719fe5",
+    "pysindy/optimizers/sbr.py": "452a2288728623989b45980acaa37cc52b4e189e672cf3eb68d87d93bcd3fdf8",
+    "pysindy/optimizers/sindy_pi.py": "c61cd81da80eb5c627c8d32fac74770d6d3de498b003e4310a70852fc90c3d6e",
+    "pysindy/optimizers/sr3.py": "ae89a2f7ff84cd5f6ae0a7f802121457ab63f6dbe4c64b9d7439a3e9e781472f",
+    "pysindy/optimizers/ssr.py": "6bfa447d822bbf20ec4cf18beb4be0b597f07b54416ebba795eca7455fd0bd9b",
+    "pysindy/optimizers/stable_linear_sr3.py": "13a875229df359c254b7de85943d70d2f7e963b942c1049d5310824fecaf91ad",
+    "pysindy/optimizers/stlsq.py": "3df07c9563e5d2ca02b07b52e03966c7747da00b034b32508e9f866993befd1e",
+    "pysindy/optimizers/trapping_sr3.py": "cb047ac2092da40355e78d47da1aae1edf03e669b9dc5cafd1933513361ff149",
+    "pysindy/optimizers/wrapped_optimizer.py": "5319268184f049d6f49ddf07e4b98148b886bb2c3b057f36211630b8c92f3f22",
+    "pysindy/utils/__init__.py": "c9be52616886cca2e552f38fdf690f3061423ed212b9913225d44a596d7369fb",
+    "pysindy/utils/_axes.py": "59a78cf9a66f5f996c7c7e3b0a54538fc7ef1cd0a603327cc45b5d419a5f7e52",
+    "pysindy/utils/_axis_conventions.py": "14f1b32977f1c8c843d07bdc3929ca366391956611b42eb64c29fef12bf00cf3",
+    "pysindy/utils/base.py": "50655ad5604279d8e35ae5884936d8c6a2e52947c6799990a53efc00371d18eb",
+    "pysindy/utils/odes.py": "bca4f83b99b3445a0a2ade8618b3ee007bd3714a03e790719106a4c6e55e848c",
+    "pysindy/version.py": "e86f3225b95d400313d0cf5988502a1a8e4e56a50cc4607569e59e2a6af03481"
+  },
+  "qualification": {
+    "derivative": {
+      "names": [
+        "1",
+        "x0",
+        "x1",
+        "x0^2",
+        "x0 x1",
+        "x1^2",
+        "x0^3",
+        "x0^2 x1",
+        "x0 x1^2",
+        "x1^3"
+      ],
+      "acceleration_coefficients": [
+        0.0,
+        -1.9999367224328624,
+        -0.2999803085748986,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_coefficient_error": 6.327756713764288e-05
+    },
+    "weak": {
+      "names": [
+        "1",
+        "x0",
+        "x1",
+        "x0^2",
+        "x0 x1",
+        "x1^2",
+        "x0^3",
+        "x0^2 x1",
+        "x0 x1^2",
+        "x1^3"
+      ],
+      "acceleration_coefficients": [
+        0.0,
+        -2.0000000000000444,
+        -0.29999999999999655,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_coefficient_error": 4.440892098500626e-14
+    }
+  },
+  "scope": "Official package compatibility on a clean analytic oscillator; not a reproduction of published WSINDy results.",
+  "documentation": "https://pysindy.readthedocs.io/en/stable/examples/12_weakform_SINDy_examples/example.html"
+}
