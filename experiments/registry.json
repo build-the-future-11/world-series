@@ -63,6 +63,27 @@
       "status": "DRAFT_NOT_AUTHORIZED",
       "primary_metric": "dev_primary",
       "notes": "Not frozen for confirmation."
+    },
+    {
+      "protocol_id": "WS-QLEARN-20260924-factorial-dev",
+      "project": "qlearn",
+      "status": "DRAFT_NOT_AUTHORIZED",
+      "primary_metric": "gradient_step_auc",
+      "notes": "Executed development only; see docs/closure/GATE_RESULTS.md. No external confirmation."
+    },
+    {
+      "protocol_id": "WS-QAPEN-20260924-lifecycle-dev",
+      "project": "qapen",
+      "status": "DRAFT_NOT_AUTHORIZED",
+      "primary_metric": "prequential_gaussian_nll",
+      "notes": "Executed development only; see docs/closure/QAPEN_PROTOCOL.md. No external confirmation."
+    },
+    {
+      "protocol_id": "WS-WCODE-20260924-trained-dev",
+      "project": "wcode",
+      "status": "DRAFT_NOT_AUTHORIZED",
+      "primary_metric": "verified_completion_cap24",
+      "notes": "Executed development only; see docs/closure/WCODE_PROTOCOL.md. No external confirmation."
     }
   ]
 }

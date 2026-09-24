@@ -25,7 +25,7 @@ Full denominators and method/condition tables: `docs/execution/development-v2/an
 
 ## wcode
 Status: BENCHMARKED / INCONCLUSIVE
-Eight-seed finite-DSL matrix with honest candidate accounting. Hierarchical, flat and token heuristics tie at the 24-candidate cap. Encoders are untrained structural heuristics.
+Eight-seed finite-DSL matrix with honest candidate accounting. Hierarchical, flat and token heuristics tie at the 24-candidate cap. Encoders are untrained structural heuristics. A later trained study uses 331 semantic functions, six matched-count scorers and two fixed orderings across eight seeds. All 28,416 searches and 144 checkpoint selections were audited. At cap24, relational solves 10.54% of family holdouts versus token 9.80%, and 0% of held compositions. No reliable advantage over trained controls is established. Fifteen functions overlap earlier WCODE/Ultron data, including four current evaluation families; all results remain development evidence. See docs/closure/WCODE_RESULTS.md.
 
 Executed evidence: `runs/20260924T101017_8bfd1d89/metrics.json`, `runs/20260924T101017_67d8da7c/metrics.json`, `runs/20260924T101018_fae6dd67/metrics.json`, `runs/20260924T101018_bb709535/metrics.json`, `runs/20260924T101019_91f19f67/metrics.json`, `runs/20260924T101019_91b5840d/metrics.json`, `runs/20260924T101020_86183074/metrics.json`, `runs/20260924T101021_fb02dd59/metrics.json`
 Full denominators and method/condition tables: `docs/execution/development-v2/analysis.json`.

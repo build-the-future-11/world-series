@@ -1,0 +1,82 @@
+{
+  "old_semantic_families": 18,
+  "new_semantic_families": 331,
+  "overlap": [
+    {
+      "old_family": "123b1d8fbc27beb2de173cdbd8cce9a9154a62297c38609ed6d33d69142ebb2a",
+      "new_family": "013fb737b3182c4af38d4c88ca82019730ad57da9739310ff654208d8fa6f573",
+      "new_role": "selection"
+    },
+    {
+      "old_family": "8922a99425ad5732df6683b55a87abf3c967622b7373174db3a00708473f28f3",
+      "new_family": "0e53c809348c477dad2236d132e26ef1a4e6f17b4a04a57bee67f4a48b4326ef",
+      "new_role": "train"
+    },
+    {
+      "old_family": "9c8d389bec660be53fbfba99edd7fe5ea2b30137b0d3d454689653244138a0d2",
+      "new_family": "3453a6fb0e1f5983cd5fb48b7729c7ec029148d30d2e629aa76b51ab564b7e93",
+      "new_role": "selection"
+    },
+    {
+      "old_family": "f2b37c5b991f2afb1f543aadc3a9fcbf50ce9d627bb123600f2b972ba1261eb5",
+      "new_family": "3595a979c910b47bbbd2534f71b84ccfb8e22b457a28b51e4b9b8b5fa2443fd9",
+      "new_role": "selection"
+    },
+    {
+      "old_family": "1dce7b9a1f46d38835ba732ba407cb2f5221200d0e2b0d98aa9c5ec32bb583c1",
+      "new_family": "530a1f72c8f8b20d81516bcad27ed091661db57a95985eeb4818f84bfda27ed2",
+      "new_role": "evaluation_family"
+    },
+    {
+      "old_family": "245fd7e4d3454883d939ea781ec579537a85133db7751052f6e52cb72c0a11cb",
+      "new_family": "726b01910dd4576f09e06d5928165898d11f8ce2cca34697e88b48d0d91a7237",
+      "new_role": "selection"
+    },
+    {
+      "old_family": "74ba97e536d312359fa4111835046cbe8ec0bd95fcbf6d325a6316c74225c3dc",
+      "new_family": "940aacfd24250ca9d14255da8f355651c614c6fd86eb6afb3dec8949a00a43bf",
+      "new_role": "train"
+    },
+    {
+      "old_family": "36916f9889014928f417032588b2581b5ffd02cc82de3bb4932ce34e643e7946",
+      "new_family": "9b8f4488df782766b3e6726fb43c91be033473f3833a3a656f1dab5e9b8cef13",
+      "new_role": "train"
+    },
+    {
+      "old_family": "8668a63699faa98c30c6a3b612416442fe54ce0ae0a6082c1825fd692b4decd1",
+      "new_family": "a00113c0afb34ddd2db4585210f69a0daf220a68b6e72be193650bb38e3f5c7e",
+      "new_role": "train"
+    },
+    {
+      "old_family": "a360446dfb7fab612440275603a2141df9a32abea8f85d3df35b1bd8ed9762b4",
+      "new_family": "bd329a527480427f38261b3172c6adf58b55921685cef785bc42f9a4600cc9d7",
+      "new_role": "train"
+    },
+    {
+      "old_family": "589c043713a5a33102af441fc8820ca7297d92f398e313841d800e35d4f8819d",
+      "new_family": "bfd7e4f070f400f1f5e2493f59dd0f423c860c0f4ba88e546983e8e5fdfe6252",
+      "new_role": "train"
+    },
+    {
+      "old_family": "bee1aa1c9e0a4e89b9b001bd42858c79458650d816ff68d9a682705447a99dbd",
+      "new_family": "ca78219f96e82eeb53921d5f8c538bc13a9dd917b0be9e4a58f92e282d5db927",
+      "new_role": "evaluation_family"
+    },
+    {
+      "old_family": "bf80662a74107bdd625e5ef1fc861abc9f8de0da8a3578d9aa8f5ec8eefbdb26",
+      "new_family": "e6805be7e0c5d6bc7df6790c44b0117b975e3976d079e27b16521daed30eba33",
+      "new_role": "train"
+    },
+    {
+      "old_family": "cfb7d8fd874bcdc9b9c8e9a77078c34fbcd6a154f91d30342223b0009eeb7816",
+      "new_family": "eddab69d8bf4c1b996433874d7dd2e90456a03593b299850b4724164621a1c87",
+      "new_role": "evaluation_family"
+    },
+    {
+      "old_family": "8df3c1d8e93a4a38b12e5172ebaa5cf55ba798077f9b546f5cb13f56822122fa",
+      "new_family": "fdc05abcce6061e85962567c28c7b58422174b7405ef424dea0f2f74f549e944",
+      "new_role": "evaluation_family"
+    }
+  ],
+  "scope": "Shared finite inputs -8 through 8; these functions were exposed in prior WCODE/Ultron development and are not independently new tasks"
+}

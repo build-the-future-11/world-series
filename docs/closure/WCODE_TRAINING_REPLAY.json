@@ -1,0 +1,24 @@
+{
+  "seed": 2017,
+  "method": "relational",
+  "steps": 80,
+  "loss_history_exact": true,
+  "checkpoints": [
+    {
+      "step": 20,
+      "parameters_exact": true,
+      "selection_exact": true
+    },
+    {
+      "step": 40,
+      "parameters_exact": true,
+      "selection_exact": true
+    },
+    {
+      "step": 80,
+      "parameters_exact": true,
+      "selection_exact": true
+    }
+  ],
+  "scope": "One seeded training replay on same host; not all-model or independent reproduction"
+}

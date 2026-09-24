@@ -32,29 +32,31 @@ but broad paper-level requirements remain open.
 
 ## Immediate continuation
 
-1. Implement and train WCODE's relational/hierarchical scorer with task
-   conditioning. Add trained token and flat controls with matching parameter
-   count/information access, a common candidate pool, semantic-family-separated
-   training/selection/evaluation and complete interpreter/verification costs.
-   Expand beyond the reused 18 functions. Freeze a development protocol before
-   seeing outcomes. Keep unrestricted coding and compiler/complexity claims out.
-2. Validate DSL runtime type and resource-bound contracts as necessary for that
-   study. Existing interpreter has weak checks on environment-provided values
-   and list-sum output bounds; tests must cover actual contract violations.
-3. Complete WFT symmetry/cross-resolution constraint study, WPINN structured
+WCODE's trained stage is now executed in numerical commit 58e19d1: 331 canonical
+finite functions, six 15,336-parameter scorers, two fixed baselines, eight seeds,
+28,416 audited searches and 144 recomputed checkpoint-selection scores. The
+runtime type/resource defects are repaired; all 76 tests pass. Relational cap24
+completion is 10.54% on family holdouts versus token 9.80%, and 0% on held
+compositions. No robust gain over trained controls is established. Fifteen
+functions overlap older WCODE/Ultron data (four current evaluation families),
+and the overlap is explicitly retained/disclosed. One 80-step training replay
+matches loss history and all three checkpoints exactly. No extension is justified
+by final-checkpoint selection: all relational seeds select earlier steps.
+
+1. Complete WFT symmetry/cross-resolution constraint study, WPINN structured
    weak-fit failure analysis, and learned/conditional CWLNN routing. Each needs
    its own source-frozen protocol and matched controls; do not reuse a changed
    source under an old campaign identity.
-4. Reconcile stale PAPER_AUDIT/architecture/queue documents with the new evidence,
+2. Reconcile stale PAPER_AUDIT/architecture/queue documents with the new evidence,
    build a complete proposal-to-implementation map and claim index, and fix
    package dependence on absolute .portfolio paths. Reproduce from clean
    extracted artifacts before a release claim.
-5. Complete substantive original-paper novelty review for retained contributions
+3. Complete substantive original-paper novelty review for retained contributions
    and prepare the remaining manuscript/reproducibility work. External
    confirmation, authorship/licensing and venue decisions cannot be fabricated.
 
 One numerical worker. All current numerical jobs have finished. Preserve all
-old campaigns and source snapshots. Current numerical candidate is 7452339;
+old campaigns and source snapshots. Current numerical candidate is 58e19d1;
 later changes at this checkpoint are analyses/documentation only. Source hash
 in each campaign, rather than the latest Git head, identifies its implementation.
 The earlier verified delivery stays immutable; build a new delivery for new work.

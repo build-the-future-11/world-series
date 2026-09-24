@@ -325,24 +325,24 @@
     },
     {
       "id": "WC01",
-      "status": "OPEN",
+      "status": "COMPLETE",
       "requirement": "Implement and train the proposed relational hierarchical scorer; fixed structural feature norms are not completion of this item.",
-      "evidence": null,
-      "scope": "Original checklist requirement; no implied completion of adjacent items"
+      "evidence": "world-series/docs/closure/WCODE_RESULTS.md",
+      "scope": "Declared finite integer DSL, matched trained encoders and semantic-family trace dataset; broader paper claims remain open"
     },
     {
       "id": "WC02",
-      "status": "OPEN",
+      "status": "COMPLETE",
       "requirement": "Build trace datasets with canonical semantic-family splits fixed before training; include failed searches and exclude equivalent target functions across roles.",
-      "evidence": null,
-      "scope": "Original checklist requirement; no implied completion of adjacent items"
+      "evidence": "world-series/docs/closure/WCODE_RESULTS.md",
+      "scope": "Declared finite integer DSL, matched trained encoders and semantic-family trace dataset; broader paper claims remain open"
     },
     {
       "id": "WC03",
-      "status": "OPEN",
+      "status": "COMPLETE",
       "requirement": "Train capacity-matched token and flat controls; retain uniform and length-order baselines under the identical grammar/enumerator/verifier.",
-      "evidence": null,
-      "scope": "Original checklist requirement; no implied completion of adjacent items"
+      "evidence": "world-series/docs/closure/WCODE_RESULTS.md",
+      "scope": "Declared finite integer DSL, matched trained encoders and semantic-family trace dataset; broader paper claims remain open"
     },
     {
       "id": "WC04",
@@ -1017,6 +1017,6 @@
       "scope": "Original checklist requirement; no implied completion of adjacent items"
     }
   ],
-  "complete": 12,
-  "open": 133
+  "complete": 15,
+  "open": 130
 }

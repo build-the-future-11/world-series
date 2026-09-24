@@ -50,6 +50,8 @@ def main():
         for key,extra in updates.items():cards[key]=(cards[key][0],cards[key][1]+' '+extra)
     if (closure/'QAPEN_RESULTS.json').exists():
         cards['qapen']=(cards['qapen'][0],cards['qapen'][1]+' A new finite linear-Gaussian lifecycle implementation completes 512 stream-method cells with frozen quantization, prospective admission, sleep/revival, delayed utility and exact checkpoints. Mean NLL 0.61727 vs single-memory 0.61225 and rolling ridge 0.55893. No advantage over the strongest simple controls. See docs/closure/QAPEN_RESULTS.md.')
+    if (closure/'WCODE_RESULTS.json').exists():
+        cards['wcode']=(cards['wcode'][0],cards['wcode'][1]+' A later trained study uses 331 semantic functions, six matched-count scorers and two fixed orderings across eight seeds. All 28,416 searches and 144 checkpoint selections were audited. At cap24, relational solves 10.54% of family holdouts versus token 9.80%, and 0% of held compositions. No reliable advantage over trained controls is established. Fifteen functions overlap earlier WCODE/Ultron data, including four current evaluation families; all results remain development evidence. See docs/closure/WCODE_RESULTS.md.')
     lines=['# World Series current research status','',
       'Updated 24 September 2026 from named executed campaigns. This supersedes the September 22 root status snapshot; historical copies remain in docs/history/.',
       '', '**Verdict:** Runnable and benchmarked within bounded development scopes. No full-project, novelty, independent-replication or publication-readiness certification.',

@@ -16,7 +16,7 @@ Canonical keys retain concrete replayable paths. Exhaustive 3/4-token regression
 
 ## wcode
 **BENCHMARKED / INCONCLUSIVE**
-Eight-seed finite-DSL matrix with honest candidate accounting. Hierarchical, flat and token heuristics tie at the 24-candidate cap. Encoders are untrained structural heuristics.
+Eight-seed finite-DSL matrix with honest candidate accounting. Hierarchical, flat and token heuristics tie at the 24-candidate cap. Encoders are untrained structural heuristics. A later trained study uses 331 semantic functions, six matched-count scorers and two fixed orderings across eight seeds. All 28,416 searches and 144 checkpoint selections were audited. At cap24, relational solves 10.54% of family holdouts versus token 9.80%, and 0% of held compositions. No reliable advantage over trained controls is established. Fifteen functions overlap earlier WCODE/Ultron data, including four current evaluation families; all results remain development evidence. See docs/closure/WCODE_RESULTS.md.
 
 ## wfim
 **BENCHMARKED / INCONCLUSIVE**
