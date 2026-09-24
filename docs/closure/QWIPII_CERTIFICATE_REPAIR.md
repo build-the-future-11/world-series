@@ -9,3 +9,9 @@ Simultaneously transforming a board and its goal establishes problem equivalence
 Regression cases cover empty and incomplete samples, duplicates, a transform that is identity on the initial sample but fails bijectivity elsewhere, a bijection that fails transition preservation, repeated-label stabilizers, and allocation rejection before enumeration.
 
 Still open: trained grammar ranking, certificate-bound learned quotient search, complete verification/canonicalization/training cost accounting, and held-out whole-family experiments. No checklist item is closed solely by these unit tests.
+
+## Trained proposal mechanism
+
+`learned_discovery.py` implements a seven-feature ridge ranker trained against exact single-generator orbit reduction. Features use public goal structure and sampled action behavior; proof labels are training targets only. At inference the grammar is scored, the declared number of top proposals is exhaustively checked, and only passing fixed-goal witnesses are returned. Rejected proposals consume the verification budget. Identity has zero orbit-reduction utility. The existing heuristic discovery function remains explicitly separate.
+
+Twelve QWIPII tests now pass, covering changed learned weights and training error, bounded verification calls, zero budget, adversarial scores that cannot bypass verification, complete-domain contracts, and certified path replay/optimality. These are mechanism tests, not held-family research results. The next campaign must preserve separate training, selection and held goal families, charge sampled feature work and training-label verification, compare random and hand proposals under the same verification budget, and report end-to-end search costs including certificate revalidation.
