@@ -8,8 +8,8 @@ import subprocess
 import tarfile
 
 ROOT = Path(__file__).resolve().parents[1]
-FOLDERS = ('src','tests','scripts','configs','docs','data','experiments','provenance','results','runs','campaigns')
-ROOT_FILES = ('README.md','AGENTS.md','.gitignore','pyproject.toml','requirements.lock.txt')
+FOLDERS = ('src','tests','scripts','configs','docs','paper','data','experiments','provenance','results','runs','campaigns','.github')
+ROOT_FILES = ('README.md','AGENTS.md','.gitignore','pyproject.toml','requirements.lock.txt','reproduce.sh','LICENSE.md','FINAL_RELEASE_REPORT.md')
 
 
 def digest(path):
@@ -23,7 +23,7 @@ def gather_files(root):
         for path in sorted((root/folder).rglob('*')):
             if path.is_symlink():
                 raise ValueError(f'Symlink input is not a portable regular artifact: {path}')
-            if not path.is_file() or '__pycache__' in path.parts or path.suffix=='.pyc':
+            if not path.is_file() or '__pycache__' in path.parts or path.suffix=='.pyc' or (folder=='paper' and path.suffix in {'.log','.aux','.out','.toc'}):
                 continue
             files['repository/'+path.relative_to(root).as_posix()] = path
     for name in ROOT_FILES:

@@ -1,5 +1,6 @@
 from __future__ import annotations
 from dataclasses import dataclass
+import math
 from typing import Dict, Tuple
 from world_series.core.contracts import ErrorCode, WorldSeriesError
 
@@ -9,6 +10,10 @@ Word = Tuple[int, ...]
 class SparseWordSeries:
     coeffs: Dict[Word, float]
     r: float = 1.0
+
+    def __post_init__(self):
+        if not math.isfinite(self.r) or self.r <= 0:
+            raise ValueError("Weighted word norm requires finite r > 0")
 
     def copy(self) -> "SparseWordSeries":
         return SparseWordSeries(dict(self.coeffs), r=self.r)
@@ -20,7 +25,9 @@ def add(x: SparseWordSeries, y: SparseWordSeries) -> SparseWordSeries:
     out = x.copy()
     for w, c in y.coeffs.items():
         out.coeffs[w] = out.coeffs.get(w, 0.0) + c
-        if abs(out.coeffs[w]) < 1e-15:
+        # Degree projection is algebraic; magnitude pruning is not. Retain
+        # nonzero coefficients even when small relative to typical inputs.
+        if out.coeffs[w] == 0:
             del out.coeffs[w]
     return out
 

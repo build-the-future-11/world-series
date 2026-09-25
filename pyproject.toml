@@ -8,8 +8,7 @@ version = "0.1.0"
 description = "World Series v0.1 research workbench — nine independently testable modules"
 readme = "README.md"
 requires-python = ">=3.11,<3.13"
-license = { text = "Apache-2.0" }
-authors = [{ name = "World Series" }]
+license = { text = "Distribution license not yet approved; see LICENSE.md" }
 dependencies = [
   "numpy>=1.26",
   "scipy>=1.11",

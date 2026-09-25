@@ -4,6 +4,7 @@ import argparse, hashlib, json
 from pathlib import Path
 import torch
 from world_series.wfim.learning import CompositionModel
+from source_paths import source_path
 
 
 def main(root,output):
@@ -11,7 +12,7 @@ def main(root,output):
     torch.set_num_threads(1)
     protocol=json.loads((root/"protocol.json").read_text())
     for file,digest in protocol["source"].items():
-        assert hashlib.sha256(Path(file).read_bytes()).hexdigest()==digest
+        assert hashlib.sha256(source_path(file).read_bytes()).hexdigest()==digest
     data=json.loads((root/"data.json").read_text());words=data["words"]
     tokens=torch.full((len(words),8),-1,dtype=torch.long)
     for i,w in enumerate(words):tokens[i,:len(w)]=torch.tensor(w)

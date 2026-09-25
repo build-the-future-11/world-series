@@ -27,6 +27,8 @@ def test_complete_package_verifies_without_original_checkout_or_sidecar(tmp_path
     (root/'campaigns/new-study/failure.json').write_text('{"status":"failed"}')
     (root/'runs/unfinished').mkdir(parents=True)
     (root/'runs/unfinished/manifest.json').write_text('{"status":"RUNNING"}')
+    (root/'paper').mkdir()
+    (root/'paper/preprint.md').write_text('Evidence-bound manuscript\n')
     subprocess.run(['git','init','--quiet',str(root)],check=True)
     subprocess.run(['git','-C',str(root),'add','.'],check=True)
     subprocess.run(['git','-C',str(root),'-c','user.name=Fixture','-c','user.email=fixture@example.invalid','commit','--quiet','-m','fixture'],check=True)
@@ -39,6 +41,7 @@ def test_complete_package_verifies_without_original_checkout_or_sidecar(tmp_path
     assert result['passed']
     assert (tmp_path/'extracted/repository/campaigns/new-study/failure.json').read_text()=='{"status":"failed"}'
     assert (tmp_path/'extracted/repository/runs/unfinished/manifest.json').is_file()
+    assert (tmp_path/'extracted/repository/paper/preprint.md').read_text()=='Evidence-bound manuscript\n'
     restored=module('restore_delivery').restore(tmp_path/'extracted',tmp_path/'restored')
     assert restored['source_head']==result['source']['git_head']
     assert (tmp_path/'restored/campaigns/new-study/failure.json').is_file()
@@ -63,5 +66,18 @@ def test_unsafe_archive_member_rejected_before_extraction(tmp_path):
         tar.addfile(info,io.BytesIO(b'x'))
     digest=hashlib.sha256(archive.read_bytes()).hexdigest()
     (tmp_path/'receipt.json').write_text(json.dumps({'sha256':digest}))
-    with pytest.raises(AssertionError,match='Unsafe'): verify.main(tmp_path,tmp_path/'extract')
+    with pytest.raises(ValueError,match='Unsafe'): verify.main(tmp_path,tmp_path/'extract')
     assert not (tmp_path/'extract').exists()
+
+
+@pytest.mark.parametrize("optimized", [False, True])
+def test_archive_checksum_checked_before_opening(tmp_path, optimized):
+    import sys
+
+    (tmp_path / 'world-series-review.tar.gz').write_bytes(b'not a tar file')
+    (tmp_path / 'receipt.json').write_text(json.dumps({'sha256': '0' * 64}))
+    script = Path(__file__).resolve().parents[1] / 'scripts/verify_delivery.py'
+    argv = [sys.executable] + (['-O'] if optimized else []) + [str(script), str(tmp_path)]
+    result = subprocess.run(argv, capture_output=True, text=True)
+    assert result.returncode != 0
+    assert 'Archive checksum mismatch' in result.stderr

@@ -14,25 +14,31 @@ def safe_name(name):
     return bool(name) and not path.is_absolute() and '..' not in path.parts and '\\' not in name and path.as_posix()==name
 
 
+def require(condition, message):
+    """Keep integrity checks active even when Python runs with -O."""
+    if not condition:
+        raise ValueError(message)
+
+
 def main(directory,extract=None):
     directory=directory.resolve()
     receipt=json.loads((directory/'receipt.json').read_text())
     archive=directory/'world-series-review.tar.gz'
     with archive.open('rb') as f:
-        assert hashlib.file_digest(f,'sha256').hexdigest()==receipt['sha256']
+        require(hashlib.file_digest(f,'sha256').hexdigest()==receipt['sha256'], 'Archive checksum mismatch')
     with tarfile.open(archive,'r:gz') as tar:
         members=tar.getmembers()
         names=[m.name for m in members]
-        assert len(names)==len(set(names)), 'Duplicate archive members'
-        assert all(safe_name(m.name) and m.isfile() for m in members),'Unsafe archive member'
+        require(len(names)==len(set(names)), 'Duplicate archive members')
+        require(all(safe_name(m.name) and m.isfile() for m in members), 'Unsafe archive member')
         manifest=json.load(tar.extractfile('manifest.json'))
-        assert manifest==json.loads((directory/'manifest.json').read_text())
-        assert set(names)==set(manifest['files'])|{'manifest.json'}
+        require(manifest==json.loads((directory/'manifest.json').read_text()), 'Manifest mismatch')
+        require(set(names)==set(manifest['files'])|{'manifest.json'}, 'Archive inventory mismatch')
         for name,expected in manifest['files'].items():
             member=tar.getmember(name)
-            assert member.size==expected['bytes']
+            require(member.size==expected['bytes'], f'Wrong size: {name}')
             with tar.extractfile(member) as handle:
-                assert hashlib.file_digest(handle,'sha256').hexdigest()==expected['sha256'],name
+                require(hashlib.file_digest(handle,'sha256').hexdigest()==expected['sha256'], f'Checksum mismatch: {name}')
         # No existing checkout or external sidecar bundle is needed.
         with tempfile.TemporaryDirectory(prefix='world-series-bundle-') as work:
             work=Path(work)

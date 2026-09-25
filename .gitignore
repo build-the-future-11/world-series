@@ -17,3 +17,15 @@ data/*/source.zip
 campaigns/
 .work-tmp/
 deliveries/
+
+# Local credentials and generated manuscript intermediates
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+paper/*.log
+paper/*.aux
+paper/*.out
+paper/*.toc
+.hypothesis/

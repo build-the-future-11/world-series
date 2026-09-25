@@ -5,13 +5,14 @@ from pathlib import Path
 import numpy as np
 import torch
 from world_series.wfim.learning import CompositionModel
+from source_paths import source_path
 
 
 def main(root, output):
     if output.exists(): raise FileExistsError(output)
     protocol=json.loads((root/"protocol.json").read_text())
     for name,digest in protocol["source"].items():
-        if hashlib.sha256(Path(name).read_bytes()).hexdigest()!=digest:raise ValueError(f"source changed: {name}")
+        if hashlib.sha256(source_path(name).read_bytes()).hexdigest()!=digest:raise ValueError(f"source changed: {name}")
     data=json.loads((root/"data.json").read_text());words=data["words"];splits=data["splits"]
     tokens=torch.full((len(words),8),-1,dtype=torch.long)
     for i,w in enumerate(words):tokens[i,:len(w)]=torch.tensor(w)
