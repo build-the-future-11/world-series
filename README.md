@@ -2,7 +2,7 @@
 
 Installable research workbench for nine independently testable projects under shared contracts.
 
-## Current status — 24 September 2026
+## Current status — private review export, 25 September 2026
 
 The repository now includes the original 80-run development matrix plus
 causal Q-APEN lifecycle, trained WCODE, constrained WFT, structured WPINN and
@@ -10,10 +10,12 @@ conditional CWLNN studies. These remain development evidence, with negative
 findings and all failed trials preserved. CWLNN's learned routing shows no net
 speed/accuracy benefit; WPINN's incomplete primary aggregates remain incomplete.
 
+See the [finite closure registry](https://github.com/Build-the-future12/world-series-research-records/blob/main/RESEARCH_CLOSURE/REGISTRY.json), [closure report](https://github.com/Build-the-future12/world-series-research-records/blob/main/RESEARCH_CLOSURE/FINAL_REPORT.md), and [claims index](results/claim_index.json). The compiled shared manuscript is in `paper/`.
+
 See the [current paper audit](docs/PAPER_AUDIT.md),
 [proposal-to-implementation map](docs/closure/PROPOSAL_IMPLEMENTATION_MAP.md),
 [active checklist](docs/closure/CHECKLIST_STATUS.json), and
-[working manuscript](docs/execution/development-v2/RESEARCH_DRAFT.md).
+[working manuscript](paper/preprint.md).
 No submission-ready paper or independent confirmation is claimed.
 Historical numerical source commits are recorded in each campaign; use those
 versions for exact replay instead of running every old audit against latest code.
@@ -37,6 +39,8 @@ Independent confirmation requires the prepared
 [external evaluation handoff](docs/execution/development-v2/INDEPENDENT_EVALUATION_HANDOFF.md).
 
 **This repository is an implementation workbench.** Original project proposals are preserved in `provenance/original-proposals/`; the wider planning pack lives in `../world_series_cursor_pack/` (reconstructed from `WORLD_SERIES_COMPLETE_BLUEPRINT.md` because `WORLD_SERIES_CURSOR_PACK.zip` was not present). Planning validators are **not** scientific evidence.
+
+See [the final release report](FINAL_RELEASE_REPORT.md) and [clone, evidence download and reproduction instructions](docs/RELEASE_REPRODUCIBILITY.md). A source-only clone does not include raw campaigns.
 
 ## Environment (locked)
 
@@ -102,3 +106,22 @@ python scripts/verify_delivery.py deliveries/FRESH_DIRECTORY --extract FRESH_EXT
 Outputs must be fresh. Archive integrity and extraction do not replace clean
 experimental reproduction or scientific review. Historical absolute paths in
 immutable receipts are provenance fields, not input requirements of the builder.
+
+## Results and limitations
+
+The current manuscript reports bounded, internally checked development results.
+Several methods fail to improve strong controls; failure-affected means remain
+incomplete. No general method advantage or independent confirmation is established.
+The raw evidence archive retains failed and interrupted outcomes.
+
+## Citation
+
+For private review, identify this workbench by repository URL and exact commit
+SHA, and cite the actual primary sources listed in `paper/preprint.md`.
+Human authorship and a publication citation have not been finalized, so no
+invented author list or publication identifier is supplied.
+
+## License
+
+Distribution terms remain unapproved; see [LICENSE.md](LICENSE.md).
+This private export does not grant an open-source license.

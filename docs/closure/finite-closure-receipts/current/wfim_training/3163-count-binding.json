@@ -1,0 +1,21 @@
+{
+  "name": "3163-count-binding",
+  "training_losses_exact": true,
+  "selected_state_exact": true,
+  "selected_step": 50,
+  "selection_scores": [
+    {
+      "step": 50,
+      "mse": 0.3643313093319074
+    },
+    {
+      "step": 100,
+      "mse": 0.36762529926180243
+    },
+    {
+      "step": 150,
+      "mse": 0.36766419082629453
+    }
+  ],
+  "original_checkpoint_sha256": "eb8d0b00b49d63aee250a2dfb6f1481317a527e8ce0a2a6b8164b497ec457aab"
+}

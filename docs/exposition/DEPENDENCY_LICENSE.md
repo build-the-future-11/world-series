@@ -9,5 +9,5 @@
 | PyYAML | configs | MIT |
 | pytest / hypothesis / ruff | dev | BSD/MIT |
 
-Project license field in `pyproject.toml`: Apache-2.0 (placeholder for this workbench; confirm before distribution).
+The unapproved Apache-2.0 placeholder has been removed from package metadata. See `LICENSE.md`; public distribution terms remain unresolved.
 No paid APIs. No cloud schedulers.

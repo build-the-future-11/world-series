@@ -1,0 +1,29 @@
+{
+  "exit_code": 0,
+  "seconds": 367.78691345899983,
+  "argv": [
+    "/Volumes/PRO-BLADE/World-Series/world-series/.work-tmp/review-v2-env/bin/python",
+    "scripts/closure/analyze_cwlnn.py",
+    "--replay-output",
+    "/Volumes/PRO-BLADE/World-Series/world-series/.work-tmp/finite-closure/cwlnn-source/campaigns/fresh-training-replay"
+  ],
+  "cwd": "/Volumes/PRO-BLADE/World-Series/world-series/.work-tmp/finite-closure/cwlnn-source",
+  "source_head": "6d81c1488ec9c3a1d580ab4b864cc2e801df32dd",
+  "restored_historical_paths": [
+    "src/world_series/qwipii/discovery.py",
+    "src/world_series/qwipii/search.py",
+    "src/world_series/qwipii/verifier.py"
+  ],
+  "full_result_matches_original": true,
+  "audit": {
+    "predictions_replayed": 23040,
+    "checkpoint_scores": 256,
+    "unique_graph_ids": 1792,
+    "files_hashed": 480,
+    "permutations_checked": 23040,
+    "max_permutation_difference": 4.440892098500626e-16,
+    "one_full_training_replay_exact": true
+  },
+  "environment": "Existing separate review-v2 dependency environment, isolated source copy.",
+  "scope": "Same-host numerical/checkpoint/permutation replay; not independent replication."
+}

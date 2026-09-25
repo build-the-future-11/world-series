@@ -1,0 +1,21 @@
+{
+  "name": "3137-order-identity_coordinates",
+  "training_losses_exact": true,
+  "selected_state_exact": true,
+  "selected_step": 150,
+  "selection_scores": [
+    {
+      "step": 50,
+      "mse": 0.011909594598033667
+    },
+    {
+      "step": 100,
+      "mse": 0.00834185885227741
+    },
+    {
+      "step": 150,
+      "mse": 0.006763931370653051
+    }
+  ],
+  "original_checkpoint_sha256": "e80c471913e63fdcc3bcf4ac6a6946165a4d6731f2377470f4680d8a3cec862d"
+}

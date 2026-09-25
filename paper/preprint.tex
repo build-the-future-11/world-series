@@ -2,8 +2,11 @@
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
 \documentclass[
+  11pt,
+  a4paper,
 ]{article}
 \usepackage{xcolor}
+\usepackage[margin=0.85in]{geometry}
 \usepackage{amsmath,amssymb}
 \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 \usepackage{iftex}
@@ -36,6 +39,21 @@
 }{% if KOMA class
   \KOMAoptions{parskip=half}}
 \makeatother
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
@@ -54,7 +72,7 @@
 \title{Mechanism Verification and Negative Findings in a Structured
 Learning Workbench}
 \author{}
-\date{24 September 2026 --- development manuscript}
+\date{25 September 2026 - private review manuscript}
 
 \begin{document}
 \maketitle
@@ -88,16 +106,21 @@ contracts yet add computational overhead, preserve valid paths without
 reducing search, or exploit a task construction that favors a particular
 representation. We investigate these distinctions in a shared research
 workbench. The central methodological question is whether a claimed
-mechanism survives a comparison that holds information access and
-evaluation rules fixed while charging the work needed to use it.
+mechanism survives comparisons that disclose information access,
+evaluation rules and measured work. Controls are not uniformly
+information- or cost-matched: physical priors and external pretraining
+differ in the cases identified below.
 
-This report retains the full development record rather than selecting
-only successful modules. We do not pool incomparable endpoints or count
-random seeds as new datasets. Each module has its own model, domain,
-controls and limitations. The present contribution is a documented
-computational investigation; a claim of methodological novelty requires
-further comparison to the closest primary literature. This manuscript is
-a development report, not a statement that all proposed architectures or
+This retrospective report includes the nine namespaces already present
+in the workbench, with the named campaigns and failures enumerated in
+the claim index. It is not a systematic sample of structured-learning
+methods, and no completeness claim is made for unrecorded experiments.
+We do not pool incomparable endpoints or count random seeds as new
+datasets. Each module has its own model, domain, controls and
+limitations. The present contribution is a documented computational
+investigation; a claim of methodological novelty requires further
+comparison to the closest primary literature. This manuscript is a
+development report, not a statement that all proposed architectures or
 publication gates are complete.
 
 \section{Related work and
@@ -138,13 +161,17 @@ remains the dataset or generator family. Seed-level variability does not
 establish broad generalization.
 
 We distinguish exact finite-domain contracts, numerical regression
-checks, development comparisons, and independent replication. A
-certificate establishes only its explicit domain and assumptions. A
-successful program exit does not establish the scientific hypothesis.
-Failed required cells remain in denominators or make an aggregate
-unavailable; survivor-only means are not substituted. Exploratory
-interventions on a failed model are labeled retrospective rather than
-treated as new primary outcomes.
+checks, development comparisons, and independent replication. Algebraic
+identities refer to the stated mathematical objects; floating-point
+implementations do not provide library-wide exact arithmetic.
+Seed-paired bootstrap intervals are exploratory and conditional on the
+fixed tasks; most comparisons are unadjusted and there is no
+collection-wide significance test. A certificate establishes only its
+explicit domain and assumptions. A successful program exit does not
+establish the scientific hypothesis. Failed required cells remain in
+denominators or make an aggregate unavailable; survivor-only means are
+not substituted. Exploratory interventions on a failed model are labeled
+retrospective rather than treated as new primary outcomes.
 
 \section{3. Mechanisms}\label{mechanisms}
 
@@ -207,13 +234,16 @@ the identical fixed algebra and to vector, bilinear and binding
 controls.
 
 WFT fits independent fine and coarse graph fields with equivariance and
-coarsening constraints. The experiment uses explicitly verified
-equitable coarsening and distinguishes valid reflection constraints from
-deliberately invalid shifts. WPINN fits an observation-only neural field
-or spline and then performs sparse weak-form identification, with
-physical-structure constraints and derivative/weak baselines. Sequential
-fitting is part of the original first scope; joint physics training is
-optional and PDE extensions are deferred.
+coarsening constraints. The actual teacher applies softplus to a
+constant-plus-cosine preactivation, not an exponential log-weight field;
+the older protocol wording is corrected here without changing its frozen
+data. The experiment uses explicitly verified equitable coarsening and
+distinguishes valid reflection constraints from deliberately invalid
+shifts. WPINN fits an observation-only neural field or spline and then
+performs sparse weak-form identification, with physical-structure
+constraints and derivative/weak baselines. Sequential fitting is part of
+the original first scope; joint physics training is optional and PDE
+extensions are deferred.
 
 CWLNN selects nodes before expensive refinement. Router, local, coarse
 and refinement computations are measured rather than masking already
@@ -268,16 +298,18 @@ Held-composition completion is zero. Fifteen functions overlap older
 WCODE/Ultron data, including four current evaluation families. The
 evidence does not establish robust structural-ranking superiority.
 
-\subsection{4.3 Graph operators, dynamics and conditional
-computation}\label{graph-operators-dynamics-and-conditional-computation}
+\subsection{4.3 Graphs and dynamics}\label{graphs-and-dynamics}
 
 WFT contains 160 learned fits, 64 fixed or oracle controls and 2,688
-transfer rows. Both constraints yield mean error 0.000303878 versus
-0.000928561 without either constraint within the declared generator.
-Both constraints are worse in 12 of 48 conditions. This is a bounded
-benefit, not a claim over arbitrary graph distributions. Numerical
-verification at nearly repeated spectral boundaries requires a disclosed
-gap-sensitive tolerance.
+evaluation rows, of which 1,792 are transfer rows at previously unseen
+group counts 32 and 64. Both constraints yield mean error 0.000303878
+versus 0.000928561 without either constraint within the declared
+generator. Across all evaluation sizes, both constraints are worse in 12
+of 48 conditions; that denominator includes the training graph size and
+is not a transfer-only count. This is a bounded benefit, not a claim
+over arbitrary graph distributions. Numerical verification at nearly
+repeated spectral boundaries requires a disclosed gap-sensitive
+tolerance.
 
 WPINN contains 120 condition cells, twelve methods, 240 learned
 observation fields and 6,720 replayed rollouts. Primary aggregates
@@ -310,16 +342,25 @@ order-insensitive count control is mixed. Encoders share a one-MiB
 payload cap and the same decoder/output dimensions, but use unequal
 bytes; this is not an exactly byte-matched capacity comparison.
 
+\begin{figure}
+\centering
+\includegraphics[width=0.95\linewidth,height=\textheight,keepaspectratio,alt={WFIM ordered-pattern prediction. Each line pairs one training seed on the same fixed finite task; lower MSE is better. Eight seeds do not represent eight independent task families.}]{figures/wfim-paired-seeds.png}
+\caption{WFIM ordered-pattern prediction. Each line pairs one training
+seed on the same fixed finite task; lower MSE is better. Eight seeds do
+not represent eight independent task families.}
+\end{figure}
+
 \section{5. Discussion}\label{discussion}
 
-Three recurring distinctions explain the outcomes. First, algebraic
-validity does not imply useful parameterization: per-letter transport
-cancels, and per-word transport remains an isomorphism. Second, less
-nominal work does not imply less elapsed work: exact proposal
-verification can dominate saved search expansions, and conditional
-routing can cost more than full refinement. Third, a mechanism-specific
-improvement does not establish the full architecture: retrieval can help
-while expert lifecycle loses to a simpler control.
+Three recurring distinctions organize the observations; the experiments
+do not identify an exclusive causal explanation for every outcome.
+First, algebraic validity does not imply useful parameterization:
+per-letter transport cancels, and per-word transport remains an
+isomorphism. Second, less nominal work does not imply less elapsed work:
+exact proposal verification can dominate saved search expansions, and
+conditional routing can cost more than full refinement. Third, a
+mechanism-specific improvement does not establish the full architecture:
+retrieval can help while expert lifecycle loses to a simpler control.
 
 These observations motivate finite branch decisions. The implemented
 per-letter product-expressivity claim is unsupported. Learned routing
@@ -335,12 +376,15 @@ The evidence includes small synthetic distributions, a single natural
 digit dataset, repeated seeds within fixed families, incomplete
 failure-affected aggregates and several unmatched total-cost components.
 Current finite rings do not cover whole new puzzle families. WFIM
-requires stronger byte-matched controls and full selection replay. WPINN
-still needs held physical parameter regimes and inverse-PINN/data-only
-comparators. CWLNN arbitrary-tree receptive-field matching remains
-unresolved. Heterogeneous Ultron capability evaluation and independent
-external verification remain unfinished. These gaps prevent a
-submission-ready verdict for the full proposal collection.
+requires stronger byte-matched controls. Full selection replay now
+reconstructs all 80 models, 12,000 updates and 240 candidate checkpoint
+scores exactly; this closes replay bookkeeping, not the
+capacity-matching requirement. WPINN still needs held physical parameter
+regimes and inverse-PINN/data-only comparators. CWLNN arbitrary-tree
+receptive-field matching remains unresolved. Heterogeneous Ultron
+capability evaluation and independent external verification remain
+unfinished. These gaps prevent a submission-ready verdict for the full
+proposal collection.
 
 \section{7. Reproducibility}\label{reproducibility}
 
@@ -349,10 +393,15 @@ checkpoints, predictions, failures and analysis receipts. The delivery
 builder includes campaigns and Git history and verifies archived
 contents before extraction. Fresh-environment checks have passed
 installation, tests and selected artifact audits after portability
-fixes. A further CWLNN fresh-environment audit was interrupted and
-remains incomplete. Same-host exact replays are useful diagnostics but
-do not establish independent reproduction. A final archive must include
-this manuscript and the final completed analyses before release.
+fixes. A subsequent isolated-source CWLNN audit using the existing
+separate review dependency environment now exactly reproduces 23,040
+predictions and permutations, 256 checkpoint scores and one complete
+training replay. All 80 WFIM training histories and checkpoint
+selections also replay exactly. Same-host exact replays are useful
+diagnostics but do not establish independent reproduction. The delivery
+builder now includes the manuscript, generated figure and complete
+replay receipts; archive integrity and scientific readiness remain
+separate gates.
 
 \section{8. Conclusion}\label{conclusion}
 
@@ -381,8 +430,11 @@ and result reports under \texttt{docs/closure}, the optimizer
 development record under \texttt{docs/execution/development-v2}, and
 their referenced immutable campaign directories. These are local
 artifacts, not public archival citations. Closest-work review, a
-complete scholarly bibliography, authorship, figures and final
-formatting remain required before submission.
+complete scholarly bibliography and named human authorship/review remain
+required before submission. The figure and PDF are included for private
+review. Exact source, verification commands and limitations of this
+export are recorded in \texttt{FINAL\_RELEASE\_REPORT.md} and
+\texttt{docs/RELEASE\_REPRODUCIBILITY.md}.
 
 \section{References}\label{references}
 

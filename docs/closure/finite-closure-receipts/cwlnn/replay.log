@@ -1,0 +1,715 @@
+Audited 2707_0
+Audited 2707_1
+Audited 2711_0
+Audited 2711_1
+Audited 2713_0
+Audited 2713_1
+Audited 2719_0
+Audited 2719_1
+Audited 2729_0
+Audited 2729_1
+Audited 2731_0
+Audited 2731_1
+Audited 2741_0
+Audited 2741_1
+Audited 2749_0
+Audited 2749_1
+{
+  "audit": {
+    "predictions_replayed": 23040,
+    "checkpoint_scores": 256,
+    "unique_graph_ids": 1792,
+    "files_hashed": 480,
+    "permutations_checked": 23040,
+    "max_permutation_difference": 4.440892098500626e-16,
+    "one_full_training_replay_exact": true
+  },
+  "primary": [
+    {
+      "task": "multiscale",
+      "model": "hierarchy_full",
+      "fraction": 1.0,
+      "mean_mse": 0.011411822922988833,
+      "descriptive_seed_interval": [
+        0.010886140567711172,
+        0.011923838381514455
+      ],
+      "seed_means": [
+        0.0122158507408738,
+        0.010442656987811383,
+        0.010638451260526567,
+        0.010706211153577613,
+        0.012290218277281504,
+        0.011712652408261817,
+        0.012321221617410815,
+        0.010967320938167165
+      ],
+      "median_inference_ms": 0.71325,
+      "fraction_within_3ms_by_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "feasible_seeds": 8,
+      "primary_operating_point": true,
+      "mean_selected_fraction": 1.0
+    },
+    {
+      "task": "multiscale",
+      "model": "flat5_full",
+      "fraction": 1.0,
+      "mean_mse": 0.012775878553284896,
+      "descriptive_seed_interval": [
+        0.012229965169193084,
+        0.01334758822962185
+      ],
+      "seed_means": [
+        0.01346362955649207,
+        0.012164906687718326,
+        0.011946367008926258,
+        0.01208198875375195,
+        0.014114267148780387,
+        0.013001182007866657,
+        0.013552578229304415,
+        0.01188210903343911
+      ],
+      "median_inference_ms": 0.6396255,
+      "fraction_within_3ms_by_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "feasible_seeds": 8,
+      "primary_operating_point": true,
+      "mean_selected_fraction": 1.0
+    },
+    {
+      "task": "multiscale",
+      "model": "local_full",
+      "fraction": 1.0,
+      "mean_mse": 0.013712514485006851,
+      "descriptive_seed_interval": [
+        0.013187131591090338,
+        0.014249777783164632
+      ],
+      "seed_means": [
+        0.014273445345208469,
+        0.013510815410524363,
+        0.012541194347980865,
+        0.012800342057687238,
+        0.01485752501377365,
+        0.01373205928176923,
+        0.014623012863995415,
+        0.013361721559115572
+      ],
+      "median_inference_ms": 0.565979,
+      "fraction_within_3ms_by_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "feasible_seeds": 8,
+      "primary_operating_point": true,
+      "mean_selected_fraction": 1.0
+    },
+    {
+      "task": "multiscale",
+      "model": "attention_full",
+      "fraction": 1.0,
+      "mean_mse": 0.013390963934881647,
+      "descriptive_seed_interval": [
+        0.012942629320061426,
+        0.013864574668879422
+      ],
+      "seed_means": [
+        0.013784244775476299,
+        0.013453978096941889,
+        0.012494050402157045,
+        0.012473738961789722,
+        0.014605472619455297,
+        0.013416349470187,
+        0.013908248099923514,
+        0.012991629053122403
+      ],
+      "median_inference_ms": 0.811354,
+      "fraction_within_3ms_by_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "feasible_seeds": 8,
+      "primary_operating_point": true,
+      "mean_selected_fraction": 1.0
+    },
+    {
+      "task": "multiscale",
+      "model": "hierarchy_learned",
+      "fraction": 0.5,
+      "mean_mse": 0.011938937498084402,
+      "descriptive_seed_interval": [
+        0.011434162502758203,
+        0.012462434781085895
+      ],
+      "seed_means": [
+        0.013044349905035514,
+        0.010833499032368011,
+        0.011598440898711874,
+        0.01109411386936689,
+        0.012135707059884858,
+        0.011922325044002782,
+        0.013012873620316895,
+        0.011870190554988395
+      ],
+      "median_inference_ms": 0.767333,
+      "fraction_within_3ms_by_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "feasible_seeds": 8,
+      "primary_operating_point": true,
+      "mean_selected_fraction": 0.5
+    },
+    {
+      "task": "multiscale",
+      "model": "hierarchy_norm",
+      "fraction": 0.5,
+      "mean_mse": 0.011868518891281267,
+      "descriptive_seed_interval": [
+        0.01137420189302875,
+        0.01240592077268269
+      ],
+      "seed_means": [
+        0.013074767066672231,
+        0.010765986799610331,
+        0.011267675143879032,
+        0.011181951760123182,
+        0.012101228801844655,
+        0.011907882289707199,
+        0.01285574613721579,
+        0.01179291313119772
+      ],
+      "median_inference_ms": 0.685438,
+      "fraction_within_3ms_by_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "feasible_seeds": 8,
+      "primary_operating_point": true,
+      "mean_selected_fraction": 0.5
+    },
+    {
+      "task": "multiscale",
+      "model": "hierarchy_hash",
+      "fraction": 0.5,
+      "mean_mse": 0.01201620050697291,
+      "descriptive_seed_interval": [
+        0.011507520182034133,
+        0.012546303883766867
+      ],
+      "seed_means": [
+        0.013217770952790078,
+        0.01084493490371115,
+        0.011577876729372353,
+        0.011247892897168533,
+        0.01218765717749836,
+        0.012016272762656925,
+        0.012982712658764392,
+        0.012054485973821487
+      ],
+      "median_inference_ms": 0.684354,
+      "fraction_within_3ms_by_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "feasible_seeds": 8,
+      "primary_operating_point": true,
+      "mean_selected_fraction": 0.5
+    },
+    {
+      "task": "multiscale",
+      "model": "flat5_learned",
+      "fraction": 0.5,
+      "mean_mse": 0.012769357907821022,
+      "descriptive_seed_interval": [
+        0.01210757715452888,
+        0.013457315036851162
+      ],
+      "seed_means": [
+        0.014191077765914642,
+        0.011772157807371623,
+        0.011372789098449835,
+        0.01243211651978262,
+        0.01331733116409294,
+        0.012649749224419162,
+        0.014184028663404482,
+        0.012235613019132872
+      ],
+      "median_inference_ms": 0.692729,
+      "fraction_within_3ms_by_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "feasible_seeds": 8,
+      "primary_operating_point": true,
+      "mean_selected_fraction": 0.5
+    },
+    {
+      "task": "diffusion",
+      "model": "hierarchy_full",
+      "fraction": 1.0,
+      "mean_mse": 0.02983085722777913,
+      "descriptive_seed_interval": [
+        0.028225760875663537,
+        0.03162447654429349
+      ],
+      "seed_means": [
+        0.030462529939881935,
+        0.02871003077029123,
+        0.027357736907329556,
+        0.029414924809079875,
+        0.02684357234315408,
+        0.034032640608076536,
+        0.03320016893394503,
+        0.028625253510474798
+      ],
+      "median_inference_ms": 0.7125,
+      "fraction_within_3ms_by_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "feasible_seeds": 8,
+      "primary_operating_point": true,
+      "mean_selected_fraction": 1.0
+    },
+    {
+      "task": "diffusion",
+      "model": "flat5_full",
+      "fraction": 1.0,
+      "mean_mse": 0.027386582775099262,
+      "descriptive_seed_interval": [
+        0.026088419087453216,
+        0.029023734763069586
+      ],
+      "seed_means": [
+        0.027662853123478465,
+        0.02593553572031669,
+        0.026358016156197435,
+        0.026613450037281498,
+        0.025719800435017516,
+        0.03208857780481102,
+        0.029313846617118895,
+        0.02540058230657258
+      ],
+      "median_inference_ms": 0.6389170000000001,
+      "fraction_within_3ms_by_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "feasible_seeds": 8,
+      "primary_operating_point": true,
+      "mean_selected_fraction": 1.0
+    },
+    {
+      "task": "diffusion",
+      "model": "local_full",
+      "fraction": 1.0,
+      "mean_mse": 0.029133659287734582,
+      "descriptive_seed_interval": [
+        0.02793756994369761,
+        0.030584592404546654
+      ],
+      "seed_means": [
+        0.02997512136168383,
+        0.028142967643233166,
+        0.027728528131849468,
+        0.028005316060808957,
+        0.027053896114038887,
+        0.033387742902637955,
+        0.03056555200669511,
+        0.028210150080929284
+      ],
+      "median_inference_ms": 0.5673539999999999,
+      "fraction_within_3ms_by_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "feasible_seeds": 8,
+      "primary_operating_point": true,
+      "mean_selected_fraction": 1.0
+    },
+    {
+      "task": "diffusion",
+      "model": "attention_full",
+      "fraction": 1.0,
+      "mean_mse": 0.02906955745703815,
+      "descriptive_seed_interval": [
+        0.02760440687463684,
+        0.0311813526413729
+      ],
+      "seed_means": [
+        0.029334965230276074,
+        0.028234123279700245,
+        0.027661923033466165,
+        0.026972614340042927,
+        0.027100236919718634,
+        0.035788877366829334,
+        0.02982120999862085,
+        0.027642509487650964
+      ],
+      "median_inference_ms": 0.8134165,
+      "fraction_within_3ms_by_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "feasible_seeds": 8,
+      "primary_operating_point": true,
+      "mean_selected_fraction": 1.0
+    },
+    {
+      "task": "diffusion",
+      "model": "hierarchy_learned",
+      "fraction": 0.5,
+      "mean_mse": 0.03272090562861279,
+      "descriptive_seed_interval": [
+        0.031090989768610376,
+        0.03441971817432356
+      ],
+      "seed_means": [
+        0.03397462938903795,
+        0.03044344401864612,
+        0.0304150795806258,
+        0.03297204639359007,
+        0.029868253262274585,
+        0.03622747667858062,
+        0.03628449514029167,
+        0.03158182056585548
+      ],
+      "median_inference_ms": 0.7594795,
+      "fraction_within_3ms_by_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "feasible_seeds": 8,
+      "primary_operating_point": true,
+      "mean_selected_fraction": 0.5
+    },
+    {
+      "task": "diffusion",
+      "model": "hierarchy_norm",
+      "fraction": 0.5,
+      "mean_mse": 0.03285116110929796,
+      "descriptive_seed_interval": [
+        0.031302647127683825,
+        0.03454412495402843
+      ],
+      "seed_means": [
+        0.03410845949999883,
+        0.030758330230568717,
+        0.030550957821464456,
+        0.03277300833638684,
+        0.029979977288158037,
+        0.03672933639503052,
+        0.0358255264300448,
+        0.03208369287273153
+      ],
+      "median_inference_ms": 0.684833,
+      "fraction_within_3ms_by_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "feasible_seeds": 8,
+      "primary_operating_point": true,
+      "mean_selected_fraction": 0.5
+    },
+    {
+      "task": "diffusion",
+      "model": "hierarchy_hash",
+      "fraction": 0.5,
+      "mean_mse": 0.032728915344235686,
+      "descriptive_seed_interval": [
+        0.031191941271121293,
+        0.03438882054833187
+      ],
+      "seed_means": [
+        0.03409082397939338,
+        0.03059949284662484,
+        0.030567132999090856,
+        0.03285765555877523,
+        0.029707893602428634,
+        0.03618947264735688,
+        0.03608295678849227,
+        0.0317358943317234
+      ],
+      "median_inference_ms": 0.680375,
+      "fraction_within_3ms_by_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "feasible_seeds": 8,
+      "primary_operating_point": true,
+      "mean_selected_fraction": 0.5
+    },
+    {
+      "task": "diffusion",
+      "model": "flat5_learned",
+      "fraction": 0.5,
+      "mean_mse": 0.028285026214621065,
+      "descriptive_seed_interval": [
+        0.02694269102178223,
+        0.02969012638431914
+      ],
+      "seed_means": [
+        0.029200135717096218,
+        0.026940464569752954,
+        0.027110822199824677,
+        0.028574867295865853,
+        0.026326098697081746,
+        0.0313649335549383,
+        0.031171246130467716,
+        0.02559164155194106
+      ],
+      "median_inference_ms": 0.6909164999999999,
+      "fraction_within_3ms_by_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "feasible_seeds": 8,
+      "primary_operating_point": true,
+      "mean_selected_fraction": 0.5
+    }
+  ],
+  "paired": [
+    {
+      "task": "multiscale",
+      "control": "hierarchy_full",
+      "mean_paired_mse_difference": 0.0005271145750955692,
+      "descriptive_seed_interval": [
+        0.0002645022972179983,
+        0.0007664321516445639
+      ],
+      "both_feasible_all_seeds": true
+    },
+    {
+      "task": "multiscale",
+      "control": "flat5_full",
+      "mean_paired_mse_difference": -0.0008369410552004945,
+      "descriptive_seed_interval": [
+        -0.001267249193651314,
+        -0.00044646665937256606
+      ],
+      "both_feasible_all_seeds": true
+    },
+    {
+      "task": "multiscale",
+      "control": "local_full",
+      "mean_paired_mse_difference": -0.001773576986922448,
+      "descriptive_seed_interval": [
+        -0.002201937041508839,
+        -0.0013857541253622038
+      ],
+      "both_feasible_all_seeds": true
+    },
+    {
+      "task": "multiscale",
+      "control": "attention_full",
+      "mean_paired_mse_difference": -0.001452026436797244,
+      "descriptive_seed_interval": [
+        -0.0019359459593694297,
+        -0.0010201839055149489
+      ],
+      "both_feasible_all_seeds": true
+    },
+    {
+      "task": "multiscale",
+      "control": "hierarchy_norm",
+      "mean_paired_mse_difference": 7.041860680313469e-05,
+      "descriptive_seed_interval": [
+        -5.3499294877348055e-06,
+        0.00015817137616161848
+      ],
+      "both_feasible_all_seeds": true
+    },
+    {
+      "task": "multiscale",
+      "control": "hierarchy_hash",
+      "mean_paired_mse_difference": -7.726300888850771e-05,
+      "descriptive_seed_interval": [
+        -0.00013338248935726308,
+        -2.0958072213351142e-05
+      ],
+      "both_feasible_all_seeds": true
+    },
+    {
+      "task": "multiscale",
+      "control": "flat5_learned",
+      "mean_paired_mse_difference": -0.0008304204097366197,
+      "descriptive_seed_interval": [
+        -0.0011347998710337088,
+        -0.0004535057419357473
+      ],
+      "both_feasible_all_seeds": true
+    },
+    {
+      "task": "diffusion",
+      "control": "hierarchy_full",
+      "mean_paired_mse_difference": 0.002890048400833655,
+      "descriptive_seed_interval": [
+        0.0024519901808145238,
+        0.0032707914104463704
+      ],
+      "both_feasible_all_seeds": true
+    },
+    {
+      "task": "diffusion",
+      "control": "flat5_full",
+      "mean_paired_mse_difference": 0.005334322853513522,
+      "descriptive_seed_interval": [
+        0.004535474975147531,
+        0.006135244537944114
+      ],
+      "both_feasible_all_seeds": true
+    },
+    {
+      "task": "diffusion",
+      "control": "local_full",
+      "mean_paired_mse_difference": 0.003587246340878203,
+      "descriptive_seed_interval": [
+        0.0028660665622480554,
+        0.004409150553552122
+      ],
+      "both_feasible_all_seeds": true
+    },
+    {
+      "task": "diffusion",
+      "control": "attention_full",
+      "mean_paired_mse_difference": 0.0036513481715746356,
+      "descriptive_seed_interval": [
+        0.002378220722950364,
+        0.004965741949709406
+      ],
+      "both_feasible_all_seeds": true
+    },
+    {
+      "task": "diffusion",
+      "control": "hierarchy_norm",
+      "mean_paired_mse_difference": -0.00013025548068518102,
+      "descriptive_seed_interval": [
+        -0.0003372331540864885,
+        8.962238535393617e-05
+      ],
+      "both_feasible_all_seeds": true
+    },
+    {
+      "task": "diffusion",
+      "control": "hierarchy_hash",
+      "mean_paired_mse_difference": -8.009715622900142e-06,
+      "descriptive_seed_interval": [
+        -0.00010504158968869864,
+        9.128934713034969e-05
+      ],
+      "both_feasible_all_seeds": true
+    },
+    {
+      "task": "diffusion",
+      "control": "flat5_learned",
+      "mean_paired_mse_difference": 0.00443587941399172,
+      "descriptive_seed_interval": [
+        0.0038511246378488554,
+        0.005052782415709573
+      ],
+      "both_feasible_all_seeds": true
+    }
+  ]
+}

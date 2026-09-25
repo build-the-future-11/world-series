@@ -1,0 +1,7 @@
+{
+  "models": 80,
+  "training_updates": 12000,
+  "selection_scores": 240,
+  "all_exact": true,
+  "scope": "same-host replay; not independent confirmation"
+}

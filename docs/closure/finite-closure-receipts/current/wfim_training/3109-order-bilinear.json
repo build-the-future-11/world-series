@@ -1,0 +1,21 @@
+{
+  "name": "3109-order-bilinear",
+  "training_losses_exact": true,
+  "selected_state_exact": true,
+  "selected_step": 50,
+  "selection_scores": [
+    {
+      "step": 50,
+      "mse": 0.008389285310952031
+    },
+    {
+      "step": 100,
+      "mse": 0.008727189088240285
+    },
+    {
+      "step": 150,
+      "mse": 0.008663110176837883
+    }
+  ],
+  "original_checkpoint_sha256": "47c06426c516030d249976f5a8e591ffed8a5f28d11edbe3afc5902e67e733c5"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "3181-order-learned_coordinates",
+  "training_losses_exact": true,
+  "selected_state_exact": true,
+  "selected_step": 150,
+  "selection_scores": [
+    {
+      "step": 50,
+      "mse": 0.012440303595667532
+    },
+    {
+      "step": 100,
+      "mse": 0.008513293217563648
+    },
+    {
+      "step": 150,
+      "mse": 0.007811555012257224
+    }
+  ],
+  "original_checkpoint_sha256": "a44b31e5a65a34957a47ad967f3cba4080dd68235d2e482906d2a7894e4cae2a"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "3167-count-vector",
+  "training_losses_exact": true,
+  "selected_state_exact": true,
+  "selected_step": 100,
+  "selection_scores": [
+    {
+      "step": 50,
+      "mse": 0.0037190321909596432
+    },
+    {
+      "step": 100,
+      "mse": 0.003390055556557112
+    },
+    {
+      "step": 150,
+      "mse": 0.003443251738396632
+    }
+  ],
+  "original_checkpoint_sha256": "5812c292ace397e2fe010dcb1fe97553c8228de0b15739160cbd810310b43602"
+}

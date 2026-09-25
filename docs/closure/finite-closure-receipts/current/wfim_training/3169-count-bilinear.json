@@ -1,0 +1,21 @@
+{
+  "name": "3169-count-bilinear",
+  "training_losses_exact": true,
+  "selected_state_exact": true,
+  "selected_step": 100,
+  "selection_scores": [
+    {
+      "step": 50,
+      "mse": 0.005705237955289653
+    },
+    {
+      "step": 100,
+      "mse": 0.004320677674075551
+    },
+    {
+      "step": 150,
+      "mse": 0.00433322864404892
+    }
+  ],
+  "original_checkpoint_sha256": "eac309fde76fb8a128ce0c8141765d2efe4ccfa9278da33fc5500ad87dc9ee84"
+}

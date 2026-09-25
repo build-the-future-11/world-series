@@ -1,0 +1,5 @@
+{
+  "source": "campaigns/wfim-coordinate-development-v1/summary.json",
+  "sha256": "0b6812051d315b18463b8003066cb50748bb34ff4e830140963ca6ab1c0997ee",
+  "caption": "Each line is one paired training seed on the same fixed finite task. Eight seeds do not represent eight independent task families. Lower is better. No population confidence interval is shown."
+}

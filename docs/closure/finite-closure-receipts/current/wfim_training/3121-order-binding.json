@@ -1,0 +1,21 @@
+{
+  "name": "3121-order-binding",
+  "training_losses_exact": true,
+  "selected_state_exact": true,
+  "selected_step": 150,
+  "selection_scores": [
+    {
+      "step": 50,
+      "mse": 0.10247259977017759
+    },
+    {
+      "step": 100,
+      "mse": 0.10207191614234991
+    },
+    {
+      "step": 150,
+      "mse": 0.10205836073313401
+    }
+  ],
+  "original_checkpoint_sha256": "f14058f6e503b6ea70020a329ddae4948ec42e0f5f6266e0e524fb41545a13f7"
+}

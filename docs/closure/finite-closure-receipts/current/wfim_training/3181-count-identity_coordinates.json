@@ -1,0 +1,21 @@
+{
+  "name": "3181-count-identity_coordinates",
+  "training_losses_exact": true,
+  "selected_state_exact": true,
+  "selected_step": 150,
+  "selection_scores": [
+    {
+      "step": 50,
+      "mse": 0.004145855692739413
+    },
+    {
+      "step": 100,
+      "mse": 0.0008359855839602559
+    },
+    {
+      "step": 150,
+      "mse": 0.00052614943618144
+    }
+  ],
+  "original_checkpoint_sha256": "011b664e32df3cce9fd7df0c380f28f08e8d763e7ad018dc52f87f39477480f8"
+}

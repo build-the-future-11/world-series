@@ -1,0 +1,19 @@
+world_series 0.1.0
+repo_root: /Volumes/PRO-BLADE/World-Series/world-series
+python: 3.12.14
+devices:
+  - cpu: available=True dtype=float64 fallback=cpu (reference path)
+  - mps: available=False dtype=float32 fallback=cpu (optional; probe ops before using higher-order grads)
+  - cuda: available=False dtype=float32 fallback=cpu (optional)
+capabilities:
+  - adapt_learner: AVAILABLE [qlearn] v0.1 thin adapter
+  - algebra_multiply: AVAILABLE [wfim] 
+  - encode_multiscale_world: AVAILABLE [cwlnn] 
+  - identify_dynamical_law: AVAILABLE [wpinn] 
+  - orchestrate_episode: AVAILABLE [ultron] 
+  - predict_world: AVAILABLE [qapen] thin
+  - solve_invariant_problem: AVAILABLE [qwipii] 
+  - spectral_transform: AVAILABLE [wft] 
+  - synthesize_dsl_program: AVAILABLE [wcode] 
+  - verify_certificate: AVAILABLE [qwipii] 
+namespaces: qlearn, qapen, qwipii, wcode, wfim, wft, wpinn, cwlnn, ultron

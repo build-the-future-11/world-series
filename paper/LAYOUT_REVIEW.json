@@ -1,21 +1,20 @@
 {
-  "pdf_sha256": "0219416272da987b68fdcc6c32c697941298c809afb5b615caffabc6775b00e1",
-  "pages": 8,
+  "pdf_sha256": "96f827b75569c57cf48be4086823da2f92e70bd28c6390b356f7da2a9ae2fa4f",
+  "pages": 6,
   "visually_inspected_pages": [
     1,
     2,
     3,
     4,
     5,
-    6,
-    7,
-    8
+    6
   ],
+  "status": "REVIEWED",
   "findings": [
-    "All eight pages inspected; no clipped or overlapping text observed.",
-    "Page 8 contains only one reference; rebalance pagination before release.",
-    "Section 4.3 wraps and hyphenates its heading; shorten during final editing."
+    "All six regenerated pages visually inspected; no clipping or overlapping text.",
+    "WFIM paired-seed figure, caption, revised WFT counts and reference links are legible."
   ],
-  "status": "REVIEWED_WITH_OPEN_LAYOUT_ISSUES",
-  "remaining": "Rerender and inspect after figure insertion and pagination repair; scientific and authorship gates remain open."
+  "tex_warning": "One underfull hbox retained; no overfull boxes or visible clipping.",
+  "remaining": "Scientific, novelty, authorship and submission gates remain open.",
+  "date": "2026-09-25"
 }

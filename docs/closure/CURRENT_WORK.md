@@ -1,3 +1,9 @@
+# Current finite closure
+
+Authoritative closure: `../../../RESEARCH_CLOSURE/FINAL_REPORT.md` and `../../../RESEARCH_CLOSURE/REGISTRY.json`. The entries below are historical progress notes and do not override the closure registry.
+
+The 80-model WFIM selection replay is complete and exact. The isolated historical-source CWLNN replay now exactly reproduces all predictions, permutations and checkpoint selections, plus a full training run. Current tests: 114 passed. Original campaign/run artifacts remain unchanged. Nine original research identities remain explicitly blocked on their protocol/external requirements; scoped negatives are retained.
+
 # Active completion work
 
 The user's goal remains active: execute remaining project work until all

@@ -1,0 +1,65 @@
+[
+  {
+    "step": "tests",
+    "argv": [
+      "/Volumes/PRO-BLADE/World-Series/world-series/.venv/bin/python",
+      "-m",
+      "pytest",
+      "tests",
+      "-q",
+      "--basetemp",
+      "/Volumes/PRO-BLADE/World-Series/world-series/.work-tmp/finite-closure/pytest"
+    ],
+    "cwd": "/Volumes/PRO-BLADE/World-Series/world-series",
+    "exit_code": 0,
+    "seconds": 70.88916749999999,
+    "log": "RESEARCH_CLOSURE/receipts/current/tests.log",
+    "log_sha256": "191ef468aecc11c9dff3e1ec3ba011880df49fcdff86d7b7108dca6ff9ec35c3"
+  },
+  {
+    "step": "doctor",
+    "argv": [
+      "/Volumes/PRO-BLADE/World-Series/world-series/.venv/bin/python",
+      "-m",
+      "world_series",
+      "doctor"
+    ],
+    "cwd": "/Volumes/PRO-BLADE/World-Series/world-series",
+    "exit_code": 0,
+    "seconds": 8.140131667000105,
+    "log": "RESEARCH_CLOSURE/receipts/current/doctor.log",
+    "log_sha256": "1ef4e460d608b1dbf59ae959b9d8307f1a750e8b447450dbce60448ce45f187c"
+  },
+  {
+    "step": "wfim_predictions",
+    "argv": [
+      "/Volumes/PRO-BLADE/World-Series/world-series/.venv/bin/python",
+      "scripts/closure/analyze_wfim_learning.py",
+      "--root",
+      "campaigns/wfim-coordinate-development-v1",
+      "--output",
+      "/Volumes/PRO-BLADE/World-Series/RESEARCH_CLOSURE/receipts/current/wfim_predictions.json"
+    ],
+    "cwd": "/Volumes/PRO-BLADE/World-Series/world-series",
+    "exit_code": 0,
+    "seconds": 47.977964333000045,
+    "log": "RESEARCH_CLOSURE/receipts/current/wfim_predictions.log",
+    "log_sha256": "45647ca72e0692639bd13cab0b3a0168050df45996c5698cd3e7c504b584514a"
+  },
+  {
+    "step": "wfim_full_training",
+    "argv": [
+      "/Volumes/PRO-BLADE/World-Series/world-series/.venv/bin/python",
+      "scripts/closure/replay_wfim_training.py",
+      "--root",
+      "campaigns/wfim-coordinate-development-v1",
+      "--output",
+      "/Volumes/PRO-BLADE/World-Series/RESEARCH_CLOSURE/receipts/current/wfim_training"
+    ],
+    "cwd": "/Volumes/PRO-BLADE/World-Series/world-series",
+    "exit_code": 0,
+    "seconds": 213.34113408300004,
+    "log": "RESEARCH_CLOSURE/receipts/current/wfim_full_training.log",
+    "log_sha256": "fd8b417e489f572dcfd6929338f856be798d0079aaa663b65323d573c2c38157"
+  }
+]

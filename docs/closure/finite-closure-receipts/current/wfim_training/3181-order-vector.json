@@ -1,0 +1,21 @@
+{
+  "name": "3181-order-vector",
+  "training_losses_exact": true,
+  "selected_state_exact": true,
+  "selected_step": 150,
+  "selection_scores": [
+    {
+      "step": 50,
+      "mse": 0.01198212507018858
+    },
+    {
+      "step": 100,
+      "mse": 0.008814442353218259
+    },
+    {
+      "step": 150,
+      "mse": 0.008216960476884971
+    }
+  ],
+  "original_checkpoint_sha256": "72e90ce73a7682e53565fa30532b77fe5db543da167cf74ba5a14353a4e15eb4"
+}
