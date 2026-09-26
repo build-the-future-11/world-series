@@ -1,8 +1,14 @@
 # World Series v0.1
 
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/build-the-future-11/world-series?include_prereleases)](https://github.com/build-the-future-11/world-series/releases/tag/v0.1.0-oss)
+[![CI](https://github.com/build-the-future-11/world-series/actions/workflows/ci.yml/badge.svg)](https://github.com/build-the-future-11/world-series/actions/workflows/ci.yml)
+
 Installable research workbench for nine independently testable projects under shared contracts.
 
 **License:** Apache-2.0 — see [`LICENSE`](LICENSE), [`NOTICE`](NOTICE), [`THIRD_PARTY.md`](THIRD_PARTY.md).
+**Release:** [v0.1.0-oss](https://github.com/build-the-future-11/world-series/releases/tag/v0.1.0-oss) (includes hashed review archive).
+**arXiv package (ready to upload):** [`paper/arxiv/`](paper/arxiv/).
 
 ## Status — open-source packaging, 26 September 2026
 

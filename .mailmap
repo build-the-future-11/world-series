@@ -1,0 +1,4 @@
+# Maps historical placeholder identity to the public GitHub noreply address.
+# Does not change local git config; improves attribution display in git tools.
+Ryan <youremail@example.com> Ryan <271452460+build-the-future-11@users.noreply.github.com>
+Ryan <271452460+build-the-future-11@users.noreply.github.com> Ryan <271452460+build-the-future-11@users.noreply.github.com>

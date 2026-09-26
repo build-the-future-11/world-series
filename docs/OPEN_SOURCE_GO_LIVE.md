@@ -18,11 +18,14 @@ preprint. Independent confirmation campaigns are **out of scope** for this gate.
 - [x] Set GitHub repos to **Public** (`build-the-future-11/...`)
 - [x] Tag `v0.1.0-oss` on both repos
 - [x] Archive integrity + restored-source verify (`release_export/20260925/GO_LIVE_RESULTS.json`)
+- [x] README badges (license / release / CI)
+- [x] `.mailmap` for placeholder → GitHub noreply mapping
+- [x] arXiv upload bundle prepared (`paper/arxiv/`)
 
-## Optional / later
+## Human-only / later
 
-- [ ] Prefer a real contact email in Git commit identity (history currently uses a placeholder address)
-- [ ] Submit `paper/preprint` sources to arXiv (TeX from pandoc+tectonic)
+- [ ] Submit `paper/arxiv/arxiv-world-series-v010.tar.gz` at https://arxiv.org/submit
+- [ ] Optional local git email for future commits (see `FINAL_OSS_CHECKLIST.md`; no automated git-config edits)
 
 ## Do not claim on go-live
 
