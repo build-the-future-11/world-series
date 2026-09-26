@@ -1,14 +1,13 @@
 {
   "date": "2026-09-26",
   "tooling": "pandoc + tectonic",
-  "preprint_md_sha256": "92138de62c275547bb0f4e14f40a5396095daa30e33ff5676a3192c0bd73d47e",
-  "preprint_tex_sha256": "ae397de5044aa31222192a84c2809262c077500d6ed08b64e1d7d9cc60654a44",
-  "preprint_pdf_sha256": "1816d5b87527a88ac2911be06cc053c30cfa208565c13643bb46b72e5e734c29",
-  "pdf_bytes": 224913,
+  "preprint_md_sha256": "3e645519bd5c62741c66f9244831a4c3007813f77642b822a81bf8e41e989abe",
+  "preprint_tex_sha256": "05f9a717885ed4a85e32300c81bd86940db78ca58be456d328573497004f8dcc",
+  "preprint_pdf_sha256": "97257f6d7b4639618110b980fca3654a7e78595ccc16e6c3badaa3fe7f0c2068",
+  "pdf_bytes": 224947,
   "notes": [
-    "Author line set to Ryan; Apache-2.0 cited in reproducibility section.",
-    "Related work expanded to nine modules; contribution/inclusion rule added.",
-    "WFIM paired-seed figure retained; WFT denominator wording retained."
+    "Authorship attestation recorded 26 September 2026.",
+    "OSS go-live complete under Apache-2.0."
   ],
-  "remaining": "Human authorship attestation in docs/AUTHORSHIP.md before arXiv/public scientific posting."
+  "remaining": "Optional arXiv upload; optional Git author-email cleanup."
 }

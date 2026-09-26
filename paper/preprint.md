@@ -138,7 +138,7 @@ The workbench establishes several functioning mechanisms and documents where the
 
 # AI Use Statement
 
-Automated assistants (including Codex and Cursor agents) were used extensively for implementation, experiment design, synthetic-data generators, mathematical analysis, testing, execution, result interpretation, literature search and manuscript drafting. Automated checks and same-host replay are described in the evidence record. The named author retains responsibility for the published claims and for approving release under Apache-2.0. A dated human attestation checklist is provided in `docs/AUTHORSHIP.md`.
+Automated assistants (including Codex and Cursor agents) were used extensively for implementation, experiment design, synthetic-data generators, mathematical analysis, testing, execution, result interpretation, literature search and manuscript drafting. Automated checks and same-host replay are described in the evidence record. The named author retains responsibility for the published claims and for approving release under Apache-2.0. A dated human attestation is recorded in `docs/AUTHORSHIP.md` (Ryan, 26 September 2026).
 
 # Evidence index
 
