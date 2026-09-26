@@ -1,0 +1,170 @@
+{
+  "wft_misspec_v1": {
+    "seed_level_rows": [
+      {
+        "stratum": "compatible",
+        "method": "both",
+        "n_seeds": 5,
+        "mean": 0.00030831812116628406,
+        "std": 0.00012186623709499944
+      },
+      {
+        "stratum": "compatible",
+        "method": "fixed_geometry",
+        "n_seeds": 5,
+        "mean": 0.001258401479782307,
+        "std": 0.0005227516044667119
+      },
+      {
+        "stratum": "compatible",
+        "method": "oracle_true_operator",
+        "n_seeds": 5,
+        "mean": 0.0,
+        "std": 0.0
+      },
+      {
+        "stratum": "compatible",
+        "method": "unconstrained",
+        "n_seeds": 5,
+        "mean": 0.0009954982625460732,
+        "std": 0.00021864036666793978
+      },
+      {
+        "stratum": "compatible",
+        "method": "wrong_symmetry",
+        "n_seeds": 5,
+        "mean": 0.0010512314980507802,
+        "std": 0.00021954923078372444
+      },
+      {
+        "stratum": "sine_perturbed",
+        "method": "both",
+        "n_seeds": 5,
+        "mean": 0.0019635783264230285,
+        "std": 0.0003636228452403925
+      },
+      {
+        "stratum": "sine_perturbed",
+        "method": "fixed_geometry",
+        "n_seeds": 5,
+        "mean": 0.0029829430082931934,
+        "std": 0.0006072479950838992
+      },
+      {
+        "stratum": "sine_perturbed",
+        "method": "oracle_true_operator",
+        "n_seeds": 5,
+        "mean": 0.0,
+        "std": 0.0
+      },
+      {
+        "stratum": "sine_perturbed",
+        "method": "unconstrained",
+        "n_seeds": 5,
+        "mean": 0.0011179157849586056,
+        "std": 0.0004702083944096445
+      },
+      {
+        "stratum": "sine_perturbed",
+        "method": "wrong_symmetry",
+        "n_seeds": 5,
+        "mean": 0.002030882196483308,
+        "std": 0.00018000051182820578
+      },
+      {
+        "stratum": "unequal_degree",
+        "method": "both",
+        "n_seeds": 5,
+        "mean": 0.0005298778262225372,
+        "std": 0.00019534017364293983
+      },
+      {
+        "stratum": "unequal_degree",
+        "method": "fixed_geometry",
+        "n_seeds": 5,
+        "mean": 0.0019758178169692045,
+        "std": 0.0002163838109721667
+      },
+      {
+        "stratum": "unequal_degree",
+        "method": "oracle_true_operator",
+        "n_seeds": 5,
+        "mean": 0.0,
+        "std": 0.0
+      },
+      {
+        "stratum": "unequal_degree",
+        "method": "unconstrained",
+        "n_seeds": 5,
+        "mean": 0.0009555508701400159,
+        "std": 0.0006792910380543077
+      },
+      {
+        "stratum": "unequal_degree",
+        "method": "wrong_symmetry",
+        "n_seeds": 5,
+        "mean": 0.0011422757288991868,
+        "std": 0.0004088558290538903
+      }
+    ],
+    "decisions": [
+      {
+        "stratum": "compatible",
+        "mean_delta_both_minus_unconstrained": -0.0006871801413797894,
+        "ci95": [
+          -0.0008364924031088823,
+          -0.00046784317240649784
+        ],
+        "label": "CONSTRAINTS_HELP",
+        "n_seeds": 5
+      },
+      {
+        "stratum": "sine_perturbed",
+        "mean_delta_both_minus_unconstrained": 0.0008456625414644227,
+        "ci95": [
+          0.0002942817114357673,
+          0.001428947944014796
+        ],
+        "label": "CONSTRAINTS_HURT_OR_NEUTRAL",
+        "n_seeds": 5
+      },
+      {
+        "stratum": "unequal_degree",
+        "mean_delta_both_minus_unconstrained": -0.0004256730439174787,
+        "ci95": [
+          -0.0009547737254827265,
+          3.4611508915455355e-05
+        ],
+        "label": "CONSTRAINTS_HELP_CI_SPANS_0",
+        "n_seeds": 5
+      }
+    ],
+    "complete": true,
+    "n_receipts": 300
+  },
+  "qapen_ridgehard_v1": {
+    "study": "qapen-ridgehard-v1",
+    "identity": {
+      "source": {
+        "git_head": "c0fb36da30e471e9f6c286a2764269ed1330845d",
+        "git_dirty": true,
+        "content_hash": "bac82509bc564d0c71d816caac864a651e3cc15289e4a06297fae11b2fe7a102",
+        "note": "A content hash is not a Git commit."
+      },
+      "script_sha256": "a3629a973d670c70dae13117cedd3641a61fa80ffff135b1b8b4f64023a5e251",
+      "protocol_sha256": "d8371a2034f219770c5181ee4c73a3f140cf2e5c700795153981805a9e0ce8df",
+      "profile": false,
+      "confirmation": "DRAFT_NOT_AUTHORIZED",
+      "study": "qapen-ridgehard-v1"
+    },
+    "n_receipts": 64,
+    "complete": true,
+    "decision": {
+      "n_paired_seeds": 4,
+      "mean_lifecycle_minus_ridge": 0.0007149883605556129,
+      "label": "RIDGE_STILL_WINS_OR_TIE"
+    },
+    "elapsed_seconds": 32.3568282920005,
+    "historical_primary_unchanged": "campaigns/qapen-lifecycle-v1"
+  }
+}

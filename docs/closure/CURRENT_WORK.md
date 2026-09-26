@@ -1,6 +1,29 @@
 # Current finite closure
 
-Authoritative closure: `../../../RESEARCH_CLOSURE/FINAL_REPORT.md` and `../../../RESEARCH_CLOSURE/REGISTRY.json`. The entries below are historical progress notes and do not override the closure registry.
+Authoritative closure: `../../../RESEARCH_CLOSURE/FINAL_REPORT.md` and `../../../RESEARCH_CLOSURE/REGISTRY.json`.
+
+## Loss-reversal work (26 September 2026)
+
+Frozen protocol: `LOSS_REVERSAL_PROTOCOL.md`. Results: `LOSS_REVERSAL_RESULTS.md`.
+
+Executed successors (historical campaigns untouched):
+
+1. **WFT misspec-v1** — constraints help on compatible teachers, **hurt** under sine
+   misspecification, inconclusive under unequal-degree (n=5). Scoped historical
+   win stands; unconditional constraint claim falsified.
+2. **QAPEN ridgehard-v1** — lifecycle still does not beat rolling ridge on
+   nonlinear / long-delay streams; recent/single memory stronger than lifecycle.
+3. **WFIM** — per-letter product-expressivity **ARCHIVED**.
+
+### Next executable targets
+
+- CWLNN: freeze route-before-coarse + hierarchy-necessary target protocol, then campaign
+- QLearn: full-cost estimand on new optimizee families (resource plan first)
+- WCODE: scrub Ultron overlap; deepen composition holdouts
+- Ultron: independent families; external evaluator remains EXTERNAL_REQUIRED
+
+One numerical worker. Preserve all old campaigns. New work uses fresh output dirs.
+
 
 The 80-model WFIM selection replay is complete and exact. The isolated historical-source CWLNN replay now exactly reproduces all predictions, permutations and checkpoint selections, plus a full training run. Current tests: 114 passed. Original campaign/run artifacts remain unchanged. Nine original research identities remain explicitly blocked on their protocol/external requirements; scoped negatives are retained.
 

@@ -82,10 +82,31 @@ class DiffusionField(nn.Module):
         return sym,scale
 
 
-def teacher(seed):
+def teacher(seed, stratum='compatible'):
+    """Finite teacher fields.
+
+    ``compatible`` matches the original WFT development generator (cosine-only,
+    shared fine/coarse coefficients). Misspecification strata deliberately break
+    reflection and/or equitable coarsening identities for falsification studies.
+    """
     rng=np.random.default_rng(seed);model=DiffusionField()
-    coefficients=torch.tensor([rng.uniform(.2,.8),rng.uniform(.3,.8),0.,rng.uniform(.1,.4),0.],dtype=torch.float64)
-    with torch.no_grad():model.coefficients.copy_(coefficients.repeat(2,1));model.within.fill_(rng.uniform(.2,1.))
+    if stratum=='compatible':
+        coefficients=torch.tensor([rng.uniform(.2,.8),rng.uniform(.3,.8),0.,rng.uniform(.1,.4),0.],dtype=torch.float64)
+        with torch.no_grad():model.coefficients.copy_(coefficients.repeat(2,1));model.within.fill_(rng.uniform(.2,1.))
+    elif stratum=='sine_perturbed':
+        # Nonzero sine modes: weight field is not reflection-symmetric.
+        coefficients=torch.tensor([rng.uniform(.2,.8),rng.uniform(.3,.8),rng.uniform(.25,.7),
+                                   rng.uniform(.1,.4),rng.uniform(.25,.7)],dtype=torch.float64)
+        with torch.no_grad():model.coefficients.copy_(coefficients.repeat(2,1));model.within.fill_(rng.uniform(.2,1.))
+    elif stratum=='unequal_degree':
+        # Independent fine/coarse fields: R Af = Ac R need not hold.
+        fine=torch.tensor([rng.uniform(.2,.8),rng.uniform(.3,.8),0.,rng.uniform(.1,.4),0.],dtype=torch.float64)
+        coarse=torch.tensor([rng.uniform(.15,.9),rng.uniform(.1,.55),0.,rng.uniform(.2,.75),0.],dtype=torch.float64)
+        with torch.no_grad():
+            model.coefficients[0].copy_(fine);model.coefficients[1].copy_(coarse)
+            model.within.fill_(rng.uniform(.2,1.))
+    else:
+        raise ValueError(f'Unknown teacher stratum: {stratum}')
     return model
 
 
