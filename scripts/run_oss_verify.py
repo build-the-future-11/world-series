@@ -73,7 +73,14 @@ def main() -> int:
 
     ok = True
     archive = DELIVERY / "world-series-review.tar.gz"
-    got = hashlib.sha256(archive.read_bytes()).hexdigest()
+    h = hashlib.sha256()
+    with archive.open("rb") as handle:
+        while True:
+            chunk = handle.read(1024 * 1024)
+            if not chunk:
+                break
+            h.update(chunk)
+    got = h.hexdigest()
     sha_ok = got == EXPECTED_SHA
     print(json.dumps({"step": "archive_sha", "exit_code": 0 if sha_ok else 1, "got": got}), flush=True)
     ok &= sha_ok
