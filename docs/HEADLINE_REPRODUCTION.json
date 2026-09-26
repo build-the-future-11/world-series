@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "purpose": "E0 headline reconstruction map for bounded preprint",
+  "claim_index": "results/claim_index.json",
+  "headlines": [
+    {
+      "id": "qlearn-bounded-results",
+      "project": "qlearn",
+      "claim": "No general optimizer advantage; failed sensitivity trajectories remain incomplete.",
+      "epistemic_status": "DEVELOPMENT_EVIDENCE",
+      "analysis_path": "world-series/docs/closure/GATE_RESULTS.json",
+      "local_path": "docs/closure/GATE_RESULTS.json",
+      "expected_sha256": "d7b72f1538ee0fc98589b2769f73642e6b13535cf0cdf9308534012fcf010174",
+      "observed_sha256": "d7b72f1538ee0fc98589b2769f73642e6b13535cf0cdf9308534012fcf010174",
+      "digest_match": true,
+      "reconstruction_mode": "analyze preserved natural-digits / gate results; optional meta-training replay"
+    },
+    {
+      "id": "qapen-bounded-results",
+      "project": "qapen",
+      "claim": "Lifecycle and delayed-utility memory execute; the combined candidate loses to rolling ridge and recent-memory controls.",
+      "epistemic_status": "DEVELOPMENT_EVIDENCE",
+      "analysis_path": "world-series/docs/closure/QAPEN_RESULTS.json",
+      "local_path": "docs/closure/QAPEN_RESULTS.json",
+      "expected_sha256": "2181cfa8fada1fc3927b3c9b67a005843792bb945d915f9a74e39e8bda96e8be",
+      "observed_sha256": "2181cfa8fada1fc3927b3c9b67a005843792bb945d915f9a74e39e8bda96e8be",
+      "digest_match": true,
+      "reconstruction_mode": "analyze preserved lifecycle campaign"
+    },
+    {
+      "id": "qwipii-bounded-results",
+      "project": "qwipii",
+      "claim": "Learned discovery reduces expansions but is slower than random ordering; greedy ranking produces longer paths in some cases.",
+      "epistemic_status": "DEVELOPMENT_EVIDENCE",
+      "analysis_path": "world-series/docs/closure/QWIPII_LEARNED_AUDIT.json",
+      "local_path": "docs/closure/QWIPII_LEARNED_AUDIT.json",
+      "expected_sha256": "cffa728f6d4e8662c01e818fd6b63dc5479658ec564ee524f039fd7e3d8302aa",
+      "observed_sha256": "cffa728f6d4e8662c01e818fd6b63dc5479658ec564ee524f039fd7e3d8302aa",
+      "digest_match": true,
+      "reconstruction_mode": "replay saved paths/cells"
+    },
+    {
+      "id": "wcode-bounded-results",
+      "project": "wcode",
+      "claim": "Trained relational scoring has no robust advantage; held-composition cap24 success is zero. Historical overlap is disclosed.",
+      "epistemic_status": "DEVELOPMENT_EVIDENCE",
+      "analysis_path": "world-series/docs/closure/WCODE_RESULTS.json",
+      "local_path": "docs/closure/WCODE_RESULTS.json",
+      "expected_sha256": "298176ac392146857e2ae7e1892891bfbea2e507c20483522c6c6c714bf83e16",
+      "observed_sha256": "298176ac392146857e2ae7e1892891bfbea2e507c20483522c6c6c714bf83e16",
+      "digest_match": true,
+      "reconstruction_mode": "audit preserved searches"
+    },
+    {
+      "id": "wfim-bounded-results",
+      "project": "wfim",
+      "claim": "Per-letter product transport cancels exactly. Learned per-word coordinates do not beat identity coordinates on ordered-pattern prediction.",
+      "epistemic_status": "DEVELOPMENT_EVIDENCE",
+      "analysis_path": "world-series/docs/closure/WFIM_LEARNING_AUDIT.json",
+      "local_path": "docs/closure/WFIM_LEARNING_AUDIT.json",
+      "expected_sha256": "323f66dd7a79c6df1eed25b8d48ee8e1578a2ce1c40497b0ad3d001185913704",
+      "observed_sha256": "323f66dd7a79c6df1eed25b8d48ee8e1578a2ce1c40497b0ad3d001185913704",
+      "digest_match": true,
+      "reconstruction_mode": "exact checkpoint prediction replay"
+    },
+    {
+      "id": "wft-bounded-results",
+      "project": "wft",
+      "claim": "Both constraints lower mean error within the declared generator; individual negative cells and spectral-boundary discrepancies remain.",
+      "epistemic_status": "DEVELOPMENT_EVIDENCE",
+      "analysis_path": "world-series/docs/closure/WFT_RESULTS.json",
+      "local_path": "docs/closure/WFT_RESULTS.json",
+      "expected_sha256": "224ca5a0aa0f57422d3958669913c7ccbdbb04ff671ad900a31455d55a525637",
+      "observed_sha256": "224ca5a0aa0f57422d3958669913c7ccbdbb04ff671ad900a31455d55a525637",
+      "digest_match": true,
+      "reconstruction_mode": "reanalyze saved fits"
+    },
+    {
+      "id": "wpinn-bounded-results",
+      "project": "wpinn",
+      "claim": "Neural weak and passive variants retain failed cells; their primary means stay null. Solver diagnostics do not replace original failures.",
+      "epistemic_status": "DEVELOPMENT_EVIDENCE",
+      "analysis_path": "world-series/docs/closure/WPINN_RESULTS.json",
+      "local_path": "docs/closure/WPINN_RESULTS.json",
+      "expected_sha256": "326a2b36c0f7dcf1cf817887f268220ac894528680c578745f0ce770cfa9c174",
+      "observed_sha256": "326a2b36c0f7dcf1cf817887f268220ac894528680c578745f0ce770cfa9c174",
+      "digest_match": true,
+      "reconstruction_mode": "replay rollouts; retain failures"
+    },
+    {
+      "id": "cwlnn-bounded-results",
+      "project": "cwlnn",
+      "claim": "Learned half routing is slower and less accurate than full hierarchy on both declared tasks.",
+      "epistemic_status": "DEVELOPMENT_EVIDENCE",
+      "analysis_path": "world-series/docs/closure/CWLNN_RESULTS.json",
+      "local_path": "docs/closure/CWLNN_RESULTS.json",
+      "expected_sha256": "7a1d359c9cae3d0ae9b2a91d43cb832768bb7313379608c2fa3d6e0825734144",
+      "observed_sha256": "7a1d359c9cae3d0ae9b2a91d43cb832768bb7313379608c2fa3d6e0825734144",
+      "digest_match": true,
+      "reconstruction_mode": "isolated prediction/permutation replay"
+    },
+    {
+      "id": "ultron-bounded-results",
+      "project": "ultron",
+      "claim": "Observed routing gain over best fixed tool has a family-bootstrap interval spanning zero; no general-agent claim.",
+      "epistemic_status": "DEVELOPMENT_EVIDENCE",
+      "analysis_path": "world-series/docs/closure/GATE_RESULTS.json",
+      "local_path": "docs/closure/GATE_RESULTS.json",
+      "expected_sha256": "d7b72f1538ee0fc98589b2769f73642e6b13535cf0cdf9308534012fcf010174",
+      "observed_sha256": "d7b72f1538ee0fc98589b2769f73642e6b13535cf0cdf9308534012fcf010174",
+      "digest_match": true,
+      "reconstruction_mode": "preserved development-v2 routing cells"
+    }
+  ],
+  "source_only_commands": [
+    "python -m pytest tests -q",
+    "python -m world_series doctor",
+    "python scripts/verify_headline_claims.py --claim-index results/claim_index.json"
+  ],
+  "archive_required_for_raw_campaigns": true
+}

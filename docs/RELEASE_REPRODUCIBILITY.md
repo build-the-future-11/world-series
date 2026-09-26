@@ -1,16 +1,19 @@
-# Private export and reproduction
+# Clone, evidence download and reproduction
 
 The source clone contains implementation, tests, protocols, manuscript and
 selected reports. Raw campaigns, checkpoints and run receipts are deliberately
-kept out of ordinary Git history. The private `review-20260925` prerelease holds
-`world-series-review.tar.gz`, `manifest.json` and `receipt.json`, including all
-preserved campaigns, all runs and a Git bundle for historical replay. It is an
-engineering review archive, not a scientific publication or open-source release.
+kept out of ordinary Git history. Obtain the hashed review archive from the
+GitHub Release assets (historically `review-20260925`: `world-series-review.tar.gz`,
+`manifest.json`, `receipt.json`). The archive is an engineering evidence bundle;
+scientific claims remain bounded development findings.
+
+**License:** Apache-2.0 for original source (`LICENSE`, `NOTICE`). Third-party
+terms: `THIRD_PARTY.md`.
 
 ## Source and evidence
 
 ```sh
-gh repo clone Build-the-future12/world-series
+gh repo clone build-the-future-11/world-series
 cd world-series
 python3.12 -m venv .venv
 .venv/bin/python -m pip install -r requirements.lock.txt
@@ -18,6 +21,7 @@ python3.12 -m venv .venv
 .venv/bin/python -m pip check
 .venv/bin/python -m pytest tests -q
 .venv/bin/python -m world_series doctor
+.venv/bin/python scripts/verify_headline_claims.py
 gh release download review-20260925 --dir deliveries/download
 .venv/bin/python scripts/verify_delivery.py deliveries/download --extract .work-tmp/download-extracted
 .venv/bin/python scripts/restore_delivery.py .work-tmp/download-extracted --output .work-tmp/restored
@@ -26,10 +30,9 @@ gh release download review-20260925 --dir deliveries/download
 Output directories must not already exist. `restore_delivery.py` preserves the
 archive source and Git history. Run historical audits with their recorded source
 revision; latest code is not a substitute for a frozen historical environment.
-The collection audit and planning material is a separate private repository:
-`Build-the-future12/world-series-research-records`. Clone it as the parent
-folder and place the implementation clone at `world-series/` when running its
-collection-wide checks.
+Collection audit material lives in
+`build-the-future-11/world-series-research-records` (clone as parent and place
+this repo at `world-series/` when running collection-wide checks).
 
 ## Safe same-host review
 
@@ -43,8 +46,7 @@ This builds/extracts a fresh archive, runs the full test suite and original
 analysis/artifact checks, and reloads WFIM predictions. It uses the caller's
 installed dependencies. It is not independent-person reproduction and does not
 retrain all nine studies. Add `--full-wfim` only for the recorded finite training
-replay. Other full historical replay commands and isolated dependency locks are
-in `docs/closure/` and `docs/execution/development-v2/`.
+replay. Per-headline commands: `docs/HEADLINE_REPRODUCTION.md`.
 
 Celo2 weights and upstream checkout are not redistributed. Fetch the exact
 revision and weight URL/hash in `CELO2_PROVENANCE.json` under the development
@@ -60,14 +62,12 @@ pandoc preprint.md --standalone -V geometry:margin=0.85in -V fontsize=11pt -V pa
 tectonic preprint.tex
 ```
 
-The current manuscript corrects the WFT evaluation/transfer denominator and
-teacher description. Frozen protocols and historical snapshots remain unchanged.
-Named authors, approved distribution terms, complete closest-work review and
-human scientific responsibility are still outstanding for public publication.
+Human authorship attestation: `docs/AUTHORSHIP.md`. Open-source go-live:
+`docs/OPEN_SOURCE_GO_LIVE.md`.
 
 ## Static analysis scope
 
 The repository has no configured type checker. Existing Ruff findings are
-retained in the release receipts rather than applying mass formatting to frozen
+retained in release receipts rather than applying mass formatting to frozen
 source files. CI checks fatal syntax/undefined-name rules plus all tests; it
 does not claim full lint cleanliness or scientific validation.

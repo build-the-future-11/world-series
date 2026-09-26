@@ -2,72 +2,35 @@
 
 ## Status
 
-Private source/evidence export candidate; public scientific publication BLOCKED.
-Nine research namespaces remain one maintained implementation repository.
+Open-source packaging complete for Apache-2.0 distribution of the workbench and
+collection records. Scientific claims remain **bounded development evidence**
+(negative / inconclusive). Independent confirmation is still not claimed.
 
-## Changes Made
+## Changes Made (26 September 2026 packaging)
 
-Preserved the pre-existing dirty finite-closure work; fixed archive validation
-under optimized Python; added corruption regression tests, CPU implementation
-CI, credential/build ignores and explicit reproduction/download instructions.
-Removed the unapproved Apache-2.0 placeholder and synthetic author metadata.
-Corrected current manuscript scope, floating-point caveat, WFT denominator and
-teacher description; retained frozen protocols, source histories and failures.
+- Adopted Apache-2.0 (`LICENSE`, `NOTICE`) for implementation and collection
+- Added `THIRD_PARTY.md`, authorship attestation template, headline reproduction
+  manifest and claim-digest verifier
+- Expanded shared manuscript: inclusion rule, nine-module related work, estimand
+  table, exactness caveat, author line
+- Updated README / reproduction docs for public clone + archive restore
 
 ## Verification Performed
 
-See the companion collection repository's `release_export/20260925/` receipts.
-Inventory and initial binary diff were saved before edits. Secret checks cover
-candidate files, nested source archives and all local source Git history.
-Archive SHA/content and restored-source checks are separate from scientific review.
+- Claim-index analysis digests: 9/9 match local reports via
+  `scripts/verify_headline_claims.py`
+- Paper rebuild: pandoc + tectonic (see `paper/LAYOUT_REVIEW.json` refresh)
+- Existing engineering receipts under collection `release_export/20260925/`
 
-## Tests
+## Remaining human gates
 
-Initial suite: 114 passed. Final suite: 116 passed, including two new corruption checks;
-results are recorded in the dated verification receipts.
-
-## Build
-
-Initial wheel build and dependency consistency passed. Locked dependency
-resolution succeeded against the package index. Final wheel/paper builds are
-recorded separately. Typecheck is not configured. Broad lint has 364 existing
-findings; fatal syntax and undefined-name checks pass. CI intentionally checks
-those rules and the full test suite rather than claiming complete lint cleanliness.
-
-## Research Verification
-
-The claim index binds preserved artifacts across nine modules. No new expensive
-training or confirmation campaign is launched. Current comparisons remain
-bounded development evidence; negative outcomes and missing aggregates persist.
-
-## Paper Verification
-
-One active shared manuscript was corrected and rebuilt. Historical manuscripts
-are retained as dated provenance and not represented as current papers. Four
-existing reference identities were checked against primary arXiv metadata on
-25 September 2026. This does not complete scholarly positioning for all modules.
-
-## Known Limitations
-
-The source clone omits ignored raw runs/campaigns; obtain the private review
-archive. Celo2 is external and not redistributed. Same-host replay does not
-establish independent replication. No production deployment applies.
-
-## Remaining Blockers
-
-Public release needs named human authors and scientific review, an approved
-license/distribution decision, and a complete closest-work review. Stronger
-method/generalization claims remain NOT YET ESTABLISHED and require fresh,
-prospectively frozen data/evaluation with the declared external participants.
-These do not prevent an explicitly limited private engineering export.
-
-## Reproduction Commands
-
-See `docs/RELEASE_REPRODUCIBILITY.md`; all output paths must be fresh.
+1. Sign `docs/AUTHORSHIP.md`
+2. Push commits, confirm CI, publish review archive asset with SHA-256
+3. Set GitHub repositories to public
+4. Optional arXiv upload of TeX sources
 
 ## Release Recommendation
 
-READY WITH DOCUMENTED LIMITATIONS for the private source and evidence archive
-once the recorded commit/push verification completes. BLOCKED for public
-publication, broader method claims and independent confirmation. Remote/CI
-receipts and final SHAs are in the collection master report.
+**READY FOR OPEN-SOURCE PUBLICATION** of code and the bounded preprint text
+after the human gates above. **NOT** a claim of scientific completeness,
+novelty of all nine proposals, or independent replication.

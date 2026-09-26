@@ -1,9 +1,12 @@
-# Distribution status
+# License
 
-No project-wide distribution license has been approved in the evidence record.
-The previous Apache-2.0 package field was explicitly a placeholder, not a
-recorded license decision. This private review export does not grant an open
-source license. A rights holder must choose and approve terms before public
-release. Imported materials retain their own provenance and applicable terms;
-see `provenance/IMPORT_MANIFEST.json` and `docs/exposition/DEPENDENCY_LICENSE.md`.
-No authorship, affiliation, or rights ownership is inferred by this notice.
+World Series source code and original documentation in this repository are
+licensed under the **Apache License, Version 2.0**. See [`LICENSE`](LICENSE)
+and [`NOTICE`](NOTICE).
+
+Third-party data and optional external comparators retain separate terms; see
+[`THIRD_PARTY.md`](THIRD_PARTY.md).
+
+This replaces the earlier “license not yet approved” notice. Making the
+repository public under these terms is the rights holder’s affirmative
+distribution decision for this workbench.

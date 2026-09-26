@@ -8,7 +8,9 @@ version = "0.1.0"
 description = "World Series v0.1 research workbench — nine independently testable modules"
 readme = "README.md"
 requires-python = ">=3.11,<3.13"
-license = { text = "Distribution license not yet approved; see LICENSE.md" }
+license = { text = "Apache-2.0" }
+authors = [{ name = "Ryan" }]
+urls = { Homepage = "https://github.com/build-the-future-11/world-series", "Bug Tracker" = "https://github.com/build-the-future-11/world-series/issues" }
 dependencies = [
   "numpy>=1.26",
   "scipy>=1.11",

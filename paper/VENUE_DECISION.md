@@ -1,9 +1,11 @@
-# Working submission target: AISTATS 2027
+# Venue decision note — 26 September 2026
 
-Verified 2026-09-24 against https://virtual.aistats.org/Conferences/2027/CallForPapers and https://aistats.org/aistats2027/dates.html.
+Primary immediate path: **public preprint + open-source code** under Apache-2.0.
 
-Abstract: September 29, 2026, 23:59 AoE. Full paper and all supplement: October 6, 2026, 23:59 AoE. Main text limit eight pages, excluding references, AI Use Statement, reproducibility checklist and appendices. Review is double blind. Author list freezes at abstract deadline. Reciprocal reviewer nomination or justified exemption is required. Actual author eligibility and profiles remain unverified.
+AISTATS-style deadlines mentioned in earlier notes remain optional and require
+a separate eligibility/author check. Do not mark the PDF as an under-review
+conference submission unless an actual submission is made.
 
-This is a target, not an eligibility or scientific-readiness verdict. The nine-module evidence report is the comprehensive preprint development source; a coherent conference contribution still requires selection and novelty review. Do not force unrelated studies into eight pages or call nine prototypes nine papers.
-
-Neutral preprints are allowed; they must not identify themselves as AISTATS submissions during review. arXiv requires the available TeX sources and dependencies: https://info.arxiv.org/help/submit_tex.html. Author identities, license choice, endorsement/account eligibility, final author review, and scientific release gates remain unresolved. No submission has been made.
+Unresolved only at the human gate: dated authorship attestation
+(`docs/AUTHORSHIP.md`) and making the GitHub repositories public with the
+evidence archive attached.
