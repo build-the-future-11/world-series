@@ -9,7 +9,7 @@ import tarfile
 
 ROOT = Path(__file__).resolve().parents[1]
 FOLDERS = ('src','tests','scripts','configs','docs','paper','data','experiments','provenance','results','runs','campaigns','.github')
-ROOT_FILES = ('README.md','AGENTS.md','.gitignore','pyproject.toml','requirements.lock.txt','reproduce.sh','LICENSE.md','FINAL_RELEASE_REPORT.md')
+ROOT_FILES = ('README.md','AGENTS.md','.gitignore','pyproject.toml','requirements.lock.txt','reproduce.sh','LICENSE','LICENSE.md','NOTICE','THIRD_PARTY.md','FINAL_RELEASE_REPORT.md')
 
 
 def digest(path):
