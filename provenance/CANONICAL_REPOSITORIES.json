@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "captured_at": "2026-10-02",
+  "purpose": "Pin repository roles and observed heads so coordination copies cannot silently replace canonical implementation or records sources.",
+  "repositories": [
+    {
+      "name": "world-series-implementation",
+      "repository": "build-the-future-11/world-series",
+      "role": "implementation",
+      "expected_default_branch": "main",
+      "observed_head": "a7ab171465aa92aec57e2079f8df71e7685d4cf9",
+      "authoritative_for": ["source", "tests", "execution_receipts"]
+    },
+    {
+      "name": "world-series-research-records",
+      "repository": "build-the-future-11/world-series-research-records",
+      "role": "records",
+      "expected_default_branch": "main",
+      "observed_head": "b3693e2aea78a34dc8300c0126abf0943ee2b4bc",
+      "authoritative_for": ["portfolio_closure", "public_research_records"]
+    },
+    {
+      "name": "backlog-pro-blade-import",
+      "repository": "build-the-future-11/BackLOG",
+      "role": "import_marker",
+      "expected_default_branch": "main",
+      "observed_head": "ebe82f4b095408dcc5b156eb677b5f1cdf27a2e6",
+      "authoritative_for": ["cleaned_pro_blade_import_marker"]
+    },
+    {
+      "name": "percy-work",
+      "repository": "build-the-future-11/Percy-Work",
+      "role": "coordination",
+      "expected_default_branch": "main",
+      "observed_head": "68dd9be6081a1e67256cce90bf46cdf6b4e43f23",
+      "authoritative_for": ["execution_coordination"]
+    },
+    {
+      "name": "percy-projects",
+      "repository": "build-the-future-11/Percy-Projects",
+      "role": "project_registry",
+      "expected_default_branch": "main",
+      "observed_head": "c6945e8028b6d99886bb4748763d2670b39365d3",
+      "authoritative_for": ["project_scientific_state_registry"]
+    }
+  ],
+  "rules": {
+    "implementation_role_must_be_unique": true,
+    "records_role_must_be_unique": true,
+    "coordination_is_never_implementation": true,
+    "project_registry_is_never_implementation": true
+  }
+}
