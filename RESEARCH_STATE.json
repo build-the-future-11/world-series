@@ -49,6 +49,17 @@
     },
     {
       "date": "2026-10-10",
+      "kind": "exact_reviewed_branch_integration",
+      "record": "research/ENGINEERING_INTEGRATION_20261010.json",
+      "source_heads": [
+        "62d6e6cb9aa95bbe16eeb0769c9e3f40b82a2ba0",
+        "b369c69ff1ade92e56561b3f2e7cf50e269356b2"
+      ],
+      "status": "247 implementation tests pass; all eight donor paths exact; original codebook and mixture paths unchanged",
+      "scientific_outcomes_created": false
+    },
+    {
+      "date": "2026-10-10",
       "kind": "engineering_session_initialized_before_source_changes",
       "record": "research/RUN_REPORT_ADMISSION_20261010.md",
       "status": "SPECIFIED",
@@ -69,6 +80,27 @@
       "record": "research/ENGINEERING_REPORT_ADMISSION_20261010.json",
       "status": "58 targeted checks and additional peer probes pass;290 complete-suite tests pass; scientific gates unchanged",
       "scientific_outcomes_created": false
+    },
+    {
+      "date": "2026-10-10",
+      "kind": "report_base_integration_initialized",
+      "record": "research/ENGINEERING_REPORT_BASE_INTEGRATION_20261010.json",
+      "status": "SPECIFIED; current base and prior report histories retained; combined verification pending",
+      "scientific_outcomes_created": false
+    },
+    {
+      "date": "2026-10-10",
+      "kind": "report_base_integration_locally_verified",
+      "record": "research/ENGINEERING_REPORT_BASE_INTEGRATION_20261010.json",
+      "status": "305 combined tests pass with one retained warning; critical lint and all nine claim digests pass; original report source unchanged",
+      "scientific_outcomes_created": false
+    },
+    {
+      "date": "2026-10-10",
+      "kind": "report_base_integration_independently_reviewed",
+      "record": "research/ENGINEERING_REPORT_BASE_INTEGRATION_20261010.json",
+      "status": "PASS; all639 unrelated base blobs/modes and all11 prior report non-state payloads preserved;305 combined tests pass; publication and hosted outcome tracked separately",
+      "scientific_outcomes_created": false
     }
   ],
   "history_index_scope": "Index to retained project records and this revision; not a reconstruction or replacement of the complete git/artifact history.",
@@ -81,6 +113,49 @@
     "source": "src/world_series/qapen/causal.py",
     "source_sha256": "c3dd5abd046ce3279cca329902ea206f4ce43c10581c996786ea21118365d868"
   },
+  "integration_sessions": [
+    {
+      "id": "world-series-reviewed-integration-20261010",
+      "record": "research/ENGINEERING_INTEGRATION_20261010.json",
+      "status": "VERIFIED_FOR_EXISTING_DRAFT",
+      "scientific_outcomes_created": false,
+      "verification": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-m",
+          "pytest",
+          "-o",
+          "addopts=",
+          "-q",
+          "tests"
+        ],
+        "passed": 247,
+        "warnings": 1,
+        "warning": "Existing qlearn requires-grad tensor-to-scalar conversion; not suppressed",
+        "wall_seconds": 20.54049048500019,
+        "raw": "research/verification/integration_20261010/",
+        "static_checks": "Ruff E9/F821/F822/F823 and source/state git diff --cached --check pass; the exact donor Markdown retains its pre-existing blank line at EOF",
+        "exact_donor_blobs": true,
+        "source_sha256": {
+          "docs/STRICT_EVIDENCE_JSON_20261010.md": "8dd73839d08c9fed449cac8d2479840965bf908efc152e3fcd73da8e8e300917",
+          "src/world_series/core/artifacts.py": "aa5058b50817cee989926b797b12f8ca62f4f8f8f83023940ed0d2e4771c9f22",
+          "src/world_series/core/config.py": "ca3e32e1a00e121b1f15ef565cbf4c23064f799688db612fe8433ee24e3e3310",
+          "src/world_series/evaluation/runner.py": "3f80cb8cb59af35034ab6c27e9ec3d9e6092253269e46c85a59e9e8a34749328",
+          "tests/core/test_strict_evidence_json.py": "a4de0ba1c99a5c744d6171be28e3cff5f488a6097eac28d5af389cb744d6a7fe",
+          "docs/development/WFT_MASS_MATRIX_20261010.md": "26d858605297d12bc88e097ab55bb01f162cfaa51310f3c69f942aac6864fcb0",
+          "src/world_series/wft/laplacian.py": "f9481b11d78dec728dc8b25973cab16c7fa950aa2bf0b68085c5d87ca28af9ef",
+          "tests/wft/test_mass_matrix.py": "1e97ebf7e7394eb89725be9160b3c1e9f9d7536cab2c0e35f0425b278b11b46a"
+        }
+      },
+      "independent_review": {
+        "reviewer": "root agent",
+        "scope": "source-only integration review; no scientific validation",
+        "status": "PASS",
+        "observation": "Eight donor blobs exact, original codebook/mixture retained; 247-test combined gate is appropriate."
+      }
+    }
+  ],
+  "latest_integration_session": "world-series-reviewed-integration-20261010",
   "report_admission_session": {
     "status": "REVIEWED_TESTED_READY_FOR_DRAFT_PUBLICATION",
     "contract": "research/RUN_REPORT_ADMISSION_20261010.md",
@@ -93,6 +168,15 @@
     "tests_passed": 290,
     "scientific_outcome_changed": false,
     "real_cli_smokes": 1,
+    "independent_review": "PASS"
+  },
+  "report_base_integration": {
+    "record": "research/ENGINEERING_REPORT_BASE_INTEGRATION_20261010.json",
+    "status": "INDEPENDENT_REVIEW_PASS_READY_FOR_DRAFT_PUBLICATION",
+    "report_parent": "cd4bf8d89113bf8f65c45af36921888407426aa1",
+    "current_base_parent": "b89d5709b6b43a41d89f88e3c0fa686c809596bf",
+    "scientific_outcomes_created": false,
+    "tests_passed": 305,
     "independent_review": "PASS"
   }
 }

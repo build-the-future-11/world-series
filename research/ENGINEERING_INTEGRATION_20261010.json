@@ -1,0 +1,91 @@
+{
+  "session": "world-series-reviewed-integration-20261010",
+  "status": "VERIFIED_FOR_EXISTING_DRAFT",
+  "parent": "30fb16b21b9563b8390530db8c17ea256ec386de",
+  "source_heads": [
+    "62d6e6cb9aa95bbe16eeb0769c9e3f40b82a2ba0",
+    "b369c69ff1ade92e56561b3f2e7cf50e269356b2"
+  ],
+  "question": "Do the separately reviewed strict-evidence and full-mass WFT corrections coexist with the tested immutable QAPEN codebook/mixture stack?",
+  "mechanism_change": "None beyond the already separately versioned reviewed corrections. Adopt the exact donor blobs and retain every Git parent and historical outcome.",
+  "falsifier": "Any donor path conflict, lost QAPEN change, changed frozen evidence, or failing affected implementation check.",
+  "budget": {
+    "full_local_suite_commands": 2,
+    "local_wall_seconds": 180,
+    "numeric_threads": 1,
+    "scientific_campaigns": 0,
+    "protected_runs": 0,
+    "paid_compute": 0
+  },
+  "scientific_disposition": "Existing negative/incomplete outcomes preserved; confirmation DRAFT_NOT_AUTHORIZED.",
+  "imported_paths": [
+    {
+      "path": "docs/STRICT_EVIDENCE_JSON_20261010.md",
+      "donor": "62d6e6cb9aa95bbe16eeb0769c9e3f40b82a2ba0"
+    },
+    {
+      "path": "src/world_series/core/artifacts.py",
+      "donor": "62d6e6cb9aa95bbe16eeb0769c9e3f40b82a2ba0"
+    },
+    {
+      "path": "src/world_series/core/config.py",
+      "donor": "62d6e6cb9aa95bbe16eeb0769c9e3f40b82a2ba0"
+    },
+    {
+      "path": "src/world_series/evaluation/runner.py",
+      "donor": "62d6e6cb9aa95bbe16eeb0769c9e3f40b82a2ba0"
+    },
+    {
+      "path": "tests/core/test_strict_evidence_json.py",
+      "donor": "62d6e6cb9aa95bbe16eeb0769c9e3f40b82a2ba0"
+    },
+    {
+      "path": "docs/development/WFT_MASS_MATRIX_20261010.md",
+      "donor": "b369c69ff1ade92e56561b3f2e7cf50e269356b2"
+    },
+    {
+      "path": "src/world_series/wft/laplacian.py",
+      "donor": "b369c69ff1ade92e56561b3f2e7cf50e269356b2"
+    },
+    {
+      "path": "tests/wft/test_mass_matrix.py",
+      "donor": "b369c69ff1ade92e56561b3f2e7cf50e269356b2"
+    }
+  ],
+  "verification": {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-m",
+      "pytest",
+      "-o",
+      "addopts=",
+      "-q",
+      "tests"
+    ],
+    "passed": 247,
+    "warnings": 1,
+    "warning": "Existing qlearn requires-grad tensor-to-scalar conversion; not suppressed",
+    "wall_seconds": 20.54049048500019,
+    "raw": "research/verification/integration_20261010/",
+    "static_checks": "Ruff E9/F821/F822/F823 and source/state git diff --cached --check pass; the exact donor Markdown retains its pre-existing blank line at EOF",
+    "exact_donor_blobs": true,
+    "source_sha256": {
+      "docs/STRICT_EVIDENCE_JSON_20261010.md": "8dd73839d08c9fed449cac8d2479840965bf908efc152e3fcd73da8e8e300917",
+      "src/world_series/core/artifacts.py": "aa5058b50817cee989926b797b12f8ca62f4f8f8f83023940ed0d2e4771c9f22",
+      "src/world_series/core/config.py": "ca3e32e1a00e121b1f15ef565cbf4c23064f799688db612fe8433ee24e3e3310",
+      "src/world_series/evaluation/runner.py": "3f80cb8cb59af35034ab6c27e9ec3d9e6092253269e46c85a59e9e8a34749328",
+      "tests/core/test_strict_evidence_json.py": "a4de0ba1c99a5c744d6171be28e3cff5f488a6097eac28d5af389cb744d6a7fe",
+      "docs/development/WFT_MASS_MATRIX_20261010.md": "26d858605297d12bc88e097ab55bb01f162cfaa51310f3c69f942aac6864fcb0",
+      "src/world_series/wft/laplacian.py": "f9481b11d78dec728dc8b25973cab16c7fa950aa2bf0b68085c5d87ca28af9ef",
+      "tests/wft/test_mass_matrix.py": "1e97ebf7e7394eb89725be9160b3c1e9f9d7536cab2c0e35f0425b278b11b46a"
+    }
+  },
+  "scope_limit": "Exact donor integration and bounded implementation checks, not new scientific evidence or protected execution.",
+  "independent_review": {
+    "reviewer": "root agent",
+    "scope": "source-only integration review; no scientific validation",
+    "status": "PASS",
+    "observation": "Eight donor blobs exact, original codebook/mixture retained; 247-test combined gate is appropriate."
+  },
+  "pull_request": "https://github.com/build-the-future-11/world-series/pull/4"
+}

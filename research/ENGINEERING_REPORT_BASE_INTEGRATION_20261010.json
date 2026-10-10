@@ -1,0 +1,338 @@
+{
+  "schema_version": 1,
+  "status": "INDEPENDENT_REVIEW_PASS_READY_FOR_DRAFT_PUBLICATION",
+  "created_at_utc": "2026-10-10T10:19:32.100872+00:00",
+  "question": "Can the reviewed report-admission source coexist with the concurrently integrated full-mass WFT and strict writers while preserving every parent artifact and historical state entry?",
+  "trigger": "GitHub PR4 advanced to b89d5709 while PR5 was being verified; PR5 dirty mergeability observed after its earlier successful hosted run.",
+  "report_parent": "cd4bf8d89113bf8f65c45af36921888407426aa1",
+  "current_base_parent": "b89d5709b6b43a41d89f88e3c0fa686c809596bf",
+  "prior_common_base": "30fb16b21b9563b8390530db8c17ea256ec386de",
+  "integration_policy": "Use current base as tree foundation; retain reviewed report implementation unchanged; union append-only canonical histories; keep original report record and both histories intact.",
+  "scientific_outcomes_created": false,
+  "research_complete": false,
+  "new_training_campaigns": 0,
+  "protected_runs": 0,
+  "budget": {
+    "combined_full_suite_attempts": 1,
+    "additional_bounded_checks": "Source/blob/mode preservation, claim digests and critical lint; independent integration review; hosted implementation workflow."
+  },
+  "concurrent_base_paths": [
+    "RESEARCH_STATE.json",
+    "docs/STRICT_EVIDENCE_JSON_20261010.md",
+    "docs/development/WFT_MASS_MATRIX_20261010.md",
+    "research/ENGINEERING_INTEGRATION_20261010.json",
+    "research/verification/integration_20261010/attempt.json",
+    "research/verification/integration_20261010/stderr.txt",
+    "research/verification/integration_20261010/stdout.txt",
+    "src/world_series/core/artifacts.py",
+    "src/world_series/core/config.py",
+    "src/world_series/evaluation/runner.py",
+    "src/world_series/wft/laplacian.py",
+    "tests/core/test_strict_evidence_json.py",
+    "tests/wft/test_mass_matrix.py"
+  ],
+  "new_base_only_paths": [
+    "docs/development/WFT_MASS_MATRIX_20261010.md",
+    "research/ENGINEERING_INTEGRATION_20261010.json",
+    "research/verification/integration_20261010/attempt.json",
+    "research/verification/integration_20261010/stderr.txt",
+    "research/verification/integration_20261010/stdout.txt",
+    "src/world_series/wft/laplacian.py",
+    "tests/wft/test_mass_matrix.py"
+  ],
+  "unchanged_report_source_sha256": {
+    "src/world_series/evaluation/verification.py": "59dcda80676e8d1adc46801f3be09ac24b2b1088f8dcf691608e248b5e9b5391",
+    "src/world_series/evaluation/reports.py": "4fbb9664aa2f2c4cd9f9a62af9d8c2299ba07b685dd45c3e2f1e759806582523",
+    "src/world_series/evaluation/runner.py": "8bebabd1c0eab30fa9b59a6b4eb1373f8c9f9d011cb06176cebda8b32ed32e97",
+    "tests/core/test_report_admission.py": "cd8b5eafc505ecff1198e9a5e3aa93ec361730e94b823670720374618eef7862"
+  },
+  "prior_report_state_sha256": "6b3c64743440c236a0ec94853add953a74d5372094e309f91a9f87c55b7dd335",
+  "current_base_state_sha256": "4f977a7a395af4000989034c2c5c49b214a488b2d0a397b6ac27525d807f107f",
+  "historical_record_policy": "The initial 290-test report implementation and its successful hosted merge preview remain immutable historical evidence; this record appends the current integration result separately.",
+  "attribution": "WFT full-mass code, tests, documentation and prior integration records are inherited unchanged from b89d5709 / PR2. This integration authors no new scientific algorithm or metric.",
+  "completed_local_at_utc": "2026-10-10T10:20:39.980975+00:00",
+  "initial_specification_sha256": "b053b85e31c3b2545bfad5cd17ede63e94ebeba23a0b8edcb59668f72adc7ef9",
+  "validation": {
+    "command": "OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 PYTHONPATH=src python -m pytest -o addopts= -q tests",
+    "passed": 305,
+    "warnings": 1,
+    "seconds": 18.37,
+    "raw_output": "........................................................................ [ 23%]\n........................................................................ [ 47%]\n........................................................................ [ 70%]\n........................................................................ [ 94%]\n.................                                                        [100%]\n=============================== warnings summary ===============================\ntests/qlearn/test_qlearn.py::test_bounds_and_reset\n  /workspace/scratch/f3f3c572b7e9/third_pass/root_lane/world-series/tests/qlearn/test_qlearn.py:15: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.\n  Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)\n    assert float(eta) > 0 and torch.all(d > 0)\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n305 passed, 1 warning in 18.37s\n",
+    "raw_output_sha256": "ad9c7468cf80563d0e0d24893fb5ad758237a083e7e67f78ed3d934820687b74",
+    "expected_scope": "Existing 247-case integrated base plus unchanged 58 report-admission cases; overlapping historical collections are not added.",
+    "static_command": "python -m ruff check --isolated --select E4,E7,E9,F src/world_series/evaluation/verification.py src/world_series/evaluation/runner.py src/world_series/evaluation/reports.py tests/core/test_report_admission.py",
+    "static_result": "All checks passed!",
+    "claim_digest_admission": [
+      {
+        "id": "qlearn-bounded-results",
+        "path": "world-series/docs/closure/GATE_RESULTS.json",
+        "sha256": "d7b72f1538ee0fc98589b2769f73642e6b13535cf0cdf9308534012fcf010174",
+        "unchanged": true
+      },
+      {
+        "id": "qapen-bounded-results",
+        "path": "world-series/docs/closure/QAPEN_RESULTS.json",
+        "sha256": "2181cfa8fada1fc3927b3c9b67a005843792bb945d915f9a74e39e8bda96e8be",
+        "unchanged": true
+      },
+      {
+        "id": "qwipii-bounded-results",
+        "path": "world-series/docs/closure/QWIPII_LEARNED_AUDIT.json",
+        "sha256": "cffa728f6d4e8662c01e818fd6b63dc5479658ec564ee524f039fd7e3d8302aa",
+        "unchanged": true
+      },
+      {
+        "id": "wcode-bounded-results",
+        "path": "world-series/docs/closure/WCODE_RESULTS.json",
+        "sha256": "298176ac392146857e2ae7e1892891bfbea2e507c20483522c6c6c714bf83e16",
+        "unchanged": true
+      },
+      {
+        "id": "wfim-bounded-results",
+        "path": "world-series/docs/closure/WFIM_LEARNING_AUDIT.json",
+        "sha256": "323f66dd7a79c6df1eed25b8d48ee8e1578a2ce1c40497b0ad3d001185913704",
+        "unchanged": true
+      },
+      {
+        "id": "wft-bounded-results",
+        "path": "world-series/docs/closure/WFT_RESULTS.json",
+        "sha256": "224ca5a0aa0f57422d3958669913c7ccbdbb04ff671ad900a31455d55a525637",
+        "unchanged": true
+      },
+      {
+        "id": "wpinn-bounded-results",
+        "path": "world-series/docs/closure/WPINN_RESULTS.json",
+        "sha256": "326a2b36c0f7dcf1cf817887f268220ac894528680c578745f0ce770cfa9c174",
+        "unchanged": true
+      },
+      {
+        "id": "cwlnn-bounded-results",
+        "path": "world-series/docs/closure/CWLNN_RESULTS.json",
+        "sha256": "7a1d359c9cae3d0ae9b2a91d43cb832768bb7313379608c2fa3d6e0825734144",
+        "unchanged": true
+      },
+      {
+        "id": "ultron-bounded-results",
+        "path": "world-series/docs/closure/GATE_RESULTS.json",
+        "sha256": "d7b72f1538ee0fc98589b2769f73642e6b13535cf0cdf9308534012fcf010174",
+        "unchanged": true
+      }
+    ]
+  },
+  "local_tree_admission": {
+    "parent": "b89d5709b6b43a41d89f88e3c0fa686c809596bf",
+    "parent_tree": "2da5be33c47cbc8d22488df9033bba7085991d90",
+    "new_base_blob_count": 642,
+    "selected_owned_paths": [
+      "RESEARCH_STATE.json",
+      "research/state_snapshots/REPORT_ADMISSION_PARENT_30fb16b.json",
+      "research/RUN_REPORT_ADMISSION_20261010.md",
+      "research/ENGINEERING_REPORT_ADMISSION_20261010.json",
+      "src/world_series/evaluation/runner.py",
+      "src/world_series/evaluation/verification.py",
+      "src/world_series/evaluation/reports.py",
+      "tests/core/test_report_admission.py",
+      "research/ENGINEERING_REPORT_BASE_INTEGRATION_20261010.json"
+    ],
+    "unrelated_base_blobs_preserved": 639,
+    "new_base_only_imports": [
+      "docs/development/WFT_MASS_MATRIX_20261010.md",
+      "research/ENGINEERING_INTEGRATION_20261010.json",
+      "research/verification/integration_20261010/attempt.json",
+      "research/verification/integration_20261010/stderr.txt",
+      "research/verification/integration_20261010/stdout.txt",
+      "src/world_series/wft/laplacian.py",
+      "tests/wft/test_mass_matrix.py"
+    ],
+    "errors": [],
+    "both_canonical_histories_and_all_parent_fields_preserved": true
+  },
+  "independent_review": {
+    "reviewer": "/root/current_evaluation_execution",
+    "status": "PASS",
+    "receipt_sha256": "65bea61d95d03b739a794fab66c71b7a2df20a8ba2d70b48cb674438c8923dd0",
+    "reviewed_pre_metadata_record_sha256": "2d2751173a166c1b3066199c41f0888efe59be9185b88c70d0bde884defd0379",
+    "receipt": {
+      "schema": "third_pass.independent_world_base_integration_review.v1",
+      "status": "PASS",
+      "reviewer": "/root/current_evaluation_execution",
+      "reviewed_at_utc": "2026-10-10T10:21:50.866813+00:00",
+      "repository": "build-the-future-11/world-series",
+      "report_parent": "cd4bf8d89113bf8f65c45af36921888407426aa1",
+      "current_base_parent": "b89d5709b6b43a41d89f88e3c0fa686c809596bf",
+      "current_base_tree": "b89d5709b6b43a41d89f88e3c0fa686c809596bf",
+      "reviewed_integration_record": {
+        "path": "/workspace/scratch/f3f3c572b7e9/third_pass/root_lane/world-series/research/ENGINEERING_REPORT_BASE_INTEGRATION_20261010.json",
+        "sha256": "2d2751173a166c1b3066199c41f0888efe59be9185b88c70d0bde884defd0379",
+        "bytes": 8770
+      },
+      "reviewed_canonical_state_sha256": "6c5bab3a1ee1a590c55d563aa1ec29cd80e6adfc90a28f72e5ad88f2e49cd7e9",
+      "trigger": {
+        "observation": "Independent direct GitHub PR5 readback reported dirty mergeability and no current merge preview while the published head remained cd4bf8d89113bf8f65c45af36921888407426aa1.",
+        "cause_identified_by_root": "Concurrent PR4 advanced to b89d5709b6b43a41d89f88e3c0fa686c809596bf, integrating the prior strict writers and full-mass WFT.",
+        "preserved_earlier_tested_merge": "d2449c16cfdf4c2be8a44254c3d41654be869215",
+        "preserved_earlier_tree": "cb686d12213c7c73ea21c63c96f6c1e739012495"
+      },
+      "current_base_passthrough": {
+        "base_blob_count": 642,
+        "owned_payload_paths": [
+          "RESEARCH_STATE.json",
+          "research/ENGINEERING_REPORT_ADMISSION_20261010.json",
+          "research/ENGINEERING_REPORT_BASE_INTEGRATION_20261010.json",
+          "research/RUN_REPORT_ADMISSION_20261010.md",
+          "research/state_snapshots/REPORT_ADMISSION_PARENT_30fb16b.json",
+          "src/world_series/evaluation/reports.py",
+          "src/world_series/evaluation/runner.py",
+          "src/world_series/evaluation/verification.py",
+          "tests/core/test_report_admission.py"
+        ],
+        "all_unrelated_base_blobs_checked": 639,
+        "blob_and_executable_mode_errors": [],
+        "new_base_imports": [
+          "docs/development/WFT_MASS_MATRIX_20261010.md",
+          "research/ENGINEERING_INTEGRATION_20261010.json",
+          "research/verification/integration_20261010/attempt.json",
+          "research/verification/integration_20261010/stderr.txt",
+          "research/verification/integration_20261010/stdout.txt",
+          "src/world_series/wft/laplacian.py",
+          "tests/wft/test_mass_matrix.py"
+        ],
+        "attribution": "All seven newly integrated base-only paths are inherited concurrent work, not newly authored algorithms or tests from this pass."
+      },
+      "prior_report_files": [
+        {
+          "path": "research/state_snapshots/REPORT_ADMISSION_PARENT_30fb16b.json",
+          "sha256": "e2d24b4073cc759fa2bf72a7c8004bfdfe1f598af5ed2963e11fc14868bc39da",
+          "matches_prior_report": true
+        },
+        {
+          "path": "research/RUN_REPORT_ADMISSION_20261010.md",
+          "sha256": "b23ceabc8f8fed55b0532dcd7bbdaae376cc54c1a2035bc93b3b787ebf0c08cb",
+          "matches_prior_report": true
+        },
+        {
+          "path": "research/ENGINEERING_REPORT_ADMISSION_20261010.json",
+          "sha256": "da57380d81145f08d115cd008d22ccc846ae8c862102b766b6e050a79bf00cec",
+          "matches_prior_report": true
+        },
+        {
+          "path": "src/world_series/core/artifacts.py",
+          "sha256": "aa5058b50817cee989926b797b12f8ca62f4f8f8f83023940ed0d2e4771c9f22",
+          "matches_prior_report": true
+        },
+        {
+          "path": "src/world_series/core/config.py",
+          "sha256": "ca3e32e1a00e121b1f15ef565cbf4c23064f799688db612fe8433ee24e3e3310",
+          "matches_prior_report": true
+        },
+        {
+          "path": "src/world_series/evaluation/runner.py",
+          "sha256": "8bebabd1c0eab30fa9b59a6b4eb1373f8c9f9d011cb06176cebda8b32ed32e97",
+          "matches_prior_report": true
+        },
+        {
+          "path": "src/world_series/evaluation/verification.py",
+          "sha256": "59dcda80676e8d1adc46801f3be09ac24b2b1088f8dcf691608e248b5e9b5391",
+          "matches_prior_report": true
+        },
+        {
+          "path": "src/world_series/evaluation/reports.py",
+          "sha256": "4fbb9664aa2f2c4cd9f9a62af9d8c2299ba07b685dd45c3e2f1e759806582523",
+          "matches_prior_report": true
+        },
+        {
+          "path": "tests/core/test_strict_evidence_json.py",
+          "sha256": "a4de0ba1c99a5c744d6171be28e3cff5f488a6097eac28d5af389cb744d6a7fe",
+          "matches_prior_report": true
+        },
+        {
+          "path": "tests/core/test_report_admission.py",
+          "sha256": "cd8b5eafc505ecff1198e9a5e3aa93ec361730e94b823670720374618eef7862",
+          "matches_prior_report": true
+        },
+        {
+          "path": "docs/STRICT_EVIDENCE_JSON_20261010.md",
+          "sha256": "8dd73839d08c9fed449cac8d2479840965bf908efc152e3fcd73da8e8e300917",
+          "matches_prior_report": true
+        }
+      ],
+      "canonical_state_checks": {
+        "current_base_fields_missing": [],
+        "prior_report_fields_missing": [],
+        "current_base_fields_changed_except_history": [],
+        "base_history_entries_missing": 0,
+        "report_history_entries_missing": 0,
+        "base_integration_sessions_unchanged": true,
+        "prior_report_session_unchanged": true
+      },
+      "prior_specification": {
+        "path": "/workspace/scratch/f3f3c572b7e9/third_pass/root_lane/world_integration_specified_before_run.json",
+        "sha256": "b053b85e31c3b2545bfad5cd17ede63e94ebeba23a0b8edcb59668f72adc7ef9",
+        "matches_recorded_digest": true
+      },
+      "claim_mapping_checks": [
+        {
+          "id": "qlearn-bounded-results",
+          "path": "world-series/docs/closure/GATE_RESULTS.json",
+          "sha256_matches": true
+        },
+        {
+          "id": "qapen-bounded-results",
+          "path": "world-series/docs/closure/QAPEN_RESULTS.json",
+          "sha256_matches": true
+        },
+        {
+          "id": "qwipii-bounded-results",
+          "path": "world-series/docs/closure/QWIPII_LEARNED_AUDIT.json",
+          "sha256_matches": true
+        },
+        {
+          "id": "wcode-bounded-results",
+          "path": "world-series/docs/closure/WCODE_RESULTS.json",
+          "sha256_matches": true
+        },
+        {
+          "id": "wfim-bounded-results",
+          "path": "world-series/docs/closure/WFIM_LEARNING_AUDIT.json",
+          "sha256_matches": true
+        },
+        {
+          "id": "wft-bounded-results",
+          "path": "world-series/docs/closure/WFT_RESULTS.json",
+          "sha256_matches": true
+        },
+        {
+          "id": "wpinn-bounded-results",
+          "path": "world-series/docs/closure/WPINN_RESULTS.json",
+          "sha256_matches": true
+        },
+        {
+          "id": "cwlnn-bounded-results",
+          "path": "world-series/docs/closure/CWLNN_RESULTS.json",
+          "sha256_matches": true
+        },
+        {
+          "id": "ultron-bounded-results",
+          "path": "world-series/docs/closure/GATE_RESULTS.json",
+          "sha256_matches": true
+        }
+      ],
+      "author_combined_validation": {
+        "passed": 305,
+        "warnings": 1,
+        "seconds": 18.37,
+        "command": "OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 PYTHONPATH=src python -m pytest -o addopts= -q tests",
+        "raw_output_sha256": "ad9c7468cf80563d0e0d24893fb5ad758237a083e7e67f78ed3d934820687b74",
+        "raw_output_hash_matches": true,
+        "scope": "Observed retained author run, not a second independent execution. Existing 247 cases plus unchanged 58 report-admission cases; historical 290 and hosted/peer repeats are not added."
+      },
+      "independent_execution_scope": "This integration review independently recomputed all 639 unrelated base Git blob hashes and executable modes, all 11 prior non-state selected SHA256 hashes, canonical parent history preservation, the pre-run specification hash, claim mapping digests, and raw-test-log digest. No source or test mutation, additional suite, model or scientific campaign was performed. The report runtime and 58-case test source match the earlier independently tested revision exactly.",
+      "approved_followup_scope": "Only append this review metadata to the integration record and canonical session before exact-tree publication. New source/test changes require renewed scoped review.",
+      "limits": [
+        "Successful integration verifies compatibility and preservation of the named source snapshots; it does not establish scientific validity, protected-run authority, or a new study result.",
+        "Hosted verification and final live mergeability remain pending publication of the integration commit; the initial successful hosted run remains historical evidence."
+      ]
+    },
+    "finalization": "Only this review closure metadata and a canonical history entry were appended after review; no runtime, tests, inherited records, measurements or protected boundaries changed."
+  }
+}
