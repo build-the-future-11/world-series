@@ -138,6 +138,11 @@ class CausalLifecycle:
         if self.operations+amount>self.operation_cap:raise RuntimeError('Operation budget exhausted')
         self.operations+=amount
 
+    def _require_budget(self, amount):
+        """Admit a complete causal transition before any of its state changes."""
+        if self.operations+amount>self.operation_cap:
+            raise RuntimeError('Operation budget exhausted')
+
     def _spawn(self,key,state='WARMUP'):
         if len(self.models)>=self.max_identities:return None
         identity=uuid.uuid5(uuid.NAMESPACE_OID,f'world-series-qapen-{self.seed}-{self.next_identity}').hex
@@ -165,11 +170,30 @@ class CausalLifecycle:
     def predict(self,context):
         if self.pending is not None:raise RuntimeError('Observe the pending prediction before predicting again')
         context=np.asarray(context,dtype=np.float64).copy()
+        centers=self.quantizer.centers
+        if context.shape!=centers.shape[1:] or not np.isfinite(context).all():
+            raise ValueError('Invalid context')
+        # The plan reuses the same closest-expert decision and candidate list.
+        # It does not draw retrieval RNG, revive experts or touch access counts.
+        active_count=sum(m.state in {'ACTIVE','REVIVED'} for m in self.metadata.values())
+        closest=None
+        required=centers.size
+        if self.lifecycle:
+            required+=len(self.metadata)*len(context)
+            closest=min((m for m in self.metadata.values() if m.state in {'ACTIVE','REVIVED','SLEEP'}),key=lambda m:np.linalg.norm(context-m.key))
+            if closest.state=='SLEEP':
+                active_count=min(active_count+1,self.max_active)
+        width=2*len(context)+len(centers)
+        required+=active_count*(width+len(context))
+        candidates=[e for e in self.engrams if e.written_at<self.t]
+        if self.memory_enabled and candidates:
+            required+=len(candidates)*len(context)
+        required+=sum(width for m in self.metadata.values() if m.state=='WARMUP' and m.birth<self.t)
+        self._require_budget(required)
         self._charge(self.quantizer.centers.size);self.costs['quantizer_distances']+=len(self.quantizer.centers)
         code,features=self.quantizer.encode(context)
         if self.lifecycle:
             self._charge(len(self.metadata)*len(context))
-            closest=min((m for m in self.metadata.values() if m.state in {'ACTIVE','REVIVED','SLEEP'}),key=lambda m:np.linalg.norm(context-m.key))
             if closest.state=='SLEEP':
                 self._make_room();self._transition(closest.identity,'REVIVED')
         active=[m for m in self.metadata.values() if m.state in {'ACTIVE','REVIVED'}]
@@ -181,7 +205,6 @@ class CausalLifecycle:
         weights,mean,variance=mixture_moments(weights,np.array([mu for mu,var in moments]),np.array([var for mu,var in moments]))
         variance=max(.05,variance)
         base=(mean,variance);selected=active[int(weights.argmax())].identity
-        candidates=[e for e in self.engrams if e.written_at<self.t]
         retrieved=None
         if self.memory_enabled and candidates:
             self._charge(len(candidates)*len(context));self.costs['retrieval_distances']+=len(candidates)
@@ -216,12 +239,33 @@ class CausalLifecycle:
         if not np.isfinite(y):raise ValueError('Finite target required')
         p=self.pending;nll=gaussian_nll(y,p['mean'],p['variance'])
         base_nll=gaussian_nll(y,*p['base'])
+        warm_scores={identity:gaussian_nll(y,*moments) for identity,moments in p['warm'].items()}
+        # Experts finishing prospective warmup will not receive a warmup update.
+        remaining_warm=sum(
+            m.state=='WARMUP' and not (
+                identity in p['warm'] and m.prospective_count+1>=self.warmup
+            ) for identity,m in self.metadata.items()
+        )
+        required=4*len(p['features'])*(1+remaining_warm)
+        surprise=(y-p['base'][0])**2/p['base'][1]
+        next_streak=self.surprise_streak+1 if surprise>4. else 0
+        will_spawn=(self.lifecycle and next_streak>=3 and
+                    self.t-self.last_birth>=self.cooldown and len(self.models)<self.max_identities)
+        if will_spawn:
+            # Account for the bounded replay after its pending append/eviction.
+            replay=list(self.replay)
+            if self.replay.maxlen is not None and len(replay)>=self.replay.maxlen:
+                replay=replay[1:]
+            required+=4*(sum(len(x) for x,_ in replay)+len(p['features']))
+        if self.memory_enabled and len(self.engrams)>=self.capacity:
+            required+=len(self.engrams)
+        self._require_budget(required)
         if p['memory_id'] is not None:
             engram=next(e for e in self.engrams if e.identity==p['memory_id'])
             assert engram.written_at<self.t
             engram.utility_sum+=base_nll-nll;engram.utility_count+=1
         for identity,moments in p['warm'].items():
-            m=self.metadata[identity];m.prospective_gain+=base_nll-gaussian_nll(y,*moments);m.prospective_count+=1
+            m=self.metadata[identity];m.prospective_gain+=base_nll-warm_scores[identity];m.prospective_count+=1
             if m.prospective_count>=self.warmup:
                 if m.prospective_gain>0:self._make_room();self._transition(identity,'ACTIVE')
                 else:self._transition(identity,'PRUNED')
@@ -234,8 +278,7 @@ class CausalLifecycle:
                 active=sum(z.state in {'ACTIVE','REVIVED'} for z in self.metadata.values())
                 if active>1:self._transition(identity,'SLEEP')
         self.replay.append((p['features'].copy(),float(y)))
-        surprise=(y-p['base'][0])**2/p['base'][1]
-        self.surprise_streak=self.surprise_streak+1 if surprise>4. else 0
+        self.surprise_streak=next_streak
         if self.lifecycle and self.surprise_streak>=3 and self.t-self.last_birth>=self.cooldown:
             identity=self._spawn(p['context'])
             if identity:

@@ -1,0 +1,153 @@
+{
+  "study_id": "qapen-budget-admission-20261010",
+  "date": "2026-10-10",
+  "status": "ENGINEERING_VERIFIED_DRAFT_INTEGRATION_PENDING",
+  "question": "Does exact complete transition-cost admission preserve the causal model retry boundary when the operation cap is exhausted?",
+  "hypothesis": "Compute the complete successful prediction/observation operation cost before retained state changes, preserving all existing charge sites and successful arithmetic.",
+  "falsifiers": [
+    "Any refused transition changes model/Adam/pending/replay/memory/lifecycle/RNG state.",
+    "An exactly sufficient cap rejects a transition or preflight cost differs from actual charges.",
+    "Successful predictions, scores or state differ from the original implementation."
+  ],
+  "base": {
+    "repository": "build-the-future-11/world-series",
+    "pr": 4,
+    "branch": "codex/qapen-frozen-codebook-20261010",
+    "head": "b89d5709b6b43a41d89f88e3c0fa686c809596bf",
+    "tree": "2da5be33c47cbc8d22488df9033bba7085991d90",
+    "original_source_head": "30fb16b21b9563b8390530db8c17ea256ec386de",
+    "preserved_current_integration": "Strict writers and full mass WFT donor changes retained from current#4; new separate#5 report admission not duplicated."
+  },
+  "source_sha256": {
+    "src/world_series/qapen/causal.py": "1f3eff15b9a6e3baedf4ebd150c47d6fc4e938f2658e053e2d1fd9b0cfa26846",
+    "tests/qapen/test_budget_admission.py": "a221299681afcf4df205b4c4cc98662ce176d4b852acb7dc76ff05b78a5d9a99"
+  },
+  "baseline_source_sha256": "c3dd5abd046ce3279cca329902ea206f4ce43c10581c996786ea21118365d868",
+  "new_regression_cases": 12,
+  "local_verification": {
+    "tests_passed": 259,
+    "seconds": 13.61,
+    "raw": "research/verification/qapen_budget_20261010/fresh_parent_full_suite_2.log",
+    "scope": "Full current-parent tests directory with actual CPU implementations.",
+    "warning": "One existing qlearn requires-grad tensor-to-scalar warning, not suppressed.",
+    "static": "Ruff E9/F821/F822/F823 across src/tests/scripts passed; full Ruff on new test passed; changed source/test compile and git diff --check passed.",
+    "python": "3.12.14",
+    "torch": "2.14.1+cpu",
+    "source_cli": "PYTHONPATH=src python -m world_series doctor passed; no local installation/build claim."
+  },
+  "successful_trace_equivalence": {
+    "configurations": 12,
+    "observations": 192,
+    "raw": "research/verification/qapen_budget_20261010/successful_trace_equivalence.json",
+    "result": "Exact original/candidate predictions, scores, model/optimizer tensors and complete retained state."
+  },
+  "independent_review": {
+    "status": "PASS",
+    "reviewer": "finance_next",
+    "successful_transitions": 288,
+    "refused_retries": 288,
+    "trace_count": 3,
+    "observations_per_trace": 48,
+    "raw": "research/verification/causal_budget_20261010/finance_independent_review.json",
+    "coverage": "3D contexts,3starting experts, memory capacity3, sleeping/revival/warmup, births after replay reaches32; exact costs and full state/NumPy/Torch RNG."
+  },
+  "attempt_history": [
+    {
+      "log": "baseline.log",
+      "result": "Initial12cases all failed against original causal source."
+    },
+    {
+      "log": "repaired_attempt_1.log",
+      "result": "9passed,3failed; direct admission cases passed but trace fixture expected birth after only2consecutive surprises."
+    },
+    {
+      "log": "repaired_final.log",
+      "result": "12passed after correcting artificial trace to3consecutive shocks."
+    },
+    {
+      "log": "baseline_final_fixtures.log",
+      "result": "All final12fixtures fail against the exact original causal source."
+    },
+    {
+      "log": "full_suite_attempt_1.log",
+      "result": "226passed on initial#4 source basis, one inherited warning."
+    },
+    {
+      "log": "fresh_parent_full_suite.log",
+      "result": "226passed, but first relative staging path copied no current parent files; this is old-parent evidence only."
+    },
+    {
+      "log": "fresh_parent_full_suite_2.log",
+      "result": "259passed on correctly materialized current#4 parent; one inherited warning."
+    }
+  ],
+  "scope_limit": "Atomic admission for operation-budget refusal and invalid contexts. Arbitrary numerical exceptions after successful admission are not claimed transactional.",
+  "research_boundary": {
+    "scientific_outcomes_created": false,
+    "protected_evaluations": 0,
+    "paid_jobs": 0,
+    "external_datasets": 0,
+    "confirmation": "DRAFT_NOT_AUTHORIZED",
+    "prior_findings": "Nine architectures remain negative/incomplete development workbench; frozen campaigns/protocols unchanged.",
+    "prospective_local_budget": "12constructed traces, at most20observations per trace, bounded expert/codebook counts; retained original prospective state.",
+    "independent_review_extension": "Separate reviewer used3\u00d748artificial observations to reach32-record replay saturation; explicit scope retained."
+  },
+  "hosted_verification": "Existing workflow unchanged; exact proposed-source hosted result pending.",
+  "evidence": [
+    {
+      "path": "baseline.log",
+      "sha256": "18d1ade2594ee0fde99661c50c73dd7b26bcd4bf0ac7a8348501a45016f7e39c",
+      "bytes": 28674
+    },
+    {
+      "path": "baseline_final_fixtures.log",
+      "sha256": "8e13bed36a2fe47aa454767ec16fcea684e6c9f5b81f025c3ba2f97d020b43e0",
+      "bytes": 30498
+    },
+    {
+      "path": "finance_independent_review.py",
+      "sha256": "ec5799a96bc9d17cf8efffccc4d7634f13ed7a23ad65e78800d14020ce5a7946",
+      "bytes": 4464
+    },
+    {
+      "path": "fresh_parent_full_suite.log",
+      "sha256": "2ebf62a2f8a825bf9690bf207fea776b05949dbf206ea5e2df1d443fcce4a9e3",
+      "bytes": 956
+    },
+    {
+      "path": "fresh_parent_full_suite_2.log",
+      "sha256": "41f0e48dca0ef5dd9b2aa9354b05d19dc0a21f99a48774a8087263a347e465f2",
+      "bytes": 956
+    },
+    {
+      "path": "full_suite_attempt_1.log",
+      "sha256": "c454e6d9f360bc53509a4e2887f0c15f781520fa7787a640a2ddb300b118946f",
+      "bytes": 956
+    },
+    {
+      "path": "parent_research_state.json",
+      "sha256": "4f977a7a395af4000989034c2c5c49b214a488b2d0a397b6ac27525d807f107f",
+      "bytes": 5828
+    },
+    {
+      "path": "repaired_attempt_1.log",
+      "sha256": "708c076fa49c503a13b67ee873c36c7f56a669877ec3f1c93708bd3530164542",
+      "bytes": 6548
+    },
+    {
+      "path": "repaired_final.log",
+      "sha256": "ef693334fe6cbe7ce4a95fcdd68e05a694bc0be6646b848b852aa10280439628",
+      "bytes": 100
+    },
+    {
+      "path": "study_opened_local_state.json",
+      "sha256": "1696461a3c5958642adbc1523d0ddb9951c46d2defa96d0eb3eef4ebcb55633d",
+      "bytes": 4086
+    },
+    {
+      "path": "successful_trace_equivalence.json",
+      "sha256": "30e11125f060e62af2fa6bc95e7151304526602d9a9377eee744d0aea035ec1d",
+      "bytes": 2615
+    }
+  ]
+}

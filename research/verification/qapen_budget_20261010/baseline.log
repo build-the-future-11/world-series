@@ -1,0 +1,655 @@
+FFFFFFFFFFFF                                                             [100%]
+=================================== FAILURES ===================================
+_ test_rejected_prediction_preserves_state_and_exact_budget_can_retry[initial] _
+
+scenario = 'initial'
+
+    @pytest.mark.parametrize('scenario', ['initial', 'memory-random-warm', 'revival'])
+    def test_rejected_prediction_preserves_state_and_exact_budget_can_retry(scenario):
+        value = model(lifecycle=False, memory=False)
+        context = [0.]
+        if scenario == 'memory-random-warm':
+            value = warm_model(retrieval='random')
+            identity = value._spawn([0.])
+            value.metadata[identity].birth = value.t - 1
+        elif scenario == 'revival':
+            value = model()
+            identity = value._spawn([4.])
+            value._transition(identity, 'ACTIVE')
+            value._transition(identity, 'SLEEP')
+            context = [4.]
+        reference = value.checkpoint()
+        result = reference.predict(context)
+        cost = reference.operations - value.operations
+        value.operation_cap = value.operations + cost - 1
+        before = snapshot(value)
+        with pytest.raises(RuntimeError, match='Operation budget exhausted'):
+            value.predict(context)
+>       identical(snapshot(value), before)
+
+tests/qapen/test_budget_admission.py:76: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+left = 2, right = 0
+
+    def identical(left, right):
+        if isinstance(left, torch.Tensor):
+            assert torch.equal(left, right)
+        elif isinstance(left, np.ndarray):
+            np.testing.assert_array_equal(left, right)
+        elif isinstance(left, dict):
+            assert left.keys() == right.keys()
+            for key in left:
+                identical(left[key], right[key])
+        elif isinstance(left, (list, tuple)):
+            assert len(left) == len(right)
+            for x, y in zip(left, right, strict=True):
+                identical(x, y)
+        else:
+>           assert left == right
+E           assert 2 == 0
+
+tests/qapen/test_budget_admission.py:52: AssertionError
+_ test_rejected_prediction_preserves_state_and_exact_budget_can_retry[memory-random-warm] _
+
+scenario = 'memory-random-warm'
+
+    @pytest.mark.parametrize('scenario', ['initial', 'memory-random-warm', 'revival'])
+    def test_rejected_prediction_preserves_state_and_exact_budget_can_retry(scenario):
+        value = model(lifecycle=False, memory=False)
+        context = [0.]
+        if scenario == 'memory-random-warm':
+            value = warm_model(retrieval='random')
+            identity = value._spawn([0.])
+            value.metadata[identity].birth = value.t - 1
+        elif scenario == 'revival':
+            value = model()
+            identity = value._spawn([4.])
+            value._transition(identity, 'ACTIVE')
+            value._transition(identity, 'SLEEP')
+            context = [4.]
+        reference = value.checkpoint()
+        result = reference.predict(context)
+        cost = reference.operations - value.operations
+        value.operation_cap = value.operations + cost - 1
+        before = snapshot(value)
+        with pytest.raises(RuntimeError, match='Operation budget exhausted'):
+            value.predict(context)
+>       identical(snapshot(value), before)
+
+tests/qapen/test_budget_admission.py:76: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+tests/qapen/test_budget_admission.py:50: in identical
+    identical(x, y)
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+left = 1, right = 0
+
+    def identical(left, right):
+        if isinstance(left, torch.Tensor):
+            assert torch.equal(left, right)
+        elif isinstance(left, np.ndarray):
+            np.testing.assert_array_equal(left, right)
+        elif isinstance(left, dict):
+            assert left.keys() == right.keys()
+            for key in left:
+                identical(left[key], right[key])
+        elif isinstance(left, (list, tuple)):
+            assert len(left) == len(right)
+            for x, y in zip(left, right, strict=True):
+                identical(x, y)
+        else:
+>           assert left == right
+E           assert 1 == 0
+
+tests/qapen/test_budget_admission.py:52: AssertionError
+_ test_rejected_prediction_preserves_state_and_exact_budget_can_retry[revival] _
+
+scenario = 'revival'
+
+    @pytest.mark.parametrize('scenario', ['initial', 'memory-random-warm', 'revival'])
+    def test_rejected_prediction_preserves_state_and_exact_budget_can_retry(scenario):
+        value = model(lifecycle=False, memory=False)
+        context = [0.]
+        if scenario == 'memory-random-warm':
+            value = warm_model(retrieval='random')
+            identity = value._spawn([0.])
+            value.metadata[identity].birth = value.t - 1
+        elif scenario == 'revival':
+            value = model()
+            identity = value._spawn([4.])
+            value._transition(identity, 'ACTIVE')
+            value._transition(identity, 'SLEEP')
+            context = [4.]
+        reference = value.checkpoint()
+        result = reference.predict(context)
+        cost = reference.operations - value.operations
+        value.operation_cap = value.operations + cost - 1
+        before = snapshot(value)
+        with pytest.raises(RuntimeError, match='Operation budget exhausted'):
+            value.predict(context)
+>       identical(snapshot(value), before)
+
+tests/qapen/test_budget_admission.py:76: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+left = 'REVIVED', right = 'SLEEP'
+
+    def identical(left, right):
+        if isinstance(left, torch.Tensor):
+            assert torch.equal(left, right)
+        elif isinstance(left, np.ndarray):
+            np.testing.assert_array_equal(left, right)
+        elif isinstance(left, dict):
+            assert left.keys() == right.keys()
+            for key in left:
+                identical(left[key], right[key])
+        elif isinstance(left, (list, tuple)):
+            assert len(left) == len(right)
+            for x, y in zip(left, right, strict=True):
+                identical(x, y)
+        else:
+>           assert left == right
+E           AssertionError: assert 'REVIVED' == 'SLEEP'
+E             
+E             - SLEEP
+E             + REVIVED
+
+tests/qapen/test_budget_admission.py:52: AssertionError
+_ test_rejected_observation_preserves_state_and_exact_budget_can_retry[memory-utility] _
+
+scenario = 'memory-utility'
+
+    @pytest.mark.parametrize('scenario', ['memory-utility', 'warm-update', 'promotion', 'birth-replay'])
+    def test_rejected_observation_preserves_state_and_exact_budget_can_retry(scenario):
+        value = warm_model(warmup=2)
+        target = .4
+        if scenario in {'warm-update', 'promotion'}:
+            identity = value._spawn([0.])
+            value.metadata[identity].birth = value.t - 1
+            if scenario == 'promotion':
+                value.metadata[identity].prospective_count = 1
+                value.metadata[identity].prospective_gain = 100.
+        if scenario == 'birth-replay':
+            value.surprise_streak = 2
+            target = 20.
+        value.predict([0.])
+        reference = value.checkpoint()
+        result = reference.observe(target)
+        cost = reference.operations - value.operations
+        value.operation_cap = value.operations + cost - 1
+        before = snapshot(value)
+        with pytest.raises(RuntimeError, match='Operation budget exhausted'):
+            value.observe(target)
+>       identical(snapshot(value), before)
+
+tests/qapen/test_budget_admission.py:104: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+left = 3, right = 2
+
+    def identical(left, right):
+        if isinstance(left, torch.Tensor):
+            assert torch.equal(left, right)
+        elif isinstance(left, np.ndarray):
+            np.testing.assert_array_equal(left, right)
+        elif isinstance(left, dict):
+            assert left.keys() == right.keys()
+            for key in left:
+                identical(left[key], right[key])
+        elif isinstance(left, (list, tuple)):
+            assert len(left) == len(right)
+            for x, y in zip(left, right, strict=True):
+                identical(x, y)
+        else:
+>           assert left == right
+E           assert 3 == 2
+
+tests/qapen/test_budget_admission.py:52: AssertionError
+_ test_rejected_observation_preserves_state_and_exact_budget_can_retry[warm-update] _
+
+scenario = 'warm-update'
+
+    @pytest.mark.parametrize('scenario', ['memory-utility', 'warm-update', 'promotion', 'birth-replay'])
+    def test_rejected_observation_preserves_state_and_exact_budget_can_retry(scenario):
+        value = warm_model(warmup=2)
+        target = .4
+        if scenario in {'warm-update', 'promotion'}:
+            identity = value._spawn([0.])
+            value.metadata[identity].birth = value.t - 1
+            if scenario == 'promotion':
+                value.metadata[identity].prospective_count = 1
+                value.metadata[identity].prospective_gain = 100.
+        if scenario == 'birth-replay':
+            value.surprise_streak = 2
+            target = 20.
+        value.predict([0.])
+        reference = value.checkpoint()
+        result = reference.observe(target)
+        cost = reference.operations - value.operations
+        value.operation_cap = value.operations + cost - 1
+        before = snapshot(value)
+        with pytest.raises(RuntimeError, match='Operation budget exhausted'):
+            value.observe(target)
+>       identical(snapshot(value), before)
+
+tests/qapen/test_budget_admission.py:104: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+left = 3, right = 2
+
+    def identical(left, right):
+        if isinstance(left, torch.Tensor):
+            assert torch.equal(left, right)
+        elif isinstance(left, np.ndarray):
+            np.testing.assert_array_equal(left, right)
+        elif isinstance(left, dict):
+            assert left.keys() == right.keys()
+            for key in left:
+                identical(left[key], right[key])
+        elif isinstance(left, (list, tuple)):
+            assert len(left) == len(right)
+            for x, y in zip(left, right, strict=True):
+                identical(x, y)
+        else:
+>           assert left == right
+E           assert 3 == 2
+
+tests/qapen/test_budget_admission.py:52: AssertionError
+_ test_rejected_observation_preserves_state_and_exact_budget_can_retry[promotion] _
+
+scenario = 'promotion'
+
+    @pytest.mark.parametrize('scenario', ['memory-utility', 'warm-update', 'promotion', 'birth-replay'])
+    def test_rejected_observation_preserves_state_and_exact_budget_can_retry(scenario):
+        value = warm_model(warmup=2)
+        target = .4
+        if scenario in {'warm-update', 'promotion'}:
+            identity = value._spawn([0.])
+            value.metadata[identity].birth = value.t - 1
+            if scenario == 'promotion':
+                value.metadata[identity].prospective_count = 1
+                value.metadata[identity].prospective_gain = 100.
+        if scenario == 'birth-replay':
+            value.surprise_streak = 2
+            target = 20.
+        value.predict([0.])
+        reference = value.checkpoint()
+        result = reference.observe(target)
+        cost = reference.operations - value.operations
+        value.operation_cap = value.operations + cost - 1
+        before = snapshot(value)
+        with pytest.raises(RuntimeError, match='Operation budget exhausted'):
+            value.observe(target)
+>       identical(snapshot(value), before)
+
+tests/qapen/test_budget_admission.py:104: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+left = 3, right = 2
+
+    def identical(left, right):
+        if isinstance(left, torch.Tensor):
+            assert torch.equal(left, right)
+        elif isinstance(left, np.ndarray):
+            np.testing.assert_array_equal(left, right)
+        elif isinstance(left, dict):
+            assert left.keys() == right.keys()
+            for key in left:
+                identical(left[key], right[key])
+        elif isinstance(left, (list, tuple)):
+            assert len(left) == len(right)
+            for x, y in zip(left, right, strict=True):
+                identical(x, y)
+        else:
+>           assert left == right
+E           assert 3 == 2
+
+tests/qapen/test_budget_admission.py:52: AssertionError
+_ test_rejected_observation_preserves_state_and_exact_budget_can_retry[birth-replay] _
+
+scenario = 'birth-replay'
+
+    @pytest.mark.parametrize('scenario', ['memory-utility', 'warm-update', 'promotion', 'birth-replay'])
+    def test_rejected_observation_preserves_state_and_exact_budget_can_retry(scenario):
+        value = warm_model(warmup=2)
+        target = .4
+        if scenario in {'warm-update', 'promotion'}:
+            identity = value._spawn([0.])
+            value.metadata[identity].birth = value.t - 1
+            if scenario == 'promotion':
+                value.metadata[identity].prospective_count = 1
+                value.metadata[identity].prospective_gain = 100.
+        if scenario == 'birth-replay':
+            value.surprise_streak = 2
+            target = 20.
+        value.predict([0.])
+        reference = value.checkpoint()
+        result = reference.observe(target)
+        cost = reference.operations - value.operations
+        value.operation_cap = value.operations + cost - 1
+        before = snapshot(value)
+        with pytest.raises(RuntimeError, match='Operation budget exhausted'):
+            value.observe(target)
+>       identical(snapshot(value), before)
+
+tests/qapen/test_budget_admission.py:104: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+left = {'81f71c1a29165781a7516c3c28714fba': {'identity': '81f71c1a29165781a7516c3c28714fba', 'state': 'ACTIVE', 'birth': 0, '...adc8ba7e9e6748c': {'identity': '3738906ee25756a89adc8ba7e9e6748c', 'state': 'WARMUP', 'birth': 3, 'last_used': 3, ...}}
+right = {'81f71c1a29165781a7516c3c28714fba': {'identity': '81f71c1a29165781a7516c3c28714fba', 'state': 'ACTIVE', 'birth': 0, 'last_used': 2, ...}}
+
+    def identical(left, right):
+        if isinstance(left, torch.Tensor):
+            assert torch.equal(left, right)
+        elif isinstance(left, np.ndarray):
+            np.testing.assert_array_equal(left, right)
+        elif isinstance(left, dict):
+>           assert left.keys() == right.keys()
+E           AssertionError: assert dict_keys(['8...ba7e9e6748c']) == dict_keys(['8...c3c28714fba'])
+E             
+E             Use -v to get more diff
+
+tests/qapen/test_budget_admission.py:44: AssertionError
+__ test_invalid_context_does_not_consume_the_next_prediction_budget[context0] __
+
+context = [1.0, 2.0]
+
+    @pytest.mark.parametrize('context', [[1., 2.], [float('nan')]])
+    def test_invalid_context_does_not_consume_the_next_prediction_budget(context):
+        value = model()
+        before = snapshot(value)
+        with pytest.raises(ValueError, match='Invalid context'):
+            value.predict(context)
+>       identical(snapshot(value), before)
+
+tests/qapen/test_budget_admission.py:117: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+left = 2, right = 0
+
+    def identical(left, right):
+        if isinstance(left, torch.Tensor):
+            assert torch.equal(left, right)
+        elif isinstance(left, np.ndarray):
+            np.testing.assert_array_equal(left, right)
+        elif isinstance(left, dict):
+            assert left.keys() == right.keys()
+            for key in left:
+                identical(left[key], right[key])
+        elif isinstance(left, (list, tuple)):
+            assert len(left) == len(right)
+            for x, y in zip(left, right, strict=True):
+                identical(x, y)
+        else:
+>           assert left == right
+E           assert 2 == 0
+
+tests/qapen/test_budget_admission.py:52: AssertionError
+__ test_invalid_context_does_not_consume_the_next_prediction_budget[context1] __
+
+context = [nan]
+
+    @pytest.mark.parametrize('context', [[1., 2.], [float('nan')]])
+    def test_invalid_context_does_not_consume_the_next_prediction_budget(context):
+        value = model()
+        before = snapshot(value)
+        with pytest.raises(ValueError, match='Invalid context'):
+            value.predict(context)
+>       identical(snapshot(value), before)
+
+tests/qapen/test_budget_admission.py:117: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+left = 2, right = 0
+
+    def identical(left, right):
+        if isinstance(left, torch.Tensor):
+            assert torch.equal(left, right)
+        elif isinstance(left, np.ndarray):
+            np.testing.assert_array_equal(left, right)
+        elif isinstance(left, dict):
+            assert left.keys() == right.keys()
+            for key in left:
+                identical(left[key], right[key])
+        elif isinstance(left, (list, tuple)):
+            assert len(left) == len(right)
+            for x, y in zip(left, right, strict=True):
+                identical(x, y)
+        else:
+>           assert left == right
+E           assert 2 == 0
+
+tests/qapen/test_budget_admission.py:52: AssertionError
+_ test_repeated_budget_refusals_do_not_change_a_complete_causal_trace[nearest] _
+
+retrieval = 'nearest'
+
+    @pytest.mark.parametrize('retrieval', ['nearest', 'random', 'recent'])
+    def test_repeated_budget_refusals_do_not_change_a_complete_causal_trace(retrieval):
+        value = model(retrieval=retrieval, warmup=2, sleep_after=2)
+        reference = value.checkpoint()
+        contexts = [[0.], [4.], [1.], [3.]] * 4
+        targets = [0., 8., -8., 0.] * 4
+        outputs = []
+        for context, target in zip(contexts, targets, strict=True):
+            expected_prediction = reference.predict(context)
+            needed = reference.operations - value.operations
+            value.operation_cap = value.operations + needed - 1
+            before = snapshot(value)
+            with pytest.raises(RuntimeError, match='Operation budget exhausted'):
+                value.predict(context)
+>           identical(snapshot(value), before)
+
+tests/qapen/test_budget_admission.py:134: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+left = 2, right = 0
+
+    def identical(left, right):
+        if isinstance(left, torch.Tensor):
+            assert torch.equal(left, right)
+        elif isinstance(left, np.ndarray):
+            np.testing.assert_array_equal(left, right)
+        elif isinstance(left, dict):
+            assert left.keys() == right.keys()
+            for key in left:
+                identical(left[key], right[key])
+        elif isinstance(left, (list, tuple)):
+            assert len(left) == len(right)
+            for x, y in zip(left, right, strict=True):
+                identical(x, y)
+        else:
+>           assert left == right
+E           assert 2 == 0
+
+tests/qapen/test_budget_admission.py:52: AssertionError
+_ test_repeated_budget_refusals_do_not_change_a_complete_causal_trace[random] __
+
+retrieval = 'random'
+
+    @pytest.mark.parametrize('retrieval', ['nearest', 'random', 'recent'])
+    def test_repeated_budget_refusals_do_not_change_a_complete_causal_trace(retrieval):
+        value = model(retrieval=retrieval, warmup=2, sleep_after=2)
+        reference = value.checkpoint()
+        contexts = [[0.], [4.], [1.], [3.]] * 4
+        targets = [0., 8., -8., 0.] * 4
+        outputs = []
+        for context, target in zip(contexts, targets, strict=True):
+            expected_prediction = reference.predict(context)
+            needed = reference.operations - value.operations
+            value.operation_cap = value.operations + needed - 1
+            before = snapshot(value)
+            with pytest.raises(RuntimeError, match='Operation budget exhausted'):
+                value.predict(context)
+>           identical(snapshot(value), before)
+
+tests/qapen/test_budget_admission.py:134: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+left = 2, right = 0
+
+    def identical(left, right):
+        if isinstance(left, torch.Tensor):
+            assert torch.equal(left, right)
+        elif isinstance(left, np.ndarray):
+            np.testing.assert_array_equal(left, right)
+        elif isinstance(left, dict):
+            assert left.keys() == right.keys()
+            for key in left:
+                identical(left[key], right[key])
+        elif isinstance(left, (list, tuple)):
+            assert len(left) == len(right)
+            for x, y in zip(left, right, strict=True):
+                identical(x, y)
+        else:
+>           assert left == right
+E           assert 2 == 0
+
+tests/qapen/test_budget_admission.py:52: AssertionError
+_ test_repeated_budget_refusals_do_not_change_a_complete_causal_trace[recent] __
+
+retrieval = 'recent'
+
+    @pytest.mark.parametrize('retrieval', ['nearest', 'random', 'recent'])
+    def test_repeated_budget_refusals_do_not_change_a_complete_causal_trace(retrieval):
+        value = model(retrieval=retrieval, warmup=2, sleep_after=2)
+        reference = value.checkpoint()
+        contexts = [[0.], [4.], [1.], [3.]] * 4
+        targets = [0., 8., -8., 0.] * 4
+        outputs = []
+        for context, target in zip(contexts, targets, strict=True):
+            expected_prediction = reference.predict(context)
+            needed = reference.operations - value.operations
+            value.operation_cap = value.operations + needed - 1
+            before = snapshot(value)
+            with pytest.raises(RuntimeError, match='Operation budget exhausted'):
+                value.predict(context)
+>           identical(snapshot(value), before)
+
+tests/qapen/test_budget_admission.py:134: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+tests/qapen/test_budget_admission.py:46: in identical
+    identical(left[key], right[key])
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+left = 2, right = 0
+
+    def identical(left, right):
+        if isinstance(left, torch.Tensor):
+            assert torch.equal(left, right)
+        elif isinstance(left, np.ndarray):
+            np.testing.assert_array_equal(left, right)
+        elif isinstance(left, dict):
+            assert left.keys() == right.keys()
+            for key in left:
+                identical(left[key], right[key])
+        elif isinstance(left, (list, tuple)):
+            assert len(left) == len(right)
+            for x, y in zip(left, right, strict=True):
+                identical(x, y)
+        else:
+>           assert left == right
+E           assert 2 == 0
+
+tests/qapen/test_budget_admission.py:52: AssertionError
+=========================== short test summary info ============================
+FAILED tests/qapen/test_budget_admission.py::test_rejected_prediction_preserves_state_and_exact_budget_can_retry[initial]
+FAILED tests/qapen/test_budget_admission.py::test_rejected_prediction_preserves_state_and_exact_budget_can_retry[memory-random-warm]
+FAILED tests/qapen/test_budget_admission.py::test_rejected_prediction_preserves_state_and_exact_budget_can_retry[revival]
+FAILED tests/qapen/test_budget_admission.py::test_rejected_observation_preserves_state_and_exact_budget_can_retry[memory-utility]
+FAILED tests/qapen/test_budget_admission.py::test_rejected_observation_preserves_state_and_exact_budget_can_retry[warm-update]
+FAILED tests/qapen/test_budget_admission.py::test_rejected_observation_preserves_state_and_exact_budget_can_retry[promotion]
+FAILED tests/qapen/test_budget_admission.py::test_rejected_observation_preserves_state_and_exact_budget_can_retry[birth-replay]
+FAILED tests/qapen/test_budget_admission.py::test_invalid_context_does_not_consume_the_next_prediction_budget[context0]
+FAILED tests/qapen/test_budget_admission.py::test_invalid_context_does_not_consume_the_next_prediction_budget[context1]
+FAILED tests/qapen/test_budget_admission.py::test_repeated_budget_refusals_do_not_change_a_complete_causal_trace[nearest]
+FAILED tests/qapen/test_budget_admission.py::test_repeated_budget_refusals_do_not_change_a_complete_causal_trace[random]
+FAILED tests/qapen/test_budget_admission.py::test_repeated_budget_refusals_do_not_change_a_complete_causal_trace[recent]
+12 failed in 6.47s
