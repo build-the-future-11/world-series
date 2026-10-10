@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "project": "world-series",
+  "updated_utc": "2026-10-10",
+  "current_phase": "ENGINEERING_DEVELOPMENT_REVIEW",
+  "scientific_disposition": "BOUNDED_DEVELOPMENT_WORKBENCH; module-specific negative/incomplete outcomes retained",
+  "scientific_scope_authority": [
+    "AGENTS.md",
+    "README.md",
+    "docs/RELEASE_REPRODUCIBILITY.md"
+  ],
+  "engineering_question": "Preserve frozen quantizer metadata and legacy checkpoint replay",
+  "current_change": "Store immutable bytes and shape, expose fresh array views, and validate/re-freeze both historical array state layouts during loading. Preserve causal arithmetic and reuse one view within encode.",
+  "required_session_reads": [
+    "AGENTS.md",
+    "README.md",
+    "docs/RELEASE_REPRODUCIBILITY.md",
+    "research/ENGINEERING_NUMERICAL_INTEGRITY_20261010.json",
+    "research/ENGINEERING_CODEBOOK_REPLAY_20261010.json"
+  ],
+  "protected_boundary": "Confirmation remains DRAFT_NOT_AUTHORIZED. Existing campaigns, scientific outcomes and protocols are unchanged; model behavior must use the new source identity in any future execution.",
+  "protected_evaluation_opened": false,
+  "scientific_runs_this_revision": 0,
+  "research_complete": false,
+  "execution_budget": {
+    "scope": "bounded constructed regressions and existing correctness tests only",
+    "paid_compute": false,
+    "training_campaigns": 0,
+    "protected_runs": 0
+  },
+  "pending_gates": [
+    "Independent review and GitHub integration.",
+    "Scientific hypothesis/specification/methodology/freeze/evidence/release gates remain governed by the retained study contracts."
+  ],
+  "history": [
+    {
+      "date": "2026-10-10",
+      "kind": "engineering_revision",
+      "record": "research/ENGINEERING_NUMERICAL_INTEGRITY_20261010.json",
+      "status": "implemented; 200 bounded tests passed; integration pending",
+      "scientific_outcomes_created": false
+    },
+    {
+      "date": "2026-10-10",
+      "kind": "engineering_revision",
+      "record": "research/ENGINEERING_CODEBOOK_REPLAY_20261010.json",
+      "status": "implemented; 214 distinct bounded tests passed across full attempt and two fixture reruns; independent source/54-comparison check passed; integration pending",
+      "scientific_outcomes_created": false
+    }
+  ],
+  "history_index_scope": "Index to retained project records and this revision; not a reconstruction or replacement of the complete git/artifact history.",
+  "independent_review": {
+    "status": "completed",
+    "scope": "Independent agent source review and separately constructed serialization/metadata checks; no human peer-review claim",
+    "checks": "Pickle protocols 0 through 5, exposed array/base metadata mutations, shallow and deep copies, 54 exact route/feature comparisons and immutable write flags",
+    "result": "All independent checks passed; no scoped source blocker",
+    "date": "2026-10-10",
+    "source": "src/world_series/qapen/causal.py",
+    "source_sha256": "c3dd5abd046ce3279cca329902ea206f4ce43c10581c996786ea21118365d868"
+  }
+}

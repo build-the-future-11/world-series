@@ -14,6 +14,17 @@ from world_series.core.contracts import ArtifactRef, ErrorCode, WorldSeriesError
 PathLike = Union[str, Path]
 
 
+def json_bytes(payload: Any, *, indent: int | None = None) -> bytes:
+    """Encode strict JSON completely before touching an evidence path."""
+    try:
+        return (json.dumps(payload, indent=indent, sort_keys=True, allow_nan=False) + "\n").encode("utf-8")
+    except (ValueError, TypeError, OverflowError) as exc:
+        raise WorldSeriesError(
+            ErrorCode.INVALID_CONFIG,
+            f"JSON evidence must contain finite, serializable values: {exc}",
+        ) from exc
+
+
 def publish_bytes(path: Path, data: bytes, *, overwrite: bool = False) -> None:
     """Publish complete bytes; new evidence paths have exactly one winner.
 
@@ -100,7 +111,7 @@ class ArtifactStore:
         )
 
     def write_json(self, relative: str, payload: Any) -> ArtifactRef:
-        data = (json.dumps(payload, indent=2, sort_keys=True) + "\n").encode("utf-8")
+        data = json_bytes(payload, indent=2)
         return self.write_bytes(relative, data, media_type="application/json")
 
     def read_bytes(self, relative: str) -> bytes:

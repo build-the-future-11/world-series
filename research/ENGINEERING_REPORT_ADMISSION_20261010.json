@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-10",
+  "type": "ENGINEERING_REPORT_ADMISSION_AND_PARENT_INTEGRATION",
+  "repository": "build-the-future-11/world-series",
+  "base_pr": 4,
+  "base_head": "30fb16b21b9563b8390530db8c17ea256ec386de",
+  "integrated_pr1_head": "62d6e6cb9aa95bbe16eeb0769c9e3f40b82a2ba0",
+  "source_verified_parent_blob_count": 634,
+  "question": "Reject incoherent run receipts and changed bound artifacts before generating derived reports.",
+  "scientific_result_changed": false,
+  "research_complete": false,
+  "frozen_inputs_changed": false,
+  "new_training_campaigns": 0,
+  "protected_outcome_accesses": 0,
+  "dependency_lock_changed": false,
+  "implementation": "Strict snapshot admission, exact typed metric consistency, confined artifact hash verification with producer identity, precise verification scope, and atomic output that protects raw receipts from any recognized run.",
+  "imported_unchanged_prior_files": [
+    "src/world_series/core/artifacts.py",
+    "src/world_series/core/config.py",
+    "docs/STRICT_EVIDENCE_JSON_20261010.md",
+    "tests/core/test_strict_evidence_json.py"
+  ],
+  "imported_and_extended_prior_file": "src/world_series/evaluation/runner.py",
+  "attribution": "The strict writer/config changes were published in an earlier pass. Only the report-reader/derived-output implementation and new tests are newly authored here. Quantizer and uncertainty repairs are preserved from the newer PR4 parent.",
+  "tests": {
+    "initial_new_report_cases": {
+      "failed": 45,
+      "passed": 2,
+      "baseline": "public report/reader code identical on both selected parents; previous strict writers combined before this test"
+    },
+    "first_report_candidate": {
+      "passed": 47
+    },
+    "first_complete_candidate": {
+      "passed": 279,
+      "existing_warnings": 1
+    },
+    "peer_additional_cases_before_fix": {
+      "failed": 11,
+      "deselected_existing": 47
+    },
+    "final_complete_suite": {
+      "passed": 290,
+      "existing_warnings": 1,
+      "seconds": 15.01,
+      "command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 PYTHONPATH=src python -m pytest tests -o addopts= -q"
+    },
+    "static_checks": "Ruff E4,E7,E9,F on new/changed report runtime and new tests passed",
+    "preserved_claims": "All nine existing claim-index analysis digests verified unchanged"
+  },
+  "peer_findings": [
+    {
+      "finding": "Custom report output could overwrite raw files of another run.",
+      "fix": "Identify retained run layouts in every output ancestor, including another root; eight cross-run regression cases."
+    },
+    {
+      "finding": "An arbitrarily long JSON exponent caused decimal.InvalidOperation instead of a structured verification error.",
+      "fix": "Inspect JSON significand digits directly; three file-type regressions."
+    }
+  ],
+  "source_sha256": {
+    "src/world_series/evaluation/verification.py": "59dcda80676e8d1adc46801f3be09ac24b2b1088f8dcf691608e248b5e9b5391",
+    "src/world_series/evaluation/runner.py": "8bebabd1c0eab30fa9b59a6b4eb1373f8c9f9d011cb06176cebda8b32ed32e97",
+    "src/world_series/evaluation/reports.py": "4fbb9664aa2f2c4cd9f9a62af9d8c2299ba07b685dd45c3e2f1e759806582523",
+    "tests/core/test_report_admission.py": "cd8b5eafc505ecff1198e9a5e3aa93ec361730e94b823670720374618eef7862"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "torch": "2.14.1+cpu",
+    "pytest": "9.1.1",
+    "device": "cpu",
+    "numeric_threads": 1
+  },
+  "scope_limitations": [
+    "Only hashes actually recorded in metrics/events are bound; unreferenced files are counted explicitly as unverified.",
+    "Hash agreement and receipt consistency do not authenticate a producer or recompute a scientific metric.",
+    "No historical campaign replay or new claim evaluation is implied.",
+    "Read snapshots detect normal concurrent advancement; evidence directories are trusted, not adversarial transactional storage."
+  ],
+  "wft_real_smoke": {
+    "run_id": "20261010T185854_eaa69f52",
+    "exit_code": 0,
+    "raw_unchanged": true,
+    "command": [
+      "python",
+      "-m",
+      "world_series",
+      "report",
+      "--run-id",
+      "20261010T185854_eaa69f52"
+    ],
+    "metrics": {
+      "status": "SUCCEEDED",
+      "primary_metric": "held_vector_mse",
+      "psd": true,
+      "reconstruction_mse": 1.0804466988012393e-31,
+      "energy_preserve": 1.3322676295501878e-15,
+      "operator_errors": {
+        "fixed": 0.0,
+        "unconstrained": 7.337578684083005e-06,
+        "constrained": 2.397003026607222e-06
+      },
+      "projector_sign_invariance_ok": true,
+      "held_size_psd": true,
+      "cost": {
+        "steps_used": 0.0,
+        "simulator_calls": 0.0,
+        "candidate_evals": 0.0,
+        "artifact_bytes": 0.0,
+        "wall_seconds": 0.0020434480102267116,
+        "remaining_wall_seconds": 59.99795363198791
+      },
+      "research_outcome": "INCONCLUSIVE",
+      "note": "Fixed is the oracle graph Laplacian; constrained learns nonnegative edge weights. Dense eigendecomposition is not FFT-speed computation."
+    },
+    "before": {
+      "manifest.json": "dee38d5ab6a3a0cf377aa418273f2c5750631752c3c3b3cf2ffda91d1da03e92",
+      "events.jsonl": "523537a2b16bf46081adc8b3e7d88bd44fb3732529470732238821d60fb4702f",
+      "metrics.json": "fd8349cb7d3a31f10ff705f4bb02017ebfa8c20e35df73e92e7c4a9770df7955",
+      "artifacts/wft_result.json": "fd8349cb7d3a31f10ff705f4bb02017ebfa8c20e35df73e92e7c4a9770df7955"
+    },
+    "after": {
+      "manifest.json": "dee38d5ab6a3a0cf377aa418273f2c5750631752c3c3b3cf2ffda91d1da03e92",
+      "events.jsonl": "523537a2b16bf46081adc8b3e7d88bd44fb3732529470732238821d60fb4702f",
+      "metrics.json": "fd8349cb7d3a31f10ff705f4bb02017ebfa8c20e35df73e92e7c4a9770df7955",
+      "artifacts/wft_result.json": "fd8349cb7d3a31f10ff705f4bb02017ebfa8c20e35df73e92e7c4a9770df7955"
+    }
+  },
+  "log_sha256": {
+    "world_report_baseline.log": "66912513e96a1b1c83dad08dda1e0b0bcec6dcdfba2501dcb7c863cf6e2c8053",
+    "world_report_candidate.log": "2bbcd3e23de5b776c638ea1874b9105ad70d7b0f2f5a60f5d42b5e3a74f460e3",
+    "world_peer_regressions_before.log": "53eee5cfb49155ac35c6919e69c6bac1e519fde6bfb45afa0cef436ad826cb5d",
+    "world_full_candidate.log": "43a2e7a25338cd463ba7b2e0112ab8265be5a460921a5befedbe9a6ccd39b8fd",
+    "world_full_final.log": "417421ee5cc2467ad38bb952c67f5b4be44224c6d79d1eaa01a955c2cfee98f0",
+    "world_wft_cli_smoke.log": "6aa8ba2140627801598de9a78c480b7799a9a0b1754543e176334371ae3ff167",
+    "world_wft_report.log": "56df288211a804df8748a12dce41daf6f7a41f7f484d6f82f867e406af9af8e3"
+  },
+  "independent_review": {
+    "status": "PASS",
+    "reviewer": "independent evaluation agent",
+    "scope": "58 admission cases plus separate cross-run output and extreme JSON exponent probes",
+    "review_sha256": "16e4d1904a45c951281fe8a07cce3683a6a1d4d348cbe76cc41a39e81a459a67",
+    "review_receipt": {
+      "schema": "third_pass.independent_world_report_review.v1",
+      "status": "PASS",
+      "reviewed_repository": "build-the-future-11/world-series",
+      "source_root": "/workspace/scratch/f3f3c572b7e9/third_pass/root_lane/world-series",
+      "initial_selected_suite": {
+        "chunk_id": "137189",
+        "wall_time_seconds": 3.7115e-05,
+        "exit_code": 0,
+        "original_token_count": 13,
+        "output": "................                          [100%]\n"
+      },
+      "initial_findings": [
+        {
+          "issue": "Cross-run report destination replaced another run's metrics.json with Markdown",
+          "witness": "Two independently constructed retained run receipts; write_report(first_root, first_id, out_path=second/metrics.json) changed second raw bytes",
+          "closure": "Guard recognizes retained run ancestors across the same or a different runs root; witness now raises INVALID_CONFIG and preserves bytes"
+        },
+        {
+          "issue": "An extreme finite-decimal exponent raised decimal.InvalidOperation instead of WorldSeriesError",
+          "witness": "metrics.json containing {\"x\":1e-9999999999999999999999999}",
+          "closure": "Significand scan fails with VERIFICATION_FAILED while preserving raw bytes"
+        }
+      ],
+      "final_selected_suite": {
+        "status": "fulfilled",
+        "value": {
+          "chunk_id": "dae903",
+          "wall_time_seconds": 2.5479e-05,
+          "exit_code": 0,
+          "original_token_count": 20,
+          "output": "..........................................................               [100%]\n"
+        }
+      },
+      "independent_witnesses": {
+        "status": "fulfilled",
+        "value": {
+          "chunk_id": "789928",
+          "wall_time_seconds": 1.1447e-05,
+          "exit_code": 0,
+          "original_token_count": 36,
+          "output": "cross_run_protected False INVALID_CONFIG True\ncross_run_protected True INVALID_CONFIG True\nextreme_exponent_structured VERIFICATION_FAILED True\n"
+        }
+      },
+      "limitations": [
+        "Read-only artifact admission and output-protection review, not scientific metric recomputation or evidence authenticity.",
+        "No model/campaign executed; all additional witness files were temporary constructed receipts."
+      ],
+      "source_sha256": {
+        "src/world_series/evaluation/verification.py": "59dcda80676e8d1adc46801f3be09ac24b2b1088f8dcf691608e248b5e9b5391",
+        "src/world_series/evaluation/runner.py": "8bebabd1c0eab30fa9b59a6b4eb1373f8c9f9d011cb06176cebda8b32ed32e97",
+        "src/world_series/evaluation/reports.py": "4fbb9664aa2f2c4cd9f9a62af9d8c2299ba07b685dd45c3e2f1e759806582523",
+        "tests/core/test_report_admission.py": "cd8b5eafc505ecff1198e9a5e3aa93ec361730e94b823670720374618eef7862"
+      },
+      "captured_at_utc": "2026-10-10T10:03:50.865015+00:00"
+    }
+  },
+  "publication": "draft source publication pending; exact hosted verification tracked separately"
+}

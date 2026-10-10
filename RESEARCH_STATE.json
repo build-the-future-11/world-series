@@ -46,6 +46,29 @@
       "record": "research/ENGINEERING_CODEBOOK_REPLAY_20261010.json",
       "status": "implemented; 214 distinct bounded tests passed across full attempt and two fixture reruns; independent source/54-comparison check passed; integration pending",
       "scientific_outcomes_created": false
+    },
+    {
+      "date": "2026-10-10",
+      "kind": "engineering_session_initialized_before_source_changes",
+      "record": "research/RUN_REPORT_ADMISSION_20261010.md",
+      "status": "SPECIFIED",
+      "source_parent": "30fb16b21b9563b8390530db8c17ea256ec386de",
+      "integration_parent": "62d6e6cb9aa95bbe16eeb0769c9e3f40b82a2ba0",
+      "scientific_outcomes_created": false
+    },
+    {
+      "date": "2026-10-10",
+      "kind": "engineering_implementation_verified",
+      "record": "research/ENGINEERING_REPORT_ADMISSION_20261010.json",
+      "status": "290 existing/constructed bounded tests pass; two independent findings fixed; final peer recheck and GitHub publication pending",
+      "scientific_outcomes_created": false
+    },
+    {
+      "date": "2026-10-10",
+      "kind": "independent_engineering_review_closed",
+      "record": "research/ENGINEERING_REPORT_ADMISSION_20261010.json",
+      "status": "58 targeted checks and additional peer probes pass;290 complete-suite tests pass; scientific gates unchanged",
+      "scientific_outcomes_created": false
     }
   ],
   "history_index_scope": "Index to retained project records and this revision; not a reconstruction or replacement of the complete git/artifact history.",
@@ -57,5 +80,19 @@
     "date": "2026-10-10",
     "source": "src/world_series/qapen/causal.py",
     "source_sha256": "c3dd5abd046ce3279cca329902ea206f4ce43c10581c996786ea21118365d868"
+  },
+  "report_admission_session": {
+    "status": "REVIEWED_TESTED_READY_FOR_DRAFT_PUBLICATION",
+    "contract": "research/RUN_REPORT_ADMISSION_20261010.md",
+    "parent_state_snapshot": "research/state_snapshots/REPORT_ADMISSION_PARENT_30fb16b.json",
+    "history_scope": "Appended engineering record; existing state fields and all prior histories retained. Not a complete retrospective source/evidence audit.",
+    "protected_runs": 0,
+    "training_campaigns": 0,
+    "execution_scope": "Existing bounded tests and at most one WFT CPU smoke; one numerical thread; no paper metrics recomputed.",
+    "record": "research/ENGINEERING_REPORT_ADMISSION_20261010.json",
+    "tests_passed": 290,
+    "scientific_outcome_changed": false,
+    "real_cli_smokes": 1,
+    "independent_review": "PASS"
   }
 }

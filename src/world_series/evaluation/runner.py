@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import json
 import time
 import uuid
 from copy import deepcopy
@@ -10,9 +9,10 @@ from dataclasses import asdict, dataclass, field, replace
 from pathlib import Path
 from typing import Any, Optional
 
-from world_series.core.artifacts import ArtifactStore, publish_bytes
+from world_series.core.artifacts import ArtifactStore, json_bytes, publish_bytes
 from world_series.core.contracts import Budget, ErrorCode, RunStatus, WorldSeriesError
 from world_series.core.identity import hash_mapping, source_identity
+from world_series.evaluation.verification import read_run
 
 TERMINAL_STATUSES = frozenset({
     RunStatus.SUCCEEDED, RunStatus.FAILED, RunStatus.INTERRUPTED,
@@ -68,7 +68,7 @@ class RunDirectory:
         payload = (manifest or self.manifest).to_dict()
         publish_bytes(
             self.path / "manifest.json",
-            (json.dumps(payload, indent=2, sort_keys=True) + "\n").encode("utf-8"),
+            json_bytes(payload, indent=2),
             overwrite=True,
         )
 
@@ -78,8 +78,9 @@ class RunDirectory:
             "kind": kind,
             "payload": payload or {},
         }
-        with self.events_path.open("a", encoding="utf-8") as f:
-            f.write(json.dumps(event, sort_keys=True) + "\n")
+        encoded = json_bytes(event)
+        with self.events_path.open("ab") as f:
+            f.write(encoded)
 
     def set_status(self, status: RunStatus, error: Optional[dict[str, Any]] = None) -> None:
         if RunStatus(self.manifest.status) in TERMINAL_STATUSES:
@@ -102,7 +103,7 @@ class RunDirectory:
         snapshot = deepcopy(metrics)
         publish_bytes(
             self.path / "metrics.json",
-            (json.dumps(snapshot, indent=2, sort_keys=True) + "\n").encode("utf-8"),
+            json_bytes(snapshot, indent=2),
         )
         manifest = replace(self.manifest, metrics=snapshot)
         self._write_manifest(manifest)
@@ -145,18 +146,5 @@ def asdict_budget(budget: Budget) -> dict[str, Any]:
 
 
 def load_run(runs_root: Path, run_id: str) -> dict[str, Any]:
-    path = runs_root / run_id
-    if not path.is_dir():
-        raise WorldSeriesError(ErrorCode.INVALID_CONFIG, f"unknown run-id: {run_id}")
-    manifest = json.loads((path / "manifest.json").read_text(encoding="utf-8"))
-    metrics = {}
-    metrics_path = path / "metrics.json"
-    if metrics_path.is_file():
-        metrics = json.loads(metrics_path.read_text(encoding="utf-8"))
-    events = []
-    events_path = path / "events.jsonl"
-    if events_path.is_file():
-        for line in events_path.read_text(encoding="utf-8").splitlines():
-            if line.strip():
-                events.append(json.loads(line))
-    return {"path": str(path), "manifest": manifest, "metrics": metrics, "events": events}
+    """Admit a coherent receipt and verify every recorded raw artifact hash."""
+    return read_run(runs_root, run_id)
