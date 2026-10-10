@@ -4,12 +4,44 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
+import tempfile
 from pathlib import Path
 from typing import Any, Union
 
 from world_series.core.contracts import ArtifactRef, ErrorCode, WorldSeriesError
 
 PathLike = Union[str, Path]
+
+
+def publish_bytes(path: Path, data: bytes, *, overwrite: bool = False) -> None:
+    """Publish complete bytes; new evidence paths have exactly one winner.
+
+    Staging is on the destination filesystem. Hard-link publication fails
+    without changing an existing file, directory or dangling symlink. Mutable
+    manifests opt into replacement explicitly. Parent directories are trusted;
+    atomic visibility is not a claim of power-loss durability.
+    """
+    path.parent.mkdir(parents=True, exist_ok=True)
+    descriptor, temporary = tempfile.mkstemp(prefix=".pending-", dir=path.parent)
+    staging = Path(temporary)
+    try:
+        with os.fdopen(descriptor, "wb") as stream:
+            stream.write(data)
+            stream.flush()
+            os.fsync(stream.fileno())
+        if overwrite:
+            os.replace(staging, path)
+        else:
+            try:
+                os.link(staging, path)
+            except FileExistsError as exc:
+                raise WorldSeriesError(
+                    ErrorCode.INVALID_CONFIG,
+                    f"evidence path already exists (will not overwrite): {path}",
+                ) from exc
+    finally:
+        staging.unlink(missing_ok=True)
 
 
 def sha256_bytes(data: bytes) -> str:
@@ -49,9 +81,15 @@ class ArtifactStore:
         (self.root / "artifacts").mkdir(parents=True, exist_ok=True)
 
     def write_bytes(self, relative: str, data: bytes, media_type: str = "application/octet-stream") -> ArtifactRef:
-        path = safe_resolve(self.root / "artifacts", relative)
-        path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_bytes(data)
+        relative_path = Path(relative)
+        # Validate the full path, then retain its leaf so a dangling symlink is
+        # rejected by publication rather than silently followed to a new path.
+        safe_resolve(self.root / "artifacts", relative)
+        if relative_path.name in {"", ".", ".."}:
+            raise WorldSeriesError(ErrorCode.INVALID_CONFIG, "artifact filename required")
+        parent = safe_resolve(self.root / "artifacts", str(relative_path.parent))
+        path = parent / relative_path.name
+        publish_bytes(path, data)
         digest = sha256_bytes(data)
         return ArtifactRef(
             relative_path=f"artifacts/{relative}",

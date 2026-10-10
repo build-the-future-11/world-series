@@ -4,9 +4,15 @@ from __future__ import annotations
 
 import time
 from dataclasses import dataclass, field
+from numbers import Integral
 from typing import Optional
 
 from world_series.core.contracts import Budget, ErrorCode, WorldSeriesError
+
+
+def _validate_count(value: int) -> None:
+    if isinstance(value, bool) or not isinstance(value, Integral) or value < 0:
+        raise WorldSeriesError(ErrorCode.INVALID_CONFIG, "consumption must be a non-negative integer")
 
 
 @dataclass
@@ -29,22 +35,26 @@ class BudgetLedger:
             raise WorldSeriesError(ErrorCode.BUDGET_EXHAUSTED, "step budget exhausted")
 
     def consume_step(self, n: int = 1) -> None:
+        _validate_count(n)
         if self.steps_used + n > self.budget.max_steps:
             raise WorldSeriesError(ErrorCode.BUDGET_EXHAUSTED, "step budget exhausted")
         self.steps_used += n
         self.check_alive()
 
     def consume_candidates(self, n: int = 1) -> None:
+        _validate_count(n)
         if self.candidate_evals + n > self.budget.max_candidate_evals:
             raise WorldSeriesError(ErrorCode.BUDGET_EXHAUSTED, "candidate evaluation budget exhausted")
         self.candidate_evals += n
 
     def consume_sim(self, n: int = 1) -> None:
+        _validate_count(n)
         if self.simulator_calls + n > self.budget.max_simulator_calls:
             raise WorldSeriesError(ErrorCode.BUDGET_EXHAUSTED, "simulator call budget exhausted")
         self.simulator_calls += n
 
     def consume_bytes(self, n: int) -> None:
+        _validate_count(n)
         if self.artifact_bytes + n > self.budget.max_artifact_bytes:
             raise WorldSeriesError(ErrorCode.BUDGET_EXHAUSTED, "artifact byte budget exhausted")
         self.artifact_bytes += n

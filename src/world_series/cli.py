@@ -65,10 +65,16 @@ def cmd_run(args: argparse.Namespace) -> int:
         metrics = dispatch_run(cfg, run)
         run.write_metrics(metrics)
         status = RunStatus(metrics.get("status", RunStatus.SUCCEEDED.value))
-        run.set_status(status)
         run.append_event("finish", {"status": status.value})
+        run.set_status(status)
         print(json.dumps({"run_id": run.manifest.run_id, "status": status.value, "metrics": metrics}, indent=2))
         return 0 if status in {RunStatus.SUCCEEDED, RunStatus.UNSUPPORTED} else 1
+    except KeyboardInterrupt:
+        err = {"code": "INTERRUPTED", "message": "execution interrupted by user"}
+        run.set_status(RunStatus.INTERRUPTED, error=err)
+        run.append_event("interrupted", err)
+        print(json.dumps({"run_id": run.manifest.run_id, "error": err}, indent=2))
+        return 130
     except WorldSeriesError as exc:
         run.set_status(
             RunStatus.BUDGET_EXHAUSTED if exc.code == ErrorCode.BUDGET_EXHAUSTED else RunStatus.FAILED,

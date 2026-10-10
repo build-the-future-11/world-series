@@ -2,8 +2,10 @@
 
 from __future__ import annotations
 
+import math
 from dataclasses import asdict, dataclass, field
 from enum import Enum
+from numbers import Integral, Real
 from typing import Any, Mapping, MutableMapping, Optional, Sequence
 
 
@@ -68,8 +70,12 @@ class Budget:
 
     def __post_init__(self) -> None:
         for name, value in asdict(self).items():
-            if isinstance(value, (int, float)) and value < 0:
-                raise WorldSeriesError(ErrorCode.INVALID_CONFIG, f"Budget.{name} must be non-negative")
+            expected_type = Real if name == "max_wall_seconds" else Integral
+            if isinstance(value, bool) or not isinstance(value, expected_type):
+                kind = "finite real number" if name == "max_wall_seconds" else "integer"
+                raise WorldSeriesError(ErrorCode.INVALID_CONFIG, f"Budget.{name} must be a non-negative {kind}")
+            if value < 0 or (name == "max_wall_seconds" and not math.isfinite(value)):
+                raise WorldSeriesError(ErrorCode.INVALID_CONFIG, f"Budget.{name} must be finite and non-negative")
 
 
 @dataclass(frozen=True)
