@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "validated_head": "578b2a5d2871126ad9dc410f184cba9c728e580c",
+  "validated_tree": "d75ffebdd4d5276ffec37a2bcbc4c0b36c5c8046",
+  "source_sha256": "1f3eff15b9a6e3baedf4ebd150c47d6fc4e938f2658e053e2d1fd9b0cfa26846",
+  "python": "3.12.15",
+  "torch": "2.14.0+cpu",
+  "tests_passed": 259,
+  "count_evidence": "The quiet pytest log records259 success dots in progress groups72+72+72+43, with no skip/failure markers.",
+  "runs": [
+    {
+      "id": 38044640546,
+      "url": "https://github.com/build-the-future-11/world-series/actions/runs/38044640546",
+      "event": "push",
+      "job_id": 114191591697,
+      "checkout": "578b2a5d2871126ad9dc410f184cba9c728e580c",
+      "conclusion": "success"
+    },
+    {
+      "id": 38044669507,
+      "url": "https://github.com/build-the-future-11/world-series/actions/runs/38044669507",
+      "event": "pull_request",
+      "job_id": 114191675338,
+      "checkout": "ee4f2d15e7f743a9741fa6090c01e17fe62855ae",
+      "checkout_tree": "d75ffebdd4d5276ffec37a2bcbc4c0b36c5c8046",
+      "checkout_tree_matches_head": true,
+      "conclusion": "success"
+    }
+  ],
+  "gates": [
+    "locked CPU environment and pip check",
+    "critical static checks",
+    "full implementation tests",
+    "wheel build",
+    "CLI environment"
+  ],
+  "scope": "Engineering correctness/build only; no scientific capability claim.",
+  "raw_logs": {
+    "hosted_push_job_114191591697.log": "2e38353a06f592287247b242be1f5d80a52813d08de21190e42ec9bab90a4120",
+    "hosted_job_114191675338.log": "eadf73e1181dc2e1b30130c23cc388fd0c6c6ca5806aacaa426c6d3fc676f258"
+  }
+}

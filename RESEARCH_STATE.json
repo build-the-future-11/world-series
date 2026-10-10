@@ -2,7 +2,7 @@
   "schema_version": 1,
   "project": "world-series",
   "updated_utc": "2026-10-10",
-  "current_phase": "ENGINEERING_DEVELOPMENT_REVIEWED_PENDING_HOSTED_INTEGRATION",
+  "current_phase": "ENGINEERING_HOSTED_VERIFIED_PENDING_DRAFT_REVIEW",
   "scientific_disposition": "BOUNDED_DEVELOPMENT_WORKBENCH; module-specific negative/incomplete outcomes retained",
   "scientific_scope_authority": [
     "AGENTS.md",
@@ -29,7 +29,7 @@
     "protected_runs": 0
   },
   "pending_gates": [
-    "Exact-source hosted integration and draft PR review.",
+    "Draft PR review and integration.",
     "Scientific hypothesis/specification/methodology/freeze/evidence/release gates remain governed by retained study contracts; confirmation DRAFT_NOT_AUTHORIZED."
   ],
   "history": [
@@ -81,6 +81,13 @@
       "kind": "engineering_revision",
       "record": "research/ENGINEERING_BUDGET_ADMISSION_20261010.json",
       "status": "12old-source regression failures repaired;192old/new successful observations exact; independent288transitions+288refusals pass. Full current-parent259tests and static checks passed; hosted gate pending.",
+      "scientific_outcomes_created": false
+    },
+    {
+      "date": "2026-10-10",
+      "kind": "hosted_verification",
+      "record": "research/verification/qapen_budget_20261010/hosted_verification.json",
+      "status": "Exact source578b2a5 passed normal push and PR workflows:259 tests, critical static checks, wheel and CLI. PR merge tree equals tested head tree. This evidence-only follow-up changes no implementation/test bytes.",
       "scientific_outcomes_created": false
     }
   ],
@@ -151,7 +158,7 @@
       "protected_evaluations": 0,
       "paid_jobs": 0
     },
-    "status": "ENGINEERING_VERIFIED_DRAFT_INTEGRATION_PENDING",
+    "status": "LOCAL_AND_HOSTED_ENGINEERING_VERIFIED",
     "source_base_commit": "30fb16b21b9563b8390530db8c17ea256ec386de",
     "base_commit": "b89d5709b6b43a41d89f88e3c0fa686c809596bf",
     "base_tree": "2da5be33c47cbc8d22488df9033bba7085991d90",
@@ -179,7 +186,9 @@
       "raw": "research/verification/causal_budget_20261010/finance_independent_review.json",
       "coverage": "3D contexts,3starting experts, memory capacity3, sleeping/revival/warmup, births after replay reaches32; exact costs and full state/NumPy/Torch RNG."
     },
-    "hosted_verification": "PENDING",
-    "scientific_outcomes_created": false
+    "hosted_verification": "research/verification/qapen_budget_20261010/hosted_verification.json",
+    "scientific_outcomes_created": false,
+    "hosted_validated_head": "578b2a5d2871126ad9dc410f184cba9c728e580c",
+    "hosted_tests_passed": 259
   }
 }

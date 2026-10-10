@@ -1,0 +1,432 @@
+2026-10-10T10:22:29.3920246Z Current runner version: '2.337.0'
+2026-10-10T10:22:29.3942182Z ##[group]Runner Image Provisioner
+2026-10-10T10:22:29.3942908Z Hosted Compute Agent
+2026-10-10T10:22:29.3943319Z Version: 20261002.596
+2026-10-10T10:22:29.3943994Z Commit: c3d12f3313a95f25162a1503be624f3b0617f8c0
+2026-10-10T10:22:29.3944552Z Build Date: 2026-10-02T22:28:27Z
+2026-10-10T10:22:29.3945048Z Worker ID: {c2fa0d33-8131-4e9c-9662-ce574a306338}
+2026-10-10T10:22:29.3945545Z Region: centralus
+2026-10-10T10:22:29.3945939Z Cloud: Azure
+2026-10-10T10:22:29.3946320Z ##[endgroup]
+2026-10-10T10:22:29.3947317Z ##[group]Operating System
+2026-10-10T10:22:29.3947785Z Ubuntu
+2026-10-10T10:22:29.3948154Z 24.04.5
+2026-10-10T10:22:29.3948523Z LTS
+2026-10-10T10:22:29.3948890Z ##[endgroup]
+2026-10-10T10:22:29.3949267Z ##[group]Runner Image
+2026-10-10T10:22:29.3949675Z Image: ubuntu-24.04
+2026-10-10T10:22:29.3950080Z Version: 20261004.327.1
+2026-10-10T10:22:29.3950997Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261004.327/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-10T10:22:29.3952125Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261004.327
+2026-10-10T10:22:29.3952771Z ##[endgroup]
+2026-10-10T10:22:29.3953581Z ##[group]GITHUB_TOKEN Permissions
+2026-10-10T10:22:29.3955366Z Contents: read
+2026-10-10T10:22:29.3955810Z Metadata: read
+2026-10-10T10:22:29.3956190Z ##[endgroup]
+2026-10-10T10:22:29.3957687Z Secret source: Actions
+2026-10-10T10:22:29.3958365Z Cache mode: write
+2026-10-10T10:22:29.3958862Z Prepare workflow directory
+2026-10-10T10:22:29.4256878Z Prepare all required actions
+2026-10-10T10:22:29.4296568Z Getting action download info
+2026-10-10T10:22:29.6450256Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-10T10:22:29.7208882Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-10-10T10:22:29.8888333Z Complete job name: test
+2026-10-10T10:22:29.9471659Z ##[group]Run actions/checkout@v4
+2026-10-10T10:22:29.9472402Z with:
+2026-10-10T10:22:29.9472858Z   repository: build-the-future-11/world-series
+2026-10-10T10:22:29.9476253Z   token: ***
+2026-10-10T10:22:29.9476636Z   ssh-strict: true
+2026-10-10T10:22:29.9477002Z   ssh-user: git
+2026-10-10T10:22:29.9477419Z   persist-credentials: true
+2026-10-10T10:22:29.9477927Z   clean: true
+2026-10-10T10:22:29.9478488Z   sparse-checkout-cone-mode: true
+2026-10-10T10:22:29.9479025Z   fetch-depth: 1
+2026-10-10T10:22:29.9479437Z   fetch-tags: false
+2026-10-10T10:22:29.9479856Z   show-progress: true
+2026-10-10T10:22:29.9480243Z   lfs: false
+2026-10-10T10:22:29.9480641Z   submodules: false
+2026-10-10T10:22:29.9481044Z   set-safe-directory: true
+2026-10-10T10:22:29.9481480Z   allow-unsafe-pr-checkout: false
+2026-10-10T10:22:29.9482153Z env:
+2026-10-10T10:22:29.9482545Z   OMP_NUM_THREADS: 1
+2026-10-10T10:22:29.9482962Z   OPENBLAS_NUM_THREADS: 1
+2026-10-10T10:22:29.9483381Z   MKL_NUM_THREADS: 1
+2026-10-10T10:22:29.9484033Z ##[endgroup]
+2026-10-10T10:22:30.0310386Z Syncing repository: build-the-future-11/world-series
+2026-10-10T10:22:30.0312730Z ##[group]Getting Git version info
+2026-10-10T10:22:30.0313352Z Working directory is '/home/runner/work/world-series/world-series'
+2026-10-10T10:22:30.0314503Z [command]/usr/bin/git version
+2026-10-10T10:22:30.0391845Z git version 2.55.0
+2026-10-10T10:22:30.0418663Z ##[endgroup]
+2026-10-10T10:22:30.0433032Z Temporarily overriding HOME='/home/runner/work/_temp/4001ae7a-49b3-4a45-afae-ff033d46a8aa' before making global git config changes
+2026-10-10T10:22:30.0434519Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-10T10:22:30.0439061Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/world-series/world-series
+2026-10-10T10:22:30.0484358Z Deleting the contents of '/home/runner/work/world-series/world-series'
+2026-10-10T10:22:30.0487937Z ##[group]Initializing the repository
+2026-10-10T10:22:30.0492091Z [command]/usr/bin/git init /home/runner/work/world-series/world-series
+2026-10-10T10:22:30.0597063Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-10T10:22:30.0598343Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-10T10:22:30.0599704Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-10T10:22:30.0600582Z hint: call:
+2026-10-10T10:22:30.0601012Z hint:
+2026-10-10T10:22:30.0601635Z hint: 	git config --global init.defaultBranch <name>
+2026-10-10T10:22:30.0602233Z hint:
+2026-10-10T10:22:30.0602826Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-10T10:22:30.0603573Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-10T10:22:30.0604340Z hint:
+2026-10-10T10:22:30.0604733Z hint: 	git branch -m <name>
+2026-10-10T10:22:30.0605231Z hint:
+2026-10-10T10:22:30.0605802Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-10T10:22:30.0606815Z Initialized empty Git repository in /home/runner/work/world-series/world-series/.git/
+2026-10-10T10:22:30.0608772Z [command]/usr/bin/git remote add origin https://github.com/build-the-future-11/world-series
+2026-10-10T10:22:30.0662685Z ##[endgroup]
+2026-10-10T10:22:30.0663627Z ##[group]Disabling automatic garbage collection
+2026-10-10T10:22:30.0666578Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-10T10:22:30.0693414Z ##[endgroup]
+2026-10-10T10:22:30.0694488Z ##[group]Setting up auth
+2026-10-10T10:22:30.0700392Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-10T10:22:30.0729122Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-10T10:22:30.1037441Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-10T10:22:30.1074348Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-10T10:22:30.1241265Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-10T10:22:30.1269961Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-10T10:22:30.1426550Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-10T10:22:30.1463594Z ##[endgroup]
+2026-10-10T10:22:30.1464767Z ##[group]Fetching the repository
+2026-10-10T10:22:30.1471881Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +ee4f2d15e7f743a9741fa6090c01e17fe62855ae:refs/remotes/pull/6/merge
+2026-10-10T10:22:30.7744044Z From https://github.com/build-the-future-11/world-series
+2026-10-10T10:22:30.7745650Z  * [new ref]         ee4f2d15e7f743a9741fa6090c01e17fe62855ae -> pull/6/merge
+2026-10-10T10:22:30.7748624Z ##[endgroup]
+2026-10-10T10:22:30.7749884Z ##[group]Determining the checkout info
+2026-10-10T10:22:30.7751325Z ##[endgroup]
+2026-10-10T10:22:30.7757392Z [command]/usr/bin/git sparse-checkout disable
+2026-10-10T10:22:30.7815209Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-10T10:22:30.7843096Z ##[group]Checking out the ref
+2026-10-10T10:22:30.7845752Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/6/merge
+2026-10-10T10:22:30.8553982Z Note: switching to 'refs/remotes/pull/6/merge'.
+2026-10-10T10:22:30.8554648Z 
+2026-10-10T10:22:30.8555241Z You are in 'detached HEAD' state. You can look around, make experimental
+2026-10-10T10:22:30.8556218Z changes and commit them, and you can discard any commits you make in this
+2026-10-10T10:22:30.8557350Z state without impacting any branches by switching back to a branch.
+2026-10-10T10:22:30.8558180Z 
+2026-10-10T10:22:30.8558634Z If you want to create a new branch to retain commits you create, you may
+2026-10-10T10:22:30.8559991Z do so (now or later) by using -c with the switch command. Example:
+2026-10-10T10:22:30.8560544Z 
+2026-10-10T10:22:30.8560883Z   git switch -c <new-branch-name>
+2026-10-10T10:22:30.8561281Z 
+2026-10-10T10:22:30.8561575Z Or undo this operation with:
+2026-10-10T10:22:30.8561983Z 
+2026-10-10T10:22:30.8562240Z   git switch -
+2026-10-10T10:22:30.8562879Z 
+2026-10-10T10:22:30.8563416Z Turn off this advice by setting config variable advice.detachedHead to false
+2026-10-10T10:22:30.8564346Z 
+2026-10-10T10:22:30.8565146Z HEAD is now at ee4f2d1 Merge 578b2a5d2871126ad9dc410f184cba9c728e580c into b89d5709b6b43a41d89f88e3c0fa686c809596bf
+2026-10-10T10:22:30.8568034Z ##[endgroup]
+2026-10-10T10:22:30.8602924Z [command]/usr/bin/git log -1 --format=%H
+2026-10-10T10:22:30.8624665Z ee4f2d15e7f743a9741fa6090c01e17fe62855ae
+2026-10-10T10:22:30.8877778Z ##[group]Run actions/setup-python@v5
+2026-10-10T10:22:30.8878362Z with:
+2026-10-10T10:22:30.8878778Z   python-version: 3.12
+2026-10-10T10:22:30.8879325Z   cache: pip
+2026-10-10T10:22:30.8879747Z   check-latest: false
+2026-10-10T10:22:30.8883268Z   token: ***
+2026-10-10T10:22:30.8883699Z   update-environment: true
+2026-10-10T10:22:30.8884444Z   allow-prereleases: false
+2026-10-10T10:22:30.8884961Z   freethreaded: false
+2026-10-10T10:22:30.8885427Z env:
+2026-10-10T10:22:30.8885842Z   OMP_NUM_THREADS: 1
+2026-10-10T10:22:30.8886310Z   OPENBLAS_NUM_THREADS: 1
+2026-10-10T10:22:30.8886783Z   MKL_NUM_THREADS: 1
+2026-10-10T10:22:30.8887240Z ##[endgroup]
+2026-10-10T10:22:30.9937493Z ##[group]Installed versions
+2026-10-10T10:22:31.0010565Z (node:2087) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-10T10:22:31.0012165Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-10T10:22:31.0013064Z Successfully set up CPython (3.12.15)
+2026-10-10T10:22:31.0014167Z ##[endgroup]
+2026-10-10T10:22:31.1523413Z [command]/opt/hostedtoolcache/Python/3.12.15/x64/bin/pip cache dir
+2026-10-10T10:22:32.1442876Z /home/runner/.cache/pip
+2026-10-10T10:22:32.3064262Z Cache hit for: setup-python-Linux-x64-24.04-Ubuntu-python-3.12.15-pip-239bf0ef635f17eab1ba77e9783e5c782278819c088042c52d6a3a9dee624d56
+2026-10-10T10:22:32.3149064Z (node:2087) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-10T10:22:33.4831160Z Received 113246208 of 273272989 (41.4%), 107.6 MBs/sec
+2026-10-10T10:22:34.4838923Z Received 264241152 of 273272989 (96.7%), 125.7 MBs/sec
+2026-10-10T10:22:34.6546959Z Received 273272989 of 273272989 (100.0%), 119.8 MBs/sec
+2026-10-10T10:22:34.6548429Z Cache Size: ~261 MB (273272989 B)
+2026-10-10T10:22:34.6700273Z [command]/usr/bin/tar -xf /home/runner/work/_temp/c0374cbf-da58-4377-8c92-76ec0d193706/cache.tzst -P -C /home/runner/work/world-series/world-series --use-compress-program unzstd
+2026-10-10T10:22:34.8837064Z Cache restored successfully
+2026-10-10T10:22:34.8945934Z Cache restored from key: setup-python-Linux-x64-24.04-Ubuntu-python-3.12.15-pip-239bf0ef635f17eab1ba77e9783e5c782278819c088042c52d6a3a9dee624d56
+2026-10-10T10:22:34.9098437Z ##[group]Run python -m pip install torch==2.14.0 --index-url https://download.pytorch.org/whl/cpu
+2026-10-10T10:22:34.9099350Z [36;1mpython -m pip install torch==2.14.0 --index-url https://download.pytorch.org/whl/cpu[0m
+2026-10-10T10:22:34.9099841Z [36;1mpython -m pip install -r requirements.lock.txt[0m
+2026-10-10T10:22:34.9100247Z [36;1mpython -m pip install --no-deps --no-build-isolation -e .[0m
+2026-10-10T10:22:34.9100674Z [36;1mpython -m pip check[0m
+2026-10-10T10:22:34.9277059Z shell: /usr/bin/bash -e {0}
+2026-10-10T10:22:34.9277493Z env:
+2026-10-10T10:22:34.9278000Z   OMP_NUM_THREADS: 1
+2026-10-10T10:22:34.9278369Z   OPENBLAS_NUM_THREADS: 1
+2026-10-10T10:22:34.9278629Z   MKL_NUM_THREADS: 1
+2026-10-10T10:22:34.9278958Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T10:22:34.9279728Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+2026-10-10T10:22:34.9280162Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T10:22:34.9280678Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T10:22:34.9281038Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T10:22:34.9281459Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+2026-10-10T10:22:34.9281780Z ##[endgroup]
+2026-10-10T10:22:36.0512877Z Looking in indexes: https://download.pytorch.org/whl/cpu
+2026-10-10T10:22:36.3258628Z Collecting torch==2.14.0
+2026-10-10T10:22:36.3979901Z   Using cached torch-2.14.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (37 kB)
+2026-10-10T10:22:36.4301502Z Collecting filelock (from torch==2.14.0)
+2026-10-10T10:22:36.4312671Z   Using cached filelock-3.32.3-py3-none-any.whl.metadata (2.0 kB)
+2026-10-10T10:22:36.4533100Z Collecting typing-extensions>=4.10.0 (from torch==2.14.0)
+2026-10-10T10:22:36.4543010Z   Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+2026-10-10T10:22:36.4721365Z Collecting setuptools>=77.0.3 (from torch==2.14.0)
+2026-10-10T10:22:36.4884057Z   Using cached setuptools-78.1.0-py3-none-any.whl.metadata (6.6 kB)
+2026-10-10T10:22:36.5127306Z Collecting sympy>=1.13.3 (from torch==2.14.0)
+2026-10-10T10:22:36.5137238Z   Using cached sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+2026-10-10T10:22:36.5399442Z Collecting networkx>=2.5.1 (from torch==2.14.0)
+2026-10-10T10:22:36.5409367Z   Using cached networkx-3.6.1-py3-none-any.whl.metadata (6.8 kB)
+2026-10-10T10:22:36.5613072Z Collecting jinja2 (from torch==2.14.0)
+2026-10-10T10:22:36.5769151Z   Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+2026-10-10T10:22:36.6161376Z Collecting fsspec>=0.8.5 (from torch==2.14.0)
+2026-10-10T10:22:36.6173321Z   Using cached fsspec-2026.7.0-py3-none-any.whl.metadata (10 kB)
+2026-10-10T10:22:36.6494898Z Collecting mpmath<1.4,>=1.1.0 (from sympy>=1.13.3->torch==2.14.0)
+2026-10-10T10:22:36.6504724Z   Using cached mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+2026-10-10T10:22:36.6906864Z Collecting MarkupSafe>=2.0 (from jinja2->torch==2.14.0)
+2026-10-10T10:22:36.7066218Z   Using cached markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+2026-10-10T10:22:36.7276366Z Using cached torch-2.14.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl (196.3 MB)
+2026-10-10T10:22:36.7920689Z Using cached fsspec-2026.7.0-py3-none-any.whl (206 kB)
+2026-10-10T10:22:36.7931576Z Using cached networkx-3.6.1-py3-none-any.whl (2.1 MB)
+2026-10-10T10:22:36.8097012Z Using cached setuptools-78.1.0-py3-none-any.whl (1.3 MB)
+2026-10-10T10:22:36.8111752Z Using cached sympy-1.14.0-py3-none-any.whl (6.3 MB)
+2026-10-10T10:22:36.8143298Z Using cached mpmath-1.3.0-py3-none-any.whl (536 kB)
+2026-10-10T10:22:36.8155058Z Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+2026-10-10T10:22:36.8163517Z Using cached filelock-3.32.3-py3-none-any.whl (98 kB)
+2026-10-10T10:22:36.8318590Z Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
+2026-10-10T10:22:36.8471562Z Using cached markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+2026-10-10T10:22:37.3356543Z Installing collected packages: mpmath, typing-extensions, sympy, setuptools, networkx, MarkupSafe, fsspec, filelock, jinja2, torch
+2026-10-10T10:22:52.5054709Z 
+2026-10-10T10:22:52.5069366Z Successfully installed MarkupSafe-3.0.3 filelock-3.32.3 fsspec-2026.7.0 jinja2-3.1.6 mpmath-1.3.0 networkx-3.6.1 setuptools-78.1.0 sympy-1.14.0 torch-2.14.0+cpu typing-extensions-4.16.0
+2026-10-10T10:22:52.9122846Z Collecting filelock==4.0.1 (from -r requirements.lock.txt (line 1))
+2026-10-10T10:22:52.9137282Z   Using cached filelock-4.0.1-py3-none-any.whl.metadata (2.0 kB)
+2026-10-10T10:22:52.9328342Z Collecting fsspec==2026.9.0 (from -r requirements.lock.txt (line 2))
+2026-10-10T10:22:52.9338083Z   Using cached fsspec-2026.9.0-py3-none-any.whl.metadata (10 kB)
+2026-10-10T10:22:53.1444653Z Collecting hypothesis==6.168.0 (from -r requirements.lock.txt (line 3))
+2026-10-10T10:22:53.1456538Z   Using cached hypothesis-6.168.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.7 kB)
+2026-10-10T10:22:53.1622102Z Collecting iniconfig==2.3.0 (from -r requirements.lock.txt (line 4))
+2026-10-10T10:22:53.1631870Z   Using cached iniconfig-2.3.0-py3-none-any.whl.metadata (2.5 kB)
+2026-10-10T10:22:53.1645876Z Requirement already satisfied: Jinja2==3.1.6 in /opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages (from -r requirements.lock.txt (line 5)) (3.1.6)
+2026-10-10T10:22:53.1649506Z Requirement already satisfied: MarkupSafe==3.0.3 in /opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages (from -r requirements.lock.txt (line 6)) (3.0.3)
+2026-10-10T10:22:53.1652925Z Requirement already satisfied: mpmath==1.3.0 in /opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages (from -r requirements.lock.txt (line 7)) (1.3.0)
+2026-10-10T10:22:53.1833630Z Collecting networkx==3.7 (from -r requirements.lock.txt (line 8))
+2026-10-10T10:22:53.1843206Z   Using cached networkx-3.7-py3-none-any.whl.metadata (6.7 kB)
+2026-10-10T10:22:53.3151149Z Collecting numpy==2.5.3 (from -r requirements.lock.txt (line 9))
+2026-10-10T10:22:53.3163463Z   Using cached numpy-2.5.3-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+2026-10-10T10:22:53.3328751Z Collecting packaging==26.3 (from -r requirements.lock.txt (line 10))
+2026-10-10T10:22:53.3338799Z   Using cached packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+2026-10-10T10:22:53.3616764Z Collecting pluggy==1.6.0 (from -r requirements.lock.txt (line 11))
+2026-10-10T10:22:53.3627089Z   Using cached pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+2026-10-10T10:22:53.3803051Z Collecting Pygments==2.21.0 (from -r requirements.lock.txt (line 12))
+2026-10-10T10:22:53.3812614Z   Using cached pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+2026-10-10T10:22:53.4035760Z Collecting pytest==9.1.1 (from -r requirements.lock.txt (line 13))
+2026-10-10T10:22:53.4047127Z   Using cached pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+2026-10-10T10:22:53.4350702Z Collecting PyYAML==6.0.3 (from -r requirements.lock.txt (line 14))
+2026-10-10T10:22:53.4361728Z   Using cached pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+2026-10-10T10:22:53.6687086Z Collecting ruff==0.16.8 (from -r requirements.lock.txt (line 15))
+2026-10-10T10:22:53.6698466Z   Using cached ruff-0.16.8-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (20 kB)
+2026-10-10T10:22:53.7532005Z Collecting scipy==1.18.1 (from -r requirements.lock.txt (line 16))
+2026-10-10T10:22:53.7543429Z   Using cached scipy-1.18.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+2026-10-10T10:22:53.8137720Z Collecting setuptools==84.0.0 (from -r requirements.lock.txt (line 17))
+2026-10-10T10:22:53.8149996Z   Using cached setuptools-84.0.0-py3-none-any.whl.metadata (6.6 kB)
+2026-10-10T10:22:53.8366121Z Collecting sortedcontainers==2.4.0 (from -r requirements.lock.txt (line 18))
+2026-10-10T10:22:53.8375911Z   Using cached sortedcontainers-2.4.0-py2.py3-none-any.whl.metadata (10 kB)
+2026-10-10T10:22:53.8391715Z Requirement already satisfied: sympy==1.14.0 in /opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages (from -r requirements.lock.txt (line 19)) (1.14.0)
+2026-10-10T10:22:53.8395465Z Requirement already satisfied: torch==2.14.0 in /opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages (from -r requirements.lock.txt (line 20)) (2.14.0+cpu)
+2026-10-10T10:22:53.8398414Z Requirement already satisfied: typing_extensions==4.16.0 in /opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages (from -r requirements.lock.txt (line 21)) (4.16.0)
+2026-10-10T10:22:53.8562398Z Collecting wheel==0.48.0 (from -r requirements.lock.txt (line 22))
+2026-10-10T10:22:53.8572971Z   Using cached wheel-0.48.0-py3-none-any.whl.metadata (2.3 kB)
+2026-10-10T10:22:53.8761914Z Using cached filelock-4.0.1-py3-none-any.whl (106 kB)
+2026-10-10T10:22:53.8771218Z Using cached fsspec-2026.9.0-py3-none-any.whl (221 kB)
+2026-10-10T10:22:53.8781294Z Using cached hypothesis-6.168.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.2 MB)
+2026-10-10T10:22:53.8794964Z Using cached sortedcontainers-2.4.0-py2.py3-none-any.whl (29 kB)
+2026-10-10T10:22:53.8803122Z Using cached iniconfig-2.3.0-py3-none-any.whl (7.5 kB)
+2026-10-10T10:22:53.8811280Z Using cached networkx-3.7-py3-none-any.whl (2.1 MB)
+2026-10-10T10:22:53.8828340Z Using cached numpy-2.5.3-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.7 MB)
+2026-10-10T10:22:53.8891499Z Using cached packaging-26.3-py3-none-any.whl (129 kB)
+2026-10-10T10:22:53.8900281Z Using cached pluggy-1.6.0-py3-none-any.whl (20 kB)
+2026-10-10T10:22:53.8908419Z Using cached pygments-2.21.0-py3-none-any.whl (1.3 MB)
+2026-10-10T10:22:53.8921393Z Using cached pytest-9.1.1-py3-none-any.whl (386 kB)
+2026-10-10T10:22:53.8932018Z Using cached pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+2026-10-10T10:22:53.8945105Z Using cached ruff-0.16.8-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.3 MB)
+2026-10-10T10:22:53.8988036Z Using cached scipy-1.18.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.3 MB)
+2026-10-10T10:22:53.9112944Z Using cached setuptools-84.0.0-py3-none-any.whl (818 kB)
+2026-10-10T10:22:53.9124503Z Using cached wheel-0.48.0-py3-none-any.whl (33 kB)
+2026-10-10T10:22:54.0612544Z Installing collected packages: sortedcontainers, setuptools, ruff, PyYAML, Pygments, pluggy, packaging, numpy, networkx, iniconfig, hypothesis, fsspec, filelock, wheel, scipy, pytest
+2026-10-10T10:22:54.0768190Z   Attempting uninstall: setuptools
+2026-10-10T10:22:54.0781994Z     Found existing installation: setuptools 78.1.0
+2026-10-10T10:22:54.0963185Z     Uninstalling setuptools-78.1.0:
+2026-10-10T10:22:54.1973126Z       Successfully uninstalled setuptools-78.1.0
+2026-10-10T10:22:56.6854927Z   Attempting uninstall: networkx
+2026-10-10T10:22:56.6872963Z     Found existing installation: networkx 3.6.1
+2026-10-10T10:22:56.7134297Z     Uninstalling networkx-3.6.1:
+2026-10-10T10:22:56.7177872Z       Successfully uninstalled networkx-3.6.1
+2026-10-10T10:22:57.8686377Z   Attempting uninstall: fsspec
+2026-10-10T10:22:57.8701287Z     Found existing installation: fsspec 2026.7.0
+2026-10-10T10:22:57.8734416Z     Uninstalling fsspec-2026.7.0:
+2026-10-10T10:22:57.8740713Z       Successfully uninstalled fsspec-2026.7.0
+2026-10-10T10:22:57.9982289Z   Attempting uninstall: filelock
+2026-10-10T10:22:57.9996961Z     Found existing installation: filelock 3.32.3
+2026-10-10T10:22:58.0015011Z     Uninstalling filelock-3.32.3:
+2026-10-10T10:22:58.0020753Z       Successfully uninstalled filelock-3.32.3
+2026-10-10T10:23:01.4815292Z 
+2026-10-10T10:23:01.4834388Z Successfully installed PyYAML-6.0.3 Pygments-2.21.0 filelock-4.0.1 fsspec-2026.9.0 hypothesis-6.168.0 iniconfig-2.3.0 networkx-3.7 numpy-2.5.3 packaging-26.3 pluggy-1.6.0 pytest-9.1.1 ruff-0.16.8 scipy-1.18.1 setuptools-84.0.0 sortedcontainers-2.4.0 wheel-0.48.0
+2026-10-10T10:23:01.8314774Z Obtaining file:///home/runner/work/world-series/world-series
+2026-10-10T10:23:01.8323509Z   Checking if build backend supports build_editable: started
+2026-10-10T10:23:01.9957470Z   Checking if build backend supports build_editable: finished with status 'done'
+2026-10-10T10:23:01.9964328Z   Preparing editable metadata (pyproject.toml): started
+2026-10-10T10:23:02.1715039Z   Preparing editable metadata (pyproject.toml): finished with status 'done'
+2026-10-10T10:23:02.1748539Z Building wheels for collected packages: world-series
+2026-10-10T10:23:02.1753841Z   Building editable for world-series (pyproject.toml): started
+2026-10-10T10:23:02.3600992Z   Building editable for world-series (pyproject.toml): finished with status 'done'
+2026-10-10T10:23:02.3607131Z   Created wheel for world-series: filename=world_series-0.1.0-0.editable-py3-none-any.whl size=8450 sha256=6bbe60348ba52e6137bc83bc97d658795e389fed291eabc8434878dff6744d6c
+2026-10-10T10:23:02.3608912Z   Stored in directory: /tmp/pip-ephem-wheel-cache-lmd8vx_z/wheels/3e/d7/63/952fd48ead342c22a04da7c400e29b8ae2859bfc2e5ac626e9
+2026-10-10T10:23:02.3632381Z Successfully built world-series
+2026-10-10T10:23:02.3717828Z Installing collected packages: world-series
+2026-10-10T10:23:02.3787448Z Successfully installed world-series-0.1.0
+2026-10-10T10:23:02.5923466Z No broken requirements found.
+2026-10-10T10:23:02.6273264Z ##[group]Run python -m ruff check --select E9,F821,F822,F823 src tests scripts
+2026-10-10T10:23:02.6274022Z [36;1mpython -m ruff check --select E9,F821,F822,F823 src tests scripts[0m
+2026-10-10T10:23:02.6315342Z shell: /usr/bin/bash -e {0}
+2026-10-10T10:23:02.6315699Z env:
+2026-10-10T10:23:02.6316002Z   OMP_NUM_THREADS: 1
+2026-10-10T10:23:02.6316303Z   OPENBLAS_NUM_THREADS: 1
+2026-10-10T10:23:02.6316579Z   MKL_NUM_THREADS: 1
+2026-10-10T10:23:02.6316969Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T10:23:02.6317459Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+2026-10-10T10:23:02.6317878Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T10:23:02.6318309Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T10:23:02.6318753Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T10:23:02.6319169Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+2026-10-10T10:23:02.6319619Z ##[endgroup]
+2026-10-10T10:23:02.6701030Z All checks passed!
+2026-10-10T10:23:02.6738807Z ##[group]Run python -m pytest tests -q
+2026-10-10T10:23:02.6739180Z [36;1mpython -m pytest tests -q[0m
+2026-10-10T10:23:02.6778207Z shell: /usr/bin/bash -e {0}
+2026-10-10T10:23:02.6778495Z env:
+2026-10-10T10:23:02.6778849Z   OMP_NUM_THREADS: 1
+2026-10-10T10:23:02.6779118Z   OPENBLAS_NUM_THREADS: 1
+2026-10-10T10:23:02.6779422Z   MKL_NUM_THREADS: 1
+2026-10-10T10:23:02.6779740Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T10:23:02.6780179Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+2026-10-10T10:23:02.6780586Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T10:23:02.6780980Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T10:23:02.6781357Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T10:23:02.6781759Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+2026-10-10T10:23:02.6782080Z ##[endgroup]
+2026-10-10T10:23:09.4295678Z ........................................................................ [ 27%]
+2026-10-10T10:23:11.1464793Z ........................................................................ [ 55%]
+2026-10-10T10:23:13.3385924Z ........................................................................ [ 83%]
+2026-10-10T10:23:14.4958180Z ...........................................                              [100%]
+2026-10-10T10:23:14.4959066Z =============================== warnings summary ===============================
+2026-10-10T10:23:14.4959651Z tests/qapen/test_quantizer_replay.py::test_exposed_array_metadata_does_not_change_codebook[array-shape]
+2026-10-10T10:23:14.4960432Z tests/qapen/test_quantizer_replay.py::test_exposed_array_metadata_does_not_change_codebook[base-shape]
+2026-10-10T10:23:14.4961328Z   /home/runner/work/world-series/world-series/tests/qapen/test_quantizer_replay.py:21: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+2026-10-10T10:23:14.4962088Z   As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+2026-10-10T10:23:14.4962514Z     exposed.shape = (1, 2)
+2026-10-10T10:23:14.4962702Z 
+2026-10-10T10:23:14.4962974Z tests/qapen/test_quantizer_replay.py::test_exposed_array_metadata_does_not_change_codebook[array-dtype]
+2026-10-10T10:23:14.4963583Z tests/qapen/test_quantizer_replay.py::test_exposed_array_metadata_does_not_change_codebook[base-dtype]
+2026-10-10T10:23:14.4965132Z   /home/runner/work/world-series/world-series/tests/qapen/test_quantizer_replay.py:23: DeprecationWarning: Setting the dtype on a NumPy array has been deprecated in NumPy 2.5.
+2026-10-10T10:23:14.4965907Z   Instead of changing the dtype on an array x, create a new array with x.view(new_dtype)
+2026-10-10T10:23:14.4966310Z     exposed.dtype = np.int64
+2026-10-10T10:23:14.4966462Z 
+2026-10-10T10:23:14.4966821Z tests/qapen/test_quantizer_replay.py::test_pending_checkpoint_replay_survives_exposed_metadata_changes[shape]
+2026-10-10T10:23:14.4967635Z   /home/runner/work/world-series/world-series/tests/qapen/test_quantizer_replay.py:90: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+2026-10-10T10:23:14.4968415Z   As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+2026-10-10T10:23:14.4968840Z     exposed.shape = (1, 2)
+2026-10-10T10:23:14.4969015Z 
+2026-10-10T10:23:14.4969285Z tests/qapen/test_quantizer_replay.py::test_pending_checkpoint_replay_survives_exposed_metadata_changes[dtype]
+2026-10-10T10:23:14.4970103Z   /home/runner/work/world-series/world-series/tests/qapen/test_quantizer_replay.py:92: DeprecationWarning: Setting the dtype on a NumPy array has been deprecated in NumPy 2.5.
+2026-10-10T10:23:14.4970839Z   Instead of changing the dtype on an array x, create a new array with x.view(new_dtype)
+2026-10-10T10:23:14.4971232Z     exposed.dtype = np.int64
+2026-10-10T10:23:14.4971447Z 
+2026-10-10T10:23:14.4971616Z tests/qlearn/test_qlearn.py::test_bounds_and_reset
+2026-10-10T10:23:14.4972449Z   /home/runner/work/world-series/world-series/tests/qlearn/test_qlearn.py:15: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+2026-10-10T10:23:14.4973336Z   Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+2026-10-10T10:23:14.4974083Z     assert float(eta) > 0 and torch.all(d > 0)
+2026-10-10T10:23:14.4974266Z 
+2026-10-10T10:23:14.4974494Z -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+2026-10-10T10:23:15.1526100Z ##[group]Run python -m pip wheel --no-deps --no-build-isolation --wheel-dir dist .
+2026-10-10T10:23:15.1526651Z [36;1mpython -m pip wheel --no-deps --no-build-isolation --wheel-dir dist .[0m
+2026-10-10T10:23:15.1565143Z shell: /usr/bin/bash -e {0}
+2026-10-10T10:23:15.1565535Z env:
+2026-10-10T10:23:15.1565778Z   OMP_NUM_THREADS: 1
+2026-10-10T10:23:15.1566048Z   OPENBLAS_NUM_THREADS: 1
+2026-10-10T10:23:15.1566345Z   MKL_NUM_THREADS: 1
+2026-10-10T10:23:15.1566677Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T10:23:15.1567101Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+2026-10-10T10:23:15.1567510Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T10:23:15.1567935Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T10:23:15.1568338Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T10:23:15.1568723Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+2026-10-10T10:23:15.1569191Z ##[endgroup]
+2026-10-10T10:23:15.4178007Z Processing ./.
+2026-10-10T10:23:15.4189156Z   Preparing metadata (pyproject.toml): started
+2026-10-10T10:23:15.5809219Z   Preparing metadata (pyproject.toml): finished with status 'done'
+2026-10-10T10:23:15.5831847Z Building wheels for collected packages: world-series
+2026-10-10T10:23:15.5840479Z   Building wheel for world-series (pyproject.toml): started
+2026-10-10T10:23:15.8006308Z   Building wheel for world-series (pyproject.toml): finished with status 'done'
+2026-10-10T10:23:15.8014731Z   Created wheel for world-series: filename=world_series-0.1.0-py3-none-any.whl size=143824 sha256=790179f7cb47289174cec25179179a79890efb473cd9564e4efa4f4832956681
+2026-10-10T10:23:15.8016001Z   Stored in directory: /tmp/pip-ephem-wheel-cache-1cwsewx5/wheels/3e/d7/63/952fd48ead342c22a04da7c400e29b8ae2859bfc2e5ac626e9
+2026-10-10T10:23:15.8042843Z Successfully built world-series
+2026-10-10T10:23:15.8563703Z ##[group]Run python -m world_series doctor
+2026-10-10T10:23:15.8564237Z [36;1mpython -m world_series doctor[0m
+2026-10-10T10:23:15.8603580Z shell: /usr/bin/bash -e {0}
+2026-10-10T10:23:15.8604042Z env:
+2026-10-10T10:23:15.8604324Z   OMP_NUM_THREADS: 1
+2026-10-10T10:23:15.8604620Z   OPENBLAS_NUM_THREADS: 1
+2026-10-10T10:23:15.8604912Z   MKL_NUM_THREADS: 1
+2026-10-10T10:23:15.8605230Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T10:23:15.8605667Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+2026-10-10T10:23:15.8606091Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T10:23:15.8606855Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T10:23:15.8607233Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T10:23:15.8607620Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+2026-10-10T10:23:15.8607978Z ##[endgroup]
+2026-10-10T10:23:16.8867167Z world_series 0.1.0
+2026-10-10T10:23:16.8868170Z repo_root: /home/runner/work/world-series/world-series
+2026-10-10T10:23:16.8868884Z python: 3.12.15
+2026-10-10T10:23:16.8869320Z devices:
+2026-10-10T10:23:16.8869985Z   - cpu: available=True dtype=float64 fallback=cpu (reference path)
+2026-10-10T10:23:16.8871145Z   - mps: available=False dtype=float32 fallback=cpu (optional; probe ops before using higher-order grads)
+2026-10-10T10:23:16.8872252Z   - cuda: available=False dtype=float32 fallback=cpu (optional)
+2026-10-10T10:23:16.8872948Z capabilities:
+2026-10-10T10:23:16.8873526Z   - adapt_learner: AVAILABLE [qlearn] v0.1 thin adapter
+2026-10-10T10:23:16.8874376Z   - algebra_multiply: AVAILABLE [wfim] 
+2026-10-10T10:23:16.8874996Z   - encode_multiscale_world: AVAILABLE [cwlnn] 
+2026-10-10T10:23:16.8875671Z   - identify_dynamical_law: AVAILABLE [wpinn] 
+2026-10-10T10:23:16.8876364Z   - orchestrate_episode: AVAILABLE [ultron] 
+2026-10-10T10:23:16.8877024Z   - predict_world: AVAILABLE [qapen] thin
+2026-10-10T10:23:16.8877701Z   - solve_invariant_problem: AVAILABLE [qwipii] 
+2026-10-10T10:23:16.8878349Z   - spectral_transform: AVAILABLE [wft] 
+2026-10-10T10:23:16.8879030Z   - synthesize_dsl_program: AVAILABLE [wcode] 
+2026-10-10T10:23:16.8879664Z   - verify_certificate: AVAILABLE [qwipii] 
+2026-10-10T10:23:16.8880447Z namespaces: qlearn, qapen, qwipii, wcode, wfim, wft, wpinn, cwlnn, ultron
+2026-10-10T10:23:17.1960076Z Post job cleanup.
+2026-10-10T10:23:17.2910194Z Cache hit occurred on the primary key setup-python-Linux-x64-24.04-Ubuntu-python-3.12.15-pip-239bf0ef635f17eab1ba77e9783e5c782278819c088042c52d6a3a9dee624d56, not saving cache.
+2026-10-10T10:23:17.2911192Z (node:2291) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-10T10:23:17.2911822Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-10T10:23:17.3038494Z Post job cleanup.
+2026-10-10T10:23:17.3689121Z [command]/usr/bin/git version
+2026-10-10T10:23:17.3720482Z git version 2.55.0
+2026-10-10T10:23:17.3746637Z Temporarily overriding HOME='/home/runner/work/_temp/7b2255e2-68ee-49fb-b87f-7b6590bf9ed6' before making global git config changes
+2026-10-10T10:23:17.3747868Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-10T10:23:17.3751660Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/world-series/world-series
+2026-10-10T10:23:17.3785305Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-10T10:23:17.3813887Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-10T10:23:17.3992992Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-10T10:23:17.4015823Z http.https://github.com/.extraheader
+2026-10-10T10:23:17.4025263Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-10T10:23:17.4054111Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-10T10:23:17.4246939Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-10T10:23:17.4274616Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-10T10:23:17.4578717Z Cleaning up orphan processes
+2026-10-10T10:23:17.4779554Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
