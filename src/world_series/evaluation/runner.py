@@ -5,13 +5,19 @@ from __future__ import annotations
 import json
 import time
 import uuid
-from dataclasses import asdict, dataclass, field
+from copy import deepcopy
+from dataclasses import asdict, dataclass, field, replace
 from pathlib import Path
 from typing import Any, Optional
 
-from world_series.core.artifacts import ArtifactStore
+from world_series.core.artifacts import ArtifactStore, json_bytes, publish_bytes
 from world_series.core.contracts import Budget, ErrorCode, RunStatus, WorldSeriesError
 from world_series.core.identity import hash_mapping, source_identity
+
+TERMINAL_STATUSES = frozenset({
+    RunStatus.SUCCEEDED, RunStatus.FAILED, RunStatus.INTERRUPTED,
+    RunStatus.UNSUPPORTED, RunStatus.BUDGET_EXHAUSTED,
+})
 
 
 def _new_run_id() -> str:
@@ -58,10 +64,12 @@ class RunDirectory:
         self.events_path.write_text("", encoding="utf-8")
         self._write_manifest()
 
-    def _write_manifest(self) -> None:
-        (self.path / "manifest.json").write_text(
-            json.dumps(self.manifest.to_dict(), indent=2, sort_keys=True) + "\n",
-            encoding="utf-8",
+    def _write_manifest(self, manifest: Optional[RunManifest] = None) -> None:
+        payload = (manifest or self.manifest).to_dict()
+        publish_bytes(
+            self.path / "manifest.json",
+            json_bytes(payload, indent=2),
+            overwrite=True,
         )
 
     def append_event(self, kind: str, payload: Optional[dict[str, Any]] = None) -> None:
@@ -70,29 +78,36 @@ class RunDirectory:
             "kind": kind,
             "payload": payload or {},
         }
-        with self.events_path.open("a", encoding="utf-8") as f:
-            f.write(json.dumps(event, sort_keys=True) + "\n")
+        encoded = json_bytes(event)
+        with self.events_path.open("ab") as f:
+            f.write(encoded)
 
     def set_status(self, status: RunStatus, error: Optional[dict[str, Any]] = None) -> None:
-        self.manifest.status = status.value
-        self.manifest.error = error
-        if status in {
-            RunStatus.SUCCEEDED,
-            RunStatus.FAILED,
-            RunStatus.INTERRUPTED,
-            RunStatus.UNSUPPORTED,
-            RunStatus.BUDGET_EXHAUSTED,
-        }:
-            self.manifest.finished_at = time.time()
-        self._write_manifest()
+        if RunStatus(self.manifest.status) in TERMINAL_STATUSES:
+            if self.manifest.status == status.value and self.manifest.error == error:
+                return
+            raise WorldSeriesError(
+                ErrorCode.INVALID_CONFIG,
+                "terminal run receipt is immutable; retry in a new run directory",
+            )
+        manifest = replace(
+            self.manifest, status=status.value, error=deepcopy(error),
+            finished_at=time.time() if status in TERMINAL_STATUSES else None,
+        )
+        self._write_manifest(manifest)
+        self.manifest = manifest
 
     def write_metrics(self, metrics: dict[str, Any]) -> None:
-        self.manifest.metrics = metrics
-        (self.path / "metrics.json").write_text(
-            json.dumps(metrics, indent=2, sort_keys=True) + "\n",
-            encoding="utf-8",
+        if RunStatus(self.manifest.status) in TERMINAL_STATUSES:
+            raise WorldSeriesError(ErrorCode.INVALID_CONFIG, "terminal run metrics are immutable")
+        snapshot = deepcopy(metrics)
+        publish_bytes(
+            self.path / "metrics.json",
+            json_bytes(snapshot, indent=2),
         )
-        self._write_manifest()
+        manifest = replace(self.manifest, metrics=snapshot)
+        self._write_manifest(manifest)
+        self.manifest = manifest
 
 
 def create_run(
