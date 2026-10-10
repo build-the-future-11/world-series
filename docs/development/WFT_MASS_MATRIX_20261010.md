@@ -1,6 +1,6 @@
 # WFT full-mass numerical correction
 
-State: SMOKE_PASSED (23 WFT tests). This is a development implementation correction, not new
+State: SMOKE_PASSED (25 WFT tests). This is a development implementation correction, not new
 benchmark or confirmatory evidence. All retained campaigns and conclusions stay
 at their existing evidence boundary.
 
@@ -18,5 +18,9 @@ Regression checks compare a dense example to SciPy's independent generalized
 solver, verify the original eigen-equation, reconstruction, mass-weighted
 Parseval identity and permutation covariance, and require exact equality on the
 legacy diagonal path. This does not establish a downstream learning benefit.
+
+Independent review also identified intermediate overflow in the dense symmetric
+average. Scaling each addend first preserves a representable 1.6e308 eigenvalue;
+an actually unrepresentable whitened problem now fails explicitly.
 
 Reproduce with `PYTHONPATH=src python -m pytest tests/wft -q`.

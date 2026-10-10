@@ -40,9 +40,13 @@ def weighted_spectral(L: np.ndarray, M: np.ndarray):
         raise WorldSeriesError(ErrorCode.INVALID_CONFIG, "mass matrix diagonal must be positive")
     if np.array_equal(M, np.diag(diag_m)):
         inv_sqrt = 1.0 / np.sqrt(diag_m)
-        S = inv_sqrt[:, None] * L * inv_sqrt[None, :]
+        with np.errstate(over="ignore", invalid="ignore"):
+            S = inv_sqrt[:, None] * L * inv_sqrt[None, :]
+        if not np.isfinite(S).all():
+            raise WorldSeriesError(ErrorCode.INVALID_CONFIG, "whitened eigenproblem exceeds float64 range")
         evals, Q = np.linalg.eigh(S)
-        Phi = inv_sqrt[:, None] * Q
+        with np.errstate(over="ignore", invalid="ignore"):
+            Phi = inv_sqrt[:, None] * Q
     else:
         try:
             C = np.linalg.cholesky(M)
@@ -51,11 +55,16 @@ def weighted_spectral(L: np.ndarray, M: np.ndarray):
                 ErrorCode.INVALID_CONFIG, "mass matrix must be positive definite"
             ) from exc
         # M = C C.T; S = C^{-1} L C^{-T}; Phi = C^{-T} Q.
-        left = np.linalg.solve(C, L)
-        S = np.linalg.solve(C, left.T).T
-        S = 0.5 * (S + S.T)
+        with np.errstate(over="ignore", invalid="ignore"):
+            left = np.linalg.solve(C, L)
+            S = np.linalg.solve(C, left.T).T
+            S = 0.5 * S + 0.5 * S.T
+        if not np.isfinite(S).all():
+            raise WorldSeriesError(ErrorCode.INVALID_CONFIG, "whitened eigenproblem exceeds float64 range")
         evals, Q = np.linalg.eigh(S)
         Phi = np.linalg.solve(C.T, Q)
+    if not all(np.isfinite(value).all() for value in (evals, Q, Phi)):
+        raise WorldSeriesError(ErrorCode.INVALID_CONFIG, "spectral transform exceeds float64 range")
     return evals, Q, Phi
 
 

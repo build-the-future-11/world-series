@@ -45,6 +45,20 @@ def test_full_mass_permutation_covariance():
     np.testing.assert_allclose(perm_projector, projector[np.ix_(order, order)], atol=1e-12)
 
 
+def test_representable_large_mass_problem_does_not_overflow_symmetrization():
+    stiffness = np.diag([8e307, 8e307])
+    mass = np.array([[1., .5], [.5, 1.]])
+    values, _, basis = weighted_spectral(stiffness, mass)
+    assert np.isfinite(values).all() and np.isfinite(basis).all()
+    expected = eigh(stiffness, mass, eigvals_only=True)
+    np.testing.assert_allclose(values / 1e307, expected / 1e307, rtol=1e-14)
+
+
+def test_unrepresentable_whitened_problem_is_explicit_failure():
+    with pytest.raises(WorldSeriesError, match="float64 range"):
+        weighted_spectral(np.eye(2) * 1e308, np.eye(2) * 1e-300)
+
+
 @pytest.mark.parametrize("mass", [
     np.array([[1.0, 2.0], [2.0, 1.0]]),
     np.ones((2, 2)),
