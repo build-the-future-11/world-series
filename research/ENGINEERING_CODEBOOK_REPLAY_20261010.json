@@ -39,7 +39,15 @@
   "scientific_disposition": "BOUNDED_DEVELOPMENT_WORKBENCH; module-specific negative/incomplete outcomes retained",
   "protected_boundary": "Confirmation remains DRAFT_NOT_AUTHORIZED; frozen outcomes, protocols and campaigns remain unchanged.",
   "research_complete": false,
-  "independent_review": "pending",
+  "independent_review": {
+    "status": "completed",
+    "scope": "Independent agent source review and separately constructed serialization/metadata checks; no human peer-review claim",
+    "checks": "Pickle protocols 0 through 5, exposed array/base metadata mutations, shallow and deep copies, 54 exact route/feature comparisons and immutable write flags",
+    "result": "All independent checks passed; no scoped source blocker",
+    "date": "2026-10-10",
+    "source": "src/world_series/qapen/causal.py",
+    "source_sha256": "c3dd5abd046ce3279cca329902ea206f4ce43c10581c996786ea21118365d868"
+  },
   "integration": "draft pull request; not merged",
   "next_action": "Review/integrate this engineering follow-up after its parent and verify exact-head CI; no scientific successor is authorized."
 }
