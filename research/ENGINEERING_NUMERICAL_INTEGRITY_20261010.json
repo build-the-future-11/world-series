@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-10",
+  "kind": "ENGINEERING_CORRECTNESS_REVISION",
+  "repository": "build-the-future-11/world-series",
+  "parent_commit": "2af6d7ca460b1e85cc880eae13cad5f0f3e035b9",
+  "existing_draft_pr": 3,
+  "title": "Retain immutable causal memory keys and frozen codebooks across replay",
+  "observation": "EngramStore retains aliases to caller context; FrozenQuantizer's read-only flag can be reversed, and deepcopy/restore does not preserve a true immutable buffer.",
+  "cause": "Read-only ndarray flags and np.asarray views do not establish immutable snapshot ownership.",
+  "severity": "incorrect arithmetic, state or evidence admission on valid/ambiguous boundary inputs",
+  "implemented_change": "Use immutable byte-backed key/codebook snapshots, a read-only centers property and deepcopy preservation. Validate memory capacity and key/value admission before eviction, and make recent(0) empty.",
+  "predicted_consequence": "New constructed regressions fail on the recorded parent and pass after the repair while the existing bounded suite passes.",
+  "evidence": {
+    "pre_fix_new_tests_failed": 11,
+    "pre_fix_control_tests_passed": 1,
+    "post_fix_suite_tests_passed": 200,
+    "command": "PYTHONPATH=src OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python -m pytest -q tests",
+    "environment": {
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "torch": "2.14.1+cpu",
+      "pytest": "9.1.1",
+      "device": "CPU"
+    },
+    "critical_static_checks": "Ruff E9,F821,F822,F823 passed for all changed Python files",
+    "compilation": "All changed Python sources compiled",
+    "whitespace": "git diff --check passed"
+  },
+  "changed_python_sha256": {
+    "src/world_series/qapen/causal.py": "6def7b21248e4ba9cd6b1f7787dac22bf0cdc1ccaaca6e8b2db2e47db3a659be",
+    "src/world_series/qapen/memory.py": "a10326b8cb35b655fb29daea2ebbb0d6d36a1af7433ae4136e5e4cdc57f26d7f",
+    "tests/qapen/test_memory_snapshots.py": "dc77990d3b65e7fc7b71d034af0eebf6bba71577c0b90d3f49aa196607c29ca3"
+  },
+  "scientific_runs": 0,
+  "scientific_result_changed": false,
+  "scientific_disposition": "BOUNDED_DEVELOPMENT_WORKBENCH; module-specific negative/incomplete outcomes retained",
+  "protected_boundary": "Confirmation remains DRAFT_NOT_AUTHORIZED. Existing campaigns, scientific outcomes and protocols are unchanged; model behavior must use the new source identity in any future execution.",
+  "research_complete": false,
+  "independent_review": "pending",
+  "integration": "draft pull request; not merged",
+  "release_gate": "Review/integrate the implementation and retain source identities; scientific successors remain separately gated."
+}

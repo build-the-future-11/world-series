@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "project": "world-series",
+  "updated_utc": "2026-10-10",
+  "current_phase": "ENGINEERING_DEVELOPMENT_REVIEW",
+  "scientific_disposition": "BOUNDED_DEVELOPMENT_WORKBENCH; module-specific negative/incomplete outcomes retained",
+  "scientific_scope_authority": [
+    "AGENTS.md",
+    "README.md",
+    "docs/RELEASE_REPRODUCIBILITY.md"
+  ],
+  "engineering_question": "Retain immutable causal memory keys and frozen codebooks across replay",
+  "current_change": "Use immutable byte-backed key/codebook snapshots, a read-only centers property and deepcopy preservation. Validate memory capacity and key/value admission before eviction, and make recent(0) empty.",
+  "required_session_reads": [
+    "AGENTS.md",
+    "README.md",
+    "docs/RELEASE_REPRODUCIBILITY.md",
+    "research/ENGINEERING_NUMERICAL_INTEGRITY_20261010.json"
+  ],
+  "protected_boundary": "Confirmation remains DRAFT_NOT_AUTHORIZED. Existing campaigns, scientific outcomes and protocols are unchanged; model behavior must use the new source identity in any future execution.",
+  "protected_evaluation_opened": false,
+  "scientific_runs_this_revision": 0,
+  "research_complete": false,
+  "execution_budget": {
+    "scope": "bounded constructed regressions and existing correctness tests only",
+    "paid_compute": false,
+    "training_campaigns": 0,
+    "protected_runs": 0
+  },
+  "pending_gates": [
+    "Independent review and GitHub integration.",
+    "Scientific hypothesis/specification/methodology/freeze/evidence/release gates remain governed by the retained study contracts."
+  ],
+  "history": [
+    {
+      "date": "2026-10-10",
+      "kind": "engineering_revision",
+      "record": "research/ENGINEERING_NUMERICAL_INTEGRITY_20261010.json",
+      "status": "implemented; 200 bounded tests passed; integration pending",
+      "scientific_outcomes_created": false
+    }
+  ],
+  "history_index_scope": "Index to retained project records and this revision; not a reconstruction or replacement of the complete git/artifact history."
+}

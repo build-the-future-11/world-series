@@ -17,10 +17,21 @@ from world_series.qapen.mixture import mixture_moments
 
 class FrozenQuantizer:
     def __init__(self, centers):
-        self.centers=np.asarray(centers,dtype=np.float64).copy()
-        if self.centers.ndim!=2 or not len(self.centers) or not np.isfinite(self.centers).all():
+        array=np.asarray(centers,dtype=np.float64)
+        if array.ndim!=2 or not len(array) or not np.isfinite(array).all():
             raise ValueError('Finite two-dimensional centers required')
-        self.centers.setflags(write=False)
+        # A read-only flag on an owned ndarray can be reversed by the caller.
+        # Bind the frozen codebook to an immutable bytes owner instead.
+        self._centers=np.frombuffer(array.tobytes(),dtype=np.float64).reshape(array.shape)
+
+    @property
+    def centers(self):
+        return self._centers
+
+    def __deepcopy__(self,memo):
+        duplicate=type(self)(self.centers)
+        memo[id(self)]=duplicate
+        return duplicate
 
     @classmethod
     def fit(cls, observations, k=8, seed=17, iterations=30):
