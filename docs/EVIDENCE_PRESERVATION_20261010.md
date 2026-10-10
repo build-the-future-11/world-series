@@ -27,6 +27,8 @@ budgets or negative consumption crediting resources.
 - Record a CLI `KeyboardInterrupt` as `INTERRUPTED`, retain partial evidence, and
   return exit status 130. Ordinary successful execution can still record a
   `NOT_SUPPORTED` scientific result.
+- Preserve the completed receipt if final console output is interrupted or its
+  pipe is disconnected; reporting failures propagate without changing execution.
 
 ## Verification and limits
 
@@ -36,10 +38,14 @@ Local focused command:
 python -m pytest tests/core/test_evidence_preservation.py tests/core/test_cli_interruption.py tests/core/test_runner.py tests/core/test_contracts.py tests/core/test_json_config.py -q -o addopts=''
 ```
 
-Result: **50 passed**, including real concurrent publication and CLI interruption
+Result: **52 passed**, including real concurrent publication and CLI interruption
 fault injection. Critical static checks and patch whitespace checks passed.
 The complete model suite requires PyTorch, unavailable in this local runtime;
 the existing hosted implementation workflow remains responsible for that gate.
+That workflow passed on the preceding implementation revision `d8c564b0`,
+including its full suite, package build and CLI doctor. Independent review then
+added the two post-completion output cases above; the final revision must pass
+the same unchanged hosted gate.
 No scientific campaign was rerun to obtain these software checks.
 
 The mutable manifest is owned by one numerical worker, as required by this

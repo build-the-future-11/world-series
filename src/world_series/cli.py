@@ -67,8 +67,6 @@ def cmd_run(args: argparse.Namespace) -> int:
         status = RunStatus(metrics.get("status", RunStatus.SUCCEEDED.value))
         run.append_event("finish", {"status": status.value})
         run.set_status(status)
-        print(json.dumps({"run_id": run.manifest.run_id, "status": status.value, "metrics": metrics}, indent=2))
-        return 0 if status in {RunStatus.SUCCEEDED, RunStatus.UNSUPPORTED} else 1
     except KeyboardInterrupt:
         err = {"code": "INTERRUPTED", "message": "execution interrupted by user"}
         run.set_status(RunStatus.INTERRUPTED, error=err)
@@ -89,6 +87,11 @@ def cmd_run(args: argparse.Namespace) -> int:
         run.append_event("error", err)
         print(json.dumps({"run_id": run.manifest.run_id, "error": err}, indent=2))
         return 1
+
+    # Output can be interrupted or disconnected after execution has completed.
+    # Such reporting failures must not attempt to rewrite a sealed run receipt.
+    print(json.dumps({"run_id": run.manifest.run_id, "status": status.value, "metrics": metrics}, indent=2))
+    return 0 if status in {RunStatus.SUCCEEDED, RunStatus.UNSUPPORTED} else 1
 
 
 def cmd_compare(args: argparse.Namespace) -> int:
