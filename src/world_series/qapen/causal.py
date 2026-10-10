@@ -22,11 +22,24 @@ class FrozenQuantizer:
             raise ValueError('Finite two-dimensional centers required')
         # A read-only flag on an owned ndarray can be reversed by the caller.
         # Bind the frozen codebook to an immutable bytes owner instead.
-        self._centers=np.frombuffer(array.tobytes(),dtype=np.float64).reshape(array.shape)
+        self._center_bytes=array.tobytes()
+        self._center_shape=array.shape
 
     @property
     def centers(self):
-        return self._centers
+        # ndarray shape/dtype metadata stays mutable even over read-only bytes.
+        # Give each caller a fresh view so that metadata cannot alter routing.
+        return np.frombuffer(self._center_bytes,dtype=np.float64).reshape(self._center_shape)
+
+    def __getstate__(self):
+        return {'centers':self.centers}
+
+    def __setstate__(self,state):
+        # Accept both earlier array layouts and revalidate/re-freeze on load.
+        # Protocol 4 otherwise recreates an owned, writeable ndarray.
+        if not isinstance(state,dict) or not ({'centers','_centers'} & state.keys()):
+            raise ValueError('Serialized centers required')
+        self.__init__(state['centers'] if 'centers' in state else state['_centers'])
 
     def __deepcopy__(self,memo):
         duplicate=type(self)(self.centers)
@@ -47,10 +60,11 @@ class FrozenQuantizer:
 
     def encode(self, context):
         x=np.asarray(context,dtype=np.float64)
-        if x.shape!=self.centers.shape[1:] or not np.isfinite(x).all():raise ValueError('Invalid context')
-        label=int(((self.centers-x)**2).sum(1).argmin())
-        residual=x-self.centers[label]
-        return label,np.r_[x,residual,np.eye(len(self.centers))[label]]
+        centers=self.centers
+        if x.shape!=centers.shape[1:] or not np.isfinite(x).all():raise ValueError('Invalid context')
+        label=int(((centers-x)**2).sum(1).argmin())
+        residual=x-centers[label]
+        return label,np.r_[x,residual,np.eye(len(centers))[label]]
 
 
 class GaussianExpert(nn.Module):

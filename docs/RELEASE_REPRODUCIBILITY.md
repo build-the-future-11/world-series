@@ -71,3 +71,21 @@ The repository has no configured type checker. Existing Ruff findings are
 retained in release receipts rather than applying mass formatting to frozen
 source files. CI checks fatal syntax/undefined-name rules plus all tests; it
 does not claim full lint cleanliness or scientific validation.
+
+## QAPEN codebook replay
+
+`FrozenQuantizer.centers` exposes a fresh, read-only float64 array view for each
+access. Changing an exposed view's shape or dtype cannot change the retained
+codebook or route a context to a different code. The retained representation is
+immutable bytes plus shape, so both data and array metadata remain isolated.
+
+Pickle loading validates and freezes the codebook again, including the earlier
+`centers` and `_centers` array-state layouts. Protocols 4 and 5, pending-prediction
+checkpoint continuation, optimizer parameter identity, memory and RNG receipts
+are covered with constructed regression fixtures. This verifies compatibility
+of those state layouts, not a new replay of historical outcome checkpoints.
+Historical campaigns still require their recorded source and environment.
+
+The source-bound engineering record is
+`research/ENGINEERING_CODEBOOK_REPLAY_20261010.json`. Existing scientific
+dispositions and confirmation boundaries remain in force.

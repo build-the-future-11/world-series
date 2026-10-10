@@ -9,13 +9,14 @@
     "README.md",
     "docs/RELEASE_REPRODUCIBILITY.md"
   ],
-  "engineering_question": "Retain immutable causal memory keys and frozen codebooks across replay",
-  "current_change": "Use immutable byte-backed key/codebook snapshots, a read-only centers property and deepcopy preservation. Validate memory capacity and key/value admission before eviction, and make recent(0) empty.",
+  "engineering_question": "Preserve frozen quantizer metadata and legacy checkpoint replay",
+  "current_change": "Store immutable bytes and shape, expose fresh array views, and validate/re-freeze both historical array state layouts during loading. Preserve causal arithmetic and reuse one view within encode.",
   "required_session_reads": [
     "AGENTS.md",
     "README.md",
     "docs/RELEASE_REPRODUCIBILITY.md",
-    "research/ENGINEERING_NUMERICAL_INTEGRITY_20261010.json"
+    "research/ENGINEERING_NUMERICAL_INTEGRITY_20261010.json",
+    "research/ENGINEERING_CODEBOOK_REPLAY_20261010.json"
   ],
   "protected_boundary": "Confirmation remains DRAFT_NOT_AUTHORIZED. Existing campaigns, scientific outcomes and protocols are unchanged; model behavior must use the new source identity in any future execution.",
   "protected_evaluation_opened": false,
@@ -37,6 +38,13 @@
       "kind": "engineering_revision",
       "record": "research/ENGINEERING_NUMERICAL_INTEGRITY_20261010.json",
       "status": "implemented; 200 bounded tests passed; integration pending",
+      "scientific_outcomes_created": false
+    },
+    {
+      "date": "2026-10-10",
+      "kind": "engineering_revision",
+      "record": "research/ENGINEERING_CODEBOOK_REPLAY_20261010.json",
+      "status": "implemented; 214 distinct bounded tests passed across full attempt and two fixture reruns; review/integration pending",
       "scientific_outcomes_created": false
     }
   ],

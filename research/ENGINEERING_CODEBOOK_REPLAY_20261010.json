@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-10",
+  "kind": "ENGINEERING_CORRECTNESS_REVISION",
+  "repository": "build-the-future-11/world-series",
+  "parent_commit": "17ae3938d53939e6cfd9bce6af35638938498dfe",
+  "stacked_on_pr": 3,
+  "title": "Preserve frozen quantizer metadata and legacy checkpoint replay",
+  "observation": "Despite an immutable array buffer, assigning centers.dtype changed code routing from 1 to 0, assigning centers.shape broke a valid context, protocol-4 pickle restored a writable codebook, and earlier centers-layout pickles failed to load.",
+  "cause": "A retained ndarray still has mutable dtype/shape metadata, and default object/NumPy serialization bypasses constructor snapshot ownership and state-layout migration.",
+  "change": "Store immutable bytes and shape, expose fresh array views, and validate/re-freeze both historical array state layouts during loading. Preserve causal arithmetic and reuse one view within encode.",
+  "predicted_consequence": "Exposed metadata and serialization no longer alter routing; pending checkpoint continuation preserves predictions, optimizer identity and causal state.",
+  "evidence": {
+    "parent_regressions": "10 failed, 4 passed on exact parent 17ae3938d53939e6cfd9bce6af35638938498dfe",
+    "new_cases": 14,
+    "observed_local_tests": "212 passed, 2 failed because tracked optdigits files were not materialized in the sparse checkout; after adding those unchanged files, both failing tests passed on targeted rerun. All 214 distinct tests passed across those executions.",
+    "initial_collection_failure": "The sparse checkout omitted scripts/closure/source_paths.py. Materializing the tracked scripts resolved collection without product or test changes.",
+    "full_suite_command": "PYTHONPATH=src OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python -m pytest -o addopts= -q tests",
+    "fixture_rerun_command": "PYTHONPATH=src OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python -m pytest -o addopts= -q tests/qlearn/test_natural_study.py::test_natural_split_is_disjoint_and_writer_sources_are_preserved tests/qlearn/test_natural_study.py::test_natural_matrix_preserves_every_comparator",
+    "checks": "Ruff E9/F821/F822/F823, byte compilation and git diff --check passed",
+    "environment": {
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "torch": "2.14.1+cpu",
+      "pytest": "9.1.1",
+      "numeric_threads": 1
+    },
+    "retained_warning": "Existing qlearn test converts a requires-grad tensor to scalar; no assertion or warning suppression was added.",
+    "direct_consumers": "Encode labels/features, protocol-4/5 object roundtrips, both constructed legacy array-state layouts, invalid state rejection, and pending CausalLifecycle checkpoint continuation with memory/RNG receipts and optimizer parameter identity."
+  },
+  "changed_python_sha256": {
+    "src/world_series/qapen/causal.py": "c3dd5abd046ce3279cca329902ea206f4ce43c10581c996786ea21118365d868",
+    "tests/qapen/test_quantizer_replay.py": "00bdd000cf06b6aa045e41eac69a4ffe0e229a477d30f68eb3a37919a35155e5"
+  },
+  "compatibility": "Codebook values, shape, distance calculation and float64 features are preserved. Constructed legacy state fixtures are not historical outcome checkpoint replays.",
+  "scientific_runs": 0,
+  "scientific_result_changed": false,
+  "protected_outcome_accesses": 0,
+  "scientific_disposition": "BOUNDED_DEVELOPMENT_WORKBENCH; module-specific negative/incomplete outcomes retained",
+  "protected_boundary": "Confirmation remains DRAFT_NOT_AUTHORIZED; frozen outcomes, protocols and campaigns remain unchanged.",
+  "research_complete": false,
+  "independent_review": "pending",
+  "integration": "draft pull request; not merged",
+  "next_action": "Review/integrate this engineering follow-up after its parent and verify exact-head CI; no scientific successor is authorized."
+}
