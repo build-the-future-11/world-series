@@ -7,9 +7,12 @@ from collections import deque
 import copy
 from dataclasses import dataclass, asdict
 import uuid
+import math
+from numbers import Real
 import numpy as np
 import torch
 from torch import nn
+from world_series.qapen.mixture import mixture_moments
 
 
 class FrozenQuantizer:
@@ -77,7 +80,16 @@ class Engram:
 
 
 def gaussian_nll(y,mean,variance):
-    return float(.5*np.log(2*np.pi*variance)+.5*(y-mean)**2/variance)
+    for name,value in [('target',y),('mean',mean),('variance',variance)]:
+        if isinstance(value,(bool,np.bool_)) or not isinstance(value,Real) or not math.isfinite(value):
+            raise ValueError(f'{name} must be a finite real number')
+    if variance<=0:raise ValueError('variance must be positive')
+    y,mean,variance=float(y),float(mean),float(variance)
+    root=math.sqrt(variance);error=y-mean
+    standardized=error/root if math.isfinite(error) else y/root-mean/root
+    value=.5*math.log(2*math.pi)+.5*math.log(variance)+(.5*standardized)*standardized
+    if not math.isfinite(value):raise ValueError('Gaussian NLL exceeds the finite numeric range')
+    return value
 
 
 class CausalLifecycle:
@@ -141,8 +153,8 @@ class CausalLifecycle:
         weights=np.exp(-(distances-distances.min())/2);weights/=weights.sum()
         moments=[self.models[m.identity].moments(features) for m in active]
         self.costs['expert_predictions']+=len(moments)
-        mean=float(sum(w*mu for w,(mu,var) in zip(weights,moments)))
-        variance=max(.05,float(sum(w*(v+mu**2) for w,(mu,v) in zip(weights,moments))-mean**2))
+        weights,mean,variance=mixture_moments(weights,np.array([mu for mu,var in moments]),np.array([var for mu,var in moments]))
+        variance=max(.05,variance)
         base=(mean,variance);selected=active[int(weights.argmax())].identity
         candidates=[e for e in self.engrams if e.written_at<self.t]
         retrieved=None
@@ -152,8 +164,8 @@ class CausalLifecycle:
             elif self.retrieval=='recent':retrieved=max(candidates,key=lambda e:e.written_at)
             else:retrieved=min(candidates,key=lambda e:np.sum((context-e.key)**2))
             retrieved.accesses+=1
-            mean=.65*mean+.35*retrieved.value
-            variance=max(.05,.65*(base[1]+base[0]**2)+.35*(retrieved.variance+retrieved.value**2)-mean**2)
+            _,mean,variance=mixture_moments(np.array([.65,.35]),np.array([base[0],retrieved.value]),np.array([base[1],retrieved.variance]))
+            variance=max(.05,variance)
         warm={}
         for identity,m in self.metadata.items():
             if m.state=='WARMUP' and m.birth<self.t:
