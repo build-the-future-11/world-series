@@ -10,7 +10,7 @@ from dataclasses import asdict, dataclass, field, replace
 from pathlib import Path
 from typing import Any, Optional
 
-from world_series.core.artifacts import ArtifactStore, publish_bytes
+from world_series.core.artifacts import ArtifactStore, json_bytes, publish_bytes
 from world_series.core.contracts import Budget, ErrorCode, RunStatus, WorldSeriesError
 from world_series.core.identity import hash_mapping, source_identity
 
@@ -68,7 +68,7 @@ class RunDirectory:
         payload = (manifest or self.manifest).to_dict()
         publish_bytes(
             self.path / "manifest.json",
-            (json.dumps(payload, indent=2, sort_keys=True) + "\n").encode("utf-8"),
+            json_bytes(payload, indent=2),
             overwrite=True,
         )
 
@@ -78,8 +78,9 @@ class RunDirectory:
             "kind": kind,
             "payload": payload or {},
         }
-        with self.events_path.open("a", encoding="utf-8") as f:
-            f.write(json.dumps(event, sort_keys=True) + "\n")
+        encoded = json_bytes(event)
+        with self.events_path.open("ab") as f:
+            f.write(encoded)
 
     def set_status(self, status: RunStatus, error: Optional[dict[str, Any]] = None) -> None:
         if RunStatus(self.manifest.status) in TERMINAL_STATUSES:
@@ -102,7 +103,7 @@ class RunDirectory:
         snapshot = deepcopy(metrics)
         publish_bytes(
             self.path / "metrics.json",
-            (json.dumps(snapshot, indent=2, sort_keys=True) + "\n").encode("utf-8"),
+            json_bytes(snapshot, indent=2),
         )
         manifest = replace(self.manifest, metrics=snapshot)
         self._write_manifest(manifest)
