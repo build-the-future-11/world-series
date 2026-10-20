@@ -58,3 +58,23 @@ def test_amortized_cost():
 def test_bootstrap_validation():
     with pytest.raises(ValueError, match="bootstrap"):
         module.compare(rows(), bootstrap=1)
+
+
+def test_reverse_unpaired_baseline_rejected():
+    data = [r for r in rows() if not (
+        r["family"] == "A" and r["instance"] == "1" and r["method"] == "learned"
+    )]
+    with pytest.raises(ValueError, match="unpaired"):
+        module.compare(data)
+
+
+def test_one_family_no_inferential_interval():
+    data = [r for r in rows() if r["family"] == "A"]
+    result = module.compare(data, bootstrap=50)
+    assert result["family_bootstrap_95pct_ratio"] is None
+    assert "one independent family" in result["uncertainty_warning"].lower()
+
+
+def test_methods_must_differ():
+    with pytest.raises(ValueError, match="differ"):
+        module.compare(rows(), candidate="brute", baseline="brute")
