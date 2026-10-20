@@ -41,6 +41,8 @@ def read_rows(path):
 
 
 def compare(rows, candidate="learned", baseline="brute", bootstrap=2000, seed=1729):
+    if candidate == baseline:
+        raise ValueError("candidate and baseline must differ")
     if bootstrap < 2:
         raise ValueError("at least two bootstrap replicates required")
     indexed = {}
@@ -49,6 +51,10 @@ def compare(rows, candidate="learned", baseline="brute", bootstrap=2000, seed=17
         if key in indexed:
             raise ValueError(f"duplicate cell: {key}")
         indexed[key] = row
+    candidate_keys = {(f, i) for f, i, m in indexed if m == candidate}
+    baseline_keys = {(f, i) for f, i, m in indexed if m == baseline}
+    if candidate_keys != baseline_keys:
+        raise ValueError("unpaired cell: both method sets must match")
     families = defaultdict(list)
     for (family, instance, method), a in indexed.items():
         if method != candidate:
@@ -67,19 +73,21 @@ def compare(rows, candidate="learned", baseline="brute", bootstrap=2000, seed=17
         families[family].append(math.log(ca / cb))
     if not families:
         raise ValueError("no paired observations")
-    means = [sum(x) / len(x) for x in families.values()]
+    means = [sum(families[f]) / len(families[f]) for f in sorted(families)]
     observed = sum(means) / len(means)
     rng = random.Random(seed)
-    draws = sorted(sum(means[rng.randrange(len(means))] for _ in means) / len(means)
-                   for _ in range(bootstrap))
+    draws = (sorted(sum(means[rng.randrange(len(means))] for _ in means) / len(means)
+                    for _ in range(bootstrap)) if len(means) >= 2 else None)
     return {
         "candidate": candidate, "baseline": baseline,
         "family_count": len(families),
         "paired_instances": sum(map(len, families.values())),
         "family_equal_weight_geomean_ratio": math.exp(observed),
-        "family_bootstrap_95pct_ratio": [
+        "family_bootstrap_95pct_ratio": ([
             math.exp(draws[int(.025 * (bootstrap - 1))]),
-            math.exp(draws[int(.975 * (bootstrap - 1))])],
+            math.exp(draws[int(.975 * (bootstrap - 1))])] if draws is not None else None),
+        "uncertainty_warning": ("Only one independent family; no bootstrap interval"
+                                if draws is None else None),
         "method": "paired family-cluster bootstrap",
         "status": "DEVELOPMENT_ONLY_NOT_CONFIRMATORY",
     }
