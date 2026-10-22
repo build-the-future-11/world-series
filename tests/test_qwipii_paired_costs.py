@@ -78,3 +78,57 @@ def test_one_family_no_inferential_interval():
 def test_methods_must_differ():
     with pytest.raises(ValueError, match="differ"):
         module.compare(rows(), candidate="brute", baseline="brute")
+
+
+def test_reciprocal_extreme_costs_retain_representable_geometric_mean():
+    # Each direct ratio is outside binary64, but their paired log mean is zero.
+    data = [r for r in rows() if r["family"] == "A"]
+    for r in data:
+        high = (r["instance"] == "1") == (r["method"] == "learned")
+        r["runtime_ms"] = 1e300 if high else 1e-300
+    result = module.compare(data, bootstrap=50)
+    assert result["family_equal_weight_geomean_ratio"] == 1.0
+    assert result["family_bootstrap_95pct_ratio"] is None
+    assert module.compare(list(reversed(data)), bootstrap=50) == result
+
+
+@pytest.mark.parametrize("bad", [float("nan"), float("inf"), -1.0, 0.0])
+def test_direct_analysis_rejects_nonfinite_or_nonpositive_cost(bad):
+    data = rows()
+    data[0]["runtime_ms"] = bad
+    with pytest.raises(ValueError, match="invalid runtime_ms|finite positive cost"):
+        module.compare(data)
+
+
+def test_finite_fields_whose_amortized_cost_overflows_are_rejected():
+    data = rows()
+    data[0]["runtime_ms"] = 1.7e308
+    data[0]["offline_ms"] = 1.7e308
+    with pytest.raises(ValueError, match="finite positive cost"):
+        module.compare(data)
+
+
+@pytest.mark.parametrize("candidate,baseline", [(1e300, 1e-300), (1e-300, 1e300)])
+def test_unrepresentable_final_ratio_has_explicit_failure(candidate, baseline):
+    data = rows()
+    for r in data:
+        r["runtime_ms"] = candidate if r["method"] == "learned" else baseline
+    with pytest.raises(ValueError, match="floating-point range"):
+        module.compare(data, bootstrap=50)
+
+
+@pytest.mark.parametrize("bad", [True, 2.5, "5"])
+def test_bootstrap_count_must_be_an_integer(bad):
+    with pytest.raises(ValueError, match="bootstrap"):
+        module.compare(rows(), bootstrap=bad)
+
+
+@pytest.mark.parametrize("field,value", [
+    ("solved", "false"), ("optimal", "false"), ("runtime_ms", True),
+    ("offline_ms", -1), ("planned_queries", False), ("planned_queries", 0),
+])
+def test_direct_analysis_enforces_the_jsonl_input_contract(field, value):
+    data = rows()
+    data[0][field] = value
+    with pytest.raises(ValueError):
+        module.compare(data)
